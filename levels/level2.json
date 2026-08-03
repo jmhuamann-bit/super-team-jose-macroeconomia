@@ -1,0 +1,33 @@
+{
+  "id": "level2",
+  "distrito": "San Miguel",
+  "clase": "Clase 02",
+  "titulo": "El malecón del método gasto",
+  "tema": "parque",
+  "musica": "parque",
+  "vehiculo": "bus",
+  "intro": "Ya sabes qué entra; ahora hay que sumar bien. En el malecón los cuadros vienen con trampa: cuentas metidas dentro de otras, importaciones dobles y bonos que se hacen pasar por gasto público.",
+  "repaso": [
+    "PBI = C + I + G + X − M. Balanza comercial = X − M.",
+    "El gasto corriente YA incluye sueldos públicos y compras de oficina: no los sumes dos veces.",
+    "Las transferencias (bonos, pensiones) no entran al PBI: no compran producción.",
+    "Toda importación suma en C, I o G y resta en M: su efecto neto es cero."
+  ],
+  "mapa": [
+    "                                                                                                                                                                            ",
+    "                                                                                                                                                                            ",
+    "                                                                                                                                                                            ",
+    "                                                                                                                                                                            ",
+    "                                                                                                                                                                            ",
+    "                                                                                                                                                                            ",
+    "                                                                                                                                                                            ",
+    "                                                                              o o o                                                                       #                 ",
+    "          ?    o   o o o         o       o o o o   1          #      o        ===           o   V           o o L o     o         G                      ##                 ",
+    "              o o  ===          o o      ====                ##     o o                    o o              ====       o o              #               ###                 ",
+    "      o o o  o   o             o   o                        ### o ooo  o ===              o   o                       o   o            ##  o o o o     ####                 ",
+    "  P                      E   X       E         C       E   ####                      E  X          E    C          E          E       ###       B     #####   M             ",
+    "##############   ###############   #################################   ####################  ##########################   ##################################################",
+    "##############   ###############   #################################   ####################  ##########################   ##################################################",
+    "##############   ###############   #################################   ####################  ##########################   ##################################################"
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "nivel": "level3",
+  "clase": "Clase 03 · Cuentas nacionales",
+  "fuente": "Apuntes de la 3era clase — Economía General II",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "m3-q1",
+      "nivel": "reconocimiento",
+      "enunciado": "PBI vs PNB. ¿Cuál es la diferencia?",
+      "opciones": [
+        "Son lo mismo con distinto nombre",
+        "El PBI es bruto y el PNB es neto",
+        "El PBI mide un año y el PNB, varios años",
+        "El PBI va por TERRITORIO (nacionales y extranjeros adentro); el PNB va por NACIONALIDAD (nacionales adentro y afuera)"
+      ],
+      "correcta": 3,
+      "explicacion": "PBI = nacionales adentro + extranjeros adentro. PNB = nacionales adentro + nacionales afuera. Los dos son brutos."
+    },
+    {
+      "id": "m3-q2",
+      "nivel": "reconocimiento",
+      "enunciado": "¿Cómo se pasa del PBI al PNB?",
+      "opciones": [
+        "PNB = PBI − depreciación",
+        "PNB = PBI + PNF, donde PNF = renta de nacionales afuera − renta de extranjeros adentro",
+        "PNB = PBI + impuestos indirectos",
+        "PNB = PBI + transferencias del gobierno"
+      ],
+      "correcta": 1,
+      "explicacion": "Se añade a los nacionales de afuera y se elimina a los extranjeros de adentro. La primera opción es la fórmula del PNN."
+    },
+    {
+      "id": "m3-q3",
+      "nivel": "reconocimiento",
+      "enunciado": "Machin Alcántara abre su taller de teatro en DUBAI.\n\n¿A qué cuenta peruana entra?",
+      "opciones": [
+        "Al PNB peruano, no al PBI peruano",
+        "Al PBI peruano, no al PNB peruano",
+        "A los dos",
+        "A ninguno de los dos"
+      ],
+      "correcta": 0,
+      "explicacion": "Es peruano pero produce afuera: entra al PNB peruano (y al PBI de Dubai). Al revés, un extranjero que produce en Lima entra al PBI peruano."
+    },
+    {
+      "id": "m3-q4",
+      "nivel": "comprension",
+      "enunciado": "La renta de los peruanos en el extranjero es 10 000 y la de los extranjeros en Perú es 20 000. El PBI es 50 000.\n\n¿Cuánto es el PNF y el PNB?",
+      "opciones": [
+        "PNF = +10 000 · PNB = 60 000",
+        "PNF = 30 000 · PNB = 80 000",
+        "PNF = −10 000 · PNB = 40 000",
+        "PNF = −10 000 · PNB = 60 000"
+      ],
+      "correcta": 2,
+      "explicacion": "PNF = nacionales afuera − extranjeros adentro = 10 000 − 20 000 = −10 000. PNB = 50 000 − 10 000 = 40 000. Cuidado con el orden de la resta."
+    },
+    {
+      "id": "m3-q5",
+      "nivel": "comprension",
+      "enunciado": "PREGUNTA DE EXAMEN: «Si los ingresos de los extranjeros en el Perú aumentan, el PNB peruano cae».",
+      "opciones": [
+        "Verdadero: está restando en la fórmula",
+        "Verdadero, pero solo si el PBI no cambia",
+        "Falso: en realidad el PNB sube",
+        "Falso: ese ingreso sube el PBI y se resta en el PNF, así que se cancela. El PNB solo depende de los nacionales"
+      ],
+      "correcta": 3,
+      "explicacion": "PNB = nacionales adentro + nacionales afuera. Lo que les pase a los extranjeros no lo afecta: entra por un lado y sale por el otro."
+    },
+    {
+      "id": "m3-q6",
+      "nivel": "comprension",
+      "enunciado": "El PNB es 50 000 y la depreciación 7 000.\n\n¿Cuánto es el PNN?",
+      "opciones": ["43 000", "57 000", "50 000", "7 000"],
+      "correcta": 0,
+      "explicacion": "PNN = PNB − depreciación = 43 000. Acá recién dejamos de ser «brutos»."
+    },
+    {
+      "id": "m3-q7",
+      "nivel": "comprension",
+      "enunciado": "YAPEPREGUNTA. El PNB es 50 000, el IGV 1 000, el ISC 2 000 y la depreciación 10 000.\n\n¿Cuánto es el YN?",
+      "opciones": ["47 000", "40 000", "37 000", "43 000"],
+      "correcta": 2,
+      "explicacion": "Primero baja a PNN: 50 000 − 10 000 = 40 000. Recién ahí quítale los impuestos indirectos: 40 000 − 3 000 = 37 000. No te saltes escalones."
+    },
+    {
+      "id": "m3-q8",
+      "nivel": "aplicacion",
+      "enunciado": "EJERCICIO COMPLETO. Perú:\n• Consumo 9 000\n• Exportaciones 2 000\n• Importaciones 600\n• Gasto corriente público 800\n• Renta de peruanos en el extranjero 2 350\n• Renta de extranjeros en Perú 350\n• Depreciación 1 200\n• Impuestos indirectos 950\n• Maquinaria nacional para productores en Perú 1 000\n\n¿Cuál es el PBI?",
+      "opciones": ["13 200", "12 200", "14 200", "11 400"],
+      "correcta": 1,
+      "explicacion": "9 000 + 1 000 + 800 + 2 000 − 600 = 12 200. Las rentas, la depreciación y los impuestos todavía no entran: esos vienen después."
+    },
+    {
+      "id": "m3-q9",
+      "nivel": "aplicacion",
+      "enunciado": "Mismo ejercicio (PBI = 12 200; peruanos afuera 2 350; extranjeros adentro 350).\n\n¿Cuánto es el PNB?",
+      "opciones": ["10 200", "12 200", "14 200", "14 900"],
+      "correcta": 2,
+      "explicacion": "PNF = 2 350 − 350 = 2 000. PNB = 12 200 + 2 000 = 14 200."
+    },
+    {
+      "id": "m3-q10",
+      "nivel": "aplicacion",
+      "enunciado": "Mismo ejercicio (PNB = 14 200; depreciación 1 200; impuestos indirectos 950).\n\n¿Cuánto es el YN (ingreso nacional)?",
+      "opciones": ["12 050", "13 000", "12 200", "11 100"],
+      "correcta": 0,
+      "explicacion": "PNN = 14 200 − 1 200 = 13 000. YN = 13 000 − 950 = 12 050. La escalera completa es PBI → PNB → PNN → YN → YP → YPd."
+    }
+  ]
+}

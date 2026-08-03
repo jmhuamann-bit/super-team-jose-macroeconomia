@@ -1,0 +1,118 @@
+{
+  "nivel": "level1",
+  "clase": "Clase 01 · Medición del PBI (intro)",
+  "fuente": "Apuntes de la 1era clase — Economía General II",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "m1-q1",
+      "nivel": "reconocimiento",
+      "enunciado": "¿Cuál es la definición del PBI?",
+      "opciones": [
+        "El valor de todo lo que se vende en un país durante el año",
+        "El valor de los bienes y servicios FINALES producidos al INTERIOR de un país en un periodo determinado (valor bruto)",
+        "El valor de lo que producen los nacionales, estén donde estén",
+        "El total de dinero que circula en la economía"
+      ],
+      "correcta": 1,
+      "explicacion": "Palabra por palabra: finales, al interior, periodo determinado y BRUTO. La tercera opción describe al PNB, no al PBI."
+    },
+    {
+      "id": "m1-q2",
+      "nivel": "reconocimiento",
+      "enunciado": "El valor bruto de un automóvil era 100 000 soles en 2015. Ocho años después su valor neto es 70 000.\n\n¿Cuánto se depreció?",
+      "opciones": ["170 000", "70 000", "30 000", "No se puede saber"],
+      "correcta": 2,
+      "explicacion": "Depreciación = bruto − neto = 100 000 − 70 000 = 30 000. De ahí sale la regla: BRUTO = NETO + DEPRECIACIÓN."
+    },
+    {
+      "id": "m1-q3",
+      "nivel": "reconocimiento",
+      "enunciado": "En la fórmula PBI = C + I + G + X − M, la letra I se refiere a…",
+      "opciones": [
+        "La inversión neta",
+        "Solo la inversión pública",
+        "Solo la compra de maquinaria",
+        "La inversión BRUTA (neta + depreciación)"
+      ],
+      "correcta": 3,
+      "explicacion": "La B de PBI es de BRUTO. Si el cuadro te da la inversión neta, súmale la depreciación antes de usarla."
+    },
+    {
+      "id": "m1-q4",
+      "nivel": "comprension",
+      "enunciado": "Hay un fuerte contrabando en la frontera valorizado en 5 millones de soles.\n\n¿Entra al PBI peruano?",
+      "opciones": [
+        "No: informalidad e ilegalidad, no existe registro de compra y venta",
+        "Sí: se produjo dentro del país",
+        "Sí, pero solo la mitad",
+        "No: es producción de años anteriores"
+      ],
+      "correcta": 0,
+      "explicacion": "No se puede medir lo que no se registra. Ojo: no es que no exista, es que no se contabiliza."
+    },
+    {
+      "id": "m1-q5",
+      "nivel": "comprension",
+      "enunciado": "Pamela Chuchu trabaja y su esposo se queda cuidando la casa sin recibir pago. Luego lo bota y contrata a un ama de casa FORMAL con sueldo.\n\n¿Qué pasa con el PBI?",
+      "opciones": [
+        "No cambia nada: es el mismo trabajo",
+        "Baja, porque hay un desempleado más",
+        "Sube: antes era autoconsumo sin precio de mercado y ahora es un servicio formal y registrado",
+        "Sube solo si ella declara el gasto"
+      ],
+      "correcta": 2,
+      "explicacion": "La famosa paradoja del PBI: el mismo trabajo suma cuando pasa por el mercado y no suma cuando se hace en casa."
+    },
+    {
+      "id": "m1-q6",
+      "nivel": "comprension",
+      "enunciado": "Una casa se construyó en 2020 pero recién se vendió en 2023.\n\n¿Entra al PBI de 2023?",
+      "opciones": [
+        "Sí: la venta ocurrió en 2023",
+        "Sí, la mitad en cada año",
+        "No: las casas nunca entran al PBI",
+        "No: es producción de años anteriores, entró al PBI de 2020"
+      ],
+      "correcta": 3,
+      "explicacion": "El PBI mide PRODUCCIÓN, no ventas. La casa se produjo en 2020 y ahí se contó."
+    },
+    {
+      "id": "m1-q7",
+      "nivel": "comprension",
+      "enunciado": "La producción de tu celular, fabricado en China.\n\n¿Entra al PBI peruano?",
+      "opciones": [
+        "No: se cuenta en el PBI del país que lo produjo",
+        "Sí: lo compraste en Perú",
+        "Sí: la mitad para cada país",
+        "No: los celulares no entran al PBI"
+      ],
+      "correcta": 0,
+      "explicacion": "PBI = producido al INTERIOR del país. En Perú se registra como importación, y por eso se resta en la − M."
+    },
+    {
+      "id": "m1-q8",
+      "nivel": "aplicacion",
+      "enunciado": "PAÍS METROLANDIA:\n• Consumo 7 900\n• Exportaciones 1 000\n• Importaciones 900\n• Contrabando 1 000\n• Gasto público 2 350\n• Inversión 1 250\n• Venta de celulares robados 1 200\n\n¿Cuál es el PBI?",
+      "opciones": ["13 800", "11 600", "12 500", "9 150"],
+      "correcta": 1,
+      "explicacion": "7 900 + 1 250 + 2 350 + 1 000 − 900 = 11 600. El contrabando y los celulares robados no se contabilizan por falta de registro."
+    },
+    {
+      "id": "m1-q9",
+      "nivel": "aplicacion",
+      "enunciado": "PAÍS CUCHI CUCHI. El cuadro te da la inversión NETA (1 550) y la depreciación (450).\n\n¿Qué monto de inversión entra al PBI?",
+      "opciones": ["1 550", "1 100", "2 000", "450"],
+      "correcta": 2,
+      "explicacion": "Inversión bruta = neta + depreciación = 1 550 + 450 = 2 000. Si usabas 1 550 te comías 450 de PBI."
+    },
+    {
+      "id": "m1-q10",
+      "nivel": "aplicacion",
+      "enunciado": "El Choche compró en 2022 un auto NUEVO hecho en Perú por 150 mil dólares. Se arrepintió y ese mismo año se lo remató a Portocarrero en 120 mil.\n\n¿Cuánto entra al PBI 2022 (en miles)?",
+      "opciones": ["270", "120", "30", "150"],
+      "correcta": 3,
+      "explicacion": "Solo los 150 mil de la primera venta: eso es producción nueva. La reventa de 120 mil no suma porque el auto ya fue contabilizado."
+    }
+  ]
+}

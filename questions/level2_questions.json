@@ -1,0 +1,113 @@
+{
+  "nivel": "level2",
+  "clase": "Clase 02 · Método del gasto y sus trampas",
+  "fuente": "Apuntes de la 2da clase — Economía General II",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "m2-q1",
+      "nivel": "reconocimiento",
+      "enunciado": "MÉTODO DEL GASTO. ¿Cuál es la fórmula del PBI?",
+      "opciones": [
+        "PBI = C + I + G + X + M",
+        "PBI = C + I + G − X + M",
+        "PBI = C + I + G + X − M",
+        "PBI = C − I + G + X − M"
+      ],
+      "correcta": 2,
+      "explicacion": "Consumo + Inversión bruta + Gasto público + Exportaciones − Importaciones. Las importaciones SIEMPRE restan, porque limpian lo que se coló en C, I y G."
+    },
+    {
+      "id": "m2-q2",
+      "nivel": "reconocimiento",
+      "enunciado": "¿Qué es la balanza comercial?",
+      "opciones": [
+        "Exportaciones − Importaciones (las exportaciones netas)",
+        "Exportaciones + Importaciones",
+        "El PBI menos el consumo",
+        "El gasto público menos los impuestos"
+      ],
+      "correcta": 0,
+      "explicacion": "X − M = exportaciones netas = balanza comercial. Positiva es superávit; negativa, déficit."
+    },
+    {
+      "id": "m2-q3",
+      "nivel": "reconocimiento",
+      "enunciado": "El bono Yanapay y la Pensión 65, ¿a qué cuenta del PBI van?",
+      "opciones": [
+        "Al gasto público",
+        "Al consumo de las familias",
+        "A la inversión pública",
+        "A ninguna: son transferencias, no compran producción"
+      ],
+      "correcta": 3,
+      "explicacion": "Las transferencias mueven dinero, no producción. Reaparecen después, al calcular el ingreso personal (YP)."
+    },
+    {
+      "id": "m2-q4",
+      "nivel": "comprension",
+      "enunciado": "PAÍS CAMOTITO 2026:\n• Gasto de las familias 3 000\n• Exportaciones 700\n• Importaciones 600\n• Producción de años anteriores 900\n• Gasto del gobierno 500\n• Construcción de una clínica 1 250\n• Producción para el autoconsumo 700\n\n¿Cuál es el PBI?",
+      "opciones": ["5 450", "4 850", "5 750", "4 150"],
+      "correcta": 1,
+      "explicacion": "3 000 + 1 250 (la clínica es inversión privada) + 500 + 700 − 600 = 4 850. Fuera: la producción de años anteriores y el autoconsumo, que no tiene precio de mercado."
+    },
+    {
+      "id": "m2-q5",
+      "nivel": "comprension",
+      "enunciado": "El gasto de los turistas extranjeros dentro del Perú, ¿a qué cuenta va?",
+      "opciones": [
+        "Consumo (C)",
+        "Gasto público (G)",
+        "No entra al PBI",
+        "Exportaciones (X)"
+      ],
+      "correcta": 3,
+      "explicacion": "Le estamos vendiendo servicios a alguien de afuera. Distinto es un extranjero que YA reside y trabaja acá: ese es consumo nacional."
+    },
+    {
+      "id": "m2-q6",
+      "nivel": "comprension",
+      "enunciado": "TRAMPA DE ORO. Perú presenta:\n• Consumo 9 000\n• Exportaciones 2 000\n• Importaciones 1 000\n• Gasto corriente público 3 000\n• Compra de impresoras para el congreso 100\n• Sueldo de los congresistas 2 050\n• Depreciación 1 200\n• Contrabando 950\n• Maquinaria producida en Perú 4 000\n\n¿Cuál es el PBI?",
+      "opciones": ["17 000", "19 150", "18 200", "16 000"],
+      "correcta": 0,
+      "explicacion": "9 000 + 4 000 + 3 000 + 2 000 − 1 000 = 17 000. Las impresoras y los sueldos YA están dentro del gasto corriente: sumarlos sería contar dos veces. La depreciación no se usa (el PBI es bruto) y el contrabando no se registra."
+    },
+    {
+      "id": "m2-q7",
+      "nivel": "comprension",
+      "enunciado": "Se importa maquinaria desde China por 10 000 dólares.\n\n¿Cuál es el efecto final en el PBI peruano?",
+      "opciones": [
+        "Sube 10 000: es inversión",
+        "Baja 10 000: es importación",
+        "Nulo: suma 10 000 en I y resta 10 000 en M",
+        "Depende del tipo de cambio"
+      ],
+      "correcta": 2,
+      "explicacion": "Toda importación mueve doble cuenta y se cancela: esa máquina es producción de otro país, no del Perú."
+    },
+    {
+      "id": "m2-q8",
+      "nivel": "aplicacion",
+      "enunciado": "PAÍS ZUCARITAS:\n• Venta de drogas 5 000\n• Exportaciones 2 000\n• Máquinas hechas en el país 500\n• Infraestructura y vacunas COVID 2 500\n• Sueldos de los médicos del sector público 1 000\n• Gasto corriente público 4 000\n• Nuevo hospital 1 500\n• Transferencias (bonos) 950\n• Consumo 4 000\n\n¿Cuál es el PBI?",
+      "opciones": ["19 500", "14 500", "15 500", "20 450"],
+      "correcta": 1,
+      "explicacion": "C 4 000 + I 500 + G (4 000 + 2 500 + 1 500 = 8 000) + X 2 000 = 14 500. Los sueldos de los médicos ya están dentro del gasto corriente; las drogas y los bonos no entran."
+    },
+    {
+      "id": "m2-q9",
+      "nivel": "aplicacion",
+      "enunciado": "PAÍS LOS ALFA:\n• Canasta de las familias 4 000\n• Exportaciones 2 000\n• Gastos corrientes del gobierno 3 000\n• Maquinaria comprada al extranjero 2 500\n• Sueldos de los congresistas 1 000\n• Inversión pública 4 500\n• Cementerio público 1 500\n• Pensión 70: 950\n• Transferencias 4 000\n\n¿Cuál es el PBI?",
+      "opciones": ["16 000", "18 500", "14 950", "13 500"],
+      "correcta": 3,
+      "explicacion": "4 000 + 2 500 + (3 000 + 4 500) + 2 000 − 2 500 = 13 500. La maquinaria extranjera suma en I y resta en M; el cementerio ya está dentro de la inversión pública y los sueldos dentro del gasto corriente."
+    },
+    {
+      "id": "m2-q10",
+      "nivel": "aplicacion",
+      "enunciado": "PERÚ:\n• Consumo nacional 2 000\n• Consumo de productos chinos 400\n• Algodón vendido para polos en USA 400\n• Sueldos públicos 3 000\n• Algodón vendido para polos en Gamarra 1 500\n• Maquinaria para colegios públicos 1 000\n• Café peruano vendido a una empresa de New York 100\n• Importaciones 500\n\n¿Cuál es el PBI?",
+      "opciones": ["7 900", "6 900", "6 400", "5 900"],
+      "correcta": 2,
+      "explicacion": "(2 000 + 400) + (3 000 + 1 000) + (400 + 100) − 500 = 6 400. El algodón que se queda en Gamarra es un bien intermedio y no suma; el que cruza la frontera se vuelve bien final para el Perú."
+    }
+  ]
+}

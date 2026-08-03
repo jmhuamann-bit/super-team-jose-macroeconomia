@@ -1,0 +1,33 @@
+{
+  "id": "level3",
+  "distrito": "Pueblo Libre",
+  "clase": "Clase 03",
+  "titulo": "La plaza de las cuentas nacionales",
+  "tema": "plaza",
+  "musica": "parque",
+  "vehiculo": "taxi",
+  "intro": "Última parada: subir la escalera completa. Del PBI al PNB, de ahí al PNN y hasta el ingreso nacional. En la plaza nadie sabe si un peruano en Dubái cuenta o no. Ordénalos.",
+  "repaso": [
+    "PBI va por territorio; PNB va por nacionalidad. PNB = PBI + PNF.",
+    "PNF = renta de nacionales afuera − renta de extranjeros adentro.",
+    "Lo que les pase a los extranjeros NO afecta al PNB: entra por un lado y sale por el otro.",
+    "La escalera: PBI → PNB → PNN → YN → YP → YPd. Nunca te saltes un escalón."
+  ],
+  "mapa": [
+    "                                                                                                                                                                        ",
+    "                                                                                                                                                                        ",
+    "                                                                                                                                                                        ",
+    "                                                                                                                                                                        ",
+    "                                                                                                                                                                        ",
+    "                                                                                                                                                                        ",
+    "                                                                                                                                                                        ",
+    "                                                                            o o o o                                                                          #          ",
+    "            ?    o   o o o o    o       1                          o        ====       V    o                 o o o o    G    o        L                    ##          ",
+    "                o o  ====      o o                    #           o o                      o o                ====           o o             #             ###          ",
+    "      o o o o  o   o          o   o                  ##       o ooo  o ===                o   o                             o   o           ##  o o o     ####          ",
+    "  P                        E        E       X   C   ###   E                        E             E    C   X          E             E       ###      B    #####   M      ",
+    "################  #############   ################################   ######################  ################################   ########################################",
+    "################  #############   ################################   ######################  ################################   ########################################",
+    "################  #############   ################################   ######################  ################################   ########################################"
+  ]
+}
