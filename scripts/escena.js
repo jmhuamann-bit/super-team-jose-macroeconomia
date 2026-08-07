@@ -162,6 +162,11 @@ const FICHAS = [
   { sprite: "pulpo", nombre: "El Pulpo del Censo", texto: "Jefe del puerto: quiere contar hasta lo que no se registra." },
   { sprite: "paloma", nombre: "Paloma Repetida", texto: "Suma dos veces la misma cuenta del cuadro." },
   { sprite: "combi", nombre: "La Combi Doble Cuenta", texto: "Jefa del malecón: cobra dos veces el mismo pasaje." },
+  { sprite: "cuy", nombre: "Cuy Nacional", texto: "Se fue del país y cree que ya no cuenta en ningún lado." },
+  { sprite: "torito", nombre: "El Torito de las Cuentas", texto: "Jefe de la plaza: confunde el PBI con el PNB." },
+  { sprite: "flor", nombre: "La Flor Informal", texto: "Vende sin boleta y jura que igual entra al PBI." },
+  { sprite: "ardilla", nombre: "La Ardilla Acaparadora", texto: "Guarda la producción del año pasado para contarla este año." },
+  { sprite: "monumento", nombre: "El Monumento al Doble Conteo", texto: "Jefe de Jesús María: suma el insumo y el producto final." },
 ];
 
 export function galeriaPersonajes(contenedor) {

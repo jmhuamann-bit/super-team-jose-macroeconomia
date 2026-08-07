@@ -1,6 +1,6 @@
 {
   "titulo": "Lima",
-  "descripcion": "Cada distrito es una clase de Economía General II. Los tres primeros están abiertos.",
+  "descripcion": "Cada distrito es una clase de Economía General II. Los cuatro primeros están abiertos.",
   "niveles": [
     {
       "id": "level1",
@@ -42,8 +42,13 @@
       "id": "level4",
       "clase": "Clase 04",
       "distrito": "Jesús María",
+      "titulo": "El parque del doble conteo",
       "icono": "🌺",
-      "titulo": ""
+      "retos": 8,
+      "duracion": "3 min",
+      "abierto": true,
+      "mapa": "levels/level4.json",
+      "preguntas": "questions/level4_questions.json"
     },
     {
       "id": "level5",
