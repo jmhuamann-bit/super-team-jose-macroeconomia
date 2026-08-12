@@ -1,0 +1,34 @@
+{
+  "id": "level5",
+  "distrito": "Lince",
+  "clase": "Clase 05",
+  "titulo": "La feria del método ingreso",
+  "tema": "feria",
+  "musica": "feria",
+  "vehiculo": "limosina",
+  "intro": "En la feria de Lince ya no se mide lo que se gasta, sino lo que se GANA. Salarios, alquileres, intereses y utilidades. Pero los bichos quieren colar sus utilidades retenidas, sus reventas y sus ventas sin boleta. Arma el Ingreso Nacional y súbete de vuelta hasta el PBI.",
+  "repaso": [
+    "YN por la 2da forma: intereses netos + salarios + alquileres + utilidades DISTRIBUIDAS. Las retenidas no entran.",
+    "YN por la 1era forma: YN = PNN − impuestos indirectos (IGV e ISC) + subsidios a la venta.",
+    "De vueltita, del ingreso al producto: PNN = YN + impuestos indirectos − subsidios · PNB = PNN + depreciación · PBI = PNB − PNF.",
+    "El método del GASTO usa C + I + G + X − M. El método del INGRESO usa los pagos a los factores. No los confundas.",
+    "Nunca entran: contrabando, ventas sin boleta, reventas, cosas usadas ni la venta de animales en peligro."
+  ],
+  "mapa": [
+    "                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                ",
+    "                o o o o                       o o o                                       o o o               o o o                       o o o                         o o o                   ",
+    "          ?                   o o       L                 o o     G                 o o                 V                   o o     1                   o o       L             ?               ",
+    "                ====                          ====                                        ====                ====                        ====                          ====                    ",
+    "                          o o      o                                  o o    o                  o o                    o        o o                          o                                  ",
+    "  P           E           C                 E         X         E     C                 E           X       E                   C       E           X                 E           B         M   ",
+    "##################################   #######################################   #######################################   ###################################   #################################",
+    "##################################   #######################################   #######################################   ###################################   #################################",
+    "##################################   #######################################   #######################################   ###################################   #################################"
+  ]
+}

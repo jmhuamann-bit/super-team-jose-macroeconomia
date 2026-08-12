@@ -1,0 +1,138 @@
+{
+  "nivel": "level5",
+  "clase": "Clase 05 · Medición del PBI por el método del ingreso",
+  "fuente": "Apuntes de la 5ta clase — Economía General II",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "m5-q1",
+      "nivel": "reconocimiento",
+      "enunciado": "MÉTODO DEL INGRESO, 2DA FORMA.\n\n¿Qué cuatro partidas se suman para armar el Ingreso Nacional?",
+      "opciones": [
+        "Consumo, inversión, gasto público y exportaciones netas",
+        "PBI, PNB, PNN y depreciación",
+        "Intereses netos + salarios a los trabajadores + alquileres + utilidades DISTRIBUIDAS",
+        "Impuestos indirectos, subsidios, transferencias y pensiones"
+      ],
+      "correcta": 2,
+      "explicacion": "El método del ingreso suma lo que ganan los factores de producción: el capital cobra intereses, el trabajo cobra salarios, la tierra y las viviendas cobran alquileres, y la empresa se queda con las utilidades. La primera opción es el método del GASTO, que es otro camino al mismo número."
+    },
+    {
+      "id": "m5-q2",
+      "nivel": "reconocimiento",
+      "enunciado": "MÉTODO DEL INGRESO, 1ERA FORMA. Si ya tienes el PNN, ¿cómo llegas al Ingreso Nacional?",
+      "opciones": [
+        "YN = PNN − impuestos indirectos (IGV e ISC) + subsidios a la venta",
+        "YN = PNN + impuestos indirectos − subsidios a la venta",
+        "YN = PNN + depreciación",
+        "YN = PNN − PNF"
+      ],
+      "correcta": 0,
+      "explicacion": "Los impuestos indirectos están metidos en el precio pero no son ingreso de ningún factor, así que se restan. Los subsidios son al revés: la empresa los recibe aunque no estén en el precio, así que se suman. Ojo que de vuelta (del YN al PNN) los signos se invierten."
+    },
+    {
+      "id": "m5-q3",
+      "nivel": "reconocimiento",
+      "enunciado": "¿Cuál de estas partidas SÍ entra en el Ingreso Nacional?",
+      "opciones": [
+        "La reventa de entradas al concierto de BTS",
+        "La venta de ropa sin boleta de por medio",
+        "Las utilidades RETENIDAS de las empresas",
+        "Los alquileres de viviendas y terrenos"
+      ],
+      "correcta": 3,
+      "explicacion": "Los alquileres son el pago al factor tierra o capital: entran de frente. La reventa no crea producción nueva, la venta sin boleta es informal y no se registra, y las utilidades retenidas se quedan en la empresa sin repartirse, así que no son ingreso de nadie todavía."
+    },
+    {
+      "id": "m5-q4",
+      "nivel": "comprension",
+      "enunciado": "TRAMPA DE REDACCIÓN. En un cuadro te aparece la partida «Utilidades NO retenidas: 1 000».\n\n¿Entra en el Ingreso Nacional?",
+      "opciones": [
+        "No, porque dice «utilidades» y esas nunca entran",
+        "SÍ: «no retenidas» significa DISTRIBUIDAS, y esas sí entran",
+        "No, porque falta saber el impuesto a la renta",
+        "Solo la mitad"
+      ],
+      "correcta": 1,
+      "explicacion": "Es puro juego de palabras. Si no se retuvieron, se repartieron: son las utilidades distribuidas de siempre. Las que se quedan en la empresa (retenidas) son las que no entran. Lee con calma la partida antes de descartarla."
+    },
+    {
+      "id": "m5-q5",
+      "nivel": "comprension",
+      "enunciado": "PREGUNTA DE PRÁCTICA 2024: «El método del GASTO para calcular el PBI toma en cuenta el pago al factor trabajo por la producción de bienes y servicios».",
+      "opciones": [
+        "Verdadero: el gasto incluye los sueldos",
+        "Verdadero, porque los sueldos van dentro del consumo",
+        "Incierto: depende de si el trabajador es público o privado",
+        "FALSO: el pago a los factores es el método del INGRESO; el del gasto usa C + I + G + X − M"
+      ],
+      "correcta": 3,
+      "explicacion": "Son dos caminos distintos hacia el mismo PBI. El del gasto mira quién compra la producción; el del ingreso mira quién cobra por haberla producido. Los sueldos son pago al factor trabajo, así que pertenecen al método del ingreso."
+    },
+    {
+      "id": "m5-q6",
+      "nivel": "comprension",
+      "enunciado": "«DE IDA Y DE VUELTITA». Ya tienes el Ingreso Nacional y quieres llegar al PBI.\n\n¿En qué orden subes?",
+      "opciones": [
+        "YN → PNN → PNB → PBI",
+        "YN → PBI → PNB → PNN",
+        "YN → PNB → PNN → PBI",
+        "Se llega directo: PBI = YN"
+      ],
+      "correcta": 0,
+      "explicacion": "Es la misma escalera del método del gasto, pero subiendo. Del YN sumas impuestos indirectos y restas subsidios para llegar al PNN; le sumas la depreciación y tienes el PNB; y al PNB le restas la renta neta de factores (PNF) para aterrizar en el PBI."
+    },
+    {
+      "id": "m5-q7",
+      "nivel": "aplicacion",
+      "enunciado": "Del cuadro: salarios del sector público 100 · salarios del sector privado 200 · interés neto 500 · alquileres 500 · utilidades distribuidas 1 000.\nAdemás: reventa de entradas 200 · celulares robados 400 · utilidades retenidas 100 · flores vendidas sin boleta 50.\n\n¿Cuál es el Ingreso Nacional?",
+      "opciones": [
+        "2 050",
+        "2 400",
+        "2 300",
+        "2 750"
+      ],
+      "correcta": 2,
+      "explicacion": "Los salarios se juntan (100 + 200 = 300) sin importar si son públicos o privados. YN = 500 de intereses + 300 de salarios + 500 de alquileres + 1 000 de utilidades distribuidas = 2 300. Todo lo demás es anzuelo: reventa, robo, informalidad y utilidades retenidas."
+    },
+    {
+      "id": "m5-q8",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 1/3 — Salarios 1 000 · alquileres de viviendas 2 000 · impuestos indirectos 500 · depreciación 200 · PNF 400.\n\nHalla el PBI por el método del ingreso.",
+      "opciones": [
+        "PBI = 3 700",
+        "PBI = 3 300",
+        "PBI = 3 000",
+        "PBI = 4 100"
+      ],
+      "correcta": 1,
+      "explicacion": "Primero el YN = 1 000 + 2 000 = 3 000. Luego PNN = 3 000 + 500 = 3 500 (no hay subsidios que restar). Después PNB = 3 500 + 200 = 3 700. Y por último PBI = PNB − PNF = 3 700 − 400 = 3 300. Cuidado con quedarse en el PNB."
+    },
+    {
+      "id": "m5-q9",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 2/3 — Salarios 500 · intereses netos 2 000 · alquileres de viviendas 3 000 · impuestos indirectos 700 · depreciación 400 · subsidios a la venta 100 · PNF 800.\n\nHalla el PBI.",
+      "opciones": [
+        "PBI = 6 500",
+        "PBI = 5 500",
+        "PBI = 6 100",
+        "PBI = 5 700"
+      ],
+      "correcta": 3,
+      "explicacion": "YN = 500 + 2 000 + 3 000 = 5 500. PNN = 5 500 + 700 − 100 = 6 100 (acá sí hay subsidio que restar). PNB = 6 100 + 400 = 6 500. PBI = 6 500 − 800 = 5 700. Las otras alternativas son justo los escalones intermedios: no te bajes antes de tiempo."
+    },
+    {
+      "id": "m5-q10",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 3/3 — Por la 1era forma: PNN 4 000 · IGV 400 · ISC 100 · subsidio a la venta 1 000.\nAdemás: contrabando 2 000 · venta de animales exóticos 400 · ropa sin boleta 3 000 · reventa BTS 200 · regalos usados 500.\n\n¿Cuál es el Ingreso Nacional?",
+      "opciones": [
+        "YN = 4 500",
+        "YN = 3 500",
+        "YN = 4 000",
+        "YN = 10 600"
+      ],
+      "correcta": 0,
+      "explicacion": "Los impuestos indirectos son el IGV más el ISC: 400 + 100 = 500. Entonces YN = 4 000 − 500 + 1 000 = 4 500. Ninguna de las otras partidas entra: el contrabando y los animales exóticos son ilegales, la ropa sin boleta es informal, la reventa y los regalos usados no generan producción nueva."
+    }
+  ]
+}

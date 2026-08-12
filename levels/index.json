@@ -1,6 +1,6 @@
 {
   "titulo": "Lima",
-  "descripcion": "Cada distrito es una clase de Economía General II. Los cuatro primeros están abiertos.",
+  "descripcion": "Cada distrito es una clase de Economía General II. Los cinco primeros están abiertos.",
   "niveles": [
     {
       "id": "level1",
@@ -54,8 +54,13 @@
       "id": "level5",
       "clase": "Clase 05",
       "distrito": "Lince",
+      "titulo": "La feria del método ingreso",
       "icono": "🎪",
-      "titulo": ""
+      "retos": 8,
+      "duracion": "3 min",
+      "abierto": true,
+      "mapa": "levels/level5.json",
+      "preguntas": "questions/level5_questions.json"
     },
     {
       "id": "level6",

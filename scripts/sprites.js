@@ -456,6 +456,74 @@ const MONUMENTO = [  // jefe de Jesús María: el monumento que se cuenta dos ve
 ];
 const P_MONUMENTO = { c: "#9db4c0", g: "#6b7683", k: "#2b3440", y: "#ffd166" };
 
+const GLOBO = [   // globo de la feria: se queda con las utilidades retenidas (12 × 12)
+  "....rrrr....",
+  "...rrrrrr...",
+  "..rrrrrrrr..",
+  "..rrrrwwrr..",
+  "..rrrrrrrr..",
+  "...rrrrrr...",
+  "....rrrr....",
+  ".....rr.....",
+  ".....kk.....",
+  "......k.....",
+  ".....k......",
+  "......k.....",
+];
+const P_GLOBO = { r: "#e0396b", w: "#ffd9e4", k: "#f2f6ff" };
+
+const DIANA = [   // tiro al blanco: revende las entradas de la feria (12 × 12)
+  "............",
+  "...rrrrrr...",
+  "..rwwwwwwr..",
+  ".rwwrrrrwwr.",
+  ".rwrrwwrrwr.",
+  ".rwrwkkwrwr.",
+  ".rwrwkkwrwr.",
+  ".rwrrwwrrwr.",
+  ".rwwrrrrwwr.",
+  "..rwwwwwwr..",
+  "...rrrrrr...",
+  "............",
+];
+const P_DIANA = { r: "#e0396b", w: "#f2f6ff", k: "#ffd166" };
+
+const ALGODON = [   // algodón de azúcar: vendido sin boleta de por medio (12 × 12)
+  "............",
+  "...ppppp....",
+  "..ppppppp...",
+  ".ppppppppp..",
+  ".ppppppppp..",
+  "..ppppppp...",
+  "...ppppp....",
+  "....www.....",
+  ".....w......",
+  ".....w......",
+  ".....w......",
+  "............",
+];
+const P_ALGODON = { p: "#f472b6", w: "#e8dcc0" };
+
+const PAYASO = [  // jefe de Lince: el payaso que se pierde de ida y de vuelta (20 × 16)
+  "...rr..........rr...",
+  "..rrrr........rrrr..",
+  "..rrrrr......rrrrr..",
+  "....ccccccccccc.....",
+  "...ccccccccccccc....",
+  "...cckkccccckkcc....",
+  "...ccccccccccccc....",
+  "...cccccrrrccccc....",
+  "...cckkkkkkkkkcc....",
+  "....ccccccccccc.....",
+  "......bbbbbbb.......",
+  ".....bbyyyyybb......",
+  "....bbbyyyyybbb.....",
+  "....bbbbbbbbbbb.....",
+  ".....bb.....bb......",
+  "....kkk.....kkk.....",
+];
+const P_PAYASO = { r: "#e0396b", c: "#f7e3d0", k: "#241a2e", b: "#5b8ff0", y: "#ffd166" };
+
 const ITEM_CEVICHE = [   // plato de ceviche: una vida más
   "............",
   "....gg......",
@@ -642,6 +710,10 @@ const DEFINICIONES = {
   banca:        [BANCA, P_BANCA],
   ardilla:      [ARDILLA, P_ARDILLA],
   monumento:    [MONUMENTO, P_MONUMENTO],
+  globo:        [GLOBO, P_GLOBO],
+  diana:        [DIANA, P_DIANA],
+  algodon:      [ALGODON, P_ALGODON],
+  payaso:       [PAYASO, P_PAYASO],
 };
 
 const cocidos = {};   // nombre -> { canvas, ancho, alto } (ya escalados)

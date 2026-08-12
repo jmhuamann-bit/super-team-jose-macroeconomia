@@ -167,6 +167,9 @@ const FICHAS = [
   { sprite: "flor", nombre: "La Flor Informal", texto: "Vende sin boleta y jura que igual entra al PBI." },
   { sprite: "ardilla", nombre: "La Ardilla Acaparadora", texto: "Guarda la producción del año pasado para contarla este año." },
   { sprite: "monumento", nombre: "El Monumento al Doble Conteo", texto: "Jefe de Jesús María: suma el insumo y el producto final." },
+  { sprite: "globo", nombre: "El Globo Retenido", texto: "Mete las utilidades retenidas en el Ingreso Nacional." },
+  { sprite: "diana", nombre: "La Diana de la Reventa", texto: "Revende entradas y jura que eso es producción." },
+  { sprite: "payaso", nombre: "El Payaso de Ida y Vuelta", texto: "Jefe de Lince: se pierde entre el método del gasto y el del ingreso." },
 ];
 
 export function galeriaPersonajes(contenedor) {
