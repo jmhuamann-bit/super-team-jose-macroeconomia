@@ -1,0 +1,138 @@
+{
+  "nivel": "level6",
+  "clase": "Clase 06 · IPC e inflación",
+  "fuente": "Apuntes de la 6ta clase — Economía General II",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "m6-q1",
+      "nivel": "reconocimiento",
+      "enunciado": "¿QUÉ ES EL IPC y qué relación tiene con la inflación?",
+      "opciones": [
+        "Es el PBI dividido entre la población",
+        "Es el precio de un solo producto representativo",
+        "Le pone precio a la CANASTA FAMILIAR; su VARIACIÓN es la inflación",
+        "Es la cantidad de dinero que circula en la economía"
+      ],
+      "correcta": 2,
+      "explicacion": "El IPC toma la canasta de bienes que consumen las familias y la valoriza año a año. El número solito no dice mucho: lo que interesa es cuánto CAMBIÓ de un periodo a otro, y ese cambio porcentual es justamente la inflación."
+    },
+    {
+      "id": "m6-q2",
+      "nivel": "reconocimiento",
+      "enunciado": "LA FÓRMULA DE LA INFLACIÓN.\n\n¿Cómo se calcula la tasa de inflación entre dos periodos?",
+      "opciones": [
+        "π = (IPC final / IPC inicial − 1) × 100 %",
+        "π = (IPC final − IPC inicial) × 100 %",
+        "π = (IPC inicial / IPC final) × 100 %",
+        "π = IPC final × 100 %"
+      ],
+      "correcta": 0,
+      "explicacion": "Es la variación porcentual de siempre: la diferencia dividida entre el valor inicial. Da lo mismo escribirla como (IPCf − IPCi)/IPCi o como (IPCf/IPCi − 1); las dos formas son la misma cuenta. Ojo que hay que DIVIDIR entre el inicial, no solo restar."
+    },
+    {
+      "id": "m6-q3",
+      "nivel": "reconocimiento",
+      "enunciado": "«PICO POCO» y «PIQUIPOQUI».\n\n¿Qué diferencia a Laspeyres de Paasche?",
+      "opciones": [
+        "Laspeyres usa precios y Paasche usa cantidades",
+        "Los dos usan las cantidades del año actual",
+        "Laspeyres solo sirve para el PBI y Paasche solo para el IPC",
+        "LASPEYRES usa las cantidades del AÑO BASE; PAASCHE usa las del AÑO ACTUAL"
+      ],
+      "correcta": 3,
+      "explicacion": "Los dos comparan precios; lo que cambia es qué canasta de cantidades usan para pesarlos. PICO sobre POCO: precio actual por cantidad base, entre precio base por cantidad base. PIQUI sobre POQUI: precio actual por cantidad actual, entre precio base por cantidad actual."
+    },
+    {
+      "id": "m6-q4",
+      "nivel": "comprension",
+      "enunciado": "PREGUNTA DE EXAMEN 2017-I. Las tasas de inflación de enero, febrero y marzo fueron 5 %, 3,5 % y 2 %.\n\nLucía dice que eso demuestra que los precios están BAJANDO. ¿Tiene razón?",
+      "opciones": [
+        "Sí: la inflación baja, así que los precios bajan",
+        "NO: la inflación sigue siendo POSITIVA, así que los precios siguen subiendo, solo que más despacio",
+        "Sí, pero solo en marzo",
+        "No se puede saber sin el IPC del año base"
+      ],
+      "correcta": 1,
+      "explicacion": "Este es el error más repetido del curso. Mientras la tasa sea positiva, cada mes los precios están MÁS ALTOS que el mes anterior. Que la tasa caiga de 5 a 2 solo significa que suben con menos fuerza. Para que los precios de verdad bajen, la inflación tendría que ser NEGATIVA, y eso se llama deflación."
+    },
+    {
+      "id": "m6-q5",
+      "nivel": "comprension",
+      "enunciado": "LA INFLACIÓN SUBYACENTE.\n\n¿Qué excluye y para qué sirve?",
+      "opciones": [
+        "Excluye los bienes importados, para medir solo lo nacional",
+        "Excluye los impuestos, para medir el precio puro",
+        "No excluye nada: es la inflación total",
+        "EXCLUYE alimentos y energía por ser los más volátiles, y por eso es la que sirve al gobierno para tomar medidas"
+      ],
+      "correcta": 3,
+      "explicacion": "Los alimentos y la energía brincan por sequías, heladas o el precio del petróleo, cosas pasajeras que no dicen nada sobre la tendencia de fondo. Al sacarlos queda una señal más limpia, y sobre esa señal se decide la política monetaria."
+    },
+    {
+      "id": "m6-q6",
+      "nivel": "comprension",
+      "enunciado": "Llega el Fenómeno del Niño y se disparan los precios de los alimentos.\n\n¿Cuál de las dos inflaciones capta ese golpe?",
+      "opciones": [
+        "La NO SUBYACENTE, porque es la que sí incluye alimentos y energía",
+        "La subyacente, porque mide los shocks",
+        "Ninguna: los desastres naturales no entran al IPC",
+        "Las dos por igual"
+      ],
+      "correcta": 0,
+      "explicacion": "Es el espejo de la pregunta anterior. Justo lo que la subyacente deja fuera es lo que la no subyacente recoge. Por eso, ante un desastre natural, conviene mirar la subyacente para no confundir una perturbación transitoria con un cambio de tendencia."
+    },
+    {
+      "id": "m6-q7",
+      "nivel": "aplicacion",
+      "enunciado": "El IPC del 2010 fue 210 y el del 2024 fue 230.\n\n¿Cuál fue la inflación acumulada entre esos dos años?",
+      "opciones": [
+        "20 %",
+        "8,70 %",
+        "9,52 %",
+        "109,52 %"
+      ],
+      "correcta": 2,
+      "explicacion": "π = (230 − 210) / 210 × 100 = 20/210 × 100 = 9,52 %. Cuidado con dos trampas: el 20 es la diferencia absoluta, no la tasa; y si divides entre 230 en vez de 210 te sale 8,70 %, porque estarías usando el año final como base."
+    },
+    {
+      "id": "m6-q8",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 1/3 — LASPEYRES con año base 2015.\n\n2015: Pan P=5 Q=72 · Pollo P=9 Q=60 · Pescado P=5 Q=100\n2016: Pan P=10 · Pollo P=8 · Pescado P=4\n\n¿Cuál es el IPC de 2016?",
+      "opciones": [
+        "100,00",
+        "114,29",
+        "87,50",
+        "126,83"
+      ],
+      "correcta": 1,
+      "explicacion": "Laspeyres pesa con las cantidades del año BASE en los dos lados. Abajo: 5(72) + 9(60) + 5(100) = 360 + 540 + 500 = 1 400. Arriba, precios de 2016 con esas mismas cantidades: 10(72) + 8(60) + 4(100) = 720 + 480 + 400 = 1 600. IPC = 1 600/1 400 × 100 = 114,29. La inflación 2015-2016 fue entonces 14,29 %."
+    },
+    {
+      "id": "m6-q9",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 2/3 — PAASCHE con año base 2015.\n\n2015: Agropecuario P=5 · Minería P=9 · Pesca P=5\n2016: Agropecuario P=10 Q=100 · Minería P=8 Q=40 · Pesca P=4 Q=150\n\n¿Cuál es el IPC de 2016?",
+      "opciones": [
+        "126,83",
+        "100,00",
+        "83,85",
+        "119,25"
+      ],
+      "correcta": 3,
+      "explicacion": "Paasche pesa con las cantidades del año ACTUAL en los dos lados. Arriba: 10(100) + 8(40) + 4(150) = 1 000 + 320 + 600 = 1 920. Abajo, precios de 2015 con las cantidades de 2016: 5(100) + 9(40) + 5(150) = 500 + 360 + 750 = 1 610. IPC = 1 920/1 610 × 100 = 119,25. Con Laspeyres el mismo cuadro daba 126,83: por eso los dos métodos casi nunca coinciden."
+    },
+    {
+      "id": "m6-q10",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 3/3 — ¿Qué relación hay entre la inflación subyacente y la NO subyacente?",
+      "opciones": [
+        "Son componentes SEPARADOS: subyacente + no subyacente = inflación TOTAL",
+        "La subyacente está contenida dentro de la no subyacente",
+        "La no subyacente está contenida dentro de la subyacente",
+        "Son dos nombres para lo mismo"
+      ],
+      "correcta": 0,
+      "explicacion": "No es que una esté metida dentro de la otra: la canasta se parte en dos pedazos que no se pisan. Un pedazo son los alimentos y la energía (no subyacente) y el resto es la subyacente. Sumadas dan la inflación total. Además, hay dos maneras de clasificar: por su CÁLCULO (Laspeyres o Paasche) y por su VOLATILIDAD (subyacente o no)."
+    }
+  ]
+}

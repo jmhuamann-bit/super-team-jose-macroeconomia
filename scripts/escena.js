@@ -170,6 +170,9 @@ const FICHAS = [
   { sprite: "globo", nombre: "El Globo Retenido", texto: "Mete las utilidades retenidas en el Ingreso Nacional." },
   { sprite: "diana", nombre: "La Diana de la Reventa", texto: "Revende entradas y jura que eso es producción." },
   { sprite: "payaso", nombre: "El Payaso de Ida y Vuelta", texto: "Jefe de Lince: se pierde entre el método del gasto y el del ingreso." },
+  { sprite: "maletin", nombre: "El Maletín del Año Base", texto: "Calcula el IPC y se le olvida cuál era el año base." },
+  { sprite: "corbata", nombre: "La Corbata Desinflada", texto: "Cree que si la inflación baja, los precios bajan." },
+  { sprite: "ejecutivo", nombre: "El Ejecutivo de Laspeyres", texto: "Jefe de San Isidro: mezcla las cantidades del año base con las del actual." },
 ];
 
 export function galeriaPersonajes(contenedor) {

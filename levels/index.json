@@ -1,6 +1,6 @@
 {
   "titulo": "Lima",
-  "descripcion": "Cada distrito es una clase de Economía General II. Los cinco primeros están abiertos.",
+  "descripcion": "Cada distrito es una clase de Economía General II. Los seis primeros están abiertos.",
   "niveles": [
     {
       "id": "level1",
@@ -66,8 +66,13 @@
       "id": "level6",
       "clase": "Clase 06",
       "distrito": "San Isidro",
+      "titulo": "Las torres del IPC",
       "icono": "🏢",
-      "titulo": ""
+      "retos": 8,
+      "duracion": "3 min",
+      "abierto": true,
+      "mapa": "levels/level6.json",
+      "preguntas": "questions/level6_questions.json"
     },
     {
       "id": "level7",
