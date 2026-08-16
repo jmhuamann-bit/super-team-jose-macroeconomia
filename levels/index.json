@@ -1,6 +1,6 @@
 {
   "titulo": "Lima",
-  "descripcion": "Cada distrito es una clase de Economía General II. Los seis primeros están abiertos.",
+  "descripcion": "Cada distrito es una clase de Economía General II. Los siete están abiertos.",
   "niveles": [
     {
       "id": "level1",
@@ -78,8 +78,13 @@
       "id": "level7",
       "clase": "Clase 07",
       "distrito": "Miraflores",
+      "titulo": "El acantilado de las canastas",
       "icono": "🪂",
-      "titulo": ""
+      "retos": 8,
+      "duracion": "3 min",
+      "abierto": true,
+      "mapa": "levels/level7.json",
+      "preguntas": "questions/level7_questions.json"
     }
   ]
 }

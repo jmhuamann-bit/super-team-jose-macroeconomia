@@ -1,0 +1,35 @@
+{
+  "id": "level7",
+  "distrito": "Miraflores",
+  "clase": "Clase 07",
+  "titulo": "El acantilado de las canastas",
+  "tema": "acantilado",
+  "musica": "acantilado",
+  "vehiculo": "limosina",
+  "intro": "Último distrito. Ya sabes calcular un IPC; ahora te van a dar una tabla con productos que no deberían entrar, consumidores que se cambian de marca y años salteados. Los bichos del malecón meten las exportaciones en la canasta y multiplican la inflación promedio por los años. Limpia la tabla y saca el índice bien.",
+  "repaso": [
+    "Antes de calcular: saca de la canasta de consumo lo que se EXPORTA, y distingue si lo producido en el país es de consumo o no (una máquina no lo es).",
+    "LASPEYRES pesa con las cantidades del AÑO BASE. PAASCHE, con las del AÑO CORRIENTE.",
+    "En el año base el IPC vale 100. Es un regalo: úsalo.",
+    "Inflación entre dos años: (IPC final / IPC inicial − 1) × 100 %.",
+    "Inflación PROMEDIO ANUAL: (raíz n-ésima de IPC final entre IPC inicial, menos 1) × 100 %, con n = número de periodos.",
+    "El IPC crece de forma COMPUESTA, no simple: nunca multipliques la inflación promedio anual por el número de años."
+  ],
+  "mapa": [
+    "                                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                                ",
+    "                  o o o                       o o o                                           o o o                         o o o             o o                         o o o                   o o           ",
+    "          ?             o o             L                 o o       G                   o o               V         o o           1                     o o         L                     ?             1       ",
+    "                  ====                        ====                                            ====                          ====              ====                        ====                    ====          ",
+    "                            o o    o                                     o          o o                        oo                     o o          o                               o                            ",
+    "  P             E           C               E           X       E                   C       E         X                   E           C     E                 X         E                     B             M   ",
+    "##################################   ###################################   ###################################    ################################   #############################   ###########################",
+    "##################################   ###################################   ###################################    ################################   #############################   ###########################",
+    "##################################   ###################################   ###################################    ################################   #############################   ###########################"
+  ]
+}

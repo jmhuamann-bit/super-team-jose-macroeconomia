@@ -173,6 +173,9 @@ const FICHAS = [
   { sprite: "maletin", nombre: "El Maletín del Año Base", texto: "Calcula el IPC y se le olvida cuál era el año base." },
   { sprite: "corbata", nombre: "La Corbata Desinflada", texto: "Cree que si la inflación baja, los precios bajan." },
   { sprite: "ejecutivo", nombre: "El Ejecutivo de Laspeyres", texto: "Jefe de San Isidro: mezcla las cantidades del año base con las del actual." },
+  { sprite: "parapente", nombre: "El Parapente Exportado", texto: "Mete en la canasta de consumo lo que se va al extranjero." },
+  { sprite: "tabla", nombre: "La Tabla Sustituta", texto: "No se entera de que el consumidor ya se cambió de producto." },
+  { sprite: "gato", nombre: "El Gato de las Canastas", texto: "Jefe de Miraflores: multiplica la inflación promedio por los años." },
 ];
 
 export function galeriaPersonajes(contenedor) {

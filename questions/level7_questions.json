@@ -1,0 +1,138 @@
+{
+  "nivel": "level7",
+  "clase": "Clase 07 · Medición de la inflación (ejercicios avanzados)",
+  "fuente": "Apuntes de la 7ma clase — Economía General II (modelo 01)",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "m7-q1",
+      "nivel": "reconocimiento",
+      "enunciado": "PRIMER PASO DE LA RECETITA. En la tabla aparece «Dulces explosivos PARA EXPORTAR».\n\n¿Entran a la canasta de consumo para calcular el IPC?",
+      "opciones": [
+        "Sí, porque igual se producen en el país",
+        "Sí, pero solo la mitad",
+        "NO: lo que se exporta sale de la canasta de consumo, porque no lo consumen las familias del país",
+        "Depende del año base"
+      ],
+      "correcta": 2,
+      "explicacion": "El IPC mide lo que gasta la familia local. Un bien que se va al extranjero no está en su canasta, así que se saca antes de calcular. Este filtro es el primer paso de la recetita y hay que hacerlo ANTES de multiplicar nada: si lo dejas para el final, ya contaminaste el índice."
+    },
+    {
+      "id": "m7-q2",
+      "nivel": "reconocimiento",
+      "enunciado": "En la misma tabla hay «Máquinas arregla varitas», producidas en el país.\n\n¿Entran a la canasta del IPC?",
+      "opciones": [
+        "NO: son bienes que las familias no consumen; el IPC solo toma bienes DE CONSUMO",
+        "Sí, todo lo producido en el país entra",
+        "Sí, pero solo en el año base",
+        "Solo si se exportan"
+      ],
+      "correcta": 0,
+      "explicacion": "El tercer filtro de la recetita: entre lo que se produce en el país hay que separar lo que es de consumo familiar de lo que no. Una máquina es un bien de capital, no va en la canasta del hogar. Que se produzca localmente no basta para que entre."
+    },
+    {
+      "id": "m7-q3",
+      "nivel": "reconocimiento",
+      "enunciado": "SACA PROVECHO.\n\n¿Cuánto vale el IPC en el AÑO BASE?",
+      "opciones": [
+        "Depende de los precios de ese año",
+        "Vale 0",
+        "Vale 1",
+        "Vale 100, siempre"
+      ],
+      "correcta": 3,
+      "explicacion": "Por construcción, en el año base el numerador y el denominador son la misma canasta a los mismos precios, así que la división da 1 y por 100 queda 100. Es un dato gratis: si te piden la inflación desde el año base, ya tienes el IPC inicial sin calcular nada."
+    },
+    {
+      "id": "m7-q4",
+      "nivel": "comprension",
+      "enunciado": "LA DESVENTAJA DE LASPEYRES.\n\n¿Cuál es su problema principal para estimar el costo de vida?",
+      "opciones": [
+        "Que usa precios viejos",
+        "Que NO CONSIDERA LA SUSTITUCIÓN: sigue pesando con la canasta vieja aunque el consumidor ya se haya cambiado de producto",
+        "Que necesita conocer las cantidades del año actual",
+        "Que solo sirve si hay un único producto"
+      ],
+      "correcta": 1,
+      "explicacion": "Laspeyres congela las cantidades del año base. Si sube el precio de las ranas de chocolate y la gente se pasa a las grageas, el índice sigue comprando ranas como si nada, y por eso exagera cuánto subió el costo de vida real."
+    },
+    {
+      "id": "m7-q5",
+      "nivel": "comprension",
+      "enunciado": "LA DESVENTAJA DE PAASCHE.\n\n¿Qué es lo que él no capta?",
+      "opciones": [
+        "Los precios del año base",
+        "El número de productos de la canasta",
+        "Nada: Paasche no tiene desventajas",
+        "El COSTO de sustitución: la incomodidad de tener que cambiarse de producto, o sea «infelicidad monetizada»"
+      ],
+      "correcta": 3,
+      "explicacion": "Paasche sí ve que el consumidor se cambió, porque usa las cantidades actuales. Lo que no ve es que cambiarse cuesta algo: si tú preferías las ranas y terminaste comiendo grageas, estás peor aunque gastes lo mismo. Ese malestar no aparece en el índice."
+    },
+    {
+      "id": "m7-q6",
+      "nivel": "comprension",
+      "enunciado": "EL ERROR DEL CRECIMIENTO SIMPLE. Sabes que la inflación promedio anual es 4,45 % y quieres la acumulada de 6 años.\n\n¿Puedes multiplicar 4,45 × 6?",
+      "opciones": [
+        "NO: el IPC crece de forma COMPUESTA, así que hay que elevar (1 + π) a la n, no multiplicar",
+        "Sí, 26,71 % es la respuesta",
+        "Sí, pero hay que restarle 1 al final",
+        "Solo se puede si son menos de 5 años"
+      ],
+      "correcta": 0,
+      "explicacion": "Es igual que el interés compuesto: cada año la inflación se aplica sobre lo que ya subió antes. Multiplicando saldría 26,71 %, pero lo correcto es 1,0445 elevado a 6, que da 1,2986, o sea 29,86 % acumulado. La diferencia crece mientras más años pasen."
+    },
+    {
+      "id": "m7-q7",
+      "nivel": "aplicacion",
+      "enunciado": "HOGWARTS, base 2010. Cantidades y precios del 2010:\nProfeta 20 a S/ 10 · Cerveza de mantequilla 25 a S/ 6 · Ranas de chocolate 3 a S/ 5\n\n¿Cuánto vale la canasta base, que será el denominador de Laspeyres?",
+      "opciones": [
+        "48",
+        "349",
+        "365",
+        "100"
+      ],
+      "correcta": 2,
+      "explicacion": "Se multiplica cantidad por precio en cada fila y se suma: 20(10) + 25(6) + 3(5) = 200 + 150 + 15 = 365. Las grageas no suman nada en 2010 porque ese año no se consumían. Ese 365 es el denominador de TODOS los años cuando calculas Laspeyres."
+    },
+    {
+      "id": "m7-q8",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 1/3 — LASPEYRES de Hogwarts. Con la canasta base de 365 y los precios del 2016 (Profeta 15, cerveza 6, ranas 8), el numerador es 474.\n\n¿Cuál es el IPC de 2016 y la inflación acumulada desde el año base?",
+      "opciones": [
+        "IPC = 474 e inflación 474 %",
+        "IPC = 129,86 e inflación 29,86 %",
+        "IPC = 129,86 e inflación 129,86 %",
+        "IPC = 77,00 e inflación −23 %"
+      ],
+      "correcta": 1,
+      "explicacion": "IPC = 474/365 × 100 = 129,86. Y como en el año base el IPC vale 100, la inflación acumulada sale directo: 129,86 − 100 = 29,86 %. Ojo con confundir el índice con la tasa: el 129,86 es el nivel, el 29,86 % es cuánto subió."
+    },
+    {
+      "id": "m7-q9",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 2/3 — PAASCHE de Hogwarts para 2016. Las cantidades de ese año son: Profeta 20, cerveza 15, grageas 3 (ya nadie compra ranas).\n\nCon precios 2016 arriba y precios 2010 abajo, ¿cuál es el IPC?",
+      "opciones": [
+        "129,86",
+        "101,72",
+        "296,00",
+        "135,81"
+      ],
+      "correcta": 3,
+      "explicacion": "Arriba, precios de 2016 con cantidades de 2016: 20(15) + 15(6) + 3(4) = 300 + 90 + 12 = 402. Abajo, precios de 2010 con esas mismas cantidades: 20(10) + 15(6) + 3(2) = 200 + 90 + 6 = 296. IPC = 402/296 × 100 = 135,81. Fíjate que las ranas desaparecen de los dos lados y las grageas aparecen en los dos: eso es captar la sustitución."
+    },
+    {
+      "id": "m7-q10",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 3/3 — INFLACIÓN PROMEDIO ANUAL. El IPC de Laspeyres pasó de 100 en 2010 a 129,86 en 2016.\n\n¿Cuál es la inflación promedio anual de ese periodo?",
+      "opciones": [
+        "4,45 %",
+        "29,86 %",
+        "4,98 %",
+        "6,00 %"
+      ],
+      "correcta": 0,
+      "explicacion": "Son 6 periodos, así que se saca la raíz sexta: (⁶√(129,86/100) − 1) × 100 = (1,0445 − 1) × 100 = 4,45 %. Compruébalo al revés: 1,0445 elevado a 6 devuelve 1,2986. El 29,86 % es la acumulada de los seis años juntos, no la de cada año."
+    }
+  ]
+}
