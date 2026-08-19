@@ -176,6 +176,9 @@ const FICHAS = [
   { sprite: "parapente", nombre: "El Parapente Exportado", texto: "Mete en la canasta de consumo lo que se va al extranjero." },
   { sprite: "tabla", nombre: "La Tabla Sustituta", texto: "No se entera de que el consumidor ya se cambió de producto." },
   { sprite: "gato", nombre: "El Gato de las Canastas", texto: "Jefe de Miraflores: multiplica la inflación promedio por los años." },
+  { sprite: "guitarra", nombre: "La Guitarra Nominal", texto: "Celebra que el PBI subió sin fijarse en que solo subieron los precios." },
+  { sprite: "aerosol", nombre: "El Aerosol Deflactado", texto: "Pinta el deflactor donde va el IPC, como si midieran la misma canasta." },
+  { sprite: "bohemio", nombre: "El Bohemio de los Índices", texto: "Jefe de Barranco: no distingue a Laspeyres de Paasche ni del deflactor." },
 ];
 
 export function galeriaPersonajes(contenedor) {

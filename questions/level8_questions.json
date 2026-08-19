@@ -1,0 +1,138 @@
+{
+  "nivel": "level8",
+  "clase": "Clase 08 · Deflactor, PBI, IPC e inflación (comentes)",
+  "fuente": "Apuntes de la 8va clase — Economía General II",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "m8-q1",
+      "nivel": "reconocimiento",
+      "enunciado": "LAS DOS FORMAS DE CALCULAR EL PBI.\n\n¿Cuál es la diferencia entre el PBI nominal y el PBI real?",
+      "opciones": [
+        "El nominal usa precios corrientes (del propio año) y el real usa precios constantes del año base con las cantidades del año que miras",
+        "El nominal usa cantidades del año base y el real las del año actual",
+        "El real solo cuenta los bienes de consumo y el nominal cuenta todo",
+        "Son lo mismo, cambia solo el nombre"
+      ],
+      "correcta": 0,
+      "explicacion": "La clave está en qué se deja moverse. En el nominal se mueven las dos cosas, precio y cantidad. En el real el precio queda congelado en el del año base, así que lo único que puede hacerlo subir es que se produzca MÁS. Por eso el real es el que sirve para hablar de producción."
+    },
+    {
+      "id": "m8-q2",
+      "nivel": "reconocimiento",
+      "enunciado": "EL DEFLACTOR.\n\n¿Cómo se calcula y a qué índice de precios se parece?",
+      "opciones": [
+        "PBI real / PBI nominal × 100, y es un Laspeyres",
+        "PBI nominal − PBI real, y no se parece a ninguno",
+        "PBI nominal / PBI real, sin multiplicar por 100, y es un Laspeyres",
+        "PBI nominal / PBI real × 100, y es un índice por método PAASCHE"
+      ],
+      "correcta": 3,
+      "explicacion": "Si escribes el deflactor en crudo queda P1Q1 arriba y P0Q1 abajo: las cantidades son las del año actual en los dos pisos, que es exactamente la receta de Paasche («piqi, poqi»). Ojo con el orden de la división: nominal arriba, real abajo. Al revés te saldría el índice invertido."
+    },
+    {
+      "id": "m8-q3",
+      "nivel": "reconocimiento",
+      "enunciado": "LA PREGUNTA MÁS IMPORTANTE DE LA CLASE.\n\n¿Con cuál de los dos PBI se debe medir la tasa de crecimiento de un país?",
+      "opciones": [
+        "Con el nominal, porque incluye los precios de mercado",
+        "Con el promedio de los dos",
+        "Con el REAL, porque el nominal se ensucia con los cambios de precios de cada periodo",
+        "Da igual, siempre dan lo mismo"
+      ],
+      "correcta": 2,
+      "explicacion": "Crecer significa PRODUCIR más, no cobrar más caro. Si usas el nominal, un país donde todo subió de precio y no se produjo ni una unidad extra aparecería «creciendo». El real congela los precios justamente para que el número refleje solo la cantidad. La excepción es cuando te piden explícitamente el crecimiento NOMINAL."
+    },
+    {
+      "id": "m8-q4",
+      "nivel": "comprension",
+      "enunciado": "CHINALANDIA. Producción de 2020: Laptops 10 a S/ 2 000 · Refrigeradoras 4 a S/ 1 000 · Pan 1 000 a S/ 1.\nEn 2022: Laptops 12 a S/ 3 000 · Refrigeradoras 6 a S/ 500 · Pan 1 000 a S/ 1.\n\n¿Cuál es el PBI nominal de cada año y su variación?",
+      "opciones": [
+        "25 000 y 31 000, con un crecimiento de 24 %",
+        "25 000 y 40 000, con un crecimiento de 60 %",
+        "40 000 y 25 000, con una caída de 37,5 %",
+        "33 000 y 40 000, con un crecimiento de 21,21 %"
+      ],
+      "correcta": 1,
+      "explicacion": "El nominal usa los precios del propio año: 2020 da 10(2 000) + 4(1 000) + 1 000(1) = 25 000, y 2022 da 12(3 000) + 6(500) + 1 000(1) = 40 000. La variación es (40 000 − 25 000)/25 000 = 60 %. Cuidado: ese 60 % no es crecimiento del país, porque adentro están mezclados el aumento de producción y el de precios."
+    },
+    {
+      "id": "m8-q5",
+      "nivel": "comprension",
+      "enunciado": "CHINALANDIA, con AÑO BASE 2020.\n\n¿Cuál es el PBI real de 2022 y cuál es la tasa de crecimiento de verdad?",
+      "opciones": [
+        "40 000 y 60 %",
+        "33 000 y 21,21 %",
+        "25 000 y 0 %",
+        "31 000 y 24 %"
+      ],
+      "correcta": 3,
+      "explicacion": "Congelas los precios de 2020 y les pones las cantidades de 2022: 12(2 000) + 6(1 000) + 1 000(1) = 31 000. El real de 2020 es 25 000, igual que su nominal porque es el año base. La tasa sale (31 000 − 25 000)/25 000 = 24 %. Compara con el 60 % nominal: casi dos tercios de aquel número eran solo precios."
+    },
+    {
+      "id": "m8-q6",
+      "nivel": "comprension",
+      "enunciado": "COMENTE. El INEI informa que la inflación anual pasó de 8,99 % a 8,67 %. Camila dice: «Como la inflación bajó, los precios están bajando».\n\n¿Tiene razón?",
+      "opciones": [
+        "NO. La inflación sigue siendo positiva, así que los precios SIGUEN SUBIENDO, solo que más lento. Eso es desinflación, no deflación",
+        "Sí, una inflación menor significa precios menores",
+        "Sí, pero solo para los bienes de la canasta familiar",
+        "No se puede saber sin conocer el año base"
+      ],
+      "correcta": 0,
+      "explicacion": "Es el error más común de todos. La inflación es la VELOCIDAD a la que suben los precios, no el nivel. Si el IPC parte de 100 y sube 8,99 %, queda en 108,99; si al año siguiente sube 8,67 %, queda en 118,44. Subió las dos veces. Para que los precios bajen de verdad harías falta una inflación NEGATIVA, que es la deflación."
+    },
+    {
+      "id": "m8-q7",
+      "nivel": "aplicacion",
+      "enunciado": "CHINALANDIA, parte final. Con año base 2020 sabes que el PBI nominal de 2022 es 40 000 y el real es 31 000.\n\n¿Cuál es el deflactor de 2022 y la variación de precios desde el año base?",
+      "opciones": [
+        "Deflactor 77,5 y una caída de precios de 22,5 %",
+        "Deflactor 129,03 y una inflación de 129,03 %",
+        "Deflactor 129,03 y una inflación de 29,03 %",
+        "Deflactor 160 y una inflación de 60 %"
+      ],
+      "correcta": 2,
+      "explicacion": "Deflactor = 40 000 / 31 000 × 100 = 129,03. Como en el año base vale 100, la inflación acumulada sale directo: 129,03 − 100 = 29,03 %. No confundas el nivel con la tasa. Y fíjate en la comprobación bonita: (1 + 0,24)(1 + 0,2903) = 1,60, o sea el 60 % nominal. El crecimiento nominal es la producción real por los precios."
+    },
+    {
+      "id": "m8-q8",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 1/3 — COMENTE DE EXAMEN. En Folklore la inflación por DEFLACTOR fue 13,0 % y por IPC solo 1,3 %. Ese año subieron muchísimo las bufandas rojas, un bien que NO se consume en el país y que es el 89 % de la canasta exportadora.\n\n¿Por qué se abren tanto las dos cifras?",
+      "opciones": [
+        "Porque el IPC está mal calculado ese año",
+        "Porque el deflactor mide TODO lo producido en el país, exportaciones incluidas, y el IPC solo la canasta de consumo de las familias, de donde lo exportado queda fuera",
+        "Porque el deflactor usa Laspeyres y el IPC usa Paasche",
+        "Porque las bufandas son un bien importado y por eso solo entran al deflactor"
+      ],
+      "correcta": 1,
+      "explicacion": "Las bufandas se PRODUCEN en Folklore, así que entran al PBI y arrastran al deflactor. Pero como se van al extranjero, ninguna familia del país las compra y no están en la canasta del IPC. Por eso un shock en un bien exportador dispara un índice y deja al otro casi quieto. Ojo con la última alternativa: dice importado, y es al revés."
+    },
+    {
+      "id": "m8-q9",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 2/3 — COMENTE. Joe dice que Laspeyres SIEMPRE subdimensiona la inflación. Travis le responde que el equivocado es él, porque quien sobreestima es Paasche.\n\n¿Quién está en lo correcto?",
+      "opciones": [
+        "Ninguno de los dos: es al revés, LASPEYRES sobreestima la inflación y PAASCHE la subestima",
+        "Joe, porque Laspeyres siempre subdimensiona",
+        "Travis, porque Paasche sobreestima",
+        "Los dos, depende del año base"
+      ],
+      "correcta": 0,
+      "explicacion": "Laspeyres se queda con la canasta vieja: si el precio de algo se dispara y la gente se cambia de producto, el índice sigue comprando lo caro como si nada y por eso EXAGERA cuánto subió el costo de vida. Paasche usa la canasta actual, así que sí ve el cambio, pero no cobra lo que costó tener que cambiarse, y por eso se queda corto. Ninguno de los dos es perfecto."
+    },
+    {
+      "id": "m8-q10",
+      "nivel": "comprension",
+      "enunciado": "JEFE 3/3 — COMENTE. Carlos le dice a Daviana: «el índice de precios calculado por el método de Paasche SIEMPRE va a ser igual que el deflactor del PBI». Su JP le responde solo con un «¿Segura, Daviana?».\n\n¿Tiene razón Carlos?",
+      "opciones": [
+        "Sí, comparten la misma fórmula, así que dan lo mismo",
+        "Sí, pero solo en el año base",
+        "No, porque el deflactor es un Laspeyres y no un Paasche",
+        "NO: comparten la fórmula pero se aplican a canastas DISTINTAS. El IPC mide la canasta de consumo familiar y el deflactor toda la producción interna"
+      ],
+      "correcta": 3,
+      "explicacion": "La fórmula es idéntica, P1Q1 sobre P0Q1, y por eso confunde. Pero un índice no es solo su fórmula: también es SOBRE QUÉ se aplica. El IPC toma lo que compran los hogares, incluidas las importaciones; el deflactor toma lo que se produce dentro del país, incluidas las exportaciones. Coincidirían solo en un país de fantasía, sin exportaciones, sin importaciones, sin inversión, y donde todo lo producido fuera de consumo."
+    }
+  ]
+}

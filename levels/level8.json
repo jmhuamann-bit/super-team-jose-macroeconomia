@@ -1,0 +1,38 @@
+{
+  "id": "level8",
+  "distrito": "Barranco",
+  "clase": "Clase 08",
+  "titulo": "El puente de los índices",
+  "tema": "barranco",
+  "musica": "barranco",
+  "vehiculo": "combi",
+  "intro": "Bajando de Miraflores llegas a la bohemia de Barranco, donde todo el mundo opina de la inflación y casi nadie la mide bien. Acá se juntan el PBI nominal y el real, el deflactor y los dos IPC, y toca saber cuál usa qué canasta. Los bichos del puente celebran que el PBI subió cuando solo subieron los precios, confunden el deflactor con el IPC, y juran que si la inflación baja entonces los precios bajan. Aprende a distinguirlos y cae el bohemio.",
+  "repaso": [
+    "PBI NOMINAL: precios corrientes, o sea los del propio año. Sube por cantidad Y por precio.",
+    "PBI REAL: precios constantes del año base con las cantidades del año que miras. Sube ÚNICAMENTE por cantidad.",
+    "Por eso el crecimiento del país se mide con el PBI REAL: el nominal se ensucia con los precios.",
+    "Deflactor = (PBI nominal / PBI real) × 100. Es un índice tipo PAASCHE: P1Q1 arriba y P0Q1 abajo.",
+    "En el año base el deflactor y el IPC valen 100, y el PBI real y el nominal son iguales. Es un dato gratis.",
+    "IPC Laspeyres usa la canasta VIEJA (P1Q0 / P0Q0) y SOBREESTIMA la inflación, porque ignora que el consumidor se cambió de producto.",
+    "IPC Paasche usa la canasta ACTUAL (P1Q1 / P0Q1) y SUBESTIMA, porque no cobra el costo de haberse tenido que cambiar.",
+    "El deflactor mide los precios de TODO lo producido en el país (exportaciones incluidas); el IPC solo la canasta de consumo de las familias (importaciones incluidas).",
+    "Si la inflación baja pero sigue positiva, los precios NO bajan: suben más lento. Eso es desinflación, no deflación."
+  ],
+  "mapa": [
+    "                                                                                                                                                                                                                        ",
+    "                                                                                                                                                                                                                        ",
+    "                                                                                                                                                                                                                        ",
+    "                                                                                                                                                                                                                        ",
+    "                                                                                                                                                                                                                        ",
+    "                                                                                                                                                                                                                        ",
+    "                                                                                                                                                                                                                        ",
+    "                  o o o                               o o o                               o o o                   o o o                   o o o                       o o o                       o o o                 ",
+    "            ?               o o     L             o o       G                   o o               V                   o o     1                   o o       L o o                       ?   o o               1 o o     ",
+    "                  ====                                ====                                ====                    ====                    ====                        ====                        ====                  ",
+    "                        o o               o o                 o o                 o o           o o                         o o             o o           o o             o o             o o               o o         ",
+    "  P             E             C               E           X       E                   C       E     X                     E             C               E         X         E                 X         B           M   ",
+    "####################################   ###################################    ################################   ###############################    ##############################   ###################################",
+    "####################################   ###################################    ################################   ###############################    ##############################   ###################################",
+    "####################################   ###################################    ################################   ###############################    ##############################   ###################################"
+  ]
+}
