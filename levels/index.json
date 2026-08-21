@@ -1,6 +1,6 @@
 {
   "titulo": "Lima",
-  "descripcion": "Cada distrito es una clase de Economía General II. Los ocho están abiertos para practicar en cualquier orden.",
+  "descripcion": "Cada distrito es una clase de Economía General II. Los nueve están abiertos para practicar en cualquier orden.",
   "niveles": [
     {
       "id": "level1",
@@ -97,6 +97,18 @@
       "abierto": true,
       "mapa": "levels/level8.json",
       "preguntas": "questions/level8_questions.json"
+    },
+    {
+      "id": "level9",
+      "clase": "Clase 09",
+      "distrito": "Chorrillos",
+      "titulo": "La caleta de los índices",
+      "icono": "🎣",
+      "retos": 8,
+      "duracion": "3 min",
+      "abierto": true,
+      "mapa": "levels/level9.json",
+      "preguntas": "questions/level9_questions.json"
     }
   ]
 }

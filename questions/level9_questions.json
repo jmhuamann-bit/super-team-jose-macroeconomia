@@ -1,0 +1,138 @@
+{
+  "nivel": "level9",
+  "clase": "Clase 09 · Ejercicios de medición de la inflación y el crecimiento",
+  "fuente": "Apuntes de la 9na clase — Economía General II",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "m9-q1",
+      "nivel": "reconocimiento",
+      "enunciado": "PASO 1 DE LA RECETITA: definir la canasta.\n\n¿Qué se saca de cada índice?",
+      "opciones": [
+        "Del DEFLACTOR sacas lo importado; de la canasta del IPC sacas lo exportado",
+        "De los dos sacas lo importado",
+        "De los dos sacas lo exportado",
+        "No se saca nada, entran todos los bienes"
+      ],
+      "correcta": 0,
+      "explicacion": "El deflactor mide lo que el país PRODUCE: lo importado no es suyo. El IPC mide lo que las familias COMPRAN, y lo exportado no lo compra nadie de acá."
+    },
+    {
+      "id": "m9-q2",
+      "nivel": "reconocimiento",
+      "enunciado": "¿Cómo se saca la tasa de crecimiento PROMEDIO ANUAL entre dos años?",
+      "opciones": [
+        "Dividiendo el crecimiento total entre el número de años",
+        "Sumando las tasas de cada año",
+        "Multiplicando la tasa del último año por los años",
+        "Raíz n-ésima de PBIreal final entre inicial, menos 1, con n = año final − año inicial"
+      ],
+      "correcta": 3,
+      "explicacion": "La misma raíz sirve para la inflación promedio, cambiando el PBI real por el IPC o el deflactor. Ojo con la n: son PERIODOS, la resta de los años."
+    },
+    {
+      "id": "m9-q3",
+      "nivel": "reconocimiento",
+      "enunciado": "EL ERROR CARO DE LA CLASE.\n\n¿Cómo crecen la inflación y el IPC?",
+      "opciones": [
+        "De forma simple: se van sumando año a año",
+        "De forma lineal, siempre el mismo monto",
+        "COMPUESTA, como el interés: cada año se aplica sobre lo que ya subió",
+        "Depende de si usas Laspeyres o Paasche"
+      ],
+      "correcta": 2,
+      "explicacion": "Por eso no multiplicas la promedio anual por los años: elevas (1 + π) a la n. Parece poca cosa en dos años y es enorme en diez."
+    },
+    {
+      "id": "m9-q4",
+      "nivel": "comprension",
+      "enunciado": "PERULAND, año base 2019.\nCantidades 2019: arroz 130 · pollo 24 · leche 18 · hidrocarburos 85\nPrecios 2019: 3 · 10 · 6 · 5   |   Precios 2021: 4 · 14 · 9 · 15\n\n¿Cuál es el IPC de 2021 por LASPEYRES?",
+      "opciones": [
+        "154,94",
+        "197,16",
+        "199,38",
+        "162,82"
+      ],
+      "correcta": 1,
+      "explicacion": "Laspeyres congela las cantidades del año base. Abajo: 130(3) + 24(10) + 18(6) + 85(5) = 1 163. Arriba, esos Q con precios 2021: 2 293. El cociente por 100 da 197,16."
+    },
+    {
+      "id": "m9-q5",
+      "nivel": "comprension",
+      "enunciado": "MISMA ECONOMÍA, ahora con las cantidades de 2021: arroz 135 · pollo 32 · leche 12 · hidrocarburos 98.\nPrecios 2019: 3 · 10 · 6 · 5   |   Precios 2021: 4 · 14 · 9 · 15\n\n¿Cuál es el IPC de 2021 por PAASCHE?",
+      "opciones": [
+        "153,85",
+        "197,16",
+        "138,65",
+        "199,38"
+      ],
+      "correcta": 3,
+      "explicacion": "Paasche usa las cantidades actuales arriba y abajo. Arriba: 135(4) + 32(14) + 12(9) + 98(15) = 2 566. Abajo, con precios de 2019: 1 287. Sale 199,38."
+    },
+    {
+      "id": "m9-q6",
+      "nivel": "comprension",
+      "enunciado": "La inflación promedio anual de un país es 4,63 %. Te piden estimar cuánto acumulará en 2 años.\n\n¿Cuál camino es el correcto?",
+      "opciones": [
+        "Componer: (1,0463)² − 1 = 9,47 %",
+        "Multiplicar por 2: 4,63 × 2 = 9,26 %",
+        "Sumar 4,63 al acumulado anterior",
+        "Sacar la raíz cuadrada de 4,63"
+      ],
+      "correcta": 0,
+      "explicacion": "Multiplicar por 2 ignora que el segundo año sube sobre lo que ya subió el primero. Acá son 0,21 puntos de diferencia; a diez años el error es de varios."
+    },
+    {
+      "id": "m9-q7",
+      "nivel": "aplicacion",
+      "enunciado": "PERULAND, el DEFLACTOR de 2021. Mismos precios y cantidades de 2021, pero el 70 % de los hidrocarburos es IMPORTADO: al deflactor solo entran 29,4 de las 98 unidades.\n\n¿Cuánto vale?",
+      "opciones": [
+        "199,38, igual que el Paasche",
+        "197,16, igual que el Laspeyres",
+        "162,82",
+        "138,65"
+      ],
+      "correcta": 2,
+      "explicacion": "Arriba: 135(4) + 32(14) + 12(9) + 29,4(15) = 1 537. Abajo, con precios 2019: 944. Sale 162,82. La alternativa A es lo que obtienes si te OLVIDAS de sacar lo importado."
+    },
+    {
+      "id": "m9-q8",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 1/3. En PeruLand el IPC de 2021 llegó a 197–199 pero el deflactor solo a 162,82. El hidrocarburo pasó de S/ 5 a S/ 15 y es 70 % importado.\n\n¿Por qué se abren tanto?",
+      "opciones": [
+        "Porque el IPC está mal calculado",
+        "El hidrocarburo se triplicó: el IPC se lo come entero porque las familias lo consumen, y el deflactor solo carga el 30 % producido dentro",
+        "Porque el deflactor usa Laspeyres y el IPC usa Paasche",
+        "Porque el deflactor no incluye alimentos"
+      ],
+      "correcta": 1,
+      "explicacion": "Un shock en un bien importado dispara el índice de las familias y casi no toca el de la producción interna. Con un bien exportador pasa al revés."
+    },
+    {
+      "id": "m9-q9",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 2/3. El IPC de 2021 es 197,16 y la inflación promedio anual es 4,63 %.\n\n¿Cuál sería el IPC dos años después?",
+      "opciones": [
+        "215,84",
+        "206,29",
+        "215,42",
+        "394,32"
+      ],
+      "correcta": 0,
+      "explicacion": "IPCfinal = IPCinicial × (1 + π) elevado a n: 197,16 × 1,0947 = 215,84. Y el aviso del apunte: solo sirve si la economía no viene muy volátil."
+    },
+    {
+      "id": "m9-q10",
+      "nivel": "comprension",
+      "enunciado": "JEFE 3/3. ¿Qué tendría que pasar para que el IPC pudiera usarse como deflactor del PBI?",
+      "opciones": [
+        "Que se use Laspeyres en los dos",
+        "Que se actualice la canasta cada año",
+        "Que el año base sea el mismo",
+        "Que no haya importaciones ni exportaciones, y que todo lo producido sea de consumo familiar"
+      ],
+      "correcta": 3,
+      "explicacion": "Los dos se separan por lo que entra a cada canasta. Sin importar, sin exportar y con todo yendo al consumo, serían la misma. País de fantasía: por eso nunca coinciden."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "level9",
+  "distrito": "Chorrillos",
+  "clase": "Clase 09",
+  "titulo": "La caleta de los índices",
+  "tema": "muelle",
+  "musica": "muelle",
+  "vehiculo": "mototaxi",
+  "intro": "En la caleta de Chorrillos los pescadores pesan la pesca antes de venderla, y en esta clase te toca pesar la economía. Acá ya no se discute qué es el deflactor: se calcula, con tabla y calculadora. Los bichos del muelle celebran subidas que solo son de precio, suman los años en una sola red y meten lo importado donde no va.",
+  "repaso": [
+    "PASO 1: define la canasta. Del DEFLACTOR sacas lo importado; de la canasta de consumo (IPC) sacas lo exportado.",
+    "PASO 2: calcula el índice. PASO 3: recién ahí sacas la inflación.",
+    "Laspeyres «pico poco»: P1Q0 / P0Q0. Paasche «piqi, poqi»: P1Q1 / P0Q1. El deflactor es Paasche aplicado a la producción interna.",
+    "Crecimiento del país: se calcula con el PBI REAL, no con el nominal.",
+    "Tasa promedio anual: raíz n-ésima del cociente final entre inicial, menos 1. Con n = año final − año inicial.",
+    "Lo mismo para la inflación promedio: raíz n-ésima de IPCfinal/IPCinicial (familias) o Deffinal/Definicial (país).",
+    "OJO, EL ERROR CARO: la inflación crece COMPUESTA, como el interés. Para 2 años NO multipliques la promedio anual por 2: elévala al cuadrado.",
+    "Para proyectar: IPCfinal = IPCinicial × (1 + π promedio)^n. Solo sirve si la economía no es muy volátil.",
+    "3ER MODELO, por pesos de gasto: π = [(P1/P0 × Gasto) sumado en todos los bienes − 1] × 100. Con Gasto0 es Laspeyres y con Gasto1 es Paasche."
+  ],
+  "mapa": [
+    "                                                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                                                ",
+    "                    o o o                               o o o                               o o o                     o o o                     o o o                     o o o                       o o o                     ",
+    "            ?               o o         L         o o             G           o o                     V         o o               1         o o         o o         L                 o o       ?         o o         1         ",
+    "                    ====                                ====                                ====                      ====                      ====                      ====                        ====                      ",
+    "                        o o                 o o               o o                   o o             o o                         o o               o             o o           o o             o o                 o o           ",
+    "  P               E           C                 E           X       E                   C       E       X                   E             C                 E           X         E                 X         B             M   ",
+    "####################################   ###################################    ################################   ###################################    ##################################   ###################################",
+    "####################################   ###################################    ################################   ###################################    ##################################   ###################################",
+    "####################################   ###################################    ################################   ###################################    ##################################   ###################################"
+  ]
+}

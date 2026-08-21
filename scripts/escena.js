@@ -179,6 +179,10 @@ const FICHAS = [
   { sprite: "guitarra", nombre: "La Guitarra Nominal", texto: "Celebra que el PBI subió sin fijarse en que solo subieron los precios." },
   { sprite: "aerosol", nombre: "El Aerosol Deflactado", texto: "Pinta el deflactor donde va el IPC, como si midieran la misma canasta." },
   { sprite: "bohemio", nombre: "El Bohemio de los Índices", texto: "Jefe de Barranco: no distingue a Laspeyres de Paasche ni del deflactor." },
+  { sprite: "bote", nombre: "El Bote de Agua Dulce", texto: "Como la playa: el nombre promete dulce y el agua es salada. Le pasa igual con el PBI nominal." },
+  { sprite: "red", nombre: "La Red de la Caleta", texto: "Echa todos los años a la misma red y suma las inflaciones en vez de componerlas." },
+  { sprite: "pelicano", nombre: "El Pelícano Importado", texto: "Se traga lo que sea, venga de donde venga, y mete lo importado al deflactor." },
+  { sprite: "pescador", nombre: "El Pescador del Morro", texto: "Jefe de Chorrillos: desde el Morro ve toda Lima y aun así pesa la canasta equivocada." },
 ];
 
 export function galeriaPersonajes(contenedor) {

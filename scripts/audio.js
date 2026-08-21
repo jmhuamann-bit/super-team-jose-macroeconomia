@@ -65,6 +65,12 @@ const TEMAS_MUSICA = {
               "A4",2,"C5",2,"E5",4,"D5",2,"C5",2,"C5",4],
     bajo:    ["F2",4,"C3",4,"G2",4,"A2",4,"F2",4,"G2",4,"C3",8],
   },
+  muelle: { // Chorrillos: amanecer en el muelle, marinera lenta que va sumando
+    tempo: 0.17, onda: "triangle",
+    melodia: ["D4",2,"F4",1,"A4",1,"D5",2,"C5",2,"A4",2,"F4",2,"G4",4,
+              "F4",2,"A4",1,"C5",1,"D5",2,"C5",2,"A4",4,"D4",4],
+    bajo:    ["D3",4,"A2",4,"B2",4,"F2",4,"G2",4,"D3",4,"A2",4,"D3",4],
+  },
   barranco: { // Barranco: vals criollo de peña, lento y con swing
     tempo: 0.19, onda: "triangle",
     melodia: ["A4",2,"B4",1,"C5",3,"B4",2,"A4",2,"G4",4,
