@@ -1,0 +1,42 @@
+{
+  "id": "level10",
+  "distrito": "Cercado de Lima",
+  "clase": "Clase 01 · PC2",
+  "titulo": "El jirón de los fondos prestables",
+  "tema": "centro",
+  "musica": "centro",
+  "vehiculo": "bus",
+  "intro": "En el Cercado está Jirón Lampa, la calle donde vivió la banca de Lima; a la vuelta, Ocoña con sus cambistas y Azángaro con sus tramitadores. Toda esta clase pasa en esas tres cuadras: las familias y el gobierno ponen el ahorro, las empresas piden prestado para comprar máquinas, y el precio que los junta es la TASA DE INTERÉS REAL. Arranca la PC2.",
+  "repaso": [
+    "MERCADO DE FONDOS PRESTABLES = mercado de préstamos. La DEMANDA son las EMPRESAS que piden prestado para invertir; la OFERTA son las FAMILIAS y el GOBIERNO que ahorran. Y acá, como siempre, la demanda es la que paga.",
+    "El precio de este mercado es la TASA DE INTERÉS REAL. En el equilibrio salen dos cosas: esa tasa y la cantidad de fondos prestables.",
+    "Un fondo prestable es plata que las familias y el gobierno destinan a prestarle a las empresas, para que compren máquinas y el país crezca.",
+    "Formas de pedir prestado: la ACCIÓN es un pedacito de la empresa; el BONO es un contrato de devolución.",
+    "REAL contra NOMINAL: r = i − inflación. La nominal no considera la inflación; la real sí. Se trabaja con la real porque lo que importa es cuánto vas a poder comprar o invertir de verdad al final del período.",
+    "En una ECONOMÍA CERRADA, el AHORRO NACIONAL = la INVERSIÓN.",
+    "AHORRO NACIONAL = ahorro privado (Yd − C) + ahorro público (T − G). Y el ingreso disponible es Yd = Y − T.",
+    "CONSUMO: C = C0 + C1·Yd − C2·r. El C0 es el consumo autónomo, el que queda cuando Yd = 0 (o sea, cuando el impuesto se comió todo el ingreso). C1 es la propensión marginal al consumo y C2 la sensibilidad a la tasa.",
+    "Lo que no se consume se ahorra: propensión marginal al ahorro = 1 − C1.",
+    "INVERSIÓN: I = I0 − I2·r, y si hay un impuesto fijo a las empresas también se le resta. Si la tasa sube, cae la inversión (te cobran más por prestarte) y cae el consumo (te pagan más por ahorrar).",
+    "GASTO PÚBLICO: si G > T hay DÉFICIT fiscal y el ahorro público sale negativo; si G < T hay SUPERÁVIT.",
+    "RECETITA. PREVIO: hallar Y con la función de producción e Yd = Y − T. PASO 01: armar C, I y G. PASO 02: ahorro privado y ahorro público, luego el nacional. PASO 03: igualar Inversión = Ahorro Nacional y sale la tasa y los fondos prestables.",
+    "OJO con la excepción: si las sensibilidades a la tasa son números chicos (menores a 100), la tasa NO va en decimales, va en el valor del porcentaje."
+  ],
+  "mapa": [
+    "                                                                                                                                                                                                                                        ",
+    "                                                                                                                                                                                                                                        ",
+    "                                                                                                                                                                                                                                        ",
+    "                                                                                                                                                                                                                                        ",
+    "                                                                                                                                                                                                                                        ",
+    "                                                                                                                                                                                                                                        ",
+    "                                                                                                                                                                                                                                        ",
+    "                        o o o                         o o o                         o o o                             o o o                       o o o                         o o o                     o o o                         ",
+    "              ?                 o o     L         o o         G               o o                     V                   o o     1                     o o       o o L                   o o       ?         o o             1         ",
+    "                        ====                          ====                          ====                              ====                        ====                          ====                      ====                          ",
+    "                            o o             o o             o o                       o o           o o                               o o           o                   o o       o o               o o                 o o             ",
+    "  P                 E         C                 E           X     E                     C         E     X                     E           C                   E         X             E             X             B                 M   ",
+    "##################################    ##################################   #####################################    ##################################   #####################################    ######################################",
+    "##################################    ##################################   #####################################    ##################################   #####################################    ######################################",
+    "##################################    ##################################   #####################################    ##################################   #####################################    ######################################"
+  ]
+}

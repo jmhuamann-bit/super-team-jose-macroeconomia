@@ -941,6 +941,74 @@ const PESCADOR = [  // jefe de Chorrillos: el pescador que mide mal su propia pe
   "..kkkkk....kkkkk....",
 ];
 const P_PESCADOR = { k: "#3b4a5c", c: "#e8b98d", a: "#2f5f7a", y: "#e0b23c" };
+const FAJO = [   // el fajo de los cambistas de Ocoña: solo mira el número de afuera (13 × 12)
+  ".............",
+  "..ooooooooo..",
+  ".ogggggkggggo",
+  ".ogwwwwkwwwgo",
+  ".oggyygkggggo",
+  ".ogwwwwkwwwgo",
+  ".oggggykggggo",
+  ".ogwwwwkwwwgo",
+  ".ogggggkggggo",
+  "..ooooooooo..",
+  ".............",
+  ".............",
+];
+const P_FAJO = { o: "#2b6b45", g: "#4aa06b", w: "#eef4e8", y: "#e8b13c", k: "#b5503a" };
+
+const SELLO = [   // el sello de los tramitadores de Azángaro: grava y se olvida (13 × 12)
+  ".............",
+  "....kkkkk....",
+  "....kkkkk....",
+  "....kkkkk....",
+  "..mmmmmmmmm..",
+  ".mmmmmmmmmmm.",
+  ".mwwwwwwwwwm.",
+  ".mmmmmmmmmmm.",
+  "rrrrrrrrrrrrr",
+  "rrrrrrrrrrrrr",
+  "..r.r.r.r.r..",
+  ".............",
+];
+const P_SELLO = { k: "#2e2115", m: "#b5813f", w: "#f0dcae", r: "#d92b4e" };
+
+const BONO = [   // el bono con su lacre: nunca sabe de qué lado del mostrador está (14 × 12)
+  "..............",
+  "..............",
+  ".wwwwwwwwwwww.",
+  ".wkkkkkkkkkkw.",
+  ".wkwwwwwwwwkw.",
+  ".wkwyywwwwwkw.",
+  ".wkwwwwwwwwkw.",
+  ".wkwwwwrrwwkw.",
+  ".wkkkkkkkkkkw.",
+  ".wwwwwwwwwwww.",
+  "......rr......",
+  "......rr......",
+];
+const P_BONO = { w: "#f2ead8", k: "#8a7460", y: "#e8b13c", r: "#c2264a" };
+
+const BANQUERO = [  // jefe del Cercado: el banquero de Jirón Lampa (20 × 16)
+  "......kkkkkk........",
+  ".....kkkkkkkk.......",
+  "....kkkkkkkkkk......",
+  "......cccccc........",
+  ".....cccccccc.......",
+  ".....cckkcckkc......",
+  ".....cccccccc.......",
+  "......cmmmmc........",
+  ".....wwwwwwww.......",
+  "....nnnwwwwnnn......",
+  "...nnnnwwwwnnnn.....",
+  "...nnnnnnnnnnyy.....",
+  "...nnnnnnnnnnyy.....",
+  "...nnnn..nnnn.......",
+  "...nnnn..nnnn.......",
+  "..kkkkk..kkkkk......",
+];
+const P_BANQUERO = { k: "#241a2e", c: "#e8b98d", m: "#5c4632", n: "#2f3550", w: "#f2f6ff", y: "#e8b13c" };
+
 /* ---------------------------------------------------------------
    REGISTRO Y COCINADO
    --------------------------------------------------------------- */
@@ -1000,6 +1068,10 @@ const DEFINICIONES = {
   red:          [RED, P_RED],
   pelicano:     [PELICANO, P_PELICANO],
   pescador:     [PESCADOR, P_PESCADOR],
+  fajo:         [FAJO, P_FAJO],
+  sello:        [SELLO, P_SELLO],
+  bono:         [BONO, P_BONO],
+  banquero:     [BANQUERO, P_BANQUERO],
 };
 
 const cocidos = {};   // nombre -> { canvas, ancho, alto } (ya escalados)

@@ -78,6 +78,14 @@ const TEMAS_MUSICA = {
     bajo:    ["A2",3,"E3",3,"A2",2,"D3",3,"A2",3,"E2",2,
               "A2",3,"C3",3,"E3",2,"A2",4,"E2",4],
   },
+  centro: { // Cercado de Lima: marinera limeña de plaza, con paso firme
+    tempo: 0.15, onda: "square",
+    melodia: ["A4",1,"B4",1,"C5",2,"B4",1,"A4",1,"G4",2,
+              "F4",1,"G4",1,"A4",2,"G4",2,"E4",2,
+              "A4",1,"C5",1,"E5",2,"D5",1,"C5",1,"B4",2,
+              "C5",2,"B4",1,"A4",1,"A4",4],
+    bajo:    ["A2",4,"E3",4,"F2",4,"C3",4,"D3",4,"A2",4,"E3",4,"A2",4],
+  },
 };
 
 function arrancarCtx() {

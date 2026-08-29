@@ -183,6 +183,10 @@ const FICHAS = [
   { sprite: "red", nombre: "La Red de la Caleta", texto: "Echa todos los años a la misma red y suma las inflaciones en vez de componerlas." },
   { sprite: "pelicano", nombre: "El Pelícano Importado", texto: "Se traga lo que sea, venga de donde venga, y mete lo importado al deflactor." },
   { sprite: "pescador", nombre: "El Pescador del Morro", texto: "Jefe de Chorrillos: desde el Morro ve toda Lima y aun así pesa la canasta equivocada." },
+  { sprite: "fajo", nombre: "El Fajo de Ocoña", texto: "Canta la tasa nominal a gritos y nunca le descuenta la inflación." },
+  { sprite: "sello", nombre: "El Sello de Azángaro", texto: "Sella el impuesto y después consume sobre el ingreso entero, como si nunca lo hubiera cobrado." },
+  { sprite: "bono", nombre: "El Bono de Jirón Lampa", texto: "Cambia de mano toda la cuadra y ya no sabe quién presta y quién pide prestado." },
+  { sprite: "banquero", nombre: "El Banquero de Jirón Lampa", texto: "Jefe del Cercado: cuadra la caja con el ahorro de las familias y deja al gobierno fuera del libro." },
 ];
 
 export function galeriaPersonajes(contenedor) {

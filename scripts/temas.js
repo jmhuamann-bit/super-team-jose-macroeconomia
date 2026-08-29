@@ -743,6 +743,134 @@ export const TEMAS = {
       }
     },
   },
+
+  /* =========================================================
+     CERCADO DE LIMA — mediodía bajo la panza de burro. El Centro
+     Histórico: los balcones de madera de Torre Tagle y Osambela,
+     las torres de la Catedral, el cerro San Cristóbal al fondo y
+     los toldos del Jirón de la Unión. Acá está Jirón Lampa, la
+     calle donde estuvo la banca de Lima, y a la vuelta Ocoña con
+     sus cambistas y Azángaro con sus tramitadores.
+     ========================================================= */
+  centro: {
+    nombre: "Cercado de Lima",
+    cielo: [[0, "#94a1b5"], [0.4, "#b6c0ca"], [0.76, "#d6d8d5"], [1, "#ece3d1"]],
+    suelo: { cara: "#9a9285", borde: "#c4bcab", tierra: "#5e584e", plataforma: "#46301f", plataformaBorde: "#e8b13c" },
+    acento: "#e8b13c",
+    bichos: ["fajo", "sello", "bono"],
+    nombresBichos: ["El Fajo de Ocoña", "El Sello de Azángaro", "El Bono de Jirón Lampa"],
+    jefe: "banquero",
+    nombreJefe: "El Banquero de Jirón Lampa",
+
+    fondo(ctx, cam, t) {
+      // el sol que no termina de romper la panza de burro: se adivina, no se ve
+      ctx.fillStyle = "rgba(255,240,196,.16)";
+      ctx.beginPath(); ctx.arc(520, 92, 92, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = "rgba(255,244,206,.22)";
+      ctx.beginPath(); ctx.arc(520, 92, 56, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = "rgba(255,248,214,.30)";
+      ctx.beginPath(); ctx.arc(520, 92, 28, 0, Math.PI * 2); ctx.fill();
+
+      // el cerro San Cristóbal con sus casitas y la cruz en la cumbre
+      repetir(ctx, cam, 620, 0.13, (x) => {
+        const bx = x + 300;
+        ctx.fillStyle = "#8d93a0";
+        ctx.beginPath();
+        ctx.moveTo(bx - 210, 296);
+        ctx.lineTo(bx - 40, 150);
+        ctx.lineTo(bx + 30, 168);
+        ctx.lineTo(bx + 190, 296);
+        ctx.closePath(); ctx.fill();
+        // las casitas trepando el cerro
+        ctx.fillStyle = "rgba(210,190,168,.75)";
+        for (let k = 0; k < 16; k++) {
+          const cx = bx - 170 + k * 22, alto = 168 + Math.abs(k - 7) * 17;
+          ctx.fillRect(cx, alto, 15, 11);
+        }
+        ctx.fillStyle = "#6f7583";                      // la cruz de la cumbre
+        ctx.fillRect(bx - 42, 128, 4, 24);
+        ctx.fillRect(bx - 50, 136, 20, 4);
+      });
+
+      // las torres de la Catedral, con sus campanarios y su reloj
+      repetir(ctx, cam, 700, 0.28, (x) => {
+        const bx = x + 120, base = 302;
+        const torre = (tx) => {
+          ctx.fillStyle = "#e0d2b4";
+          ctx.fillRect(tx, base - 150, 40, 150);
+          ctx.fillStyle = "#7a6a52";                    // el campanario abierto
+          ctx.fillRect(tx + 9, base - 132, 22, 26);
+          ctx.fillStyle = "#3f4654";                    // el chapitel oscuro
+          ctx.beginPath();
+          ctx.moveTo(tx - 4, base - 150);
+          ctx.lineTo(tx + 20, base - 186);
+          ctx.lineTo(tx + 44, base - 150);
+          ctx.closePath(); ctx.fill();
+          ctx.fillRect(tx + 18, base - 198, 4, 14);
+        };
+        torre(bx);
+        torre(bx + 130);
+        // el cuerpo de la iglesia entre las dos torres
+        ctx.fillStyle = "#e8dcc0";
+        ctx.fillRect(bx + 40, base - 112, 130, 112);
+        ctx.fillStyle = "#7a6a52";
+        ctx.fillRect(bx + 92, base - 62, 26, 62);       // el portón
+        ctx.fillStyle = "rgba(120,105,80,.6)";
+        ctx.beginPath(); ctx.arc(bx + 105, base - 86, 15, 0, Math.PI * 2); ctx.fill();
+      });
+
+      // la cuadra de casonas con sus balcones de madera: la firma del Centro
+      repetir(ctx, cam, 158, 0.5, (x, i) => {
+        const bx = x + 10, base = 340, alto = 96 + ((i * 31) % 34);
+        const fachadas = ["#e2b56a", "#d9a95c", "#e8c88a", "#cf9f6b", "#ddbe86"];
+        ctx.fillStyle = fachadas[i % 5];
+        ctx.fillRect(bx, base - alto, 138, alto);
+        ctx.fillStyle = "rgba(255,255,255,.22)";        // la cornisa
+        ctx.fillRect(bx, base - alto, 138, 5);
+        // el balcón de cajón, cerrado, de madera oscura
+        ctx.fillStyle = "#5c3d24";
+        ctx.fillRect(bx + 16, base - alto + 30, 106, 38);
+        ctx.fillStyle = "#7a4a2e";
+        ctx.fillRect(bx + 16, base - alto + 30, 106, 5);
+        ctx.fillRect(bx + 16, base - alto + 63, 106, 5);
+        ctx.fillStyle = "rgba(232,177,60,.55)";         // la celosía
+        for (let k = 0; k < 9; k++) ctx.fillRect(bx + 22 + k * 12, base - alto + 38, 6, 22);
+        // el zaguán y las tiendas de la vereda
+        ctx.fillStyle = "#4d3a28";
+        ctx.fillRect(bx + 54, base - 40, 30, 40);
+        ctx.fillStyle = "rgba(90,110,130,.45)";
+        ctx.fillRect(bx + 16, base - 36, 26, 22);
+        ctx.fillRect(bx + 96, base - 36, 26, 22);
+      });
+
+      // los toldos y letreros del Jirón de la Unión, ya en la vereda
+      repetir(ctx, cam, 118, 0.7, (x, i) => {
+        const bx = x + 14, base = 352;
+        ctx.fillStyle = ["#c2264a", "#2f6b8f", "#2b6b45", "#c96a1c"][i % 4];
+        ctx.beginPath();
+        ctx.moveTo(bx, base - 26);
+        ctx.lineTo(bx + 66, base - 26);
+        ctx.lineTo(bx + 58, base - 8);
+        ctx.lineTo(bx + 8, base - 8);
+        ctx.closePath(); ctx.fill();
+        ctx.fillStyle = "rgba(255,255,255,.35)";
+        for (let k = 0; k < 3; k++) ctx.fillRect(bx + 6 + k * 20, base - 26, 8, 18);
+        ctx.fillStyle = "#e8b13c";                      // el letrero colgado
+        ctx.fillRect(bx + 74, base - 30, 24, 10);
+      });
+    },
+
+    clima(ctx, t) {
+      // los papelitos de los tramitadores, dando vueltas en el aire
+      for (let i = 0; i < 20; i++) {
+        const x = (i * 163 - t * 2.2) % 880 - 20;
+        const y = 130 + ((i * 71) % 210) + Math.sin(t / 21 + i) * 14;
+        const gira = Math.abs(Math.sin(t / 13 + i * 1.4));
+        ctx.fillStyle = `rgba(246,242,228,${(0.30 + 0.35 * gira).toFixed(2)})`;
+        ctx.fillRect(x, y, 6, 2 + gira * 5);
+      }
+    },
+  },
 };
 
 /** Pinta el cielo del tema (degradado vertical). */

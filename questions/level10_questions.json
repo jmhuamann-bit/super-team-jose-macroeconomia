@@ -1,0 +1,138 @@
+{
+  "nivel": "level10",
+  "clase": "Clase 01 · PC2 — Ahorro, inversión y mercado de fondos prestables",
+  "fuente": "Apuntes de la 1era clase de la PC2 — Economía General II",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "m10-q1",
+      "nivel": "reconocimiento",
+      "enunciado": "En el MERCADO DE FONDOS PRESTABLES (el mercado de préstamos), ¿quién es la demanda y quién la oferta?",
+      "opciones": [
+        "La demanda son las familias que ahorran; la oferta, las empresas",
+        "La demanda son las EMPRESAS que piden prestado para invertir; la oferta, las familias y el gobierno que ahorran",
+        "Los dos lados son bancos: uno presta y el otro cobra",
+        "La demanda es el gobierno y la oferta el Banco Central"
+      ],
+      "correcta": 1,
+      "explicacion": "El fondo sale del ahorro de las familias y del gobierno, y va hacia las empresas que necesitan financiamiento para comprar máquinas. Quien pide prestado es la demanda, y como en todo mercado, la demanda es la que paga."
+    },
+    {
+      "id": "m10-q2",
+      "nivel": "reconocimiento",
+      "enunciado": "¿Cuál es el precio de este mercado, y por qué ese y no el otro?",
+      "opciones": [
+        "La tasa NOMINAL, porque es la que figura en el contrato del préstamo",
+        "El monto prestado, porque mientras más grande, más caro",
+        "La tasa de interés REAL, porque descuenta la inflación y dice cuánto se va a poder comprar de verdad",
+        "El PBI, porque es lo que mide toda la economía"
+      ],
+      "correcta": 2,
+      "explicacion": "La nominal no considera la inflación; la real sí. Al que ahorra y al que se presta les importa cuánto podrán comprar o invertir en términos reales al final del período, así que el mercado se estudia con la real."
+    },
+    {
+      "id": "m10-q3",
+      "nivel": "comprension",
+      "enunciado": "Le prestas 100 soles al Choche por un año. Te pagará un interés NOMINAL de 10 %, pero la inflación de ese año fue 15 %.\n\n¿Cuánto ganaste realmente?",
+      "opciones": [
+        "10 %, que es lo que pactaron",
+        "25 %, sumando el interés y la inflación",
+        "1,5 %, que es el 15 % del 10 %",
+        "−5 %: la inflación se comió más de lo que te pagaron"
+      ],
+      "correcta": 3,
+      "explicacion": "r = i − inflación = 10 % − 15 % = −5 %. Te devolvieron 110 soles, pero con esos 110 compras menos que con los 100 del año pasado. Si la inflación hubiera sido 0, ahí sí el 10 % nominal era 10 % real."
+    },
+    {
+      "id": "m10-q4",
+      "nivel": "aplicacion",
+      "enunciado": "En un país la inflación del año será 7 %. Quieres prestar tu plata y ganar un 10 % REAL.\n\n¿Qué tasa nominal le tienes que cobrar al Choche?",
+      "opciones": [
+        "17 %",
+        "10 %, la real y la nominal terminan siendo lo mismo",
+        "3 %, la diferencia entre las dos",
+        "0,7 %, el 7 % del 10 %"
+      ],
+      "correcta": 0,
+      "explicacion": "Despejas de r = i − inflación: i = r + inflación = 10 % + 7 % = 17 %. Primero le cobras 7 puntos solo para no perder contra la inflación, y recién los 10 de arriba son ganancia de verdad."
+    },
+    {
+      "id": "m10-q5",
+      "nivel": "comprension",
+      "enunciado": "Te dicen: «cuando el monto del impuesto es igual al ingreso, el consumo es 300; el consumo sube 0,1 por cada unidad de ingreso; y si la tasa de interés sube 1 punto porcentual, el consumo cae 5».\n\n¿Cuál es la ecuación y cuánta es la propensión marginal al AHORRO?",
+      "opciones": [
+        "C = 300 + 0,1Y − 5r, y la del ahorro es 0,1",
+        "C = 300 + 0,9Yd − 5r, y la del ahorro es 0,1",
+        "C = 0,1Yd − 5r, porque ese 300 es el impuesto",
+        "C = 300 + 0,1Yd − 5r, y la propensión marginal al ahorro es 0,9"
+      ],
+      "correcta": 3,
+      "explicacion": "Que el impuesto iguale al ingreso significa que Yd = Y − T = 0, así que ese 300 es el consumo autónomo. La propensión marginal al consumo es 0,1 y lo que no se consume se ahorra: 1 − 0,1 = 0,9. Eres bien ahorrador."
+    },
+    {
+      "id": "m10-q6",
+      "nivel": "comprension",
+      "enunciado": "Sube la tasa de interés.\n\n¿Qué les pasa al CONSUMO y a la INVERSIÓN?",
+      "opciones": [
+        "Los dos suben: hay más plata dando vueltas",
+        "El consumo sube y la inversión baja",
+        "Los dos BAJAN: te pagan más por prestar (consumes menos) y te cobran más por pedir prestado (inviertes menos)",
+        "Ninguno se mueve: la tasa solo afecta al gobierno"
+      ],
+      "correcta": 2,
+      "explicacion": "Por eso las dos ecuaciones llevan la tasa RESTANDO: C = C0 + C1·Yd − C2·r e I = I0 − I2·r. El C2 y el I2 son justamente qué tanto le hace caso cada uno a la tasa."
+    },
+    {
+      "id": "m10-q7",
+      "nivel": "aplicacion",
+      "enunciado": "En una región: el ingreso es Y = 4 000, el impuesto T = 400, el gasto público G = 800 y el consumo es C = 2 980 − 5r.\n\n¿Cuál es el AHORRO NACIONAL?",
+      "opciones": [
+        "220 + 5r",
+        "620 + 5r, que es el de las familias",
+        "1 020 + 5r, sumándole el gasto público",
+        "220 − 5r"
+      ],
+      "correcta": 0,
+      "explicacion": "Yd = 4 000 − 400 = 3 600. Privado = Yd − C = 3 600 − 2 980 + 5r = 620 + 5r. Público = T − G = 400 − 800 = −400. Nacional = 620 + 5r − 400 = 220 + 5r. El ahorro público entra con su signo, aunque sea negativo."
+    },
+    {
+      "id": "m10-q8",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 1/3. La función de producción de la región es Y = A · K^(3/4) · L^(1/4). Quedaron 400 trabajadores hábiles, hay un stock de capital de 400 y la productividad es 10. El impuesto recaudado es 400.\n\n¿Cuánto son Y e Yd?",
+      "opciones": [
+        "Y = 400 e Yd = 0",
+        "Y = 4 000 e Yd = 3 600",
+        "Y = 8 000 e Yd = 7 600",
+        "Y = 4 000 e Yd = 4 000: el impuesto no toca el ingreso"
+      ],
+      "correcta": 1,
+      "explicacion": "Los exponentes suman 1 y acá K = L = 400, así que K^(3/4) · L^(1/4) = 400. Entonces Y = 10 · 400 = 4 000. El ingreso disponible descuenta el impuesto: Yd = 4 000 − 400 = 3 600."
+    },
+    {
+      "id": "m10-q9",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 2/3. En esa misma región el ahorro nacional quedó en S = 220 + 5r y la inversión en I = 250 − 3r.\n\n¿Cuál es la tasa de interés de equilibrio y cuántos fondos prestables se mueven?",
+      "opciones": [
+        "r = 3,75 % y FP = 238,75",
+        "r = 30 % y FP = 160",
+        "r = 3,75 % y FP = 250, la inversión autónoma",
+        "r = −3,75 % y FP = 261,25"
+      ],
+      "correcta": 0,
+      "explicacion": "Igualas I = S: 250 − 3r = 220 + 5r, o sea 30 = 8r y r = 3,75. Reemplazas en cualquiera de las dos y sale lo mismo: 250 − 3(3,75) = 220 + 5(3,75) = 238,75. Como las sensibilidades son chicas (5 y 3), la tasa va en el valor del porcentaje."
+    },
+    {
+      "id": "m10-q10",
+      "nivel": "comprension",
+      "enunciado": "JEFE 3/3. En esa región el gobierno recaudó T = 400 y gastó G = 800.\n\n¿Cómo se llama eso y qué le hace al ahorro nacional?",
+      "opciones": [
+        "Superávit fiscal: le suma 400 al ahorro nacional",
+        "Déficit fiscal, pero el ahorro nacional no se entera: ahí solo cuentan las familias",
+        "No se puede saber sin conocer primero la inversión",
+        "Déficit fiscal: el ahorro público es −400 y le RESTA 400 al ahorro nacional"
+      ],
+      "correcta": 3,
+      "explicacion": "Gasta más de lo que recauda, así que el ahorro público T − G = −400. Ese menos entra completo al ahorro nacional, y en una economía cerrada es el ahorro nacional —privado más público— el que financia toda la inversión."
+    }
+  ]
+}
