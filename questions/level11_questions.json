@@ -1,0 +1,138 @@
+{
+  "nivel": "level11",
+  "clase": "Clase 02 · PC2 — Desplazamientos, crowding out y crowding in",
+  "fuente": "Apuntes de la 2da clase de la PC2 — Economía General II",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "m11-q1",
+      "nivel": "reconocimiento",
+      "enunciado": "«Cuando la tasa de interés sube, la DEMANDA de fondos prestables disminuye».\n\n¿Está bien dicho?",
+      "opciones": [
+        "Sí, está perfecto",
+        "No: lo que disminuye es la CANTIDAD demandada. La demanda entera solo se corre si cambia otra cosa",
+        "No: lo que disminuye es la oferta de fondos",
+        "No se puede saber sin ver el gráfico"
+      ],
+      "correcta": 1,
+      "explicacion": "Es la cachetada de Eco 1. Un cambio en el precio —acá la tasa— produce un MOVIMIENTO a lo largo de la curva, no un desplazamiento. La curva entera se mueve cuando cambia algo que no sea el precio."
+    },
+    {
+      "id": "m11-q2",
+      "nivel": "reconocimiento",
+      "enunciado": "¿Cuál de estos desplaza la DEMANDA de fondos prestables, es decir la inversión, y no la oferta?",
+      "opciones": [
+        "Que a las familias les suba el nivel de ingresos",
+        "Un nuevo retiro de fondos de las AFP",
+        "Que caiga el impuesto dirigido a las EMPRESAS",
+        "Que el gobierno cierre el año con superávit fiscal"
+      ],
+      "correcta": 2,
+      "explicacion": "La demanda son las empresas que se prestan para invertir, así que todo lo que las anime a invertir la desplaza: menos impuesto a la empresa, políticas que la incentiven, más confianza empresarial. Los ingresos de las familias, las AFP y el resultado fiscal mueven la OFERTA, que es el ahorro."
+    },
+    {
+      "id": "m11-q3",
+      "nivel": "comprension",
+      "enunciado": "Un comente de examen dice solamente «el gobierno sube el impuesto», sin aclarar a quién se lo cobra.\n\n¿Cómo lo lees?",
+      "opciones": [
+        "Se infiere que va al Yd de los consumidores, así que le pega al ahorro, o sea a la OFERTA",
+        "Se infiere que va a las empresas, así que le pega a la inversión, o sea a la DEMANDA",
+        "Se infiere que se reparte por igual entre familias y empresas",
+        "El comente está mal planteado y no se puede responder"
+      ],
+      "correcta": 0,
+      "explicacion": "Es la convención del curso: si no te dicen hacia quién está dirigido el impuesto, se asume que le pega al ingreso disponible de los consumidores. Cuando quieren que golpee a la inversión te lo dicen con todas sus letras: «impuesto dirigido a la empresa»."
+    },
+    {
+      "id": "m11-q4",
+      "nivel": "comprension",
+      "enunciado": "El BBVA Research arma un índice de tensiones políticas y resulta que ese índice tiene relación INVERSA con la confianza empresarial. Las tensiones suben.\n\n¿Qué pasa en el mercado de fondos prestables?",
+      "opciones": [
+        "Sube la tasa de interés y suben los fondos prestables",
+        "Cae la oferta de ahorro, así que la tasa sube",
+        "No pasa nada: la política no toca este mercado",
+        "Cae la DEMANDA (la inversión): baja la tasa, bajan los fondos prestables y el país crece menos"
+      ],
+      "correcta": 3,
+      "explicacion": "Más tensión política es menos confianza empresarial, y sin confianza las empresas no se prestan para invertir. La demanda se corre a la izquierda: se mueven menos fondos y a una tasa más baja. Y menos inversión hoy es menos crecimiento mañana."
+    },
+    {
+      "id": "m11-q5",
+      "nivel": "aplicacion",
+      "enunciado": "El gobierno cierra el año con DÉFICIT fiscal (G > T) y sale a endeudarse.\n\n¿Cuál es el orden correcto de lo que pasa?",
+      "opciones": [
+        "Cae el ahorro público → cae el ahorro nacional, la oferta se corre a la izquierda → SUBE la tasa → cae la inversión privada",
+        "Sube el ahorro nacional → baja la tasa → sube la inversión privada",
+        "Sube la demanda de fondos → baja la tasa → sube la inversión privada",
+        "No pasa nada: el gobierno no participa en este mercado"
+      ],
+      "correcta": 0,
+      "explicacion": "Ese es el CROWDING OUT, el efecto expulsión. El gobierno se mete al mercado a pedir prestado, la oferta de ahorro se encoge, la tasa se encarece y con esa tasa la inversión privada ya no entra: el Estado le ganó el sitio."
+    },
+    {
+      "id": "m11-q6",
+      "nivel": "comprension",
+      "enunciado": "Dos países entran en el mismo déficit fiscal, pero en uno el efecto sobre la inversión sale mucho más grande.\n\n¿De qué depende el tamaño del crowding out?",
+      "opciones": [
+        "Del tamaño del país y de su población",
+        "De nada: el efecto siempre es el mismo",
+        "De la SENSIBILIDAD a la tasa de interés, o sea de qué tan inclinadas estén las rectas",
+        "De la inflación que haya tenido ese año"
+      ],
+      "correcta": 2,
+      "explicacion": "Es pregunta de examen. Si la curva de ahorro es más vertical (más inelástica), la tasa tiene que subir más para acomodar al gobierno y el efecto sale más grande. Y si la inversión le hace mucho caso a la tasa, ese mismo empujón la tumba más todavía."
+    },
+    {
+      "id": "m11-q7",
+      "nivel": "comprension",
+      "enunciado": "El gobierno se endeuda igual que en el caso anterior, pero esta vez no lo gasta en gasto corriente: lo mete en carreteras, colegios y tecnología.\n\n¿Cambia la historia?",
+      "opciones": [
+        "No: todo déficit fiscal es igual de malo para el crecimiento",
+        "Sí: eso es CROWDING IN. Esa inversión pública sube la productividad y termina atrayendo inversión privada",
+        "Sí, pero solo si el gasto resulta más chico que el déficit",
+        "No, porque el gasto del gobierno nunca afecta al crecimiento"
+      ],
+      "correcta": 1,
+      "explicacion": "Si la plata prestada se va en gasto corriente o en pésimas actividades, lo único que queda es el efecto expulsión. Pero si se gasta en los determinantes del crecimiento —tecnología, capital humano y capital— mejora la productividad y atrae inversión privada: ese es el efecto atracción."
+    },
+    {
+      "id": "m11-q8",
+      "nivel": "comprension",
+      "enunciado": "JEFE 1/3. El mercado de fondos prestables está en equilibrio y te preguntan: «si la tasa de interés SUBE, ¿qué pasa?».\n\n¿Qué respondes?",
+      "opciones": [
+        "Que la oferta se desplaza hacia la derecha",
+        "Que la demanda se desplaza hacia la izquierda",
+        "Que suben el ahorro y la inversión al mismo tiempo",
+        "Que es trampa: la tasa es el PRECIO, y un cambio de precio no desplaza ninguna curva"
+      ],
+      "correcta": 3,
+      "explicacion": "El precio solo genera un movimiento a lo largo de las curvas. Y partiendo del equilibrio, una tasa más alta deja un exceso de ahorro sobre la inversión que la empuja de vuelta. Para que la tasa cambie de verdad, primero se tiene que desplazar alguna curva."
+    },
+    {
+      "id": "m11-q9",
+      "nivel": "comprension",
+      "enunciado": "JEFE 2/3. Se aprueba un nuevo retiro de fondos de las AFP.\n\n¿Qué le pasa al crecimiento del país?",
+      "opciones": [
+        "DEPENDE de qué se haga con ese dinerito: si se va en consumo, cae el ahorro nacional y con él la inversión",
+        "Crece más, seguro: hay más plata circulando",
+        "Crece menos, seguro, sin ninguna otra consideración",
+        "No pasa nada: las AFP no son parte de este mercado"
+      ],
+      "correcta": 0,
+      "explicacion": "Esa es la respuesta que vale en el comente: depende. Lo que sale de la AFP ya era ahorro, así que si termina en consumo la oferta de fondos se corre a la izquierda, sube la tasa y cae la inversión. La misma idea vale para el caso de redistribuir de los ricos a los pobres."
+    },
+    {
+      "id": "m11-q10",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 3/3. Baja el precio de las casas y muchas más FAMILIAS salen a pedir un préstamo para comprarse una.\n\n¿Qué se mueve en el mercado de fondos prestables?",
+      "opciones": [
+        "La oferta, porque son familias y las familias son las que ahorran",
+        "Nada: las familias no piden préstamos en este mercado",
+        "Solo se mueve la tasa; las curvas se quedan donde están",
+        "La DEMANDA se desplaza a la derecha: acá las familias están del lado del que pide prestado"
+      ],
+      "correcta": 3,
+      "explicacion": "Es el caso especial. Normalmente las familias son la oferta porque son las que ahorran, pero cuando se prestan para una casa, un auto o un proyecto entran del lado de la demanda. Más gente pidiendo prestado corre la demanda a la derecha, y con eso suben la tasa y los fondos prestables."
+    }
+  ]
+}

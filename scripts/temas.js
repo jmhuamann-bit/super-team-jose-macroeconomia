@@ -871,6 +871,113 @@ export const TEMAS = {
       }
     },
   },
+
+  /* =========================================================
+     SANTA ANITA — las cuatro de la mañana en el Gran Mercado
+     Mayorista. Los galpones larguísimos con su techo de calamina
+     y sus focos colgando, los camiones de provincia metidos de
+     espaldas en la bahía de carga, las torres de jabas y los
+     cerros de Ate todavía en silueta. Acá el que llega con el
+     camión más grande deja al resto sin sitio.
+     ========================================================= */
+  mayorista: {
+    nombre: "Santa Anita",
+    cielo: [[0, "#16294a"], [0.4, "#365a7d"], [0.78, "#8fa0a6"], [1, "#cfc4a8"]],
+    suelo: { cara: "#7d7a72", borde: "#a8a49a", tierra: "#4a4740", plataforma: "#6b3f1c", plataformaBorde: "#ffd166" },
+    acento: "#ffd166",
+
+    bichos: ["jaba", "balanza", "saco"],
+    nombresBichos: ["La Jaba del Movimiento", "La Balanza de la Tasa", "El Saco sin Destino"],
+    jefe: "camion",
+    nombreJefe: "El Camión del Déficit",
+
+    fondo(ctx, cam, t) {
+      // todavía no amanece: el cielo apenas se aclara por el este
+      const alba = ctx.createLinearGradient(0, 190, 0, 300);
+      alba.addColorStop(0, "rgba(255,206,130,0)");
+      alba.addColorStop(1, "rgba(255,206,130,.16)");
+      ctx.fillStyle = alba;
+      ctx.fillRect(0, 190, CFG.ANCHO_VISTA, 110);
+
+      // los cerros de Ate, en silueta
+      repetir(ctx, cam, 560, 0.12, (x) => {
+        ctx.fillStyle = "#26364f";
+        ctx.beginPath();
+        ctx.moveTo(x - 80, 292);
+        ctx.quadraticCurveTo(x + 140, 168, x + 340, 292);
+        ctx.closePath(); ctx.fill();
+      });
+
+      // los galpones del mercado, larguísimos, con techo de calamina
+      repetir(ctx, cam, 300, 0.34, (x, i) => {
+        const bx = x + 20, base = 316, alto = 74 + ((i * 23) % 18);
+        ctx.fillStyle = ["#4a5566", "#54606f", "#455063"][i % 3];
+        ctx.fillRect(bx, base - alto, 250, alto);
+        // el techo a dos aguas, bien bajito
+        ctx.fillStyle = "#39424f";
+        ctx.beginPath();
+        ctx.moveTo(bx - 10, base - alto);
+        ctx.lineTo(bx + 125, base - alto - 26);
+        ctx.lineTo(bx + 260, base - alto);
+        ctx.closePath(); ctx.fill();
+        // los portones abiertos del galpón, iluminados por dentro
+        ctx.fillStyle = "rgba(255,206,120,.5)";
+        for (let k = 0; k < 4; k++) ctx.fillRect(bx + 22 + k * 60, base - 46, 38, 46);
+      });
+
+      // la guirnalda de focos pelados que cruza los pasillos
+      repetir(ctx, cam, 190, 0.5, (x) => {
+        ctx.strokeStyle = "rgba(60,66,78,.7)"; ctx.lineWidth = 1;
+        ctx.beginPath(); ctx.moveTo(x, 214); ctx.quadraticCurveTo(x + 95, 240, x + 190, 214); ctx.stroke();
+        for (let k = 1; k < 6; k++) {
+          const p = k / 6, px = x + 190 * p, py = 214 + Math.sin(p * Math.PI) * 26;
+          const brillo = 0.55 + 0.3 * Math.abs(Math.sin(t / 34 + k));
+          ctx.fillStyle = `rgba(255,226,150,${brillo.toFixed(2)})`;
+          ctx.beginPath(); ctx.arc(px, py + 4, 4, 0, Math.PI * 2); ctx.fill();
+          ctx.fillStyle = "rgba(255,226,150,.14)";
+          ctx.beginPath(); ctx.arc(px, py + 4, 11, 0, Math.PI * 2); ctx.fill();
+        }
+      });
+
+      // los camiones de provincia, metidos de espaldas en la bahía de carga
+      repetir(ctx, cam, 226, 0.62, (x, i) => {
+        const bx = x + 16, base = 340;
+        ctx.fillStyle = ["#8a6a48", "#6b7a8a", "#8a5c48"][i % 3];
+        ctx.fillRect(bx, base - 52, 104, 52);             // la tolva
+        ctx.fillStyle = "#e0562f";
+        ctx.fillRect(bx, base - 34, 104, 7);              // la franja
+        ctx.fillStyle = ["#2f6b8f", "#c2264a", "#3f7d5c"][i % 3];
+        ctx.fillRect(bx + 104, base - 40, 34, 40);        // la cabina
+        ctx.fillStyle = "rgba(189,232,255,.55)";
+        ctx.fillRect(bx + 112, base - 34, 18, 14);        // la ventana
+        ctx.fillStyle = "#1c1c26";                        // las llantas
+        for (const lx of [bx + 16, bx + 62, bx + 116]) {
+          ctx.beginPath(); ctx.arc(lx, base, 8, 0, Math.PI * 2); ctx.fill();
+        }
+      });
+
+      // las torres de jabas apiladas en la vereda
+      repetir(ctx, cam, 104, 0.8, (x, i) => {
+        const bx = x + 10, base = 352, pisos = 3 + (i % 3);
+        for (let k = 0; k < pisos; k++) {
+          ctx.fillStyle = ["#3f8fc4", "#e0562f", "#4fb0a8", "#e8c15a"][(i + k) % 4];
+          ctx.fillRect(bx, base - (k + 1) * 13, 40, 12);
+          ctx.fillStyle = "rgba(0,0,0,.22)";
+          ctx.fillRect(bx, base - (k + 1) * 13 + 9, 40, 3);
+        }
+      });
+    },
+
+    clima(ctx, t) {
+      // el vaho frío de la madrugada, bajito, entre los pasillos
+      for (let i = 0; i < 14; i++) {
+        const x = (i * 197 - t * 0.9) % 900 - 40;
+        const y = 236 + ((i * 43) % 90) + Math.sin(t / 44 + i) * 5;
+        ctx.fillStyle = `rgba(206,222,236,${(0.05 + 0.05 * Math.abs(Math.sin(t / 50 + i))).toFixed(2)})`;
+        ctx.fillRect(x, y, 120, 12);
+      }
+    },
+  },
 };
 
 /** Pinta el cielo del tema (degradado vertical). */

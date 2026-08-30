@@ -1009,6 +1009,74 @@ const BANQUERO = [  // jefe del Cercado: el banquero de Jirón Lampa (20 × 16)
 ];
 const P_BANQUERO = { k: "#241a2e", c: "#e8b98d", m: "#5c4632", n: "#2f3550", w: "#f2f6ff", y: "#e8b13c" };
 
+const JABA = [   // jaba de fruta del mayorista: se corre por el pasillo y cree que se movió el mercado (13 × 12)
+  ".............",
+  ".............",
+  "...rrr.rrr...",
+  "..rrrrrrrrr..",
+  ".ccccccccccc.",
+  ".ckckckckckc.",
+  ".ccccccccccc.",
+  ".ckckckckckc.",
+  ".ccccccccccc.",
+  ".............",
+  ".............",
+  ".............",
+];
+const P_JABA = { r: "#e0562f", c: "#3f8fc4", k: "#1f5a80" };
+
+const BALANZA = [   // la balanza del puesto: cree que el precio se mueve solo (14 × 12)
+  "..............",
+  "....wwwwww....",
+  "...wwwwwwww...",
+  "...wwwkwwww...",
+  "...wwkkkwww...",
+  "...wwwwwwww...",
+  "....wwwwww....",
+  "......kk......",
+  "..kkkkkkkkkk..",
+  "...kkkkkkkk...",
+  "...mmmmmmmm...",
+  "..............",
+];
+const P_BALANZA = { w: "#f2ead8", k: "#5c5c66", m: "#c2264a" };
+
+const SACO = [   // el saco de papas: todo depende de en qué termine ese dinerito (13 × 12)
+  ".............",
+  ".....kkk.....",
+  "....mmmmm....",
+  "...mmmmmmm...",
+  "..mmmmmmmmm..",
+  "..mmmmmmmmm..",
+  ".mmmmmmmmmmm.",
+  ".mmmwwwwwmmm.",
+  ".mmmmmmmmmmm.",
+  ".mmmmmmmmmmm.",
+  "..mmmmmmmmm..",
+  ".............",
+];
+const P_SACO = { k: "#8a6a2c", m: "#c9a877", w: "#f2ead8" };
+
+const CAMION = [  // jefe de Santa Anita: el camión que se para en la bahía y no deja sitio (20 × 16)
+  "....................",
+  "..cccccccccc........",
+  ".cccccccccccc..nnnn.",
+  ".cccccccccccc.nnnnnn",
+  ".cccccccccccc.nnvvvn",
+  ".cwwwwwwwwwwc.nnnnnn",
+  ".cccccccccccc.nnnnnn",
+  ".cccccccccccc.nnnnnn",
+  ".cccccccccccc.nnnnnn",
+  "kkkkkkkkkkkkkkkkkkkk",
+  "..kk......kk...kk...",
+  ".kkkk....kkkk.kkkk..",
+  ".kkkk....kkkk.kkkk..",
+  "..kk......kk...kk...",
+  "....................",
+  "....................",
+];
+const P_CAMION = { c: "#c9a877", w: "#e0562f", n: "#2f6b8f", v: "#bde8ff", k: "#241a2e" };
+
 /* ---------------------------------------------------------------
    REGISTRO Y COCINADO
    --------------------------------------------------------------- */
@@ -1072,6 +1140,10 @@ const DEFINICIONES = {
   sello:        [SELLO, P_SELLO],
   bono:         [BONO, P_BONO],
   banquero:     [BANQUERO, P_BANQUERO],
+  jaba:         [JABA, P_JABA],
+  balanza:      [BALANZA, P_BALANZA],
+  saco:         [SACO, P_SACO],
+  camion:       [CAMION, P_CAMION],
 };
 
 const cocidos = {};   // nombre -> { canvas, ancho, alto } (ya escalados)

@@ -1,0 +1,42 @@
+{
+  "id": "level11",
+  "distrito": "Santa Anita",
+  "clase": "Clase 02 · PC2",
+  "titulo": "El mayorista del efecto expulsión",
+  "tema": "mayorista",
+  "musica": "mayorista",
+  "vehiculo": "combi",
+  "intro": "A las cuatro de la mañana el Gran Mercado Mayorista de Santa Anita ya está lleno. Los camiones de provincia entran de espaldas a la bahía de carga, y el que llega con el camión más grande deja al resto sin sitio para descargar. Eso es el CROWDING OUT: cuando el gobierno se endeuda, se mete en la cola del mercado de fondos prestables, empuja la tasa hacia arriba y saca del sitio a la inversión privada. Hoy toca mover curvas.",
+  "repaso": [
+    "De Eco 1, la cachetada: cuando cambia el PRECIO, cambia la CANTIDAD demandada, no «la demanda». El precio produce un MOVIMIENTO a lo largo de la curva; la curva entera se DESPLAZA solo cuando cambia otra cosa.",
+    "Acá la DEMANDA es la INVERSIÓN total (causa «inversión», consecuencia «ahorro») y la OFERTA es el AHORRO NACIONAL (causa «ahorro», consecuencia «inversión»).",
+    "Desplazan la DEMANDA: la confianza empresarial, las políticas públicas que incentiven la inversión y el impuesto DIRIGIDO A LA EMPRESA.",
+    "Caso especial de la demanda: cuando las FAMILIAS piden préstamos para una casa, un auto o un proyecto, entran del lado de la demanda y no de la oferta. Si baja el precio de las casas, más gente se presta.",
+    "Si el comente dice solo «impuesto» y no aclara hacia quién va dirigido, se infiere que le pega al Yd de los CONSUMIDORES.",
+    "Desplazan la OFERTA: el riesgo de pago o devolución, el nivel de ingresos o la productividad de las familias (que sube el consumo, el ahorro y la PMgC), un retiro de AFP, una redistribución, la inflación y el resultado fiscal.",
+    "Con el ingreso o la productividad hay que distinguir el efecto TEMPORAL del PERMANENTE: una entrada pasajera se guarda casi entera y el ahorro sube fuerte; una mejora que llegó para quedarse viene con más consumo, así que el ahorro se mueve mucho menos.",
+    "Con las AFP y con las redistribuciones, la respuesta del comente es «DEPENDE de qué se haga con ese dinerito». Si termina en consumo, cae el ahorro nacional.",
+    "CROWDING OUT (efecto expulsión), paso a paso: 1) el gobierno entra en déficit y se endeuda; 2) cae el ahorro público y con él el nacional, la oferta se corre a la izquierda y SUBE la tasa; 3) con la tasa más cara, cae la inversión privada.",
+    "Se le dice expulsión porque el Estado literalmente le gana el sitio a la inversión privada dentro del mercado.",
+    "PREGUNTA DE EXAMEN: el tamaño del crowding out depende de la SENSIBILIDAD a la tasa, o sea de la inclinación de las rectas. Mientras más vertical (inelástica) sea la curva de ahorro, más sube la tasa y más grande sale el efecto.",
+    "CROWDING IN (efecto atracción): si el gobierno se endeuda pero gasta esa plata en los determinantes del crecimiento —tecnología, capital humano, capital—, o sea en INVERSIÓN PÚBLICA, sube la productividad y termina atrayendo inversión privada. Si se la gasta en gasto corriente, solo queda la expulsión.",
+    "LA TRAMPA: la tasa de interés es el PRECIO de este mercado. Un cambio de precio NO desplaza ninguna curva, y partiendo del equilibrio la tasa no se mueve sola: primero se tiene que desplazar algo."
+  ],
+  "mapa": [
+    "                                                                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                                                                ",
+    "                      o o o                             o o o                           o o o                           o o o                         o o o                         o o o                       o o o                           ",
+    "            ?                   o o       L         o o         G               o o                     V                     o o       1                 o o         o o L                   o o       ?           o o               1         ",
+    "                      ====                              ====                            ====                            ====                          ====                          ====                        ====                            ",
+    "                          o o                 o o             o o                   o o                   o o                         o o           o o                     o o         o o             o o                     o o             ",
+    "  P               E           C                   E         X       E                       C       E         X                   E               C                 E             X         E                 X           B                 M   ",
+    "######################################   #################################    ####################################   ###################################    ######################################   ###########################################",
+    "######################################   #################################    ####################################   ###################################    ######################################   ###########################################",
+    "######################################   #################################    ####################################   ###################################    ######################################   ###########################################"
+  ]
+}

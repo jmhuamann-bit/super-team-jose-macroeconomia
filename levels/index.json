@@ -141,6 +141,20 @@
       "abierto": true,
       "mapa": "levels/level10.json",
       "preguntas": "questions/level10_questions.json"
+    },
+    {
+      "id": "level11",
+      "clase": "Clase 02",
+      "distrito": "Santa Anita",
+      "titulo": "El mayorista del efecto expulsión",
+      "icono": "🚛",
+      "seccion": "PC2",
+      "seccionNota": "Ahorro, inversión y fondos prestables",
+      "retos": 8,
+      "duracion": "3 min",
+      "abierto": true,
+      "mapa": "levels/level11.json",
+      "preguntas": "questions/level11_questions.json"
     }
   ]
 }

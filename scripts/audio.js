@@ -86,6 +86,14 @@ const TEMAS_MUSICA = {
               "C5",2,"B4",1,"A4",1,"A4",4],
     bajo:    ["A2",4,"E3",4,"F2",4,"C3",4,"D3",4,"A2",4,"E3",4,"A2",4],
   },
+  mayorista: { // Santa Anita: madrugada en el mayorista, huaylas apurado de descarga
+    tempo: 0.12, onda: "square",
+    melodia: ["D4",1,"F4",1,"A4",1,"D5",2,"C5",1,"A4",1,"F4",2,
+              "G4",1,"A4",1,"C5",2,"A4",1,"G4",1,"F4",2,"D4",2,
+              "A4",1,"C5",1,"D5",1,"F5",2,"D5",1,"C5",1,"A4",2,
+              "F4",2,"G4",1,"F4",1,"D4",4],
+    bajo:    ["D3",4,"A2",4,"B2",4,"F2",4,"G2",4,"D3",4,"A2",4,"D3",4],
+  },
 };
 
 function arrancarCtx() {

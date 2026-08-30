@@ -187,6 +187,10 @@ const FICHAS = [
   { sprite: "sello", nombre: "El Sello de Azángaro", texto: "Sella el impuesto y después consume sobre el ingreso entero, como si nunca lo hubiera cobrado." },
   { sprite: "bono", nombre: "El Bono de Jirón Lampa", texto: "Cambia de mano toda la cuadra y ya no sabe quién presta y quién pide prestado." },
   { sprite: "banquero", nombre: "El Banquero de Jirón Lampa", texto: "Jefe del Cercado: cuadra la caja con el ahorro de las familias y deja al gobierno fuera del libro." },
+  { sprite: "jaba", nombre: "La Jaba del Movimiento", texto: "Se corre dos puestos por el pasillo y jura que se movió el mercado entero." },
+  { sprite: "balanza", nombre: "La Balanza de la Tasa", texto: "Cree que la tasa de interés se mueve sola y arrastra a las curvas con ella." },
+  { sprite: "saco", nombre: "El Saco sin Destino", texto: "Nadie sabe si lo que lleva adentro se va a consumir o a invertir, y de eso depende todo." },
+  { sprite: "camion", nombre: "El Camión del Déficit", texto: "Jefe de Santa Anita: se para en media bahía de carga y deja a los chicos sin sitio para descargar." },
 ];
 
 export function galeriaPersonajes(contenedor) {
