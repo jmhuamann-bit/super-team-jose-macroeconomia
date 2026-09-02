@@ -1,0 +1,42 @@
+{
+  "id": "level12",
+  "distrito": "San Borja",
+  "clase": "Clase 03 · PC2",
+  "titulo": "La torre de la práctica calificada",
+  "tema": "alameda",
+  "musica": "alameda",
+  "vehiculo": "taxi",
+  "intro": "En San Borja está el MEF y se levanta la Torre del Banco de la Nación: es el barrio donde se firman las medidas que después te caen en la práctica. Este distrito es la PC2 2026-0 entera, con su clave de respuestas: los cuatro comentes y los dos ejercicios. Ojo que acá ya entra la ECONOMÍA ABIERTA —mercado cambiario, tipo de cambio y salida neta de capitales—, así que revisa el repaso antes de correr.",
+  "repaso": [
+    "REPASO CERRADA. Ahorro nacional = privado (Yd − C) + público (T − G), y en economía cerrada el ahorro nacional es igual a la INVERSIÓN. Igualar las dos te da la tasa y los fondos prestables.",
+    "El otro camino para lo mismo: Y = C + I + G. Sirve cuando te piden despejar la propensión marginal a consumir.",
+    "Si suben el gasto y el impuesto con ΔG > ΔT > 0: el ahorro público cae en (ΔT − ΔG), el privado cae en −(1 − PMC)·ΔT y el nacional queda en PMC·ΔT − ΔG, que es negativo.",
+    "Mientras MAYOR sea la PMC, MENOR es la caída del ahorro nacional: con una PMC alta, el golpe del impuesto se lo lleva casi todo el consumo y no el ahorro.",
+    "ECONOMÍA ABIERTA. El equilibrio del producto pasa a ser Y = C + I + G + XN, y la identidad del ahorro pasa a ser S = I + SNC, donde el SNC es la salida neta de capitales. Además XN = SNC.",
+    "Más salida neta de capitales es más tasa de interés y menos inversión. Menos capitales saliendo (o más entrando) es lo contrario.",
+    "Las exportaciones netas dependen del tipo de cambio REAL (q): XN = XN0 + sensibilidad · q.",
+    "MERCADO CAMBIARIO. Si la tasa de interés interna baja, los activos locales se vuelven menos atractivos, se van capitales y la moneda se DEPRECIA (sube el tipo de cambio).",
+    "UIRP (paridad descubierta de tasas de interés): comparas la tasa local contra el ROR, que es la tasa extranjera MÁS la depreciación esperada de la moneda local. Si el ROR queda por debajo, conviene depositar en la moneda local.",
+    "Cuando la paridad NO se cumple aparece el arbitraje: te endeudas donde el costo (medido en la misma moneda) es más barato y depositas donde el retorno es mayor.",
+    "REGÍMENES CAMBIARIOS. En un régimen FIJO hay un nivel anunciado que el banco central defiende. El Perú NO lo tiene: acá rige la FLOTACIÓN SUCIA.",
+    "En la flotación sucia el BCRP interviene SIN comprometerse con ningún nivel, para bajarle la volatilidad excesiva al tipo de cambio. Interviene sobre todo comprando y vendiendo dólares en el mercado spot, y además con swaps, forwards, certificados de depósito indexados y opciones.",
+    "CUIDADO con la excepción de siempre: si las sensibilidades a la tasa son números chicos, la tasa va en el valor del PORCENTAJE, no en decimales."
+  ],
+  "mapa": [
+    "                                                                                                                                                                                                                                                        ",
+    "                                                                                                                                                                                                                                                        ",
+    "                                                                                                                                                                                                                                                        ",
+    "                                                                                                                                                                                                                                                        ",
+    "                                                                                                                                                                                                                                                        ",
+    "                                                                                                                                                                                                                                                        ",
+    "                                                                                                                                                                                                                                                        ",
+    "                        o o o                             o o o                             o o o                           o o o                         o o o                           o o o                         o o o                           ",
+    "              ?                   o o       L         o o           G               o o                     V                     o o       1                   o o         o o L                   o o       ?             o o               1         ",
+    "                        ====                              ====                              ====                            ====                          ====                            ====                          ====                            ",
+    "                            o o                 o o               o o                   o o                   o o                         o o           o o                       o o         o o               o o                     o o             ",
+    "  P                 E           C                   E         X       E                         C       E       X                     E               C                 E             X           E                 X             B                 M   ",
+    "####################################    ######################################   #####################################    ####################################   #######################################    ############################################",
+    "####################################    ######################################   #####################################    ####################################   #######################################    ############################################",
+    "####################################    ######################################   #####################################    ####################################   #######################################    ############################################"
+  ]
+}

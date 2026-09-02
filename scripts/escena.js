@@ -191,6 +191,10 @@ const FICHAS = [
   { sprite: "balanza", nombre: "La Balanza de la Tasa", texto: "Cree que la tasa de interés se mueve sola y arrastra a las curvas con ella." },
   { sprite: "saco", nombre: "El Saco sin Destino", texto: "Nadie sabe si lo que lleva adentro se va a consumir o a invertir, y de eso depende todo." },
   { sprite: "camion", nombre: "El Camión del Déficit", texto: "Jefe de Santa Anita: se para en media bahía de carga y deja a los chicos sin sitio para descargar." },
+  { sprite: "expediente", nombre: "El Expediente sin Ahorro Público", texto: "Cuadra el ahorro nacional con lo de las familias y se le traspapela el (T − G)." },
+  { sprite: "bicicleta", nombre: "La Bicicleta de Ida y Vuelta", texto: "Los capitales entran y salen, y ella nunca se queda con el NETO." },
+  { sprite: "candado", nombre: "El Candado del Tipo de Cambio", texto: "Ve al BCRP comprando dólares y ya cree que le pusieron candado a un tipo de cambio que flota." },
+  { sprite: "ministro", nombre: "El Ministro de la Torre", texto: "Jefe de San Borja: firma la medida, arma el gráfico y te lo deja de práctica calificada." },
 ];
 
 export function galeriaPersonajes(contenedor) {

@@ -155,6 +155,20 @@
       "abierto": true,
       "mapa": "levels/level11.json",
       "preguntas": "questions/level11_questions.json"
+    },
+    {
+      "id": "level12",
+      "clase": "Clase 03",
+      "distrito": "San Borja",
+      "titulo": "La torre de la práctica calificada",
+      "icono": "🗼",
+      "seccion": "PC2",
+      "seccionNota": "Ahorro, inversión y fondos prestables",
+      "retos": 8,
+      "duracion": "3 min",
+      "abierto": true,
+      "mapa": "levels/level12.json",
+      "preguntas": "questions/level12_questions.json"
     }
   ]
 }

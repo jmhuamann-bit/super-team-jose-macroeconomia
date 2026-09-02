@@ -1077,6 +1077,74 @@ const CAMION = [  // jefe de Santa Anita: el camión que se para en la bahía y 
 ];
 const P_CAMION = { c: "#c9a877", w: "#e0562f", n: "#2f6b8f", v: "#bde8ff", k: "#241a2e" };
 
+const EXPEDIENTE = [   // el expediente del MEF: cuadra la caja y se olvida de una hoja (13 × 12)
+  ".............",
+  ".............",
+  "..wwwwwwwww..",
+  ".wwwwwwwwwww.",
+  "mmmmmmmmmmmmm",
+  "mkkkkkkkkkkkm",
+  "mmmmmmmmmmmmm",
+  "mkkkkkkkkkkkm",
+  "mmmmmmmmmmmmm",
+  "...rrrrrrr...",
+  ".............",
+  ".............",
+];
+const P_EXPEDIENTE = { w: "#f2ead8", m: "#c9a877", k: "#8a7460", r: "#c2264a" };
+
+const BICICLETA = [   // la bici de la ciclovía de San Borja: va y viene y nunca saca el neto (14 × 12)
+  "..............",
+  "..............",
+  ".........rr...",
+  "....rrrrrrr...",
+  "...r...r...r..",
+  "..r....r....r.",
+  ".kkk..r...kkk.",
+  "kk.kk.r..kk.kk",
+  "kk.kk.r..kk.kk",
+  ".kkk..r...kkk.",
+  "..............",
+  "..............",
+];
+const P_BICICLETA = { k: "#3b3b44", r: "#c2264a" };
+
+const CANDADO = [   // el candado: le quiere poner un nivel fijo a un tipo de cambio que flota (12 × 12)
+  "............",
+  "....kkkk....",
+  "...k....k...",
+  "...k....k...",
+  "...k....k...",
+  ".yyyyyyyyyy.",
+  ".yyyyyyyyyy.",
+  ".yyyykkyyyy.",
+  ".yyyykkyyyy.",
+  ".yyyyyyyyyy.",
+  ".yyyyyyyyyy.",
+  "............",
+];
+const P_CANDADO = { k: "#5c5c66", y: "#e8b13c" };
+
+const MINISTRO = [  // jefe de San Borja: el ministro que firma la medida y te la deja de tarea (20 × 16)
+  "......gggggg........",
+  ".....gggggggg.......",
+  "....gggggggggg......",
+  ".....cccccccc.......",
+  ".....cckkcckkc......",
+  ".....cccccccc.......",
+  "......cccccc........",
+  ".....wwwwwwww.......",
+  "....nnnwrwnnn.......",
+  "...nnnnwrwnnnn......",
+  "...nnnnnnnnnnn......",
+  "...nnnnnnnnnyyy.....",
+  "...nnnnnnnnnyyy.....",
+  "...nnnn..nnnn.......",
+  "...nnnn..nnnn.......",
+  "..kkkkk..kkkkk......",
+];
+const P_MINISTRO = { k: "#241a2e", g: "#9aa0a6", c: "#e8b98d", n: "#2b3550", w: "#f2f6ff", r: "#c2264a", y: "#e8b13c" };
+
 /* ---------------------------------------------------------------
    REGISTRO Y COCINADO
    --------------------------------------------------------------- */
@@ -1144,6 +1212,10 @@ const DEFINICIONES = {
   balanza:      [BALANZA, P_BALANZA],
   saco:         [SACO, P_SACO],
   camion:       [CAMION, P_CAMION],
+  expediente:   [EXPEDIENTE, P_EXPEDIENTE],
+  bicicleta:    [BICICLETA, P_BICICLETA],
+  candado:      [CANDADO, P_CANDADO],
+  ministro:     [MINISTRO, P_MINISTRO],
 };
 
 const cocidos = {};   // nombre -> { canvas, ancho, alto } (ya escalados)

@@ -978,6 +978,109 @@ export const TEMAS = {
       }
     },
   },
+
+  /* =========================================================
+     SAN BORJA — la tarde en la alameda. Acá está el MEF y acá se
+     levanta la Torre del Banco de la Nación, la más alta del
+     Estado peruano; enfrente, la reja verde del Pentagonito y las
+     ciclovías rojas que le dieron fama al distrito. Es el barrio
+     donde se firman las medidas que después caen en la práctica.
+     ========================================================= */
+  alameda: {
+    nombre: "San Borja",
+    cielo: [[0, "#3f7fbf"], [0.45, "#79aed6"], [0.8, "#cfe0e8"], [1, "#e8e2d2"]],
+    suelo: { cara: "#b8b4a8", borde: "#d8d4c8", tierra: "#6b675e", plataforma: "#46566e", plataformaBorde: "#ffd166" },
+    acento: "#c2264a",
+
+    bichos: ["expediente", "bicicleta", "candado"],
+    nombresBichos: ["El Expediente sin Ahorro Público", "La Bicicleta de Ida y Vuelta", "El Candado del Tipo de Cambio"],
+    jefe: "ministro",
+    nombreJefe: "El Ministro de la Torre",
+
+    fondo(ctx, cam, t) {
+      // sol de la tarde, alto y limpio
+      ctx.fillStyle = "rgba(255,246,214,.22)";
+      ctx.beginPath(); ctx.arc(672, 78, 58, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = "rgba(255,250,230,.95)";
+      ctx.beginPath(); ctx.arc(672, 78, 28, 0, Math.PI * 2); ctx.fill();
+
+      // la Torre del Banco de la Nación, el hito que se ve desde toda la avenida
+      repetir(ctx, cam, 820, 0.2, (x) => {
+        const bx = x + 300, base = 306, alto = 216;
+        ctx.fillStyle = "#5f708a";
+        ctx.fillRect(bx, base - alto, 68, alto);
+        ctx.fillStyle = "#7c8ea8";                       // el canto iluminado
+        ctx.fillRect(bx + 54, base - alto, 14, alto);
+        // las bandas de ventanas, piso por piso
+        ctx.fillStyle = "rgba(196,226,244,.55)";
+        for (let y = base - alto + 14; y < base - 24; y += 12) ctx.fillRect(bx + 7, y, 42, 7);
+        // el remate y la antena
+        ctx.fillStyle = "#46566e";
+        ctx.fillRect(bx - 6, base - alto - 10, 80, 12);
+        ctx.fillStyle = "#9aa0a6";
+        ctx.fillRect(bx + 32, base - alto - 42, 3, 32);
+      });
+
+      // los bloques bajos y anchos del barrio, con sus azoteas
+      repetir(ctx, cam, 214, 0.38, (x, i) => {
+        const bx = x + 16, base = 312, alto = 78 + ((i * 27) % 40);
+        ctx.fillStyle = ["#dcd6c8", "#cfd6dc", "#e2d8c4", "#d2ccc0"][i % 4];
+        ctx.fillRect(bx, base - alto, 148, alto);
+        ctx.fillStyle = "rgba(0,0,0,.14)";
+        ctx.fillRect(bx, base - alto, 148, 5);
+        ctx.fillStyle = "rgba(96,132,158,.45)";
+        for (let fy = base - alto + 16; fy < base - 16; fy += 20)
+          for (let fx = bx + 12; fx < bx + 136; fx += 22) ctx.fillRect(fx, fy, 13, 12);
+      });
+
+      // la reja verde del Pentagonito con los árboles asomando por encima
+      repetir(ctx, cam, 168, 0.56, (x, i) => {
+        const bx = x + 10, base = 340;
+        ctx.fillStyle = i % 2 ? "#3f8f55" : "#4fa363";
+        ctx.beginPath(); ctx.arc(bx + 36, base - 54, 26, 0, Math.PI * 2); ctx.fill();
+        ctx.beginPath(); ctx.arc(bx + 112, base - 48, 21, 0, Math.PI * 2); ctx.fill();
+        ctx.fillStyle = "#6b5535";
+        ctx.fillRect(bx + 33, base - 40, 6, 40);
+        ctx.fillRect(bx + 109, base - 34, 6, 34);
+        ctx.strokeStyle = "rgba(58,110,72,.8)"; ctx.lineWidth = 2;   // la reja
+        ctx.beginPath();
+        for (let rx = bx; rx < bx + 160; rx += 9) { ctx.moveTo(rx, base - 26); ctx.lineTo(rx, base); }
+        ctx.moveTo(bx, base - 24); ctx.lineTo(bx + 160, base - 24);
+        ctx.stroke();
+      });
+
+      // la ciclovía roja de la alameda, con sus bancas y sus postes
+      repetir(ctx, cam, 132, 0.78, (x, i) => {
+        const bx = x + 8, base = 356;
+        ctx.fillStyle = "#a3243f";
+        ctx.fillRect(bx, base - 6, 124, 6);
+        ctx.fillStyle = "rgba(255,255,255,.6)";                      // la línea discontinua
+        for (let lx = bx + 6; lx < bx + 118; lx += 22) ctx.fillRect(lx, base - 4, 11, 2);
+        if (i % 2 === 0) {                                           // la banca
+          ctx.fillStyle = "#8a6a48";
+          ctx.fillRect(bx + 20, base - 24, 40, 5);
+          ctx.fillRect(bx + 20, base - 34, 40, 5);
+          ctx.fillStyle = "#5c5c66";
+          ctx.fillRect(bx + 23, base - 20, 4, 14); ctx.fillRect(bx + 53, base - 20, 4, 14);
+        } else {                                                     // el poste de luz
+          ctx.fillStyle = "#9aa0a6";
+          ctx.fillRect(bx + 74, base - 58, 3, 58);
+          ctx.fillStyle = "#e8e2d2";
+          ctx.fillRect(bx + 68, base - 62, 15, 6);
+        }
+      });
+    },
+
+    clima(ctx, t) {
+      // el destello del sol de la tarde rebotando en los vidrios
+      for (let i = 0; i < 18; i++) {
+        const x = (i * 173 - t * 1.1) % 880 - 20;
+        const y = 90 + ((i * 79) % 220) + Math.sin(t / 40 + i) * 8;
+        ctx.fillStyle = `rgba(255,250,224,${(0.10 + 0.18 * Math.abs(Math.sin(t / 30 + i))).toFixed(2)})`;
+        ctx.fillRect(x, y, 4, 4);
+      }
+    },
+  },
 };
 
 /** Pinta el cielo del tema (degradado vertical). */

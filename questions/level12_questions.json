@@ -1,0 +1,138 @@
+{
+  "nivel": "level12",
+  "clase": "Clase 03 · PC2 — Simulacro de la Práctica Calificada 2",
+  "fuente": "Práctica Calificada N° 02, Economía General II, semestre 2026-0",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "m12-q1",
+      "nivel": "comprension",
+      "enunciado": "COMENTE 2. En una economía cerrada el gobierno sube el gasto público y los impuestos, pero el aumento del gasto es mayor: ΔG > ΔT > 0.\n\n¿Qué pasa con el AHORRO PÚBLICO?",
+      "opciones": [
+        "Sube, porque también subieron los impuestos",
+        "Se queda igual: los dos aumentos se compensan",
+        "CAE: Δ(T − G) = ΔT − ΔG < 0, así que el déficit fiscal aumenta",
+        "No se puede saber sin conocer el producto"
+      ],
+      "correcta": 2,
+      "explicacion": "El ahorro público es T − G, así que su variación es ΔT − ΔG. Como el gasto subió más que la recaudación, esa resta sale negativa: el ahorro público cae y el déficit fiscal se hace más grande."
+    },
+    {
+      "id": "m12-q2",
+      "nivel": "aplicacion",
+      "enunciado": "COMENTE 2. Mismo caso. El ingreso disponible cambia en Δ(Y − T) = −ΔT y el consumo en ΔC = PMC · Δ(Y − T).\n\n¿Cuánto cambia el AHORRO PRIVADO?",
+      "opciones": [
+        "−(1 − PMC) · ΔT, o sea que cae",
+        "−ΔT: cae en todo el impuesto",
+        "+PMC · ΔT, o sea que sube",
+        "Cero: el ahorro privado no se entera del impuesto"
+      ],
+      "correcta": 0,
+      "explicacion": "ΔAhorro privado = Δ(Y − T − C) = −ΔT − ΔC. Como ΔC = −PMC · ΔT, queda −ΔT + PMC · ΔT = −(1 − PMC) · ΔT. Cae, pero menos que todo el impuesto: parte del golpe se lo lleva el consumo."
+    },
+    {
+      "id": "m12-q3",
+      "nivel": "comprension",
+      "enunciado": "COMENTE 2. Juntando las dos partes queda ΔAhorro nacional = PMC · ΔT − ΔG, que siempre sale negativo porque ΔG > ΔT.\n\n¿Qué pasa si la PMC es MÁS ALTA?",
+      "opciones": [
+        "La caída del ahorro nacional es MAYOR",
+        "No cambia nada: la PMC no entra en el resultado",
+        "El ahorro nacional pasa a subir",
+        "La caída del ahorro nacional es MENOR"
+      ],
+      "correcta": 3,
+      "explicacion": "Con una PMC alta, cuando les suben el impuesto las familias recortan sobre todo su CONSUMO, así que su ahorro casi no se mueve y el nacional aguanta mejor. Igual termina cayendo, porque ΔG > ΔT > PMC · ΔT."
+    },
+    {
+      "id": "m12-q4",
+      "nivel": "aplicacion",
+      "enunciado": "COMENTE 3. Un depósito en soles paga 6 % anual y uno en pirudólares paga 1 % anual. Se espera que el sol se deprecie 2 % frente al pirudólar.\n\n¿Dónde le conviene depositar a Ray?",
+      "opciones": [
+        "En pirudólares: siempre conviene la moneda de afuera",
+        "Da igual: la condición de paridad se está cumpliendo",
+        "En SOLES: el depósito en pirudólares, medido en soles, rinde 1 + 2 = 3 %, menos que el 6 %",
+        "En pirudólares: 1 % + 2 % + 6 % = 9 %"
+      ],
+      "correcta": 2,
+      "explicacion": "La condición de paridad compara la tasa local contra el ROR, que es la tasa extranjera más la depreciación esperada de la moneda local: 1 % + 2 % = 3 %. Como el depósito en soles rinde 6 %, gana el sol."
+    },
+    {
+      "id": "m12-q5",
+      "nivel": "comprension",
+      "enunciado": "COMENTE 3. Con esos mismos números (6 % en soles, un ROR de 3 % en pirudólares),\n\n¿le conviene a Ray endeudarse en un país y depositar en el otro?",
+      "opciones": [
+        "Sí: se presta en soles al 6 % y deposita en pirudólares",
+        "Sí: se presta en Piruland, que medido en soles le cuesta 3 %, y deposita en soles al 6 %",
+        "No: nunca conviene endeudarse en otra moneda",
+        "No se puede saber sin el tipo de cambio spot exacto"
+      ],
+      "correcta": 1,
+      "explicacion": "El costo del préstamo en Piruland, expresado en soles, es el mismo ROR de 3 %, y el depósito en soles le rinde 6 %. Le quedan 3 puntos de margen a favor. Ese margen existe justamente porque la paridad NO se está cumpliendo."
+    },
+    {
+      "id": "m12-q6",
+      "nivel": "reconocimiento",
+      "enunciado": "COMENTE 4. El BCRP viene interviniendo en el mercado cambiario para evitar que el sol se aprecie más, y en los medios dicen que eso es fijar el tipo de cambio.\n\n¿Es correcto?",
+      "opciones": [
+        "Sí: intervenir en el mercado es lo mismo que fijar",
+        "No: en un régimen FIJO hay un nivel anunciado, y acá no lo hay; además el sol se apreció. Esto es FLOTACIÓN SUCIA",
+        "No: el Perú tiene flotación limpia y el BCRP no interviene nunca",
+        "Sí, pero solo mientras dure la intervención"
+      ],
+      "correcta": 1,
+      "explicacion": "Un régimen fijo anuncia un nivel y lo defiende. Acá no hay anuncio de nivel y encima el sol se movió, así que es flotación sucia: el BCRP interviene sin comprometerse con ningún nivel, para bajarle la volatilidad excesiva al tipo de cambio."
+    },
+    {
+      "id": "m12-q7",
+      "nivel": "aplicacion",
+      "enunciado": "EJERCICIO 1. Economía CERRADA de Swan: Y = 5 000, C = 40 + c·Yd − 20r, I = 2 000 − 50r, el gasto público es el 20 % de Y, el impuesto el 18 % de Y y el ahorro nacional es 1 500.\n\n¿Cuánto son la tasa de equilibrio y la propensión marginal a consumir?",
+      "opciones": [
+        "r = 10 y c = 0,649",
+        "r = 10 y c = 0,82",
+        "r = 0,1 y c = 0,649",
+        "r = 30 y c = 0,5"
+      ],
+      "correcta": 0,
+      "explicacion": "Primero S = I: 1 500 = 2 000 − 50r, o sea r = 10. Después Y = C + I + G: 5 000 = 40 + c(4 100) − 200 + 2 000 − 500 + 1 000 = 2 340 + c(4 100), de donde c = 2 660/4 100 = 0,649. El 0,82 es (1 − 0,18), la fracción del ingreso que queda disponible."
+    },
+    {
+      "id": "m12-q8",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 1/3. EJERCICIO 1. Misma economía (Y = 5 000, C = 40 + 0,649·Yd − 20r, I = 2 000 − 50r, G = 1 000). El ministro Elmo Casin duplica la tasa impositiva: el impuesto pasa del 18 % al 36 % del producto.\n\n¿Qué pasa con la tasa de interés y con el ahorro?",
+      "opciones": [
+        "La tasa sube a 20 y el ahorro cae a 1 000",
+        "No cambia nada: el impuesto no entra a este mercado",
+        "La tasa baja a 1,669 pero el ahorro se queda en 1 500",
+        "La tasa BAJA a 1,669 y el ahorro, que es igual a la inversión, SUBE a 1 916,571: al ministro le salió bien"
+      ],
+      "correcta": 3,
+      "explicacion": "Con T = 1 800 el ingreso disponible queda en 3 200: 5 000 = 40 + 0,649(3 200) − 20r + 2 000 − 50r + 1 000 = 5 116,8 − 70r, de donde r = 1,669. Reemplazas en la inversión: 2 000 − 50(1,669) = 1 916,571, que es también el nuevo ahorro nacional."
+    },
+    {
+      "id": "m12-q9",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 2/3. EJERCICIO 2. Piruland, economía ABIERTA con Y = 5 000: C = 1 775 − 0,25r, I = 5 400 − 400r, G = 2 550 y XN = 50,25.\n\n¿Cuáles son la tasa de equilibrio y la inversión?",
+      "opciones": [
+        "r = 11,93 e I = 628",
+        "r = 11,93 e I = 5 400",
+        "r = 4 775,25 e I = 0",
+        "r = 12,55 e I = 380"
+      ],
+      "correcta": 0,
+      "explicacion": "En economía abierta el equilibrio es Y = C + I + G + XN. Sumando todo: 5 000 = 9 775,25 − 400,25r, de donde r = 11,93. Con esa tasa, I = 5 400 − 400(11,93) = 628, y el ahorro sale de S = I + SNC = 628 + 50,25 = 678,25."
+    },
+    {
+      "id": "m12-q10",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 3/3. EJERCICIO 2. En esa misma Piruland el gobierno aplica un control de capitales, los tenedores extranjeros se asustan y se llevan sus fondos: la SALIDA NETA DE CAPITALES queda en 300.\n\n¿Qué pasa con la tasa y con la inversión?",
+      "opciones": [
+        "Nada cambia: los capitales son ajenos al mercado de fondos prestables",
+        "La tasa BAJA a 11,93 y la inversión sube",
+        "La tasa sube a 12,55 pero la inversión se queda en 628",
+        "La tasa SUBE a 12,55 y la inversión CAE a 380"
+      ],
+      "correcta": 3,
+      "explicacion": "Como XN = SNC, las exportaciones netas pasan de 50,25 a 300: 5 000 = 10 025 − 400,25r, de donde r = 12,55. Con esa tasa la inversión cae a 5 400 − 400(12,55) = 380 y el ahorro queda en 380 + 300 = 680. Más capitales saliendo es tasa más alta y menos inversión."
+    }
+  ]
+}

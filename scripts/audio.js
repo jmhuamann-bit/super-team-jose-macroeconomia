@@ -94,6 +94,12 @@ const TEMAS_MUSICA = {
               "F4",2,"G4",1,"F4",1,"D4",4],
     bajo:    ["D3",4,"A2",4,"B2",4,"F2",4,"G2",4,"D3",4,"A2",4,"D3",4],
   },
+  alameda: { // San Borja: tarde en la alameda, paso de oficina, ordenado y con aire
+    tempo: 0.16, onda: "triangle",
+    melodia: ["C5",2,"B4",1,"A4",1,"G4",2,"E4",2,"F4",2,"A4",2,"C5",4,
+              "D5",2,"C5",1,"B4",1,"A4",2,"G4",2,"A4",4,"C5",4],
+    bajo:    ["C3",4,"G2",4,"A2",4,"E3",4,"F2",4,"C3",4,"G2",4,"C3",4],
+  },
 };
 
 function arrancarCtx() {
