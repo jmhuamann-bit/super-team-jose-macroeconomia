@@ -1081,6 +1081,127 @@ export const TEMAS = {
       }
     },
   },
+
+  /* =========================================================
+     LA PUNTA — mediodía en el malecón. El distrito más chico del
+     país es una lengua de tierra con mar de los dos lados: acá se
+     acaba el Perú y empieza el resto del mundo. Al frente, la isla
+     San Lorenzo; al costado, las casonas republicanas de colores
+     con sus miradores, los veleros del Club de Regatas y, más allá,
+     los barcos entrando y saliendo del puerto.
+     ========================================================= */
+  punta: {
+    nombre: "La Punta",
+    cielo: [[0, "#2f7fc4"], [0.42, "#79b6dc"], [0.78, "#c4dce4"], [1, "#e4e0cc"]],
+    suelo: { cara: "#c4bca8", borde: "#e4dcc4", tierra: "#7a7263", plataforma: "#2b4a6b", plataformaBorde: "#ffd166" },
+    acento: "#2f6b8f",
+
+    bichos: ["brujula", "vela", "caracola"],
+    nombresBichos: ["La Brújula Volteada", "La Vela en Contra", "La Caracola de un Solo Lado"],
+    jefe: "capitan",
+    nombreJefe: "El Capitán de la Punta",
+
+    fondo(ctx, cam, t) {
+      // sol de mediodía rebotando en el agua
+      ctx.fillStyle = "rgba(255,250,220,.24)";
+      ctx.beginPath(); ctx.arc(596, 70, 60, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = "rgba(255,252,236,.95)";
+      ctx.beginPath(); ctx.arc(596, 70, 27, 0, Math.PI * 2); ctx.fill();
+
+      // la isla San Lorenzo, larguísima, cerrando el horizonte
+      repetir(ctx, cam, 900, 0.1, (x) => {
+        const bx = x + 60;
+        ctx.fillStyle = "#6f88a0";
+        ctx.beginPath();
+        ctx.moveTo(bx - 40, 238);
+        ctx.lineTo(bx + 90, 190);
+        ctx.lineTo(bx + 240, 202);
+        ctx.lineTo(bx + 430, 172);
+        ctx.lineTo(bx + 610, 212);
+        ctx.lineTo(bx + 760, 238);
+        ctx.closePath(); ctx.fill();
+        ctx.fillStyle = "rgba(255,255,255,.10)";
+        ctx.beginPath();
+        ctx.moveTo(bx + 430, 172); ctx.lineTo(bx + 610, 212); ctx.lineTo(bx + 470, 238);
+        ctx.closePath(); ctx.fill();
+      });
+
+      // el mar, con el brillo del sol encima
+      ctx.fillStyle = "#2f6b96";
+      ctx.fillRect(0, 238, CFG.ANCHO_VISTA, 46);
+      for (let i = 0; i < 30; i++) {
+        const x = (i * 59 - (cam * 0.07)) % 880 - 30;
+        const y = 244 + ((i * 19) % 36);
+        ctx.fillStyle = Math.abs(x - 596) < 110 ? "rgba(255,248,206,.42)" : "rgba(255,255,255,.14)";
+        ctx.fillRect(x, y, 14, 2);
+      }
+
+      // los barcos del puerto, entrando y saliendo por el horizonte
+      repetir(ctx, cam, 430, 0.18, (x, i) => {
+        const bx = x + 70, by = 226 + (i % 2) * 8;
+        ctx.fillStyle = "#3a4a5e";
+        ctx.fillRect(bx, by, 88, 13);
+        ctx.fillRect(bx + 58, by - 14, 22, 14);
+        ctx.fillStyle = ["#c2264a", "#3f8f55", "#e8b13c"][i % 3];   // los contenedores en cubierta
+        for (let k = 0; k < 5; k++) ctx.fillRect(bx + 6 + k * 10, by - 8, 8, 8);
+      });
+
+      // los veleros del Club de Regatas, meciéndose cerca de la orilla
+      repetir(ctx, cam, 214, 0.4, (x, i) => {
+        const bx = x + 40, mece = Math.sin(t / 28 + i) * 2.5;
+        ctx.fillStyle = "#5c4632";
+        ctx.fillRect(bx + 18, 240 + mece, 3, 28);
+        ctx.fillStyle = "rgba(255,252,245,.95)";
+        ctx.beginPath();
+        ctx.moveTo(bx + 21, 240 + mece);
+        ctx.lineTo(bx + 42, 264 + mece);
+        ctx.lineTo(bx + 21, 268 + mece);
+        ctx.closePath(); ctx.fill();
+        ctx.fillStyle = "#e8e2d2";
+        ctx.fillRect(bx + 6, 268 + mece, 34, 6);
+      });
+
+      // las casonas republicanas del malecón, con sus miradores de madera
+      repetir(ctx, cam, 206, 0.54, (x, i) => {
+        const bx = x + 12, base = 336, alto = 56 + ((i * 29) % 22);
+        const fachadas = ["#e8dcc0", "#cfe0e4", "#f0d8c4", "#d8e4d0", "#e4d0dc"];
+        ctx.fillStyle = fachadas[i % 5];
+        ctx.fillRect(bx, base - alto, 132, alto);
+        ctx.fillStyle = "rgba(0,0,0,.14)";                 // la cornisa
+        ctx.fillRect(bx, base - alto, 132, 5);
+        // el mirador de madera, en volado sobre la vereda
+        ctx.fillStyle = "#7a4a2e";
+        ctx.fillRect(bx + 22, base - alto + 26, 88, 34);
+        ctx.fillStyle = "rgba(189,232,255,.6)";
+        for (let k = 0; k < 4; k++) ctx.fillRect(bx + 28 + k * 21, base - alto + 32, 14, 22);
+        // el zaguán y las ventanitas
+        ctx.fillStyle = "#5c4632";
+        ctx.fillRect(bx + 54, base - 34, 26, 34);
+        ctx.fillStyle = "rgba(120,150,170,.4)";
+        ctx.fillRect(bx + 16, base - 30, 24, 20);
+        ctx.fillRect(bx + 92, base - 30, 24, 20);
+      });
+
+      // la baranda blanca del malecón, ya en primer plano
+      repetir(ctx, cam, 96, 0.8, (x) => {
+        const base = 356;
+        ctx.fillStyle = "#f2f6ff";
+        ctx.fillRect(x, base - 26, 96, 4);
+        ctx.fillRect(x, base - 14, 96, 3);
+        for (let k = 0; k < 4; k++) ctx.fillRect(x + 6 + k * 24, base - 26, 5, 26);
+      });
+    },
+
+    clima(ctx, t) {
+      // la brisa salada: gotitas finas que cruzan de costado
+      for (let i = 0; i < 22; i++) {
+        const x = (i * 151 - t * 2.4) % 880 - 20;
+        const y = 120 + ((i * 67) % 210) + Math.sin(t / 24 + i) * 8;
+        ctx.fillStyle = `rgba(226,244,255,${(0.12 + 0.18 * Math.abs(Math.sin(t / 30 + i))).toFixed(2)})`;
+        ctx.fillRect(x, y, 7, 2);
+      }
+    },
+  },
 };
 
 /** Pinta el cielo del tema (degradado vertical). */

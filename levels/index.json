@@ -135,7 +135,7 @@
       "titulo": "El jirón de los fondos prestables",
       "icono": "🏦",
       "seccion": "PC2",
-      "seccionNota": "Ahorro, inversión y fondos prestables",
+      "seccionNota": "Fondos prestables, cerrada y abierta",
       "retos": 8,
       "duracion": "3 min",
       "abierto": true,
@@ -149,7 +149,7 @@
       "titulo": "El mayorista del efecto expulsión",
       "icono": "🚛",
       "seccion": "PC2",
-      "seccionNota": "Ahorro, inversión y fondos prestables",
+      "seccionNota": "Fondos prestables, cerrada y abierta",
       "retos": 8,
       "duracion": "3 min",
       "abierto": true,
@@ -163,12 +163,26 @@
       "titulo": "La torre de la práctica calificada",
       "icono": "🗼",
       "seccion": "PC2",
-      "seccionNota": "Ahorro, inversión y fondos prestables",
+      "seccionNota": "Fondos prestables, cerrada y abierta",
       "retos": 8,
       "duracion": "3 min",
       "abierto": true,
       "mapa": "levels/level12.json",
       "preguntas": "questions/level12_questions.json"
+    },
+    {
+      "id": "level13",
+      "clase": "Clase 04",
+      "distrito": "La Punta",
+      "titulo": "La punta que mira al mundo",
+      "icono": "🚢",
+      "seccion": "PC2",
+      "seccionNota": "Fondos prestables, cerrada y abierta",
+      "retos": 8,
+      "duracion": "3 min",
+      "abierto": true,
+      "mapa": "levels/level13.json",
+      "preguntas": "questions/level13_questions.json"
     }
   ]
 }

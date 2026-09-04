@@ -1145,6 +1145,74 @@ const MINISTRO = [  // jefe de San Borja: el ministro que firma la medida y te l
 ];
 const P_MINISTRO = { k: "#241a2e", g: "#9aa0a6", c: "#e8b98d", n: "#2b3550", w: "#f2f6ff", r: "#c2264a", y: "#e8b13c" };
 
+const BRUJULA = [   // la brújula del malecón: apunta al revés cuando sube el tipo de cambio (13 × 12)
+  ".............",
+  "...kkkkkkk...",
+  "..kwwwwwwwk..",
+  ".kwwwwrwwwwk.",
+  ".kwwwwrwwwwk.",
+  ".kwwrrrrrwwk.",
+  ".kwwwwnwwwwk.",
+  ".kwwwwnwwwwk.",
+  "..kwwwwwwwk..",
+  "...kkkkkkk...",
+  ".............",
+  ".............",
+];
+const P_BRUJULA = { k: "#8a7460", w: "#f2ead8", r: "#c2264a", n: "#2b3550" };
+
+const VELA = [   // la vela del velero del Club de Regatas: navega en contra (13 × 12)
+  ".............",
+  "......k......",
+  "......kw.....",
+  "......kww....",
+  "......kwww...",
+  "......kwwww..",
+  "......kwwwww.",
+  "......k......",
+  "..nnnnnnnnn..",
+  "...nnnnnnn...",
+  ".............",
+  ".............",
+];
+const P_VELA = { k: "#5c4632", w: "#f2f6ff", n: "#2f6b8f" };
+
+const CARACOLA = [   // la caracola de la orilla: solo escucha lo que entra (12 × 12)
+  "............",
+  "....ccc.....",
+  "...cwwcc....",
+  "..cwwwwcc...",
+  "..cwrrwwcc..",
+  ".cwrrrrwwcc.",
+  ".cwwrrwwwcc.",
+  ".ccwwwwwccc.",
+  "..cccccccc..",
+  "...cccccc...",
+  "............",
+  "............",
+];
+const P_CARACOLA = { c: "#d9a95c", w: "#f2ead8", r: "#c9764a" };
+
+const CAPITAN = [  // jefe de La Punta: el capitán que ve salir barcos y nunca los que entran (20 × 16)
+  ".....wwwwwwww.......",
+  "....wwwwwwwwww......",
+  "....wwnnnnnnww......",
+  ".....cccccccc.......",
+  ".....cckkcckkc......",
+  ".....cccccccc.......",
+  "......cmmmmc........",
+  ".....wwwwwwww.......",
+  "....nnnwwwwnnn......",
+  "...nnnnwwwwnnnn.....",
+  "...nnyynnnnyynn.....",
+  "...nnnnnnnnnnnn.....",
+  "...nnnn..nnnn.......",
+  "...nnnn..nnnn.......",
+  "..wwwww..wwwww......",
+  "..kkkkk..kkkkk......",
+];
+const P_CAPITAN = { w: "#f2f6ff", n: "#2b3550", c: "#e8b98d", k: "#241a2e", m: "#5c4632", y: "#e8b13c" };
+
 /* ---------------------------------------------------------------
    REGISTRO Y COCINADO
    --------------------------------------------------------------- */
@@ -1216,6 +1284,10 @@ const DEFINICIONES = {
   bicicleta:    [BICICLETA, P_BICICLETA],
   candado:      [CANDADO, P_CANDADO],
   ministro:     [MINISTRO, P_MINISTRO],
+  brujula:      [BRUJULA, P_BRUJULA],
+  vela:         [VELA, P_VELA],
+  caracola:     [CARACOLA, P_CARACOLA],
+  capitan:      [CAPITAN, P_CAPITAN],
 };
 
 const cocidos = {};   // nombre -> { canvas, ancho, alto } (ya escalados)

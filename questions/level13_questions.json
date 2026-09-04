@@ -1,0 +1,138 @@
+{
+  "nivel": "level13",
+  "clase": "Clase 04 · PC2 — Mercado de fondos prestables abierto: bienes, capitales y tipo de cambio",
+  "fuente": "Apuntes de la 4ta clase de la PC2 — Economía General II",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "m13-q1",
+      "nivel": "reconocimiento",
+      "enunciado": "El tipo de cambio pasa de 3,84 a 4,84 soles por dólar.\n\n¿Qué le pasó al sol y qué al dólar?",
+      "opciones": [
+        "El sol se APRECIÓ frente al dólar",
+        "El sol se DEPRECIÓ: ahora hay que dar más soles por el mismo dólar. Y el dólar se apreció",
+        "No pasó nada: el tipo de cambio es siempre bilateral",
+        "Los dos se depreciaron a la vez"
+      ],
+      "correcta": 1,
+      "explicacion": "Deprecia = das MÁS monedas de sol para conseguir 1 dólar. Y como el tipo de cambio es bilateral, si una moneda se deprecia la otra se aprecia por fuerza: nunca las dos hacen lo mismo."
+    },
+    {
+      "id": "m13-q2",
+      "nivel": "comprension",
+      "enunciado": "Antes el tipo de cambio era e = 3,84 pen/usd y ahora es e = 1,10 pen/usd.\n\n¿Qué pasó?",
+      "opciones": [
+        "El sol se APRECIÓ, porque ahora das menos soles por un dólar, y el dólar se depreció",
+        "El sol se depreció y el dólar se apreció",
+        "Los dos se apreciaron",
+        "Bajó el precio, así que los dos se depreciaron"
+      ],
+      "correcta": 0,
+      "explicacion": "El sol se puso soberbio: con menos monedas consigues el mismo dólar. Eso es apreciación del sol y, del otro lado del par, depreciación del dólar."
+    },
+    {
+      "id": "m13-q3",
+      "nivel": "comprension",
+      "enunciado": "El país se empieza a desmoronar y ya nadie quiere soles: los encuentras tirados por el suelo.\n\n¿Qué pasa con el tipo de cambio?",
+      "opciones": [
+        "e BAJA: el sol se aprecia",
+        "e no se mueve, porque el tipo de cambio lo fija el BCRP",
+        "e SUBE: nadie quiere soles, así que hay que dar más para conseguir un dólar. El sol se deprecia",
+        "e sube y el sol se aprecia"
+      ],
+      "correcta": 2,
+      "explicacion": "El tipo de cambio es un precio: si tu moneda no la quiere nadie, vale menos y hay que entregar más soles por cada dólar. Al revés, si el Perú crece y todos compran soles, e baja y el sol se aprecia."
+    },
+    {
+      "id": "m13-q4",
+      "nivel": "comprension",
+      "enunciado": "El tipo de cambio REAL (q) mide poder adquisitivo.\n\n¿Qué relación tiene con las exportaciones netas?",
+      "opciones": [
+        "Inversa: si q sube, las XN caen",
+        "Ninguna: las XN solo dependen del tipo de cambio nominal",
+        "DIRECTA: si q sube, las XN suben; si q cae, las XN caen",
+        "Directa, pero solo cuando la economía está cerrada"
+      ],
+      "correcta": 2,
+      "explicacion": "Cuando q sube, lo de afuera se te pone caro y lo de acá se pone barato para el resto del mundo: importas menos y exportas más, así que las XN suben. Es la relación DIRECTA que conviene tener memorizada."
+    },
+    {
+      "id": "m13-q5",
+      "nivel": "aplicacion",
+      "enunciado": "Quieres comprar laptops de USA con 10 000 soles. En 2020 el tipo de cambio era 3,1 soles/dólar y en 2024 es 5,5 soles/dólar.\n\n¿Qué pasó con tu poder adquisitivo?",
+      "opciones": [
+        "Subió: sigues teniendo los mismos 10 000 soles",
+        "CAYÓ: con los mismos 10 000 soles pasas de unos 3 226 dólares a unos 1 818",
+        "No cambió: el tipo de cambio no toca el poder adquisitivo",
+        "Cayó, y por eso suben las importaciones"
+      ],
+      "correcta": 1,
+      "explicacion": "10 000/3,1 son unos 3 226 dólares y 10 000/5,5 son unos 1 818: te alcanza para casi la mitad de laptops importadas. Ese es justo el mecanismo por el que un tipo de cambio más alto termina empujando las XN hacia arriba."
+    },
+    {
+      "id": "m13-q6",
+      "nivel": "aplicacion",
+      "enunciado": "El SNC es la compra de activos EXTRANJEROS por NACIONALES menos la compra de activos NACIONALES por EXTRANJEROS.\n\n¿Cuál de estas operaciones NO mueve el SNC?",
+      "opciones": [
+        "Un peruano compra acciones de una empresa de USA",
+        "Un estadounidense compra bonos peruanos",
+        "Un peruano compra dólares",
+        "Un peruano compra soles"
+      ],
+      "correcta": 3,
+      "explicacion": "El SNC solo se mueve cuando la compra cruza la frontera. Un peruano comprando soles —igual que un estadounidense comprando dólares— es una operación puertas adentro: no entra ni sale nada. Las otras tres sí lo mueven."
+    },
+    {
+      "id": "m13-q7",
+      "nivel": "comprension",
+      "enunciado": "Sube la rentabilidad de los activos NACIONALES.\n\n¿Qué le pasa al SNC?",
+      "opciones": [
+        "CAE: los extranjeros vienen a comprar activos peruanos, y esa compra entra restando",
+        "Sube: los peruanos se van a invertir afuera",
+        "No se mueve: la rentabilidad no tiene nada que ver con el SNC",
+        "Cae, y por eso aumenta la salida neta de capitales"
+      ],
+      "correcta": 0,
+      "explicacion": "Si acá se gana más, los de afuera vienen a comprar activos nacionales, y esa compra va RESTANDO en la fórmula: el SNC cae, o sea entra más capital del que sale. Si la que sube es la rentabilidad de afuera, pasa exactamente lo contrario."
+    },
+    {
+      "id": "m13-q8",
+      "nivel": "comprension",
+      "enunciado": "JEFE 1/3. La propiedad súper importante de la clase dice que XN = SNC, siempre.\n\n¿Por qué?",
+      "opciones": [
+        "Es una coincidencia de los datos peruanos",
+        "Porque las dos cosas se miden en dólares",
+        "Solo se cumple cuando el gobierno tiene superávit fiscal",
+        "Porque son las dos caras de la misma transacción: lo que el país le vende de más al mundo se lo termina prestando en activos"
+      ],
+      "correcta": 3,
+      "explicacion": "Si exportas más de lo que importas, el mundo te queda debiendo, y esa deuda toma la forma de activos extranjeros que terminas comprando: SNC positivo. Por eso en economía abierta la identidad del ahorro pasa a ser S = I + SNC."
+    },
+    {
+      "id": "m13-q9",
+      "nivel": "comprension",
+      "enunciado": "JEFE 2/3. Hay déficit fiscal. En una economía CERRADA eso era crowding out puro.\n\n¿Pasa lo mismo en una economía ABIERTA?",
+      "opciones": [
+        "DEPENDE: si nos apoya el ahorro externo (entran capitales, SNC < 0), el golpe a la inversión es menor que en cerrada",
+        "Sí, pasa exactamente lo mismo que en cerrada",
+        "No: en una economía abierta nunca hay crowding out",
+        "No se puede analizar: en abierta no existe el mercado de fondos prestables"
+      ],
+      "correcta": 0,
+      "explicacion": "En cerrada la única fuente de financiamiento es el ahorro nacional, así que el gobierno le quita el sitio entero a la inversión. En abierta puede llegar ahorro externo a tapar el hueco, y ahí la tasa sube menos y la inversión aguanta más."
+    },
+    {
+      "id": "m13-q10",
+      "nivel": "comprension",
+      "enunciado": "JEFE 3/3. Sube el ingreso de los consumidores PERUANOS.\n\n¿Qué les pasa a las exportaciones netas del Perú?",
+      "opciones": [
+        "Suben: con más plata el país exporta más",
+        "No se mueven: el ingreso no es un factor de las XN",
+        "Suben, exactamente igual que si subiera el ingreso de los estadounidenses",
+        "CAEN: con más ingreso los peruanos importan más, y las XN son exportaciones menos importaciones"
+      ],
+      "correcta": 3,
+      "explicacion": "El ingreso de los consumidores es uno de los factores que desplaza las XN, y hay que mirar de QUIÉN es ese ingreso. Si sube el de los peruanos, importamos más y las XN caen; si sube el de los de afuera, nos compran más y las XN suben."
+    }
+  ]
+}

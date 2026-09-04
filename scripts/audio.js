@@ -100,6 +100,12 @@ const TEMAS_MUSICA = {
               "D5",2,"C5",1,"B4",1,"A4",2,"G4",2,"A4",4,"C5",4],
     bajo:    ["C3",4,"G2",4,"A2",4,"E3",4,"F2",4,"C3",4,"G2",4,"C3",4],
   },
+  punta: { // La Punta: mediodía en el malecón, marinera chalaca ancha y con brisa
+    tempo: 0.17, onda: "triangle",
+    melodia: ["G4",2,"B4",1,"D5",1,"G5",4,"F5",2,"D5",2,"B4",4,
+              "C5",2,"E5",1,"G5",1,"F5",2,"D5",2,"C5",2,"G4",4],
+    bajo:    ["G2",4,"D3",4,"E3",4,"C3",4,"F2",4,"G2",4,"D3",4,"G2",4],
+  },
 };
 
 function arrancarCtx() {

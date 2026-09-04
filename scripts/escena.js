@@ -195,6 +195,10 @@ const FICHAS = [
   { sprite: "bicicleta", nombre: "La Bicicleta de Ida y Vuelta", texto: "Los capitales entran y salen, y ella nunca se queda con el NETO." },
   { sprite: "candado", nombre: "El Candado del Tipo de Cambio", texto: "Ve al BCRP comprando dólares y ya cree que le pusieron candado a un tipo de cambio que flota." },
   { sprite: "ministro", nombre: "El Ministro de la Torre", texto: "Jefe de San Borja: firma la medida, arma el gráfico y te lo deja de práctica calificada." },
+  { sprite: "brujula", nombre: "La Brújula Volteada", texto: "Sube el tipo de cambio y ella canta «se apreció el sol»: apunta justo al revés." },
+  { sprite: "vela", nombre: "La Vela en Contra", texto: "Jura que si el tipo de cambio real sube, las exportaciones netas caen." },
+  { sprite: "caracola", nombre: "La Caracola de un Solo Lado", texto: "Solo escucha los capitales que entran y nunca los que salen, así que no le sale el neto." },
+  { sprite: "capitan", nombre: "El Capitán de la Punta", texto: "Jefe de La Punta: ve al gobierno endeudarse y grita crowding out sin fijarse si está entrando ahorro externo." },
 ];
 
 export function galeriaPersonajes(contenedor) {

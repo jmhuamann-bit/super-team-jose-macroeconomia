@@ -1,0 +1,42 @@
+{
+  "id": "level13",
+  "distrito": "La Punta",
+  "clase": "Clase 04 · PC2",
+  "titulo": "La punta que mira al mundo",
+  "tema": "punta",
+  "musica": "punta",
+  "vehiculo": "limosina",
+  "intro": "La Punta es el distrito más chico del país: una lengua de tierra con mar de los dos lados, donde se acaba el Perú y empieza el resto del mundo. Desde su malecón se ve todo lo que entra y todo lo que sale — los barcos con la carga y, sin que se vea, la plata que cruza detrás. Eso es abrir la economía: el flujo de bienes, el flujo de capitales y el precio que los conecta, el tipo de cambio.",
+  "repaso": [
+    "De CERRADA a ABIERTA. En cerrada el único ahorro disponible es el nacional, así que un déficit fiscal expulsa a la inversión. En abierta puede entrar ahorro externo, y ahí el golpe es más chico: por eso la pregunta de examen «¿hay crowding out?» se responde con un DEPENDE.",
+    "Inversión total = inversión nacional + inversión en el extranjero.",
+    "FLUJO DE BIENES. Lo que desplaza a las XN: las preferencias del consumidor, el precio de los bienes domésticos, el costo de transporte, las políticas públicas, el ingreso de los consumidores y el tipo de cambio.",
+    "Ojo con el ingreso: mira de QUIÉN es. Si sube el ingreso de los peruanos, importamos más y las XN CAEN. Si sube el ingreso de los de afuera, nos compran más y las XN SUBEN.",
+    "TIPO DE CAMBIO NOMINAL (TCN, e): el precio entre monedas, cuántos soles das por 1 dólar. Es siempre BILATERAL: se dice respecto a algo.",
+    "Si e SUBE, das más soles por el mismo dólar: el sol se DEPRECIA y el dólar se aprecia. Si e BAJA, el sol se pone soberbio: se APRECIA y el dólar se deprecia.",
+    "Si el país se desmorona y nadie quiere soles, e sube (el sol se deprecia). Si el Perú crece y todos compran soles, e baja (el sol se aprecia).",
+    "TIPO DE CAMBIO REAL (TCR, q): mide PODER ADQUISITIVO, no precios entre monedas.",
+    "MEMORIZAR: q y XN tienen relación DIRECTA. Si q sube, las XN suben; si q cae, las XN caen.",
+    "FLUJO DE CAPITALES. Los capitales son activos financieros: dinero, acciones y bonos. SNC = compra de activos EXTRANJEROS por NACIONALES − compra de activos NACIONALES por EXTRANJEROS.",
+    "Reconocer los casos: un peruano compra acciones o dólares de USA → el SNC SUBE. Un extranjero compra bonos o soles peruanos → el SNC BAJA. Un peruano comprando soles (o un gringo comprando dólares) NO mueve nada: no cruza la frontera.",
+    "Si sube la rentabilidad de los activos EXTRANJEROS, los nacionales invierten afuera y el SNC sube. Si sube la de los activos NACIONALES —o si el país se pone atractivo—, los de afuera vienen y el SNC baja.",
+    "PROPIEDAD SÚPER IMPORTANTE: XN = SNC. Son las dos caras de la misma transacción: lo que el país le vende de más al mundo se lo termina prestando en activos."
+  ],
+  "mapa": [
+    "                                                                                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                                                                                ",
+    "                          o o o                               o o o                             o o o                             o o o                         o o o                             o o o                         o o o                           ",
+    "              ?                     o o       L           o o         G                 o o                     V                     o o         1                   o o         o o L                   o o       ?               o o               1         ",
+    "                          ====                                ====                              ====                              ====                          ====                              ====                          ====                            ",
+    "                              o o                 o o                 o o                   o o                   o o                           o o           o o                       o o         o o               o o                       o o             ",
+    "  P                 E             C                   E           X       E                         C       E       X                       E               C                 E             X           E                 X               B                 M   ",
+    "######################################   #######################################    ######################################   #######################################    ######################################   ###############################################",
+    "######################################   #######################################    ######################################   #######################################    ######################################   ###############################################",
+    "######################################   #######################################    ######################################   #######################################    ######################################   ###############################################"
+  ]
+}
