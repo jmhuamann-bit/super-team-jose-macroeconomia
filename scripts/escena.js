@@ -199,6 +199,10 @@ const FICHAS = [
   { sprite: "vela", nombre: "La Vela en Contra", texto: "Jura que si el tipo de cambio real sube, las exportaciones netas caen." },
   { sprite: "caracola", nombre: "La Caracola de un Solo Lado", texto: "Solo escucha los capitales que entran y nunca los que salen, así que no le sale el neto." },
   { sprite: "capitan", nombre: "El Capitán de la Punta", texto: "Jefe de La Punta: ve al gobierno endeudarse y grita crowding out sin fijarse si está entrando ahorro externo." },
+  { sprite: "pizarra", nombre: "La Pizarra de la Semana Pasada", texto: "Explica lo que pasó hace siete días con una regla que solo vale en el largo plazo." },
+  { sprite: "canasta", nombre: "La Canasta de Dos Monedas", texto: "Echa soles y dólares a la misma canasta y los compara sin convertir nada." },
+  { sprite: "palta", nombre: "La Palta al Revés", texto: "Suben los precios en USA y ella jura que el que se deprecia es el sol." },
+  { sprite: "caserita", nombre: "La Casera de los Dos Precios", texto: "Jefa de Surquillo: vende lo mismo a dos precios según de qué lado de la vía estés, y jura que eso dura para siempre." },
 ];
 
 export function galeriaPersonajes(contenedor) {

@@ -1,0 +1,41 @@
+{
+  "id": "level14",
+  "distrito": "Surquillo",
+  "clase": "Clase 05 · PC2",
+  "titulo": "El mercado de un solo precio",
+  "tema": "mercado",
+  "musica": "mercado",
+  "vehiculo": "mototaxi",
+  "intro": "En el Mercado N° 1 de Surquillo la palta cuesta una cosa, y cruzando la Vía Expresa —una cuadra de por medio— cuesta el triple. No hay mejor sitio en Lima para discutir esta clase: en el LARGO plazo la gente cruza, los precios se emparejan y manda la inflación; en el CORTO nadie cruza tan rápido y quien mueve el tipo de cambio es el mercado cambiario, con sus tasas de interés.",
+  "repaso": [
+    "LARGO PLAZO — LEY DE UN SOLO PRECIO. Si el costo de transporte fuera nulo, todos comprarían donde está barato: esa demanda sube el precio allá y lo hunde acá, hasta que da igual comprar en un sitio o en el otro.",
+    "PPA ABSOLUTA: por eso en el largo plazo el poder adquisitivo se hace uno, q = 1.",
+    "PPA RELATIVA: con q = 1 y en el largo plazo, el tipo de cambio se mueve como la DIFERENCIA de inflaciones. Conclusión de la clase: cuanto mayor sea la tasa de inflación de un país, mayor será la depreciación de su moneda.",
+    "Si la inflación alta es la de AFUERA, el que se deprecia es el dólar: el sol se aprecia y «e» baja.",
+    "LA TRAMPA. La PPA tiene DOS condiciones: q = 1 y largo plazo. Si te hablan de «la semana pasada», no se aplica: eso es corto plazo.",
+    "CORTO PLAZO — MERCADO CAMBIARIO. R (la tasa nominal nacional) NO es comparable con R* (la del extranjero en moneda extranjera): están en monedas distintas.",
+    "Notaciones: R = tasa nominal · r = tasa real · R* = tasa del extranjero en MONEDA EXTRANJERA · ROR* = rendimiento esperado del activo extranjero expresado en MONEDA NACIONAL. Es el ROR* el que se compara con R.",
+    "FNSC = compra de activos extranjeros por nacionales − compra de activos nacionales por extranjeros. Si el activo de afuera rinde más, te vas para allá y el FNSC SUBE; si el que rinde más es el de acá, entran ellos y el FNSC BAJA.",
+    "Los dos gráficos se enganchan: en el de FONDOS PRESTABLES se determina la tasa REAL (r), y de la real sale la NOMINAL (R). Con esa R se entra al gráfico del MERCADO CAMBIARIO, donde se enfrenta contra el ROR*.",
+    "RECETITA del mercado cambiario. 1) ¿Qué curva se mueve, y por qué? 2) Al mismo nivel del TCN, marcar el cruce 1´: ahí NO hay equilibrio. 3) ¿Qué hace el público ante ese desequilibrio de intereses? Así se llega al nuevo equilibrio 2. 4) ¿Qué pasó con el TCN? 5) ¿Y con el TC real, q?",
+    "1ER CASO — se mueve R. Ejemplo: sube el ahorro privado, la oferta de fondos prestables se corre a la derecha, cae r y con ella R. El activo nacional rinde menos, el público compra activos extranjeros y el sol se deprecia.",
+    "2DO CASO — se mueve el ROR*. Y ojo, SOLO hay 3 factores que lo mueven: la tasa de interés internacional R* (que puede cambiar la FED), el tipo de cambio esperado Eᵉ y la prima de riesgo país. Si sube cualquiera de los tres, el activo extranjero se pone atractivo y el sol se deprecia."
+  ],
+  "mapa": [
+    "                                                                                                                                                                                                                                                                        ",
+    "                                                                                                                                                                                                                                                                        ",
+    "                                                                                                                                                                                                                                                                        ",
+    "                                                                                                                                                                                                                                                                        ",
+    "                                                                                                                                                                                                                                                                        ",
+    "                                                                                                                                                                                                                                                                        ",
+    "                                                                                                                                                                                                                                                                        ",
+    "                            o o o                               o o o                               o o o                             o o o                           o o o                             o o o                           o o o                           ",
+    "                ?                     o o       L           o o         G                   o o                     V                     o o         1                     o o         o o L                   o o       ?                 o o               1         ",
+    "                            ====                                ====                                ====                              ====                            ====                              ====                            ====                            ",
+    "                                o o                 o o                 o o                     o o                   o o                           o o             o o                       o o         o o               o o                         o o             ",
+    "  P                   E           C                     E           X       E                           C       E       X                       E               C                   E             X           E                 X                 B                 M   ",
+    "########################################    ########################################   #######################################    ########################################   #######################################    ################################################",
+    "########################################    ########################################   #######################################    ########################################   #######################################    ################################################",
+    "########################################    ########################################   #######################################    ########################################   #######################################    ################################################"
+  ]
+}

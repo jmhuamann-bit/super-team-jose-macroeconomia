@@ -1213,6 +1213,74 @@ const CAPITAN = [  // jefe de La Punta: el capitán que ve salir barcos y nunca 
 ];
 const P_CAPITAN = { w: "#f2f6ff", n: "#2b3550", c: "#e8b98d", k: "#241a2e", m: "#5c4632", y: "#e8b13c" };
 
+const PIZARRA = [   // la pizarra de precios del puesto: explica lo de hoy con la regla de mañana (14 × 12)
+  "..............",
+  ".mmmmmmmmmmmm.",
+  ".mkkkkkkkkkkm.",
+  ".mkwwwwkwwwkm.",
+  ".mkkkkkkkkkkm.",
+  ".mkwwkwwwwwkm.",
+  ".mkkkkkkkkkkm.",
+  ".mkwwwwwkwwkm.",
+  ".mkkkkkkkkkkm.",
+  ".mmmmmmmmmmmm.",
+  "...mm....mm...",
+  "...mm....mm...",
+];
+const P_PIZARRA = { m: "#8a6a48", k: "#2e3238", w: "#f2ead8" };
+
+const CANASTA = [   // la canasta del mercado: mete soles y dolares juntos sin convertir (13 × 12)
+  ".............",
+  "...vv...rr...",
+  "..vvvv.rrrr..",
+  "..vvvvrrrrr..",
+  ".mmmmmmmmmmm.",
+  ".mwmwmwmwmwm.",
+  ".mmmmmmmmmmm.",
+  ".mwmwmwmwmwm.",
+  ".mmmmmmmmmmm.",
+  "..mmmmmmmmm..",
+  "...mmmmmmm...",
+  ".............",
+];
+const P_CANASTA = { m: "#b5813f", w: "#e0c48a", v: "#3f8f55", r: "#c2264a" };
+
+const PALTA = [   // la palta del puesto: se confunde de lado cuando suben los precios de afuera (12 × 12)
+  "............",
+  ".....kk.....",
+  "....vvvv....",
+  "...vvvvvv...",
+  "..vvvvvvvv..",
+  "..vvvvvvvv..",
+  ".vvvvvvvvvv.",
+  ".vvvvhhvvvv.",
+  ".vvvvhhvvvv.",
+  "..vvvvvvvv..",
+  "...vvvvvv...",
+  "............",
+];
+const P_PALTA = { v: "#4f7d3a", h: "#8a6a2c", k: "#5c4632" };
+
+const CASERITA = [  // jefe de Surquillo: la casera que sostiene dos precios para lo mismo (20 × 16)
+  ".....kkkkkkkk.......",
+  "....kkkkkkkkkk......",
+  "....kkcccccckk......",
+  ".....cckkcckkc......",
+  ".....cccccccc.......",
+  "......cccccc........",
+  "....wwwwwwwwww......",
+  "...wwrrrrrrrrww.....",
+  "...wwrrrrrrrrww.....",
+  "...wwwwwwwwwwww.....",
+  "...wwyywwwwyyww.....",
+  "...wwwwwwwwwwww.....",
+  "....wwww..wwww......",
+  "....wwww..wwww......",
+  "....kkkk..kkkk......",
+  "...kkkkk..kkkkk.....",
+];
+const P_CASERITA = { k: "#2e2418", c: "#e0b48a", w: "#f2ead8", r: "#c2264a", y: "#e8b13c" };
+
 /* ---------------------------------------------------------------
    REGISTRO Y COCINADO
    --------------------------------------------------------------- */
@@ -1288,6 +1356,10 @@ const DEFINICIONES = {
   vela:         [VELA, P_VELA],
   caracola:     [CARACOLA, P_CARACOLA],
   capitan:      [CAPITAN, P_CAPITAN],
+  pizarra:      [PIZARRA, P_PIZARRA],
+  canasta:      [CANASTA, P_CANASTA],
+  palta:        [PALTA, P_PALTA],
+  caserita:     [CASERITA, P_CASERITA],
 };
 
 const cocidos = {};   // nombre -> { canvas, ancho, alto } (ya escalados)

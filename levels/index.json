@@ -183,6 +183,20 @@
       "abierto": true,
       "mapa": "levels/level13.json",
       "preguntas": "questions/level13_questions.json"
+    },
+    {
+      "id": "level14",
+      "clase": "Clase 05",
+      "distrito": "Surquillo",
+      "titulo": "El mercado de un solo precio",
+      "icono": "🛒",
+      "seccion": "PC2",
+      "seccionNota": "Fondos prestables, cerrada y abierta",
+      "retos": 8,
+      "duracion": "3 min",
+      "abierto": true,
+      "mapa": "levels/level14.json",
+      "preguntas": "questions/level14_questions.json"
     }
   ]
 }

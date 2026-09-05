@@ -1202,6 +1202,111 @@ export const TEMAS = {
       }
     },
   },
+
+  /* =========================================================
+     SURQUILLO — media mañana en el Mercado N° 1. Al frente, del
+     otro lado de la Vía Expresa, se levantan las torres de
+     Miraflores: el mismo producto, dos precios, una cuadra de por
+     medio. No hay mejor sitio en Lima para discutir la ley de un
+     solo precio y el mercado donde se fija el tipo de cambio.
+     ========================================================= */
+  mercado: {
+    nombre: "Surquillo",
+    cielo: [[0, "#5fa8dc"], [0.45, "#98c9e4"], [0.8, "#d8e2e0"], [1, "#ece0c8"]],
+    suelo: { cara: "#a8a094", borde: "#ccc4b4", tierra: "#5e574c", plataforma: "#3a4a5e", plataformaBorde: "#ffd166" },
+    acento: "#e0562f",
+
+    bichos: ["pizarra", "canasta", "palta"],
+    nombresBichos: ["La Pizarra de la Semana Pasada", "La Canasta de Dos Monedas", "La Palta al Revés"],
+    jefe: "caserita",
+    nombreJefe: "La Casera de los Dos Precios",
+
+    fondo(ctx, cam, t) {
+      // el sol de media mañana
+      ctx.fillStyle = "rgba(255,246,214,.22)";
+      ctx.beginPath(); ctx.arc(178, 76, 56, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = "rgba(255,250,230,.94)";
+      ctx.beginPath(); ctx.arc(178, 76, 26, 0, Math.PI * 2); ctx.fill();
+
+      // las torres de Miraflores al otro lado de la vía: el otro nivel de precios
+      repetir(ctx, cam, 236, 0.16, (x, i) => {
+        const bx = x + 26, base = 268, alto = 118 + ((i * 41) % 76);
+        ctx.fillStyle = ["#9fb2c4", "#aebdc9", "#93a7bc"][i % 3];
+        ctx.fillRect(bx, base - alto, 74, alto);
+        ctx.fillStyle = "rgba(226,240,250,.45)";
+        for (let fy = base - alto + 12; fy < base - 12; fy += 16)
+          ctx.fillRect(bx + 8, fy, 58, 7);
+        ctx.fillStyle = "rgba(255,255,255,.35)";
+        ctx.fillRect(bx, base - alto, 74, 4);
+      });
+
+      // la Vía Expresa hundida, con los carros pasando
+      ctx.fillStyle = "#7d7a72";
+      ctx.fillRect(0, 268, CFG.ANCHO_VISTA, 26);
+      ctx.fillStyle = "#5e574c";
+      ctx.fillRect(0, 268, CFG.ANCHO_VISTA, 4);
+      ctx.fillStyle = "rgba(255,255,255,.45)";
+      for (let i = 0; i < 26; i++) {
+        const x = (i * 62 - (cam * 0.5)) % 880 - 30;
+        ctx.fillRect(x, 282, 22, 2);
+      }
+      repetir(ctx, cam, 158, 0.62, (x, i) => {
+        const bx = x + 20, base = 280;
+        ctx.fillStyle = ["#c2264a", "#f2f6ff", "#2f6b8f", "#e8b13c"][i % 4];
+        ctx.fillRect(bx, base - 12, 42, 10);
+        ctx.fillRect(bx + 9, base - 18, 22, 7);
+        ctx.fillStyle = "#2e2418";
+        ctx.fillRect(bx + 5, base - 3, 7, 4); ctx.fillRect(bx + 30, base - 3, 7, 4);
+      });
+
+      // la fachada larga del Mercado N° 1, con su letrero
+      repetir(ctx, cam, 268, 0.44, (x, i) => {
+        const bx = x + 14, base = 330, alto = 44;
+        ctx.fillStyle = "#e0d4bc";
+        ctx.fillRect(bx, base - alto, 230, alto);
+        ctx.fillStyle = "#c9bda0";
+        ctx.fillRect(bx, base - alto, 230, 6);
+        ctx.fillStyle = "#2f7d5c";                       // el letrero verde del mercado
+        ctx.fillRect(bx + 34, base - alto + 12, 162, 18);
+        ctx.fillStyle = "rgba(255,255,255,.7)";
+        for (let k = 0; k < 7; k++) ctx.fillRect(bx + 44 + k * 22, base - alto + 18, 12, 6);
+        ctx.fillStyle = "#5e574c";                       // los portones de entrada
+        ctx.fillRect(bx + 24, base - 18, 34, 18);
+        ctx.fillRect(bx + 172, base - 18, 34, 18);
+      });
+
+      // los puestos de la calle: toldo a rayas y torres de cajones de fruta
+      repetir(ctx, cam, 124, 0.76, (x, i) => {
+        const bx = x + 10, base = 356;
+        ctx.fillStyle = "#8a8a90";                        // los parantes
+        ctx.fillRect(bx + 2, base - 40, 3, 40);
+        ctx.fillRect(bx + 84, base - 40, 3, 40);
+        for (let k = 0; k < 6; k++) {                     // el toldo a rayas
+          ctx.fillStyle = k % 2 ? "#e0562f" : "#f2f6ff";
+          ctx.fillRect(bx + k * 15, base - 48, 15, 11);
+        }
+        ctx.fillStyle = "#b5813f";                        // el mostrador
+        ctx.fillRect(bx, base - 20, 90, 6);
+        const fruta = ["#e0562f", "#4f7d3a", "#e8b13c", "#c2264a"];
+        for (let k = 0; k < 4; k++) {                     // los cajones apilados
+          ctx.fillStyle = "#a8763f";
+          ctx.fillRect(bx + 6 + (k % 2) * 46, base - 14 + Math.floor(k / 2) * 8, 38, 8);
+          ctx.fillStyle = fruta[(i + k) % 4];
+          ctx.fillRect(bx + 9 + (k % 2) * 46, base - 16 + Math.floor(k / 2) * 8, 32, 3);
+        }
+      });
+    },
+
+    clima(ctx, t) {
+      // el polvillo dorado que levanta el trajín del mercado
+      for (let i = 0; i < 20; i++) {
+        const x = (i * 157 - t * 1.3) % 880 - 20;
+        const y = 130 + ((i * 71) % 210) + Math.sin(t / 28 + i) * 10;
+        ctx.fillStyle = `rgba(255,236,190,${(0.10 + 0.16 * Math.abs(Math.sin(t / 34 + i))).toFixed(2)})`;
+        ctx.fillRect(x, y, 3, 3);
+      }
+    },
+  },
 };
 
 /** Pinta el cielo del tema (degradado vertical). */

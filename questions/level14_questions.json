@@ -1,0 +1,138 @@
+{
+  "nivel": "level14",
+  "clase": "Clase 05 · PC2 — Economía abierta: mercado de divisas, PPA y tipo de cambio",
+  "fuente": "Apuntes de la 5ta clase de la PC2 — Economía General II",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "m14-q1",
+      "nivel": "reconocimiento",
+      "enunciado": "El mismo producto cuesta s/30 en Jesús María y s/10 en el Callao, y supongamos que el costo de transporte es NULO.\n\n¿Qué pasa con esos dos precios en el largo plazo?",
+      "opciones": [
+        "Nada: cada zona tiene su precio y así se queda",
+        "Suben los dos por igual",
+        "La gente se va a comprar al Callao: allá el precio sube y en Jesús María baja, hasta que se emparejan",
+        "Baja el precio en el Callao, porque vende mucho más"
+      ],
+      "correcta": 2,
+      "explicacion": "Es la ley de un solo precio. Con transporte gratis todos compran donde está barato, y esa demanda empuja el precio hacia arriba allá mientras lo hunde acá. Por eso en el largo plazo el poder adquisitivo se hace uno: q = 1."
+    },
+    {
+      "id": "m14-q2",
+      "nivel": "comprension",
+      "enunciado": "Con q = 1 y ya en el largo plazo, la PPA relativa conecta las inflaciones con el tipo de cambio.\n\n¿Cómo es esa relación?",
+      "opciones": [
+        "No hay ninguna: el tipo de cambio no depende de la inflación",
+        "El tipo de cambio se mueve como la DIFERENCIA de inflaciones: cuanta más inflación tiene un país, más se deprecia su moneda",
+        "Cuanta más inflación tiene un país, más se APRECIA su moneda",
+        "El tipo de cambio se mueve como la SUMA de las dos inflaciones"
+      ],
+      "correcta": 1,
+      "explicacion": "Es la conclusión de la clase. Si acá los precios suben más rápido que afuera, tu moneda pierde poder de compra frente a la otra, y el tipo de cambio se ajusta justo por esa diferencia."
+    },
+    {
+      "id": "m14-q3",
+      "nivel": "aplicacion",
+      "enunciado": "Se reporta una inflación fuerte y sostenida en USA, no en el Perú.\n\n¿Qué le pasa al tipo de cambio sol/dólar en el largo plazo?",
+      "opciones": [
+        "«e» sube: el sol se deprecia",
+        "No pasa nada: la inflación de afuera no nos toca",
+        "«e» BAJA: el que pierde valor es el dólar, así que el sol se aprecia frente a él",
+        "«e» sube y el dólar se aprecia"
+      ],
+      "correcta": 2,
+      "explicacion": "La PPA relativa dice que se deprecia la moneda del país con MÁS inflación. Si la inflación alta está en USA, el que se deprecia es el dólar y el sol se aprecia: hay que dar menos soles por cada dólar."
+    },
+    {
+      "id": "m14-q4",
+      "nivel": "comprension",
+      "enunciado": "Jhon Nieves comenta que el aumento del tipo de cambio observado LA SEMANA PASADA se debe a la inflación doméstica.\n\n¿Confirmas lo que dice el visionario?",
+      "opciones": [
+        "Sí, es exactamente la PPA",
+        "No: la PPA es de LARGO plazo. Una semana es corto plazo, y ahí el tipo de cambio lo mueve el mercado cambiario, no los precios",
+        "Sí, pero solo si esa inflación fue mayor que la de USA",
+        "No, porque la PPA solo aplica cuando el transporte cuesta algo"
+      ],
+      "correcta": 1,
+      "explicacion": "La PPA tiene dos condiciones: que q sea 1 y que estemos en el largo plazo. «La semana pasada» no cumple la segunda. En el corto plazo el que manda es el mercado cambiario, o sea las tasas de interés."
+    },
+    {
+      "id": "m14-q5",
+      "nivel": "comprension",
+      "enunciado": "La tasa de interés en el Perú es 10 % expresada en soles y la de USA es 7 % expresada en dólares.\n\n¿En qué mercado conviene invertir?",
+      "opciones": [
+        "En el Perú, porque 10 es mayor que 7",
+        "En USA, porque el dólar es la moneda fuerte",
+        "Da igual: la diferencia se compensa sola",
+        "Todavía no se puede saber: R y R* NO son comparables. Primero hay que pasar la de USA a soles, o sea calcular el ROR*"
+      ],
+      "correcta": 3,
+      "explicacion": "Una tasa está en soles y la otra en dólares: comparar 10 con 7 es comparar peras con manzanas. El ROR* es el rendimiento esperado del activo extranjero expresado en MONEDA NACIONAL, y recién ese se puede poner al lado de R."
+    },
+    {
+      "id": "m14-q6",
+      "nivel": "aplicacion",
+      "enunciado": "Los bonos de USA se vuelven más rentables que los peruanos. Eres inversionista, no tienes efectivo y solo posees BONOS.\n\n¿Qué haces y qué pasa con el FNSC?",
+      "opciones": [
+        "Vendes los peruanos y compras los de USA: el FNSC SUBE",
+        "Vendes los de USA y compras los peruanos: el FNSC sube",
+        "No haces nada: los bonos no son activos financieros",
+        "Compras de los dos, así que el FNSC no se mueve"
+      ],
+      "correcta": 0,
+      "explicacion": "Persigues la rentabilidad y te pasas a los bonos de USA. Eso es compra de activos extranjeros por nacionales, que en el FNSC entra SUMANDO: el FNSC sube. Si los más rentables fueran los peruanos, pasaría exactamente al revés."
+    },
+    {
+      "id": "m14-q7",
+      "nivel": "reconocimiento",
+      "enunciado": "Solo hay TRES factores que pueden mover al ROR*.\n\n¿Cuál de estos NO es uno de ellos?",
+      "opciones": [
+        "La tasa de interés internacional R*, que puede cambiar la FED",
+        "El tipo de cambio esperado Eᵉ",
+        "La prima de riesgo país",
+        "La inflación doméstica de la semana pasada"
+      ],
+      "correcta": 3,
+      "explicacion": "Los tres son R*, el tipo de cambio esperado y la prima de riesgo país. La inflación doméstica manda en el LARGO plazo por la vía de la PPA, no en este gráfico, que es de corto plazo."
+    },
+    {
+      "id": "m14-q8",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 1/3. Aumenta el ahorro privado en el Perú. Aplica la recetita del mercado cambiario.\n\n¿Qué termina pasando con el tipo de cambio?",
+      "opciones": [
+        "«e» SUBE: cae r y con ella R, el activo nacional rinde menos, la gente se va a los extranjeros y el sol se deprecia",
+        "«e» baja: el sol se aprecia",
+        "«e» no se mueve: el ahorro no entra al mercado cambiario",
+        "«e» sube y el sol se aprecia"
+      ],
+      "correcta": 0,
+      "explicacion": "Primer paso: se mueve la curva de R. Más ahorro privado corre la oferta de fondos prestables a la derecha, cae la tasa real y con ella la nominal. Al mismo tipo de cambio ya no hay equilibrio, así que el público compra activos extranjeros hasta que el sol se deprecia lo suficiente."
+    },
+    {
+      "id": "m14-q9",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 2/3. La FED decide subir su tasa de interés.\n\n¿Qué pasa en el mercado cambiario peruano?",
+      "opciones": [
+        "Sube el ROR*: los activos de USA rinden más, el público se va para allá y el sol se DEPRECIA",
+        "Sube el ROR* y el sol se aprecia",
+        "Baja el ROR*, porque una tasa más alta espanta a los inversionistas",
+        "No pasa nada: la FED solo afecta a USA"
+      ],
+      "correcta": 0,
+      "explicacion": "R* es uno de los tres factores del ROR*. Si sube, el activo extranjero se pone más atractivo; el público lo compra y para eso necesita dólares, así que el sol se deprecia. Lo mismo ocurre si sube la prima de riesgo país."
+    },
+    {
+      "id": "m14-q10",
+      "nivel": "comprension",
+      "enunciado": "JEFE 3/3. Resumiendo toda la clase:\n\n¿quién manda sobre el tipo de cambio en cada plazo?",
+      "opciones": [
+        "En los dos plazos manda la inflación",
+        "En los dos plazos mandan las tasas de interés",
+        "En el corto plazo mandan los precios y en el largo las tasas",
+        "En el LARGO plazo manda la inflación, por la PPA; en el CORTO manda el mercado cambiario, o sea R contra ROR*"
+      ],
+      "correcta": 3,
+      "explicacion": "Esa es la columna vertebral de la clase, y es lo que distingue un comente bien resuelto de uno mal resuelto: antes de responder, fíjate si te están hablando de años o de la semana pasada."
+    }
+  ]
+}
