@@ -1281,6 +1281,74 @@ const CASERITA = [  // jefe de Surquillo: la casera que sostiene dos precios par
 ];
 const P_CASERITA = { k: "#2e2418", c: "#e0b48a", w: "#f2ead8", r: "#c2264a", y: "#e8b13c" };
 
+const MALETA = [   // la maleta que se sube al andén equivocado (14 × 12)
+  "..............",
+  ".....kkkk.....",
+  "....k....k....",
+  "..mmmmmmmmmm..",
+  ".mmmmmmmmmmmm.",
+  ".mmwwwwwwwwmm.",
+  ".mmmmmmmmmmmm.",
+  ".mmwwwwwwwwmm.",
+  ".mmmmmmmmmmmm.",
+  "..mmmmmmmmmm..",
+  "...kk....kk...",
+  "..............",
+];
+const P_MALETA = { m: "#8a5c3a", w: "#c9945c", k: "#3b2a1a" };
+
+const LETRERO = [   // el letrero de destino del bus: lee el plazo que no era (14 × 12)
+  "..............",
+  "..............",
+  ".kkkkkkkkkkkk.",
+  ".kwwwwwwwwwwk.",
+  ".kwyyyywyyywk.",
+  ".kwwwwwwwwwwk.",
+  ".kwyywyyyywwk.",
+  ".kwwwwwwwwwwk.",
+  ".kkkkkkkkkkkk.",
+  "...kk....kk...",
+  "...kk....kk...",
+  "..............",
+];
+const P_LETRERO = { k: "#3b3550", w: "#1c2440", y: "#e8c15a" };
+
+const TIMON = [   // el timón del chofer: gira la curva entera cuando solo cambió la tasa (12 × 12)
+  "............",
+  "...kkkkkk...",
+  "..kkwwwwkk..",
+  ".kkw....wkk.",
+  ".kw..kk..wk.",
+  "kkw.kkkk.wkk",
+  "kkw.kkkk.wkk",
+  ".kw..kk..wk.",
+  ".kkw....wkk.",
+  "..kkwwwwkk..",
+  "...kkkkkk...",
+  "............",
+];
+const P_TIMON = { k: "#2e2418", w: "#8a6a48" };
+
+const CHOFER = [  // jefe de El Agustino: el chofer que grita crowding out en toda esquina (20 × 16)
+  ".....nnnnnnnn.......",
+  "....nnnnnnnnnn......",
+  "....nnwwwwwwnn......",
+  ".....cccccccc.......",
+  ".....cckkcckkc......",
+  ".....cccccccc.......",
+  "......cmmmmc........",
+  ".....wwwwwwww.......",
+  "....wwnnnnnnww......",
+  "...wwwnnnnnnwww.....",
+  "...wwwnnnnnnwww.....",
+  "...nnnnnnnnnnnn.....",
+  "...nnnn..nnnn.......",
+  "...nnnn..nnnn.......",
+  "..kkkkk..kkkkk......",
+  "....................",
+];
+const P_CHOFER = { n: "#2b4a6b", c: "#c9945c", k: "#241a2e", m: "#3b2a1a", w: "#f2f6ff" };
+
 /* ---------------------------------------------------------------
    REGISTRO Y COCINADO
    --------------------------------------------------------------- */
@@ -1360,6 +1428,10 @@ const DEFINICIONES = {
   canasta:      [CANASTA, P_CANASTA],
   palta:        [PALTA, P_PALTA],
   caserita:     [CASERITA, P_CASERITA],
+  maleta:       [MALETA, P_MALETA],
+  letrero:      [LETRERO, P_LETRERO],
+  timon:        [TIMON, P_TIMON],
+  chofer:       [CHOFER, P_CHOFER],
 };
 
 const cocidos = {};   // nombre -> { canvas, ancho, alto } (ya escalados)

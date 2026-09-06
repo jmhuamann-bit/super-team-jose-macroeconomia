@@ -203,6 +203,10 @@ const FICHAS = [
   { sprite: "canasta", nombre: "La Canasta de Dos Monedas", texto: "Echa soles y dólares a la misma canasta y los compara sin convertir nada." },
   { sprite: "palta", nombre: "La Palta al Revés", texto: "Suben los precios en USA y ella jura que el que se deprecia es el sol." },
   { sprite: "caserita", nombre: "La Casera de los Dos Precios", texto: "Jefa de Surquillo: vende lo mismo a dos precios según de qué lado de la vía estés, y jura que eso dura para siempre." },
+  { sprite: "maleta", nombre: "La Maleta del Andén Equivocado", texto: "Le preguntan por el mercado de préstamos y ella se sube al bus del mercado cambiario." },
+  { sprite: "letrero", nombre: "El Letrero de Largo Plazo", texto: "Saca el gráfico del ROR*, que es de corto plazo, para responder una pregunta de años." },
+  { sprite: "timon", nombre: "El Timón que Desplaza", texto: "Cambió la tasa local y él gira la curva entera, cuando solo tocaba moverse a lo largo de ella." },
+  { sprite: "chofer", nombre: "El Chofer del Crowding Out", texto: "Jefe de El Agustino: grita crowding out en cada esquina sin mirar si puede entrar ahorro externo." },
 ];
 
 export function galeriaPersonajes(contenedor) {

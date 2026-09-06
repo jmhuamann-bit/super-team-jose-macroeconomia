@@ -197,6 +197,20 @@
       "abierto": true,
       "mapa": "levels/level14.json",
       "preguntas": "questions/level14_questions.json"
+    },
+    {
+      "id": "level15",
+      "clase": "Clase 06",
+      "distrito": "El Agustino",
+      "titulo": "El terminal de los cuatro modelos",
+      "icono": "🚏",
+      "seccion": "PC2",
+      "seccionNota": "Fondos prestables, cerrada y abierta",
+      "retos": 8,
+      "duracion": "3 min",
+      "abierto": true,
+      "mapa": "levels/level15.json",
+      "preguntas": "questions/level15_questions.json"
     }
   ]
 }

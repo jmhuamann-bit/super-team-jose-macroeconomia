@@ -1,0 +1,43 @@
+{
+  "id": "level15",
+  "distrito": "El Agustino",
+  "clase": "Clase 06 · PC2",
+  "titulo": "El terminal de los cuatro modelos",
+  "tema": "terminal",
+  "musica": "terminal",
+  "vehiculo": "bus",
+  "intro": "En el terminal de Yerbateros hay cuatro andenes y cuatro rutas, y lo único que importa es subirte al bus correcto: equivocarte de andén te deja en otro departamento. Esta clase es igual. Hay CUATRO MODELOS FIJOS para el mercado de fondos prestables y el cambiario, y casi todo el examen se gana eligiendo bien cuál de los cuatro toca antes de dibujar nada.",
+  "repaso": [
+    "MODELO 01 — la economía que DEPENDE del ahorro externo (la «economía pobre»). Pregunta típica: si el ahorro nacional se contrae, ¿sube la tasa de interés? NO NECESARIAMENTE.",
+    "En CERRADA sí sube, porque no hay ahorro externo que ayude a financiar. En ABIERTA no: si el préstamo local se pone caro, la inversión sale a buscar financiamiento afuera. Ese es el argumento para CONTRAARGUMENTAR el crowding out en economía abierta.",
+    "MODELO 02 — la economía que ya NO depende del ahorro externo y hasta puede financiar proyectos de afuera («plata como cancha»). Se trabaja con dos gráficos: el de economía abierta con el SNC, y el del SNC solo.",
+    "Como el SNC aparece en LOS DOS gráficos, cuando cambia un factor externo hay que corregir el dibujo en los dos lados, no en uno.",
+    "PD IMPORTANTE: los cambios en la tasa de interés LOCAL solo generan MOVIMIENTOS a lo largo de la curva. Lo que la DESPLAZA son los factores externos.",
+    "Los desplazamientos van en tres grupos. INVERSIÓN INTERNA (número de empresas locales): confianza empresarial, políticas públicas de incentivo, impuesto dirigido a la empresa, y el caso especial de las familias que se prestan para una casa o un auto.",
+    "INVERSIÓN EXTERNA (activos y empresas de afuera): la tasa de interés internacional, el tipo de cambio esperado (si sube, se esperan más ganancias y el SNC aumenta), el riesgo capital o los problemas políticos, y las facilidades o trabas al inversionista.",
+    "AHORRO NACIONAL: el riesgo de pago, el nivel de ingresos de las familias, un retiro de AFP, una redistribución, la inflación y el resultado fiscal.",
+    "CUIDADO, CACHIMBO: no es lo mismo responder sobre el efecto en el MERCADO DE PRÉSTAMOS de economía abierta que sobre el MERCADO CAMBIARIO. Cada uno contesta una pregunta distinta.",
+    "MODELO 03 — el MERCADO CAMBIARIO, que define qué pasará con el tipo de cambio. En el CORTO plazo se usa el gráfico del ROR* para los efectos inmediatos. En el LARGO plazo manda la inflación local menos la internacional.",
+    "De ahí la pregunta de examen: si la inflación LOCAL disminuye, el tipo de cambio se aprecia («e» baja).",
+    "Y solo hay 3 factores que mueven al ROR*: la tasa de interés internacional R* (que puede cambiar la FED), el tipo de cambio esperado Eᵉ y la prima de riesgo país.",
+    "RECETITA del mercado cambiario: 1) ¿qué curva se mueve, y por qué?; 2) al mismo nivel del TCN, marcar el cruce 1´ y ver que ahí NO hay equilibrio; 3) ¿qué hace el público ante ese desequilibrio de intereses? Así se llega al equilibrio 2; 4) ¿qué pasó con el TCN?; 5) ¿y con el TC real, q?",
+    "MODELO 04 — la pregunta MATEMÁTICA del mercado de préstamos en economía abierta: la de armar C, I, G y XN y despejar la tasa. Esa ya la corriste en San Borja."
+  ],
+  "mapa": [
+    "                                                                                                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                                                                                                ",
+    "                                                                                                                                                                                                                                                                                ",
+    "                              o o o                             o o o                               o o o                                 o o o                           o o o                             o o o                             o o o                             ",
+    "                  ?                     o o       L           o o         G                   o o                       V                     o o           1                   o o         o o L                     o o       ?                 o o                 1         ",
+    "                              ====                              ====                                ====                                  ====                            ====                              ====                              ====                              ",
+    "                                  o o                 o o               o o                       o o                         o o                       o o       o o                             o o         o o                 o o                         o o               ",
+    "  P                     E           C                     E         X         E                           C         E     X                         E                 C                   E           X             E                 X                 B                   M   ",
+    "##########################################   #########################################    ########################################   #########################################    ########################################   ###################################################",
+    "##########################################   #########################################    ########################################   #########################################    ########################################   ###################################################",
+    "##########################################   #########################################    ########################################   #########################################    ########################################   ###################################################"
+  ]
+}

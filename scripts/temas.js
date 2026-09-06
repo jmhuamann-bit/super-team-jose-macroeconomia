@@ -1307,6 +1307,118 @@ export const TEMAS = {
       }
     },
   },
+
+  /* =========================================================
+     EL AGUSTINO — el terminal de Yerbateros al caer la tarde, con
+     los fluorescentes ya prendidos. Los buses interprovinciales
+     esperando en fila, los andenes numerados y, arriba de todo,
+     el tablero de destinos. Acá lo único que importa es subirte
+     al bus correcto: con cuatro rutas distintas, equivocarte de
+     andén te deja en otro departamento.
+     ========================================================= */
+  terminal: {
+    nombre: "El Agustino",
+    cielo: [[0, "#243a63"], [0.4, "#5b6d96"], [0.74, "#c98a6e"], [1, "#eabf92"]],
+    suelo: { cara: "#6f6a62", borde: "#9c968a", tierra: "#453f39", plataforma: "#2f7d6b", plataformaBorde: "#ffd166" },
+    acento: "#e8c15a",
+
+    bichos: ["maleta", "letrero", "timon"],
+    nombresBichos: ["La Maleta del Andén Equivocado", "El Letrero de Largo Plazo", "El Timón que Desplaza"],
+    jefe: "chofer",
+    nombreJefe: "El Chofer del Crowding Out",
+
+    fondo(ctx, cam, t) {
+      // el último sol de la tarde, bajo y anaranjado
+      ctx.fillStyle = "rgba(255,206,140,.20)";
+      ctx.beginPath(); ctx.arc(120, 226, 74, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = "rgba(255,196,120,.85)";
+      ctx.beginPath(); ctx.arc(120, 226, 30, 0, Math.PI * 2); ctx.fill();
+
+      // los cerros de El Agustino en silueta, ya sin detalle
+      repetir(ctx, cam, 520, 0.12, (x) => {
+        ctx.fillStyle = "#3f4a63";
+        ctx.beginPath();
+        ctx.moveTo(x - 100, 268);
+        ctx.quadraticCurveTo(x + 120, 168, x + 340, 268);
+        ctx.closePath(); ctx.fill();
+      });
+
+      // los almacenes largos del fondo, con sus portones cerrados
+      repetir(ctx, cam, 244, 0.28, (x, i) => {
+        const bx = x + 16, base = 288, alto = 52 + ((i * 29) % 20);
+        ctx.fillStyle = ["#4e5568", "#585f70", "#474e60"][i % 3];
+        ctx.fillRect(bx, base - alto, 190, alto);
+        ctx.fillStyle = "#3a4053";
+        for (let k = 0; k < 4; k++) ctx.fillRect(bx + 14 + k * 44, base - 26, 32, 26);
+      });
+
+      // EL TABLERO DE DESTINOS: cuatro rutas, y hay que elegir bien
+      repetir(ctx, cam, 620, 0.36, (x) => {
+        const bx = x + 90, base = 262;
+        ctx.fillStyle = "#5c5c66";
+        ctx.fillRect(bx + 12, base, 5, 34); ctx.fillRect(bx + 148, base, 5, 34);
+        ctx.fillStyle = "#1c2440";
+        ctx.fillRect(bx, base - 62, 166, 64);
+        ctx.fillStyle = "#3b3550";
+        ctx.fillRect(bx, base - 62, 166, 5);
+        for (let k = 0; k < 4; k++) {                       // las cuatro filas del tablero
+          const fy = base - 54 + k * 13;
+          ctx.fillStyle = "#e8c15a";
+          ctx.fillRect(bx + 9, fy, 62, 6);
+          ctx.fillStyle = "rgba(232,193,90,.45)";
+          ctx.fillRect(bx + 96, fy, 34, 6);
+        }
+      });
+
+      // el techo largo del terminal, con sus fluorescentes encendidos
+      const yTecho = 292;
+      ctx.fillStyle = "#6a7183";
+      ctx.fillRect(0, yTecho, CFG.ANCHO_VISTA, 12);
+      ctx.fillStyle = "#828a9c";
+      ctx.fillRect(0, yTecho, CFG.ANCHO_VISTA, 4);
+      repetir(ctx, cam, 132, 0.54, (x, i) => {
+        ctx.fillStyle = "#5c626f";                          // las columnas del techo
+        ctx.fillRect(x + 60, yTecho + 12, 7, 62);
+        // el tubo fluorescente y su halo
+        const brillo = 0.75 + 0.2 * Math.abs(Math.sin(t / 40 + i));
+        ctx.fillStyle = `rgba(226,240,255,${brillo.toFixed(2)})`;
+        ctx.fillRect(x + 18, yTecho + 14, 84, 4);
+        ctx.fillStyle = "rgba(200,226,255,.12)";
+        ctx.fillRect(x + 10, yTecho + 10, 100, 22);
+        // el número del andén, colgado
+        ctx.fillStyle = "#e8c15a";
+        ctx.fillRect(x + 52, yTecho + 22, 22, 12);
+      });
+
+      // los buses interprovinciales esperando en fila, de perfil
+      repetir(ctx, cam, 214, 0.7, (x, i) => {
+        const bx = x + 12, base = 356;
+        const cols = ["#c2264a", "#2f6b8f", "#3f8f55", "#e8823c"];
+        ctx.fillStyle = "#e8e2d2";
+        ctx.fillRect(bx, base - 46, 168, 46);
+        ctx.fillStyle = cols[i % 4];                        // la franja del bus
+        ctx.fillRect(bx, base - 28, 168, 9);
+        ctx.fillStyle = "rgba(120,160,190,.55)";            // las ventanas
+        for (let k = 0; k < 7; k++) ctx.fillRect(bx + 10 + k * 21, base - 42, 15, 11);
+        ctx.fillStyle = "#e8c15a";                          // el letrero de destino
+        ctx.fillRect(bx + 118, base - 54, 44, 9);
+        ctx.fillStyle = "#1c1c26";                          // las llantas
+        for (const lx of [bx + 30, bx + 122, bx + 146]) {
+          ctx.beginPath(); ctx.arc(lx, base, 9, 0, Math.PI * 2); ctx.fill();
+        }
+      });
+    },
+
+    clima(ctx, t) {
+      // los bichitos dando vueltas alrededor de los fluorescentes
+      for (let i = 0; i < 24; i++) {
+        const x = (i * 137 + Math.sin(t / 12 + i) * 26) % 880 - 20;
+        const y = 200 + ((i * 53) % 110) + Math.cos(t / 15 + i * 1.3) * 9;
+        ctx.fillStyle = `rgba(240,232,200,${(0.16 + 0.22 * Math.abs(Math.sin(t / 9 + i))).toFixed(2)})`;
+        ctx.fillRect(x, y, 2, 2);
+      }
+    },
+  },
 };
 
 /** Pinta el cielo del tema (degradado vertical). */

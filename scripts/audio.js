@@ -114,6 +114,13 @@ const TEMAS_MUSICA = {
               "C5",2,"D5",1,"C5",1,"A4",4],
     bajo:    ["A2",4,"E3",4,"F2",4,"C3",4,"G2",4,"D3",4,"E3",4,"A2",4],
   },
+  terminal: { // El Agustino: el terminal al anochecer, cumbia de carretera antes de partir
+    tempo: 0.14, onda: "square",
+    melodia: ["A4",2,"C5",1,"E5",1,"D5",2,"C5",2,"A4",4,
+              "G4",2,"A4",1,"C5",1,"B4",2,"A4",2,"G4",4,
+              "E5",2,"D5",1,"C5",1,"A4",2,"C5",2,"A4",4],
+    bajo:    ["A2",4,"E3",4,"F2",4,"C3",4,"G2",4,"D3",4,"E3",4,"A2",4],
+  },
 };
 
 function arrancarCtx() {

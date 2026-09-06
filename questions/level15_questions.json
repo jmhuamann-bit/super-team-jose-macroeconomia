@@ -1,0 +1,138 @@
+{
+  "nivel": "level15",
+  "clase": "Clase 06 · PC2 — Los 4 modelos fijos del mercado de fondos prestables y cambiario",
+  "fuente": "Apuntes de la 6ta clase de la PC2 — Economía General II",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "m15-q1",
+      "nivel": "reconocimiento",
+      "enunciado": "MODELO 01. El ahorro nacional se contrae.\n\n¿Sube la tasa de interés?",
+      "opciones": [
+        "Sí, siempre: menos ahorro es siempre tasa más cara",
+        "NO NECESARIAMENTE: en cerrada sí, pero en abierta la inversión puede irse a financiar afuera y no siente el alza local",
+        "No, nunca sube: el ahorro externo siempre tapa el hueco",
+        "Depende únicamente del tipo de cambio esperado"
+      ],
+      "correcta": 1,
+      "explicacion": "En una economía cerrada no hay de dónde más sacar plata, así que la tasa sube sí o sí. En una abierta, si el préstamo local se encarece, las empresas piden financiamiento al exterior. Ese es justo el argumento para CONTRAARGUMENTAR el crowding out en economía abierta."
+    },
+    {
+      "id": "m15-q2",
+      "nivel": "comprension",
+      "enunciado": "Los dos primeros modelos fijos retratan economías distintas.\n\n¿En qué se diferencian?",
+      "opciones": [
+        "En el primero el país necesita que le presten de afuera; en el segundo le sobra ahorro y hasta puede financiar proyectos del exterior",
+        "En el primero hay crowding out y en el segundo no existe el mercado de fondos prestables",
+        "El primero es de corto plazo y el segundo de largo plazo",
+        "En el segundo simplemente no hay tipo de cambio"
+      ],
+      "correcta": 0,
+      "explicacion": "El modelo de la «economía pobre» se apoya en el ahorro externo para financiar su inversión; el de «plata como cancha» tiene tanto ahorro que sale a colocarlo afuera. Elegir mal el cuadro te cambia todo el análisis que venga después."
+    },
+    {
+      "id": "m15-q3",
+      "nivel": "comprension",
+      "enunciado": "El SNC aparece en DOS gráficos a la vez: el del mercado de fondos prestables abierto y el suyo propio.\n\n¿Qué implica eso cuando cambia un factor externo?",
+      "opciones": [
+        "Que solo se mueve el gráfico del mercado de préstamos",
+        "Que solo se mueve el gráfico del SNC",
+        "Que se mueven LOS DOS gráficos, porque es la misma curva vista dos veces",
+        "Que no se mueve ninguno hasta que cambie la tasa local"
+      ],
+      "correcta": 2,
+      "explicacion": "El SNC es la bisagra entre los dos cuadros. Si cambia algo de afuera —la rentabilidad de los activos de USA, el riesgo país— la curva se desplaza y hay que corregir el dibujo en los dos lados, no en uno solo."
+    },
+    {
+      "id": "m15-q4",
+      "nivel": "aplicacion",
+      "enunciado": "Cambia la TASA DE INTERÉS LOCAL.\n\n¿Qué le pasa a la curva del SNC?",
+      "opciones": [
+        "Se desplaza hacia la derecha",
+        "Se desplaza hacia la izquierda",
+        "No pasa absolutamente nada en el gráfico",
+        "Solo hay un MOVIMIENTO a lo largo de la curva: la tasa local es el eje del gráfico, no un factor que la desplace"
+      ],
+      "correcta": 3,
+      "explicacion": "Es la PD de la clase. La tasa local es la variable del propio gráfico, así que solo te mueve a lo largo de la curva. Lo que la DESPLAZA son los factores externos: la tasa internacional, el tipo de cambio esperado, el riesgo país y las facilidades o trabas al inversionista."
+    },
+    {
+      "id": "m15-q5",
+      "nivel": "reconocimiento",
+      "enunciado": "La clase parte los desplazamientos en tres grupos: inversión interna, inversión externa y ahorro nacional.\n\n¿Cuál de estos pertenece a la INVERSIÓN EXTERNA?",
+      "opciones": [
+        "La desconfianza empresarial de las empresas locales",
+        "El impuesto dirigido a las empresas peruanas",
+        "Las facilidades o trabas que se le pongan al inversionista",
+        "Un nuevo retiro de fondos de las AFP"
+      ],
+      "correcta": 2,
+      "explicacion": "El grupo de la inversión externa tiene cuatro: la tasa de interés internacional, el tipo de cambio esperado, el riesgo capital o los problemas políticos, y las facilidades o trabas. La desconfianza y el impuesto a la empresa mueven la inversión INTERNA, y las AFP mueven el AHORRO nacional."
+    },
+    {
+      "id": "m15-q6",
+      "nivel": "comprension",
+      "enunciado": "Sube el TIPO DE CAMBIO ESPERADO.\n\n¿Qué le pasa al SNC?",
+      "opciones": [
+        "SUBE: se esperan más ganancias por tipo de cambio, así que conviene colocar la plata afuera",
+        "Baja: los extranjeros vienen a invertir acá",
+        "No se mueve: el tipo de cambio esperado no es un factor del SNC",
+        "Sube, pero solamente en el largo plazo"
+      ],
+      "correcta": 0,
+      "explicacion": "Si esperas que el dólar valga más mañana, un activo en dólares te va a rendir más cuando lo traigas de vuelta a soles. Eso empuja a los nacionales a comprar afuera y el SNC aumenta. Es factor de la inversión externa y también uno de los tres del ROR*."
+    },
+    {
+      "id": "m15-q7",
+      "nivel": "comprension",
+      "enunciado": "El apunte advierte: «no es lo mismo responder sobre el MERCADO DE PRÉSTAMOS en economía abierta que sobre el MERCADO CAMBIARIO».\n\n¿Por qué importa tanto?",
+      "opciones": [
+        "Porque son el mismo gráfico con otro nombre",
+        "Porque cada uno responde una pregunta distinta: el de préstamos te dice qué pasa con la tasa y la inversión, y el cambiario qué pasa con el TIPO DE CAMBIO",
+        "Porque el cambiario solo existe en el largo plazo",
+        "Porque el de préstamos solo se aplica en economía cerrada"
+      ],
+      "correcta": 1,
+      "explicacion": "Un mismo hecho puede mover los dos cuadros, pero el examen te pregunta por uno. Si te piden el efecto sobre la inversión, no respondas con la depreciación; y si te piden el tipo de cambio, no te quedes en la tasa de interés."
+    },
+    {
+      "id": "m15-q8",
+      "nivel": "comprension",
+      "enunciado": "JEFE 1/3. MODELO 03. Te preguntan qué pasará con el tipo de cambio.\n\n¿Qué herramienta usas en cada plazo?",
+      "opciones": [
+        "En los dos plazos el gráfico del ROR*",
+        "En los dos plazos la diferencia de inflaciones",
+        "En el corto plazo la inflación y en el largo el gráfico del ROR*",
+        "En el CORTO plazo el gráfico del ROR*, para los efectos inmediatos; en el LARGO, la inflación local menos la internacional"
+      ],
+      "correcta": 3,
+      "explicacion": "El gráfico del ROR* sirve para lo que pasa ya, con las tasas de interés enfrentadas. Para años manda la PPA: la moneda del país con más inflación es la que se deprecia. Sacar el cuadro equivocado te arruina el comente."
+    },
+    {
+      "id": "m15-q9",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 2/3. La inflación LOCAL disminuye.\n\n¿Qué pasa con el tipo de cambio en el largo plazo?",
+      "opciones": [
+        "El sol se APRECIA y «e» baja: nuestros precios suben menos que los de afuera",
+        "El sol se deprecia y «e» sube",
+        "No pasa nada: la inflación no toca el tipo de cambio",
+        "Depende solamente de la prima de riesgo país"
+      ],
+      "correcta": 0,
+      "explicacion": "Es la pregunta de examen que marca la clase. En el largo plazo el tipo de cambio se mueve como la inflación local menos la internacional. Si la nuestra baja, esa resta se achica y el sol se aprecia."
+    },
+    {
+      "id": "m15-q10",
+      "nivel": "comprension",
+      "enunciado": "JEFE 3/3. En la recetita del mercado cambiario ya dibujaste el desplazamiento y marcaste el cruce 1´, donde NO hay equilibrio.\n\n¿Qué viene después?",
+      "opciones": [
+        "Se pasa directo al equilibrio final y se compara con el inicial",
+        "Se cambia la inflación esperada del país",
+        "Se calcula el ROR* con la fórmula",
+        "Se pregunta QUÉ HACE EL PÚBLICO ante ese desequilibrio de intereses: eso es lo que empuja hasta el nuevo equilibrio 2"
+      ],
+      "correcta": 3,
+      "explicacion": "Los cinco pasos son: qué curva se mueve y por qué; marcar el cruce 1´ al mismo tipo de cambio y ver que ahí no hay equilibrio; qué hace el público con ese desequilibrio hasta llegar al 2; qué pasó con el TCN; y qué pasó con el TC real. Saltarse el paso 3 es saltarse la explicación entera."
+    }
+  ]
+}
