@@ -207,6 +207,10 @@ const FICHAS = [
   { sprite: "letrero", nombre: "El Letrero de Largo Plazo", texto: "Saca el gráfico del ROR*, que es de corto plazo, para responder una pregunta de años." },
   { sprite: "timon", nombre: "El Timón que Desplaza", texto: "Cambió la tasa local y él gira la curva entera, cuando solo tocaba moverse a lo largo de ella." },
   { sprite: "chofer", nombre: "El Chofer del Crowding Out", texto: "Jefe de El Agustino: grita crowding out en cada esquina sin mirar si puede entrar ahorro externo." },
+  { sprite: "tanque", nombre: "El Tanque que No Varía", texto: "Cree que las RIN deberían quedarse quietas para dar confianza, y por eso nunca entiende la balanza de pagos." },
+  { sprite: "valvula", nombre: "La Válvula de un Solo Flujo", texto: "Solo deja pasar las exportaciones netas y se olvida de la renta de factores y las transferencias." },
+  { sprite: "barril", nombre: "El Barril del Corto Plazo", texto: "Capital golondrino: entra, se pasea y se va, pero él lo cuenta como si fuera una fábrica nueva." },
+  { sprite: "ingeniero", nombre: "El Ingeniero del Signo Cambiado", texto: "Jefe de Ventanilla: confunde el ahorro externo con la cuenta corriente y se le pierde el menos." },
 ];
 
 export function galeriaPersonajes(contenedor) {

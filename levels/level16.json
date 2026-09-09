@@ -1,0 +1,42 @@
+{
+  "id": "level16",
+  "distrito": "Ventanilla",
+  "clase": "Clase 07 · PC2",
+  "titulo": "Los tanques de las reservas",
+  "tema": "refineria",
+  "musica": "refineria",
+  "vehiculo": "taxi",
+  "intro": "En la refinería de Ventanilla los tanques están alineados como una caja de ahorros a cielo abierto: entra crudo por el muelle, sale combustible por las tuberías, y lo que queda guardado son las reservas. Así funciona la balanza de pagos de un país — la cuenta de todo lo que entra y todo lo que sale — y su resultado es exactamente cuánto sube o baja esa caja.",
+  "repaso": [
+    "RIN son las Reservas Internacionales Netas: la caja de dólares del Banco Central, la que se usa cuando vienen las crisis.",
+    "DETALLE 1: el RESULTADO de la balanza de pagos es la VARIACIÓN de las RIN. Si entran 10 dólares y salen 90, la ΔRIN es −80 y las reservas caen en ese monto.",
+    "La balanza de pagos se arma como CC + CF. Si la cuenta financiera no alcanza a tapar el hueco de la corriente, la diferencia se paga con reservas.",
+    "DETALLE 2: la balanza en CUENTA CORRIENTE es el NEGATIVO del ahorro externo. Con la CC en déficit, el ahorro externo es positivo: el mundo te está financiando y eres deudor neto.",
+    "DETALLE 3: CC = XN + renta de factores + transferencias del exterior. En general la CC se parece a las XN, pero NO es lo mismo: puedes tener superávit comercial y aun así déficit en cuenta corriente.",
+    "Esa renta de factores negativa es, por ejemplo, la utilidad que las empresas extranjeras se llevan del país. Con minería en manos de afuera, pesa mucho.",
+    "DETALLE 4: la SALIDA NETA DE CAPITALES es igual a la balanza en cuenta corriente. SNC = CC.",
+    "DETALLE 5: si el país es muy deudor, AHORRO INTERNO + AHORRO EXTERNO = INVERSIÓN INTERNA. Esa es la fórmula para sacar cuánto invierte un país cuando te dan el ahorro interno como % del PBI.",
+    "DETALLE 6: si al país le sobra, AHORRO INTERNO = INVERSIÓN INTERNA + INVERSIÓN EXTERNA (el SNC).",
+    "No es lo mismo financiar el déficit con inversión de largo plazo que con CAPITALES DE CORTO PLAZO. Ese capital golondrino entra y sale de un día para otro, y cuando se va hay que soltar reservas.",
+    "REGÍMENES Y RESERVAS: el FIJO y la FLOTACIÓN SUCIA necesitan RIN, porque en los dos el banco central interviene. El FLEXIBLE puro no. El Perú NO tiene tipo de cambio fijo: aplica flotación sucia.",
+    "CÓMO INTERVIENE EL BCR: si el tipo de cambio (soles por dólar) está subiendo, VENDE dólares —los mete a la economía— y las RIN caen. Si el sol se está apreciando de más, COMPRA dólares y las RIN suben.",
+    "Y si el saldo de la balanza de pagos sale positivo, es porque las RIN aumentaron."
+  ],
+  "mapa": [
+    "                                                                                                                                                                                                                                                                                        ",
+    "                                                                                                                                                                                                                                                                                        ",
+    "                                                                                                                                                                                                                                                                                        ",
+    "                                                                                                                                                                                                                                                                                        ",
+    "                                                                                                                                                                                                                                                                                        ",
+    "                                                                                                                                                                                                                                                                                        ",
+    "                                                                                                                                                                                                                                                                                        ",
+    "                            o o o                                 o o o                               o o o                                   o o o                             o o o                             o o o                               o o o                             ",
+    "                  ?                     o o         L           o o         G                   o o                         V                     o o           1                     o o         o o L                     o o       ?                   o o                 1         ",
+    "                            ====                                  ====                                ====                                    ====                              ====                              ====                                ====                              ",
+    "                                  o o                   o o               o o                       o o                           o o                       o o       o o                               o o         o o                 o o                           o o               ",
+    "  P                     E           C                       E         X         E                           C           E     X                         E                 C                     E           X             E                 X                   B                   M   ",
+    "############################################    ########################################   ###########################################    ########################################   ###########################################    ####################################################",
+    "############################################    ########################################   ###########################################    ########################################   ###########################################    ####################################################",
+    "############################################    ########################################   ###########################################    ########################################   ###########################################    ####################################################"
+  ]
+}

@@ -1349,6 +1349,74 @@ const CHOFER = [  // jefe de El Agustino: el chofer que grita crowding out en to
 ];
 const P_CHOFER = { n: "#2b4a6b", c: "#c9945c", k: "#241a2e", m: "#3b2a1a", w: "#f2f6ff" };
 
+const TANQUE = [   // el tanque de reserva: jura que las RIN no deberían moverse nunca (13 × 12)
+  ".............",
+  "...wwwwwww...",
+  "..wwwwwwwww..",
+  ".wwwwwwwwwww.",
+  ".wkkkkkkkkkw.",
+  ".wwwwwwwwwww.",
+  ".wwwwwwwwwww.",
+  ".wkkkkkkkkkw.",
+  ".wwwwwwwwwww.",
+  ".wwwwwwwwwww.",
+  ".kkkkkkkkkkk.",
+  ".............",
+];
+const P_TANQUE = { w: "#dce4e8", k: "#8a929c" };
+
+const VALVULA = [   // la válvula de la tubería: solo deja pasar las exportaciones netas (13 × 12)
+  ".............",
+  ".....rrr.....",
+  "....r...r....",
+  "...r.....r...",
+  "...r..k..r...",
+  "....r.k.r....",
+  ".....rkr.....",
+  "..mmmmkmmmm..",
+  ".mmmmmmmmmmm.",
+  "..mmmmmmmmm..",
+  ".............",
+  ".............",
+];
+const P_VALVULA = { r: "#c2264a", k: "#5c5c66", m: "#8a929c" };
+
+const BARRIL = [   // el barril del corto plazo: capital golondrino que se va cuando quiere (12 × 12)
+  "............",
+  "..kkkkkkkk..",
+  ".kkkkkkkkkk.",
+  ".nnnnnnnnnn.",
+  ".nyyyyyyyyn.",
+  ".nnnnnnnnnn.",
+  ".nnnnnnnnnn.",
+  ".nyyyyyyyyn.",
+  ".nnnnnnnnnn.",
+  ".kkkkkkkkkk.",
+  "..kkkkkkkk..",
+  "............",
+];
+const P_BARRIL = { k: "#5c5c66", n: "#2f5f7a", y: "#e8c15a" };
+
+const INGENIERO = [  // jefe de Ventanilla: el que confunde el ahorro externo con la cuenta corriente (20 × 16)
+  "......yyyyyy........",
+  ".....yyyyyyyy.......",
+  "....yyyyyyyyyy......",
+  ".....cccccccc.......",
+  ".....cckkcckkc......",
+  ".....cccccccc.......",
+  "......cmmmmc........",
+  ".....nnnnnnnn.......",
+  "....nnnnnnnnnn.wwww.",
+  "...nnnaaaannn..wwww.",
+  "...nnnaaaannn..wwww.",
+  "...nnnnnnnnnnn......",
+  "...nnnn..nnnn.......",
+  "...nnnn..nnnn.......",
+  "..kkkkk..kkkkk......",
+  "....................",
+];
+const P_INGENIERO = { y: "#e8c15a", c: "#d9a679", k: "#241a2e", m: "#5c4632", n: "#2f6b8f", a: "#ff8c1a", w: "#f2ead8" };
+
 /* ---------------------------------------------------------------
    REGISTRO Y COCINADO
    --------------------------------------------------------------- */
@@ -1432,6 +1500,10 @@ const DEFINICIONES = {
   letrero:      [LETRERO, P_LETRERO],
   timon:        [TIMON, P_TIMON],
   chofer:       [CHOFER, P_CHOFER],
+  tanque:       [TANQUE, P_TANQUE],
+  valvula:      [VALVULA, P_VALVULA],
+  barril:       [BARRIL, P_BARRIL],
+  ingeniero:    [INGENIERO, P_INGENIERO],
 };
 
 const cocidos = {};   // nombre -> { canvas, ancho, alto } (ya escalados)

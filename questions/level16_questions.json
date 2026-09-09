@@ -1,0 +1,138 @@
+{
+  "nivel": "level16",
+  "clase": "Clase 07 · PC2 — Balanza de pagos y reservas internacionales",
+  "fuente": "Apuntes de la 7ma clase de la PC2 — Economía General II",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "m16-q1",
+      "nivel": "reconocimiento",
+      "enunciado": "El resultado de la balanza de pagos de un país\n\n¿a qué es igual?",
+      "opciones": [
+        "A la suma de todas las exportaciones del año",
+        "Al saldo de la cuenta corriente, nada más",
+        "A la VARIACIÓN de las RIN: lo que le entra o le sale a la caja de reservas del Banco Central",
+        "Al PBI del año"
+      ],
+      "correcta": 2,
+      "explicacion": "Es el detalle 1 de la clase. La balanza de pagos es la cuenta de todo lo que entra y sale del país, y lo que no cuadra por otro lado se paga con reservas. Por eso su resultado y la ΔRIN son la misma cosa."
+    },
+    {
+      "id": "m16-q2",
+      "nivel": "aplicacion",
+      "enunciado": "Este año el país cuenta con 400 de RIN. A lo largo del año entran 10 dólares y salen 90.\n\n¿Con cuántas reservas arranca el año siguiente?",
+      "opciones": [
+        "Con 320: la ΔRIN es 10 − 90 = −80, así que las reservas caen en 80",
+        "Con 480, sumando los 80 que se movieron",
+        "Con 400: las RIN no cambian de un año a otro",
+        "Con 90, que es lo que salió"
+      ],
+      "correcta": 0,
+      "explicacion": "La variación de reservas es simplemente lo que entra menos lo que sale: 10 − 90 = −80. Se lo restas al saldo que tenías y quedan 320. Si en cambio entraran 50 y salieran 20, la ΔRIN sería +30."
+    },
+    {
+      "id": "m16-q3",
+      "nivel": "comprension",
+      "enunciado": "La balanza en cuenta corriente de un país cerró en −7 035.\n\n¿Cuánto es su ahorro externo y qué significa?",
+      "opciones": [
+        "−7 035: el país le está prestando al resto del mundo",
+        "+7 035: el ahorro externo es el NEGATIVO de la CC, así que el país está recibiendo financiamiento de afuera y es deudor neto",
+        "Cero: son dos cosas que no se relacionan",
+        "+7 035, y eso significa que el país es acreedor neto"
+      ],
+      "correcta": 1,
+      "explicacion": "Ahorro externo = −CC. Con la cuenta corriente en déficit, el ahorro externo sale positivo: es la plata que el resto del mundo le presta al país para tapar ese hueco. Un déficit corriente sostenido es sinónimo de deudor neto."
+    },
+    {
+      "id": "m16-q4",
+      "nivel": "comprension",
+      "enunciado": "«Si la cuenta corriente es negativa, eso SOLO puede deberse a que las exportaciones netas sean negativas».\n\n¿Verdadero o falso?",
+      "opciones": [
+        "Verdadero: la cuenta corriente es exactamente las exportaciones netas",
+        "Verdadero, salvo en economías cerradas",
+        "FALSO: CC = XN + renta de factores + transferencias. Un país puede tener balanza comercial de +6 250 y aun así una CC de −7 035",
+        "Falso, porque la cuenta corriente también incluye las RIN"
+      ],
+      "correcta": 2,
+      "explicacion": "En general la CC se parece a las XN, pero no es lo mismo. En la tabla de 2017 el país vendía más de lo que compraba y aun así tenía déficit, porque los servicios (−9 685) y la renta de factores (−6 100) se lo comían todo. Esa renta es, por ejemplo, la utilidad que las mineras extranjeras se llevan."
+    },
+    {
+      "id": "m16-q5",
+      "nivel": "comprension",
+      "enunciado": "¿Qué relación hay entre la SALIDA NETA DE CAPITALES y la balanza en cuenta corriente?",
+      "opciones": [
+        "Son iguales: SNC = CC",
+        "Son opuestas: SNC = −CC",
+        "No tienen ninguna relación entre sí",
+        "SNC = CC + la variación de las RIN"
+      ],
+      "correcta": 0,
+      "explicacion": "Es la misma identidad de la clase de economía abierta, vista ahora desde la contabilidad. Si el país le vende de más al mundo, termina acumulando activos afuera: salida neta de capitales. Y ojo con la otra pareja: en un país deudor, ahorro interno + ahorro externo = inversión interna."
+    },
+    {
+      "id": "m16-q6",
+      "nivel": "aplicacion",
+      "enunciado": "Un país tiene un PBI de 285 818, un ahorro interno del 8 % del PBI y una cuenta corriente de −7 035.\n\n¿Cuánto invierte y qué porcentaje del PBI representa?",
+      "opciones": [
+        "29 900, o sea el 10,46 % del PBI",
+        "22 865, o sea el 8 % del PBI: la inversión es igual al ahorro interno",
+        "15 830, restándole el ahorro externo al interno",
+        "7 035, o sea el 2,46 % del PBI"
+      ],
+      "correcta": 0,
+      "explicacion": "Como el país es deudor, se usa ahorro interno + ahorro externo = inversión interna. El interno es 8 % de 285 818 = 22 865 y el externo es −CC = 7 035: suman 29 900, el 10,46 % del PBI. Tres años antes ese mismo indicador era 20,3 %, así que la inversión se cayó a la mitad."
+    },
+    {
+      "id": "m16-q7",
+      "nivel": "comprension",
+      "enunciado": "En un año, la cuenta financiera de ese país fue 10 292, de los cuales 10 256 son CAPITALES DE CORTO PLAZO y solo 36 sector privado.\n\n¿Qué te dice eso sobre cómo financia su déficit?",
+      "opciones": [
+        "Que está recibiendo muchísima inversión de largo plazo",
+        "Que el déficit se financia con capital VOLÁTIL, que entra y sale rápido: casi el 100 % es de corto plazo",
+        "Que la cuenta financiera está mal calculada",
+        "Que un déficit de cuenta corriente no se puede financiar"
+      ],
+      "correcta": 1,
+      "explicacion": "No es lo mismo que te financie una fábrica nueva que un capital golondrino. Ese dinero se puede ir de un día para otro, y de hecho tres años después la cuenta financiera se volvió negativa (−635) y el país tuvo que soltar 7 670 de reservas."
+    },
+    {
+      "id": "m16-q8",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 1/3. Un país cierra el año con una cuenta corriente de −6 474 y una cuenta financiera de 3 761.\n\n¿Cuál es el resultado de la balanza de pagos y qué le pasa a las RIN?",
+      "opciones": [
+        "BP = 2 713 y las RIN suben en ese monto",
+        "BP = −10 235 y las RIN caen en ese monto",
+        "BP = 0 siempre, por definición contable",
+        "BP = −2 713: las reservas del Banco Central CAEN en ese monto"
+      ],
+      "correcta": 3,
+      "explicacion": "Balanza de pagos = CC + CF = −6 474 + 3 761 = −2 713, y ese resultado es exactamente la variación de las RIN. Cuando el financiamiento externo no alcanza para tapar el déficit corriente, la diferencia se paga con reservas."
+    },
+    {
+      "id": "m16-q9",
+      "nivel": "comprension",
+      "enunciado": "JEFE 2/3. Un compañero dice que como el Perú tiene tipo de cambio FIJO, el BCRP interviene y por eso mueve reservas.\n\n¿Qué regímenes necesitan RIN y cuál aplica realmente el BCRP?",
+      "opciones": [
+        "Solo el flexible las necesita, y el BCRP aplica ese",
+        "Los tres regímenes las necesitan por igual",
+        "Ninguno: las RIN son un ahorro que nunca se usa",
+        "El FIJO y la FLOTACIÓN SUCIA, porque en los dos el banco central interviene. El BCRP aplica flotación sucia, no tipo de cambio fijo"
+      ],
+      "correcta": 3,
+      "explicacion": "En un régimen flexible puro el banco central no interviene y el tipo de cambio se mueve solo: no le hacen falta reservas. En el fijo y en la flotación sucia sí interviene comprando y vendiendo dólares, y para eso necesita la caja. Y el Perú no tiene tipo de cambio fijo."
+    },
+    {
+      "id": "m16-q10",
+      "nivel": "comprension",
+      "enunciado": "JEFE 3/3. El tipo de cambio (soles por dólar) viene subiendo y el BCR quiere frenarlo.\n\n¿Qué hace y qué les pasa a las RIN?",
+      "opciones": [
+        "Compra dólares, y las RIN suben",
+        "No hace nada: el tipo de cambio se corrige solo",
+        "Emite más soles, y las RIN no se mueven",
+        "VENDE dólares —los mete a la economía— y las RIN CAEN: con más dólares en el mercado, el tipo de cambio deja de subir"
+      ],
+      "correcta": 3,
+      "explicacion": "Todo se piensa como oferta y demanda de dólares. Si falta dólar y el tipo de cambio se dispara, el BCR saca dólares de la caja: aumenta la oferta, el tipo de cambio se frena y las reservas bajan. Al revés, si el sol se está apreciando de más, el BCR compra dólares y las RIN suben."
+    }
+  ]
+}

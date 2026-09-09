@@ -1419,6 +1419,121 @@ export const TEMAS = {
       }
     },
   },
+
+  /* =========================================================
+     VENTANILLA — atardecer sobre la refinería de La Pampilla. Los
+     tanques cilíndricos alineados como una caja de ahorros a cielo
+     abierto, las torres de destilación con su llamita encendida,
+     las tuberías cruzando el patio y, al fondo, el muelle con el
+     buque descargando. Todo lo que entra y sale del país pasa por
+     acá, y lo que queda guardado son las reservas.
+     ========================================================= */
+  refineria: {
+    nombre: "Ventanilla",
+    cielo: [[0, "#243d63"], [0.4, "#5f6f96"], [0.74, "#d4906a"], [1, "#f2c896"]],
+    suelo: { cara: "#7d7a74", borde: "#a8a49c", tierra: "#4a4744", plataforma: "#2f6b8f", plataformaBorde: "#ffd166" },
+    acento: "#ff8c1a",
+
+    bichos: ["tanque", "valvula", "barril"],
+    nombresBichos: ["El Tanque que No Varía", "La Válvula de un Solo Flujo", "El Barril del Corto Plazo"],
+    jefe: "ingeniero",
+    nombreJefe: "El Ingeniero del Signo Cambiado",
+
+    fondo(ctx, cam, t) {
+      // el sol metiéndose al mar, ya bajo
+      ctx.fillStyle = "rgba(255,196,120,.24)";
+      ctx.beginPath(); ctx.arc(150, 236, 82, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = "rgba(255,180,96,.92)";
+      ctx.beginPath(); ctx.arc(150, 236, 34, 0, Math.PI * 2); ctx.fill();
+
+      // el mar al fondo, con el camino del sol encima
+      ctx.fillStyle = "#2a4a68";
+      ctx.fillRect(0, 250, CFG.ANCHO_VISTA, 34);
+      for (let i = 0; i < 30; i++) {
+        const x = (i * 59 - (cam * 0.06)) % 880 - 30;
+        const y = 256 + ((i * 17) % 26);
+        ctx.fillStyle = Math.abs(x - 150) < 110 ? "rgba(255,196,120,.45)" : "rgba(255,255,255,.12)";
+        ctx.fillRect(x, y, 13, 2);
+      }
+
+      // el muelle con el buque tanquero descargando
+      repetir(ctx, cam, 620, 0.2, (x) => {
+        const bx = x + 300, base = 262;
+        ctx.fillStyle = "#3a4655";
+        ctx.fillRect(bx, base - 16, 150, 16);
+        ctx.fillRect(bx + 96, base - 34, 34, 18);
+        ctx.fillStyle = "#c2264a";
+        ctx.fillRect(bx, base - 20, 150, 5);
+        ctx.fillStyle = "#8a929c";                          // el brazo de carga del muelle
+        ctx.fillRect(bx + 150, base - 6, 60, 5);
+        ctx.fillRect(bx + 206, base - 30, 5, 30);
+      });
+
+      // LAS TORRES DE DESTILACIÓN, con su llamita encendida arriba
+      repetir(ctx, cam, 286, 0.34, (x, i) => {
+        const bx = x + 40, base = 302, alto = 116 + ((i * 37) % 34);
+        ctx.fillStyle = "#8d939c";
+        ctx.fillRect(bx, base - alto, 26, alto);
+        ctx.fillStyle = "#a4aab4";
+        ctx.fillRect(bx + 18, base - alto, 8, alto);
+        for (let k = 1; k < 5; k++) {                       // los anillos de la torre
+          ctx.fillStyle = "#6d737c";
+          ctx.fillRect(bx - 3, base - alto + (alto / 5) * k, 32, 4);
+        }
+        // la antorcha y su llama
+        ctx.fillStyle = "#7c828c";
+        ctx.fillRect(bx + 58, base - alto - 16, 6, alto + 16);
+        const parpadeo = 0.6 + 0.35 * Math.abs(Math.sin(t / 7 + i));
+        ctx.fillStyle = `rgba(255,150,50,${parpadeo.toFixed(2)})`;
+        ctx.beginPath();
+        ctx.moveTo(bx + 55, base - alto - 16);
+        ctx.lineTo(bx + 61, base - alto - 36 - parpadeo * 8);
+        ctx.lineTo(bx + 67, base - alto - 16);
+        ctx.closePath(); ctx.fill();
+      });
+
+      // LOS TANQUES DE RESERVA, alineados como una caja de ahorros a cielo abierto
+      repetir(ctx, cam, 168, 0.54, (x, i) => {
+        const bx = x + 14, base = 336, alto = 54 + ((i * 23) % 16);
+        ctx.fillStyle = "#cfd6dc";
+        ctx.fillRect(bx, base - alto, 92, alto);
+        ctx.fillStyle = "#e4eaee";                          // la tapa abombada
+        ctx.beginPath();
+        ctx.ellipse(bx + 46, base - alto, 46, 9, 0, Math.PI, 0);
+        ctx.fill();
+        ctx.fillStyle = "#a8b0b8";                          // los aros del tanque
+        ctx.fillRect(bx, base - alto + 18, 92, 4);
+        ctx.fillRect(bx, base - alto + 38, 92, 4);
+        ctx.fillStyle = "#6d737c";                          // la escalerita lateral
+        ctx.fillRect(bx + 86, base - alto, 3, alto);
+        ctx.fillStyle = "#8a929c";
+        ctx.fillRect(bx, base - 6, 92, 6);
+      });
+
+      // las tuberías cruzando el patio, ya en primer plano
+      repetir(ctx, cam, 96, 0.78, (x) => {
+        const base = 356;
+        ctx.fillStyle = "#8a929c";
+        ctx.fillRect(x, base - 22, 96, 7);
+        ctx.fillStyle = "#6d737c";
+        ctx.fillRect(x, base - 16, 96, 3);
+        ctx.fillRect(x + 20, base - 15, 6, 15);
+        ctx.fillRect(x + 68, base - 15, 6, 15);
+        ctx.fillStyle = "#ff8c1a";                          // la marca naranja de la línea
+        ctx.fillRect(x + 40, base - 22, 16, 7);
+      });
+    },
+
+    clima(ctx, t) {
+      // el vapor tibio que sueltan las torres al anochecer
+      for (let i = 0; i < 16; i++) {
+        const x = (i * 179 - t * 1.2) % 880 - 20;
+        const y = 130 + ((i * 71) % 170) + Math.sin(t / 34 + i) * 8;
+        ctx.fillStyle = `rgba(226,232,238,${(0.07 + 0.10 * Math.abs(Math.sin(t / 30 + i))).toFixed(2)})`;
+        ctx.beginPath(); ctx.arc(x, y, 9 + (i % 3) * 4, 0, Math.PI * 2); ctx.fill();
+      }
+    },
+  },
 };
 
 /** Pinta el cielo del tema (degradado vertical). */
