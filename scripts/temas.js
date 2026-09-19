@@ -1534,6 +1534,132 @@ export const TEMAS = {
       }
     },
   },
+  /* =========================================================
+     CUSCO — el Qosqo a mediodía, con ese azul que solo se ve a
+     3 400 metros. Los apus nevados al fondo, los andenes bajando
+     por el cerro, los tejados rojos escalonados y, abajo, los
+     portales de la plaza sobre el muro inca que no lleva mezcla:
+     si una piedra no encaja, la pared no para. Igualito que las
+     identidades de este curso.
+     ========================================================= */
+  qosqo: {
+    nombre: "Cusco",
+    cielo: [[0, "#1a5fa8"], [0.38, "#4f95cc"], [0.72, "#a8cadc"], [1, "#dcd8c4"]],
+    suelo: { cara: "#8a8278", borde: "#b0a898", tierra: "#4a443c", plataforma: "#5e4a2e", plataformaBorde: "#e8c15a" },
+    acento: "#e8c15a",
+
+    bichos: ["chakana", "piedra", "qero"],
+    nombresBichos: ["La Chakana Descuadrada", "La Piedra que no Encaja", "El Qero que se Llena Dos Veces"],
+    jefe: "guia",
+    nombreJefe: "El Guía de la Plaza",
+
+    fondo(ctx, cam, t) {
+      // el sol de la sierra, chiquito y filudo
+      ctx.fillStyle = "rgba(255,250,222,.24)";
+      ctx.beginPath(); ctx.arc(150, 62, 54, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = "rgba(255,253,236,.98)";
+      ctx.beginPath(); ctx.arc(150, 62, 24, 0, Math.PI * 2); ctx.fill();
+
+      // LOS APUS NEVADOS, bien al fondo
+      repetir(ctx, cam, 560, 0.1, (x, i) => {
+        const bx = x + 60, base = 286, alto = 148 + ((i * 43) % 36);
+        ctx.fillStyle = "#6e7f96";
+        ctx.beginPath();
+        ctx.moveTo(bx - 140, base);
+        ctx.lineTo(bx, base - alto);
+        ctx.lineTo(bx + 150, base);
+        ctx.closePath(); ctx.fill();
+        ctx.fillStyle = "#eef2f6";                          // la nieve de la cumbre
+        ctx.beginPath();
+        ctx.moveTo(bx - 34, base - alto + 36);
+        ctx.lineTo(bx, base - alto);
+        ctx.lineTo(bx + 36, base - alto + 36);
+        ctx.lineTo(bx + 16, base - alto + 28);
+        ctx.lineTo(bx + 2, base - alto + 40);
+        ctx.lineTo(bx - 14, base - alto + 26);
+        ctx.closePath(); ctx.fill();
+      });
+
+      // LOS ANDENES bajando por el cerro, escalón por escalón
+      repetir(ctx, cam, 300, 0.2, (x, i) => {
+        const bx = x + 20, base = 300;
+        for (let k = 0; k < 6; k++) {
+          const ancho = 220 - k * 26, alto = 13;
+          ctx.fillStyle = k % 2 ? "#7f8a5e" : "#8e9a68";
+          ctx.fillRect(bx + k * 13, base - (k + 1) * alto, ancho, alto);
+          ctx.fillStyle = "rgba(90,84,66,.55)";             // el muro de contención
+          ctx.fillRect(bx + k * 13, base - (k + 1) * alto + alto - 3, ancho, 3);
+        }
+      });
+
+      // LOS TEJADOS ROJOS de la ciudad, trepando el cerro
+      repetir(ctx, cam, 96, 0.38, (x, i) => {
+        const alto = 34 + ((i * 23) % 30), bx = x + 6, base = 330;
+        ctx.fillStyle = ["#e2d6bc", "#d8ccb0", "#e8dcc2", "#d0c4a8"][i % 4];
+        ctx.fillRect(bx, base - alto, 76, alto);
+        ctx.fillStyle = "#a8402c";                          // el techo de teja
+        ctx.beginPath();
+        ctx.moveTo(bx - 7, base - alto);
+        ctx.lineTo(bx + 38, base - alto - 15);
+        ctx.lineTo(bx + 83, base - alto);
+        ctx.closePath(); ctx.fill();
+        ctx.fillStyle = "rgba(60,50,40,.35)";               // las ventanitas
+        for (let k = 0; k < 2; k++) ctx.fillRect(bx + 16 + k * 30, base - alto + 14, 13, 15);
+      });
+
+      // LOS PORTALES DE LA PLAZA, con sus arcos de piedra
+      repetir(ctx, cam, 118, 0.55, (x, i) => {
+        const bx = x + 8, base = 356, alto = 56;
+        ctx.fillStyle = "#ded2b6";                          // el cuerpo del portal
+        ctx.fillRect(bx, base - alto, 102, alto);
+        ctx.fillStyle = "#c2b294";
+        ctx.fillRect(bx, base - alto, 102, 6);
+        ctx.fillStyle = "#8a6a48";                          // el balcón de madera
+        ctx.fillRect(bx + 10, base - alto + 14, 82, 16);
+        ctx.fillStyle = "rgba(232,193,90,.40)";
+        for (let k = 0; k < 6; k++) ctx.fillRect(bx + 14 + k * 13, base - alto + 17, 5, 10);
+        ctx.fillStyle = "#6e6558";                          // los arcos de abajo
+        for (let k = 0; k < 3; k++) {
+          const ax = bx + 8 + k * 32;
+          ctx.beginPath();
+          ctx.moveTo(ax, base);
+          ctx.lineTo(ax, base - 14);
+          ctx.arc(ax + 11, base - 14, 11, Math.PI, 0);
+          ctx.lineTo(ax + 22, base);
+          ctx.closePath(); ctx.fill();
+        }
+      });
+
+      // EL MURO INCA al pie de la calle: piedras poligonales sin una gota de mezcla
+      ctx.fillStyle = "#8a8478";
+      ctx.fillRect(0, 356, CFG.ANCHO_VISTA, 30);
+      repetir(ctx, cam, 74, 0.75, (x, i) => {
+        const bx = x + 4, base = 384;
+        const filas = [[0, 12, 40], [12, 11, 26], [23, 10, 34]];
+        for (let k = 0; k < filas.length; k++) {
+          const [dy, h, w] = filas[k];
+          const ox = bx + ((i + k) % 3) * 7;
+          ctx.fillStyle = ["#a49d8c", "#6e6759", "#8d8676"][(i + k) % 3];
+          ctx.fillRect(ox, base - 30 + dy, w, h);
+          ctx.fillStyle = "rgba(255,252,236,.26)";           // el filo iluminado de cada piedra
+          ctx.fillRect(ox, base - 30 + dy, w, 2);
+          ctx.fillStyle = "rgba(38,34,28,.70)";              // la junta, finita y sin mezcla
+          ctx.fillRect(ox, base - 30 + dy + h - 2, w, 2);
+          ctx.fillRect(ox + w - 2, base - 30 + dy, 2, h);
+        }
+      });
+    },
+
+    clima(ctx, t) {
+      // el airecito seco de la altura, con su polvillo dorado
+      for (let i = 0; i < 20; i++) {
+        const x = (i * 157 - t * 1.3) % 880 - 20;
+        const y = 110 + ((i * 67) % 220) + Math.sin(t / 27 + i) * 8;
+        ctx.fillStyle = `rgba(244,230,190,${(0.10 + 0.13 * Math.abs(Math.sin(t / 33 + i))).toFixed(2)})`;
+        ctx.fillRect(x, y, 5, 3);
+      }
+    },
+  },
 };
 
 /** Pinta el cielo del tema (degradado vertical). */

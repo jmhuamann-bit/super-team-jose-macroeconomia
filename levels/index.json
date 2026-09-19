@@ -225,6 +225,20 @@
       "abierto": true,
       "mapa": "levels/level16.json",
       "preguntas": "questions/level16_questions.json"
+    },
+    {
+      "id": "level17",
+      "clase": "Clase 01",
+      "distrito": "Cusco",
+      "titulo": "La plaza donde todo se junta",
+      "icono": "🏔",
+      "seccion": "Parcial",
+      "seccionNota": "Repaso de la PC1 y la PC2, y mercado del dinero",
+      "retos": 8,
+      "duracion": "3 min",
+      "abierto": true,
+      "mapa": "levels/level17.json",
+      "preguntas": "questions/level17_questions.json"
     }
   ]
 }

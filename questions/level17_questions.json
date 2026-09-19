@@ -1,0 +1,138 @@
+{
+  "nivel": "level17",
+  "clase": "Clase 01 · Parcial — Repaso de la PC1 y la PC2",
+  "fuente": "Apuntes de la 1ra clase del Parcial — Economía General II",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "m17-q1",
+      "nivel": "reconocimiento",
+      "enunciado": "Desde 2025 II el curso cambió de estructura: se eliminaron Solow y Mercado Laboral, y entró Mercado de Dinero.\n\n¿Qué tema le toca al PARCIAL?",
+      "opciones": [
+        "Medición del PBI e inflación",
+        "El MERCADO DEL DINERO. La PC1 quedó con medición del PBI e inflación, y la PC2 con mercado de fondos prestables",
+        "Mercado de fondos prestables",
+        "Crecimiento económico con el modelo de Solow"
+      ],
+      "correcta": 1,
+      "explicacion": "Vale la pena tenerlo claro antes de practicar: si resuelves parciales anteriores a 2025 II te vas a topar con otra estructura. Úsalos, pero saltándote los temas eliminados."
+    },
+    {
+      "id": "m17-q2",
+      "nivel": "reconocimiento",
+      "enunciado": "Una empresa de capital peruano produce conservas en una planta suya ubicada en Ecuador.\n\n¿Dónde entra esa producción?",
+      "opciones": [
+        "En el PBI del Perú, porque la empresa es peruana",
+        "En el PBI del Perú y también en el PNB del Perú",
+        "En ninguno de los dos: se produjo fuera del país",
+        "En el PNB del Perú, pero NO en el PBI peruano: el PBI lo cuenta el país donde se produjo, o sea Ecuador"
+      ],
+      "correcta": 3,
+      "explicacion": "Las iniciales te dan la respuesta. PIB: Producido al Interior del país. PNB: Producido por Nacionales, estén donde estén. Este es el sexto de los factores que no se contabilizan en el PBI."
+    },
+    {
+      "id": "m17-q3",
+      "nivel": "comprension",
+      "enunciado": "De estas cuatro operaciones del año, ¿cuál SÍ se contabiliza en el PBI de este año?",
+      "opciones": [
+        "La venta de un auto usado de segunda mano",
+        "La harina que un molino le vende a una panadería para hacer su pan",
+        "Un departamento construido este año y vendido este año por primera vez",
+        "Las papas que una familia cosecha y se come en su propia chacra"
+      ],
+      "correcta": 2,
+      "explicacion": "Los otros tres están en la lista de los seis: la reventa ya se contó en su primera venta, la harina es un insumo y contarla sería doble contabilidad, y el autoconsumo no tiene precio de mercado."
+    },
+    {
+      "id": "m17-q4",
+      "nivel": "aplicacion",
+      "enunciado": "Canasta de dos bienes, año base 2020:\nPan → P₀ = 2, Q₀ = 100 · Leche → P₀ = 5, Q₀ = 40\nEn 2023: Pan → P₁ = 3, Q₁ = 50 · Leche → P₁ = 6, Q₁ = 60\n\nCalcula el IPC de 2023 por LASPEYRES y su inflación.",
+      "opciones": [
+        "IPC = 135 e inflación de 35%: «pico poco», o sea (3·100 + 6·40) / (2·100 + 5·40) · 100 = 540/400 · 100",
+        "IPC = 127,5 e inflación de 27,5%",
+        "IPC = 540, que es el gasto del año 2023",
+        "IPC = 35 e inflación de 35%"
+      ],
+      "correcta": 0,
+      "explicacion": "Laspeyres congela la canasta del año base: precios nuevos, cantidades viejas. Por eso arriba van las Q₀ igual que abajo, y lo único que cambia entre numerador y denominador son los precios."
+    },
+    {
+      "id": "m17-q5",
+      "nivel": "aplicacion",
+      "enunciado": "Misma canasta (base 2020: pan 2 y 100, leche 5 y 40; en 2023: pan 3 y 50, leche 6 y 60).\n\nCalcula ahora el IPC de 2023 por PAASCHE y compáralo con el 135 de Laspeyres.",
+      "opciones": [
+        "IPC = 135, igual que Laspeyres: el método no cambia el resultado",
+        "IPC = 150: se usan las cantidades del año base arriba y las nuevas abajo",
+        "IPC = 127,5 e inflación de 27,5%, pero es MAYOR que Laspeyres",
+        "IPC = 127,5 e inflación de 27,5%: «piqi, poqi» da (3·50 + 6·60) / (2·50 + 5·60) · 100 = 510/400 · 100. Sale MENOR que Laspeyres"
+      ],
+      "correcta": 3,
+      "explicacion": "El pan subió 50% y la leche solo 20%, así que la gente se pasó del pan a la leche. Laspeyres no ve esa sustitución y sobreestima; Paasche ya la trae incorporada y subestima."
+    },
+    {
+      "id": "m17-q6",
+      "nivel": "comprension",
+      "enunciado": "Joe dice: «Laspeyres siempre sub-dimensiona la inflación, por eso solo hay que usar Paasche». Travis responde: «Estás equivocado, Paasche sobreestima la inflación».\n\n¿Quién tiene razón?",
+      "opciones": [
+        "Joe, porque Laspeyres usa una canasta desactualizada",
+        "Travis, porque Paasche usa la canasta del año corriente",
+        "Los dos tienen razón en su parte",
+        "NINGUNO: lo tienen al revés. LASPEYRES sobreestima (canasta congelada, no ve la sustitución) y PAASCHE subestima"
+      ],
+      "correcta": 3,
+      "explicacion": "Cada uno dijo justo lo contrario de lo que pasa. Y el remate: ninguno de los dos métodos es «el bueno», cada uno tiene su sesgo conocido y por eso se sabe hacia dónde falla."
+    },
+    {
+      "id": "m17-q7",
+      "nivel": "comprension",
+      "enunciado": "En Folklore, la inflación de 2014 medida con el DEFLACTOR fue 13,0% y con el IPC solo 1,3%. Ese año subió fuerte el precio de las bufandas rojas, un bien que NO se consume dentro del país y que pesa 89% de la canasta exportadora.\n\n¿Por qué la diferencia?",
+      "opciones": [
+        "Porque el deflactor cubre TODO lo producido adentro, exportaciones incluidas, y el IPC solo la canasta de consumo de los hogares, que deja fuera lo exportado",
+        "Porque el IPC está mal calculado ese año",
+        "Porque el deflactor incluye los bienes importados y el IPC no",
+        "Porque el deflactor usa Laspeyres y el IPC usa Paasche"
+      ],
+      "correcta": 0,
+      "explicacion": "La bufanda es producción nacional, así que entra al deflactor y lo dispara. Pero ningún hogar de Folklore la consume, así que no está en la canasta del IPC y ese índice ni se entera."
+    },
+    {
+      "id": "m17-q8",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 1/3. En 2023 el PBI nominal fue 690 mil millones y el PBI real 600 mil millones, medido con el año base 2020.\n\nCalcula el deflactor de 2023 y di cuánto valía en 2020.",
+      "opciones": [
+        "Deflactor 2023 = 115, y en 2020 valía exactamente 100, porque en el año base el PBI real y el nominal son iguales",
+        "Deflactor 2023 = 115, y en 2020 valía 90",
+        "Deflactor 2023 = 86,96, dividiendo el real entre el nominal",
+        "Deflactor 2023 = 90 mil millones, que es la diferencia entre los dos PBI"
+      ],
+      "correcta": 0,
+      "explicacion": "El deflactor es PBI nominal entre PBI real por 100. Y el regalo del año base: ahí los dos PBI coinciden, así que el índice da 100 y los precios acumularon 15% desde 2020."
+    },
+    {
+      "id": "m17-q9",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 2/3. El IPC fue 100 en 2020 y 146,41 en 2024, así que la inflación promedio anual es 10%. Te piden estimar el IPC de 2026 y un compañero propone multiplicar ×2 ese 10% y usar 20%.\n\n¿Está bien?",
+      "opciones": [
+        "Sí, dos años son el doble de un año",
+        "Sí, siempre que la economía no sea volátil",
+        "NO: la inflación crece de forma COMPUESTA. La promedio bianual es (1,1)² − 1 = 21%, no 20%",
+        "No, habría que dividir el 10% entre 2"
+      ],
+      "correcta": 2,
+      "explicacion": "El segundo año la inflación se aplica sobre precios que ya subieron. Con la raíz cuarta de 1,4641 sale el índice 1,1, y elevarlo al cuadrado da 1,21: 21% en dos años, no 20%."
+    },
+    {
+      "id": "m17-q10",
+      "nivel": "comprension",
+      "enunciado": "JEFE 3/3. Agustina ve las tasas de inflación mensual de 2023: enero 1,2%, febrero 0,9%, marzo 0,7%, abril 0,5%, mayo 0,3% y junio 0,1%. Concluye: «después de subir en enero, febrero y marzo, los precios CAYERON en abril, mayo y junio».\n\n¿Tiene razón?",
+      "opciones": [
+        "Sí: las tasas bajaron, así que los precios bajaron",
+        "NO: todas las tasas siguen siendo POSITIVAS, así que los precios siguieron SUBIENDO, solo que cada vez más lento. Eso es desinflación, no deflación",
+        "Sí, porque a partir de abril la inflación es menor al 1%",
+        "No se puede saber sin conocer el IPC de cada mes"
+      ],
+      "correcta": 1,
+      "explicacion": "Confundir «sube menos» con «baja» es el error más repetido del tema. Para que los precios caigan de verdad la tasa tiene que ponerse NEGATIVA; mientras siga positiva, el nivel de precios sigue trepando."
+    }
+  ]
+}

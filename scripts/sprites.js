@@ -1417,6 +1417,78 @@ const INGENIERO = [  // jefe de Ventanilla: el que confunde el ahorro externo co
 ];
 const P_INGENIERO = { y: "#e8c15a", c: "#d9a679", k: "#241a2e", m: "#5c4632", n: "#2f6b8f", a: "#ff8c1a", w: "#f2ead8" };
 
+const CHAKANA = [   // la chakana descuadrada: le sale distinto el PBI según el método que use (15 × 15)
+  "...............",
+  ".....lllll.....",
+  ".....ccccc.....",
+  ".....ccccc.....",
+  ".lllllccclllll.",
+  ".ccccccccccccc.",
+  ".ccccc...ccccc.",
+  ".cccc.....cccc.",
+  ".ccccc...ccccc.",
+  ".ccccccccccccc.",
+  ".dddddcccddddd.",
+  ".....ccccc.....",
+  ".....ccccc.....",
+  ".....ddddd.....",
+  "...............",
+];
+const P_CHAKANA = { c: "#9a8f7e", l: "#c2b8a4", d: "#6e6558" };
+
+const PIEDRA = [   // la piedra de los doce ángulos: si una cara no encaja, la identidad no cierra (15 × 12)
+  "...............",
+  "..kkkkkkkkkkk..",
+  ".kgggggggggggk.",
+  "kgggggggggggggk",
+  "kgggggggggggggk",
+  "kggggggggggggg.",
+  ".ggggggggggggg.",
+  ".kggggggggggggk",
+  "kgggggggggggggk",
+  ".kgggggggggggk.",
+  "..kkkkkkkkkkk..",
+  "...............",
+];
+const P_PIEDRA = { g: "#5a6270", k: "#2f3540" };
+
+const QERO = [   // el qero que se llena dos veces: el doble conteo de toda la vida (12 × 13)
+  "............",
+  ".mmmmmmmmmm.",
+  ".mrrrrrrrrm.",
+  ".mmmmmmmmmm.",
+  ".mggggggggm.",
+  ".mmmmmmmmmm.",
+  "..mmmmmmmm..",
+  "..mmmmmmmm..",
+  "...mmmmmm...",
+  "...mmmmmm...",
+  "..mmmmmmmm..",
+  ".mmmmmmmmmm.",
+  "............",
+];
+const P_QERO = { m: "#8a5a2e", r: "#c2264a", g: "#e8c15a" };
+
+const GUIA = [  // jefe del Cusco: te resume los dos exámenes en diez minutos y mezcla todo (20 × 16)
+  ".....kkkkkkk........",
+  "....kkkkkkkkk.......",
+  "....ccccccccc.......",
+  "....cckkcckkc.......",
+  "....cccccccc........",
+  ".....ccrrcc.........",
+  "....vvvvvvvv...m....",
+  "..ccvvvvvvvvcc.mfff.",
+  "..ccvvvvvvvvcc.mff..",
+  "..ccvvvvvvvvcc.m....",
+  "...vvvvvvvvvv..m....",
+  "....vvvvvvvv...m....",
+  "....nnnn.nnnn.......",
+  "....nnnn.nnnn.......",
+  "...kkkkk.kkkkk......",
+  "....................",
+];
+const P_GUIA = { k: "#241a2e", c: "#c9945c", v: "#1f7a5a", r: "#c2264a", n: "#3b3630", m: "#8a8478", f: "#e8c15a" };
+
 /* ---------------------------------------------------------------
    REGISTRO Y COCINADO
    --------------------------------------------------------------- */
@@ -1504,6 +1576,10 @@ const DEFINICIONES = {
   valvula:      [VALVULA, P_VALVULA],
   barril:       [BARRIL, P_BARRIL],
   ingeniero:    [INGENIERO, P_INGENIERO],
+  chakana:      [CHAKANA, P_CHAKANA],
+  piedra:       [PIEDRA, P_PIEDRA],
+  qero:         [QERO, P_QERO],
+  guia:         [GUIA, P_GUIA],
 };
 
 const cocidos = {};   // nombre -> { canvas, ancho, alto } (ya escalados)

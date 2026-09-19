@@ -127,6 +127,13 @@ const TEMAS_MUSICA = {
               "C4",2,"E4",2,"G4",4,"F4",2,"E4",2,"D4",4],
     bajo:    ["D3",4,"D3",4,"A2",4,"A2",4,"C3",4,"C3",4,"G2",4,"D3",4],
   },
+  qosqo: { // Cusco: huayno de plaza a mediodía, con aire de quena
+    tempo: 0.16, onda: "triangle",
+    melodia: ["A4",2,"C5",1,"D5",1,"E5",2,"D5",1,"C5",1,"A4",2,
+              "G4",2,"A4",1,"C5",1,"D5",2,"E5",2,"G5",2,
+              "E5",2,"D5",1,"C5",1,"A4",2,"G4",2,"A4",4],
+    bajo:    ["A2",4,"A2",4,"F2",4,"C3",4,"G2",4,"D3",4,"E3",4,"A2",4],
+  },
 };
 
 function arrancarCtx() {

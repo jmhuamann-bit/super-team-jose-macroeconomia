@@ -211,6 +211,10 @@ const FICHAS = [
   { sprite: "valvula", nombre: "La Válvula de un Solo Flujo", texto: "Solo deja pasar las exportaciones netas y se olvida de la renta de factores y las transferencias." },
   { sprite: "barril", nombre: "El Barril del Corto Plazo", texto: "Capital golondrino: entra, se pasea y se va, pero él lo cuenta como si fuera una fábrica nueva." },
   { sprite: "ingeniero", nombre: "El Ingeniero del Signo Cambiado", texto: "Jefe de Ventanilla: confunde el ahorro externo con la cuenta corriente y se le pierde el menos." },
+  { sprite: "chakana", nombre: "La Chakana Descuadrada", texto: "Le sale un PBI distinto según el método que use, cuando los tres tienen que dar lo mismo." },
+  { sprite: "piedra", nombre: "La Piedra que no Encaja", texto: "Mete al PBI cosas que no van: reventas, insumos y producción de años anteriores." },
+  { sprite: "qero", nombre: "El Qero que se Llena Dos Veces", texto: "Cuenta el insumo y después el producto final, y termina con el doble conteo de siempre." },
+  { sprite: "guia", nombre: "El Guía de la Plaza", texto: "Jefe del Cusco: te resume los dos exámenes en diez minutos y termina mezclando el IPC con el deflactor." },
 ];
 
 export function galeriaPersonajes(contenedor) {
