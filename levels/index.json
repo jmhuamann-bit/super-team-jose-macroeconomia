@@ -233,9 +233,9 @@
       "titulo": "La plaza donde todo se junta",
       "icono": "🏔",
       "seccion": "Parcial",
-      "seccionNota": "Repaso de la PC1 y la PC2, y mercado del dinero",
-      "retos": 8,
-      "duracion": "3 min",
+      "seccionNota": "Repaso de PBI, inflación y fondos prestables, y mercado del dinero",
+      "retos": 13,
+      "duracion": "5 min",
       "abierto": true,
       "mapa": "levels/level17.json",
       "preguntas": "questions/level17_questions.json"

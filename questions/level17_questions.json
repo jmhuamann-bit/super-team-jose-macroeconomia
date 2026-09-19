@@ -98,7 +98,7 @@
     {
       "id": "m17-q8",
       "nivel": "aplicacion",
-      "enunciado": "JEFE 1/3. En 2023 el PBI nominal fue 690 mil millones y el PBI real 600 mil millones, medido con el año base 2020.\n\nCalcula el deflactor de 2023 y di cuánto valía en 2020.",
+      "enunciado": "En 2023 el PBI nominal fue 690 mil millones y el PBI real 600 mil millones, medido con el año base 2020.\n\nCalcula el deflactor de 2023 y di cuánto valía en 2020.",
       "opciones": [
         "Deflactor 2023 = 115, y en 2020 valía exactamente 100, porque en el año base el PBI real y el nominal son iguales",
         "Deflactor 2023 = 115, y en 2020 valía 90",
@@ -111,7 +111,7 @@
     {
       "id": "m17-q9",
       "nivel": "aplicacion",
-      "enunciado": "JEFE 2/3. El IPC fue 100 en 2020 y 146,41 en 2024, así que la inflación promedio anual es 10%. Te piden estimar el IPC de 2026 y un compañero propone multiplicar ×2 ese 10% y usar 20%.\n\n¿Está bien?",
+      "enunciado": "El IPC fue 100 en 2020 y 146,41 en 2024, así que la inflación promedio anual es 10%. Te piden estimar el IPC de 2026 y un compañero propone multiplicar ×2 ese 10% y usar 20%.\n\n¿Está bien?",
       "opciones": [
         "Sí, dos años son el doble de un año",
         "Sí, siempre que la economía no sea volátil",
@@ -123,6 +123,71 @@
     },
     {
       "id": "m17-q10",
+      "nivel": "comprension",
+      "enunciado": "Pasamos al segundo tema: MERCADO DE PRÉSTAMOS EN ECONOMÍA CERRADA. El gobierno aumenta su déficit fiscal.\n\n¿Qué curva se mueve y qué pasa?",
+      "opciones": [
+        "Se mueve la demanda de fondos: el gobierno se presta y la tasa baja",
+        "Se contrae la OFERTA de fondos, porque el déficit reduce el ahorro nacional: la tasa SUBE y la inversión privada cae. Eso es el crowding out",
+        "No se mueve nada: el déficit se financia solo",
+        "Se expande la oferta de fondos, porque el gobierno inyecta dinero"
+      ],
+      "correcta": 1,
+      "explicacion": "El ahorro nacional es S privado más S público, y el déficit es justo S público negativo. Al encogerse la oferta de préstamos, el precio de este mercado, que es la tasa de interés, tiene que subir."
+    },
+    {
+      "id": "m17-q11",
+      "nivel": "aplicacion",
+      "enunciado": "Economía CERRADA con ahorro nacional S = 500 + 20r e inversión I = 800 − 30r.\n\nHalla la tasa de equilibrio y el monto de fondos prestables.",
+      "opciones": [
+        "r = 6% y FP = 620: igualas 500 + 20r = 800 − 30r, sale 50r = 300, y reemplazas en cualquiera de las dos",
+        "r = 6% y FP = 500, que es el intercepto del ahorro",
+        "r = 12% y FP = 740",
+        "r = 300 y FP = 50"
+      ],
+      "correcta": 0,
+      "explicacion": "Igualar S con I y despejar r es todo el ejercicio. El control es reemplazar en las dos ecuaciones: 500 + 20(6) = 620 y 800 − 30(6) = 620, así que el número está bien."
+    },
+    {
+      "id": "m17-q12",
+      "nivel": "comprension",
+      "enunciado": "En ECONOMÍA ABIERTA la clase trabaja con modelos fijos. El primero retrata a un país «pobre» al que le FALTAN fondos y el segundo a uno «rico» al que le SOBRAN.\n\n¿Qué los distingue?",
+      "opciones": [
+        "Al país pobre le sobra ahorro y al rico le falta",
+        "Los dos son lo mismo, solo cambia el nombre",
+        "El país «pobre» depende del AHORRO EXTERNO que entra a financiarlo; el «rico» tiene plata como cancha y le sale SALIDA NETA DE CAPITALES, financiando proyectos de afuera",
+        "El país pobre tiene tipo de cambio fijo y el rico flotante"
+      ],
+      "correcta": 2,
+      "explicacion": "Con el primero se contraargumenta el crowding out: si el préstamo local se encarece, la inversión sale a buscar plata afuera. En el segundo hay que dibujar dos gráficos, porque el SNC aparece en los dos."
+    },
+    {
+      "id": "m17-q13",
+      "nivel": "comprension",
+      "enunciado": "JEFE 1/3. El SNC es la compra de activos EXTRANJEROS por NACIONALES menos la compra de activos NACIONALES por EXTRANJEROS.\n\n¿Cuál de estas operaciones lo hace SUBIR?",
+      "opciones": [
+        "Un fondo chileno compra bonos del gobierno peruano",
+        "Un peruano compra acciones de una empresa de Estados Unidos",
+        "Un peruano cambia sus dólares por soles en una casa de cambio de Lima",
+        "Un gringo compra dólares en Nueva York"
+      ],
+      "correcta": 1,
+      "explicacion": "Sube cuando un nacional compra afuera y baja cuando un extranjero compra acá. Las dos últimas no mueven nada, porque la plata no cruza la frontera. Y ojo con la propiedad de siempre: XN = SNC."
+    },
+    {
+      "id": "m17-q14",
+      "nivel": "comprension",
+      "enunciado": "JEFE 2/3. Te preguntan en el examen: «hay déficit fiscal, ¿entonces hay crowding out?».\n\n¿Qué respondes?",
+      "opciones": [
+        "Sí siempre, porque el gobierno siempre le quita fondos a la inversión privada",
+        "Nunca, porque el ahorro externo siempre cubre todo",
+        "Solo si el país tiene salida neta de capitales positiva",
+        "DEPENDE de si la economía es cerrada o abierta: en cerrada el único ahorro es el nacional y la expulsión es completa; en abierta puede entrar ahorro externo y el golpe es más chico"
+      ],
+      "correcta": 3,
+      "explicacion": "Es la pregunta trampa clásica del curso y se responde con un «depende» bien sustentado. En abierta la tasa local no puede dispararse sola: si se encarece, la inversión se financia afuera."
+    },
+    {
+      "id": "m17-q15",
       "nivel": "comprension",
       "enunciado": "JEFE 3/3. Agustina ve las tasas de inflación mensual de 2023: enero 1,2%, febrero 0,9%, marzo 0,7%, abril 0,5%, mayo 0,3% y junio 0,1%. Concluye: «después de subir en enero, febrero y marzo, los precios CAYERON en abril, mayo y junio».\n\n¿Tiene razón?",
       "opciones": [
