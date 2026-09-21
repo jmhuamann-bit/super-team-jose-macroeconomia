@@ -134,6 +134,13 @@ const TEMAS_MUSICA = {
               "E5",2,"D5",1,"C5",1,"A4",2,"G4",2,"A4",4],
     bajo:    ["A2",4,"A2",4,"F2",4,"C3",4,"G2",4,"D3",4,"E3",4,"A2",4],
   },
+  rescate: { // Cajamarca: carnaval cajamarquino, alegre y con paso de sierra norte
+    tempo: 0.14, onda: "square",
+    melodia: ["D5",1,"D5",1,"C5",2,"A4",2,"G4",1,"A4",1,"C5",2,
+              "D5",1,"E5",1,"D5",2,"C5",2,"A4",1,"G4",1,"A4",2,
+              "C5",2,"D5",1,"E5",1,"G5",2,"E5",2,"D5",4],
+    bajo:    ["D3",4,"A2",4,"C3",4,"G2",4,"D3",4,"A2",4,"G2",4,"D3",4],
+  },
 };
 
 function arrancarCtx() {

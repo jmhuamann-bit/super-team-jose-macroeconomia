@@ -1489,6 +1489,73 @@ const GUIA = [  // jefe del Cusco: te resume los dos exámenes en diez minutos y
 ];
 const P_GUIA = { k: "#241a2e", c: "#c9945c", v: "#1f7a5a", r: "#c2264a", n: "#3b3630", m: "#8a8478", f: "#e8c15a" };
 
+const LINGOTE = [   // el lingote del rescate: cree que el dinero es solo lo que el BCR imprime (16 × 11)
+  "................",
+  "................",
+  "....oooooooo....",
+  "...oooooooooo...",
+  "..oooooooooooo..",
+  ".oooooooooooooo.",
+  ".ooaaooaaooaaoo.",
+  ".oooooooooooooo.",
+  ".oooooooooooooo.",
+  "..kkkkkkkkkkkk..",
+  "................",
+];
+const P_LINGOTE = { o: "#e8c15a", a: "#f4dc94", k: "#a88a34" };
+
+const VENTANILLA = [   // la ventanilla del banco: presta todo y se olvida de apartar el encaje (14 × 13)
+  "..............",
+  ".pppppppppppp.",
+  ".pkkkkkkkkkkp.",
+  ".pkwwwwwwwwkp.",
+  ".pkwwwwwwwwkp.",
+  ".pkwwwwwwwwkp.",
+  ".pkkkkkkkkkkp.",
+  ".pppppppppppp.",
+  ".pmmmmmmmmmmp.",
+  ".pppppppppppp.",
+  "..p........p..",
+  "..p........p..",
+  "..............",
+];
+const P_VENTANILLA = { p: "#9a7a4a", k: "#3b3025", w: "#a8c4d4", m: "#cfc4a8" };
+
+const SOMBRERO = [   // el sombrero cajamarquino al revés: cree que más encaje da más dinero (16 × 11)
+  "................",
+  ".....pppppp.....",
+  "....pppppppp....",
+  "....pppppppp....",
+  "....pnnnnnnp....",
+  "...pppppppppp...",
+  "..pppppppppppp..",
+  ".pppppppppppppp.",
+  "pppppppppppppppp",
+  ".kkkkkkkkkkkkkk.",
+  "................",
+];
+const P_SOMBRERO = { p: "#e8d8a8", n: "#8a5a2e", k: "#c2b088" };
+
+const TESORERO = [  // jefe de Cajamarca: llena el cuarto una vez y no entiende cómo hay más dinero (20 × 16)
+  ".....kkkkkkk........",
+  "....kkkkkkkkk.......",
+  "....ckkkkkkkc.......",
+  "....cckkcckkc.......",
+  "....cccccccc........",
+  ".....ccrrcc.........",
+  "....nnnnnnnn........",
+  "..ccnnnnnnnncc......",
+  "..ccnnnnnnnncc.oo...",
+  "..ccnnnnnnnncc.oo...",
+  "...nnnnnnnnnn.......",
+  "....nnnnnnnn........",
+  "....mmmm.mmmm.......",
+  "....mmmm.mmmm.......",
+  "...kkkkk.kkkkk......",
+  "....................",
+];
+const P_TESORERO = { k: "#241a2e", c: "#c9945c", r: "#c2264a", n: "#5c3d6b", m: "#3b3630", o: "#e8c15a" };
+
 /* ---------------------------------------------------------------
    REGISTRO Y COCINADO
    --------------------------------------------------------------- */
@@ -1580,6 +1647,10 @@ const DEFINICIONES = {
   piedra:       [PIEDRA, P_PIEDRA],
   qero:         [QERO, P_QERO],
   guia:         [GUIA, P_GUIA],
+  lingote:      [LINGOTE, P_LINGOTE],
+  ventanilla:   [VENTANILLA, P_VENTANILLA],
+  sombrero:     [SOMBRERO, P_SOMBRERO],
+  tesorero:     [TESORERO, P_TESORERO],
 };
 
 const cocidos = {};   // nombre -> { canvas, ancho, alto } (ya escalados)

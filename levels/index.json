@@ -239,6 +239,30 @@
       "abierto": true,
       "mapa": "levels/level17.json",
       "preguntas": "questions/level17_questions.json"
+    },
+    {
+      "id": "level18",
+      "clase": "Clase 02",
+      "distrito": "Por definir",
+      "titulo": "Reservado para la Clase 02",
+      "icono": "🚧",
+      "seccion": "Parcial",
+      "seccionNota": "Repaso de PBI, inflación y fondos prestables, y mercado del dinero",
+      "abierto": false
+    },
+    {
+      "id": "level19",
+      "clase": "Clase 03",
+      "distrito": "Cajamarca",
+      "titulo": "El cuarto que se llena dos veces",
+      "icono": "🪙",
+      "seccion": "Parcial",
+      "seccionNota": "Repaso de PBI, inflación y fondos prestables, y mercado del dinero",
+      "retos": 13,
+      "duracion": "5 min",
+      "abierto": true,
+      "mapa": "levels/level19.json",
+      "preguntas": "questions/level19_questions.json"
     }
   ]
 }

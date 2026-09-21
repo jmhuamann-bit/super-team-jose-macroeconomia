@@ -215,6 +215,10 @@ const FICHAS = [
   { sprite: "piedra", nombre: "La Piedra que no Encaja", texto: "Mete al PBI cosas que no van: reventas, insumos y producción de años anteriores." },
   { sprite: "qero", nombre: "El Qero que se Llena Dos Veces", texto: "Cuenta el insumo y después el producto final, y termina con el doble conteo de siempre." },
   { sprite: "guia", nombre: "El Guía de la Plaza", texto: "Jefe del Cusco: te resume los dos exámenes en diez minutos y termina mezclando el IPC con el deflactor." },
+  { sprite: "lingote", nombre: "El Lingote del Banco Central", texto: "Cree que el dinero de la economía es solo lo que el BCR llegó a imprimir." },
+  { sprite: "ventanilla", nombre: "La Ventanilla sin Encaje", texto: "Presta todo lo que recibe y se olvida de apartar el encaje antes de soltar el préstamo." },
+  { sprite: "sombrero", nombre: "El Sombrero al Revés", texto: "Jura que si sube la tasa de encaje sube la oferta monetaria, cuando es justo al revés." },
+  { sprite: "tesorero", nombre: "El Tesorero del Rescate", texto: "Jefe de Cajamarca: llena el cuarto una sola vez y no entiende cómo puede haber más dinero del que entró." },
 ];
 
 export function galeriaPersonajes(contenedor) {

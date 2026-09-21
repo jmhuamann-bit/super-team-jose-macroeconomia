@@ -1660,6 +1660,131 @@ export const TEMAS = {
       }
     },
   },
+  /* =========================================================
+     CAJAMARCA — la ciudad del rescate, verde y fría, a media
+     mañana. Los cerros de pasto con su ganado, el Cerro Santa
+     Apolonia con su escalinata, los tejados rojos de las casonas
+     coloniales y, al centro, el Cuarto del Rescate: el cuarto
+     que Atahualpa llenó una vez de oro y dos de plata. Acá se
+     entiende de una que el dinero que entra no es el mismo que
+     termina circulando.
+     ========================================================= */
+  rescate: {
+    nombre: "Cajamarca",
+    cielo: [[0, "#2f74b8"], [0.4, "#8fb4cc"], [0.76, "#cfd8cc"], [1, "#e0e2d0"]],
+    suelo: { cara: "#7f9458", borde: "#a8bc7c", tierra: "#4f4a38", plataforma: "#6b4a30", plataformaBorde: "#e8c15a" },
+    acento: "#e8c15a",
+
+    bichos: ["lingote", "ventanilla", "sombrero"],
+    nombresBichos: ["El Lingote del Banco Central", "La Ventanilla sin Encaje", "El Sombrero al Revés"],
+    jefe: "tesorero",
+    nombreJefe: "El Tesorero del Rescate",
+
+    fondo(ctx, cam, t) {
+      // el sol de la sierra entre nubes altas
+      ctx.fillStyle = "rgba(255,250,228,.20)";
+      ctx.beginPath(); ctx.arc(196, 68, 58, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = "rgba(255,253,240,.88)";
+      ctx.beginPath(); ctx.arc(196, 68, 25, 0, Math.PI * 2); ctx.fill();
+
+      // LOS CERROS VERDES con sus chacras en cuadritos
+      repetir(ctx, cam, 520, 0.12, (x, i) => {
+        const bx = x + 60, base = 300, alto = 128 + ((i * 37) % 28);
+        ctx.fillStyle = "#6e8a54";
+        ctx.beginPath();
+        ctx.moveTo(bx - 140, base);
+        ctx.lineTo(bx, base - alto);
+        ctx.lineTo(bx + 160, base);
+        ctx.closePath(); ctx.fill();
+        ctx.fillStyle = "rgba(160,176,110,.45)";              // las parcelas del cerro
+        for (let k = 0; k < 5; k++) {
+          ctx.fillRect(bx - 90 + k * 40, base - 46 - ((k * 17) % 34), 30, 16);
+        }
+      });
+
+      // EL CERRO SANTA APOLONIA con su escalinata
+      repetir(ctx, cam, 640, 0.2, (x) => {
+        const bx = x + 150, base = 314, alto = 96;
+        ctx.fillStyle = "#87a166";
+        ctx.beginPath();
+        ctx.moveTo(bx - 90, base);
+        ctx.lineTo(bx, base - alto);
+        ctx.lineTo(bx + 100, base);
+        ctx.closePath(); ctx.fill();
+        ctx.fillStyle = "rgba(226,218,196,.85)";              // los escalones subiendo
+        for (let k = 0; k < 9; k++) {
+          ctx.fillRect(bx - 6 - k * 4, base - alto + 10 + k * 10, 14 + k * 2, 4);
+        }
+      });
+
+      // LAS CASONAS COLONIALES de teja roja
+      repetir(ctx, cam, 118, 0.42, (x, i) => {
+        const bx = x + 8, base = 350, alto = 48 + ((i * 23) % 22);
+        ctx.fillStyle = ["#e8e0cc", "#ded4bc", "#f0e8d4", "#d8cdb4"][i % 4];
+        ctx.fillRect(bx, base - alto, 100, alto);
+        ctx.fillStyle = "#a8402c";                            // el techo de teja
+        ctx.beginPath();
+        ctx.moveTo(bx - 8, base - alto);
+        ctx.lineTo(bx + 50, base - alto - 16);
+        ctx.lineTo(bx + 108, base - alto);
+        ctx.closePath(); ctx.fill();
+        ctx.fillStyle = "#6b4a30";                            // el balcón de madera
+        ctx.fillRect(bx + 14, base - alto + 14, 72, 14);
+        ctx.fillStyle = "rgba(90,80,60,.35)";
+        for (let k = 0; k < 3; k++) ctx.fillRect(bx + 20 + k * 26, base - 26, 14, 20);
+      });
+
+      // EL CUARTO DEL RESCATE: la raya que marcó Atahualpa y el oro adentro
+      repetir(ctx, cam, 460, 0.56, (x) => {
+        const bx = x + 70, base = 360, ancho = 132, alto = 66;
+        ctx.fillStyle = "#b6a98c";                            // el muro de piedra labrada
+        ctx.fillRect(bx, base - alto, ancho, alto);
+        ctx.fillStyle = "#a2957a";
+        for (let k = 1; k < 5; k++) ctx.fillRect(bx, base - alto + k * 13, ancho, 3);
+        ctx.fillStyle = "#8a7f66";                            // el vano trapezoidal inca
+        ctx.beginPath();
+        ctx.moveTo(bx + 44, base);
+        ctx.lineTo(bx + 50, base - 42);
+        ctx.lineTo(bx + 82, base - 42);
+        ctx.lineTo(bx + 88, base);
+        ctx.closePath(); ctx.fill();
+        ctx.fillStyle = "#e8c15a";                            // LA RAYA del rescate, a la altura del brazo
+        ctx.fillRect(bx + 4, base - alto + 20, ancho - 8, 3);
+        ctx.fillStyle = "rgba(232,193,90,.75)";               // el oro amontonado adentro
+        for (let k = 0; k < 5; k++) ctx.fillRect(bx + 52 + (k % 3) * 9, base - 10 - (k > 2 ? 6 : 0), 8, 6);
+      });
+
+      // EL CAMPO: el ganado lechero de Cajamarca pastando
+      ctx.fillStyle = "#8ca35e";
+      ctx.fillRect(0, 360, CFG.ANCHO_VISTA, 24);
+      repetir(ctx, cam, 176, 0.72, (x, i) => {
+        const bx = x + 16, base = 378;
+        ctx.fillStyle = i % 2 ? "#f2ead8" : "#3b3630";        // la vaca
+        ctx.fillRect(bx, base - 14, 34, 11);
+        ctx.fillStyle = i % 2 ? "#3b3630" : "#f2ead8";        // la mancha
+        ctx.fillRect(bx + 8, base - 12, 11, 7);
+        ctx.fillStyle = i % 2 ? "#f2ead8" : "#3b3630";
+        ctx.fillRect(bx + 30, base - 19, 10, 8);              // la cabeza
+        ctx.fillStyle = "#2e2620";
+        ctx.fillRect(bx + 3, base - 4, 4, 5);
+        ctx.fillRect(bx + 25, base - 4, 4, 5);
+        ctx.fillStyle = "#6e8a4a";                            // los matojos del pasto
+        for (let k = 0; k < 4; k++) ctx.fillRect(bx + 54 + k * 15, base - 6, 5, 7);
+      });
+      ctx.fillStyle = "#6e7a4a";
+      ctx.fillRect(0, 378, CFG.ANCHO_VISTA, 6);
+    },
+
+    clima(ctx, t) {
+      // la garúa fría de la sierra norte
+      for (let i = 0; i < 26; i++) {
+        const x = (i * 137 - t * 1.2) % 880 - 20;
+        const y = (i * 61 + t * 1.9) % 400;
+        ctx.fillStyle = `rgba(226,236,232,${(0.12 + 0.12 * Math.abs(Math.sin(t / 29 + i))).toFixed(2)})`;
+        ctx.fillRect(x, y, 2, 6);
+      }
+    },
+  },
 };
 
 /** Pinta el cielo del tema (degradado vertical). */

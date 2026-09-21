@@ -1,0 +1,203 @@
+{
+  "nivel": "level19",
+  "clase": "Clase 03 · Parcial — Oferta monetaria",
+  "fuente": "Apuntes de la 3ra clase del Parcial — Economía General II",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "m19-q1",
+      "nivel": "reconocimiento",
+      "enunciado": "El BCR emite 100 soles y se los da a Goku. Goku los deposita en el banco. Llega Vegeta y el banco le presta esos 100. Al final Vegeta paga con 100 en efectivo y Goku paga con su tarjeta, donde siguen figurando sus 100.\n\n¿Cuánto dinero hay en esa economía?",
+      "opciones": [
+        "100, que es lo único que el BCR llegó a imprimir",
+        "200: los 100 que emitió el BCR más los 100 que CREÓ el banco comercial al prestar el depósito",
+        "0, porque el préstamo hay que devolverlo",
+        "300, sumando la emisión, el depósito y el préstamo"
+      ],
+      "correcta": 1,
+      "explicacion": "Ese es el corazón del tema: el banco presta un dinero que su dueño sigue teniendo disponible en la cuenta. A eso se le llama creación secundaria de dinero, y la hacen los bancos comerciales, no el BCRP."
+    },
+    {
+      "id": "m19-q2",
+      "nivel": "reconocimiento",
+      "enunciado": "En ese ejemplo, ¿cómo se llama lo que emitió el BCR y quién crea el resto?",
+      "opciones": [
+        "Se llama oferta monetaria, y el resto lo crea el mismo BCRP con una segunda emisión",
+        "Se llama circulante, y el resto lo crean los ahorristas",
+        "Se llama BASE MONETARIA o emisión primaria, y el resto lo crean los BANCOS COMERCIALES al prestar",
+        "Se llama cuasidinero, y el resto lo crea el Ministerio de Economía"
+      ],
+      "correcta": 2,
+      "explicacion": "El BCRP solo pone la base. Lo que la multiplica es el circuito depósito-préstamo de la banca comercial, y ese efecto se mide justamente con el multiplicador bancario."
+    },
+    {
+      "id": "m19-q3",
+      "nivel": "reconocimiento",
+      "enunciado": "Ordenando el dinero por LIQUIDEZ aparecen el circulante, el depósito a la vista y el cuasidinero.\n\n¿Qué es exactamente cada uno?",
+      "opciones": [
+        "Circulante es el efectivo en la mano, el depósito a la vista es la cuenta corriente y el cuasidinero es la cuenta de AHORRO, que es la menos líquida de las tres",
+        "Circulante es la cuenta corriente, el depósito a la vista es el efectivo y el cuasidinero son los bonos",
+        "Los tres son lo mismo, solo cambia el banco donde están",
+        "Cuasidinero es el dinero falso que circula en la economía"
+      ],
+      "correcta": 0,
+      "explicacion": "El orden va de lo más líquido a lo menos: el efectivo lo gastas al toque, la cuenta corriente casi igual con tarjeta, y el ahorro está pensado para quedarse un rato quieto."
+    },
+    {
+      "id": "m19-q4",
+      "nivel": "comprension",
+      "enunciado": "¿Qué incluye cada agregado monetario?",
+      "opciones": [
+        "M1 es solo el circulante y M2 es solo los depósitos",
+        "M1 = C + Dv, y M2 = M1 + el CUASIDINERO. Cada agregado más grande va sumando lo menos líquido",
+        "M1 es la base monetaria y M2 el multiplicador",
+        "M2 = C + Dv, y M1 le suma el cuasidinero"
+      ],
+      "correcta": 1,
+      "explicacion": "Se construyen hacia afuera: se parte de lo más líquido y cada agregado va absorbiendo lo que cuesta un poco más convertir en pago inmediato."
+    },
+    {
+      "id": "m19-q5",
+      "nivel": "aplicacion",
+      "enunciado": "El BCR emitió S/ 100 y al final se midió que la oferta monetaria de la economía era S/ 200.\n\n¿Cuánto vale el multiplicador bancario?",
+      "opciones": [
+        "100, que es la diferencia entre las dos cifras",
+        "0,5, dividiendo la base entre la oferta",
+        "2: el multiplicador se despeja de M1 = mb × B, o sea mb = M1/B = 200/100",
+        "No se puede saber sin conocer la tasa de encaje"
+      ],
+      "correcta": 2,
+      "explicacion": "Cuando te dan la oferta monetaria y la base, el multiplicador sale de una división y no hace falta ninguna fórmula. Un mb de 2 significa que cada sol emitido terminó siendo dos en la economía."
+    },
+    {
+      "id": "m19-q6",
+      "nivel": "aplicacion",
+      "enunciado": "En una economía el CIRCULANTE es 100, las RESERVAS del banco son 50 y los DEPÓSITOS son 250.\n\nHalla la oferta monetaria, la base monetaria y el multiplicador.",
+      "opciones": [
+        "M1 = 350, B = 150 y mb = 2,33: la oferta es C + Dv y la base es C + R",
+        "M1 = 400, B = 100 y mb = 4",
+        "M1 = 250, B = 50 y mb = 5",
+        "M1 = 150, B = 350 y mb = 0,43"
+      ],
+      "correcta": 0,
+      "explicacion": "Cuidado con no mezclar las piezas: las RESERVAS van en la base, no en la oferta; y los DEPÓSITOS van en la oferta, no en la base. Control con la fórmula: c = 0,4 y r = 0,2, así que (1 + 0,4)/(0,4 + 0,2) = 2,33."
+    },
+    {
+      "id": "m19-q7",
+      "nivel": "comprension",
+      "enunciado": "Sobre la tasa de encaje, ¿cuál afirmación es correcta?",
+      "opciones": [
+        "Siempre es obligatoria: la fija el BCRP y el banco no puede agregar nada",
+        "Es la parte de los depósitos que el banco NO puede prestar, y tiene dos componentes: un encaje LEGAL obligatorio y un encaje VOLUNTARIO que el banco se autoimpone. En los problemas se suman",
+        "Es el interés que el banco le cobra al que pide el préstamo",
+        "Es la proporción de sus préstamos que el banco debe recuperar cada año"
+      ],
+      "correcta": 1,
+      "explicacion": "El encaje voluntario suele aparecer por miedo a una corrida bancaria. En los ejercicios hay que leer bien: si dicen «obligatorio 10% y voluntario 5%», el banco aparta el 15% antes de prestar."
+    },
+    {
+      "id": "m19-q8",
+      "nivel": "comprension",
+      "enunciado": "El BCRP decide SUBIR la tasa de encaje.\n\n¿Qué pasa con el multiplicador bancario y con la oferta monetaria?",
+      "opciones": [
+        "Los dos SUBEN, porque el banco tiene más dinero guardado",
+        "El multiplicador sube pero la oferta monetaria baja",
+        "No pasa nada: el encaje no entra en la fórmula del multiplicador",
+        "Los dos BAJAN: con más encaje el banco presta menos, así que crea menos dinero secundario. El mb tiene relación INVERSA con c y con r"
+      ],
+      "correcta": 3,
+      "explicacion": "Es la herramienta clásica del banco central para enfriar la economía. Y la relación funciona igual con la preferencia por circulante: mientras más efectivo se guarda la gente bajo el colchón, menos puede prestar el banco."
+    },
+    {
+      "id": "m19-q9",
+      "nivel": "comprension",
+      "enunciado": "Pregunta de examen: ¿qué pasaría con el multiplicador bancario si en una economía NO existieran los bancos privados?",
+      "opciones": [
+        "Sería infinito, porque nadie retiene encaje",
+        "Sería CERO y no habría dinero en la economía",
+        "Sería 1, y la oferta monetaria sería exactamente igual a la base monetaria",
+        "Seguiría siendo mayor que 1, porque el BCRP igual multiplica"
+      ],
+      "correcta": 2,
+      "explicacion": "Sin bancos no hay depósitos ni préstamos, así que no hay creación secundaria: todo el dinero que circula es el que el BCRP emitió. El multiplicador es justamente la medida de lo que la banca agrega encima."
+    },
+    {
+      "id": "m19-q10",
+      "nivel": "aplicacion",
+      "enunciado": "El BCRP emite S/ 30 000 y se los entrega a Ana. Ana manda S/ 10 000 al extranjero. De lo que le queda se guarda S/ 4 000 en efectivo y deposita el resto en un banco con encaje total de 25%.\n\n¿Cuánto deposita, cuánto encaja el banco y cuánto puede prestar?",
+      "opciones": [
+        "Deposita 16 000, encaja 12 000 y presta 4 000",
+        "Deposita 26 000, encaja 6 500 y presta 19 500",
+        "Deposita 20 000, encaja 5 000 y presta 15 000",
+        "Deposita 16 000, encaja 4 000 y presta 12 000"
+      ],
+      "correcta": 3,
+      "explicacion": "Primera decisión: los 10 000 se van del país y ya no cuentan. Segunda decisión: de los 20 000 que quedan, 4 000 se van a circulante y 16 000 al depósito. Recién ahí el banco aparta su 25% y presta lo demás."
+    },
+    {
+      "id": "m19-q11",
+      "nivel": "aplicacion",
+      "enunciado": "Siguiendo ese mismo caso: el banco le presta los S/ 12 000 a Beto, que decide quedarse TODO en efectivo.\n\n¿Cuánto es el circulante, la oferta monetaria y la base monetaria?",
+      "opciones": [
+        "C = 12 000, M1 = 12 000 y B = 30 000",
+        "C = 4 000, M1 = 20 000 y B = 20 000",
+        "C = 16 000 (los 4 000 de Ana más los 12 000 de Beto), M1 = C + Dv = 32 000 y B = C + R = 20 000",
+        "C = 16 000, M1 = 32 000 y B = 30 000, que es todo lo que se emitió"
+      ],
+      "correcta": 2,
+      "explicacion": "El control del ejercicio: la base monetaria tiene que ser igual a lo emitido MENOS lo que salió del país, o sea 30 000 − 10 000 = 20 000. Si no cuadra, algo se contó mal."
+    },
+    {
+      "id": "m19-q12",
+      "nivel": "comprension",
+      "enunciado": "En una CUENTA T de un banco, ¿qué va de cada lado?",
+      "opciones": [
+        "A la izquierda los depósitos de los clientes y a la derecha los préstamos",
+        "A la izquierda los ACTIVOS, o sea lo que el banco posee o usa (los préstamos colocados y el encaje), y a la derecha los PASIVOS, o sea lo que el banco debe (los depósitos)",
+        "A la izquierda el dinero del BCRP y a la derecha el de los bancos",
+        "A la izquierda las ganancias y a la derecha las pérdidas"
+      ],
+      "correcta": 1,
+      "explicacion": "El depósito es una deuda del banco contigo, por eso es pasivo; el préstamo que colocó y el encaje que guardó son suyos, por eso son activo. Los dos lados siempre tienen que sumar lo mismo."
+    },
+    {
+      "id": "m19-q13",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 1/3. Con esas mismas cuentas (C = 16 000, Dv = 16 000 y R = 4 000), calcula el multiplicador bancario por los DOS caminos.",
+      "opciones": [
+        "mb = 1,6: por un lado M1/B = 32 000/20 000, y por el otro (1 + c)/(c + r) con c = 1 y r = 0,25 da 2/1,25. Los dos coinciden",
+        "mb = 2, porque el dinero se duplicó",
+        "mb = 0,625, dividiendo la base entre la oferta",
+        "mb = 4, dividiendo el depósito entre las reservas"
+      ],
+      "correcta": 0,
+      "explicacion": "Que los dos caminos den lo mismo es la mejor comprobación que existe en este tema. Acá c = C/Dv = 16 000/16 000 = 1 y r = R/Dv = 4 000/16 000 = 0,25."
+    },
+    {
+      "id": "m19-q14",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 2/3. En otra economía la preferencia por circulante es c = 0,2 y la tasa de encaje es r = 0,2, con una base monetaria de S/ 500.\n\nHalla el multiplicador y la oferta monetaria. ¿Y si el encaje sube a 0,3?",
+      "opciones": [
+        "mb = 3 y M1 = 1 500; con r = 0,3 el mb baja a 2,4 y la oferta cae a 1 200",
+        "mb = 3 y M1 = 1 500; con r = 0,3 el mb sube a 3,5 y la oferta sube a 1 750",
+        "mb = 0,4 y M1 = 200; con r = 0,3 queda en 250",
+        "mb = 5 y M1 = 2 500; con r = 0,3 no cambia nada"
+      ],
+      "correcta": 0,
+      "explicacion": "(1 + 0,2)/(0,2 + 0,2) = 1,2/0,4 = 3. Al subir el encaje el denominador crece y el multiplicador se achica: 1,2/0,5 = 2,4. Se ve en números la relación inversa."
+    },
+    {
+      "id": "m19-q15",
+      "nivel": "comprension",
+      "enunciado": "JEFE 3/3. Pasas del modelo de M1 al de M2.\n\n¿Qué cambia y cuántas decisiones se toman en cada uno?",
+      "opciones": [
+        "Cambia la base monetaria, y en los dos casos se toman dos decisiones",
+        "No cambia nada: M1 y M2 usan el mismo multiplicador",
+        "Cambia solo el nombre del BCRP por el de la banca comercial",
+        "Cambia el MULTIPLICADOR, porque ahora entra el cuasidinero y el encaje se mide sobre los depósitos TOTALES. En M1 son 2 decisiones y en M2 son 3: se agrega si lo depositado va a ahorro o a cuenta a la vista"
+      ],
+      "correcta": 3,
+      "explicacion": "La base monetaria es la misma, la emite el BCRP igual. Lo que se ensancha es la definición de dinero: al meter el cuasidinero hay que decidir además qué parte del depósito se va al ahorro."
+    }
+  ]
+}
