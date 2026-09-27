@@ -219,6 +219,12 @@ const FICHAS = [
   { sprite: "ventanilla", nombre: "La Ventanilla sin Encaje", texto: "Presta todo lo que recibe y se olvida de apartar el encaje antes de soltar el préstamo." },
   { sprite: "sombrero", nombre: "El Sombrero al Revés", texto: "Jura que si sube la tasa de encaje sube la oferta monetaria, cuando es justo al revés." },
   { sprite: "tesorero", nombre: "El Tesorero del Rescate", texto: "Jefe de Cajamarca: llena el cuarto una sola vez y no entiende cómo puede haber más dinero del que entró." },
+  { sprite: "glaciar", nombre: "El Glaciar del Tipo de Cambio", texto: "Huaraz: jura que la finalidad del BCR es preservar la estabilidad del tipo de cambio, cuando es la de los precios." },
+  { sprite: "compuerta", nombre: "La Compuerta al Revés", texto: "Para expandir la oferta anuncia que SUBIRÁ la tasa de referencia, que es justo lo que la contrae." },
+  { sprite: "canal", nombre: "El Canal de Doble Sentido", texto: "Confunde qué operación suelta soles y cuál los recoge: mezcla la OMA venta con la OMA compra." },
+  { sprite: "puya", nombre: "La Puya que Mueve la Base", texto: "Cree que el encaje afecta la base monetaria, cuando lo que mueve es el multiplicador bancario." },
+  { sprite: "condor", nombre: "El Cóndor que Todo lo Controla", texto: "Desde arriba cree que el BCR también decide cuánto depositan las familias y cuánto prestan los bancos." },
+  { sprite: "guardian", nombre: "El Guardián de la Laguna", texto: "Jefe de Huaraz: abre y cierra la compuerta a destiempo, y por eso el valle o se inunda o se seca." },
 ];
 
 export function galeriaPersonajes(contenedor) {

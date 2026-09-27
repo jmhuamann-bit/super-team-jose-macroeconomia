@@ -1,0 +1,203 @@
+{
+  "nivel": "level20",
+  "clase": "Clase 04 · Parcial — Herramientas de política monetaria",
+  "fuente": "Plantilla de la 4ta clase del Parcial — Economía General II",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "m20-q1",
+      "nivel": "reconocimiento",
+      "enunciado": "Pregunta de examen: «En el Perú el Banco Central tiene como objetivo mantener la estabilidad del tipo de cambio».\n\n¿Verdadero o falso?",
+      "opciones": [
+        "Verdadero: por eso interviene comprando y vendiendo dólares",
+        "FALSO: su finalidad principal es preservar la estabilidad de los PRECIOS, o sea la estabilidad monetaria",
+        "Verdadero, porque el tipo de cambio es un precio como cualquier otro",
+        "Depende del año: algunos años persigue precios y otros el tipo de cambio"
+      ],
+      "correcta": 1,
+      "explicacion": "Son dos cosas distintas y el BCR se encarga de una: la estabilidad monetaria. Sí interviene en el mercado cambiario, pero para controlar la volatilidad, no como objetivo final."
+    },
+    {
+      "id": "m20-q2",
+      "nivel": "comprension",
+      "enunciado": "La economía se está SOBRECALENTANDO.\n\n¿Qué le pasa a la inflación y qué debería hacer el BCR?",
+      "opciones": [
+        "Hay MÁS inflación, así que el BCR debe ESTERILIZAR: recoger soles del mercado",
+        "Hay más inflación, así que el BCR debe inyectar más soles",
+        "Hay menos inflación, así que el BCR debe esterilizar",
+        "La inflación no se mueve: el sobrecalentamiento solo afecta al empleo"
+      ],
+      "correcta": 0,
+      "explicacion": "Una economía sobrecalentada empuja los precios hacia arriba. Como una causa de la inflación es el exceso de oferta monetaria, el BCR retira liquidez. En recesión hace lo contrario."
+    },
+    {
+      "id": "m20-q3",
+      "nivel": "comprension",
+      "enunciado": "El BCR quiere EXPANDIR la oferta monetaria. El primer paso es siempre el anuncio.\n\n¿Qué tiene que anunciar sobre la tasa de interés de referencia?",
+      "opciones": [
+        "Que la ELEVARÁ, porque una tasa más alta atrae más dinero al sistema",
+        "No anuncia nada: aplica la herramienta directo",
+        "Que la DISMINUIRÁ, porque bajar la tasa de referencia es la señal de que viene una inyección",
+        "Que la mantendrá igual, y expande por el lado del encaje"
+      ],
+      "correcta": 2,
+      "explicacion": "El orden es anunciar y después aplicar. Bajar la tasa de referencia señala inyección; subirla señala esterilización. Confundir la dirección del anuncio es el error más caro del tema."
+    },
+    {
+      "id": "m20-q4",
+      "nivel": "comprension",
+      "enunciado": "Primera herramienta: las Operaciones de Mercado Abierto, o sea compra y venta de bonos (CD BCRP).\n\n¿Qué hace cada una?",
+      "opciones": [
+        "Las dos inyectan, solo cambia el plazo",
+        "La OMA venta inyecta y la OMA compra esteriliza",
+        "Las dos esterilizan, porque las dos mueven bonos",
+        "La OMA VENTA esteriliza, porque el BCR recoge soles a cambio de certificados; y la OMA COMPRA inyecta, porque suelta soles a cambio de bonos"
+      ],
+      "correcta": 3,
+      "explicacion": "Se sigue la plata, no el papel. Si el BCR vende un certificado, el soles entra al BCR y sale del mercado. Si compra un bono, el soles sale del BCR y entra al mercado."
+    },
+    {
+      "id": "m20-q5",
+      "nivel": "comprension",
+      "enunciado": "El tercer caso de las OMA es la operación REPO, o sea una recompra.\n\n¿Qué efecto tiene sobre la oferta monetaria?",
+      "opciones": [
+        "INYECTA, pero solo MOMENTÁNEAMENTE, porque el banco tiene que devolver el dinero al vencimiento",
+        "Esteriliza de forma permanente",
+        "Inyecta de forma permanente, igual que la OMA compra",
+        "No tiene ningún efecto sobre la oferta monetaria"
+      ],
+      "correcta": 0,
+      "explicacion": "El REPO es un préstamo con recompra pactada: el BCR suelta soles hoy y los recupera en el plazo acordado. Por eso alivia la liquidez sin dejarla suelta para siempre."
+    },
+    {
+      "id": "m20-q6",
+      "nivel": "comprension",
+      "enunciado": "El BCR publica dos cosas el mismo día: (I) el VENCIMIENTO de un CD BCRP y (II) la CONVOCATORIA a una subasta de CD BCRP.\n\n¿Qué efecto tiene cada una sobre la oferta monetaria?",
+      "opciones": [
+        "Las dos esterilizan, porque las dos son operaciones con certificados",
+        "El vencimiento esteriliza y la convocatoria inyecta",
+        "El VENCIMIENTO inyecta, porque al vencer el BCR devuelve el dinero; y la CONVOCATORIA todavía no mueve nada, porque recién anuncia la subasta",
+        "Las dos inyectan, cada una por su lado"
+      ],
+      "correcta": 2,
+      "explicacion": "La diferencia entre convocar y el resultado de la subasta es puro examen: mientras no se ejecute la operación no hay plata moviéndose. El vencimiento sí: el BCR paga y suelta soles."
+    },
+    {
+      "id": "m20-q7",
+      "nivel": "aplicacion",
+      "enunciado": "En un mismo día el BCR reporta: I. vencimiento de CD BCRP por 200 millones. II. resultado de subasta de CD a una semana por 800 millones. III. convocatoria a subasta de CD por 500 millones. IV. resultado de subasta REPO por 150 millones.\n\n¿Cuál es el efecto NETO?",
+      "opciones": [
+        "Inyección neta de 450 millones",
+        "ESTERILIZACIÓN neta de 450 millones: +200 inyecta, −800 esteriliza, la convocatoria no cuenta y +150 inyecta",
+        "Esterilización neta de 950 millones, sumando los 500 de la convocatoria",
+        "Neutro: las inyecciones y las esterilizaciones se cancelan exactamente"
+      ],
+      "correcta": 1,
+      "explicacion": "Se suma con signo y solo lo ejecutado: +200 − 800 + 150 = −450. La convocatoria de 500 queda fuera porque todavía no se hizo la subasta."
+    },
+    {
+      "id": "m20-q8",
+      "nivel": "comprension",
+      "enunciado": "Segunda herramienta: las operaciones de ventanilla o de descuento, donde el BCR le presta a un banco sin liquidez.\n\n¿Qué pasa si la TASA DE DESCUENTO del BCR aumenta, y qué son los depósitos overnight?",
+      "opciones": [
+        "Si la tasa sube se inyecta, y el overnight también inyecta",
+        "Si la tasa sube se inyecta, y el overnight esteriliza",
+        "Si la tasa sube no pasa nada con la base, porque la ventanilla mueve el multiplicador",
+        "Si la tasa SUBE se ESTERILIZA, porque pedirle prestado al BCR sale caro y los bancos piden menos; y los depósitos overnight son una herramienta especial de ESTERILIZACIÓN"
+      ],
+      "correcta": 3,
+      "explicacion": "La ventanilla mueve la base monetaria. Con una tasa de descuento alta el banco se aguanta y no pide, así que entran menos soles. Y en el overnight el banco le deja la plata guardada al BCR."
+    },
+    {
+      "id": "m20-q9",
+      "nivel": "comprension",
+      "enunciado": "Tercera herramienta: los requerimientos de ENCAJE. Las dos anteriores movían la base monetaria.\n\n¿Qué mueve el encaje?",
+      "opciones": [
+        "El MULTIPLICADOR BANCARIO: si sube el encaje los bancos prestan menos, el multiplicador cae y la oferta monetaria baja",
+        "También la base monetaria, igual que las dos anteriores",
+        "El tipo de cambio, porque el encaje se aplica a los depósitos en dólares",
+        "Nada: el encaje es un requisito contable sin efecto sobre la oferta"
+      ],
+      "correcta": 0,
+      "explicacion": "Es la división que hay que tener clarísima: OMA y ventanilla trabajan sobre la BASE; el encaje trabaja sobre el MULTIPLICADOR, o sea sobre cuánto dinero secundario logran crear los bancos."
+    },
+    {
+      "id": "m20-q10",
+      "nivel": "comprension",
+      "enunciado": "Quinta herramienta: las operaciones cambiarias.\n\n¿Cuál es su objetivo inicial y qué pasa con la oferta monetaria?",
+      "opciones": [
+        "Su objetivo inicial es bajar la inflación, y no tiene ningún efecto sobre el tipo de cambio",
+        "Su objetivo inicial es controlar la VOLATILIDAD DEL TIPO DE CAMBIO, pero como efecto secundario mueve la BASE MONETARIA, y ese efecto el BCR después lo corrige",
+        "Su objetivo inicial es mover la base monetaria y su efecto secundario es el tipo de cambio",
+        "No tiene efectos secundarios: comprar y vender dólares no toca los soles en circulación"
+      ],
+      "correcta": 1,
+      "explicacion": "Es la única de las cinco que no apunta a la inflación. Pero comprar dólares se paga con soles y venderlos los recoge, así que arrastra un efecto sobre la base que hay que compensar."
+    },
+    {
+      "id": "m20-q11",
+      "nivel": "aplicacion",
+      "enunciado": "Entra una masa de moneda extranjera al país. El BCR quiere frenar la caída del tipo de cambio comprando dólares, pero NO quiere afectar la inflación.\n\n¿Qué hace?",
+      "opciones": [
+        "No compra dólares, para no tocar la base monetaria",
+        "Compra dólares y baja el encaje, para reforzar el efecto",
+        "COMPRA los dólares, lo que suelta soles e infla la base; y después ESTERILIZA esa misma cantidad, típicamente colocando CD BCRP",
+        "Compra dólares y sube la tasa de descuento, porque eso inyecta"
+      ],
+      "correcta": 2,
+      "explicacion": "Son las dos intenciones a la vez: el mercado cambiario se atiende comprando dólares, y el efecto secundario sobre el mercado monetario se limpia retirando los mismos soles que soltó."
+    },
+    {
+      "id": "m20-q12",
+      "nivel": "comprension",
+      "enunciado": "Un amigo dice que el BCR tiene control sobre la preferencia por circulante de las personas.\n\n¿Tiene razón?",
+      "opciones": [
+        "NO: ese es justamente uno de los dos problemas para controlar la oferta de dinero. El BCR no decide cuántos depósitos tienen las familias ni cuánto deciden prestar los bancos",
+        "Sí, porque moviendo la tasa de interés decide cuánto deposita la gente",
+        "Sí, porque el encaje le fija a la gente cuánto efectivo puede tener",
+        "Solo en épocas de corrida bancaria"
+      ],
+      "correcta": 0,
+      "explicacion": "El BCR influye, pero no controla. Una corrida bancaria le mueve la preferencia por circulante y unos bancos más cautelosos le bajan los préstamos, sin que él haya hecho nada."
+    },
+    {
+      "id": "m20-q13",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 1/3. En un día el BCR ejecuta, todo en soles: 10:00 resultado de subasta REPO a una semana, 300 000. 11:00 resultado de subasta de CDBCRP a un mes, 1 000 000. 14:00 compra de dólares, 500 000. 15:00 vencimiento de depósitos del sistema financiero, 100 000.\n\n¿Qué pasó en neto?",
+      "opciones": [
+        "Inyección neta de 100 000: la oferta monetaria sube y la tasa nominal baja",
+        "ESTERILIZACIÓN neta de 100 000: la oferta monetaria DISMINUYE y la tasa de interés nominal SUBE",
+        "Inyección neta de 1 900 000, porque las tres inyecciones superan a la esterilización",
+        "Neutro: las operaciones se cancelan y la tasa no se mueve"
+      ],
+      "correcta": 1,
+      "explicacion": "Inyectan el REPO, la compra de dólares y el vencimiento: +300 000 + 500 000 + 100 000 = 900 000. Esteriliza la subasta de CD: −1 000 000. Neto −100 000, así que la oferta cae y la tasa sube."
+    },
+    {
+      "id": "m20-q14",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 2/3. Tres noticias distintas: (I) se impone un impuesto a todas las transacciones bancarias, (II) la CTS pasa a ser de libre disposición y la gente retira sus depósitos, (III) todos los peruanos pasan a pagar con tarjeta.\n\n¿Qué le pasa al multiplicador bancario en cada una?",
+      "opciones": [
+        "En las tres sube, porque en las tres se mueve más dinero",
+        "En las tres baja, porque en las tres la gente desconfía del banco",
+        "En (I) y (II) BAJA, porque sube la preferencia por circulante; y en (III) SUBE, porque el dinero se queda en el banco y la preferencia por circulante cae",
+        "El multiplicador no se mueve en ninguna: solo lo cambia el encaje"
+      ],
+      "correcta": 2,
+      "explicacion": "Es siempre la misma cadena. Con m = (c + 1)/(c + e), todo lo que saca plata del banco sube «c» y hunde el multiplicador; todo lo que la deja adentro lo levanta."
+    },
+    {
+      "id": "m20-q15",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 3/3. Con una preferencia por circulante de 0,20 y un encaje de 0,10, el multiplicador es 4. Las billeteras digitales hacen que la preferencia por circulante CAIGA a 0,10, y el BCR quiere dejar el multiplicador clavado en 4.\n\n¿Qué instrumento usa y cómo?",
+      "opciones": [
+        "La tasa de descuento, bajándola",
+        "Las operaciones cambiarias, vendiendo dólares",
+        "El encaje, bajándolo de 0,10 a 0,05",
+        "El ENCAJE, SUBIÉNDOLO de 0,10 a 0,175, que es lo que deja (0,10 + 1)/(0,10 + 0,175) otra vez en 4"
+      ],
+      "correcta": 3,
+      "explicacion": "Al caer «c» el multiplicador tendería a subir, así que hay que frenarlo por el otro lado. El encaje es justamente la herramienta con la que el BCR compensa lo que no controla."
+    }
+  ]
+}

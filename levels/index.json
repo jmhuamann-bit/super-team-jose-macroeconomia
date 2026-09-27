@@ -263,6 +263,20 @@
       "abierto": true,
       "mapa": "levels/level19.json",
       "preguntas": "questions/level19_questions.json"
+    },
+    {
+      "id": "level20",
+      "clase": "Clase 04",
+      "distrito": "Huaraz",
+      "titulo": "La laguna que suelta el agua justo",
+      "icono": "💧",
+      "seccion": "Parcial",
+      "seccionNota": "Repaso de PBI, inflación y fondos prestables, y mercado del dinero",
+      "retos": 13,
+      "duracion": "5 min",
+      "abierto": true,
+      "mapa": "levels/level20.json",
+      "preguntas": "questions/level20_questions.json"
     }
   ]
 }

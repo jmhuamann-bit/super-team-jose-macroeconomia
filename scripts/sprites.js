@@ -1556,6 +1556,136 @@ const TESORERO = [  // jefe de Cajamarca: llena el cuarto una vez y no entiende 
 ];
 const P_TESORERO = { k: "#241a2e", c: "#c9945c", r: "#c2264a", n: "#5c3d6b", m: "#3b3630", o: "#e8c15a" };
 
+
+const RESORTE = [  // trampolín: se pisa y sale disparado mucho más alto (14 × 9)
+  "..............",
+  "..pppppppppp..",
+  "..pppppppppp..",
+  "..kkkkkkkkkk..",
+  "...mmmmmmmm...",
+  "....mmmmmm....",
+  "...mmmmmmmm...",
+  ".kkkkkkkkkkkk.",
+  "..............",
+];
+const P_RESORTE = { p: "#e8504f", k: "#2a2438", m: "#cdd3da" };
+
+/* =========================================================
+   HUARAZ — la laguna turquesa, la Cordillera Blanca y la
+   compuerta que regula el caudal del valle. El fondo es
+   turquesa, roca y verde, así que acá todo va oscuro, blanco
+   o muy saturado.
+   ========================================================= */
+const GLACIAR = [  // el bloque de hielo desprendido: cree que la chamba del BCR es el tipo de cambio (16 × 13)
+  "................",
+  "......wwwww.....",
+  "....wwwwwwwww...",
+  "...wwwwwwwwwww..",
+  "..wwwwhhwwwwwww.",
+  "..wwwwhhwwwwwww.",
+  ".wwwwwhhwwwwwwww",
+  ".wwwwwhhwwwhhwww",
+  ".wwwwwwwwwwhhwww",
+  "..wwwwwwwwwhhww.",
+  "..wwwwwwwwwwww..",
+  "...wwwwwwwwww...",
+  "................",
+];
+const P_GLACIAR = { w: "#e8f4fb", h: "#1f4a8a" };
+
+const COMPUERTA = [ // la compuerta al revés: para expandir la oferta anuncia que SUBIRÁ la tasa de referencia (16 × 15)
+  "................",
+  "......rrrr......",
+  ".....r.rr.r.....",
+  ".....rrrrrr.....",
+  ".....r.rr.r.....",
+  "......rrrr......",
+  ".......mm.......",
+  "..mmmmmmmmmmmm..",
+  "..mkkkkkkkkkkm..",
+  "..mkmmmmmmmmkm..",
+  "..mkmkkkkkkmkm..",
+  "..mkmkkkkkkmkm..",
+  "..mkmmmmmmmmkm..",
+  "..mmmmmmmmmmmm..",
+  "................",
+];
+const P_COMPUERTA = { m: "#4a5560", k: "#232c34", r: "#c2264a" };
+
+const CANAL = [    // el canal de doble sentido: confunde qué operación inyecta y cuál esteriliza (18 × 12)
+  "..................",
+  "..cccccccccccccc..",
+  "..caaaaaaaaaaaac..",
+  "..caaaaaaaaaaaac..",
+  "..cwwwwwwwwwwwwc..",
+  ".fcwfffwwwfffwcf..",
+  ".ffcwwwwwwwwwcff..",
+  "..cwwwwwwwwwwwwc..",
+  "..caaaaaaaaaaaac..",
+  "..caaaaaaaaaaaac..",
+  "..cccccccccccccc..",
+  "..................",
+];
+const P_CANAL = { c: "#4f524c", a: "#2aa89a", w: "#bff0e6", f: "#f2ead8" };
+
+const PUYA = [     // la Puya de Raimondi: cree que el encaje mueve la base monetaria y no el multiplicador (14 × 17)
+  "..............",
+  "......ff......",
+  ".....ffff.....",
+  "......ff......",
+  ".....ffff.....",
+  "......ff......",
+  ".....ffff.....",
+  "......ff......",
+  "......ff......",
+  "...v..ff..v...",
+  "..vv..ff..vv..",
+  ".vvvv.ff.vvvv.",
+  "vvvvvvvvvvvvvv",
+  ".vvvvvvvvvvvv.",
+  "..vvvvvvvvvv..",
+  "...vvvvvvvv...",
+  "..............",
+];
+const P_PUYA = { v: "#9ab0a4", f: "#f4eed6" };
+
+const CONDOR = [   // el cóndor que sobrevuela todo: cree que el BCR también controla lo que deciden familias y bancos (22 × 12)
+  "......................",
+  "...kk..........kk.....",
+  "..kkkk........kkkk....",
+  ".kkkkkk......kkkkkk...",
+  "kkkkkkkkk..kkkkkkkkk..",
+  "kkkkkkkkkwwkkkkkkkkk..",
+  ".kkkkkkkwwwwkkkkkkk...",
+  "..kkkkk.wkkw.kkkkk....",
+  "........wkkw..........",
+  ".........kk...........",
+  ".........yy...........",
+  "......................",
+];
+const P_CONDOR = { k: "#241a2e", w: "#f7efe0", y: "#e8a53c" };
+
+const GUARDIAN = [ // jefe de Huaraz: abre y cierra la compuerta a destiempo, y el valle o se inunda o se seca (18 × 17)
+  ".....yyyyyyyy.....",
+  "....yyyyyyyyyy....",
+  ".....ssssssss.....",
+  ".....skssskss.....",
+  ".....ssmmmmss.....",
+  "......ssssss......",
+  "....nnnnnnnnnn....",
+  "...nnooooooonn....",
+  "..snnooooooonns...",
+  "..snnooooooonns...",
+  "...nnooooooonn....",
+  "....nnnnnnnnnn....",
+  "....gggg..gggg....",
+  "....gggg..gggg....",
+  "....gggg..gggg....",
+  "...kkkkk..kkkkk...",
+  "..................",
+];
+const P_GUARDIAN = { y: "#f0c341", s: "#c9945c", k: "#241a2e", m: "#8a3a2e", n: "#2f5a3a", o: "#e8742c", g: "#3b4250" };
+
 /* ---------------------------------------------------------------
    REGISTRO Y COCINADO
    --------------------------------------------------------------- */
@@ -1576,6 +1706,13 @@ const DEFINICIONES = {
   moneda_b:     [MONEDA_B, P_OBJ],
   bloque:       [BLOQUE, P_OBJ],
   bloque_usado: [BLOQUE_USADO, P_OBJ],
+  resorte:      [RESORTE, P_RESORTE],
+  glaciar:      [GLACIAR, P_GLACIAR],
+  compuerta:    [COMPUERTA, P_COMPUERTA],
+  canal:        [CANAL, P_CANAL],
+  puya:         [PUYA, P_PUYA],
+  condor:       [CONDOR, P_CONDOR],
+  guardian:     [GUARDIAN, P_GUARDIAN],
   pua:          [PUA, P_OBJ],
   bandera:      [BANDERA, P_OBJ],
   meta:         [META, P_OBJ],

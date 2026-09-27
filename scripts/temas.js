@@ -1785,6 +1785,144 @@ export const TEMAS = {
       }
     },
   },
+  /* =========================================================
+     HUARAZ — el Callejón de Huaylas a media mañana, con la
+     Cordillera Blanca nevada al fondo, la laguna turquesa de
+     deshielo y el dique con su compuerta, que suelta el agua
+     justo: ni tanta que inunde el valle ni tan poca que lo
+     seque. Igualito que el BCR con la liquidez.
+     OJO: el fondo no lleva compuertas sueltas, ni canales, ni
+     puyas, ni cóndores — esos son los bichos.
+     ========================================================= */
+  cordillera: {
+    nombre: "Huaraz",
+    cielo: [[0, "#1f6fbe"], [0.38, "#6fa6d6"], [0.74, "#b6cbd6"], [1, "#d2d8cc"]],
+    suelo: { cara: "#7e7a64", borde: "#9a9478", tierra: "#4d4a3c", plataforma: "#3f5f52", plataformaBorde: "#8fe0d0" },
+    acento: "#2aa89a",
+
+    bichos: ["glaciar", "compuerta", "canal", "puya", "condor"],
+    nombresBichos: [
+      "El Glaciar del Tipo de Cambio",
+      "La Compuerta al Revés",
+      "El Canal de Doble Sentido",
+      "La Puya que Mueve la Base",
+      "El Cóndor que Todo lo Controla",
+    ],
+    andares: ["guardia", "veloz", "salta", "patrulla", "vuela"],
+    jefe: "guardian",
+    nombreJefe: "El Guardián de la Laguna",
+
+    fondo(ctx, cam, t) {
+      // el sol de altura, chiquito y frío
+      ctx.fillStyle = "rgba(246,250,255,.18)";
+      ctx.beginPath(); ctx.arc(172, 54, 52, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = "rgba(252,254,255,.96)";
+      ctx.beginPath(); ctx.arc(172, 54, 22, 0, Math.PI * 2); ctx.fill();
+
+      // LA CORDILLERA BLANCA: picos nevados, dos capas
+      repetir(ctx, cam, 500, 0.08, (x, i) => {
+        const bx = x + 40, base = 250, alto = 118 + ((i * 47) % 38);
+        ctx.fillStyle = "#6b7a8c";
+        ctx.beginPath();
+        ctx.moveTo(bx - 150, base);
+        ctx.lineTo(bx - 20, base - alto);
+        ctx.lineTo(bx + 40, base - alto + 30);
+        ctx.lineTo(bx + 90, base - alto + 8);
+        ctx.lineTo(bx + 200, base);
+        ctx.closePath(); ctx.fill();
+        ctx.fillStyle = "#f2f7fb";                              // la nieve de la cumbre
+        ctx.beginPath();
+        ctx.moveTo(bx - 20, base - alto);
+        ctx.lineTo(bx + 40, base - alto + 30);
+        ctx.lineTo(bx + 90, base - alto + 8);
+        ctx.lineTo(bx + 62, base - alto + 44);
+        ctx.lineTo(bx + 18, base - alto + 26);
+        ctx.lineTo(bx - 42, base - alto + 38);
+        ctx.closePath(); ctx.fill();
+      });
+      repetir(ctx, cam, 340, 0.17, (x, i) => {
+        const bx = x + 30, base = 272, alto = 62 + ((i * 31) % 26);
+        ctx.fillStyle = "#7f8a86";
+        ctx.beginPath();
+        ctx.moveTo(bx - 120, base);
+        ctx.lineTo(bx - 10, base - alto);
+        ctx.lineTo(bx + 130, base);
+        ctx.closePath(); ctx.fill();
+      });
+
+      // LA LAGUNA DE DESHIELO, turquesa de verdad
+      ctx.fillStyle = "#2aa89a";
+      ctx.fillRect(0, 268, CFG.ANCHO_VISTA, 62);
+      ctx.fillStyle = "#3fc0af";
+      ctx.fillRect(0, 268, CFG.ANCHO_VISTA, 10);
+      for (let i = 0; i < 30; i++) {
+        const x = (i * 57 - (cam * 0.16)) % 900 - 40;
+        const y = 284 + ((i * 33) % 40);
+        ctx.fillStyle = "rgba(226,248,244,.30)";
+        ctx.fillRect(x, y + Math.sin(t / 23 + i) * 2, 15, 2);
+      }
+
+      // EL DIQUE que cierra la laguna, con su cresta de concreto
+      repetir(ctx, cam, 640, 0.34, (x, i) => {
+        const bx = x + 60, base = 330;
+        ctx.fillStyle = "#8a8a80";
+        ctx.beginPath();
+        ctx.moveTo(bx, base);
+        ctx.lineTo(bx + 26, base - 40);
+        ctx.lineTo(bx + 174, base - 40);
+        ctx.lineTo(bx + 200, base);
+        ctx.closePath(); ctx.fill();
+        ctx.fillStyle = "#a3a399";
+        ctx.fillRect(bx + 26, base - 44, 148, 6);
+        ctx.fillStyle = "rgba(50,54,48,.34)";
+        for (let k = 0; k < 5; k++) ctx.fillRect(bx + 40 + k * 28, base - 36, 5, 34);
+      });
+
+      // LA LADERA VERDE del callejón, sin cortes hasta el camino
+      ctx.fillStyle = "#5e7350";
+      ctx.fillRect(0, 330, CFG.ANCHO_VISTA, 26);
+      ctx.fillStyle = "#6b7f58";
+      ctx.fillRect(0, 356, CFG.ANCHO_VISTA, 26);
+
+      // LAS CASITAS DE ADOBE con su calamina, pegadas a la ladera
+      repetir(ctx, cam, 216, 0.52, (x, i) => {
+        const bx = x + 18, base = 366, alto = 30 + ((i * 23) % 12);
+        ctx.fillStyle = "#a88a62";
+        ctx.fillRect(bx, base - alto, 78, alto);
+        ctx.fillStyle = "#93999b";
+        ctx.beginPath();
+        ctx.moveTo(bx - 7, base - alto);
+        ctx.lineTo(bx + 39, base - alto - 15);
+        ctx.lineTo(bx + 85, base - alto);
+        ctx.closePath(); ctx.fill();
+        ctx.fillStyle = "rgba(60,50,34,.40)";
+        ctx.fillRect(bx + 30, base - 16, 16, 16);
+      });
+
+      // LOS QUENUALES, el arbolito rojizo que aguanta la altura
+      repetir(ctx, cam, 124, 0.76, (x, i) => {
+        const bx = x + 16, base = 382;
+        ctx.fillStyle = "#8a4a34";
+        ctx.fillRect(bx, base - 22, 4, 22);
+        ctx.fillStyle = ["#59703f", "#65804a", "#4e6538"][i % 3];
+        ctx.beginPath(); ctx.ellipse(bx + 2, base - 28, 11, 9, 0, 0, Math.PI * 2); ctx.fill();
+        ctx.beginPath(); ctx.ellipse(bx - 6, base - 22, 7, 6, 0, 0, Math.PI * 2); ctx.fill();
+        ctx.beginPath(); ctx.ellipse(bx + 10, base - 23, 7, 6, 0, 0, Math.PI * 2); ctx.fill();
+      });
+      ctx.fillStyle = "#7c7a60";
+      ctx.fillRect(0, 380, CFG.ANCHO_VISTA, 4);
+    },
+
+    clima(ctx, t) {
+      // el aire helado de la altura, que se ve a contraluz
+      for (let i = 0; i < 24; i++) {
+        const x = (i * 127 - t * 1.3) % 880 - 20;
+        const y = 100 + ((i * 61) % 240) + Math.sin(t / 24 + i) * 8;
+        ctx.fillStyle = `rgba(238,250,255,${(0.06 + 0.12 * Math.abs(Math.sin(t / 28 + i))).toFixed(2)})`;
+        ctx.fillRect(x, y, 5, 3);
+      }
+    },
+  },
 };
 
 /** Pinta el cielo del tema (degradado vertical). */
