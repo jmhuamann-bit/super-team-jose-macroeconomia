@@ -277,6 +277,20 @@
       "abierto": true,
       "mapa": "levels/level20.json",
       "preguntas": "questions/level20_questions.json"
+    },
+    {
+      "id": "level21",
+      "clase": "Clase 05",
+      "distrito": "Chiclayo",
+      "titulo": "El mercado donde el billete no para",
+      "icono": "💸",
+      "seccion": "Parcial",
+      "seccionNota": "Repaso de PBI, inflación y fondos prestables, y mercado del dinero",
+      "retos": 13,
+      "duracion": "5 min",
+      "abierto": true,
+      "mapa": "levels/level21.json",
+      "preguntas": "questions/level21_questions.json"
     }
   ]
 }

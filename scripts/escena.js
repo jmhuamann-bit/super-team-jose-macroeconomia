@@ -225,6 +225,12 @@ const FICHAS = [
   { sprite: "puya", nombre: "La Puya que Mueve la Base", texto: "Cree que el encaje afecta la base monetaria, cuando lo que mueve es el multiplicador bancario." },
   { sprite: "condor", nombre: "El Cóndor que Todo lo Controla", texto: "Desde arriba cree que el BCR también decide cuánto depositan las familias y cuánto prestan los bancos." },
   { sprite: "guardian", nombre: "El Guardián de la Laguna", texto: "Jefe de Huaraz: abre y cierra la compuerta a destiempo, y por eso el valle o se inunda o se seca." },
+  { sprite: "cambista", nombre: "El Cambista sin Fisher", texto: "Chiclayo: te canta la tasa nominal como si fuera lo que de verdad ganas, sin descontarle nunca la inflación." },
+  { sprite: "billete", nombre: "El Billete Guardado", texto: "Se queda quieto debajo del colchón y jura que la velocidad de circulación no tiene nada que ver con la tasa de interés." },
+  { sprite: "kingkong", nombre: "El King Kong de Precio Doble", texto: "Le suben el precio y jura que ahora la demanda REAL de dinero cambió, cuando el precio solo mueve la nominal." },
+  { sprite: "tumi", nombre: "El Tumi que Corta al Revés", texto: "Pasa la ecuación cuantitativa a variaciones con los signos cambiados y termina restando lo que había que sumar." },
+  { sprite: "gallinazo", nombre: "El Gallinazo que Confunde el Vuelo", texto: "Confunde moverse a lo largo de la curva de demanda con desplazarla entera." },
+  { sprite: "curandero", nombre: "El Curandero de la Sección Brujos", texto: "Jefe de Chiclayo: te adivina la tasa de interés a punta de hierbas, en vez de igualar la oferta con la demanda." },
 ];
 
 export function galeriaPersonajes(contenedor) {

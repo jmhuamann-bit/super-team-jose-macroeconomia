@@ -1,0 +1,203 @@
+{
+  "nivel": "level21",
+  "clase": "Clase 05 · Parcial — Demanda de dinero y equilibrio monetario",
+  "fuente": "Apuntes de la 5ta clase del Parcial (1era y 2da parte) — Economía General II",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "m21-q1",
+      "nivel": "reconocimiento",
+      "enunciado": "Hay dos enfoques sobre por qué la gente demanda dinero, uno más antiguo que el otro.\n\n¿Qué dice cada uno?",
+      "opciones": [
+        "Los clásicos dicen que es para comprar activos y los keynesianos que es para comprar cosas",
+        "Los dos dicen exactamente lo mismo, solo cambia el nombre del enfoque",
+        "Los CLÁSICOS dicen que solo sirve como medio de cambio para comprar cosas; los KEYNESIANOS agregan que también sirve para comprar activos como acciones, bonos o divisas",
+        "Los clásicos dicen que la gente no demanda dinero, solo lo recibe"
+      ],
+      "correcta": 2,
+      "explicacion": "El enfoque moderno no bota al clásico: le suma un motivo. Por eso en el keynesiano la tasa de interés importa, porque compite con el dinero como forma de guardar valor."
+    },
+    {
+      "id": "m21-q2",
+      "nivel": "comprension",
+      "enunciado": "La teoría cuantitativa del dinero se resume en M·V = P·Q, que se memoriza como «Me Voy = Por Quince».\n\n¿Qué es lo que afirma esa igualdad?",
+      "opciones": [
+        "Que el dinero circulando en la economía debe ser igual al PBI NOMINAL",
+        "Que la masa monetaria debe ser igual al PBI real",
+        "Que la velocidad de circulación siempre es igual al nivel de precios",
+        "Que la inflación siempre es igual al crecimiento del producto"
+      ],
+      "correcta": 0,
+      "explicacion": "El lado izquierdo es cuánto dinero hay por cuántas veces se usa, y el derecho es el precio por la cantidad producida. Los dos lados miden lo mismo: el valor de todo lo transado."
+    },
+    {
+      "id": "m21-q3",
+      "nivel": "aplicacion",
+      "enunciado": "La masa monetaria crece 10%, la velocidad de circulación se mantiene constante y el PBI real crece 4%.\n\nUsando %ΔM + %ΔV = %ΔP + %ΔY, ¿cuál es la inflación?",
+      "opciones": [
+        "14%, sumando los dos crecimientos",
+        "6%, porque 10 + 0 = %ΔP + 4",
+        "2,5%, dividiendo 10 entre 4",
+        "10%, porque la inflación siempre iguala al crecimiento del dinero"
+      ],
+      "correcta": 1,
+      "explicacion": "Con la velocidad quieta, todo lo que el dinero crece por encima del producto se va a precios. Si el dinero creciera al mismo ritmo que el PBI, la inflación sería cero."
+    },
+    {
+      "id": "m21-q4",
+      "nivel": "aplicacion",
+      "enunciado": "La inflación es 5%, el PBI real crece 10% y la velocidad de circulación crece 2%.\n\n¿Cuánto crece la demanda nominal de dinero?",
+      "opciones": [
+        "17%, sumando los tres",
+        "3%, restando 5 menos 2",
+        "7%, sumando la inflación y la velocidad",
+        "13%, porque %ΔM = %ΔP + %ΔY − %ΔV = 5 + 10 − 2"
+      ],
+      "correcta": 3,
+      "explicacion": "Se despeja de la misma ecuación. Si el dinero ya se está moviendo 2% más rápido, hace falta 2% menos de dinero nuevo para sostener el mismo PBI nominal."
+    },
+    {
+      "id": "m21-q5",
+      "nivel": "comprension",
+      "enunciado": "La tasa de interés arranca en 5% y sube 3 PUNTOS PORCENTUALES.\n\n¿Cuál es la tasa final y cuál es su variación porcentual?",
+      "opciones": [
+        "Tasa final 8% y variación porcentual 60%, porque 3 entre 5 es 0,6",
+        "Tasa final 8% y variación porcentual 3%",
+        "Tasa final 15% y variación porcentual 3%",
+        "Tasa final 5,15% y variación porcentual 3%"
+      ],
+      "correcta": 0,
+      "explicacion": "Punto porcentual y porcentaje no son lo mismo: los 3 pp se suman a la tasa, pero para la variación porcentual hay que dividirlos entre el valor de partida."
+    },
+    {
+      "id": "m21-q6",
+      "nivel": "comprension",
+      "enunciado": "Si la tasa de interés nominal SUBE, la gente ahorra más y queda menos dinero circulando. Para que se siga transando el mismo PBI nominal, el dinero que queda tiene que moverse distinto.\n\n¿Qué relación guardan «i» y «V»?",
+      "opciones": [
+        "Inversa: si la tasa sube, la velocidad baja",
+        "Ninguna: la velocidad solo depende de la tecnología de pagos",
+        "DIRECTA: si la tasa sube, la velocidad también sube, y por eso la ecuación queda %ΔM + %Δi = %ΔP + %ΔY",
+        "Directa, pero solo cuando la inflación es cero"
+      ],
+      "correcta": 2,
+      "explicacion": "Menos dinero circulando con el mismo PBI nominal obliga a que cada billete se use más veces. Esa es la versión moderna de la cuantitativa, con la velocidad atada a la tasa."
+    },
+    {
+      "id": "m21-q7",
+      "nivel": "aplicacion",
+      "enunciado": "Guardas tu plata en el banco a una tasa de interés nominal de 5% y la inflación del año resulta ser 8%.\n\n¿Cuál es tu tasa de interés real y qué te pasó?",
+      "opciones": [
+        "3%, y ganaste",
+        "−3%, y PERDISTE: la inflación se comió más de lo que te pagó el banco",
+        "13%, sumando las dos",
+        "0%, porque el banco siempre cubre la inflación"
+      ],
+      "correcta": 1,
+      "explicacion": "Por Fisher, r = i − π = 5 − 8. Con 10% y 5% ganarías 5% real; con 8% y 8% te quedarías igual; acá terminas con menos poder de compra que al inicio."
+    },
+    {
+      "id": "m21-q8",
+      "nivel": "aplicacion",
+      "enunciado": "La inflación es 8%, el PBI crece 5% y la demanda nominal de dinero crece 4%. La tasa de interés nominal venía de 5%.\n\n¿Cuánto crece la tasa y en cuánto queda?",
+      "opciones": [
+        "Crece 9 puntos porcentuales, así que queda en 14%",
+        "Crece 17%, así que queda en 5,85%",
+        "No cambia: se queda en 5%",
+        "Crece 9%, porque %Δi = 8 + 5 − 4, así que queda en 5 × 1,09 = 5,45%"
+      ],
+      "correcta": 3,
+      "explicacion": "Primero se despeja %Δi de la cuantitativa con velocidad atada a la tasa, y recién después se aplica ese 9% sobre el 5% de partida. Y la real actual sería 5,45 − 8 = −2,55%."
+    },
+    {
+      "id": "m21-q9",
+      "nivel": "aplicacion",
+      "enunciado": "La demanda de dinero de una economía es log(Md/P) = 0,8·log Y − 0,5·log i. La tasa de interés se reduce 1%, el producto real crece 4% y el nivel de precios se mantiene constante.\n\n¿Cuánto crece la demanda NOMINAL de dinero?",
+      "opciones": [
+        "3,7%, porque %ΔMd = %ΔP + 0,8(4) − 0,5(−1) = 0 + 3,2 + 0,5",
+        "2,7%, restando el medio punto en vez de sumarlo",
+        "4%, igual que el producto",
+        "3,2%, ignorando el efecto de la tasa"
+      ],
+      "correcta": 0,
+      "explicacion": "Los coeficientes del logaritmo son elasticidades y pasan directo a variaciones. Como la tasa CAE y entra con signo negativo, su efecto SUMA. Si hubiera 5% de inflación, sería 8,7%."
+    },
+    {
+      "id": "m21-q10",
+      "nivel": "comprension",
+      "enunciado": "En el enfoque moderno la demanda de dinero depende de dos cosas.\n\n¿Cuáles son y con qué signo entra cada una?",
+      "opciones": [
+        "La tasa directa y el PBI inverso",
+        "Las dos directas: más tasa y más producto, más dinero se demanda",
+        "La TASA DE INTERÉS NOMINAL con relación INVERSA, y el PBI REAL con relación DIRECTA",
+        "Solo el PBI: la tasa de interés no entra en la demanda de dinero"
+      ],
+      "correcta": 2,
+      "explicacion": "Si te pagan más por ahorrar, quieres menos plata suelta en el bolsillo. Y si se produce más, hace falta más dinero para comprarlo. Por eso la curva de demanda baja."
+    },
+    {
+      "id": "m21-q11",
+      "nivel": "comprension",
+      "enunciado": "Sube el nivel de precios de la economía.\n\n¿Qué le pasa a la demanda de dinero?",
+      "opciones": [
+        "Sube tanto la demanda nominal como la real",
+        "Sube la demanda NOMINAL, porque hacen falta más soles para comprar lo mismo; pero la demanda REAL no se mueve",
+        "Baja la demanda nominal y sube la real",
+        "No pasa nada: el precio solo afecta a la oferta de dinero"
+      ],
+      "correcta": 1,
+      "explicacion": "La demanda real ya viene dividida entre el precio, así que el precio se cancela. Es el mismo «cuidado» del apunte: el precio NO afecta la demanda real."
+    },
+    {
+      "id": "m21-q12",
+      "nivel": "comprension",
+      "enunciado": "En el gráfico del mercado de dinero hay que distinguir dos cosas distintas.\n\n¿Qué te mueve A LO LARGO de la curva de demanda y qué la DESPLAZA entera?",
+      "opciones": [
+        "A lo largo solo te mueve la TASA DE INTERÉS NOMINAL; todo lo demás (el PBI, el precio, la delincuencia, la inflación esperada) DESPLAZA la curva",
+        "A lo largo te mueve el PBI, y la tasa de interés desplaza la curva",
+        "Todo desplaza la curva: nunca hay movimientos a lo largo",
+        "A lo largo te mueve la tasa de interés ESPERADA, no la nominal"
+      ],
+      "correcta": 0,
+      "explicacion": "La tasa está en el eje, así que cambiarla es caminar sobre la misma curva. Ojo con el detalle del apunte: la que manda es la nominal, no la esperada."
+    },
+    {
+      "id": "m21-q13",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 1/3. La oferta de dinero es 200 millones, el PBI nominal es 1 000 millones y el PBI real es 500 millones.\n\n¿Cuál es el nivel de precios y la velocidad del dinero? ¿Y qué pasa con el precio si la oferta sube 50%?",
+      "opciones": [
+        "P = 0,5 y V = 2; con la oferta 50% más alta, P pasa a 0,75",
+        "P = 2 y V = 5; con la oferta 50% más alta, P pasa a 3",
+        "P = 2 y V = 5; con la oferta 50% más alta, P se queda en 2",
+        "P = 5 y V = 2; con la oferta 50% más alta, P pasa a 7,5"
+      ],
+      "correcta": 1,
+      "explicacion": "P = PBI nominal entre real = 1 000/500, y V = P·Q/M = 1 000/200. Al subir el dinero 50% con Q y V quietos, el precio sube exactamente 50%: eso es la neutralidad del dinero."
+    },
+    {
+      "id": "m21-q14",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 2/3. La oferta de dinero es 300 millones con un nivel de precios de 1, el producto real es 1 500 millones y la inflación es 20%. La demanda es Md/P = 900 + 0,2Y − 3 000r, donde r es la tasa REAL.\n\n¿Cuál es la tasa de interés NOMINAL de equilibrio?",
+      "opciones": [
+        "30%, que es la tasa que sale de igualar oferta y demanda",
+        "20%, que es la inflación",
+        "50%, porque de 300 = 900 + 300 − 3 000r sale r = 30%, y por Fisher i = 30 + 20",
+        "10%, restando la inflación a la tasa real"
+      ],
+      "correcta": 2,
+      "explicacion": "Primero se iguala la oferta REAL con la demanda real y sale r = 30%. Como la demanda venía en tasa real y piden la nominal, recién ahí se le suma la inflación con Fisher."
+    },
+    {
+      "id": "m21-q15",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 3/3. El Banco Central hace una emisión primaria de 100 millones y exige un encaje de 25% sobre los depósitos a la vista. La preferencia por circulante, definida como circulante sobre cantidad de dinero, es 0,2.\n\n¿Cuál es el multiplicador monetario y la oferta de M1?",
+      "opciones": [
+        "Multiplicador 4 y oferta de 400 millones",
+        "Multiplicador 0,4 y oferta de 40 millones",
+        "Multiplicador 5 y oferta de 500 millones",
+        "Multiplicador 2,5 y oferta de 250 millones, porque la base es 0,2M + 0,25(0,8M) = 0,4M"
+      ],
+      "correcta": 3,
+      "explicacion": "Si el circulante es 0,2 de M, los depósitos son 0,8 de M. La base es circulante más encaje: 0,4M. Entonces M = 100/0,4 = 250, y el multiplicador es 1/0,4 = 2,5."
+    }
+  ]
+}

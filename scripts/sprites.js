@@ -1686,6 +1686,122 @@ const GUARDIAN = [ // jefe de Huaraz: abre y cierra la compuerta a destiempo, y 
 ];
 const P_GUARDIAN = { y: "#f0c341", s: "#c9945c", k: "#241a2e", m: "#8a3a2e", n: "#2f5a3a", o: "#e8742c", g: "#3b4250" };
 
+/* =========================================================
+   CHICLAYO — el Mercado Modelo y la Calle Balta. El fondo es
+   toldo apagado, ladrillo y algarrobo, así que acá todo va
+   oscuro o muy saturado.
+   ========================================================= */
+const CAMBISTA = [ // el cambista de la esquina: confunde la tasa nominal con la real y nunca usa Fisher (18 × 17)
+  ".....kkkkkkkk.....",
+  "....kkkkkkkkkk....",
+  ".....ssssssss.....",
+  ".....sksssksss....",
+  ".....ssmmmmss.....",
+  "......ssssss......",
+  "...vvvvvvvvvvv....",
+  "..vvvwwwwwwvvvv...",
+  "..vvwwwwwwwwvvv...",
+  "..vvwwwwwwwwvvv...",
+  "..vvvwwwwwwvvvv.ww",
+  "...vvvvvvvvvvv..ww",
+  "....jjjj..jjjj....",
+  "....jjjj..jjjj....",
+  "....jjjj..jjjj....",
+  "...kkkkk..kkkkk...",
+  "..................",
+];
+const P_CAMBISTA = { k: "#241a2e", s: "#c9945c", m: "#8a3a2e", v: "#2f9a52", w: "#f2f7ea", j: "#2f3a5e" };
+
+const BILLETE = [  // el billete guardado bajo el colchón: jura que la velocidad no tiene nada que ver con la tasa (20 × 12)
+  "....................",
+  ".gggggggggggggggggg.",
+  ".gwwwwwwwwwwwwwwwwg.",
+  ".gwggggggggggggggwg.",
+  ".gwgg.gghhgg.gggg.g.",
+  ".gwg.gghhhhgg.ggg.g.",
+  ".gwg.gghhhhgg.ggg.g.",
+  ".gwgg.gghhgg.gggg.g.",
+  ".gwggggggggggggggwg.",
+  ".gwwwwwwwwwwwwwwwwg.",
+  ".gggggggggggggggggg.",
+  "....................",
+];
+const P_BILLETE = { g: "#1f6b4a", w: "#cfe8d6", h: "#e8c15a" };
+
+const KINGKONG = [ // el King Kong de precio doble: le suben el precio y jura que cambió la demanda REAL (16 × 12)
+  "................",
+  "..gggggggggggg..",
+  "..gwwwwwwwwwwg..",
+  "..gggggggggggg..",
+  "..mmmmmmmmmmmm..",
+  "..gggggggggggg..",
+  "..gwwwwwwwwwwg..",
+  "..gggggggggggg..",
+  "..mmmmmmmmmmmm..",
+  "..gggggggggggg..",
+  "..cccccccccccc..",
+  "................",
+];
+const P_KINGKONG = { g: "#f0ddb0", w: "#fff6e2", m: "#c2503c", c: "#d9b877" };
+
+const TUMI = [     // el tumi de Íllimo: pasa la ecuación cuantitativa a variaciones con los signos cambiados (14 × 17)
+  "......yy......",
+  ".....yyyy.....",
+  "....yykkyy....",
+  "....yykkyy....",
+  "...yyyyyyyy...",
+  "..yyyyyyyyyy..",
+  "..yykkyykkyy..",
+  "..yyyyyyyyyy..",
+  "...yyyyyyyy...",
+  "....yyyyyy....",
+  ".....yyyy.....",
+  "......yy......",
+  "......yy......",
+  ".yyyyyyyyyyyy.",
+  "yyyyyyyyyyyyyy",
+  ".yyyyyyyyyyyy.",
+  "...yyyyyyyy...",
+];
+const P_TUMI = { y: "#e8b93c", k: "#3a2a14" };
+
+const GALLINAZO = [ // el gallinazo del mercado: confunde moverse a lo largo de la curva con desplazarla (20 × 12)
+  "....................",
+  "..kk............kk..",
+  ".kkkk..........kkkk.",
+  "kkkkkk........kkkkkk",
+  "kkkkkkkk....kkkkkkkk",
+  ".kkkkkkkkppkkkkkkkk.",
+  "..kkkkkkppppkkkkkk..",
+  "....kkkkpkkppkkkk...",
+  "........pkkp........",
+  ".........yy.........",
+  ".........kk.........",
+  "....................",
+];
+const P_GALLINAZO = { k: "#221c24", p: "#8a6a5c", y: "#d8a03c" };
+
+const CURANDERO = [ // jefe de Chiclayo: te adivina la tasa a punta de hierbas en vez de igualar oferta con demanda (20 × 17)
+  ".....rrrrrrrrrr.....",
+  "....rrrrrrrrrrrr....",
+  "......ssssssss......",
+  "......sksssksss.....",
+  "......ssmmmmss......",
+  ".......ssssss.......",
+  "....pppppppppppp....",
+  "...ppphhhhhhhppp....",
+  "..sppphhhhhhhppps...",
+  "..sppphhhhhhhppps...",
+  "...ppphhhhhhhppp....",
+  "....pppppppppppp....",
+  "....yyyyyyyyyyyy....",
+  "....pppp....pppp....",
+  "....pppp....pppp....",
+  "...kkkkk....kkkkk...",
+  "....................",
+];
+const P_CURANDERO = { r: "#b0202c", s: "#c9945c", k: "#241a2e", m: "#8a3a2e", p: "#5a3f6b", h: "#4f8f3a", y: "#e8b93c" };
+
 /* ---------------------------------------------------------------
    REGISTRO Y COCINADO
    --------------------------------------------------------------- */
@@ -1713,6 +1829,12 @@ const DEFINICIONES = {
   puya:         [PUYA, P_PUYA],
   condor:       [CONDOR, P_CONDOR],
   guardian:     [GUARDIAN, P_GUARDIAN],
+  cambista:     [CAMBISTA, P_CAMBISTA],
+  billete:      [BILLETE, P_BILLETE],
+  kingkong:     [KINGKONG, P_KINGKONG],
+  tumi:         [TUMI, P_TUMI],
+  gallinazo:    [GALLINAZO, P_GALLINAZO],
+  curandero:    [CURANDERO, P_CURANDERO],
   pua:          [PUA, P_OBJ],
   bandera:      [BANDERA, P_OBJ],
   meta:         [META, P_OBJ],

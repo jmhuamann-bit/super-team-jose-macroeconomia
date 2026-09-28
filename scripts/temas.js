@@ -1923,6 +1923,135 @@ export const TEMAS = {
       }
     },
   },
+  /* =========================================================
+     CHICLAYO — el Mercado Modelo un sábado por la mañana, con
+     la Calle Balta llena, los toldos pegados uno al otro, los
+     sacos de arroz y los algarrobos del norte. Acá el mismo
+     billete cambia de mano diez veces antes del mediodía: esa
+     es la velocidad de circulación.
+     OJO: el fondo no lleva billetes, tumis, King Kongs ni
+     gallinazos sueltos — esos son los bichos. Y los toldos van
+     apagados, que los colores vivos son de ellos.
+     ========================================================= */
+  modelo: {
+    nombre: "Chiclayo",
+    cielo: [[0, "#2f86c8"], [0.42, "#84b6d8"], [0.78, "#ccd2c4"], [1, "#e0d6bc"]],
+    suelo: { cara: "#a89268", borde: "#c4ad80", tierra: "#5f5038", plataforma: "#7a4230", plataformaBorde: "#e8b93c" },
+    acento: "#b0202c",
+
+    bichos: ["cambista", "billete", "kingkong", "tumi", "gallinazo"],
+    nombresBichos: [
+      "El Cambista sin Fisher",
+      "El Billete Guardado",
+      "El King Kong de Precio Doble",
+      "El Tumi que Corta al Revés",
+      "El Gallinazo que Confunde el Vuelo",
+    ],
+    andares: ["patrulla", "guardia", "salta", "veloz", "vuela"],
+    jefe: "curandero",
+    nombreJefe: "El Curandero de la Sección Brujos",
+
+    fondo(ctx, cam, t) {
+      // el sol del norte, grande y caliente
+      ctx.fillStyle = "rgba(255,246,214,.22)";
+      ctx.beginPath(); ctx.arc(586, 62, 62, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = "rgba(255,252,236,.95)";
+      ctx.beginPath(); ctx.arc(586, 62, 26, 0, Math.PI * 2); ctx.fill();
+
+      // LOS CERROS SECOS DEL NORTE, bajitos y lejanos
+      repetir(ctx, cam, 560, 0.09, (x, i) => {
+        const bx = x + 40, base = 268, alto = 40 + ((i * 37) % 22);
+        ctx.fillStyle = "#9a8f74";
+        ctx.beginPath();
+        ctx.moveTo(bx - 170, base);
+        ctx.quadraticCurveTo(bx, base - alto, bx + 180, base);
+        ctx.closePath(); ctx.fill();
+      });
+      // el llano baja SIN CORTES hasta la calle: si queda un hueco acá se asoma
+      // el cielo y el fondo parece tener una laguna
+      ctx.fillStyle = "#ab9b7c";
+      ctx.fillRect(0, 266, CFG.ANCHO_VISTA, 26);
+      ctx.fillStyle = "#a4926f";
+      ctx.fillRect(0, 292, CFG.ANCHO_VISTA, 28);
+      ctx.fillStyle = "#9c8a64";
+      ctx.fillRect(0, 320, CFG.ANCHO_VISTA, 62);   // hasta la vereda, sin dejar asomar el cielo
+
+      // LOS EDIFICIOS DE LA CALLE BALTA, ladrillo y balcón
+      repetir(ctx, cam, 248, 0.32, (x, i) => {
+        const bx = x + 16, base = 340, alto = 58 + ((i * 41) % 24);
+        ctx.fillStyle = ["#b5735a", "#a86a52", "#c08063"][i % 3];
+        ctx.fillRect(bx, base - alto, 170, alto);
+        ctx.fillStyle = "rgba(60,42,32,.28)";                    // las hiladas del ladrillo
+        for (let k = 0; k < 7; k++) ctx.fillRect(bx, base - alto + 8 + k * 9, 170, 2);
+        ctx.fillStyle = "#e6dcc6";                               // la cornisa
+        ctx.fillRect(bx - 5, base - alto - 7, 180, 7);
+        ctx.fillStyle = "rgba(46,34,26,.42)";                    // las ventanas
+        for (let k = 0; k < 4; k++) ctx.fillRect(bx + 14 + k * 38, base - alto + 18, 22, 22);
+      });
+      ctx.fillStyle = "#98865f";
+      ctx.fillRect(0, 336, CFG.ANCHO_VISTA, 22);
+
+      // LOS TOLDOS DEL MERCADO MODELO, pegados uno al otro y apagados a propósito
+      repetir(ctx, cam, 104, 0.58, (x, i) => {
+        const bx = x, base = 372;
+        ctx.fillStyle = ["#6f5a3a", "#4f5a55", "#7a4a3c", "#5c5540"][i % 4];
+        ctx.beginPath();
+        ctx.moveTo(bx - 6, base - 30);
+        ctx.lineTo(bx + 52, base - 42);
+        ctx.lineTo(bx + 110, base - 30);
+        ctx.closePath(); ctx.fill();
+        ctx.fillStyle = "rgba(0,0,0,.22)";
+        ctx.fillRect(bx - 6, base - 31, 116, 3);
+        ctx.fillStyle = "#4a3a26";                               // los parantes
+        ctx.fillRect(bx + 2, base - 30, 4, 30);
+        ctx.fillRect(bx + 98, base - 30, 4, 30);
+      });
+
+      // LOS SACOS Y CAJONES de la vereda
+      repetir(ctx, cam, 86, 0.78, (x, i) => {
+        const bx = x + 10, base = 382;
+        if (i % 2 === 0) {
+          ctx.fillStyle = "#b8a578";                             // el saco de arroz
+          ctx.beginPath();
+          ctx.moveTo(bx, base);
+          ctx.quadraticCurveTo(bx - 3, base - 18, bx + 9, base - 21);
+          ctx.quadraticCurveTo(bx + 21, base - 18, bx + 18, base);
+          ctx.closePath(); ctx.fill();
+          ctx.fillStyle = "rgba(90,74,44,.34)";
+          ctx.fillRect(bx + 2, base - 12, 14, 2);
+        } else {
+          ctx.fillStyle = "#6b4a2e";                             // el cajón de madera
+          ctx.fillRect(bx, base - 13, 24, 13);
+          ctx.fillStyle = "rgba(210,184,132,.32)";
+          ctx.fillRect(bx, base - 13, 24, 2);
+          ctx.fillRect(bx + 11, base - 13, 2, 13);
+        }
+      });
+
+      // LOS ALGARROBOS, anchos y desparramados
+      repetir(ctx, cam, 214, 0.86, (x, i) => {
+        const bx = x + 40, base = 384;
+        ctx.fillStyle = "#63472e";
+        ctx.fillRect(bx, base - 30, 6, 30);
+        ctx.fillStyle = ["#5f7a3c", "#6d8945", "#546e34"][i % 3];
+        ctx.beginPath(); ctx.ellipse(bx + 3, base - 38, 24, 11, 0, 0, Math.PI * 2); ctx.fill();
+        ctx.beginPath(); ctx.ellipse(bx - 14, base - 32, 13, 7, 0, 0, Math.PI * 2); ctx.fill();
+        ctx.beginPath(); ctx.ellipse(bx + 20, base - 33, 13, 7, 0, 0, Math.PI * 2); ctx.fill();
+      });
+      ctx.fillStyle = "#9c8a5e";
+      ctx.fillRect(0, 382, CFG.ANCHO_VISTA, 4);
+    },
+
+    clima(ctx, t) {
+      // el calor del norte, que hace temblar el aire sobre la calle
+      for (let i = 0; i < 22; i++) {
+        const x = (i * 133 - t * 0.6) % 880 - 20;
+        const y = 230 + ((i * 57) % 130);
+        ctx.fillStyle = `rgba(255,248,222,${(0.05 + 0.10 * Math.abs(Math.sin(t / 33 + i))).toFixed(2)})`;
+        ctx.fillRect(x, y + Math.sin(t / 19 + i) * 2, 20, 2);
+      }
+    },
+  },
 };
 
 /** Pinta el cielo del tema (degradado vertical). */
