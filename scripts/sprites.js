@@ -1908,6 +1908,116 @@ const AZOGUERO = [ // jefe de Huancavelica: sigue creyendo que el billete vale p
 ];
 const P_AZOGUERO = { n: "#3b2a1a", s: "#c9945c", k: "#241a2e", m: "#8a3a2e", p: "#5a4a7a", w: "#e8e2d0", y: "#e8b93c" };
 
+/* =========================================================
+   LA OROYA — el nudo de caminos y el ferrocarril más alto del
+   mundo. El fondo es roca gris, riel y ladera pelada, así que
+   acá todo va muy saturado o muy claro.
+   ========================================================= */
+const RIEL = [     // el riel suelto: usa la demanda sin haber hallado antes el producto (20 × 10)
+  "....................",
+  "..mmmmmmmmmmmmmmmm..",
+  "..mmmmmmmmmmmmmmmm..",
+  "...dddddddddddddd...",
+  "..mmmmmmmmmmmmmmmm..",
+  "..mmmmmmmmmmmmmmmm..",
+  ".cc..cc..cc..cc..cc.",
+  ".cc..cc..cc..cc..cc.",
+  "....................",
+  "....................",
+];
+const P_RIEL = { m: "#9aa4ae", d: "#4a5058", c: "#6b4a2e" };
+
+const CHIMENEA = [ // la chimenea de la fundición: iguala la oferta NOMINAL con la demanda REAL (14 × 17)
+  "..............",
+  "....hhhhhh....",
+  "...hhhhhhhh...",
+  "....hhhhhh....",
+  ".....ffff.....",
+  ".....ffff.....",
+  "....ffffff....",
+  "....frrrrf....",
+  "....ffffff....",
+  "....ffffff....",
+  "....frrrrf....",
+  "....ffffff....",
+  "...ffffffff...",
+  "...ffffffff...",
+  "..ffffffffff..",
+  "..ffffffffff..",
+  "..............",
+];
+const P_CHIMENEA = { f: "#b5563a", r: "#f2e2c4", h: "#8a9098" };
+
+const AGUJA = [    // la aguja del cambio de vía: deja la tasa REAL donde iba la nominal (18 × 12)
+  "..................",
+  "...........mmmmmm.",
+  "........mmmm......",
+  ".....mmmm.........",
+  "..mmmm............",
+  "..mmmmmmmmmmmmmmm.",
+  "..mmmmmmmmmmmmmmm.",
+  "..dd..............",
+  "..dd..............",
+  "..dd..............",
+  ".ddddd............",
+  "..................",
+];
+const P_AGUJA = { m: "#9aa4ae", d: "#c2264a" };
+
+const VAGON = [    // el vagón de mineral: confunde el multiplicador de M1 con el de M2 (20 × 13)
+  "....................",
+  "..gggggggggggggggg..",
+  "..gwwgwwgwwgwwgwwg..",
+  "..gggggggggggggggg..",
+  "..gggggggggggggggg..",
+  "..gggggggggggggggg..",
+  "..gggggggggggggggg..",
+  "..gggggggggggggggg..",
+  "...gggggggggggggg...",
+  "..kkkk......kkkk....",
+  "..kkkk......kkkk....",
+  "...kk........kk.....",
+  "....................",
+];
+const P_VAGON = { g: "#3f6b8a", w: "#e8c15a", k: "#241a2e" };
+
+const HUMO = [     // la bocanada de humo: confunde la elasticidad con la pendiente (18 × 12)
+  "..................",
+  ".....nnnnnn.......",
+  "...nnnnnnnnnn.....",
+  "..nnnnnnnnnnnnn...",
+  ".nnnnnwwnnnnnnnn..",
+  ".nnnnwwwwnnnnnnn..",
+  "nnnnnnwwnnnnnnnnn.",
+  ".nnnnnnnnnnnnnnn..",
+  "..nnnnnnnnnnnnn...",
+  "...nnnnnnnnnn.....",
+  ".....nnnnnn.......",
+  "..................",
+];
+const P_HUMO = { n: "#b9c46a", w: "#f6faE0" };
+
+const MAQUINISTA = [ // jefe de La Oroya: arranca en el cruce sin fijarse si las dos vías se juntan ahí (20 × 17)
+  "......bbbbbbbb......",
+  ".....bbbbbbbbbb.....",
+  ".....bwwwwwwwwb.....",
+  "......ssssssss......",
+  "......skssskss......",
+  "......ssmmmmss......",
+  ".......ssssss.......",
+  "....vvvvvvvvvvv.....",
+  "...vvvwwwwwwvvv.....",
+  "..svvvwwwwwwvvvs..dd",
+  "..svvvwwwwwwvvvs..dd",
+  "...vvvwwwwwwvvv..dd.",
+  "....vvvvvvvvvvv.dd..",
+  "....vvvv...vvvv.....",
+  "....vvvv...vvvv.....",
+  "...kkkkk...kkkkk....",
+  "....................",
+];
+const P_MAQUINISTA = { b: "#2f4a7a", w: "#f2ead8", s: "#c9945c", k: "#241a2e", m: "#8a3a2e", v: "#3a4450", d: "#c2264a" };
+
 /* ---------------------------------------------------------------
    REGISTRO Y COCINADO
    --------------------------------------------------------------- */
@@ -1947,6 +2057,12 @@ const DEFINICIONES = {
   suela:        [SUELA, P_SUELA],
   murcielago:   [MURCIELAGO, P_MURCIELAGO],
   azoguero:     [AZOGUERO, P_AZOGUERO],
+  riel:         [RIEL, P_RIEL],
+  chimenea:     [CHIMENEA, P_CHIMENEA],
+  aguja:        [AGUJA, P_AGUJA],
+  vagon:        [VAGON, P_VAGON],
+  humo:         [HUMO, P_HUMO],
+  maquinista:   [MAQUINISTA, P_MAQUINISTA],
   pua:          [PUA, P_OBJ],
   bandera:      [BANDERA, P_OBJ],
   meta:         [META, P_OBJ],

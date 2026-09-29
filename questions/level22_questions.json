@@ -1,0 +1,203 @@
+{
+  "nivel": "level22",
+  "clase": "Clase 06 · Parcial — Ejercicios avanzados de equilibrio monetario",
+  "fuente": "Apuntes de la 6ta clase del Parcial — Economía General II",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "m22-q1",
+      "nivel": "reconocimiento",
+      "enunciado": "En los ejercicios de mercado de dinero hay tres ratios que se escriben en minúscula y todos se calculan sobre los DEPÓSITOS A LA VISTA.\n\n¿Qué es cada uno?",
+      "opciones": [
+        "c = C/B, q = Q/B y r = R/B, todos sobre la base monetaria",
+        "c = C/M, q = Q/M y r = R/M, todos sobre la cantidad de dinero",
+        "c = C/Dv es la preferencia por circulante, q = Q/Dv es la preferencia por cuasidinero y r = R/Dv es la tasa de encaje de M1",
+        "c es el circulante, q el cuasidinero y r las reservas, los tres en soles"
+      ],
+      "correcta": 2,
+      "explicacion": "Las mayúsculas son montos y las minúsculas son ratios. Y el denominador por defecto es Dv: eso es lo que hace que las fórmulas del multiplicador queden como quedan."
+    },
+    {
+      "id": "m22-q2",
+      "nivel": "comprension",
+      "enunciado": "La tasa de encaje de M1 se calcula como r = R/Dv, pero la de M2 se calcula distinto.\n\n¿Cómo se calcula y por qué?",
+      "opciones": [
+        "Como r̄ = R/Dt, con Dt = Dv + Q, porque en M2 sí existe el cuasidinero; a esa también se le dice TASA DE ENCAJE IMPLÍCITA",
+        "Igual que la de M1, porque el encaje siempre se aplica sobre los depósitos a la vista",
+        "Como r̄ = R/B, porque en M2 lo que importa es la base monetaria",
+        "Como r̄ = R/C, porque el cuasidinero se compara contra el circulante"
+      ],
+      "correcta": 0,
+      "explicacion": "En M1 el encaje va sobre Dv porque ahí Q no existe, o sea Dt = Dv. En M2 los depósitos totales incluyen el ahorro, así que el mismo monto de reservas se reparte entre más depósitos."
+    },
+    {
+      "id": "m22-q3",
+      "nivel": "aplicacion",
+      "enunciado": "En un banco: depósitos a la vista 100, circulante 25, cuasidinero 25 y reservas 25. Entonces c = 0,25, q = 0,25, r = 0,25 y r̄ = 25/125 = 0,20.\n\n¿Cuánto valen los multiplicadores de M1 y de M2?",
+      "opciones": [
+        "Los dos valen 2,5: el cuasidinero no cambia nada",
+        "M1 vale 2,5 y M2 vale 3, porque (0,25+1)/(0,25+0,25) = 2,5 y (0,25+1+0,25)/(0,25+0,20×1,25) = 3",
+        "M1 vale 3 y M2 vale 2,5: el de M2 siempre es menor",
+        "M1 vale 4 y M2 vale 5"
+      ],
+      "correcta": 1,
+      "explicacion": "Se comprueba directo con la definición: la base es 25 + 25 = 50, M1 = 25 + 100 = 125 y M2 = 125 + 25 = 150. Entonces 125/50 = 2,5 y 150/50 = 3."
+    },
+    {
+      "id": "m22-q4",
+      "nivel": "comprension",
+      "enunciado": "El apunte plantea el problema como una cadena de decisiones sobre cada sol.\n\n¿Cuántas decisiones hay en el modelo con M1 y cuántas en el de M2?",
+      "opciones": [
+        "Dos en los dos casos: salir del país o no, y banco o mano",
+        "Tres en M1 y dos en M2",
+        "Una sola en cada uno: depositar o no depositar",
+        "DOS en M1 (si el dinero sale del país o no, y si va al banco o queda en la mano) y TRES en M2, porque se agrega si lo depositado va a la cuenta de ahorro o al débito"
+      ],
+      "correcta": 3,
+      "explicacion": "La tercera decisión es justamente la que hace aparecer el cuasidinero, y por eso M2 tiene su propio multiplicador y su propio encaje."
+    },
+    {
+      "id": "m22-q5",
+      "nivel": "comprension",
+      "enunciado": "La demanda real de dinero se escribe como Md/P = L₀ + kY − h·i.\n\n¿Qué son «k» y «h», y con qué signo entra cada uno?",
+      "opciones": [
+        "Son PENDIENTES: «k» es la sensibilidad al producto y entra SUMANDO; «h» es la sensibilidad a la tasa de interés y entra RESTANDO",
+        "Son elasticidades, y las dos entran sumando",
+        "«k» es la sensibilidad a la tasa y «h» al producto, las dos restando",
+        "Son constantes fijas que no dependen de nada: solo mueven la curva hacia arriba o abajo"
+      ],
+      "correcta": 0,
+      "explicacion": "Son pendientes, no elasticidades: miden cuánto cambia la demanda por cada unidad de cambio. Y el signo de «h» es lo que hace que la curva de demanda vaya hacia abajo."
+    },
+    {
+      "id": "m22-q6",
+      "nivel": "comprension",
+      "enunciado": "El apunte marca dos «datos de oro» para estos ejercicios.\n\n¿Cuáles son?",
+      "opciones": [
+        "Que la base siempre es 100 y que el multiplicador siempre es 1,5",
+        "Que la demanda siempre se escribe en términos nominales y la oferta en reales",
+        "Que si no te dan el nivel de precios se asume P = 1; y que si la demanda viene con la tasa REAL hay que pasarla a NOMINAL con Fisher antes de igualar",
+        "Que la tasa de equilibrio nunca puede ser mayor a 10 y que el producto siempre se da como dato"
+      ],
+      "correcta": 2,
+      "explicacion": "Los dos aparecen casi en todo ejercicio. El de P = 1 ahorra un paso, y el de Fisher evita el error de igualar cosas que están en unidades distintas."
+    },
+    {
+      "id": "m22-q7",
+      "nivel": "comprension",
+      "enunciado": "Un alumno tiene la oferta nominal Ms = 300 y la demanda real Md/P = 900 + 0,2Y − 3 000r, con un nivel de precios P = 2. Iguala directamente 300 = 900 + 0,2Y − 3 000r.\n\n¿Qué hizo mal?",
+      "opciones": [
+        "Nada: la oferta y la demanda se igualan tal como vienen",
+        "Igualó la oferta NOMINAL con la demanda REAL. Antes tenía que dividir la oferta entre P, o sea usar 300/2 = 150",
+        "Se olvidó de multiplicar la demanda por el nivel de precios",
+        "Debió sumar el nivel de precios a los dos lados"
+      ],
+      "correcta": 1,
+      "explicacion": "Es el error que más cuesta en este tema. Los dos lados tienen que estar en la misma unidad: o los dos en términos reales o los dos en nominales."
+    },
+    {
+      "id": "m22-q8",
+      "nivel": "aplicacion",
+      "enunciado": "En una economía la función de producción es Y = 10·K·L, y hay 10 trabajadores y 5 máquinas. La demanda es Md/P = 5Y − 200i.\n\n¿Cuál es el primer paso y qué resultado da?",
+      "opciones": [
+        "Hallar el PRODUCTO: Y = 10 × 5 × 10 = 500, así que la demanda queda 2 500 − 200i",
+        "Igualar de frente oferta y demanda: el producto no hace falta",
+        "Hallar el producto como 10 + 5 + 10 = 25",
+        "Hallar la tasa de interés primero y después el producto"
+      ],
+      "correcta": 0,
+      "explicacion": "Es el paso que más se olvida: mientras la demanda tenga una Y adentro, no se puede igualar nada. Primero se calcula el producto con la función que te dan."
+    },
+    {
+      "id": "m22-q9",
+      "nivel": "aplicacion",
+      "enunciado": "Sigue el mismo caso: la base monetaria es 100 billones, el multiplicador bancario 1,5, el precio es 1 y la demanda quedó en 2 500 − 200i.\n\n¿Cuál es la tasa de interés de equilibrio?",
+      "opciones": [
+        "2 350, que es la diferencia entre la demanda y la oferta",
+        "12, porque 2 400 entre 200",
+        "150, que es la oferta real",
+        "11,75, porque la oferta real es 1,5 × 100 = 150 y de 150 = 2 500 − 200i sale i = 2 350/200"
+      ],
+      "correcta": 3,
+      "explicacion": "Control: reemplazando i = 11,75 en la demanda sale 2 500 − 2 350 = 150, que es exactamente la oferta real. Cuando los dos lados coinciden, el equilibrio está bien."
+    },
+    {
+      "id": "m22-q10",
+      "nivel": "aplicacion",
+      "enunciado": "Mismo caso (oferta real 150, demanda 2 500 − 200i, tasa de equilibrio 11,75). Primero el BCR aplica una OMA de VENTA; después te preguntan qué pasaría si no existieran los bancos privados.\n\n¿Qué ocurre en cada caso?",
+      "opciones": [
+        "La OMA de venta baja la tasa, y sin bancos privados la tasa también bajaría",
+        "La OMA de venta no afecta la tasa, y sin bancos privados la oferta subiría",
+        "La OMA de VENTA esteriliza, así que la oferta cae y la tasa SUBE; y sin bancos privados el multiplicador caería a 1, la oferta pasaría de 150 a 100 —tendría que caer en 50— y la tasa quedaría en 12",
+        "La OMA de venta sube la tasa, y sin bancos privados la oferta se mantendría en 150"
+      ],
+      "correcta": 2,
+      "explicacion": "Sin creación secundaria el multiplicador es 1 y la oferta se reduce a la pura base. Control: 100 = 2 500 − 200(12) ✓, o sea que los 50 que caen son justo los que mueven la tasa de 11,75 a 12."
+    },
+    {
+      "id": "m22-q11",
+      "nivel": "aplicacion",
+      "enunciado": "En el país Yape la función de producción es Y = K^α·L^(1−α), con rendimientos constantes a escala e IGUAL proporción de cada factor. Hay 16 trabajadores y el capital per cápita es 9.\n\n¿Cuál es el producto?",
+      "opciones": [
+        "25, sumando 16 más 9",
+        "48, porque α = 0,5, el capital total es 9 × 16 = 144, y Y = √144 × √16 = 12 × 4",
+        "144, que es el capital total",
+        "1 296, multiplicando 144 por 9"
+      ],
+      "correcta": 1,
+      "explicacion": "«Igual proporción de cada factor» es lo que fija α = 0,5. Y ojo con el capital: te dan el per cápita, así que hay que multiplicarlo por los trabajadores antes de usarlo."
+    },
+    {
+      "id": "m22-q12",
+      "nivel": "aplicacion",
+      "enunciado": "El Banco Central del país Puré tiene 7 000 millones en reservas internacionales netas y no hace crédito interno neto (CIN = 0). El 50% de la base son reservas de depósitos, y los depósitos equivalen al DOBLE del circulante.\n\n¿Cuál es la oferta nominal de dinero?",
+      "opciones": [
+        "10 500 millones: la base es 7 000, entonces R = 3 500 y C = 3 500, los depósitos son 7 000, el multiplicador es 1,5 y 1,5 × 7 000 = 10 500",
+        "7 000 millones, que es la base monetaria",
+        "3 500 millones, que es el circulante",
+        "14 000 millones, que es el doble de la base"
+      ],
+      "correcta": 0,
+      "explicacion": "La base sale de RIN + CIN. Control por definición: la cantidad de dinero es circulante más depósitos, o sea 3 500 + 7 000 = 10 500, sin usar la fórmula del multiplicador."
+    },
+    {
+      "id": "m22-q13",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 1/3. En el mismo país Puré, la elasticidad de la demanda real de dinero respecto del ingreso es 1,5 cuando el PBI real es 20 000 millones y la cantidad demandada real es 10 000 millones.\n\n¿Cuánto vale «k», la sensibilidad de la demanda al ingreso?",
+      "opciones": [
+        "1,5, porque la elasticidad y la pendiente son lo mismo",
+        "0,75, porque de E = k·(Y/Ld) se despeja k = E·(Ld/Y) = 1,5 × (10 000/20 000)",
+        "3, multiplicando la elasticidad por dos",
+        "0,5, que es el cociente entre la demanda y el PBI"
+      ],
+      "correcta": 1,
+      "explicacion": "La elasticidad es la pendiente multiplicada por Y sobre la cantidad demandada, así que para volver a la pendiente hay que dividir. Control: 0,75 × (20 000/10 000) = 1,5 ✓."
+    },
+    {
+      "id": "m22-q14",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 2/3. Con la oferta real en 10 500, k = 0,75 y h = 0,4, el equilibrio es 10 500 = 0,75Y − 0,4i.\n\n¿Cuál es la ecuación de la tasa en función del producto, y cuánto da si Y = 18 000?",
+      "opciones": [
+        "i = 0,75Y − 10 500, y con Y = 18 000 da 3 000",
+        "i = 26 250 − 1,875Y, y con Y = 18 000 da un valor negativo",
+        "i = 1,875Y − 26 250, y con Y = 18 000 da 7 500",
+        "i = 0,4Y − 10 500, y con Y = 18 000 da −3 300"
+      ],
+      "correcta": 2,
+      "explicacion": "Se despeja i dividiendo todo entre 0,4: 0,75/0,4 = 1,875 y 10 500/0,4 = 26 250. Control: 0,75(18 000) − 0,4(7 500) = 13 500 − 3 000 = 10 500 ✓."
+    },
+    {
+      "id": "m22-q15",
+      "nivel": "comprension",
+      "enunciado": "JEFE 3/3. Te dicen que la elasticidad de la demanda real de dinero respecto del ingreso es 1,5 cuando Y = 30 y la cantidad demandada real es 5.\n\n¿Cuál es la PENDIENTE, y en qué se diferencia de la elasticidad?",
+      "opciones": [
+        "La pendiente también es 1,5: son dos nombres para lo mismo",
+        "La pendiente es 9, multiplicando 1,5 por 6",
+        "La pendiente es 6, que es 30 entre 5",
+        "La pendiente es 0,25, porque k = E·(Ld/Y) = 1,5 × (5/30). La pendiente es cuánto cambia la demanda por cada unidad de Y; la elasticidad es esa pendiente multiplicada por Y sobre la cantidad demandada"
+      ],
+      "correcta": 3,
+      "explicacion": "Confundirlas es el error que encarna el bicho del humo. Control: 0,25 × (30/5) = 1,5, que es la elasticidad de la que partimos ✓."
+    }
+  ]
+}

@@ -2194,6 +2194,142 @@ export const TEMAS = {
       }
     },
   },
+  /* =========================================================
+     LA OROYA — el nudo de caminos del centro, a 3 700 metros,
+     donde se cruzan las vías que van a Lima, a Huancayo, a Tarma
+     y a Cerro de Pasco. Laderas peladas, el Mantaro abajo, el
+     ferrocarril más alto del mundo y la vieja fundición con sus
+     chimeneas. Acá todo se encuentra en un punto exacto.
+     OJO: el fondo lleva los rieles TENDIDOS en la vía y las
+     chimeneas PEGADAS a la fundición; nada de rieles sueltos,
+     vagones, agujas ni bocanadas de humo aparte — esos son los
+     bichos. Y la ladera baja sin cortes hasta la calle.
+     ========================================================= */
+  oroya: {
+    nombre: "La Oroya",
+    cielo: [[0, "#1d5c96"], [0.38, "#6892b4"], [0.74, "#adb4b2"], [1, "#c8c2b0"]],
+    suelo: { cara: "#7e7668", borde: "#9c9384", tierra: "#474034", plataforma: "#5a4030", plataformaBorde: "#9aa4ae" },
+    acento: "#c2264a",
+
+    bichos: ["riel", "chimenea", "aguja", "vagon", "humo"],
+    nombresBichos: [
+      "El Riel sin Producto",
+      "La Chimenea Nominal",
+      "La Aguja sin Fisher",
+      "El Vagón de los Dos Multiplicadores",
+      "El Humo de la Elasticidad",
+    ],
+    andares: ["patrulla", "guardia", "veloz", "salta", "vuela"],
+    jefe: "maquinista",
+    nombreJefe: "El Maquinista del Nudo",
+
+    fondo(ctx, cam, t) {
+      // el sol de la sierra central, pálido detrás del humo
+      ctx.fillStyle = "rgba(246,246,236,.18)";
+      ctx.beginPath(); ctx.arc(208, 56, 52, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = "rgba(252,252,244,.92)";
+      ctx.beginPath(); ctx.arc(208, 56, 22, 0, Math.PI * 2); ctx.fill();
+
+      // LAS LADERAS PELADAS que encajonan el valle, dos capas
+      repetir(ctx, cam, 500, 0.09, (x, i) => {
+        const bx = x + 40, base = 258, alto = 112 + ((i * 41) % 34);
+        ctx.fillStyle = "#6a6459";
+        ctx.beginPath();
+        ctx.moveTo(bx - 170, base);
+        ctx.lineTo(bx - 40, base - alto);
+        ctx.lineTo(bx + 40, base - alto + 28);
+        ctx.lineTo(bx + 180, base);
+        ctx.closePath(); ctx.fill();
+      });
+      repetir(ctx, cam, 340, 0.18, (x, i) => {
+        const bx = x + 30, base = 278, alto = 58 + ((i * 29) % 24);
+        ctx.fillStyle = "#7b7468";
+        ctx.beginPath();
+        ctx.moveTo(bx - 120, base);
+        ctx.lineTo(bx - 10, base - alto);
+        ctx.lineTo(bx + 130, base);
+        ctx.closePath(); ctx.fill();
+      });
+
+      // la ladera baja SIN CORTES hasta la calle: si queda un hueco se asoma el cielo
+      ctx.fillStyle = "#7b7468";
+      ctx.fillRect(0, 256, CFG.ANCHO_VISTA, 34);
+      ctx.fillStyle = "#746d60";
+      ctx.fillRect(0, 290, CFG.ANCHO_VISTA, 34);
+      ctx.fillStyle = "#6e6759";
+      ctx.fillRect(0, 324, CFG.ANCHO_VISTA, 60);
+
+      // LA FUNDICIÓN con sus chimeneas pegadas al cuerpo
+      repetir(ctx, cam, 620, 0.28, (x, i) => {
+        const bx = x + 60, base = 318;
+        ctx.fillStyle = "#8a7f72";
+        ctx.fillRect(bx, base - 44, 190, 44);
+        ctx.fillStyle = "#9a8f80";
+        ctx.fillRect(bx, base - 44, 190, 5);
+        ctx.fillStyle = "rgba(40,36,30,.36)";
+        for (let k = 0; k < 6; k++) ctx.fillRect(bx + 12 + k * 30, base - 32, 14, 20);
+        for (let k = 0; k < 2; k++) {                            // las chimeneas, pegadas
+          const cx = bx + 34 + k * 108;
+          ctx.fillStyle = "#7c7165";
+          ctx.fillRect(cx, base - 92, 16, 48);
+          ctx.fillStyle = "#94897c";
+          ctx.fillRect(cx - 3, base - 96, 22, 5);
+          ctx.fillStyle = "rgba(150,146,150,.30)";               // la fumarola
+          ctx.beginPath();
+          ctx.ellipse(cx + 8, base - 110 - Math.sin(t / 34 + k) * 3, 20, 10, 0, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      });
+
+      // EL RÍO MANTARO abajo, angosto y gris
+      ctx.fillStyle = "#5e6a6b";
+      ctx.fillRect(0, 330, CFG.ANCHO_VISTA, 14);
+      ctx.fillStyle = "#6e7c7c";
+      ctx.fillRect(0, 330, CFG.ANCHO_VISTA, 4);
+      for (let i = 0; i < 26; i++) {
+        const x = (i * 63 - (cam * 0.22)) % 900 - 40;
+        ctx.fillStyle = "rgba(210,220,216,.24)";
+        ctx.fillRect(x, 336 + ((i * 17) % 6), 13, 2);
+      }
+
+      // LAS CASITAS TREPADAS en la ladera, apretadas una contra otra
+      repetir(ctx, cam, 158, 0.50, (x, i) => {
+        const bx = x + 14, base = 366 - ((i * 13) % 12);
+        const alto = 26 + ((i * 19) % 12);
+        ctx.fillStyle = ["#9a7b5c", "#a98a68", "#8d7053"][i % 3];
+        ctx.fillRect(bx, base - alto, 62, alto);
+        ctx.fillStyle = "#8a9098";
+        ctx.beginPath();
+        ctx.moveTo(bx - 5, base - alto); ctx.lineTo(bx + 31, base - alto - 11); ctx.lineTo(bx + 67, base - alto);
+        ctx.closePath(); ctx.fill();
+        ctx.fillStyle = "rgba(50,42,32,.40)";
+        ctx.fillRect(bx + 24, base - 15, 14, 15);
+      });
+
+      // LA VÍA TENDIDA al borde del camino, con sus durmientes
+      ctx.fillStyle = "#6f6858";
+      ctx.fillRect(0, 372, CFG.ANCHO_VISTA, 12);
+      repetir(ctx, cam, 22, 0.88, (x) => {
+        ctx.fillStyle = "#5a4a34";
+        ctx.fillRect(x, 374, 12, 7);
+      });
+      ctx.fillStyle = "#9aa4ae";
+      ctx.fillRect(0, 373, CFG.ANCHO_VISTA, 2);
+      ctx.fillRect(0, 380, CFG.ANCHO_VISTA, 2);
+      ctx.fillStyle = "#7a7364";
+      ctx.fillRect(0, 382, CFG.ANCHO_VISTA, 4);
+    },
+
+    clima(ctx, t) {
+      // el aire frío de la altura, con el polvillo de la fundición
+      for (let i = 0; i < 24; i++) {
+        const x = (i * 129 - t * 1.4) % 880 - 20;
+        const y = 100 + ((i * 61) % 240) + Math.sin(t / 25 + i) * 8;
+        ctx.fillStyle = `rgba(232,236,234,${(0.06 + 0.11 * Math.abs(Math.sin(t / 29 + i))).toFixed(2)})`;
+        ctx.fillRect(x, y, 6, 3);
+      }
+    },
+  },
 };
 
 /** Pinta el cielo del tema (degradado vertical). */

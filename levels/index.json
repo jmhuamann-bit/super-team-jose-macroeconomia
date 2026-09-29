@@ -295,6 +295,20 @@
       "abierto": true,
       "mapa": "levels/level21.json",
       "preguntas": "questions/level21_questions.json"
+    },
+    {
+      "id": "level22",
+      "clase": "Clase 06",
+      "distrito": "La Oroya",
+      "titulo": "El nudo donde la oferta encuentra a la demanda",
+      "icono": "🛤",
+      "seccion": "Parcial",
+      "seccionNota": "Repaso de PBI, inflación y fondos prestables, y mercado del dinero",
+      "retos": 13,
+      "duracion": "5 min",
+      "abierto": true,
+      "mapa": "levels/level22.json",
+      "preguntas": "questions/level22_questions.json"
     }
   ]
 }

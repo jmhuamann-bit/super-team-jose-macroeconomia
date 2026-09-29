@@ -134,6 +134,14 @@ const TEMAS_MUSICA = {
               "E5",2,"D5",1,"C5",1,"A4",2,"G4",2,"A4",4],
     bajo:    ["A2",4,"A2",4,"F2",4,"C3",4,"G2",4,"D3",4,"E3",4,"A2",4],
   },
+  oroya: { // La Oroya: marcha ferroviaria de sierra, con paso firme y repetido
+    tempo: 0.13, onda: "square",
+    melodia: ["E4",1,"E4",1,"G4",2,"B4",1,"G4",1,"E4",2,
+              "A4",1,"A4",1,"C5",2,"E5",1,"C5",1,"A4",2,
+              "B4",1,"D5",1,"E5",2,"D5",1,"B4",1,"G4",2,
+              "E4",1,"G4",1,"B4",2,"E4",4],
+    bajo:    ["E3",4,"B2",4,"A2",4,"E3",4,"G2",4,"D3",4,"B2",4,"E3",4],
+  },
   oropesa: { // Huancavelica: huayno de puna, grave y espacioso, con arpa de fondo
     tempo: 0.18, onda: "triangle",
     melodia: ["D4",2,"F4",2,"A4",4,"G4",2,"F4",2,"D4",4,

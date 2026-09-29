@@ -237,6 +237,12 @@ const FICHAS = [
   { sprite: "suela", nombre: "La Suela sin Gastar", texto: "Confunde el costo de suela de zapato con el costo de menú: uno es del que va al banco, el otro del que cambia los precios." },
   { sprite: "murcielago", nombre: "El Murciélago del Depósito", texto: "Cuelga su plata en el socavón y jura que con inflación alta el dinero igual guarda su valor." },
   { sprite: "azoguero", nombre: "El Azoguero de Santa Bárbara", texto: "Jefe de Huancavelica: sigue creyendo que el billete vale por el metal que queda en el cerro." },
+  { sprite: "riel", nombre: "El Riel sin Producto", texto: "La Oroya: se lanza a la demanda de dinero sin haber calculado antes el Y con la función de producción." },
+  { sprite: "chimenea", nombre: "La Chimenea Nominal", texto: "Iguala la oferta NOMINAL con la demanda REAL: se olvida de dividir entre el nivel de precios." },
+  { sprite: "aguja", nombre: "La Aguja sin Fisher", texto: "La demanda le viene con la tasa REAL y él la iguala igual, sin pasarla a nominal." },
+  { sprite: "vagon", nombre: "El Vagón de los Dos Multiplicadores", texto: "Mezcla el multiplicador de M1 con el de M2, y de paso el encaje sobre depósitos con el implícito." },
+  { sprite: "humo", nombre: "El Humo de la Elasticidad", texto: "Canta la pendiente como si fuera la elasticidad, sin multiplicarla por Y sobre la cantidad demandada." },
+  { sprite: "maquinista", nombre: "El Maquinista del Nudo", texto: "Jefe de La Oroya: llega al cruce y arranca sin fijarse si las dos vías se juntan justo ahí." },
 ];
 
 export function galeriaPersonajes(contenedor) {
