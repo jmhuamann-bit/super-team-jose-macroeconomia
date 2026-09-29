@@ -1802,6 +1802,112 @@ const CURANDERO = [ // jefe de Chiclayo: te adivina la tasa a punta de hierbas e
 ];
 const P_CURANDERO = { r: "#b0202c", s: "#c9945c", k: "#241a2e", m: "#8a3a2e", p: "#5a3f6b", h: "#4f8f3a", y: "#e8b93c" };
 
+/* =========================================================
+   HUANCAVELICA — la mina de Santa Bárbara y la Villa Rica de
+   Oropesa. El fondo es roca gris, adobe y socavón, así que acá
+   todo va muy saturado o muy claro.
+   ========================================================= */
+const VALE = [     // el vale de la mina: cree que el billete de hoy vale por el metal que lo respalda (18 × 11)
+  "..................",
+  ".pppppppppppppppp.",
+  ".pwwwwwwwwwwwwwwp.",
+  ".pwppppppppppppwp.",
+  ".pwp.yyy..yyy.pwp.",
+  ".pwp.y.y..y.y.pwp.",
+  ".pwp.yyy..yyy.pwp.",
+  ".pwppppppppppppwp.",
+  ".pwwwwwwwwwwwwwwp.",
+  ".pppppppppppppppp.",
+  "..................",
+];
+const P_VALE = { p: "#8a5a2e", w: "#f4e8cc", y: "#c2264a" };
+
+const AZOGUE = [   // el azogue, el metal más líquido de todos: ordena mal la escala de liquidez (16 × 12)
+  "................",
+  "....pppppppp....",
+  "...pmmmmmmmmp...",
+  "..pmmmmmmmmmmp..",
+  "..pmmwwmmwwmmp..",
+  "..pmmmmmmmmmmp..",
+  "..pmmmmmmmmmmp..",
+  "...pmmmmmmmmp...",
+  "....pppppppp....",
+  ".....mmmmmm.....",
+  "......mmmm......",
+  "................",
+];
+const P_AZOGUE = { p: "#4f5560", m: "#c8d4dc", w: "#f6fbff" };
+
+const SOCAVON = [  // la boca del socavón: cree que las funciones se pierden de la primera a la última (16 × 14)
+  "................",
+  "..rrrrrrrrrrrr..",
+  ".rrrrrrrrrrrrrr.",
+  ".rrrkkkkkkkkrrr.",
+  ".rrkkkkkkkkkkrr.",
+  ".rkkkkkkkkkkkkr.",
+  ".rkkkyykkyykkkr.",
+  ".rkkkkkkkkkkkkr.",
+  ".rkkkkkkkkkkkkr.",
+  ".rkkkkkkkkkkkkr.",
+  ".rkkkkkkkkkkkkr.",
+  ".rkkkkkkkkkkkkr.",
+  ".rrrrrrrrrrrrrr.",
+  "................",
+];
+const P_SOCAVON = { r: "#7a6a58", k: "#241e28", y: "#e8b93c" };
+
+const SUELA = [    // la suela gastada: confunde el costo de suela de zapato con el costo de menú (18 × 12)
+  "..................",
+  ".....cccccccc.....",
+  "....cccccccccc....",
+  "...ccccccccccccc..",
+  "..ccccccccccccccc.",
+  "..ccccccccccccccc.",
+  ".sssssssssssssssss",
+  ".sswwsswwsswwsswws",
+  ".sssssssssssssssss",
+  "..ssssssssssssss..",
+  "..................",
+  "..................",
+];
+const P_SUELA = { c: "#5a3f2e", s: "#d9a03c", w: "#3b2a1a" };
+
+const MURCIELAGO = [ // el murciélago del socavón: jura que el dinero guarda su valor igual con inflación (22 × 11)
+  "......................",
+  "..kk..............kk..",
+  ".kkkk............kkkk.",
+  "kkkkkkk........kkkkkkk",
+  "kkkkkkkkk....kkkkkkkkk",
+  ".kkkkkkkkkkkkkkkkkkkk.",
+  "..kkkkkkkkrrkkkkkkkkk.",
+  "....kkkkkkrrkkkkkkk...",
+  ".......kkkwwkkkk......",
+  "..........kk..........",
+  "......................",
+];
+const P_MURCIELAGO = { k: "#2e2438", r: "#c2264a", w: "#f4e8cc" };
+
+const AZOGUERO = [ // jefe de Huancavelica: sigue creyendo que el billete vale por el metal del cerro (20 × 17)
+  "......nnnnnnnn......",
+  ".....nnnnnnnnnn.....",
+  "......ssssssss......",
+  "......skssskss......",
+  "......ssmmmmss......",
+  ".......ssssss.......",
+  "....ppppppppppp.....",
+  "...pppwwwwwwppp.....",
+  "..sppwwwwwwwwpps..yy",
+  "..sppwwwwwwwwpps..yy",
+  "...pppwwwwwwppp..yy.",
+  "....ppppppppppp.yy..",
+  "....yyyyyyyyyyy.....",
+  "....pppp...pppp.....",
+  "....pppp...pppp.....",
+  "...kkkkk...kkkkk....",
+  "....................",
+];
+const P_AZOGUERO = { n: "#3b2a1a", s: "#c9945c", k: "#241a2e", m: "#8a3a2e", p: "#5a4a7a", w: "#e8e2d0", y: "#e8b93c" };
+
 /* ---------------------------------------------------------------
    REGISTRO Y COCINADO
    --------------------------------------------------------------- */
@@ -1835,6 +1941,12 @@ const DEFINICIONES = {
   tumi:         [TUMI, P_TUMI],
   gallinazo:    [GALLINAZO, P_GALLINAZO],
   curandero:    [CURANDERO, P_CURANDERO],
+  vale:         [VALE, P_VALE],
+  azogue:       [AZOGUE, P_AZOGUE],
+  socavon:      [SOCAVON, P_SOCAVON],
+  suela:        [SUELA, P_SUELA],
+  murcielago:   [MURCIELAGO, P_MURCIELAGO],
+  azoguero:     [AZOGUERO, P_AZOGUERO],
   pua:          [PUA, P_OBJ],
   bandera:      [BANDERA, P_OBJ],
   meta:         [META, P_OBJ],

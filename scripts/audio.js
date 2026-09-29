@@ -134,6 +134,13 @@ const TEMAS_MUSICA = {
               "E5",2,"D5",1,"C5",1,"A4",2,"G4",2,"A4",4],
     bajo:    ["A2",4,"A2",4,"F2",4,"C3",4,"G2",4,"D3",4,"E3",4,"A2",4],
   },
+  oropesa: { // Huancavelica: huayno de puna, grave y espacioso, con arpa de fondo
+    tempo: 0.18, onda: "triangle",
+    melodia: ["D4",2,"F4",2,"A4",4,"G4",2,"F4",2,"D4",4,
+              "F4",2,"A4",2,"C5",4,"A#4",2,"A4",2,"F4",4,
+              "A4",2,"C5",2,"D5",4,"C5",2,"A4",2,"D4",4],
+    bajo:    ["D3",8,"A2",8,"F2",8,"D3",8,"G2",8,"C3",8,"A2",8,"D3",8],
+  },
   modelo: { // Chiclayo: tondero norteño, rápido y pícaro, con cajón y guitarra
     tempo: 0.11, onda: "square",
     melodia: ["A4",1,"C5",1,"E5",2,"D5",1,"C5",1,"A4",2,

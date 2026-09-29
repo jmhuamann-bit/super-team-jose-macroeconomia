@@ -231,6 +231,12 @@ const FICHAS = [
   { sprite: "tumi", nombre: "El Tumi que Corta al Revés", texto: "Pasa la ecuación cuantitativa a variaciones con los signos cambiados y termina restando lo que había que sumar." },
   { sprite: "gallinazo", nombre: "El Gallinazo que Confunde el Vuelo", texto: "Confunde moverse a lo largo de la curva de demanda con desplazarla entera." },
   { sprite: "curandero", nombre: "El Curandero de la Sección Brujos", texto: "Jefe de Chiclayo: te adivina la tasa de interés a punta de hierbas, en vez de igualar la oferta con la demanda." },
+  { sprite: "vale", nombre: "El Vale de la Mina", texto: "Huancavelica: cree que el billete de hoy vale por el metal que lo respalda, cuando lo que le da valor es la ley." },
+  { sprite: "azogue", nombre: "El Azogue Mal Ordenado", texto: "Es el metal más líquido que hay y aun así ordena al revés la escala de liquidez del dinero." },
+  { sprite: "socavon", nombre: "El Socavón al Revés", texto: "Jura que las funciones del dinero se pierden de la primera a la última, cuando se caen de la última a la primera." },
+  { sprite: "suela", nombre: "La Suela sin Gastar", texto: "Confunde el costo de suela de zapato con el costo de menú: uno es del que va al banco, el otro del que cambia los precios." },
+  { sprite: "murcielago", nombre: "El Murciélago del Depósito", texto: "Cuelga su plata en el socavón y jura que con inflación alta el dinero igual guarda su valor." },
+  { sprite: "azoguero", nombre: "El Azoguero de Santa Bárbara", texto: "Jefe de Huancavelica: sigue creyendo que el billete vale por el metal que queda en el cerro." },
 ];
 
 export function galeriaPersonajes(contenedor) {

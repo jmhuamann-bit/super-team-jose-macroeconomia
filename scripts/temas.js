@@ -2052,6 +2052,148 @@ export const TEMAS = {
       }
     },
   },
+  /* =========================================================
+     HUANCAVELICA — la Villa Rica de Oropesa a 3 700 metros, con
+     el cerro de Santa Bárbara encima, las bocaminas tapiadas, el
+     adobe de teja y la iglesia colonial. De ese cerro salió el
+     azogue que convirtió la plata en moneda durante tres siglos.
+     Hoy el mismo pueblo usa billetes que no valen nada por sí
+     mismos: el cerro ya no respalda el billete, la ley sí.
+     OJO: el fondo lleva bocaminas TAPIADAS y pequeñas, nunca una
+     boca de socavón grande, que ese es un bicho. Y nada de vales,
+     suelas ni murciélagos sueltos.
+     ========================================================= */
+  oropesa: {
+    nombre: "Huancavelica",
+    cielo: [[0, "#1f5f9e"], [0.38, "#6b9cc4"], [0.74, "#b4bcc0"], [1, "#cfc8b8"]],
+    suelo: { cara: "#8a7f6e", borde: "#a89c88", tierra: "#4e463a", plataforma: "#6b4a5e", plataformaBorde: "#e8b93c" },
+    acento: "#c2264a",
+
+    bichos: ["vale", "azogue", "socavon", "suela", "murcielago"],
+    nombresBichos: [
+      "El Vale de la Mina",
+      "El Azogue Mal Ordenado",
+      "El Socavón al Revés",
+      "La Suela sin Gastar",
+      "El Murciélago del Depósito",
+    ],
+    andares: ["patrulla", "veloz", "guardia", "salta", "vuela"],
+    jefe: "azoguero",
+    nombreJefe: "El Azoguero de Santa Bárbara",
+
+    fondo(ctx, cam, t) {
+      // el sol de la altura, chico y pálido
+      ctx.fillStyle = "rgba(248,250,244,.18)";
+      ctx.beginPath(); ctx.arc(640, 52, 50, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = "rgba(253,254,248,.94)";
+      ctx.beginPath(); ctx.arc(640, 52, 21, 0, Math.PI * 2); ctx.fill();
+
+      // EL CERRO DE SANTA BÁRBARA, pelado y con vetas
+      repetir(ctx, cam, 520, 0.09, (x, i) => {
+        const bx = x + 40, base = 262, alto = 104 + ((i * 43) % 36);
+        ctx.fillStyle = "#6e6558";
+        ctx.beginPath();
+        ctx.moveTo(bx - 170, base);
+        ctx.lineTo(bx - 30, base - alto);
+        ctx.lineTo(bx + 50, base - alto + 24);
+        ctx.lineTo(bx + 190, base);
+        ctx.closePath(); ctx.fill();
+        ctx.fillStyle = "rgba(200,190,160,.22)";                 // las vetas del cerro
+        ctx.fillRect(bx - 60, base - alto + 44, 120, 4);
+        ctx.fillRect(bx - 20, base - alto + 66, 130, 3);
+      });
+      repetir(ctx, cam, 360, 0.18, (x, i) => {
+        const bx = x + 30, base = 282, alto = 52 + ((i * 29) % 24);
+        ctx.fillStyle = "#7f7768";
+        ctx.beginPath();
+        ctx.moveTo(bx - 120, base);
+        ctx.lineTo(bx - 10, base - alto);
+        ctx.lineTo(bx + 130, base);
+        ctx.closePath(); ctx.fill();
+      });
+
+      // LA LADERA baja SIN CORTES hasta la calle: si queda un hueco se asoma el cielo
+      ctx.fillStyle = "#877d6b";
+      ctx.fillRect(0, 260, CFG.ANCHO_VISTA, 48);   // arranca en la base de los cerros lejanos
+      ctx.fillStyle = "#7f7563";
+      ctx.fillRect(0, 308, CFG.ANCHO_VISTA, 30);
+      ctx.fillStyle = "#786e5c";
+      ctx.fillRect(0, 338, CFG.ANCHO_VISTA, 46);
+
+      // LAS BOCAMINAS TAPIADAS de la ladera, chiquitas y a media altura
+      repetir(ctx, cam, 196, 0.30, (x, i) => {
+        const bx = x + 34, base = 300 + ((i * 17) % 18);
+        ctx.fillStyle = "#5c5348";
+        ctx.beginPath();
+        ctx.moveTo(bx, base);
+        ctx.lineTo(bx, base - 10);
+        ctx.quadraticCurveTo(bx + 8, base - 20, bx + 16, base - 10);
+        ctx.lineTo(bx + 16, base);
+        ctx.closePath(); ctx.fill();
+        ctx.fillStyle = "#9a8f7c";                               // el tapiado de piedra
+        ctx.fillRect(bx + 2, base - 11, 12, 11);
+        ctx.fillStyle = "#6b6154";                               // el desmonte que baja
+        ctx.beginPath();
+        ctx.moveTo(bx - 8, base); ctx.lineTo(bx + 24, base); ctx.lineTo(bx + 8, base + 14);
+        ctx.closePath(); ctx.fill();
+      });
+
+      // LA IGLESIA COLONIAL Y LAS CASAS DE TEJA
+      repetir(ctx, cam, 272, 0.48, (x, i) => {
+        const bx = x + 20, base = 358;
+        if (i % 3 === 0) {
+          ctx.fillStyle = "#e4dac4";                             // la iglesia
+          ctx.fillRect(bx, base - 58, 104, 58);
+          ctx.fillRect(bx + 8, base - 84, 26, 26);
+          ctx.fillStyle = "#a8462c";
+          ctx.beginPath();
+          ctx.moveTo(bx + 3, base - 84); ctx.lineTo(bx + 21, base - 98); ctx.lineTo(bx + 39, base - 84);
+          ctx.closePath(); ctx.fill();
+          ctx.fillRect(bx - 5, base - 65, 114, 8);
+          ctx.fillStyle = "rgba(70,58,42,.40)";
+          ctx.fillRect(bx + 44, base - 30, 20, 30);
+          ctx.fillRect(bx + 16, base - 76, 10, 12);
+        } else {
+          ctx.fillStyle = ["#b09571", "#a68a66", "#bb9f79"][i % 3];
+          const alto = 34 + ((i * 23) % 12);
+          ctx.fillRect(bx, base - alto, 86, alto);
+          ctx.fillStyle = "#a8462c";
+          ctx.beginPath();
+          ctx.moveTo(bx - 7, base - alto); ctx.lineTo(bx + 43, base - alto - 16); ctx.lineTo(bx + 93, base - alto);
+          ctx.closePath(); ctx.fill();
+          ctx.fillStyle = "rgba(60,48,34,.38)";
+          ctx.fillRect(bx + 34, base - 18, 16, 18);
+        }
+      });
+
+      // EL ICHU y las piedras sueltas de la orilla del camino
+      repetir(ctx, cam, 104, 0.76, (x, i) => {
+        const bx = x + 12, base = 382;
+        if (i % 2 === 0) {
+          ctx.fillStyle = ["#9a9068", "#8a8158", "#a69a72"][i % 3];
+          for (let k = 0; k < 5; k++) {
+            ctx.fillRect(bx + k * 4, base - 12 - ((i + k) % 3) * 3, 2, 12 + ((i + k) % 3) * 3);
+          }
+        } else {
+          ctx.fillStyle = ["#6e6558", "#7d7466", "#5f574b"][i % 3];
+          ctx.fillRect(bx, base - 7, 14, 7);
+          ctx.fillRect(bx + 3, base - 10, 7, 3);
+        }
+      });
+      ctx.fillStyle = "#86795f";
+      ctx.fillRect(0, 382, CFG.ANCHO_VISTA, 4);
+    },
+
+    clima(ctx, t) {
+      // el aire finito de la puna, que brilla a contraluz
+      for (let i = 0; i < 22; i++) {
+        const x = (i * 139 - t * 1.2) % 880 - 20;
+        const y = 100 + ((i * 59) % 240) + Math.sin(t / 27 + i) * 7;
+        ctx.fillStyle = `rgba(244,250,255,${(0.06 + 0.11 * Math.abs(Math.sin(t / 30 + i))).toFixed(2)})`;
+        ctx.fillRect(x, y, 5, 3);
+      }
+    },
+  },
 };
 
 /** Pinta el cielo del tema (degradado vertical). */

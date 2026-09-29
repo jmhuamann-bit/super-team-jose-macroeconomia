@@ -1,0 +1,203 @@
+{
+  "nivel": "level18",
+  "clase": "Clase 02 · Parcial — Funciones del dinero",
+  "fuente": "Apuntes de la 2da clase del Parcial (1era parte) — Economía General II",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "m18-q1",
+      "nivel": "reconocimiento",
+      "enunciado": "Un billete de 20 soles, como papel, vale unos céntimos.\n\n¿Qué tipo de dinero es y de dónde saca su valor?",
+      "opciones": [
+        "Dinero mercancía, y vale por el material con el que está hecho",
+        "Dinero FIDUCIARIO: no vale nada por sí mismo y es la autoridad la que le da valor por ley — un acto de fe",
+        "Dinero papel, porque está respaldado en oro guardado por el Banco Central",
+        "No es dinero: para serlo tendría que valer por sí mismo"
+      ],
+      "correcta": 1,
+      "explicacion": "El fiduciario es el de hoy. Su valor no está en el papel ni en un metal guardado: está en que la ley lo respalda y en que todos aceptan que sirve."
+    },
+    {
+      "id": "m18-q2",
+      "nivel": "comprension",
+      "enunciado": "El apunte compara dos tipos de dinero que suenan parecido.\n\n¿Cuál es la diferencia entre el DINERO PAPEL y el DINERO FIDUCIARIO?",
+      "opciones": [
+        "El dinero PAPEL tiene valor por sí mismo, porque hay un respaldo independiente detrás (el oro); el FIDUCIARIO no tiene valor propio y se lo otorga la ley",
+        "Son exactamente lo mismo, solo cambia el nombre según la época",
+        "El papel lo emite un banco privado y el fiduciario el Banco Central",
+        "El fiduciario tiene respaldo en oro y el papel no"
+      ],
+      "correcta": 0,
+      "explicacion": "El dinero papel nació porque nadie podía andar con diez kilos de oro: alguien de confianza lo guardaba y entregaba un billete a cambio. Ese billete sí representaba algo."
+    },
+    {
+      "id": "m18-q3",
+      "nivel": "reconocimiento",
+      "enunciado": "La frase del curso para acordarse es: EL DINERO ¡ME HUNDE! → ME · UN · DE.\n\n¿Cuáles son las tres funciones del dinero?",
+      "opciones": [
+        "Medio de pago, unidad de medida y depósito bancario",
+        "Mercancía, unidad legal y depósito de reserva",
+        "MEdio de cambio, UNidad de cuenta y DEpósito de valor",
+        "Medio de cambio, unidad de cuenta y derecho de emisión"
+      ],
+      "correcta": 2,
+      "explicacion": "Las tres sílabas de la frase son las tres funciones, y en ese orden. El orden importa, porque es el mismo en el que se pierden y se recuperan."
+    },
+    {
+      "id": "m18-q4",
+      "nivel": "comprension",
+      "enunciado": "Primera función: MEDIO DE CAMBIO.\n\n¿Qué se necesita para que algo cumpla esa función?",
+      "opciones": [
+        "Que esté respaldado en oro",
+        "Que se pueda subdividir en partes pequeñas",
+        "Que mantenga su valor a lo largo del tiempo",
+        "Que sea ACEPTADO por toda la comunidad"
+      ],
+      "correcta": 3,
+      "explicacion": "Es la función más básica y la que aguanta más tiempo: mientras todos lo sigan recibiendo a cambio de cosas, algo sigue siendo medio de cambio aunque pierda las otras dos."
+    },
+    {
+      "id": "m18-q5",
+      "nivel": "comprension",
+      "enunciado": "Segunda función: UNIDAD DE CUENTA.\n\n¿Qué dos cosas permite hacer?",
+      "opciones": [
+        "ETIQUETAR con dinero el precio de todos los productos, y SUBDIVIDIRLO para expresar cualquier valor",
+        "Guardar riqueza y transferirla al futuro",
+        "Comprar en cualquier tienda del país",
+        "Respaldar la emisión del Banco Central"
+      ],
+      "correcta": 0,
+      "explicacion": "Gracias a esta función todo se puede comparar en la misma vara. Y la subdivisión importa: sin céntimos no podrías poner el precio de las cosas baratas."
+    },
+    {
+      "id": "m18-q6",
+      "nivel": "comprension",
+      "enunciado": "Tercera función: DEPÓSITO DE VALOR. El apunte le pone una letra chica importante.\n\n¿Cuál es?",
+      "opciones": [
+        "Que solo vale para los billetes, no para los depósitos",
+        "Que solo funciona si el dinero es convertible en oro",
+        "Que permite transferir tu poder de compra hacia el futuro, pero EN UN CONTEXTO SIN INFLACIÓN",
+        "Que solo se cumple en el corto plazo, nunca a más de un año"
+      ],
+      "correcta": 2,
+      "explicacion": "Ahorrar sirve mientras lo ahorrado siga comprando lo mismo mañana. Con inflación alta guardas billetes y compras menos: la función se rompe."
+    },
+    {
+      "id": "m18-q7",
+      "nivel": "comprension",
+      "enunciado": "Pregunta clave del tema: cuando llega una inflación acelerada, el dinero va perdiendo sus funciones.\n\n¿En qué orden las pierde?",
+      "opciones": [
+        "Primero el medio de cambio, después la unidad de cuenta y al final el depósito de valor",
+        "DE LA ÚLTIMA A LA PRIMERA: primero el depósito de valor, después la unidad de cuenta y al final el medio de cambio",
+        "Todas al mismo tiempo, en cuanto la inflación pasa de dos dígitos",
+        "Solo pierde el medio de cambio; las otras dos no dependen de la inflación"
+      ],
+      "correcta": 1,
+      "explicacion": "Con inflación dejas de ahorrar en esa moneda casi de inmediato, pero la seguís usando para comprar el pan del día. Por eso el medio de cambio es el que más aguanta."
+    },
+    {
+      "id": "m18-q8",
+      "nivel": "aplicacion",
+      "enunciado": "En los ochenta el Perú vivió inflación acelerada y eso disparó la dolarización: para 1999-2000 más del 82% de los créditos estaba en moneda extranjera.\n\n¿Cómo se explica esa relación con las funciones del dinero?",
+      "opciones": [
+        "Porque el dólar era más fácil de subdividir que el sol",
+        "Porque el Banco Central obligó a usar dólares",
+        "Porque el dólar era aceptado por más comercios que el sol",
+        "Porque el sol fue PERDIENDO funciones empezando por el DEPÓSITO DE VALOR, y el dólar fue tomando esas funciones en el mismo orden"
+      ],
+      "correcta": 3,
+      "explicacion": "La gente no dejó de comprar con soles de un día para otro: lo primero que hizo fue dejar de AHORRAR en soles. La dolarización avanza función por función."
+    },
+    {
+      "id": "m18-q9",
+      "nivel": "aplicacion",
+      "enunciado": "Una noticia dice que los clientes de los bancos vendieron dólares para tener más soles e invertir en instrumentos en moneda local.\n\n¿Qué le pasa al sol?",
+      "opciones": [
+        "RECUPERA funciones, y empieza justamente por la de depósito de valor: la gente vuelve a guardar su riqueza en soles",
+        "Pierde la función de medio de cambio, porque hay menos dólares circulando",
+        "No le pasa nada: las funciones del dinero no cambian con el tiempo",
+        "Recupera funciones, pero empezando por la de medio de cambio"
+      ],
+      "correcta": 0,
+      "explicacion": "Es la solarización, el camino de vuelta. Y se recorre en el mismo orden en que se perdió: de la última a la primera, o sea el depósito de valor primero."
+    },
+    {
+      "id": "m18-q10",
+      "nivel": "comprension",
+      "enunciado": "Uno de los costos de la inflación es el COSTO DE SUELA DE ZAPATO.\n\n¿En qué consiste?",
+      "opciones": [
+        "En que los zapatos suben de precio más rápido que el resto",
+        "En que las empresas tienen que rehacer sus listas de precios",
+        "En que, como el dinero pierde poder adquisitivo, tienes que ir MÁS VECES al banco para seguir comprando lo mismo: es tiempo perdido",
+        "En que la gente deja de comprar zapatos para ahorrar"
+      ],
+      "correcta": 2,
+      "explicacion": "El nombre viene de eso: de tanto ir y venir al banco se te gasta la suela. El costo no es la plata, es el tiempo y la molestia."
+    },
+    {
+      "id": "m18-q11",
+      "nivel": "comprension",
+      "enunciado": "El COSTO DE MENÚ y el COSTO DE SUELA DE ZAPATO se confunden seguido.\n\n¿Cuál es la diferencia?",
+      "opciones": [
+        "El de menú lo pagan las familias y el de suela las empresas",
+        "El de SUELA lo carga quien tiene que ir más veces al banco; el de MENÚ lo cargan las EMPRESAS al actualizar precios todo el tiempo: rehacer listas, cambiar etiquetas y avisarles a los clientes",
+        "Son el mismo costo con dos nombres distintos",
+        "El de menú solo existe en restaurantes; el de suela en todos los rubros"
+      ],
+      "correcta": 1,
+      "explicacion": "Uno es del lado del que compra y el otro del lado del que vende. El nombre «menú» viene de la carta del restaurante, pero aplica a cualquier empresa que fija precios."
+    },
+    {
+      "id": "m18-q12",
+      "nivel": "comprension",
+      "enunciado": "Ordena de MÁS a MENOS líquido: cuenta de ahorro a largo plazo, billetes y monedas, y depósitos a la vista (cheque, débito, Yape).\n\n¿Cuál es el orden correcto?",
+      "opciones": [
+        "Billetes y monedas → depósitos a la vista → cuenta de ahorro a largo plazo",
+        "Depósitos a la vista → billetes y monedas → cuenta de ahorro a largo plazo",
+        "Cuenta de ahorro a largo plazo → depósitos a la vista → billetes y monedas",
+        "Billetes y monedas → cuenta de ahorro a largo plazo → depósitos a la vista"
+      ],
+      "correcta": 0,
+      "explicacion": "Liquidez es qué tan rápido puedes usarlo para pagar sin perder valor. El efectivo ya está listo; el depósito a la vista necesita un paso; el ahorro a plazo está amarrado."
+    },
+    {
+      "id": "m18-q13",
+      "nivel": "aplicacion",
+      "enunciado": "JEFE 1/3. Fabio quiere invertir sus dólares en bitcoin y dice que hoy el bitcoin puede reemplazar al dólar como moneda.\n\nPasándolo por las tres funciones, ¿por qué todavía no puede?",
+      "opciones": [
+        "Porque no está respaldado en oro, y sin respaldo no hay dinero",
+        "Porque FALLA en las tres: no lo acepta toda la comunidad, su precio salta tanto que no sirve para etiquetar precios, y por lo mismo tampoco guarda valor",
+        "Porque solo falla como depósito de valor; las otras dos sí las cumple",
+        "Porque no lo emite un banco central, y eso lo descalifica automáticamente"
+      ],
+      "correcta": 1,
+      "explicacion": "El hint del examen es justamente ese: hay que recorrer las tres. La volatilidad le rompe la unidad de cuenta y el depósito de valor, y la aceptación limitada el medio de cambio."
+    },
+    {
+      "id": "m18-q14",
+      "nivel": "comprension",
+      "enunciado": "JEFE 2/3. En el Monopolio hay un banco que emite dinero, los jugadores compran propiedades, pagan alquileres e impuestos, y los precios no se modifican. Un alumno afirma: «el dinero del Monopolio NO cumple NINGUNA de las funciones tradicionales del dinero».\n\n¿Es verdadera esa afirmación?",
+      "opciones": [
+        "Verdadera: no lo acepta nadie fuera del juego, así que no cumple ninguna",
+        "Verdadera, porque el banco emite sin parar y eso lo invalida como dinero",
+        "FALSA: dentro del juego cumple las tres — lo aceptan todos los jugadores, con él se etiquetan las propiedades y los impuestos, y sirve para guardar valor entre turnos",
+        "Falsa: cumple solo la de medio de cambio"
+      ],
+      "correcta": 2,
+      "explicacion": "Las funciones se evalúan dentro de la comunidad donde circula. En el tablero el dinero del Monopolio funciona; lo que no tiene es aceptación fuera de él."
+    },
+    {
+      "id": "m18-q15",
+      "nivel": "comprension",
+      "enunciado": "JEFE 3/3. Dos de los cuatro costos de la inflación son la DISTORSIÓN DE PRECIOS RELATIVOS y la CONFUSIÓN E INCONVENIENCIA.\n\n¿En qué consisten?",
+      "opciones": [
+        "Los dos se refieren a que sube el precio de todos los bienes por igual",
+        "La distorsión es el tiempo perdido yendo al banco y la confusión es rehacer las listas de precios",
+        "La distorsión afecta solo a los importadores y la confusión solo a los exportadores",
+        "La DISTORSIÓN es que, al costarle ajustar precios por el costo de menú, los de una empresa quedan desfasados de los demás y puede terminar sin clientes; y la CONFUSIÓN es que cuesta comparar valores entre períodos, lo que complica planificar y genera desconfianza"
+      ],
+      "correcta": 3,
+      "explicacion": "Las dos salen del costo de menú: si ajustar precios cuesta, los precios dejan de moverse juntos y la vara con la que se mide todo deja de ser confiable."
+    }
+  ]
+}
