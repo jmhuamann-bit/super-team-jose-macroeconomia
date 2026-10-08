@@ -1,0 +1,125 @@
+{
+  "nivel": "level23",
+  "clase": "Clase 01 · PC3 — Mercado laboral: la demanda de trabajo",
+  "fuente": "Apuntes de la 1ra sesión de la PC3 — Economía General II",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "m23-q1",
+      "nivel": "comprension",
+      "enunciado": "En Economía 1 trabajaste el mercado de bienes: ahí la demanda la hacen las familias y la oferta las empresas. En el mercado LABORAL se invierte, y hay un dato que te deja saber siempre quién es quién: la demanda es la que PAGA.\n\n¿Quién demanda y quién ofrece en el mercado de trabajo?",
+      "opciones": [
+        "Las EMPRESAS demandan trabajo, porque son las que pagan el salario; las FAMILIAS lo ofrecen, porque son las que ponen las horas",
+        "Las familias demandan trabajo, porque son las que necesitan el empleo; las empresas lo ofrecen, porque son las que tienen los puestos",
+        "Las dos cosas las hacen las empresas: demandan trabajo y ofrecen puestos al mismo tiempo",
+        "Depende del sector: en servicios demanda la familia y en manufactura demanda la empresa"
+      ],
+      "correcta": 0,
+      "explicacion": "El truco del apunte: la demanda es quien paga. Acá el que paga el salario es la empresa, así que la empresa demanda y la familia ofrece. Es justo al revés que en el mercado de bienes."
+    },
+    {
+      "id": "m23-q2",
+      "nivel": "aplicacion",
+      "enunciado": "Porky va a abrir una fábrica de uniformes y vende cada uniforme a 100 soles. Su primer trabajador produce 25 uniformes y el segundo produce 20.\n\n¿Cuánto vale el aporte de cada uno a la empresa, y cómo se llama esa medida en Economía 2?",
+      "opciones": [
+        "25 y 20 soles: el aporte es directamente lo que produce cada trabajador",
+        "45 y 45 soles, porque el aporte de cada trabajador se mide sobre la producción total acumulada",
+        "2 500 y 2 000 soles. Esa medida es el VALOR DE LA PRODUCTIVIDAD MARGINAL, y se calcula VPMgL = PMgL × P",
+        "0,25 y 0,20 soles, porque hay que dividir lo que produce entre el precio del uniforme"
+      ],
+      "correcta": 2,
+      "explicacion": "El PMgL está en unidades (25 uniformes) y el salario en soles, así que no se pueden comparar. Multiplicando por el precio el aporte queda en soles: 25 × 100 = 2 500. Eso es el VPMgL."
+    },
+    {
+      "id": "m23-q3",
+      "nivel": "aplicacion",
+      "enunciado": "El Choche tiene 8 máquinas, vende cada unidad a 5 soles y paga un salario de 200 soles. Su producción según el número de trabajadores:\n\nY según L: 0→0 · 1→100 · 2→180 · 3→240 · 4→280 · 5→300\n\n¿Cuántos trabajadores le conviene contratar?",
+      "opciones": [
+        "5, porque es donde la producción total llega a su máximo de 300",
+        "3, porque a partir del cuarto el aporte de cada trabajador ya viene cayendo",
+        "1, porque es el único cuyo aporte en soles (500) supera con claridad al salario",
+        "4. Los VPMgL son 500, 400, 300, 200 y 100, y se contrata hasta donde VPMgL = salario: eso pasa justo en el cuarto trabajador"
+      ],
+      "correcta": 3,
+      "explicacion": "La regla de oro: se contrata mientras el VPMgL sea mayor o igual al salario, y el último que entra es el que cumple VPMgL = w. El quinto aportaría 100 y cobraría 200, así que queda fuera."
+    },
+    {
+      "id": "m23-q4",
+      "nivel": "comprension",
+      "enunciado": "Si vas cambiando el salario y anotas cuántos trabajadores contrata El Choche, sale esto:\n\nw = 500 → L = 1 · w = 400 → L = 2 · w = 300 → L = 3 · w = 200 → L = 4 · w = 100 → L = 5\n\n¿Qué curva acabas de dibujar, y por qué baja?",
+      "opciones": [
+        "La curva de OFERTA laboral, y baja porque a menor salario hay menos gente dispuesta a trabajar",
+        "La curva de DEMANDA LABORAL, que es la misma curva del VPMgL. Baja por los rendimientos decrecientes, y la causa de eso es la capacidad limitada del capital",
+        "La curva de producción total, y baja porque la empresa se va quedando sin insumos para producir",
+        "La curva de demanda laboral, y baja porque los primeros trabajadores contratados son los más capacitados y los que entran después rinden menos"
+      ],
+      "correcta": 1,
+      "explicacion": "Las dos conclusiones del apunte: la curva del VPMgL ES la demanda laboral, y es decreciente por rendimientos decrecientes. Los trabajadores son homogéneos; lo que se satura son las máquinas."
+    },
+    {
+      "id": "m23-q5",
+      "nivel": "aplicacion",
+      "enunciado": "El salario NOMINAL está expresado en dinero; el salario REAL está en unidades, o sea en poder adquisitivo, y se calcula como w/P.\n\nSi en una economía el salario nominal es 1 000 y el nivel de precios es 5, y en otra el salario real es 200 con un nivel de precios de 7, ¿cuánto vale el salario real de la primera y el nominal de la segunda?",
+      "opciones": [
+        "Real 200 y nominal 1 400",
+        "Real 5 000 y nominal 28,57",
+        "Real 1 005 y nominal 207",
+        "Real 200 y nominal 200, porque el salario real y el nominal siempre coinciden en valor"
+      ],
+      "correcta": 0,
+      "explicacion": "Real = w/P = 1 000/5 = 200. Y al revés, nominal = real × P = 200 × 7 = 1 400. El nominal va en valor monetario y el real en unidades de poder adquisitivo."
+    },
+    {
+      "id": "m23-q6",
+      "nivel": "aplicacion",
+      "enunciado": "Seguimos con El Choche, cuyos VPMgL son 500, 400, 300, 200 y 100. Hoy el salario es 200 y contrata 4 trabajadores. El gobierno sube el salario mínimo a 300.\n\n¿Qué pasa con el empleo, y qué pasa con el PMgL?",
+      "opciones": [
+        "El empleo sube a 5 trabajadores, porque con mejor sueldo la gente rinde más, y el PMgL sube junto con ellos",
+        "El empleo no cambia, porque la empresa ya tenía contratado a todo su personal",
+        "El empleo baja a 3 trabajadores, y además el PMgL baja, porque la empresa ahora va a exigir más por el mismo sueldo",
+        "El empleo baja a 3 trabajadores, porque el cuarto aporta 200 y costaría 300. Pero el PMgL NO cambia: depende del capital y la tecnología, no del salario"
+      ],
+      "correcta": 3,
+      "explicacion": "Subir el salario mínimo genera más desempleo. Y ojo con la segunda parte: el mínimo mueve el PUNTO sobre la curva, no la curva. Para desplazarla tendría que cambiar K, la tecnología o el precio."
+    },
+    {
+      "id": "m23-q7",
+      "nivel": "aplicacion",
+      "enunciado": "Para escribir la ecuación de la demanda laboral hay dos versiones: en términos NOMINALES, w = PMgL × P; y en términos REALES, w/P = PMgL.\n\nTe dan PMgL = 2·L^(−0,3)·K^(0,3) con K = 1, y no te dan ningún precio. ¿Qué demanda te están pidiendo y cuál es?",
+      "opciones": [
+        "La nominal, w = 2·L^(−0,3), porque la demanda laboral siempre se expresa en dinero",
+        "La REAL, justamente porque no te dan ningún precio: w/P = 2·L^(−0,3)",
+        "Ninguna de las dos se puede hallar sin conocer el precio del producto",
+        "La real, pero queda w/P = 2·L^(0,3), porque al despejar el exponente cambia de signo"
+      ],
+      "correcta": 1,
+      "explicacion": "El dato curioso del apunte: si piden la demanda y no detallan ningún precio, no piden la nominal sino la real. Y con K = 1 el factor K^0,3 vale 1, así que solo queda el coeficiente."
+    },
+    {
+      "id": "m23-q8",
+      "nivel": "aplicacion",
+      "enunciado": "En Tortilla Land la producción es Y = A·K^β·L^(1−β) y se cumple que PMgL = (1 − β)·PMeL. Los datos: tecnología A = 5, β = 0,2 y K = 32. Acuérdate de que PMeL = Y/L, y de que 32^(0,2) = 2.\n\n¿Cuánto valen el PMeL y el PMgL en función de L?",
+      "opciones": [
+        "PMeL = 5·L^(−0,2) y PMgL = 4·L^(−0,2)",
+        "PMeL = 32·L^(0,8) y PMgL = 25,6·L^(0,8)",
+        "PMeL = 10·L^(−0,2) y PMgL = 8·L^(−0,2), porque A·K^β = 5 × 2 = 10 y después (1 − 0,2) × 10 = 8",
+        "PMeL = 10·L^(−0,2) y PMgL = 2·L^(−0,2), porque hay que multiplicar por β y no por (1 − β)"
+      ],
+      "correcta": 2,
+      "explicacion": "PMeL = Y/L = A·K^β·L^(−β), y con A = 5 y 32^(0,2) = 2 el coeficiente es 10. El PMgL es (1 − β) veces eso: 0,8 × 10 = 8. Si L = 10, el salario real saldría 8 × 10^(−0,2) ≈ 5,05."
+    },
+    {
+      "id": "m23-q9",
+      "nivel": "aplicacion",
+      "enunciado": "Rara vez te entregan el PMgL escrito en el texto: lo normal es que te den la producción total y el número de trabajadores, y que de ahí salga un PMgL CONSTANTE.\n\nSi 8 trabajadores producen 3 unidades y el precio es 8, ¿cuál es el salario y cómo sale la curva de demanda laboral?",
+      "opciones": [
+        "El salario es 24, y la demanda sale decreciente como en todos los casos anteriores",
+        "El salario es 0,375, y la demanda sale vertical, o sea perfectamente inelástica",
+        "El salario es 3, porque PMgL = 3/8 = 0,375 y w = 0,375 × 8. Y como el PMgL es constante, la demanda laboral sale HORIZONTAL: perfectamente elástica",
+        "No se puede hallar el salario: falta saber cuántas máquinas tiene la empresa"
+      ],
+      "correcta": 2,
+      "explicacion": "Con PMgL constante el VPMgL ya no depende de L, así que la curva es una recta horizontal a ese salario: a ese sueldo la empresa contrataría cualquier cantidad de trabajadores."
+    }
+  ]
+}

@@ -2018,6 +2018,141 @@ const MAQUINISTA = [ // jefe de La Oroya: arranca en el cruce sin fijarse si las
 ];
 const P_MAQUINISTA = { b: "#2f4a7a", w: "#f2ead8", s: "#c9945c", k: "#241a2e", m: "#8a3a2e", v: "#3a4450", d: "#c2264a" };
 
+/* =========================================================
+   LYON — la Croix-Rousse de los canuts. El fondo son fachadas OCRE y
+   tejas de terracota, así que acá los bichos van oscuros o fríos:
+   madera quemada, azul pizarra, verde botella y plata. Nada ocre.
+   ========================================================= */
+const TELAR = [        // el telar Jacquard: el capital fijo del taller, y el bicho que no multiplica por el precio (18 x 14)
+  "..................",
+  ".kk............kk.",
+  ".kkkkkkkkkkkkkkkk.",
+  ".kkcccccccccccckk.",
+  ".kkcccccccccccckk.",
+  ".kk............kk.",
+  ".kk.w.w.w.w.w..kk.",
+  ".kk.w.w.w.w.w..kk.",
+  ".kkwwwwwwwwwwwwkk.",
+  ".kkwwwwwwwwwwwwkk.",
+  ".kkkkkkkkkkkkkkkk.",
+  ".kk............kk.",
+  ".kk............kk.",
+  "..................",
+];
+const P_TELAR = { k: "#3a2a1c", c: "#e8dcc0", w: "#a8324a" };
+
+const LANZADERA = [    // la lanzadera del canut: cree que los primeros obreros son los mas capacitados (18 x 10)
+  "..................",
+  "......kkkkkk......",
+  "....kkkkkkkkkk....",
+  "..kkkkkkkkkkkkkk..",
+  "kkkkkwwrrrrwwkkkkk",
+  "kkkkkwwrrrrwwkkkkk",
+  "..kkkkkkkkkkkkkk..",
+  "....kkkkkkkkkk....",
+  "......kkkkkk......",
+  "..................",
+];
+const P_LANZADERA = { k: "#4a3524", w: "#e8e4d8", r: "#a8324a" };
+
+const CAPATAZ = [      // el capataz del taller: sigue contratando aunque el aporte ya no pague el salario (16 × 17)
+  ".....kkkkkk.....",
+  ".....kkkkkk.....",
+  ".....kkkkkk.....",
+  "....kkkkkkkk....",
+  "......ssss......",
+  ".....sksskss....",
+  ".....ssmmss.....",
+  "......ssss......",
+  "....cccccccc....",
+  "...cccccccccc...",
+  "..sccccccccccs..",
+  "..sccwwwwccccs..",
+  "...cccccccccc...",
+  "....cccccccc....",
+  "....jjj..jjj....",
+  "...kkkk..kkkk...",
+  "................",
+];
+const P_CAPATAZ = { k: "#1e1a16", s: "#d9a273", c: "#2f4a5c", w: "#e8e4d8", m: "#8a3a2e", j: "#3b3630" };
+
+const FRANCO = [       // la moneda: confunde el salario nominal con el salario real (14 × 14)
+  "..............",
+  "....gggggg....",
+  "..gggggggggg..",
+  ".gggyyyyyyggg.",
+  ".ggyyyyyyyygg.",
+  "gggyyyykyyyggg",
+  "gggyyykkkyyggg",
+  "gggyyyykyyyggg",
+  ".ggyyyyyyyygg.",
+  ".gggyyyyyyggg.",
+  "..gggggggggg..",
+  "....gggggg....",
+  "..............",
+  "..............",
+];
+const P_FRANCO = { g: "#5e636e", y: "#c0c4cc", k: "#2e3138" };
+
+const PANCARTA = [     // la pancarta del tarif de 1831: jura que subir el mínimo crea más empleo (16 × 16)
+  "................",
+  "...kkkkkkkkkk...",
+  "...kwwwwwwwwk...",
+  "...kwkkkkkkwk...",
+  "...kwkwwwwkwk...",
+  "...kwkwrrwkwk...",
+  "...kwkwrrwkwk...",
+  "...kwkwwwwkwk...",
+  "...kwkkkkkkwk...",
+  "...kwwwwwwwwk...",
+  "...kkkkkkkkkk...",
+  "......kk........",
+  "......kk........",
+  "......kk........",
+  "......kk........",
+  "................",
+];
+const P_PANCARTA = { k: "#1f2228", w: "#e4dfd2", r: "#a8324a" };
+
+const SEDERO = [       // jefe: el sedero de la Croix-Rousse, que no sabe hasta dónde contratar (18 × 17)
+  ".....kkkkkkkk.....",
+  "....kkkkkkkkkk....",
+  "....kkkkkkkkkk....",
+  "......ssssss......",
+  "......sksskss.....",
+  "......ssmmss......",
+  ".......ssss.......",
+  "....oooooooooo....",
+  "...oocccccccoo....",
+  "..ooccrrrrccoo....",
+  "..ooccrwwrccoo....",
+  "...occcccccco.....",
+  "....oooooooooo....",
+  "....oooo..oooo....",
+  "....jjjj..jjjj....",
+  "...kkkkk..kkkkk...",
+  "..................",
+];
+const P_SEDERO = { k: "#1a1f2e", s: "#d9a273", o: "#1f2e26", c: "#44654f", r: "#a8324a", w: "#e8e4d8", m: "#8a3a2e", j: "#30322c" };
+
+const FUNICULAR = [    // «la ficelle», el funicular de Lyon, que es la salida del distrito (32 × 14)
+  "...rrrrrrrrrrrrrrrrrrrrrrrrrr...",
+  "..rrrrrrrrrrrrrrrrrrrrrrrrrrrr..",
+  ".rrrwwwwwwwwwwwwwwwwwwwwwwwwrrr.",
+  ".rrwbbbbwwwbbbbwwwbbbbwwwbbbbrr.",
+  ".rrwbbbbwwwbbbbwwwbbbbwwwbbbbrr.",
+  ".rrwbbbbwwwbbbbwwwbbbbwwwbbbbrr.",
+  ".rrwwwwwwwwwwwwwwwwwwwwwwwwwwrr.",
+  ".rrrrrrrrrrrrrrrrrrrrrrrrrrrrrr.",
+  ".rrrryyyyyrrrrrrrrrryyyyyrrrrrr.",
+  ".rrrrrrrrrrrrrrrrrrrrrrrrrrrrrr.",
+  "..kkkkkkkkkkkkkkkkkkkkkkkkkkkk..",
+  "...kkkkkkkkkkkkkkkkkkkkkkkkkk...",
+  "....kk..kk............kk..kk....",
+  "................................",
+];
+const P_FUNICULAR = { r: "#8e2f2f", w: "#f2efe4", b: "#44586a", y: "#e0b24a", k: "#2a2620" };
+
 /* ---------------------------------------------------------------
    REGISTRO Y COCINADO
    --------------------------------------------------------------- */
@@ -2138,6 +2273,13 @@ const DEFINICIONES = {
   ventanilla:   [VENTANILLA, P_VENTANILLA],
   sombrero:     [SOMBRERO, P_SOMBRERO],
   tesorero:     [TESORERO, P_TESORERO],
+  telar:        [TELAR, P_TELAR],
+  lanzadera:    [LANZADERA, P_LANZADERA],
+  capataz:      [CAPATAZ, P_CAPATAZ],
+  franco:       [FRANCO, P_FRANCO],
+  pancarta:     [PANCARTA, P_PANCARTA],
+  sedero:       [SEDERO, P_SEDERO],
+  funicular:    [FUNICULAR, P_FUNICULAR],
 };
 
 const cocidos = {};   // nombre -> { canvas, ancho, alto } (ya escalados)

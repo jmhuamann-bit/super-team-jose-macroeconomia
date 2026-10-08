@@ -1,0 +1,43 @@
+{
+  "id": "level23",
+  "distrito": "Lyon",
+  "clase": "Clase 01 · PC3",
+  "titulo": "El taller donde los telares no alcanzan",
+  "tema": "canuts",
+  "musica": "canuts",
+  "vehiculo": "funicular",
+  "intro": "Primera parada fuera del Perú para Economía 2: Lyon, la colina de la Croix-Rousse. Acá vivían los canuts, los tejedores de seda, y el barrio está construido literalmente alrededor de su herramienta: las casas tienen techos altísimos y ventanales enormes porque adentro había que meter un telar Jacquard. Ese es el punto del capítulo: el taller tiene los telares que tiene. Puedes meter más tejedores, pero el aporte del último va cayendo, porque los telares no crecen. Y en 1831 los canuts se levantaron justamente por el tarif, una tarifa mínima por pieza tejida — o sea, un salario mínimo. Su bandera decía «vivir trabajando o morir combatiendo». Acá vas a aprender hasta qué trabajador le conviene contratar a la empresa, y qué pasa de verdad con el empleo cuando ese mínimo sube.",
+  "repaso": [
+    "EL GIRO DE ECO 1 A ECO 2, que es lo primero que hay que tener claro. En el mercado de bienes la demanda la hacen las familias y la oferta las empresas. En el MERCADO LABORAL se invierte: demandan las EMPRESAS y ofrecen las FAMILIAS. El truco para no confundirse: la demanda es quien PAGA, y acá el que paga el salario es la empresa.",
+    "EL PMgL = ΔY/ΔL es el producto que genera un trabajador adicional, y es DECRECIENTE. PREGUNTA DE EXAMEN: ¿eso significa que los primeros contratados son los más capacitados? NO. Los trabajadores son homogéneos; lo que pasa es que el capital tiene capacidad limitada y cada nuevo trabajador tiene menos máquina para trabajar.",
+    "EL VPMgL = PMgL × P es el VALOR de lo que produce cada trabajador adicional. Hace falta porque el PMgL está en unidades y el salario en soles: sin multiplicar por el precio no se pueden comparar. Porky: su primer trabajador produce 25 uniformes a 100 soles, o sea aporta 2 500.",
+    "LA REGLA DE ORO, ¿hasta dónde contratar? Se contrata hasta que VPMgL = salario. Los tres casos: si VPMgL > w, SÍ se contrata; si VPMgL = w, se contrata y ese es el ÚLTIMO; si VPMgL < w, NO se contrata. Y si hay que despedir, se despide primero al de MENOR VPMgL, que es el último que entró.",
+    "PORKY RESUELTO (K = 6, P = 100, w = 1 500). Y según L: 0→0 · 1→25 · 2→45 · 3→60 · 4→70 · 5→75. PMgL: 25, 20, 15, 10, 5. VPMgL: 2 500, 2 000, 1 500, 1 000, 500. Contrata 3 trabajadores, y el tercero es justo el del empate.",
+    "EL CHOCHE RESUELTO (K = 8, P = 5, w = 200). Y según L: 0→0 · 1→100 · 2→180 · 3→240 · 4→280 · 5→300. PMgL: 100, 80, 60, 40, 20. VPMgL: 500, 400, 300, 200, 100. Contrata 4. Y variando el salario sale el gráfico: w=500→1, w=400→2, w=300→3, w=200→4, w=100→5.",
+    "LAS DOS CONCLUSIONES DEL CAPÍTULO. (1) A la curva del VPMgL se le conoce como la curva de la DEMANDA LABORAL — no es parecida, es la misma. (2) El VPMgL es decreciente por los rendimientos decrecientes, y la causa de esos rendimientos es la capacidad limitada de K.",
+    "SALARIO MÍNIMO: si sube, hay MENOS empleo, porque los trabajadores cuyo VPMgL queda por debajo del nuevo mínimo ya no se contratan. CASO ESPECIAL que preguntan aparte: ¿un aumento del salario mínimo afecta al PMgL? NO. El mínimo mueve el PUNTO sobre la curva; para DESPLAZAR la curva tendría que cambiar el capital, la tecnología o el precio.",
+    "SALARIO NOMINAL vs SALARIO REAL. El nominal está en valor monetario; el REAL está en unidades, o sea en poder adquisitivo, y es w/P. Ejemplos: W=1 000 y P=5 → real 200. Real=200 y P=7 → nominal 1 400. w/P=10 y P=8 → nominal 80. P=0,1 y W=10 000 → real 100 000.",
+    "LA ECUACIÓN DE LA DEMANDA LABORAL, en dos versiones. NOMINAL: w = PMgL × P. REAL: w/P = PMgL. DATO CURIOSO que resuelve la duda: si te piden hallar la demanda y no te detallan ningún precio, no te piden la nominal sino la REAL. Ejemplos con K = 1: PMgL = 6·L^(−0,4)·K^(0,4) con P = 10 → nominal w = 60·L^(−0,4); PMgL = 2·L^(−0,3)·K^(0,3) → real w/P = 2·L^(−0,3).",
+    "COBB-DOUGLAS, lo que hay que saber de memoria. Si Y = A·K^β·L^(1−β), entonces PMeL = Y/L = A·K^β·L^(−β), y PMgL = (1 − β)·PMeL = A·(K/L)^β. TORTILLA LAND resuelto: A = 5, β = 0,2, K = 32. Como 32^(0,2) = 2, el PMeL es 10·L^(−0,2) y el PMgL es 8·L^(−0,2). Como no dan precio, la demanda es la real: w/P = 8·L^(−0,2). Y si L = 10, el salario real sale 8 × 10^(−0,2) ≈ 5,05.",
+    "EL EJEMPLO RETADOR: A = 1, K = 16, β = 0,5, p = 2. PMgL = A·(K/L)^0,5 = 4·L^(−0,5), así que la demanda NOMINAL es w = 8·L^(−0,5), o sea L = 64/w². Con w = 2 contrata 16 trabajadores, con w = 4 contrata 4 y con w = 0,5 contrata 256. Y con L = 16 la producción es Y = 16.",
+    "PMgL CONSTANTE → DEMANDA PERFECTAMENTE ELÁSTICA. Cuando el texto te da la producción total y el número de trabajadores, el PMgL sale constante y la curva queda HORIZONTAL. Ejemplos: 8 trabajadores producen 3 unidades con P = 8 → PMgL = 0,375 y w = 3. 10 trabajadores producen 20 unidades con P = 5 → PMgL = 2 y w = 10.",
+    "QUEDA FUERA DE ESTE NIVEL: la OFERTA laboral y el equilibrio del mercado de trabajo, las condiciones laborales y los tipos de desempleo, y todo Solow. El apunte los deja para las sesiones siguientes de la PC3."
+  ],
+  "mapa": [
+    "                                                                                                                                                                                ",
+    "                                                                                                                                                                                ",
+    "                                                                                                                                                                                ",
+    "                                                       A                                                   A                                                                    ",
+    "                                                     o o o                                               o o o                                                                  ",
+    "                                                     ======                                              ======                                                                 ",
+    "                                                                                                                                                                                ",
+    "                        o o o                               o o o                           o o o                           o o o                     o o o                     ",
+    "                ?           o o         L                           V               G         o o                   G               o o           1     L                       ",
+    "                        ====                                ====                            ====                            ====                      ====                      ",
+    "                        o o                     o o                                             o o                     o o                     o o                             ",
+    "  P                 E         C             E   T       X       E                 C     E         X T     E             X       E           C                 B             M   ",
+    "##################################   ###################################    ####################################   #############################################################",
+    "##################################   ###################################    ####################################   #############################################################",
+    "##################################   ###################################    ####################################   #############################################################"
+  ]
+}

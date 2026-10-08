@@ -2330,6 +2330,177 @@ export const TEMAS = {
       }
     },
   },
+  /* =========================================================
+     LYON — la colina de la Croix-Rousse a media mañana, que es donde
+     tejían los canuts. Arriba, en la otra colina, la basílica de
+     Fourvière y la torre metálica; al frente, las casas altas de los
+     canuts, con sus ventanales enormes hechos a la medida del telar
+     Jacquard; abajo el Saona con su pasarela, los muros de los
+     muelles y los moreros de la orilla. Acá el taller tiene los
+     telares que tiene: por más tejedores que contrates, el aporte
+     del último va cayendo.
+     OJO 1: el fondo no lleva telares, lanzaderas, monedas ni
+     pancartas sueltas — esos son los bichos.
+     OJO 2: el plano del suelo baja SIN CORTES desde las casas hasta
+     la vereda. Si queda un hueco, se asoma el cielo y el fondo
+     parece tener una laguna.
+     OJO 3: la paleta es OCRE y terracota a propósito, para que no se
+     confunda con la piedra clara de París. Los bichos van oscuros o
+     fríos; ninguno puede ser ocre.
+     ========================================================= */
+  canuts: {
+    nombre: "Lyon",
+    cielo: [[0, "#5f84b4"], [0.4, "#9eb4c6"], [0.76, "#cfc3ad"], [1, "#e6d2b4"]],
+    suelo: { cara: "#9b8f7c", borde: "#b9ad96", tierra: "#4e4336", plataforma: "#7a5a3c", plataformaBorde: "#e0b24a" },
+    acento: "#a8324a",
+
+    bichos: ["telar", "lanzadera", "capataz", "franco", "pancarta"],
+    nombresBichos: [
+      "El Telar sin Precio",
+      "La Lanzadera del Más Capacitado",
+      "El Capataz que Contrata de Más",
+      "El Franco Confundido",
+      "La Pancarta del Tarif",
+    ],
+    andares: ["patrulla", "guardia", "veloz", "salta", "vuela"],
+    jefe: "sedero",
+    nombreJefe: "El Sedero de la Croix-Rousse",
+
+    fondo(ctx, cam, t) {
+      // el sol de la mañana sobre el Saona
+      ctx.fillStyle = "rgba(255,240,206,.26)";
+      ctx.beginPath(); ctx.arc(628, 60, 58, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = "rgba(255,247,224,.92)";
+      ctx.beginPath(); ctx.arc(628, 60, 25, 0, Math.PI * 2); ctx.fill();
+
+      // LA COLINA DE FOURVIÈRE, con la basílica y la torre metálica
+      repetir(ctx, cam, 1100, 0.07, (x, i) => {
+        const bx = x + 210, base = 306;
+        ctx.fillStyle = "#7d8268";                                  // la colina
+        ctx.beginPath();
+        ctx.moveTo(bx - 260, base);
+        ctx.quadraticCurveTo(bx - 60, base - 96, bx + 40, base - 92);
+        ctx.quadraticCurveTo(bx + 170, base - 70, bx + 280, base);
+        ctx.closePath(); ctx.fill();
+
+        const by = base - 92;                                       // la basílica, encima de la colina
+        ctx.fillStyle = "#ece5d4";
+        ctx.fillRect(bx - 46, by - 42, 92, 42);
+        for (const dx of [-46, -12, 10, 36]) {                      // las cuatro torres
+          ctx.fillRect(bx + dx, by - 68, 10, 68);
+          ctx.fillStyle = "#d8cfba";
+          ctx.fillRect(bx + dx - 1, by - 74, 12, 7);
+          ctx.fillStyle = "#ece5d4";
+        }
+        ctx.fillStyle = "#cfc5ae";                                  // el tejado
+        ctx.fillRect(bx - 48, by - 46, 96, 6);
+        ctx.fillStyle = "rgba(70,62,46,.30)";                       // los ventanales
+        for (let k = 0; k < 4; k++) ctx.fillRect(bx - 32 + k * 18, by - 30, 9, 20);
+
+        ctx.fillStyle = "#6e7280";                                  // la torre metálica, al lado
+        ctx.beginPath();
+        ctx.moveTo(bx + 96, by);
+        ctx.lineTo(bx + 106, by - 72);
+        ctx.lineTo(bx + 110, by - 72);
+        ctx.lineTo(bx + 120, by);
+        ctx.closePath(); ctx.fill();
+        ctx.fillRect(bx + 104, by - 92, 8, 22);
+        ctx.fillRect(bx + 100, by - 46, 16, 4);
+      });
+
+      // LAS CASAS DE CANUT: altas, ocres, con ventanales enormes para el telar
+      repetir(ctx, cam, 214, 0.22, (x, i) => {
+        const bx = x + 8, base = 306, alto = 86 + ((i * 31) % 26);
+        ctx.fillStyle = ["#d6a86a", "#c89a5e", "#e0b67c"][i % 3];
+        ctx.fillRect(bx, base - alto, 190, alto);
+        ctx.fillStyle = "#9c5a3c";                                  // la teja canal
+        ctx.fillRect(bx - 7, base - alto - 11, 204, 11);
+        ctx.fillStyle = "#7f4630";
+        ctx.fillRect(bx - 7, base - alto - 3, 204, 3);
+        // los ventanales del canut: altos de verdad, que es lo que distingue al barrio
+        ctx.fillStyle = "rgba(48,40,30,.42)";
+        for (let k = 0; k < 4; k++) {
+          ctx.fillRect(bx + 16 + k * 44, base - alto + 14, 24, 42);
+          ctx.fillRect(bx + 16 + k * 44, base - alto + 64, 24, 30);
+        }
+        ctx.fillStyle = "#6f4a32";                                  // el zócalo
+        ctx.fillRect(bx, base - 16, 190, 16);
+        ctx.fillStyle = "#2b211a";                                  // la boca de una traboule
+        ctx.fillRect(bx + 84, base - 14, 18, 14);
+      });
+
+      // EL PLANO DEL SUELO, de las casas a la vereda y SIN CORTES:
+      // el muelle de enfrente, el Saona y el muelle de este lado
+      ctx.fillStyle = "#998b74";
+      ctx.fillRect(0, 306, CFG.ANCHO_VISTA, 10);
+      ctx.fillStyle = "#4f6360";                                    // EL SAONA
+      ctx.fillRect(0, 316, CFG.ANCHO_VISTA, 30);
+      ctx.fillStyle = "#63796f";
+      ctx.fillRect(0, 316, CFG.ANCHO_VISTA, 5);
+      for (let i = 0; i < 34; i++) {
+        const x = (i * 57 - cam * 0.22) % 960 - 40;
+        ctx.fillStyle = "rgba(230,238,226,.26)";
+        ctx.fillRect(x, 324 + ((i * 23) % 18), 15, 2);
+      }
+      ctx.fillStyle = "#a2957f";                                    // el muelle de este lado
+      ctx.fillRect(0, 346, CFG.ANCHO_VISTA, 36);
+      ctx.fillStyle = "#bbae95";                                    // el pretil
+      ctx.fillRect(0, 346, CFG.ANCHO_VISTA, 4);
+
+      // LA PASARELA sobre el Saona
+      repetir(ctx, cam, 430, 0.30, (x, i) => {
+        const bx = x + 50, cubierta = 314;
+        ctx.fillStyle = "#b0a187";
+        ctx.fillRect(bx, cubierta, 180, 8);
+        ctx.fillStyle = "rgba(250,245,232,.42)";
+        ctx.fillRect(bx, cubierta, 180, 3);
+        ctx.fillStyle = "#8d7f68";
+        for (let k = 0; k < 4; k++) ctx.fillRect(bx + 4 + k * 58, cubierta + 8, 12, 24);
+        ctx.fillStyle = "#6f6453";                                  // los tirantes
+        for (let k = 0; k < 7; k++) ctx.fillRect(bx + 12 + k * 26, cubierta - 12, 2, 12);
+        ctx.fillRect(bx, cubierta - 14, 180, 3);
+      });
+
+      // EL TALLER DE SEDA de la esquina, con su toldo y su vitrina
+      repetir(ctx, cam, 292, 0.54, (x, i) => {
+        const bx = x + 30, base = 382, alto = 34;
+        ctx.fillStyle = "#6d3a44";                                  // la fachada del taller
+        ctx.fillRect(bx, base - alto, 124, alto);
+        ctx.fillStyle = "#e0b24a";                                  // el letrero
+        ctx.fillRect(bx + 8, base - alto + 4, 108, 8);
+        ctx.fillStyle = "rgba(248,238,212,.84)";                    // la vitrina
+        ctx.fillRect(bx + 12, base - alto + 16, 46, 16);
+        ctx.fillRect(bx + 66, base - alto + 16, 46, 16);
+        ctx.fillStyle = "#33403a";                                  // el toldo
+        ctx.fillRect(bx - 6, base - alto - 8, 136, 8);
+        ctx.fillStyle = "rgba(0,0,0,.22)";
+        ctx.fillRect(bx - 6, base - alto - 1, 136, 2);
+      });
+
+      // LOS MORERAS de la orilla, que son los árboles de la seda
+      repetir(ctx, cam, 148, 0.78, (x, i) => {
+        const bx = x + 22, base = 382;
+        ctx.fillStyle = "#63513c";
+        ctx.fillRect(bx, base - 26, 5, 26);
+        ctx.fillStyle = ["#4e6b3a", "#5b7a44", "#456134"][i % 3];
+        ctx.beginPath(); ctx.ellipse(bx + 2, base - 40, 16, 15, 0, 0, Math.PI * 2); ctx.fill();
+        ctx.beginPath(); ctx.ellipse(bx - 8, base - 31, 8, 9, 0.4, 0, Math.PI * 2); ctx.fill();
+        ctx.beginPath(); ctx.ellipse(bx + 12, base - 33, 8, 9, -0.4, 0, Math.PI * 2); ctx.fill();
+      });
+      ctx.fillStyle = "#8f846f";
+      ctx.fillRect(0, 380, CFG.ANCHO_VISTA, 4);
+    },
+
+    clima(ctx, t) {
+      // el polvillo de seda flotando en la luz del taller
+      for (let i = 0; i < 20; i++) {
+        const x = (i * 139 - t * 0.6) % 880 - 20;
+        const y = 120 + ((i * 71) % 210) + Math.sin(t / 34 + i) * 8;
+        ctx.fillStyle = `rgba(252,244,224,${(0.05 + 0.08 * Math.abs(Math.sin(t / 30 + i))).toFixed(2)})`;
+        ctx.fillRect(x, y, 4, 4);
+      }
+    },
+  },
 };
 
 /** Pinta el cielo del tema (degradado vertical). */

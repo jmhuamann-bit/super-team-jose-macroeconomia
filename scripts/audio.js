@@ -164,6 +164,14 @@ const TEMAS_MUSICA = {
               "B4",2,"D5",2,"E5",4,"D5",2,"B4",2,"E4",4],
     bajo:    ["E3",8,"B2",8,"G2",8,"E3",8,"A2",8,"D3",8,"B2",8,"E3",8],
   },
+  canuts: { // Lyon: aire de bal-musette, con el vaiven del telar en el bajo
+    tempo: 0.16, onda: "triangle",
+    melodia: ["D4",2,"F4",1,"A4",1,"D5",2,"C5",2,"A4",2,
+              "B4",2,"A4",1,"G4",1,"F4",2,"E4",2,"D4",2,
+              "A4",2,"D5",1,"C5",1,"B4",2,"A4",2,"G4",2,
+              "F4",2,"E4",2,"D4",4],
+    bajo:    ["D2",4,"A2",4,"D2",4,"G2",4,"A2",4,"D2",4,"A2",4,"D2",4],
+  },
   rescate: { // Cajamarca: carnaval cajamarquino, alegre y con paso de sierra norte
     tempo: 0.14, onda: "square",
     melodia: ["D5",1,"D5",1,"C5",2,"A4",2,"G4",1,"A4",1,"C5",2,

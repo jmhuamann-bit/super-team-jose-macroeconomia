@@ -1,5 +1,5 @@
 {
-  "titulo": "Lima",
+  "titulo": "Lima, el Perú y el mundo",
   "descripcion": "Cada distrito es una clase de Economía General II, agrupados por la práctica que les toca. Todos están abiertos para practicar en cualquier orden.",
   "niveles": [
     {
@@ -309,6 +309,20 @@
       "abierto": true,
       "mapa": "levels/level22.json",
       "preguntas": "questions/level22_questions.json"
+    },
+    {
+      "id": "level23",
+      "clase": "Clase 01",
+      "distrito": "Lyon",
+      "titulo": "El taller donde los telares no alcanzan",
+      "icono": "🧶",
+      "seccion": "PC3",
+      "seccionNota": "Mercado laboral, desempleo y crecimiento — y ahora visitando el mundo",
+      "retos": 7,
+      "duracion": "3 min",
+      "abierto": true,
+      "mapa": "levels/level23.json",
+      "preguntas": "questions/level23_questions.json"
     }
   ]
 }

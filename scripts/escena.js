@@ -242,6 +242,12 @@ const FICHAS = [
   { sprite: "aguja", nombre: "La Aguja sin Fisher", texto: "La demanda le viene con la tasa REAL y él la iguala igual, sin pasarla a nominal." },
   { sprite: "vagon", nombre: "El Vagón de los Dos Multiplicadores", texto: "Mezcla el multiplicador de M1 con el de M2, y de paso el encaje sobre depósitos con el implícito." },
   { sprite: "humo", nombre: "El Humo de la Elasticidad", texto: "Canta la pendiente como si fuera la elasticidad, sin multiplicarla por Y sobre la cantidad demandada." },
+  { sprite: "telar", nombre: "El Telar sin Precio", texto: "Lyon: cuenta cuántas piezas teje el obrero y se olvida de multiplicar por el precio, que es lo que da el VPMgL." },
+  { sprite: "lanzadera", nombre: "La Lanzadera del Más Capacitado", texto: "Cree que el aporte cae porque los primeros obreros son mejores, cuando la causa es que los telares son los que son." },
+  { sprite: "capataz", nombre: "El Capataz que Contrata de Más", texto: "Sigue metiendo gente al taller aunque lo que aporta el último ya no alcance para pagarle el salario." },
+  { sprite: "franco", nombre: "El Franco Confundido", texto: "Mira el monto del sueldo y cree que eso es el salario real, sin dividirlo entre el nivel de precios." },
+  { sprite: "pancarta", nombre: "La Pancarta del Tarif", texto: "Jura que subir el salario mínimo crea más empleo, y además que mueve la curva de la demanda laboral." },
+  { sprite: "sedero", nombre: "El Sedero de la Croix-Rousse", texto: "Jefe de Lyon: tiene los pedidos y los telares, pero no sabe hasta qué trabajador le conviene contratar." },
   { sprite: "maquinista", nombre: "El Maquinista del Nudo", texto: "Jefe de La Oroya: llega al cruce y arranca sin fijarse si las dos vías se juntan justo ahí." },
 ];
 
