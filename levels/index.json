@@ -323,6 +323,20 @@
       "abierto": true,
       "mapa": "levels/level23.json",
       "preguntas": "questions/level23_questions.json"
+    },
+    {
+      "id": "level24",
+      "clase": "Clase 02",
+      "distrito": "Nueva Zelanda",
+      "titulo": "El primer país que le puso piso al sueldo",
+      "icono": "🐑",
+      "seccion": "PC3",
+      "seccionNota": "Mercado laboral, desempleo y crecimiento — y ahora visitando el mundo",
+      "retos": 7,
+      "duracion": "3 min",
+      "abierto": true,
+      "mapa": "levels/level24.json",
+      "preguntas": "questions/level24_questions.json"
     }
   ]
 }

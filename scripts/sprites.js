@@ -2153,6 +2153,137 @@ const FUNICULAR = [    // «la ficelle», el funicular de Lyon, que es la salida
 ];
 const P_FUNICULAR = { r: "#8e2f2f", w: "#f2efe4", b: "#44586a", y: "#e0b24a", k: "#2a2620" };
 
+/* =========================================================
+   NUEVA ZELANDA — el fiordo de Milford: paredes negras, agua oscura,
+   pasto verde y cielo lechoso. Como el fondo es OSCURO en la mitad de
+   arriba y VERDE en la de abajo, acá los bichos van en crema, lana
+   blanca y rojo pohutukawa, con contorno negro. Nada verde pasto.
+   ========================================================= */
+const MOCHILA = [      // la mochila del que va a trabajar: confunde el salario de reserva con el mínimo (14 × 15)
+  "..............",
+  "....kkkkkk....",
+  "...kkkkkkkk...",
+  "..kkkkkkkkkk..",
+  ".kkrrrrrrrrkk.",
+  ".krrrrrrrrrrk.",
+  ".krrkkkkkkrrk.",
+  ".krrkccccrrrk.",
+  ".krrkccccrrrk.",
+  ".krrkkkkkkrrk.",
+  ".krrrrrrrrrrk.",
+  ".krrrrrrrrrrk.",
+  ".kkrrrrrrrrkk.",
+  "..kkkkkkkkkk..",
+  "..............",
+];
+const P_MOCHILA = { k: "#1c1a18", r: "#c2423a", c: "#e8e2d2" };
+
+const ESQUILADORA = [  // la tijera de esquilar: no sabe sacar la pendiente de la oferta (18 x 12)
+  "..................",
+  ".rr............rr.",
+  ".rww..........wwr.",
+  "..kww........wwk..",
+  "...kwww....wwwk...",
+  "....kwwwwwwwwk....",
+  "....kwwwwwwwwk....",
+  "...kwww....wwwk...",
+  "..kww........wwk..",
+  ".rww..........wwr.",
+  ".rr............rr.",
+  "..................",
+];
+const P_ESQUILADORA = { r: "#c2423a", w: "#dfe4e8", k: "#1c1a18" };
+
+const OVEJA = [        // la oveja: no mira dónde está el equilibrio antes de opinar del mínimo (18 × 13)
+  "..................",
+  "....wwwwwwwww.....",
+  "..wwwwwwwwwwwww...",
+  ".wwwwwwwwwwwwwwkk.",
+  "wwwwwwwwwwwwwwkkkk",
+  "wwwwwwwwwwwwwkkykk",
+  "wwwwwwwwwwwwwkkkkk",
+  "wwwwwwwwwwwwwwkkk.",
+  ".wwwwwwwwwwwwwww..",
+  "..wwwwwwwwwwwww...",
+  "...kk..kk..kk.kk..",
+  "...kk..kk..kk.kk..",
+  "..................",
+];
+const P_OVEJA = { w: "#eceade", k: "#2a2824", y: "#c9a23c" };
+
+const TOPE = [         // el tope de arriba: cree que un salario máximo funciona igual que un mínimo (18 × 12)
+  "..................",
+  "kkkkkkkkkkkkkkkkkk",
+  "kkkkkkkkkkkkkkkkkk",
+  "..k............k..",
+  "..k............k..",
+  "....kk....kk......",
+  ".....kk..kk.......",
+  "......kkkk........",
+  ".......kk.........",
+  "......kkkk........",
+  "....kk....kk......",
+  "..................",
+];
+const P_TOPE = { k: "#c2423a" };
+
+const KIWI = [         // el kiwi que cuenta mal: resta al reves los ofertantes y los demandantes (18 x 14)
+  "..................",
+  "..............cccc",
+  "............cccc..",
+  "..........cccc....",
+  ".......kkkkkk.....",
+  "....kkkbbbbbbk....",
+  "..kkbbbbbbbbbk....",
+  ".kkbbbkbbbbbbk....",
+  ".kbbbbbbbbbbbk....",
+  ".kbbbbbbbbbbk.....",
+  "..kbbbbbbbbk......",
+  "...kbbbbbbk.......",
+  "....kk..kk........",
+  "..................",
+];
+const P_KIWI = { c: "#e8e2d2", k: "#2a2420", b: "#c9a06a" };
+
+const ARBITRO = [      // jefe: el árbitro de 1894, que no sabe cuándo su laudo cambia algo (18 × 17)
+  ".....kkkkkkkk.....",
+  "....kkkkkkkkkk....",
+  "......ssssss......",
+  "......sksskss.....",
+  "......ssmmss......",
+  ".......ssss.......",
+  "....nnnnnnnnnn....",
+  "...nnnnnnnnnnnn...",
+  "..snncccccccnns...",
+  "..snncccccccnns...",
+  "...nncccccccnn....",
+  "....nnnnnnnnnn....",
+  "....nnnnnnnnnn....",
+  "....nnnn..nnnn....",
+  "....jjjj..jjjj....",
+  "...kkkkk..kkkkk...",
+  "..................",
+];
+const P_ARBITRO = { k: "#17161c", s: "#d9a273", n: "#23262e", c: "#e8e2d2", m: "#7a3326", j: "#2a2620" };
+
+const CATAMARAN = [    // el catamarán del fiordo, que es la salida del distrito (32 × 14)
+  "................................",
+  "..............kk................",
+  "..............kk................",
+  "........wwwwwwwwwwwwww..........",
+  "......wwwwwwwwwwwwwwwwww........",
+  "......wbbbwwwbbbwwwbbbww........",
+  "......wbbbwwwbbbwwwbbbww........",
+  "......wwwwwwwwwwwwwwwwww........",
+  "...wwwwwwwwwwwwwwwwwwwwwwww.....",
+  "..wwwwwwwwwwwwwwwwwwwwwwwwww....",
+  "..nnnnnnnnnnnnnnnnnnnnnnnnnn....",
+  "...nnnnnnnnnnnnnnnnnnnnnnnn.....",
+  "....tttttttttttttttttttttt......",
+  "................................",
+];
+const P_CATAMARAN = { k: "#2a2824", w: "#eceade", b: "#3f6f84", n: "#23262e", t: "#2f5a62" };
+
 /* ---------------------------------------------------------------
    REGISTRO Y COCINADO
    --------------------------------------------------------------- */
@@ -2280,6 +2411,13 @@ const DEFINICIONES = {
   pancarta:     [PANCARTA, P_PANCARTA],
   sedero:       [SEDERO, P_SEDERO],
   funicular:    [FUNICULAR, P_FUNICULAR],
+  mochila:      [MOCHILA, P_MOCHILA],
+  esquiladora:  [ESQUILADORA, P_ESQUILADORA],
+  oveja:        [OVEJA, P_OVEJA],
+  tope:         [TOPE, P_TOPE],
+  kiwi:         [KIWI, P_KIWI],
+  arbitro:      [ARBITRO, P_ARBITRO],
+  catamaran:    [CATAMARAN, P_CATAMARAN],
 };
 
 const cocidos = {};   // nombre -> { canvas, ancho, alto } (ya escalados)

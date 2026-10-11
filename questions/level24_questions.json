@@ -1,0 +1,125 @@
+{
+  "nivel": "level24",
+  "clase": "Clase 02 · PC3 — Oferta y equilibrio del mercado laboral",
+  "fuente": "Apuntes de la 2da clase de la PC3 — Economía General II",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "m24-q1",
+      "nivel": "comprension",
+      "enunciado": "Dos conceptos que se parecen en el nombre y no son lo mismo: el salario de reserva (o de subsistencia) y el salario mínimo.\n\n¿Quién fija cada uno?",
+      "opciones": [
+        "Los dos los fija el gobierno, pero el de reserva se calcula por sector y el mínimo se aplica a toda la economía por igual",
+        "El de RESERVA lo deciden las familias, según lo que les cuesta poder ir a trabajar; el MÍNIMO lo dictamina el gobierno",
+        "Los dos los fijan las empresas, porque son ellas las que pagan los sueldos y conocen sus costos",
+        "El de reserva lo fija el gobierno con la canasta básica; el mínimo lo negocia cada familia con su empleador"
+      ],
+      "correcta": 1,
+      "explicacion": "El de reserva es el piso que pone el propio trabajador para que le valga la pena salir de casa. El mínimo es una ley. Confundirlos hace que uno los dibuje en el gráfico en el lugar equivocado."
+    },
+    {
+      "id": "m24-q2",
+      "nivel": "aplicacion",
+      "enunciado": "El Choche va a trabajar de repartidor. Sabe que gastará 10 soles en gasolina y 15 soles en su almuerzo, porque piensa trabajar de corrido todo el día.\n\n¿Cuál es su salario de reserva al mes, tomando 30 días?",
+      "opciones": [
+        "25 soles, que es lo que gasta en un día y es el piso que necesita cubrir",
+        "300 soles, contando solo la gasolina de los 30 días, que es el único gasto que no podría evitar de ninguna manera",
+        "450 soles, tomando solo el almuerzo, porque la gasolina la pone la empresa",
+        "750 soles, porque gasta 10 + 15 = 25 soles al día y eso se multiplica por los 30 días"
+      ],
+      "correcta": 3,
+      "explicacion": "El salario de reserva junta TODO lo que el trabajador tiene que gastar para poder trabajar, y después se lleva a la misma unidad de tiempo que te piden. Acá piden al mes, así que va por 30."
+    },
+    {
+      "id": "m24-q3",
+      "nivel": "aplicacion",
+      "enunciado": "Para armar la oferta laboral el apunte usa 3 pasitos: pendiente, punto y reemplazar. En una zona, un trabajador necesita 60 soles para cubrir su subsistencia, y si el salario aumentara en 200 soles se sumarían 50 trabajadores a las filas de la empresa.\n\n¿Cuál es la ecuación de la oferta?",
+      "opciones": [
+        "W = 4L + 60, porque la pendiente es 200/50 = 4 y el intercepto es el salario de subsistencia",
+        "W = 50L + 200, tomando los 50 trabajadores como pendiente y los 200 soles como intercepto",
+        "W = 0,25L + 60, porque la pendiente sale de dividir los 50 trabajadores nuevos entre los 200 soles de aumento",
+        "W = 200L + 50, porque el salario es la variable que manda y va multiplicando al empleo"
+      ],
+      "correcta": 0,
+      "explicacion": "La pendiente es variación de W sobre variación de L: 200/50 = 4. Darla vuelta (50/200) es el error más común. Y el intercepto siempre es el salario de reserva, porque con L = 0 nadie trabaja por menos."
+    },
+    {
+      "id": "m24-q4",
+      "nivel": "comprension",
+      "enunciado": "A Mequetrefe le pagan 950 soles, que es su salario de equilibrio, y el gobierno dictamina un salario mínimo de 1 500. A la Patrona le pagan 20 000, que también es su equilibrio, y le aplica el mismo mínimo de 1 500.\n\n¿A quién le afecta la medida?",
+      "opciones": [
+        "A los dos por igual, porque una ley de salario mínimo rige para toda la economía y no admite excepciones según cuánto gane cada uno",
+        "A la Patrona, porque gana mucho más que el mínimo y eso obliga a la empresa a reajustar su planilla",
+        "A Mequetrefe, porque el mínimo quedó POR ENCIMA de su equilibrio; a la Patrona no, porque ya le pagan más",
+        "A ninguno de los dos, porque el salario mínimo solo se aplica a los trabajadores que recién entran"
+      ],
+      "correcta": 2,
+      "explicacion": "El mínimo solo muerde si queda por encima del salario de equilibrio; ahí aparece el desempleo. Si queda por debajo, el mercado ya paga más y no pasa nada ni se incumple ninguna ley."
+    },
+    {
+      "id": "m24-q5",
+      "nivel": "comprension",
+      "enunciado": "Ahora el gobierno prueba con un salario MÁXIMO. A la Patrona, que gana 20 000, le pone un techo de 500. A Mequetrefe, que gana 950, le pone un techo de 1 500.\n\n¿Cómo funciona el máximo comparado con el mínimo?",
+      "opciones": [
+        "Es el espejo: muerde cuando queda POR DEBAJO del equilibrio. Le afecta a la Patrona y no a Mequetrefe",
+        "Funciona igual que el mínimo: muerde cuando queda por encima del equilibrio, así que afecta a Mequetrefe",
+        "No afecta a ninguno de los dos, porque los topes de salario no son exigibles a las empresas privadas",
+        "Les afecta a los dos, porque todo control de precios desplaza las curvas de oferta y de demanda"
+      ],
+      "correcta": 0,
+      "explicacion": "Mínimo y máximo son simétricos: el mínimo solo actúa si está arriba del equilibrio, el máximo solo si está abajo. Y lo que genera el máximo no es desempleo, sino escasez de trabajadores."
+    },
+    {
+      "id": "m24-q6",
+      "nivel": "aplicacion",
+      "enunciado": "La demanda laboral de un sector es W = 10·L^0,5. El gobierno le aplica a la empresa un impuesto del 20% sobre el salario que paga.\n\n¿Cómo queda la demanda, y cuál es el error que marca el apunte?",
+      "opciones": [
+        "Queda W = 10·L^0,5 − 20, restándole al valor de la demanda los veinte puntos del impuesto que cobra el gobierno",
+        "Queda W = 8·L^0,5, porque un impuesto porcentual MULTIPLICA por (1 − 0,20)",
+        "Queda W = 10·L^0,3, porque el impuesto se le descuenta directamente al exponente de la función de demanda",
+        "Queda W = 12·L^0,5, porque el impuesto lo termina pagando el trabajador y eso empuja la curva hacia arriba"
+      ],
+      "correcta": 1,
+      "explicacion": "El error que marca el apunte es restarle «20%» como si fuera un número: un impuesto FIJO sí se resta (si fuera de 2, W = 10·L^0,5 − 2), pero uno PORCENTUAL multiplica. Control: con L = 4 la base vale 20 y con impuesto debe quedar 16, que es 8·√4."
+    },
+    {
+      "id": "m24-q7",
+      "nivel": "aplicacion",
+      "enunciado": "En un mercado laboral te dan estas dos ecuaciones, donde L son horas de trabajo y W el salario por hora:\n\n3L − W = 12 · L + W = 20\n\n¿Cuál es el equilibrio, y cuánto desempleo hay si se fija un salario de 18?",
+      "opciones": [
+        "Equilibrio en L = 4 y W = 16, y con un salario de 18 no hay desempleo porque está muy cerca",
+        "Equilibrio en L = 8 y W = 12, y con 18 hay un faltante de 8 horas, o sea escasez de trabajadores",
+        "Equilibrio en L = 10 y W = 18, así que fijar 18 deja el mercado exactamente donde ya estaba",
+        "Equilibrio en L = 8 y W = 12, y con 18 hay desempleo de 8: se ofrecen 10 horas y se demandan 2"
+      ],
+      "correcta": 3,
+      "explicacion": "Despejadas quedan W = 3L − 12 (sube: oferta) y W = 20 − L (baja: demanda). Igualándolas sale L = 8 y W = 12. Y el desempleo siempre es ofertantes menos demandantes al MISMO salario."
+    },
+    {
+      "id": "m24-q8",
+      "nivel": "aplicacion",
+      "enunciado": "En Tortilla Land, PMgL = 0,8·A·K^0,2·L^(−0,2), con tecnología A = 5 y capital K = 32. Los trabajadores gastan 4 rocas de oro en subsistencia, y por cada 8 rocas más de salario se ofrecen 4 trabajadores más. Acuérdate de que 32^0,2 = 2.\n\nCon un salario real de 8 rocas, ¿hay desempleo?",
+      "opciones": [
+        "No hay desempleo: la demanda queda w = 8·L^(−0,2) y la oferta W = 2L + 4, y las dos dan 1 trabajador",
+        "Sí, y es de 2 trabajadores: se ofrecen 4 y se demanda 2, porque el salario dobla a la subsistencia",
+        "Sí, y es de 1 trabajador: la demanda w = 8·L^(−0,2) da 1 y la oferta W = 2L + 4 da 2 al salario de 8",
+        "No se puede saber: para hablar de desempleo habría que conocer antes cuál es el salario de equilibrio exacto de ese mercado"
+      ],
+      "correcta": 2,
+      "explicacion": "La demanda real sale de 0,8 × 5 × 2 = 8. La oferta tiene pendiente 8/4 = 2 e intercepto 4. Reemplazando 8 en las dos: 1 demandante contra 2 ofertantes, así que sobra 1."
+    },
+    {
+      "id": "m24-q9",
+      "nivel": "aplicacion",
+      "enunciado": "Llegas a una economía con tres sectores. En «A» hacen falta 6 trabajadores para una unidad de producto, que se vende a 3. En «B» hacen falta 4 trabajadores por unidad, y el producto vale 4. En «C» el PMgL es 5·K^0,7·L^(−0,7), con K = 20, precio 1 y 50 trabajadores contratados.\n\n¿A qué sector te conviene entrar?",
+      "opciones": [
+        "Al sector C, que paga unas 2,63 unidades, contra 1 del sector B y 0,5 del sector A",
+        "Al sector A, que es el que más trabajadores necesita por unidad y por eso es el que mejor paga",
+        "Al sector B, porque su producto es el más caro de los tres y eso se traslada al salario",
+        "A cualquiera: en competencia el salario termina siendo el mismo en los tres sectores"
+      ],
+      "correcta": 0,
+      "explicacion": "Se decide por el salario que te ofrecen, y el salario es w = PMgL × P. En A y B el PMgL sale de la receta (1/6 y 1/4), y en C hay que reemplazar los 50 trabajadores en la fórmula."
+    }
+  ]
+}

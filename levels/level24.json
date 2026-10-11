@@ -1,0 +1,42 @@
+{
+  "id": "level24",
+  "distrito": "Nueva Zelanda",
+  "clase": "Clase 02 · PC3",
+  "titulo": "El primer país que le puso piso al sueldo",
+  "tema": "fiordo",
+  "musica": "fiordo",
+  "vehiculo": "catamaran",
+  "intro": "Segunda clase de la PC3, y otro país: Nueva Zelanda. Acá, en 1894, se aprobó la Ley de Conciliación y Arbitraje Industrial — la primera del mundo que creó un tribunal con poder para fijarle un piso al sueldo. Dos años después Australia copió la idea, y recién en 1938 llegó a Estados Unidos. Es el lugar exacto para esta clase, porque hoy toca el otro lado del mercado laboral: hasta ahora solo mirabas la DEMANDA, lo que la empresa está dispuesta a pagar. Ahora entra la OFERTA, que son las familias decidiendo si les vale la pena salir de casa, y del cruce de las dos sale el salario de equilibrio. Y recién ahí se puede responder la pregunta que el tribunal de 1894 se hacía en cada laudo: si le pongo un piso al sueldo, ¿cambia algo o no cambia nada?",
+  "repaso": [
+    "DE DÓNDE VENIMOS: en la clase pasada se armó la DEMANDA laboral, que sale de contratar hasta que W = VPMgL. En términos nominales w = PMgL × P, y en términos reales w/P = PMgL. Hoy entra la OFERTA y, con las dos, el equilibrio.",
+    "EL SALARIO DE RESERVA (o de subsistencia) es el piso que pone el PROPIO TRABAJADOR: lo que necesita ganar para que le valga la pena ir a trabajar. Se calcula sumando lo que le cuesta trabajar. Forzay gasta 10 en pasajes y 25 en almuerzo → 35 soles al día. El Choche gasta 10 en gasolina y 15 en almuerzo → 25 al día, o 750 al mes.",
+    "NO CONFUNDIRLO CON EL SALARIO MÍNIMO: el mínimo lo dictamina el GOBIERNO; el de reserva lo deciden las FAMILIAS. En el gráfico el de reserva es el INTERCEPTO de la oferta, y el mínimo es una recta horizontal que se dibuja aparte.",
+    "LA ECUACIÓN DE LA OFERTA es W = mL + b, y se arma con 3 PASITOS: (1) pendiente, (2) punto, (3) reemplazar. La pendiente es m = variación de W / variación de L, y el intercepto b es el salario de reserva.",
+    "OJO CON DAR VUELTA LA PENDIENTE, que es el error más común. «Por cada 10 soles adicionales se ofrecen 2 trabajadores más» da m = 10/2 = 5, no 2/10. «De 40 a 60 soles pasaron de 10 a 15 interesados» da m = 20/5 = 4. Y el ejercicio del apunte: subsistencia 60 y 50 trabajadores más por 200 soles → W = 4L + 60.",
+    "EL SALARIO MÍNIMO y sus TRES situaciones. (1) Si el mínimo es MAYOR al de equilibrio, sí afecta y aparece desempleo — y si le siguieran pagando el viejo, se estaría incumpliendo la ley. (2) Si es IGUAL, no cambia nada. (3) Si es MENOR, no afecta: el mercado ya paga por encima y no se incumple nada.",
+    "CÓMO SE CALCULA EL DESEMPLEO: se reemplaza el salario mínimo en la OFERTA y en la DEMANDA, y se restan. Desempleo = N° de ofertantes − N° de demandantes. Y solo aparece cuando el mínimo quedó por encima del equilibrio.",
+    "EL SALARIO MÁXIMO es el espejo: muerde solo cuando queda POR DEBAJO del equilibrio, y lo que genera no es desempleo sino escasez de trabajadores. A la Patrona, que gana 20 000, un techo de 500 sí le afecta; a Mequetrefe, que gana 950, un techo de 1 500 no le afecta.",
+    "IMPUESTOS SOBRE LA DEMANDA. Uno FIJO se resta: si W = −2L + 10 y el impuesto es 2, queda W = −2L + 8; con un subsidio de 5 queda W = −2L + 15. Uno PORCENTUAL multiplica: si W = 10·L^0,5 y el impuesto es 20%, queda W = 8·L^0,5. Restarle «20%» como si fuera un número es el error que el apunte marca expresamente. Los impuestos sobre la OFERTA se ven en la 4ta clase.",
+    "LA RECETITA COMPLETA: (1) hallar la demanda, contratando hasta W = VPMgL; (2) hallar la oferta con los 3 pasitos; (3) igualarlas para el equilibrio; y (4) si hay un salario fijado, reemplazarlo en las dos y restar para sacar el desempleo.",
+    "EJERCICIO RESUELTO — LAS DOS RECTAS (2022 II): de 3L − W = 12 sale W = 3L − 12, que sube, así que es la OFERTA; de L + W = 20 sale W = 20 − L, que baja, así que es la DEMANDA. Igualando: L = 8 y W = 12. Con un salario de 18 se ofrecen 10 horas y se demandan 2, o sea desempleo de 8.",
+    "EJERCICIO RESUELTO — TORTILLA LAND (2021 II): PMgL = 0,8·A·K^0,2·L^(−0,2) con A = 5 y K = 32. Como 32^0,2 = 2, la demanda real queda w/P = 8·L^(−0,2). La oferta: subsistencia 4 y pendiente 8/4 = 2, o sea W = 2L + 4. Con un salario real de 8 se demanda 1 trabajador y se ofrecen 2: hay desempleo de 1. El equilibrio verdadero está más abajo, en L ≈ 1,63 con W ≈ 7,26.",
+    "EJERCICIO RESUELTO — A QUÉ SECTOR ENTRAR (2022 I): se decide por el salario que te ofrecen, y el salario es w = PMgL × P. Sector A: 6 trabajadores por unidad → PMgL = 1/6, con precio 3 paga 0,5. Sector B: 4 por unidad → PMgL = 1/4, con precio 4 paga 1. Sector C: PMgL = 5·K^0,7·L^(−0,7) con K = 20, precio 1 y 50 trabajadores → paga ≈ 2,63. Conviene el C."
+  ],
+  "mapa": [
+    "                                                                                                                                                                                ",
+    "                                                                                                                                                                                ",
+    "                                                                                                                                                                                ",
+    "                                                       A                                                   A                                                                    ",
+    "                                                     o o o                                               o o o                                                                  ",
+    "                                                     ======                                              ======                                                                 ",
+    "                                                                                                                                                                                ",
+    "                        o o o                               o o o                           o o o                           o o o                     o o o                     ",
+    "                ?           o o         L                           V               G         o o                   G               o o           1     L                       ",
+    "                        ====                                ====                            ====                            ====                      ====                      ",
+    "                        o o                     o o                                             o o                     o o                     o o                             ",
+    "  P                 E         C             E   T       X       E                 C     E         X T     E             X       E           C                 B             M   ",
+    "##################################   ###################################    ####################################   #############################################################",
+    "##################################   ###################################    ####################################   #############################################################",
+    "##################################   ###################################    ####################################   #############################################################"
+  ]
+}

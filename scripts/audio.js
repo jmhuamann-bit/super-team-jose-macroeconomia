@@ -164,6 +164,14 @@ const TEMAS_MUSICA = {
               "B4",2,"D5",2,"E5",4,"D5",2,"B4",2,"E4",4],
     bajo:    ["E3",8,"B2",8,"G2",8,"E3",8,"A2",8,"D3",8,"B2",8,"E3",8],
   },
+  fiordo: { // Nueva Zelanda: aire de balada isleña, ancha y despacio
+    tempo: 0.21, onda: "triangle",
+    melodia: ["A3",4,"C4",2,"E4",2,"A4",4,"G4",2,"E4",2,
+              "D4",4,"E4",2,"G4",2,"A4",4,"E4",4,
+              "C4",2,"D4",2,"E4",4,"G4",2,"A4",2,"C5",4,
+              "A4",2,"G4",2,"E4",4,"A3",4],
+    bajo:    ["A1",8,"F2",8,"C2",8,"G2",4,"A1",4,"A1",8],
+  },
   canuts: { // Lyon: aire de bal-musette, con el vaiven del telar en el bajo
     tempo: 0.16, onda: "triangle",
     melodia: ["D4",2,"F4",1,"A4",1,"D5",2,"C5",2,"A4",2,

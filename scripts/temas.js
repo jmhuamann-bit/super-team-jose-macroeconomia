@@ -2501,6 +2501,172 @@ export const TEMAS = {
       }
     },
   },
+  /* =========================================================
+     NUEVA ZELANDA — el fiordo de Milford a media mañana, con el
+     país entero adentro: las paredes negras cayendo a plomo sobre el
+     agua, el Mitre Peak nevado, las cascadas que bajan por la roca,
+     el pasto verde con ovejas y los helechos arbóreos de la orilla.
+     Acá, en 1894, se aprobó la primera ley del mundo que creó un
+     tribunal con poder para fijarle un piso al sueldo.
+     OJO 1: el fondo no lleva ovejas sueltas, mochilas, tijeras ni
+     kiwis — esos son los bichos. (Las ovejas del fondo van CHIQUITAS
+     y pegadas al pasto, para no confundirse con el bicho.)
+     OJO 2: el plano del suelo baja SIN CORTES desde el acantilado
+     hasta la vereda. Si queda un hueco, se asoma el cielo.
+     OJO 3: la paleta va OSCURA arriba (roca casi negra, agua de
+     tinta) y VERDE abajo, bien distinta de la bruma clara de China
+     y del rosado de Japón. Los bichos van en crema, lana y rojo
+     pohutukawa, con contorno negro.
+     ========================================================= */
+  fiordo: {
+    nombre: "Nueva Zelanda",
+    cielo: [[0, "#6d8496"], [0.4, "#9fb0b8"], [0.74, "#c6cdc6"], [1, "#dcdfd0"]],
+    suelo: { cara: "#7d8a66", borde: "#9aa682", tierra: "#3a3a2c", plataforma: "#4a5a4a", plataformaBorde: "#c9a23c" },
+    acento: "#c2423a",
+
+    bichos: ["mochila", "esquiladora", "oveja", "tope", "kiwi"],
+    nombresBichos: [
+      "La Mochila del Salario de Reserva",
+      "La Tijera sin Pendiente",
+      "La Oveja que No Mira el Equilibrio",
+      "El Tope al Revés",
+      "El Kiwi que Cuenta Mal",
+    ],
+    andares: ["patrulla", "guardia", "veloz", "salta", "vuela"],
+    jefe: "arbitro",
+    nombreJefe: "El Árbitro de 1894",
+
+    fondo(ctx, cam, t) {
+      // el sol tapado, que acá casi siempre está nublado
+      ctx.fillStyle = "rgba(246,248,244,.22)";
+      ctx.beginPath(); ctx.arc(610, 70, 56, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = "rgba(250,252,246,.80)";
+      ctx.beginPath(); ctx.arc(610, 70, 21, 0, Math.PI * 2); ctx.fill();
+
+      // LAS PAREDES DEL FIORDO: caen a plomo, que es lo que las distingue de
+      // cualquier otra montaña. Van casi negras, en dos planos.
+      repetir(ctx, cam, 260, 0.06, (x, i) => {
+        const bx = x + 30, base = 306, alto = 200 + ((i * 61) % 46);
+        ctx.fillStyle = "#4a5a56";
+        ctx.beginPath();
+        ctx.moveTo(bx - 84, base);
+        ctx.lineTo(bx - 56, base - alto * 0.72);
+        ctx.lineTo(bx - 10, base - alto);                           // el pico, afilado
+        ctx.lineTo(bx + 34, base - alto * 0.66);
+        ctx.lineTo(bx + 84, base);
+        ctx.closePath(); ctx.fill();
+        ctx.fillStyle = "#e4eaea";                                  // la nieve de la cumbre
+        ctx.beginPath();
+        ctx.moveTo(bx - 28, base - alto * 0.86);
+        ctx.lineTo(bx - 10, base - alto);
+        ctx.lineTo(bx + 12, base - alto * 0.83);
+        ctx.lineTo(bx - 2, base - alto * 0.88);
+        ctx.closePath(); ctx.fill();
+      });
+      repetir(ctx, cam, 190, 0.11, (x, i) => {
+        const bx = x + 20, base = 306, alto = 130 + ((i * 47) % 54);
+        ctx.fillStyle = "#33433f";
+        ctx.beginPath();
+        ctx.moveTo(bx - 70, base);
+        ctx.lineTo(bx - 40, base - alto * 0.78);
+        ctx.lineTo(bx - 4, base - alto);
+        ctx.lineTo(bx + 32, base - alto * 0.7);
+        ctx.lineTo(bx + 70, base);
+        ctx.closePath(); ctx.fill();
+        // LAS CASCADAS, que bajan por la pared de roca
+        ctx.fillStyle = "rgba(226,238,238,.56)";
+        ctx.fillRect(bx + 14, base - alto * 0.62, 3, alto * 0.62);
+        ctx.fillStyle = "rgba(226,238,238,.30)";
+        ctx.fillRect(bx - 30, base - alto * 0.46, 2, alto * 0.46);
+      });
+
+      // EL PASTO, con las ovejas chiquitas y pegadas al suelo
+      repetir(ctx, cam, 96, 0.22, (x, i) => {
+        const bx = x, base = 306;
+        ctx.fillStyle = ["#6f8a52", "#7b9659", "#64804a"][i % 3];
+        ctx.fillRect(bx, base - 26, 98, 26);
+        if (i % 2 === 0) {                                          // la oveja del fondo, mínima
+          ctx.fillStyle = "#e4e2d6";
+          ctx.fillRect(bx + 34, base - 13, 11, 6);
+          ctx.fillStyle = "#2a2824";
+          ctx.fillRect(bx + 44, base - 14, 3, 3);
+          ctx.fillRect(bx + 36, base - 7, 2, 3);
+          ctx.fillRect(bx + 41, base - 7, 2, 3);
+        }
+      });
+
+      // EL PLANO DEL SUELO, del acantilado a la vereda y SIN CORTES:
+      // la orilla de enfrente, el agua del fiordo y la orilla de este lado
+      ctx.fillStyle = "#5e6b4c";
+      ctx.fillRect(0, 306, CFG.ANCHO_VISTA, 10);
+      ctx.fillStyle = "#24383e";                                    // el agua, casi tinta
+      ctx.fillRect(0, 316, CFG.ANCHO_VISTA, 30);
+      ctx.fillStyle = "#33505a";
+      ctx.fillRect(0, 316, CFG.ANCHO_VISTA, 5);
+      for (let i = 0; i < 30; i++) {                                // el reflejo de la pared
+        const x = (i * 63 - cam * 0.18) % 960 - 40;
+        ctx.fillStyle = "rgba(200,222,222,.18)";
+        ctx.fillRect(x, 325 + ((i * 29) % 16), 18, 2);
+      }
+      ctx.fillStyle = "#86906c";                                    // la orilla de este lado
+      ctx.fillRect(0, 346, CFG.ANCHO_VISTA, 36);
+      ctx.fillStyle = "#9ca67e";
+      ctx.fillRect(0, 346, CFG.ANCHO_VISTA, 4);
+
+      // EL EMBARCADERO de madera sobre el agua
+      repetir(ctx, cam, 420, 0.30, (x, i) => {
+        const bx = x + 60, cubierta = 330;
+        ctx.fillStyle = "#6b5a42";
+        ctx.fillRect(bx, cubierta, 150, 7);
+        ctx.fillStyle = "#53452f";
+        for (let k = 0; k < 5; k++) ctx.fillRect(bx + 8 + k * 34, cubierta + 7, 6, 16);
+        ctx.fillStyle = "#4a3f30";                                  // la baranda
+        ctx.fillRect(bx, cubierta - 12, 150, 2);
+        for (let k = 0; k < 5; k++) ctx.fillRect(bx + 8 + k * 34, cubierta - 12, 2, 12);
+      });
+
+      // EL GALPÓN DE ESQUILA, con su techo de calamina
+      repetir(ctx, cam, 300, 0.54, (x, i) => {
+        const bx = x + 30, base = 382, alto = 34;
+        ctx.fillStyle = "#8a4a3a";                                  // la madera pintada de rojo
+        ctx.fillRect(bx, base - alto, 128, alto);
+        ctx.fillStyle = "#9aa2a6";                                  // la calamina
+        ctx.fillRect(bx - 8, base - alto - 9, 144, 9);
+        ctx.fillStyle = "#7c848a";
+        for (let k = 0; k < 12; k++) ctx.fillRect(bx - 8 + k * 12, base - alto - 9, 2, 9);
+        ctx.fillStyle = "rgba(246,242,220,.82)";                    // las ventanas
+        ctx.fillRect(bx + 14, base - alto + 10, 36, 14);
+        ctx.fillRect(bx + 76, base - alto + 10, 36, 14);
+        ctx.fillStyle = "#4a3f30";                                  // el portón
+        ctx.fillRect(bx + 56, base - 16, 16, 16);
+      });
+
+      // LOS HELECHOS ARBÓREOS de la orilla
+      repetir(ctx, cam, 148, 0.78, (x, i) => {
+        const bx = x + 24, base = 382;
+        ctx.fillStyle = "#4a3f30";
+        ctx.fillRect(bx, base - 34, 5, 34);
+        ctx.fillStyle = ["#3f6b42", "#4b7a4c", "#35603a"][i % 3];
+        for (const [dx, dy] of [[-20, -4], [-12, -11], [0, -14], [12, -11], [20, -4]]) {
+          ctx.beginPath();
+          ctx.ellipse(bx + 2 + dx, base - 36 + dy, 12, 4, dx * 0.055, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      });
+      ctx.fillStyle = "#7a8460";
+      ctx.fillRect(0, 380, CFG.ANCHO_VISTA, 4);
+    },
+
+    clima(ctx, t) {
+      // la llovizna fina del fiordo, que llueve casi todos los días
+      for (let i = 0; i < 34; i++) {
+        const x = (i * 111 + t * 0.4) % 880 - 20;
+        const y = (i * 53 + t * 2.6) % 420;
+        ctx.fillStyle = "rgba(216,232,232,.26)";
+        ctx.fillRect(x, y, 1, 7);
+      }
+    },
+  },
 };
 
 /** Pinta el cielo del tema (degradado vertical). */
