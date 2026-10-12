@@ -1,0 +1,125 @@
+{
+  "nivel": "level25",
+  "clase": "Clase 03 · PC3 — Desplazamientos de la oferta y la demanda laboral",
+  "fuente": "Apuntes de la Clase 03 — Desplazamiento de la oferta y demanda laboral (Economía General II)",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "m25-q1",
+      "nivel": "comprension",
+      "enunciado": "Dos noticias del mismo mercado laboral:\n\nI. «Las empresas del puerto pasan a pagar 200 pesos más por jornada»\nII. «Llegan 50 000 trabajadores nuevos al país»\n\n¿Cuál mueve el punto A LO LARGO de la curva y cuál DESPLAZA la curva entera?",
+      "opciones": [
+        "I desplaza la demanda y II desplaza la oferta, porque las dos noticias cambian el mercado",
+        "I mueve a lo largo de la curva y II desplaza la oferta: el salario es la variable del eje",
+        "I mueve a lo largo y II también, porque el empleo tampoco es un factor externo al mercado",
+        "I desplaza la oferta y II mueve a lo largo, porque el que manda es el número de gente"
+      ],
+      "correcta": 1,
+      "explicacion": "La regla es corta: lo ÚNICO que te mueve a lo largo de la curva es el SALARIO, que está en el eje. Cualquier otra cosa —migraciones, impuestos, máquinas, precios— corre la curva entera. Confundirlos es el error que más cae en esta clase."
+    },
+    {
+      "id": "m25-q2",
+      "nivel": "comprension",
+      "enunciado": "El gobierno estudia dos medidas que caen sobre los TRABAJADORES:\n\nI. Un impuesto que les descuenta parte del sueldo\nII. Un subsidio del tipo seguro de desempleo\n\n¿Qué le pasa a la OFERTA laboral con cada una?",
+      "opciones": [
+        "I la contrae y II la expande, porque el impuesto desanima y el subsidio da ganas de trabajar",
+        "Ninguna de las dos la mueve: los impuestos y subsidios solo afectan a las empresas",
+        "I la expande y II la contrae: con el impuesto hay que trabajar más para llegar a lo mismo",
+        "Las dos la contraen, porque cualquier intervención del Estado reduce las ganas de trabajar"
+      ],
+      "correcta": 2,
+      "explicacion": "Va al revés de lo que parece, y por eso es pregunta. Si te descuentan del sueldo, para llegar al mismo ingreso tenés que ofrecer MÁS trabajo: la oferta se expande. Si te dan un seguro de desempleo, podés darte el lujo de ofrecer menos: se contrae."
+    },
+    {
+      "id": "m25-q3",
+      "nivel": "aplicacion",
+      "enunciado": "Se inaugura una línea nueva del Subte y los trabajadores de la zona pasan a gastar un 95% menos en transporte para llegar a sus trabajos.\n\n¿Qué pasa con el salario de reserva y con la oferta laboral?",
+      "opciones": [
+        "El salario de reserva BAJA y la oferta se expande: ir a trabajar ahora cuesta menos",
+        "El salario de reserva sube, porque viajar mejor hace que la gente se valore más y pida más",
+        "El salario de reserva no cambia: lo fija el gobierno y el transporte no entra en esa cuenta",
+        "La oferta no se mueve y lo que se desplaza es la demanda, porque la empresa ahorra en pasajes"
+      ],
+      "correcta": 0,
+      "explicacion": "El salario de reserva es lo que te cuesta poder ir a trabajar, así que si baja el pasaje, baja el piso. En el gráfico el intercepto de la oferta baja y la curva se corre a la derecha: al mismo salario hay más gente dispuesta."
+    },
+    {
+      "id": "m25-q4",
+      "nivel": "comprension",
+      "enunciado": "La demanda de BIENES del país se contrae: la gente compra menos.\n\n¿Qué pasa en el mercado laboral y por qué?",
+      "opciones": [
+        "No pasa nada en el laboral: son dos mercados distintos y cada uno tiene su equilibrio",
+        "La oferta laboral se contrae, porque al haber menos consumo las familias se retiran del mercado",
+        "La demanda laboral se expande, porque la empresa necesita vendedores para colocar lo que no sale",
+        "La demanda laboral se CONTRAE: es una demanda DERIVADA de la demanda de bienes"
+      ],
+      "correcta": 3,
+      "explicacion": "El empresario primero mira a su clientela y decide cuánto le conviene producir; recién ahí decide a cuántos contratar. Por eso la demanda laboral es DERIVADA: si cae la de bienes, arrastra a la de trabajo."
+    },
+    {
+      "id": "m25-q5",
+      "nivel": "aplicacion",
+      "enunciado": "Acordate de que la demanda laboral ES la curva del VPMgL, y que VPMgL = PMgL × P. Tres hechos:\n\nI. Se capacita a los trabajadores\nII. Sube el precio del bien que vende la empresa\nIII. Sube el salario mínimo\n\n¿Cuáles DESPLAZAN la demanda laboral?",
+      "opciones": [
+        "Solo la III, porque el salario es el costo directo de contratar y es lo que mira la empresa",
+        "Las tres, porque las tres cambian las condiciones en las que la empresa decide contratar",
+        "La I y la II la expanden; la III NO la desplaza, solo mueve el punto sobre la curva",
+        "Solo la I, porque el precio del bien pertenece al mercado de bienes y no al laboral"
+      ],
+      "correcta": 2,
+      "explicacion": "Capacitar sube el PMgL y un precio más alto sube el VPMgL: las dos corren la demanda a la derecha. El salario, en cambio, está en el EJE, así que te mueve sobre la misma curva. Ojo con confundir el PRECIO del bien con el SALARIO."
+    },
+    {
+      "id": "m25-q6",
+      "nivel": "aplicacion",
+      "enunciado": "Un frigorífico del Riachuelo compra más máquinas.\n\n¿Qué pasa con su demanda de trabajadores?",
+      "opciones": [
+        "Se contrae siempre: toda máquina nueva termina ocupando el puesto de algún trabajador",
+        "Se expande siempre, porque alguien tiene que operar las máquinas que acaban de comprar",
+        "No se mueve: las máquinas son capital, que es un factor distinto del trabajo",
+        "Depende: si son complementarios se expande, y si son sustitutos se contrae"
+      ],
+      "correcta": 3,
+      "explicacion": "Complementarios: la máquina sube el PMgL del que la opera, sube el VPMgL y la demanda se expande. Sustitutos: la máquina hace el trabajo de la persona y la demanda se contrae. Y el reto al revés: si llegan migrantes y baja el salario, la demanda de MÁQUINAS sube si son complementarios y cae si son sustitutos."
+    },
+    {
+      "id": "m25-q7",
+      "nivel": "aplicacion",
+      "enunciado": "En Orán pasaron tres cosas a la vez: muchos extranjeros en edad de trabajar fueron desalojados, varias plantas cerraron para siempre, y el gobierno dio una transferencia incondicional a todos los trabajadores.\n\nRambert ve que los salarios CAYERON y dice que no puede ser, porque «solo se contrajo la oferta». ¿Qué pasó?",
+      "opciones": [
+        "Rambert tiene razón y el dato está mal: con la oferta contraída el salario solo puede subir",
+        "Se contrajeron las DOS: el cierre de plantas contrajo la demanda y pesó más que la oferta",
+        "Se expandió la oferta con la transferencia, y por eso el salario terminó cayendo igual",
+        "Se contrajo solo la demanda: los desalojos no tocan la oferta porque eran extranjeros"
+      ],
+      "correcta": 1,
+      "explicacion": "Los desalojos y la transferencia contraen la OFERTA; el cierre de plantas contrae la DEMANDA. Con las dos contrayéndose, L cae con certeza pero W queda AMBIGUO — y ese «en todos los casos pasa esto, pero no hay certeza sobre aquello» es justo la forma de responder del 2do modelo."
+    },
+    {
+      "id": "m25-q8",
+      "nivel": "aplicacion",
+      "enunciado": "Llegan profesionales inmigrantes y la oferta laboral se expande en 100. Al día siguiente hay revueltas que destruyen el capital de los microempresarios y la demanda laboral se contrae en 200.\n\n¿Qué pasa con el salario y con el empleo de equilibrio?",
+      "opciones": [
+        "W sube y L cae, porque la destrucción de capital vuelve más escaso a todo el mercado",
+        "W cae y L sube, porque llegó más gente dispuesta a trabajar por menos que la de antes",
+        "W cae con certeza, pero sobre L no se puede decir nada: los dos efectos se cancelan",
+        "W cae con certeza y L también, porque la contracción de la demanda es el doble de grande"
+      ],
+      "correcta": 3,
+      "explicacion": "La expansión de la oferta empuja W abajo y L arriba; la contracción de la demanda empuja W abajo y L abajo. W cae sin discusión. Sobre L, el efecto que manda es el de la demanda, que es el doble: 200 contra 100."
+    },
+    {
+      "id": "m25-q9",
+      "nivel": "comprension",
+      "enunciado": "México tiene un salario mínimo FIJADO POR ENCIMA del salario de equilibrio. En ese contexto llegan trabajadores migrantes y la oferta laboral se expande.\n\n¿Qué pasa con el salario y con el empleo?",
+      "opciones": [
+        "El salario no se mueve porque el mínimo ya está arriba, y lo que crece es el DESEMPLEO",
+        "El salario cae hasta el nuevo equilibrio y por eso las empresas contratan a más gente",
+        "El salario sube, porque llega gente más calificada y las empresas compiten por tomarla",
+        "No cambia nada, porque con un salario mínimo vigente el mercado ya no reacciona a nada"
+      ],
+      "correcta": 0,
+      "explicacion": "El mínimo es un piso: si ya estaba por encima del equilibrio, el salario no puede bajar. La demanda no se movió, así que las empresas contratan lo mismo, pero ahora hay más gente buscando a ese salario. La brecha entre ofertantes y demandantes se agranda."
+    }
+  ]
+}

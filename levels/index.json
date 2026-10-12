@@ -337,6 +337,20 @@
       "abierto": true,
       "mapa": "levels/level24.json",
       "preguntas": "questions/level24_questions.json"
+    },
+    {
+      "id": "level25",
+      "clase": "Clase 03",
+      "distrito": "Argentina",
+      "titulo": "El puerto donde la curva se corre entera",
+      "icono": "🧉",
+      "seccion": "PC3",
+      "seccionNota": "Mercado laboral, desempleo y crecimiento — y ahora visitando el mundo",
+      "retos": 7,
+      "duracion": "3 min",
+      "abierto": true,
+      "mapa": "levels/level25.json",
+      "preguntas": "questions/level25_questions.json"
     }
   ]
 }

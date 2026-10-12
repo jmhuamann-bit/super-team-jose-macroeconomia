@@ -1,0 +1,42 @@
+{
+  "id": "level25",
+  "distrito": "Argentina",
+  "clase": "Clase 03 · PC3",
+  "titulo": "El puerto donde la curva se corre entera",
+  "tema": "riachuelo",
+  "musica": "riachuelo",
+  "vehiculo": "colectivo",
+  "intro": "Tercera clase de la PC3, y otro país: Argentina. Entre 1870 y 1930 llegaron unos seis millones de inmigrantes, y para el censo de 1914 casi un tercio de la gente que vivía en el país había nacido afuera — la proporción más alta del mundo en ese momento. Llegaban al Hotel de Inmigrantes, en el puerto de Buenos Aires: dormían gratis cinco días y en el mismo edificio funcionaba una Oficina de Trabajo que los repartía entre los empleadores que venían a buscarlos. O sea, un edificio entero dedicado a mover la OFERTA LABORAL. Y acá al lado, en La Boca, los recién llegados levantaron los conventillos con chapa y sobras de pintura de los astilleros — por eso Caminito es de todos los colores. La clase de hoy va justo de eso: hasta ahora armabas las dos curvas y las cruzabas; ahora hay que MOVERLAS. Y lo primero de todo es saber cuándo el mercado se mueve SOBRE la curva y cuándo la curva entera se corre de lugar.",
+  "repaso": [
+    "DE DÓNDE VENIMOS: en la clase pasada se armaron la oferta y la demanda y se las cruzó para sacar el equilibrio. Hoy no se arman: se MUEVEN. Toda la clase es decidir cuál de las dos se corre, para qué lado, y qué le pasa entonces al salario (W) y al empleo (L).",
+    "LA REGLA QUE ORDENA TODO: lo ÚNICO que te mueve el punto A LO LARGO de la curva es el SALARIO, porque es la variable que está en el eje. Cualquier otra cosa —migraciones, impuestos, máquinas, precios, el número de empresas— DESPLAZA la curva entera. Confundir las dos cosas es el error que más cae.",
+    "LOS 6 FACTORES QUE MUEVEN LA OFERTA (que la ponen las FAMILIAS): (1) el número de personas que quieren trabajar, o sea las migraciones; (2) que otro mercado se haga más o menos atractivo; (3) que suba o baje el salario de reserva; (4) impuestos a los trabajadores; (5) subsidios a los trabajadores; y (6) el seguro de salud, que es el caso especial.",
+    "EL PAR QUE VA AL REVÉS DE LO QUE PARECE, y por eso es pregunta: un IMPUESTO al trabajador EXPANDE la oferta y un SUBSIDIO la CONTRAE. Si te descuentan del sueldo, para llegar al mismo ingreso tenés que ofrecer más trabajo; si te dan un seguro de desempleo, podés darte el lujo de ofrecer menos.",
+    "EL SEGURO DE SALUD ES EL CASO ESPECIAL y la respuesta es «depende»: si el trabajador LO VALORA, es como un pago extra y la oferta se expande; si no lo valora, no le cambia nada y la oferta queda intacta. Y acordate del salario de reserva: si baja el pasaje, baja el piso y la oferta se expande.",
+    "LOS 4 FACTORES QUE MUEVEN LA DEMANDA (que la ponen las EMPRESAS): (1) el número de empresas; (2) los costos de contratación, o sea si el negocio te resulta rentable; (3) los efectos en el PMgL; y (4) el precio del bien que vendés.",
+    "QUÉ ENTRA EN «COSTOS DE CONTRATACIÓN», con la lista del apunte: impuestos y subsidios a las empresas, el pago de la CTS, los gastos de Recursos Humanos para contratar y despedir, sindicatos que se empoderan y ponen trabas, el costo del préstamo (si el crédito se abarata, la demanda se expande) y la regulación que traba la inversión privada.",
+    "EL PMgL Y EL VPMgL: acordate de que la curva de la DEMANDA laboral ES la curva del VPMgL, y que VPMgL = PMgL × P. Entonces todo lo que suba el PMgL expande la demanda, y el apunte marca tres cosas que lo mueven: la educación (capital humano), la maquinaria y la tecnología, y las condiciones ambientales (clima, salud, hasta la felicidad).",
+    "LA DEMANDA LABORAL ES UNA DEMANDA DERIVADA de la demanda de BIENES: el empresario primero mira a su clientela y decide cuánto le conviene producir, y recién ahí decide a cuántos contratar. Si la demanda de bienes se expande, la laboral también; si se contrae, la arrastra. Y no confundas el PRECIO del bien con el SALARIO del mercado laboral.",
+    "MÁQUINAS Y TRABAJADORES, el caso especial. Si son COMPLEMENTARIOS, más máquinas suben el PMgL del que las opera y la demanda laboral se EXPANDE. Si son SUSTITUTOS, la máquina hace el trabajo de la persona y la demanda se CONTRAE. El reto al revés: si llegan inmigrantes y cae el salario, la demanda de MÁQUINAS sube con complementarios y cae con sustitutos — son DOS mercados distintos.",
+    "LOS 3 MODELOS DE PROBLEMA DE EXAMEN. 1ro: se mueve UNA sola curva («la maquinaria se destruyó por las guerras»). 2do: la oferta Y la demanda se mueven al mismo tiempo. 3ro: la MISMA curva se expande y se contrae a la vez («un subsidio a las empresas, pero las máquinas se estropearon por los huaicos»).",
+    "LA ESTRUCTURA DE LA RESPUESTA en los modelos 2 y 3, que es la que dan los puntos: (1) reconocer qué se expande (a la derecha) y qué se contrae (a la izquierda); (2) graficar LOS 3 CASOS; y (3) decir qué pasó con W y con L, con la fórmula del apunte: «en todos los casos pasa ESTO, pero no existe certeza sobre AQUELLO».",
+    "LA TABLITA QUE RESUELVE CUALQUIER COMBINACIÓN, movimiento por movimiento. Oferta se EXPANDE: W baja, L sube. Oferta se CONTRAE: W sube, L baja. Demanda se EXPANDE: W sube, L sube. Demanda se CONTRAE: W baja, L baja. Se juntan los dos movimientos: lo que coincide es seguro, y lo que se contradice es lo que queda ambiguo salvo que te den tamaños."
+  ],
+  "mapa": [
+    "                                                                                                                                                                                  ",
+    "                                                                                                                                                                                  ",
+    "                                                                                                                                                                                  ",
+    "                                                                                                                                                                                  ",
+    "                    AA                                                                                                                                                            ",
+    "                   o o                  o o                                                                                                                                       ",
+    "                                                                                                                                                                                  ",
+    "                  ======          o o  =====                               o  o  o               o     o             o     o     o                                                ",
+    "             ?                   V              o    G  o      o                                                 L oo oo oo oo oo oo    o      o           1  L                   ",
+    "                                 =====        oo oo   oo oo  oo oo        ==========           ===== =====                                                              o o o     ",
+    "                                                                                                                                       ###    ###                                 ",
+    "  P            T           E                   E           E           C      E           C                         X E   X     X      ### E  ###       C           B         M   ",
+    "#######################################################  #####  #############################              #######################################################################",
+    "#######################################################  #####  #############################              #######################################################################",
+    "#######################################################  #####  #############################              #######################################################################"
+  ]
+}

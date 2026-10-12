@@ -2667,6 +2667,217 @@ export const TEMAS = {
       }
     },
   },
+
+  riachuelo: {
+    nombre: "Argentina",
+    cielo: [[0, "#5b86b3"], [0.42, "#9db9cf"], [0.72, "#d6cfc0"], [0.8, "#4a4238"], [1, "#241f1a"]],
+    suelo: { cara: "#8e8470", borde: "#aaa088", tierra: "#39312a", plataforma: "#7c4a32", plataformaBorde: "#e8c85a" },
+    acento: "#4aa3d8",
+
+    bichos: ["valija", "recibo", "molinete", "changuito", "bandoneon", "gancho"],
+    nombresBichos: [
+      "La Valija que No Sabe si se Movió",
+      "El Recibo al Revés",
+      "El Molinete del Subte",
+      "El Changuito que Llega Tarde",
+      "El Bandoneón Desafinado",
+      "El Gancho del Frigorífico",
+    ],
+    andares: ["patrulla", "guardia", "veloz", "salta", "vuela"],
+    jefe: "oficial",
+    nombreJefe: "El Oficial del Hotel de Inmigrantes",
+
+    fondo(ctx, cam, t) {
+      // `repetir` puede dar un índice NEGATIVO al ir hacia atrás, y en JS
+      // arreglo[-1] es undefined; esto lo envuelve siempre a un índice válido
+      const elige = (a, n) => a[((n % a.length) + a.length) % a.length];
+
+      // el sol del Río de la Plata, bajo y amarillento
+      ctx.fillStyle = "rgba(252,238,198,.20)";
+      ctx.beginPath(); ctx.arc(612, 104, 58, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = "rgba(254,246,220,.82)";
+      ctx.beginPath(); ctx.arc(612, 104, 22, 0, Math.PI * 2); ctx.fill();
+
+      // LA SILUETA DEL CENTRO porteño, lejísimos y en gris azulado: bloques
+      // altos y angostos, que es lo que se ve desde el Riachuelo mirando al norte
+      repetir(ctx, cam, 148, 0.05, (x, i) => {
+        const bx = x, base = 306, alto = 86 + ((i * 59) % 68);
+        ctx.fillStyle = "#7f93a6";
+        ctx.fillRect(bx, base - alto, 46, alto);
+        ctx.fillStyle = "rgba(240,246,250,.16)";
+        for (let y = base - alto + 8; y < base - 10; y += 11) {
+          for (let k = 0; k < 3; k++) ctx.fillRect(bx + 6 + k * 13, y, 7, 5);
+        }
+      });
+
+      // EL PUENTE TRANSBORDADOR del Riachuelo: dos torres de celosía unidas
+      // arriba, con la barquilla colgando de sus cables. Es LA silueta del
+      // barrio y lo que avisa que esto es un puerto de verdad.
+      repetir(ctx, cam, 520, 0.13, (x, i) => {
+        const bx = x + 40, base = 306, cima = base - 164;
+        ctx.fillStyle = "#5d6a6e";
+        for (const tx of [0, 196]) {                                // las dos torres
+          ctx.fillRect(bx + tx, cima, 9, 164);
+          ctx.fillRect(bx + tx + 30, cima, 9, 164);
+          for (let y = cima + 14; y < base - 8; y += 22) {           // los travesaños
+            ctx.fillRect(bx + tx, y, 39, 5);
+            ctx.fillRect(bx + tx + 16, y, 5, 22);
+          }
+        }
+        ctx.fillRect(bx, cima, 235, 11);                            // la viga de arriba
+        ctx.fillStyle = "#49565a";
+        ctx.fillRect(bx, cima + 11, 235, 4);
+        const bq = bx + 70 + Math.sin(t / 260) * 52;                // la barquilla, que va y viene
+        ctx.fillStyle = "#49565a";
+        ctx.fillRect(bq + 14, cima + 15, 3, 54);
+        ctx.fillRect(bq + 44, cima + 15, 3, 54);
+        ctx.fillStyle = "#8a4a3a";
+        ctx.fillRect(bq, cima + 69, 62, 16);
+        ctx.fillStyle = "rgba(244,236,212,.52)";
+        ctx.fillRect(bq + 4, cima + 72, 54, 5);
+      });
+
+      // LAS CASAS DE CHAPA DE CAMINITO, a lo lejos: van SUELTAS y con pasto
+      // entre una y otra, no en una cinta corrida, o el fondo se lee como una
+      // bandera de colores y se come todo lo demás.
+      repetir(ctx, cam, 212, 0.24, (x, i) => {
+        const paleta = ["#c9663c", "#c9a24a", "#4a86a8", "#7a9a5a", "#a8485a"];
+        let bx = x + 10;
+        for (let k = 0; k < 3; k++) {
+          const alto = 44 + ((i * 29 + k * 17) % 26), ancho = 36 + ((k * 13) % 10);
+          const base = 306;
+          ctx.fillStyle = elige(paleta, i * 2 + k);
+          ctx.fillRect(bx, base - alto, ancho, alto);
+          ctx.fillStyle = "rgba(36,30,24,.22)";                      // las juntas de la chapa
+          for (let px = bx + 4; px < bx + ancho; px += 7) ctx.fillRect(px, base - alto, 1, alto);
+          ctx.fillStyle = "rgba(40,34,26,.46)";
+          ctx.fillRect(bx, base - alto, ancho, 3);
+          ctx.fillStyle = "rgba(246,242,226,.62)";                   // una ventanita
+          ctx.fillRect(bx + 8, base - alto + 13, 10, 12);
+          bx += ancho + 16;                                          // el hueco entre casa y casa
+        }
+      });
+
+      // EL PLANO DEL SUELO DEL PUERTO, del pie de las casas hasta la vereda y
+      // sin un solo corte, para que no se asome el cielo por el medio
+      ctx.fillStyle = "#6b7468";                                     // la orilla de enfrente, fría
+      ctx.fillRect(0, 306, CFG.ANCHO_VISTA, 12);
+      ctx.fillStyle = "#334840";                                     // EL RIACHUELO: bien oscuro, o
+      ctx.fillRect(0, 318, CFG.ANCHO_VISTA, 32);                     // se lee como pasto
+      ctx.fillStyle = "#4e6760";
+      ctx.fillRect(0, 318, CFG.ANCHO_VISTA, 5);
+      ctx.fillStyle = "rgba(20,28,26,.34)";                          // la sombra de la orilla
+      ctx.fillRect(0, 323, CFG.ANCHO_VISTA, 4);
+      for (let i = 0; i < 26; i++) {                                 // los brillos aceitosos
+        const x = (i * 71 - cam * 0.08) % 1020 - 60;
+        ctx.fillStyle = "rgba(206,196,138,.17)";
+        ctx.fillRect(x, 330 + ((i * 17) % 16), 24, 2);
+      }
+      ctx.fillStyle = "#8e8470";                                     // el muelle de este lado
+      ctx.fillRect(0, 350, CFG.ANCHO_VISTA, 32);
+      ctx.fillStyle = "#a9a088";
+      ctx.fillRect(0, 350, CFG.ANCHO_VISTA, 4);
+
+      // LAS BARCAZAS AMARRADAS, oxidadas y chatas
+      repetir(ctx, cam, 304, 0.28, (x, i) => {
+        const bx = x + 52, linea = 334;
+        ctx.fillStyle = "#6a4a3a";
+        ctx.fillRect(bx, linea, 72, 12);
+        ctx.fillStyle = "#8a5a44";
+        ctx.fillRect(bx + 2, linea, 68, 4);
+        ctx.fillStyle = "#3f3a30";                                   // la cabina de popa
+        ctx.fillRect(bx + 52, linea - 14, 18, 14);
+        ctx.fillStyle = "rgba(242,236,214,.60)";
+        ctx.fillRect(bx + 56, linea - 11, 10, 6);
+        ctx.fillStyle = "#49565a";                                   // el mástil de carga
+        ctx.fillRect(bx + 16, linea - 26, 3, 26);
+      });
+
+      // EL MUELLE DE MADERA con sus bolardos y los neumáticos de defensa
+      repetir(ctx, cam, 236, 0.32, (x, i) => {
+        const bx = x + 24, cubierta = 346;
+        ctx.fillStyle = "#5a4232";                                   // los pilotes, metidos EN el agua
+        for (const px of [8, 40, 72, 104]) ctx.fillRect(bx + px, cubierta, 9, 22);
+        ctx.fillStyle = "#6f5440";                                   // el tablón
+        ctx.fillRect(bx, cubierta - 8, 128, 9);
+        ctx.fillStyle = "rgba(230,216,184,.38)";
+        ctx.fillRect(bx, cubierta - 8, 128, 3);
+        ctx.fillStyle = "#3a332c";                                   // los bolardos de amarre
+        for (const px of [24, 88]) {
+          ctx.fillRect(bx + px, cubierta - 21, 10, 13);
+          ctx.fillRect(bx + px - 2, cubierta - 25, 14, 5);
+        }
+      });
+
+      // EL CONVENTILLO: chapa pintada por paños, balcón corrido y la ropa
+      // tendida. Acá sí va saturado, porque es lo que el jugador tiene al lado.
+      repetir(ctx, cam, 318, 0.54, (x, i) => {
+        const paleta = [["#c9663c", "#c9a24a"], ["#4a86a8", "#a8485a"], ["#7a9a5a", "#c9a24a"]];
+        const [a, b] = elige(paleta, i);
+        const bx = x + 36, base = 382, alto = 54;
+        const techo = base - alto;
+        for (let k = 0; k < 4; k++) {                                // los paños de chapa
+          ctx.fillStyle = k % 2 ? b : a;
+          ctx.fillRect(bx + k * 21, techo, 21, alto);
+        }
+        ctx.fillStyle = "rgba(34,28,22,.20)";
+        for (let px = bx + 3; px < bx + 84; px += 6) ctx.fillRect(px, techo, 1, alto);
+        ctx.fillStyle = "#3a332c";                                   // el alero
+        ctx.fillRect(bx - 5, techo - 6, 94, 7);
+        ctx.fillStyle = "rgba(246,242,226,.86)";                     // las dos ventanas
+        for (const px of [10, 58]) ctx.fillRect(bx + px, techo + 10, 15, 17);
+        ctx.fillStyle = "#3a332c";                                   // el balcón corrido
+        ctx.fillRect(bx, techo + 30, 84, 4);
+        for (let px = bx + 3; px < bx + 84; px += 9) ctx.fillRect(px, techo + 30, 2, 11);
+        ctx.fillStyle = "#2e2a26";                                   // la soga de la ropa
+        ctx.fillRect(bx + 6, techo + 6, 72, 1);
+        const ropa = ["#e8e4d4", "#4aa3d8", "#e8c85a", "#c9663c"];
+        for (let k = 0; k < 4; k++) {
+          ctx.fillStyle = elige(ropa, i + k);
+          ctx.fillRect(bx + 10 + k * 17, techo + 7, 11, 13);
+        }
+      });
+
+      // LAS FAROLAS del paseo, que son lo único alto de la vereda
+      repetir(ctx, cam, 142, 0.78, (x, i) => {
+        const bx = x + 30, base = 382;
+        ctx.fillStyle = "#2e2a26";
+        ctx.fillRect(bx, base - 52, 4, 52);                          // el poste, más alto
+        ctx.fillRect(bx - 5, base - 3, 14, 3);                       // la base
+        ctx.beginPath();                                             // el brazo curvo
+        ctx.moveTo(bx + 4, base - 52);
+        ctx.quadraticCurveTo(bx + 16, base - 54, bx + 17, base - 44);
+        ctx.lineTo(bx + 14, base - 44);
+        ctx.quadraticCurveTo(bx + 13, base - 50, bx + 4, base - 49);
+        ctx.closePath(); ctx.fill();
+        ctx.fillStyle = "rgba(250,230,160,.26)";                     // el halo del globo
+        ctx.beginPath(); ctx.arc(bx + 15, base - 39, 11, 0, Math.PI * 2); ctx.fill();
+        ctx.fillStyle = "rgba(252,240,196,.92)";                     // el globo encendido
+        ctx.beginPath(); ctx.arc(bx + 15, base - 39, 6, 0, Math.PI * 2); ctx.fill();
+      });
+      ctx.fillStyle = "#7f7660";
+      ctx.fillRect(0, 380, CFG.ANCHO_VISTA, 4);
+    },
+
+    clima(ctx, t) {
+      // las gaviotas del puerto y el polvillo tibio de la tarde
+      for (let i = 0; i < 6; i++) {
+        const x = (i * 241 + t * 1.1) % 1040 - 60;
+        const y = 86 + ((i * 47) % 78) + Math.sin(t / 24 + i) * 6;
+        const ala = Math.sin(t / 8 + i * 1.3) * 4;
+        ctx.fillStyle = "rgba(250,250,242,.78)";
+        ctx.fillRect(x, y, 5, 2);
+        ctx.fillRect(x - 5, y - ala, 5, 2);
+        ctx.fillRect(x + 5, y - ala, 5, 2);
+      }
+      for (let i = 0; i < 20; i++) {
+        const x = (i * 149 + t * 0.6) % 1000 - 40;
+        const y = 150 + ((i * 83) % 190) + Math.sin(t / 44 + i) * 9;
+        ctx.fillStyle = `rgba(250,238,200,${(0.05 + 0.05 * Math.abs(Math.sin(t / 34 + i))).toFixed(2)})`;
+        ctx.fillRect(x, y, 3, 3);
+      }
+    },
+  },
 };
 
 /** Pinta el cielo del tema (degradado vertical). */

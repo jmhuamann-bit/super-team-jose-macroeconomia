@@ -2284,6 +2284,155 @@ const CATAMARAN = [    // el catamarán del fiordo, que es la salida del distrit
 ];
 const P_CATAMARAN = { k: "#2a2824", w: "#eceade", b: "#3f6f84", n: "#23262e", t: "#2f5a62" };
 
+const VALIJA = [     // la valija que no sabe si se movió: confunde el movimiento a lo largo de la curva con el desplazamiento (18 × 14)
+  "..................",
+  ".......kkkk.......",
+  ".......k..k.......",
+  "..kkkkkkkkkkkkkk..",
+  "..kuukkuuuukkuuk..",
+  "..kuukkuuuukkuuk..",
+  "..kuukkppppkkuuk..",
+  "..kuubkppppkbuuk..",
+  "..kuukkppppkkuuk..",
+  "..kuukkuuuukkuuk..",
+  "..kuukkuuuukkuuk..",
+  "..kuukkuuuukkuuk..",
+  "..kkkkkkkkkkkkkk..",
+  "..................",
+];
+const P_VALIJA = { k: "#231b14", u: "#8a5a34", p: "#e8e0c8", b: "#c9a24a" };
+
+const RECIBO = [     // el recibo al revés: cree que un impuesto al trabajador contrae la oferta, cuando la expande (18 × 14)
+  "..................",
+  "..kkkkkkkkkkkkkk..",
+  "..kppppppppppppk..",
+  "..kpkkkkkkkkkkpk..",
+  "..kppppppppppppk..",
+  "..kpggggggggpppk..",
+  "..kppppppppppppk..",
+  "..kpggggggggpppk..",
+  "..kpppppppkkkkkk..",
+  "..kpggggggkrprkk..",
+  "..kpppppppkrprkk..",
+  "..kpppppppkkkkkk..",
+  "..kkkkkkkkkkkkkk..",
+  "..................",
+];
+const P_RECIBO = { k: "#231b14", p: "#e8e4d4", g: "#9a9484", r: "#a8324a" };
+
+const MOLINETE = [   // el molinete del subte: no ve que si baja el pasaje baja el salario de reserva (18 × 14)
+  "..................",
+  "..................",
+  ".......kkkk.......",
+  ".......kvvk.......",
+  ".......kkkk.......",
+  ".......kssk.......",
+  ".sskkkkksskkkkkss.",
+  ".kkkkkkksskkkkkkk.",
+  ".......kssk.......",
+  ".......kkkk.......",
+  ".......kkkk.......",
+  ".......kkkk.......",
+  ".......kkkk.......",
+  ".......kkkk.......",
+];
+const P_MOLINETE = { k: "#231b14", s: "#8e9aa0", v: "#5ac46e" };
+
+const CHANGUITO = [  // el changuito que llega tarde: no sabe que la demanda laboral es DERIVADA de la demanda de bienes (18 × 14)
+  "..................",
+  "............kkkkk.",
+  "..............kk..",
+  "..............kk..",
+  "..............kk..",
+  "..kkkkkkkkkkkkkk..",
+  "..kmmmkmmkmmkmmk..",
+  "...kmmkmmkmmkmk...",
+  "....kmkmmkmmkk....",
+  "....kkkkkkkkkk....",
+  "......k....k......",
+  ".....kk...kk......",
+  ".....kk...kk......",
+  "..................",
+];
+const P_CHANGUITO = { k: "#231b14", m: "#9aa2a8" };
+
+const BANDONEON = [  // el bandoneón desafinado: confunde el PRECIO del bien con el SALARIO del mercado laboral (18 × 14)
+  "..................",
+  "..................",
+  "..................",
+  ".kkkk.k.k.k.kkkkk.",
+  ".knnkkfkfkfkfknnk.",
+  ".kbnkffffffffkbnk.",
+  ".knnkffffffffknnk.",
+  ".knbkffffffffknbk.",
+  ".knnkffffffffknnk.",
+  ".kbnkffffffffkbnk.",
+  ".knnkkfkfkfkfknnk.",
+  ".kkkk.k.k.k.kkkkk.",
+  "..................",
+  "..................",
+];
+const P_BANDONEON = { k: "#231b14", n: "#2f2a3a", f: "#7a4436", b: "#d8cfae" };
+
+const GANCHO = [     // el gancho del frigorífico: no distingue si la máquina COMPLEMENTA o SUSTITUYE al trabajador (18 × 14)
+  "..................",
+  "ssssssssssssssssss",
+  "kkkkkkkkkkkkkkkkkk",
+  "........kkkk......",
+  "........kssk......",
+  "........kkkk......",
+  ".........sk.......",
+  ".........sk.......",
+  ".........sk.......",
+  ".........kk.......",
+  ".......kkkk.......",
+  "......kkkk........",
+  "......kk..........",
+  ".......kkk........",
+];
+const P_GANCHO = { k: "#231b14", s: "#aab2b6" };
+
+const OFICIAL = [    // jefe: el oficial del Hotel de Inmigrantes, que sella llegadas sin fijarse cuál de las dos curvas se movió (18 × 17)
+  ".....kkkkkkkk.....",
+  "....kkbbbbbbkk....",
+  ".....kkkkkkkk.....",
+  ".....kckcckck.....",
+  ".....kcccccck.....",
+  ".....kckkkkck.....",
+  ".....kkkkkkkk.....",
+  "...kkkkkkkkkkkk...",
+  "...knnnnbbnnnnk...",
+  "...knnnnbbkkkkk...",
+  "...knnnnbbkpppk...",
+  "...knnnnbbkpppk...",
+  "...kkkkkkkkkkkk...",
+  "...kkkkkkkkkkkk...",
+  "....kkk....kkk....",
+  "....kkk....kkk....",
+  "...kkkkk..kkkkk...",
+];
+const P_OFICIAL = { k: "#231b14", c: "#d9a273", n: "#2c3a4e", b: "#c9a24a", p: "#e8e4d4" };
+
+const COLECTIVO = [  // el colectivo, que es la salida del distrito (32 × 16)
+  "................................",
+  "................................",
+  ".kkkkkkkkkkkkkkkkkkkkkkkkkkkkk..",
+  ".kkkkkkkkkkkkkkkkkkkkkkkkkkkkk..",
+  ".kmmmmmmmmmmmmmmmmmmmmmmmmmmmk..",
+  ".kmmkkkkmkkkkmkkkkmkkkkmkkvvvk..",
+  ".ammkvvkmkvvkmkvvkmkvvkmkvvvvk..",
+  ".ammkvvkmkvvkmkvvkmkvvkmkvvvvk..",
+  ".ammkkkkmkkkkmkkkkmkkkkmkkvvvk..",
+  ".krrrrrrrrrrrrrrrrrrrrrrrrrrrk..",
+  ".kmmmmmmmmmmmmmmmmmmmmmmmmmmmk..",
+  ".kkkkkkkkkkkkkkkkkkkkkkkkkkkkk..",
+  ".....kkkkk...........kkkkk......",
+  "....kksskkk.........kksskkk.....",
+  "....kksskkk.........kksskkk.....",
+  ".....kkkkk...........kkkkk......",
+];
+const P_COLECTIVO = { k: "#231b14", m: "#c9a24a", v: "#cfe0e4", r: "#a8324a", a: "#e8e4d4", s: "#8e9aa0" };
+
 /* ---------------------------------------------------------------
    REGISTRO Y COCINADO
    --------------------------------------------------------------- */
@@ -2418,6 +2567,14 @@ const DEFINICIONES = {
   kiwi:         [KIWI, P_KIWI],
   arbitro:      [ARBITRO, P_ARBITRO],
   catamaran:    [CATAMARAN, P_CATAMARAN],
+  valija:       [VALIJA, P_VALIJA],
+  recibo:       [RECIBO, P_RECIBO],
+  molinete:     [MOLINETE, P_MOLINETE],
+  changuito:    [CHANGUITO, P_CHANGUITO],
+  bandoneon:    [BANDONEON, P_BANDONEON],
+  gancho:       [GANCHO, P_GANCHO],
+  oficial:      [OFICIAL, P_OFICIAL],
+  colectivo:    [COLECTIVO, P_COLECTIVO],
 };
 
 const cocidos = {};   // nombre -> { canvas, ancho, alto } (ya escalados)
