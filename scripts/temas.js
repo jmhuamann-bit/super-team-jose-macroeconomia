@@ -2878,6 +2878,226 @@ export const TEMAS = {
       }
     },
   },
+
+  cabo: {
+    nombre: "Sudáfrica",
+    cielo: [[0, "#3f7fc0"], [0.4, "#86b3d6"], [0.7, "#cfdbe0"], [0.8, "#43443c"], [1, "#1e1a16"]],
+    suelo: { cara: "#b8a67e", borde: "#d2c39a", tierra: "#4a3f2e", plataforma: "#7a6a4a", plataformaBorde: "#e0b32a" },
+    acento: "#e0912a",
+
+    bichos: ["pinguino", "vuvuzela", "casco", "protea", "cabria", "rand"],
+    nombresBichos: [
+      "El Pingüino que Cuenta a los Pichones",
+      "La Vuvuzela que Solo Oye a los que Gritan",
+      "El Casco sin Estrenar",
+      "La Protea que Quiere y No Puede",
+      "El Cabria de la Mina",
+      "El Rand Mal Dividido",
+    ],
+    andares: ["patrulla", "guardia", "veloz", "salta", "vuela"],
+    jefe: "estadistico",
+    nombreJefe: "El Estadístico de las Dos Tasas",
+
+    fondo(ctx, cam, t) {
+      const elige = (a, n) => a[((n % a.length) + a.length) % a.length];
+
+      // el sol del Atlántico sur, alto y blanco
+      ctx.fillStyle = "rgba(252,250,232,.20)";
+      ctx.beginPath(); ctx.arc(146, 78, 54, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = "rgba(255,253,244,.86)";
+      ctx.beginPath(); ctx.arc(146, 78, 21, 0, Math.PI * 2); ctx.fill();
+
+      // LOS DOCE APÓSTOLES: la cadena de picos angulosos que sigue a la
+      // montaña por la costa. Van al fondo del todo y en gris azulado.
+      repetir(ctx, cam, 134, 0.05, (x, i) => {
+        const bx = x, base = 306, alto = 86 + ((i * 61) % 54);
+        ctx.fillStyle = "#7f8f9c";
+        ctx.beginPath();
+        ctx.moveTo(bx - 10, base);
+        ctx.lineTo(bx + 24, base - alto);
+        ctx.lineTo(bx + 42, base - alto + 14);
+        ctx.lineTo(bx + 74, base);
+        ctx.closePath(); ctx.fill();
+        ctx.fillStyle = "rgba(34,40,46,.20)";                       // la cara en sombra
+        ctx.beginPath();
+        ctx.moveTo(bx + 24, base - alto);
+        ctx.lineTo(bx + 42, base - alto + 14);
+        ctx.lineTo(bx + 74, base);
+        ctx.lineTo(bx + 40, base);
+        ctx.closePath(); ctx.fill();
+      });
+
+      // LA MONTAÑA DE LA MESA, que es LA silueta del lugar: una meseta de
+      // cima recta con la Cabeza de León al costado, y encima el MANTEL de
+      // nubes desbordándose por el borde — que es la imagen de la clase:
+      // la montaña está entera, pero la nube solo te deja ver un pedazo.
+      repetir(ctx, cam, 620, 0.11, (x, i) => {
+        const bx = x + 40, base = 306, cima = base - 166;
+        ctx.fillStyle = "#6d7a74";                                  // el macizo
+        ctx.beginPath();
+        ctx.moveTo(bx - 30, base);
+        ctx.lineTo(bx + 16, cima + 10);
+        ctx.lineTo(bx + 258, cima + 10);
+        ctx.lineTo(bx + 304, base);
+        ctx.closePath(); ctx.fill();
+        ctx.fillStyle = "#5a6762";
+        ctx.fillRect(bx + 16, cima + 10, 242, 9);                   // el canto de la meseta
+        ctx.fillStyle = "rgba(32,38,36,.22)";                       // los barrancos verticales
+        for (let px = bx + 28; px < bx + 252; px += 17) {
+          ctx.fillRect(px, cima + 19, 4, 120 + ((px * 7) % 28));
+        }
+        ctx.fillStyle = "#6d7a74";                                  // la Cabeza de León
+        ctx.beginPath();
+        ctx.moveTo(bx + 296, base);
+        ctx.lineTo(bx + 348, base - 112);
+        ctx.lineTo(bx + 372, base - 96);
+        ctx.lineTo(bx + 404, base);
+        ctx.closePath(); ctx.fill();
+
+        const ola = Math.sin(t / 220 + i) * 9;                      // EL MANTEL
+        ctx.fillStyle = "rgba(250,252,250,.90)";
+        ctx.beginPath();
+        ctx.moveTo(bx + 10, cima + 12);
+        ctx.quadraticCurveTo(bx + 70, cima - 26 + ola, bx + 140, cima - 8);
+        ctx.quadraticCurveTo(bx + 208, cima - 28 - ola, bx + 264, cima + 12);
+        ctx.closePath(); ctx.fill();
+        ctx.fillStyle = "rgba(242,248,250,.72)";                    // lo que se derrama
+        for (let k = 0; k < 5; k++) {
+          const px = bx + 36 + k * 46;
+          ctx.fillRect(px, cima + 12, 26, 20 + ((k * 13 + i * 7) % 26) + ola);
+        }
+      });
+
+      // EL CUENCO DE LA CIUDAD al pie del macizo: bloques bajos y claros,
+      // apretados contra la ladera
+      repetir(ctx, cam, 158, 0.22, (x, i) => {
+        const bx = x, base = 306;
+        const paleta = ["#dfdbcc", "#cfcbbc", "#e8e2d2", "#c7c4b6"];
+        for (let k = 0; k < 3; k++) {
+          const alto = 20 + ((i * 23 + k * 11) % 24), ancho = 26 + ((k * 9) % 12);
+          ctx.fillStyle = elige(paleta, i + k);
+          ctx.fillRect(bx + k * 40, base - alto, ancho, alto);
+          ctx.fillStyle = "rgba(60,66,66,.26)";
+          ctx.fillRect(bx + k * 40, base - alto, ancho, 2);
+          ctx.fillStyle = "rgba(70,78,80,.34)";
+          for (let py = base - alto + 6; py < base - 4; py += 7) {
+            ctx.fillRect(bx + k * 40 + 4, py, ancho - 8, 2);
+          }
+        }
+      });
+
+      // EL PLANO DEL SUELO DE LA BAHÍA, de la ciudad hasta la arena y sin
+      // interrupciones, para que no aparezca una franja de cielo en el medio
+      ctx.fillStyle = "#8d9476";
+      ctx.fillRect(0, 306, CFG.ANCHO_VISTA, 10);
+      ctx.fillStyle = "#1f5f82";                                    // EL ATLÁNTICO, frío y hondo
+      ctx.fillRect(0, 316, CFG.ANCHO_VISTA, 32);
+      ctx.fillStyle = "#2d7ba0";
+      ctx.fillRect(0, 316, CFG.ANCHO_VISTA, 6);
+      for (let i = 0; i < 28; i++) {                                // la espuma de las crestas
+        const x = (i * 67 - cam * 0.09) % 1020 - 60;
+        ctx.fillStyle = "rgba(236,246,250,.30)";
+        ctx.fillRect(x, 324 + ((i * 19) % 18), 18, 2);
+      }
+      ctx.fillStyle = "#c6b48a";                                    // la arena de este lado
+      ctx.fillRect(0, 348, CFG.ANCHO_VISTA, 34);
+      ctx.fillStyle = "#ddcda4";
+      ctx.fillRect(0, 348, CFG.ANCHO_VISTA, 5);
+
+      // LOS BOLARDOS DE GRANITO de la playa, redondeados por el mar, y una
+      // lancha de pesca fondeada entre ellos
+      repetir(ctx, cam, 178, 0.28, (x, i) => {
+        const bx = x + 20, linea = 344;
+        ctx.fillStyle = "#9a9284";
+        ctx.beginPath(); ctx.ellipse(bx, linea, 26, 15, 0, Math.PI, 0); ctx.fill();
+        ctx.fillStyle = "rgba(244,244,232,.26)";
+        ctx.beginPath(); ctx.ellipse(bx - 7, linea - 5, 10, 5, 0, Math.PI, 0); ctx.fill();
+        if (i % 3 === 0) {
+          ctx.fillStyle = "#7a4436";
+          ctx.fillRect(bx + 44, linea - 10, 46, 8);
+          ctx.fillStyle = "#e0912a";
+          ctx.fillRect(bx + 46, linea - 12, 42, 3);
+          ctx.fillStyle = "#3b3a32";
+          ctx.fillRect(bx + 64, linea - 30, 3, 20);
+        }
+      });
+
+      // EL EMBARCADERO DE MADERA con sus pilotes hundidos en el agua
+      repetir(ctx, cam, 268, 0.32, (x, i) => {
+        const bx = x + 30, cubierta = 348;
+        ctx.fillStyle = "#6a5236";
+        for (const px of [10, 46, 82, 118]) ctx.fillRect(bx + px, cubierta, 8, 20);
+        ctx.fillStyle = "#86694a";
+        ctx.fillRect(bx, cubierta - 8, 136, 9);
+        ctx.fillStyle = "rgba(234,222,192,.36)";
+        ctx.fillRect(bx, cubierta - 8, 136, 3);
+        ctx.fillStyle = "#3b3a32";                                  // el poste de amarre
+        ctx.fillRect(bx + 120, cubierta - 22, 9, 14);
+      });
+
+      // LA CASA DE HASTIAL HOLANDÉS, blanca y con el frontón de curvas: es lo
+      // que hace que se lea Ciudad del Cabo y no cualquier playa
+      repetir(ctx, cam, 352, 0.54, (x, i) => {
+        const bx = x + 40, base = 382, alto = 36;
+        const techo = base - alto;
+        ctx.fillStyle = "#f0ece0";                                  // el cuerpo encalado
+        ctx.fillRect(bx, techo, 96, alto);
+        ctx.fillStyle = "rgba(90,96,88,.18)";
+        ctx.fillRect(bx, techo, 96, 2);
+        ctx.fillStyle = "#6a5236";                                  // el techo de paja
+        ctx.beginPath();
+        ctx.moveTo(bx - 8, techo);
+        ctx.lineTo(bx + 48, techo - 22);
+        ctx.lineTo(bx + 104, techo);
+        ctx.closePath(); ctx.fill();
+        ctx.fillStyle = "#f0ece0";                                  // el hastial de curvas
+        ctx.beginPath();
+        ctx.moveTo(bx + 32, techo);
+        ctx.quadraticCurveTo(bx + 30, techo - 20, bx + 40, techo - 24);
+        ctx.quadraticCurveTo(bx + 48, techo - 34, bx + 56, techo - 24);
+        ctx.quadraticCurveTo(bx + 66, techo - 20, bx + 64, techo);
+        ctx.closePath(); ctx.fill();
+        ctx.fillStyle = "rgba(90,96,88,.22)";
+        ctx.fillRect(bx + 40, techo - 20, 16, 11);                  // el ventanuco del frontón
+        ctx.fillStyle = "#3f5f6a";                                  // las ventanas de postigos
+        for (const px of [10, 68]) ctx.fillRect(bx + px, techo + 10, 17, 18);
+        ctx.fillStyle = "#e0912a";
+        ctx.fillRect(bx + 42, base - 17, 13, 17);                   // la puerta
+      });
+
+      // EL FYNBOS de la duna: matas bajas, plateadas y apretadas
+      repetir(ctx, cam, 96, 0.78, (x, i) => {
+        const bx = x + 14, base = 382;
+        ctx.fillStyle = elige(["#6f8a6a", "#5f7a5c", "#7d9676"], i);
+        ctx.beginPath(); ctx.ellipse(bx, base - 8, 15, 11, 0, Math.PI, 0); ctx.fill();
+        ctx.fillStyle = "rgba(226,236,220,.34)";
+        for (let k = 0; k < 4; k++) ctx.fillRect(bx - 9 + k * 6, base - 14 - ((k * 5) % 7), 2, 8);
+        ctx.fillStyle = "#4a3f2e";
+        ctx.fillRect(bx - 2, base - 9, 4, 9);
+      });
+      ctx.fillStyle = "#a89670";
+      ctx.fillRect(0, 380, CFG.ANCHO_VISTA, 4);
+    },
+
+    clima(ctx, t) {
+      // las gaviotas de la bahía y el viento que baja del macizo
+      for (let i = 0; i < 6; i++) {
+        const x = (i * 227 + t * 1.2) % 1040 - 60;
+        const y = 92 + ((i * 53) % 70) + Math.sin(t / 22 + i) * 6;
+        const ala = Math.sin(t / 8 + i * 1.5) * 4;
+        ctx.fillStyle = "rgba(252,252,246,.82)";
+        ctx.fillRect(x, y, 5, 2);
+        ctx.fillRect(x - 5, y - ala, 5, 2);
+        ctx.fillRect(x + 5, y - ala, 5, 2);
+      }
+      for (let i = 0; i < 15; i++) {
+        const x = (i * 163 + t * 2.6) % 1000 - 60;
+        const y = 158 + ((i * 71) % 150);
+        ctx.fillStyle = `rgba(246,250,250,${(0.04 + 0.05 * Math.abs(Math.sin(t / 28 + i))).toFixed(2)})`;
+        ctx.fillRect(x, y, 52, 2);
+      }
+    },
+  },
 };
 
 /** Pinta el cielo del tema (degradado vertical). */

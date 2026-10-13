@@ -164,6 +164,14 @@ const TEMAS_MUSICA = {
               "B4",2,"D5",2,"E5",4,"D5",2,"B4",2,"E4",4],
     bajo:    ["E3",8,"B2",8,"G2",8,"E3",8,"A2",8,"D3",8,"B2",8,"E3",8],
   },
+  cabo: { // Sudáfrica: coro a capela, de pasos cortos y mucho rebote
+    tempo: 0.2, onda: "square",
+    melodia: ["G3",2,"B3",2,"D4",2,"G4",2,"F#4",2,"D4",2,"B3",4,
+              "C4",2,"E4",2,"G4",2,"C5",2,"B4",2,"G4",2,"E4",4,
+              "D4",2,"F#4",2,"A4",2,"D5",2,"C5",2,"A4",2,"F#4",4,
+              "G4",2,"D4",2,"B3",2,"G3",4],
+    bajo:    ["G1",8,"C2",8,"D2",8,"G1",8],
+  },
   riachuelo: { // Argentina: aire de tango de bandoneón, arrastrado y con pausa
     tempo: 0.25, onda: "sawtooth",
     melodia: ["A3",3,"C4",1,"E4",4,"D4",2,"C4",2,"B3",4,

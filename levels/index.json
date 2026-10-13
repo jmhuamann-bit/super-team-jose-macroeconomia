@@ -351,6 +351,56 @@
       "abierto": true,
       "mapa": "levels/level25.json",
       "preguntas": "questions/level25_questions.json"
+    },
+    {
+      "id": "level26r4",
+      "clase": "Clase 04",
+      "distrito": "Por definir",
+      "titulo": "Por definir",
+      "icono": "⏳",
+      "seccion": "PC3",
+      "seccionNota": "Mercado laboral, desempleo y crecimiento — y ahora visitando el mundo",
+      "retos": 7,
+      "duracion": "3 min",
+      "abierto": false
+    },
+    {
+      "id": "level26r5",
+      "clase": "Clase 05",
+      "distrito": "Por definir",
+      "titulo": "Por definir",
+      "icono": "🧭",
+      "seccion": "PC3",
+      "seccionNota": "Mercado laboral, desempleo y crecimiento — y ahora visitando el mundo",
+      "retos": 7,
+      "duracion": "3 min",
+      "abierto": false
+    },
+    {
+      "id": "level26r6",
+      "clase": "Clase 06",
+      "distrito": "Por definir",
+      "titulo": "Por definir",
+      "icono": "🗺",
+      "seccion": "PC3",
+      "seccionNota": "Mercado laboral, desempleo y crecimiento — y ahora visitando el mundo",
+      "retos": 7,
+      "duracion": "3 min",
+      "abierto": false
+    },
+    {
+      "id": "level26",
+      "clase": "Clase 07",
+      "distrito": "Sudáfrica",
+      "titulo": "El país que publica dos tasas de desempleo",
+      "icono": "🦓",
+      "seccion": "PC3",
+      "seccionNota": "Mercado laboral, desempleo y crecimiento — y ahora visitando el mundo",
+      "retos": 7,
+      "duracion": "3 min",
+      "abierto": true,
+      "mapa": "levels/level26.json",
+      "preguntas": "questions/level26_questions.json"
     }
   ]
 }

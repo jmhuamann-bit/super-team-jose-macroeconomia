@@ -1,0 +1,42 @@
+{
+  "id": "level26",
+  "distrito": "Sudáfrica",
+  "clase": "Clase 07 · PC3",
+  "titulo": "El país que publica dos tasas de desempleo",
+  "tema": "cabo",
+  "musica": "cabo",
+  "vehiculo": "teleferico",
+  "intro": "Séptima clase de la PC3, y otro país: Sudáfrica. Acá pasa algo que casi no pasa en ningún lado: el instituto de estadística publica DOS tasas de desempleo. La oficial cuenta solo a los que buscaron trabajo la semana pasada y anda cerca del 33%, que ya es de las más altas del mundo. La ampliada suma además a los que se cansaron de buscar y dejaron de hacerlo, y se va a cerca del 42%. Esos nueve puntos de diferencia son, enteros, gente que existe y que la primera tasa no ve. Y esa es exactamente la clase de hoy: el mercado laboral no se mide con un solo número, se baja por NIVELES — población, PET, PEA, ocupados, subempleo — y en cada bajada aparece gente que el nivel de arriba estaba tapando. Igual que el mantel de nubes que le cae encima a la Montaña de la Mesa: la montaña sigue ahí entera, pero desde abajo solo ves el pedazo que la nube deja asomar.",
+  "repaso": [
+    "QUÉ CAMBIA EN ESTA CLASE: hasta ahora se armaban curvas y se las movía. Acá no hay curvas que mover — hay que CONTAR gente. Todo sale de bajar un esquema de 6 niveles, y el único error posible es poner a alguien en la caja equivocada.",
+    "NIVELES 1 Y 2 (el nivel pollito): Población = PET + NO PET, donde el PET es la gente que ya tiene edad para trabajar. Son puras sumas y restas. Ojo con los porcentajes: si el PET es el 80% de la población, la población sale DIVIDIENDO entre 0,8, no multiplicando.",
+    "NIVEL 3 (el nivel cachimbo): PET = PEA + NO PEA (la PENA). El PEA son (a) los que tienen trabajo —incluidos los que están de vacaciones, con descanso médico o son empresarios— y (b) los que BUSCAN ACTIVAMENTE. El NO PEA son (a) los que no desean trabajar y (b) los que ya perdieron la fe.",
+    "NIVEL 4 (el nivel UPapi), que es donde se ponen los nombres: el PEA se parte en OCUPADOS y DESEMPLEO ABIERTO; el NO PEA se parte en INACTIVO PLENO y DESEMPLEO OCULTO. Son cuatro cajas y cada persona entra en una sola.",
+    "LA TRAMPA DEL NIVEL 4, que es la que más cae: el que buscó, no encontró y DEJÓ DE BUSCAR no es desempleado abierto — se cayó del PEA y es desempleo OCULTO. Y tampoco es inactivo pleno: el inactivo pleno es el que directamente no quiere trabajar.",
+    "NIVEL 5 (el nivel maes): los Ocupados se parten en ADECUADAMENTE EMPLEADOS y SUBEMPLEADOS. SUBEMPLEO INVISIBLE es por INGRESO: trabaja más de 35 horas semanales y gana menos del ingreso mínimo referencial. SUBEMPLEO VISIBLE es por HORAS: trabaja menos de 35 horas y quiere Y PUEDE trabajar más, pero no encuentra dónde.",
+    "LA TRAMPA DEL «Y PODER»: Bebecita trabaja 24 horas, no está contenta con su pago y querría más horas, pero la universidad no se lo permite — como NO PUEDE, no es subempleo visible. Y el Choche trabaja menos de 35 horas, gana 5 000 y está contento: tampoco. Los dos quedan adecuadamente empleados.",
+    "NIVEL 6: el desempleo abierto se parte en CESANTE, el que ya trabajó antes y tiene experiencia, y ASPIRANTE, el que busca por primera vez. Los dos siguen estando dentro del PEA, porque los dos están buscando.",
+    "LAS TASAS QUE VAN SOBRE EL PET (y todas se multiplican por 100): tasa de participación o actividad = PEA/PET, y tasa de ocupación = Ocupados/PET.",
+    "LAS TASAS QUE VAN SOBRE EL PEA: tasa de empleo = Ocupados/PEA y tasa de desempleo = Desempleo abierto/PEA. El subempleo también es amigo del PEA: tasa de subempleo total, visible e invisible, todas divididas entre el PEA.",
+    "LOS DOS ERRORES DE DENOMINADOR: cambiar el PET por el PEA (o al revés), que te pasa de una tasa a otra sin darte cuenta; y meter el desempleo OCULTO en la tasa de desempleo — no entra, porque el oculto ni siquiera está en el PEA.",
+    "POR QUÉ EL SUBEMPLEO TAMBIÉN ES UN PROBLEMA, con el caso de la pandemia: Estados Unidos quedó con 15% de desempleo y 4% de subempleo; Perú con 8% de desempleo y 68% de subempleo. Carlitos dice que entonces Perú está mejor, y es justo al revés: la tasa de desempleo sola solo cuenta al que no tiene NADA, y tapa a todo el que consiguió algo que no le alcanza.",
+    "EL COSTO DEL DESEMPLEO son tres cosas, y entran de pregunta: se pierde PBI, se pierde ingreso en las familias y se pierde CAPITAL HUMANO, porque el que está fuera pierde experiencia y se desactualiza. Y LA RECETITA de los problemas matemáticos es una sola: dibujar el esquema de niveles y empezar a completar lo que falta. EJERCICIO RESUELTO (Lima): población 11, PET 8, PEA 5,5 → NO PET 3 y NO PEA 2,5; con desempleo abierto 0,4 los ocupados son 5,1; inactivos plenos 1,5 y oculto 1,0; con subempleo total 2,3 los adecuados son 2,8, y con invisible 1,6 el visible es 0,7. Tasa de desempleo 7,27%, de participación 68,75% y de subempleo 41,82%."
+  ],
+  "mapa": [
+    "                                                                                                                                                                                    ",
+    "                                                                                                                                                                                    ",
+    "                                                                                                                                                                                    ",
+    "                                                                                                                                                                                    ",
+    "                                                                                                    AA                                                                              ",
+    "                    o o                                                                            o o                                       o o                                    ",
+    "                                                                                                                                                                                    ",
+    "              o o  =====           o  o  o             o     o     o         o     o              ======                               o o  =====  o o                              ",
+    "             ?              o                      V oo oo oo oo oo oo          E            G                   L  o      o                                 1  L                   ",
+    "             =====        oo oo   ==========                               ===== =====                                                =====       =====                   o o o     ",
+    "                                                                                                                   ###    ###                                                       ",
+    "  P                        E          E               X E   X     X  CC                        T                   ### E  ###       E                     C           B         M   ",
+    "#########################################################################              #############################################################################################",
+    "#########################################################################              #############################################################################################",
+    "#########################################################################              #############################################################################################"
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "nivel": "level26",
+  "clase": "Clase 07 · PC3 — Condiciones laborales",
+  "fuente": "Apuntes de la Clase 07 — Condiciones laborales (Economía General II)",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "m26-q1",
+      "nivel": "aplicacion",
+      "enunciado": "En un país la población en edad de trabajar es 7 916 200, y eso es el 80% de la población total. Además, el 30% del PET es PEA.\n\n¿Cuánto son la población, el NO PET y el NO PEA?",
+      "opciones": [
+        "6 332 960 · 1 583 240 · 2 374 860, sacándole el 80% al PET para llegar a la población",
+        "9 895 250 · 1 979 050 · 2 374 860: el 30% del PET es la gente que no es activa",
+        "9 895 250 · 1 979 050 · 5 541 340, porque el PET se DIVIDE entre 0,8 y el PEA es 30%",
+        "Falta saber cuántos buscan trabajo de verdad para poder separar el PEA del NO PEA"
+      ],
+      "correcta": 2,
+      "explicacion": "Los dos primeros niveles son puras restas: Población = PET + NO PET, y PET = PEA + NO PEA. Si el PET es el 80% de la población, la población sale DIVIDIENDO entre 0,8, no multiplicando. Y el 30% del PET es el PEA, así que el otro 70% es el NO PEA."
+    },
+    {
+      "id": "m26-q2",
+      "nivel": "comprension",
+      "enunciado": "Tres vecinos de la misma cuadra:\n\nI. Thandi tiene trabajo en una viña\nII. Sipho no tiene y manda currículums todas las semanas\nIII. Lerato buscó dos años, no encontró y ya dejó de buscar\n\n¿Dónde va cada uno en el esquema?",
+      "opciones": [
+        "I ocupado y II desempleo abierto, los dos en el PEA; III desempleo OCULTO, que es NO PEA",
+        "Los tres están en el PEA: tener trabajo o no tenerlo no te saca de la fuerza laboral",
+        "I ocupado en el PEA; II y III desempleo abierto, porque ninguno de los dos tiene trabajo",
+        "I y II en el PEA; III es inactivo pleno, porque ya no quiere trabajar y por eso no busca"
+      ],
+      "correcta": 0,
+      "explicacion": "El PEA son los que tienen trabajo o lo BUSCAN ACTIVAMENTE. El que perdió la fe y dejó de buscar se cae del PEA: es desempleo OCULTO y vive en el NO PEA. Ojo que tampoco es inactivo pleno — ese es el que directamente no desea trabajar."
+    },
+    {
+      "id": "m26-q3",
+      "nivel": "comprension",
+      "enunciado": "A la única vacante que salió postulan dos: Pedrito, que acaba de egresar y nunca trabajó, y el Choche, que lleva años en el oficio y se quedó sin empleo.\n\n¿Cómo se clasifica cada uno y en qué parte del esquema están?",
+      "opciones": [
+        "Pedrito es cesante y el Choche aspirante; los dos están dentro del desempleo abierto",
+        "Pedrito es aspirante y el Choche cesante; los dos están dentro del desempleo abierto",
+        "Pedrito es aspirante y queda fuera del PEA, porque todavía no tuvo ningún trabajo",
+        "Los dos son cesantes: postular a una vacante ya te vuelve cesante del mercado laboral"
+      ],
+      "correcta": 1,
+      "explicacion": "Es el sexto nivel y se parte en dos: ASPIRANTE es el que busca su primera vez, sin experiencia; CESANTE es el que ya trabajó antes. Los dos están buscando activamente, así que los dos son desempleo ABIERTO y los dos cuentan en el PEA."
+    },
+    {
+      "id": "m26-q4",
+      "nivel": "aplicacion",
+      "enunciado": "Tres casos:\n\nI. María trabaja 26 horas, lo que gana no le alcanza, busca más trabajo y no encuentra\nII. Carmencita trabaja 36 horas y gana 900, que no le alcanza para comer\nIII. Bebecita trabaja 24 horas, no está contenta con su pago y querría más horas, pero la universidad no se lo permite\n\n¿Cómo queda cada una?",
+      "opciones": [
+        "I subempleo invisible · II subempleo visible · III subempleo visible también",
+        "Las tres son subempleadas, porque a ninguna de las tres le alcanza lo que gana",
+        "I y III subempleo visible por las horas · II adecuadamente empleada, que pasa las 35",
+        "I subempleo visible · II subempleo invisible · III adecuadamente empleada"
+      ],
+      "correcta": 3,
+      "explicacion": "VISIBLE es por HORAS: menos de 35 y querer Y PODER trabajar más sin encontrar dónde. INVISIBLE es por INGRESO: más de 35 horas y ganar menos del ingreso mínimo referencial. Bebecita quiere más horas pero NO PUEDE por la universidad, así que no cumple el requisito y queda adecuadamente empleada."
+    },
+    {
+      "id": "m26-q5",
+      "nivel": "aplicacion",
+      "enunciado": "El PET es de 5 millones, el PEA de 2 millones y los ocupados son 0,5 millones.\n\n¿Cuánto dan la tasa de participación y la tasa de ocupación?",
+      "opciones": [
+        "Participación 40% y ocupación 25%, que es la parte ocupada de la fuerza laboral",
+        "Participación 10% y ocupación 40%: la de ocupación siempre es la más alta de las dos",
+        "Participación 2,5% y ocupación 10%, dividiendo cada cifra entre la población total",
+        "Participación 40% y ocupación 10%: las dos se dividen entre el PET, no entre el PEA"
+      ],
+      "correcta": 3,
+      "explicacion": "Las dos tasas de este grupo trabajan con el PET abajo: participación = PEA/PET = 2/5, y ocupación = Ocupados/PET = 0,5/5. La trampa es poner el PEA de denominador, que ya es otra tasa (esa sería la de empleo)."
+    },
+    {
+      "id": "m26-q6",
+      "nivel": "aplicacion",
+      "enunciado": "El PET es de 10 millones y el PEA es su 20%. Hay 1,1 millones de ocupados, 0,9 de desempleados abiertos y 0,5 de desempleados ocultos.\n\n¿Cuánto dan la tasa de empleo y la de desempleo?",
+      "opciones": [
+        "Empleo 11% y desempleo 9%, que es lo que representa cada grupo del PET entero",
+        "Empleo 55% y desempleo 45%, dividiendo las dos entre el PEA, que es 2 millones",
+        "Empleo 55% y desempleo 70%, porque al desempleo hay que sumarle los 0,5 ocultos",
+        "Empleo 92% y desempleo 8%, que son las cifras típicas de un mercado laboral sano"
+      ],
+      "correcta": 1,
+      "explicacion": "Estas dos trabajan con el PEA abajo: 1,1/2 y 0,9/2. Dos trampas juntas: dividir entre el PET (eso da las tasas del otro grupo) y meter el desempleo OCULTO en el numerador — el oculto no está en el PEA, así que no entra en la tasa de desempleo."
+    },
+    {
+      "id": "m26-q7",
+      "nivel": "aplicacion",
+      "enunciado": "Datos de Lima, en millones: población 11 · PET 8 · el PEA es el 50% de la población · desempleo abierto 0,4 · los inactivos plenos son el 60% del NO PEA · subempleo total 2,3.\n\n¿Cuánto son los adecuadamente empleados, el desempleo oculto y la tasa de desempleo?",
+      "opciones": [
+        "2,8 · 1,0 · 7,27%, bajando el esquema nivel por nivel y restando lo que ya se conoce",
+        "5,1 · 1,5 · 5,00%, tomando como desempleo oculto a los inactivos plenos del NO PEA",
+        "2,8 · 1,5 · 3,64%, sacando la tasa de desempleo sobre la población total del distrito",
+        "No alcanza: sin saber cuántos son cesantes no se puede cerrar el esquema de niveles"
+      ],
+      "correcta": 0,
+      "explicacion": "Se baja el esquema: NO PEA = 8 − 5,5 = 2,5; inactivos plenos = 60% = 1,5, así que el oculto es 1,0. Ocupados = 5,5 − 0,4 = 5,1, y los adecuados son 5,1 − 2,3 = 2,8. La tasa de desempleo va sobre el PEA: 0,4/5,5 = 7,27%."
+    },
+    {
+      "id": "m26-q8",
+      "nivel": "comprension",
+      "enunciado": "Con la pandemia, la tasa de desempleo quedó en 15% en Estados Unidos y en 8% en Perú. Pero la tasa de SUBEMPLEO quedó en 4% en Estados Unidos y en 68% en Perú.\n\nCarlitos dice que entonces Perú está mejor. ¿Tiene razón?",
+      "opciones": [
+        "Sí: la tasa de desempleo es el indicador oficial y en Perú es casi la mitad que allá",
+        "No, pero porque las dos tasas no se pueden comparar entre países distintos",
+        "No: con 68% de subempleo, en Perú casi todo el que trabaja lo hace mal pagado o pocas horas",
+        "Sí, porque el subempleado igual está ocupado y suma al PBI tanto como cualquier otro"
+      ],
+      "correcta": 2,
+      "explicacion": "La tasa de desempleo sola miente: solo cuenta al que no tiene NADA. Un país donde casi todos consiguen algo, pero ese algo no alcanza para comer o es de pocas horas, sale con desempleo bajo y está peor. Por eso el subempleo se mira siempre al lado."
+    },
+    {
+      "id": "m26-q9",
+      "nivel": "aplicacion",
+      "enunciado": "Hay 33 millones de personas. El 25% no tiene edad para trabajar y 1,2 millones son inactivos plenos. El desempleo abierto del año pasado era 1,5 millones y este año subió 8,5%, lo que equivale al 7,3% del PEA.\n\n¿Cuánto es el desempleo oculto?",
+      "opciones": [
+        "1,20 millones, que son los mismos inactivos plenos que ya traía el enunciado",
+        "2,46 millones, que es todo el NO PEA que queda al restarle el PEA al PET",
+        "1,26 millones: el NO PEA da 2,46 y de ahí se restan los 1,2 inactivos plenos",
+        "0,13 millones, que es lo que creció el desempleo abierto de un año para el otro"
+      ],
+      "correcta": 2,
+      "explicacion": "El abierto de este año es 1,5 × 1,085 = 1,6275, y si eso es el 7,3% del PEA, el PEA es 22,29. El PET es el 75% de 33 = 24,75, así que el NO PEA es 2,46. El oculto es lo que queda del NO PEA después de los inactivos plenos."
+    }
+  ]
+}
