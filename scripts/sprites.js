@@ -2582,6 +2582,155 @@ const TELEFERICO = [   // el teleférico de la Montaña de la Mesa, que es la sa
 ];
 const P_TELEFERICO = { k: "#20201c", s: "#8a9298", v: "#c8502c", c: "#dceaf0", o: "#e0b32a" };
 
+const HORNO = [       // el horno que no sabe su tope: confunde el PBI potencial con el récord histórico (18 × 14)
+  "............hh....",
+  "...........kkkk...",
+  "...........kkkk...",
+  "...........kkkk...",
+  ".kkkkkkkkkkkkkkkk.",
+  ".kmpppppppmmmmmmk.",
+  ".kmpppppppmmmmmmk.",
+  ".kkkkkkkkkkkkkkkk.",
+  ".kmmkkkkkkkkkkmmk.",
+  ".kmmkffffffffkmmk.",
+  ".kkkkfoooooofkkkk.",
+  ".kmmkfoooooofkmmk.",
+  ".kmmkkkkkkkkkkmmk.",
+  ".kkkkkkkkkkkkkkkk.",
+];
+const P_HORNO = { k: "#201c18", m: "#a5553a", f: "#3a2a22", o: "#e8923a", p: "#e0cfa4", h: "#b9c0bc" };
+
+const GIRALDILLO = [  // el giraldillo que gira al revés: cree que la tasa de desempleo sube cuando sube el PBI real (18 × 14)
+  "..................",
+  "............kkkkk.",
+  ".....kkkkkkkkoook.",
+  ".....kboooobk.....",
+  "..oookboooobk.....",
+  "..kkkkboooobk.....",
+  ".....kkkkkkkk.....",
+  "........kk........",
+  "........kk........",
+  "........kk........",
+  "........kk........",
+  "........kk........",
+  "........kk........",
+  ".....kkkkkkkk.....",
+];
+const P_GIRALDILLO = { k: "#201c18", b: "#7a6a3a", o: "#c9a23c" };
+
+const CASETA = [      // la caseta sin invitación: el puesto existe y la persona existe, pero no se encuentran — eso es el desempleo friccional (18 × 14)
+  "..................",
+  "..................",
+  "..................",
+  "krrkkrrkkrrkkrrkkk",
+  "kkkkkkkkkkkkkkkkkk",
+  ".kkrvvrvvrvvrvvkk.",
+  ".kkrvvrvvrvvrvvkk.",
+  ".kkrvvkkkkkkrvvkk.",
+  ".kkrvvkffffkrvvkk.",
+  ".kkrvvkffffkrvvkk.",
+  ".kkrvvkfffokrvvkk.",
+  ".kkrvvkffffkrvvkk.",
+  ".kkrvvkffffkrvvkk.",
+  ".kkrvvkkkkkkrvvkk.",
+];
+const P_CASETA = { k: "#201c18", r: "#c0392b", v: "#e8e4d8", f: "#3a3028", o: "#c9a23c" };
+
+const ANDAMIO = [     // el andamio de la burbuja: el oficio dejó de pedirse y eso ya no se arregla esperando, es desempleo estructural (18 × 14)
+  "..................",
+  "..kk....kk....kk..",
+  "..ss....ss....ss..",
+  "..ssssssssssssss..",
+  "..stttttss....ss..",
+  "..stttttss....ss..",
+  "..ssooo.ss....ss..",
+  "..sskkk.ss....ss..",
+  "..ssssssssssssss..",
+  "..ss....stttttss..",
+  "..ss....stttttss..",
+  "..ss....ss....ss..",
+  "..ss....ss....ss..",
+  "..kksssskksssskk..",
+];
+const P_ANDAMIO = { k: "#201c18", s: "#8a9298", t: "#9a6a3a", o: "#c9a23c" };
+
+const NARANJA = [     // la naranja de temporada: la campaña termina y suelta a toda su gente, que es el desempleo cíclico (18 × 14)
+  "..................",
+  "...........vvvv...",
+  "...vvvv...vkkkkv..",
+  "..vvvvvvttvvvvvv..",
+  "..vvvvvvttk.......",
+  "......kkoookk.....",
+  ".....kkaooookk....",
+  ".....kaaaooook....",
+  "....kooaooooook...",
+  "....koooooooook...",
+  "....koooooooook...",
+  ".....koooooook....",
+  ".....kkoooookk....",
+  "......kkoookk.....",
+];
+const P_NARANJA = { k: "#201c18", o: "#e8822a", a: "#f8d8a0", t: "#6a4a28", v: "#4a7a3a" };
+
+const PEINETA = [     // la peineta del pleno empleo: cree que pleno empleo quiere decir cero desempleo, y se olvida de la tasa natural (18 × 14)
+  "..................",
+  "......kkkkkk......",
+  "....kkckckckkk....",
+  "...kckckckckckk...",
+  "...kckckckckckc...",
+  "..kkckckckckckck..",
+  "..ckckckckckckck..",
+  "..kkkkkkkkkkkkkk..",
+  "..kcccccccccccck..",
+  "..kkkkkkkkkkkkkk..",
+  "....kk.kk.kk.kk...",
+  "....kk.kk.kk.kk...",
+  "....kk.kk.kk.kk...",
+  "....kk.kk.kk.kk...",
+];
+const P_PEINETA = { k: "#201c18", c: "#e8dcc4" };
+
+const APAREJADOR = [  // jefe: el aparejador de la burbuja, que cree que todo paro es pasajero y se arregla esperando (18 × 17)
+  ".....oooooooo.....",
+  "...kkkkkkkkkkkk...",
+  ".....kkkkkkkk.....",
+  ".....kpkppkpk.....",
+  ".....kppppppk.....",
+  ".....kpkkkkpk.....",
+  ".....kkkkkkkk.....",
+  "...kkkkkkkkkkkk...",
+  "...kvvvvvvkkkkk...",
+  "...kaaaaaakcckk...",
+  "...kvvvvvvkcckk...",
+  "...kaaaaaakkkkk...",
+  "...kkkkkkkkkkkk...",
+  "...kkkkkkkkkkkk...",
+  "....kkk....kkk....",
+  "....kkk....kkk....",
+  "...kkkkk..kkkkk...",
+];
+const P_APAREJADOR = { k: "#201c18", p: "#d9a273", v: "#e8822a", a: "#e8dcc4", c: "#8fb4cc", o: "#c9a23c" };
+
+const TRANVIA = [     // el tranvía de la Avenida, que es la salida del distrito (32 × 16)
+  "ssssssssssssssssssssssssssssssss",
+  "..............kkkk..............",
+  "..............kkkk..............",
+  ".kkkkkkkkkkkkkkkkkkkkkkkkkkkkkk.",
+  ".kkkkkkkkkkkkkkkkkkkkkkkkkkkkkk.",
+  ".kvvvvvvvvvvvvvvvvvvvvvvvvvccck.",
+  "aavkkkkkvkkkkkvkkkkkvkkkkkvccck.",
+  "aavkccckvkccckvkccckvkccckvccck.",
+  "aavkccckvkccckvkccckvkccckvccck.",
+  ".kvkkkkkvkkkkkvkkkkkvkkkkkvccck.",
+  ".krrrrrrrrrrrrrrrrrrrrrrrrrrrrk.",
+  ".kvvvvvvvvvvvvvvvvvvvvvvvvvvvvk.",
+  ".kkkkkkkkkkkkkkkkkkkkkkkkkkkkkk.",
+  ".....kkkkk....kkkkk....kkkkk....",
+  "....kkkkkkk..kkkkkkk..kkkkkkk...",
+  ".....kkkkk....kkkkk....kkkkk....",
+];
+const P_TRANVIA = { k: "#201c18", v: "#e8e4d8", c: "#8fb4cc", r: "#c0392b", a: "#f8e8b0", s: "#8a9298" };
+
 /* ---------------------------------------------------------------
    REGISTRO Y COCINADO
    --------------------------------------------------------------- */
@@ -2732,6 +2881,14 @@ const DEFINICIONES = {
   rand:         [RAND, P_RAND],
   estadistico:  [ESTADISTICO, P_ESTADISTICO],
   teleferico:   [TELEFERICO, P_TELEFERICO],
+  horno:        [HORNO, P_HORNO],
+  giraldillo:   [GIRALDILLO, P_GIRALDILLO],
+  caseta:       [CASETA, P_CASETA],
+  andamio:      [ANDAMIO, P_ANDAMIO],
+  naranja:      [NARANJA, P_NARANJA],
+  peineta:      [PEINETA, P_PEINETA],
+  aparejador:   [APAREJADOR, P_APAREJADOR],
+  tranvia:      [TRANVIA, P_TRANVIA],
 };
 
 const cocidos = {};   // nombre -> { canvas, ancho, alto } (ya escalados)

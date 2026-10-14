@@ -1,0 +1,42 @@
+{
+  "id": "level27",
+  "distrito": "España",
+  "clase": "Clase 08 · PC3",
+  "titulo": "El país donde el paro cambió de tipo",
+  "tema": "giralda",
+  "musica": "giralda",
+  "vehiculo": "tranvia",
+  "intro": "Octava clase de la PC3, y otro país: España. Acá se vio en vivo lo que explica esta clase. En 2007 España construía más viviendas que Alemania, Francia e Italia juntas, y el ladrillo llegó a ser más de la décima parte de su economía. Cuando la burbuja reventó, el paro pasó del 8,2% en 2007 al 26,9% en 2013: se multiplicó por más de tres. Pero lo importante no fue cuánto subió, sino DE QUÉ TIPO era. Eran cientos de miles de albañiles con un oficio que de un día para el otro ya no le servía a nadie, y eso no se arregla esperando a que pase el bache — es desempleo ESTRUCTURAL y se arregla recapacitando. Y en Andalucía pasa además la otra cosa: el paro sube y baja con la temporada, porque la campaña de la aceituna y el verano turístico toman muchísima gente unos meses y la sueltan después, y eso ya es CÍCLICO. Tres tipos distintos de desempleo, con tres remedios distintos. De eso va el nivel.",
+  "repaso": [
+    "QUÉ AGREGA ESTA CLASE: la pasada se contó gente, nivel por nivel, para saber CUÁNTOS están desempleados. Hoy se pregunta POR QUÉ lo están, y eso importa porque cada tipo de desempleo se arregla con una política distinta. Recetar mal el remedio es el error que la clase quiere evitar.",
+    "EL PBI POTENCIAL es el nivel de producción óptimo y SOSTENIBLE, el que sale usando al 100% los factores sin recalentar (inflación) ni enfriar (recesión). Es un PBI al que se le sacan los eventos transitorios. La imagen del apunte: un horno que da 100 panes al día sin quemarlos ni desgastarse; si forzás, salen quemados, y si hacés 60 estás desperdiciando horno.",
+    "PBI REAL CONTRA POTENCIAL: si el real queda POR DEBAJO hay recesión y sobra gente; si queda POR ENCIMA la economía está sobrecalentada. El pleno empleo es justo cuando los dos coinciden.",
+    "LA TASA DE DESEMPLEO ES CONTRACÍCLICA: se mueve al revés que el PBI real. Cae la producción, sube el desempleo. Ojo con el nombre, porque «procíclica» sería moverse en el mismo sentido, que es lo contrario.",
+    "DESEMPLEO FRICCIONAL: el tiempo que toma encontrar trabajo, porque la oferta y la demanda no se encuentran al toque. No es que a la persona le falten habilidades, le falta el DATO. Por eso se reduce con mejores agencias de empleo: LinkedIn, bolsas de trabajo, ferias laborales.",
+    "DESEMPLEO ESTRUCTURAL: las habilidades de la gente (su VPMgL) no coinciden con lo que piden los puestos disponibles. El apunte marca que se origina sobre todo cuando el SALARIO MÍNIMO sube por encima del equilibrio, porque deja afuera a todos los que no llegan a ese piso. Se reduce con programas públicos de capacitación, que suben el PMgL, suben el VPMgL y EXPANDEN la demanda laboral.",
+    "DESEMPLEO CÍCLICO: lo provoca el ciclo económico, o sea hechos transitorios. La campaña de Navidad que termina y deja gente en la calle en enero, una recesión, una pandemia. Es el único de los tres que se va solo cuando el PBI real vuelve al potencial.",
+    "LA TASA NATURAL DE DESEMPLEO = FRICCIONAL + ESTRUCTURAL. Es la parte que NO depende del ciclo, y por eso es la que no desaparece.",
+    "EL PLENO EMPLEO y la pregunta clásica de examen: pleno empleo es que el PBI real quede en el potencial, y ahí el desempleo CÍCLICO se hace CERO. Pero la tasa de desempleo NO se hace cero: queda la tasa natural, porque siempre va a haber gente cambiando de trabajo o recapacitándose. Pleno empleo no es «todos trabajando».",
+    "EL RECONOCIMIENTO RÁPIDO, que es media pregunta de examen. Suben los salarios o los sindicatos piden aumento → ESTRUCTURAL. Mejora LinkedIn, o una ley traba los despidos y alarga las contrataciones, o hay trabajo en Canadá y acá no se enteran → FRICCIONAL. Capacitan a 500 carteros para que programen → baja el ESTRUCTURAL. Terminó la Navidad y largan a los de campaña → sube el CÍCLICO.",
+    "SUBEMPLEO NO ES LO MISMO QUE INFORMALIDAD, y es de las preguntas que más caen. Son DOS cortes distintos del mismo total de ocupados: la formalidad mira si estás registrado y con beneficios, y el subempleo mira horas e ingreso. Hay formales subempleados y hay informales adecuadamente empleados. Por eso 4,4 + 8,6 formales e informales da 13,0 y 8,2 + 4,9 adecuados y subempleados da 13,1: no se contradicen, parten el mismo total de dos maneras.",
+    "LA CRÍTICA AL MERCADO LABORAL: una tasa de desempleo baja NO alcanza para decir que está sano, hay que mirarla junto con la de subempleo. Lima 2023: ocupados 5,2 millones y desempleo de apenas 6,8%, pero con solo 58,7% de adecuadamente empleados la tasa de subempleo da 38,49% — casi seis veces la de desempleo. Y acordate de que todas las tasas de subempleo van sobre el PEA, no sobre los ocupados.",
+    "LO QUE NO CAMBIA EL TAMAÑO DEL PEA: bajar el subempleo o bajar el desempleo mueve gente DENTRO del PEA, no lo agranda; y los inactivos son NO PEA, así que tampoco se tocan. Lo que mejora es la CALIDAD del empleo, que es el argumento correcto. Y los 5 MODELOS de examen son: identificar condiciones laborales, conocer las tasas, el matemático de hallar lo que falta, los tipos de desempleo y los gráficos."
+  ],
+  "mapa": [
+    "                                                                                                                                                                                    ",
+    "                                                                                                                                                                                    ",
+    "                                                                                                                                                                                    ",
+    "                                                                                                                                                                                    ",
+    "                                      AA                                                                                                                                            ",
+    "                                     o o                                                          o o                                        o o                                    ",
+    "                                                                                                                                                                                    ",
+    "               o  o  o              ======                                 o     o     o    o o  =====               o     o           o o  =====  o o                              ",
+    "                               ?                   V  o      o         G oo oo oo oo oo oo L              o             E                                    1  L                   ",
+    "              ==========                                                                   =====        oo oo      ===== =====        =====       =====                   o o o     ",
+    "                                                     ###    ###                                                                                                                     ",
+    "  P               E              T           E       ### E  ###      C    X     X     X                  E    C                     E                     C           B         M   ",
+    "#################################################################################################################              #####################################################",
+    "#################################################################################################################              #####################################################",
+    "#################################################################################################################              #####################################################"
+  ]
+}

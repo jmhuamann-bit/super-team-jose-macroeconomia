@@ -1,0 +1,125 @@
+{
+  "nivel": "level27",
+  "clase": "Clase 08 · PC3 — Tipos de desempleo y pleno empleo",
+  "fuente": "Apuntes de la Clase 08 — Condiciones laborales (Economía General II)",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "m27-q1",
+      "nivel": "comprension",
+      "enunciado": "El apunte compara la economía con un horno de panadería: si el horno da 100 panes al día sin quemar nada ni desgastarse, esa es su capacidad sostenible.\n\n¿Qué es entonces el PBI potencial?",
+      "opciones": [
+        "El máximo histórico que el país llegó a producir alguna vez, en su mejor año",
+        "La producción que el país sostiene usando al 100% sus factores, sin recalentar ni enfriar",
+        "La producción del año pasado, que sirve de referencia para comparar contra la de hoy",
+        "El promedio de lo producido en los últimos diez años, ya descontada la inflación"
+      ],
+      "correcta": 1,
+      "explicacion": "El PBI potencial es el nivel ÓPTIMO sostenible, no un récord: pasarse recalienta (inflación) y quedarse corto desperdicia recursos (recesión). Y es un PBI al que se le sacan los eventos transitorios, por eso sirve de vara para medir el ciclo."
+    },
+    {
+      "id": "m27-q2",
+      "nivel": "comprension",
+      "enunciado": "Una economía entra en recesión: el PBI real cae por debajo del potencial.\n\n¿Qué le pasa a la tasa de desempleo, y cómo se llama esa relación?",
+      "opciones": [
+        "Sube, y la tasa de desempleo es CONTRACÍCLICA: se mueve al revés que el PBI real",
+        "Baja, porque en recesión las empresas abaratan y terminan contratando más gente",
+        "Sube, y se dice que es procíclica, porque acompaña al ciclo económico del país",
+        "No se mueve: el desempleo depende del salario mínimo y no del nivel de producción"
+      ],
+      "correcta": 0,
+      "explicacion": "PBI real y tasa de desempleo van en sentidos opuestos: si la producción cae, sobra gente. Por eso la tasa de desempleo es CONTRACÍCLICA. Ojo con el nombre: procíclica sería moverse en el mismo sentido que el ciclo, que es justo lo contrario."
+    },
+    {
+      "id": "m27-q3",
+      "nivel": "comprension",
+      "enunciado": "Un economista recién egresado manda currículums y espera respuestas: en dos o tres meses va a estar colocado, pero mientras tanto figura como desempleado.\n\n¿Qué tipo de desempleo es y cómo se reduce?",
+      "opciones": [
+        "Estructural, y se reduce capacitándolo en algún oficio que el mercado sí esté pidiendo",
+        "Cíclico, y se reduce esperando a que pase el bache y la economía vuelva a crecer",
+        "Friccional, y se reduce mejorando las agencias de empleo, tipo LinkedIn o bolsas de trabajo",
+        "No es desempleo: mientras siga buscando se lo cuenta como parte de los inactivos plenos"
+      ],
+      "correcta": 2,
+      "explicacion": "El FRICCIONAL es el tiempo que toma encontrar trabajo, porque la oferta y la demanda no se encuentran al toque. No es que le falten habilidades: le falta el dato. Por eso se ataca con mejor información, no con capacitación."
+    },
+    {
+      "id": "m27-q4",
+      "nivel": "aplicacion",
+      "enunciado": "Los sindicatos consiguen que suba el salario mínimo por encima del de equilibrio, y quedan afuera los trabajadores cuyo VPMgL no llega a ese nuevo piso.\n\n¿Qué tipo de desempleo es, y qué habría que hacer?",
+      "opciones": [
+        "Cíclico, porque es un hecho puntual que se va a corregir solo cuando pase el impacto",
+        "Friccional, y alcanza con que las bolsas de trabajo informen mejor las vacantes abiertas",
+        "Estructural, y se ataca con programas públicos de capacitación, que suben el VPMgL",
+        "Estructural, pero no tiene arreglo: esa gente ya quedó fuera del mercado para siempre"
+      ],
+      "correcta": 2,
+      "explicacion": "El ESTRUCTURAL es cuando las habilidades no coinciden con lo que piden los puestos, y el apunte marca que se origina sobre todo cuando el mínimo sube por encima del equilibrio. Capacitar sube el PMgL, sube el VPMgL y EXPANDE la demanda laboral. Y ojo con la pregunta de examen que dice que el salario mínimo causa desempleo CÍCLICO: es falso, causa estructural."
+    },
+    {
+      "id": "m27-q5",
+      "nivel": "aplicacion",
+      "enunciado": "Pasó la Navidad y en enero las tiendas largan a casi todos los que habían tomado para la campaña.\n\n¿Qué tipo de desempleo sube?",
+      "opciones": [
+        "El cíclico, porque lo provoca un hecho transitorio atado al ciclo económico",
+        "El estructural, porque esos trabajadores ya demostraron que no tenían el perfil",
+        "El friccional, porque ahora todos ellos van a tardar un tiempo en recolocarse",
+        "La tasa natural, que es la que recoge todo lo que pasa de un mes para el otro"
+      ],
+      "correcta": 0,
+      "explicacion": "El CÍCLICO es el de corto plazo y lo provocan hechos transitorios: una campaña que termina, una recesión, una pandemia. Es el único de los tres que desaparece cuando el PBI real vuelve al potencial."
+    },
+    {
+      "id": "m27-q6",
+      "nivel": "comprension",
+      "enunciado": "Un país llega al PLENO EMPLEO: su PBI real queda justo en el potencial. Sus tasas eran 3,5% de friccional, 2,5% de estructural y 4% de cíclico.\n\n¿Cuánto queda la tasa de desempleo?",
+      "opciones": [
+        "0%, porque pleno empleo quiere decir que todo el que quiere trabajar está trabajando",
+        "4%, que es el cíclico, lo único que queda en pie cuando la economía se normaliza",
+        "10%, la suma de los tres, porque llegar al potencial no borra ninguna de las tres",
+        "6%: el cíclico se hace 0, pero quedan el friccional y el estructural, la TASA NATURAL"
+      ],
+      "correcta": 3,
+      "explicacion": "TASA NATURAL = friccional + estructural, y es la que sobrevive al pleno empleo. Pleno empleo NO es cero desempleo: significa que el PBI real igualó al potencial y por eso el componente CÍCLICO se hace cero. Siempre va a haber gente cambiando de trabajo o recapacitándose."
+    },
+    {
+      "id": "m27-q7",
+      "nivel": "comprension",
+      "enunciado": "El INEI informa 4,4 millones de empleos formales y 8,6 de informales; y por otro lado 8,2 millones de empleos adecuados y 4,9 de subempleados. Pindolfo dice que las cifras no cuadran y que el INEI está mal.\n\n¿Tiene razón?",
+      "opciones": [
+        "Sí: si fueran bien hechas, los formales tendrían que coincidir con los adecuados",
+        "No: son dos cortes distintos del mismo total de ocupados, y por eso suman casi igual",
+        "Sí, porque el subempleo es informal por definición y no puede dar menos que los informales",
+        "No, pero porque los informales no se cuentan en la PEA y por eso los dos totales difieren"
+      ],
+      "correcta": 1,
+      "explicacion": "Son DOS clasificaciones distintas de los mismos ocupados: formalidad mira si estás registrado y con beneficios, subempleo mira horas e ingreso. Hay formales subempleados e informales adecuadamente empleados. Por eso 4,4 + 8,6 = 13,0 y 8,2 + 4,9 = 13,1: casi el mismo total partido de dos maneras."
+    },
+    {
+      "id": "m27-q8",
+      "nivel": "aplicacion",
+      "enunciado": "En Lima la población ocupada fue de 5,2 millones y la tasa de desempleo quedó en 6,8%. Además, solo el 58,7% de los ocupados estaban adecuadamente empleados.\n\n¿Cuánto da la tasa de subempleo?",
+      "opciones": [
+        "41,3%, que es el porcentaje de ocupados que no están adecuadamente empleados",
+        "6,8%, la misma tasa de desempleo, porque el subempleo también es falta de trabajo",
+        "38,49%: los subempleados son 2,15 millones y el PEA es 5,58 millones",
+        "58,7%, que es lo que el propio informe reporta sobre la calidad del empleo limeño"
+      ],
+      "correcta": 2,
+      "explicacion": "Todas las tasas de subempleo van sobre el PEA, no sobre los ocupados. El PEA sale de 5,2/(1 − 0,068) = 5,58, y los subempleados son el 41,3% de los 5,2 ocupados, o sea 2,15. La división da 38,49%: casi seis veces la tasa de desempleo."
+    },
+    {
+      "id": "m27-q9",
+      "nivel": "comprension",
+      "enunciado": "Paola dice que hay que bajar el subempleo, porque así la gente trabajaría las horas que le tocan y EL PEA AUMENTARÍA. Francisco dice que hay que bajar el desempleo, porque así BAJARÍAN LOS INACTIVOS.\n\n¿Quién tiene razón?",
+      "opciones": [
+        "Paola, porque pasar de subempleado a adecuado agranda la fuerza laboral del país",
+        "Francisco, porque el que deja de estar desempleado sale de la población inactiva",
+        "Los dos, porque cualquier mejora del empleo hace crecer al PEA y achica los inactivos",
+        "Ninguno: las dos políticas mueven gente DENTRO del PEA, sin tocar sus totales"
+      ],
+      "correcta": 3,
+      "explicacion": "El subempleado ya es ocupado y el desempleado abierto ya es PEA: las dos políticas cambian la COMPOSICIÓN del PEA, no su tamaño, y los inactivos son NO PEA, así que tampoco se mueven. Lo que sí mejora es la CALIDAD del empleo, que es el argumento correcto."
+    }
+  ]
+}

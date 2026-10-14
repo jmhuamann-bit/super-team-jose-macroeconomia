@@ -164,6 +164,14 @@ const TEMAS_MUSICA = {
               "B4",2,"D5",2,"E5",4,"D5",2,"B4",2,"E4",4],
     bajo:    ["E3",8,"B2",8,"G2",8,"E3",8,"A2",8,"D3",8,"B2",8,"E3",8],
   },
+  giralda: { // España: aire de bulería, con palmas y el remate seco
+    tempo: 0.17, onda: "sawtooth",
+    melodia: ["A3",2,"Bb3",1,"A3",1,"G3",2,"F3",2,"E3",4,
+              "A3",2,"C4",2,"D4",2,"C4",1,"Bb3",1,"A3",4,
+              "D4",2,"C4",2,"Bb3",2,"A3",2,"G3",2,"F3",2,"E3",4,
+              "F3",2,"G3",2,"A3",4,"A3",4],
+    bajo:    ["A1",8,"G2",4,"F2",4,"E2",8,"A1",8],
+  },
   cabo: { // Sudáfrica: coro a capela, de pasos cortos y mucho rebote
     tempo: 0.2, onda: "square",
     melodia: ["G3",2,"B3",2,"D4",2,"G4",2,"F#4",2,"D4",2,"B3",4,

@@ -401,6 +401,20 @@
       "abierto": true,
       "mapa": "levels/level26.json",
       "preguntas": "questions/level26_questions.json"
+    },
+    {
+      "id": "level27",
+      "clase": "Clase 08",
+      "distrito": "España",
+      "titulo": "El país donde el paro cambió de tipo",
+      "icono": "🍊",
+      "seccion": "PC3",
+      "seccionNota": "Mercado laboral, desempleo y crecimiento — y ahora visitando el mundo",
+      "retos": 7,
+      "duracion": "3 min",
+      "abierto": true,
+      "mapa": "levels/level27.json",
+      "preguntas": "questions/level27_questions.json"
     }
   ]
 }

@@ -3098,6 +3098,217 @@ export const TEMAS = {
       }
     },
   },
+
+  giralda: {
+    nombre: "España",
+    cielo: [[0, "#3f86c8"], [0.4, "#8fbadd"], [0.7, "#e2d8bc"], [0.8, "#4a4034"], [1, "#221c16"]],
+    suelo: { cara: "#9a9086", borde: "#b6ac9e", tierra: "#4a3e30", plataforma: "#8a5a3a", plataformaBorde: "#e0c05c" },
+    acento: "#c0392b",
+
+    bichos: ["horno", "giraldillo", "caseta", "andamio", "naranja", "peineta"],
+    nombresBichos: [
+      "El Horno que No Sabe su Tope",
+      "El Giraldillo que Gira al Revés",
+      "La Caseta sin Invitación",
+      "El Andamio de la Burbuja",
+      "La Naranja de Temporada",
+      "La Peineta del Pleno Empleo",
+    ],
+    andares: ["patrulla", "guardia", "veloz", "salta", "vuela"],
+    jefe: "aparejador",
+    nombreJefe: "El Aparejador de la Burbuja",
+
+    fondo(ctx, cam, t) {
+      const elige = (a, n) => a[((n % a.length) + a.length) % a.length];
+
+      // el sol de Andalucía: alto, grande y blanco de tan fuerte
+      ctx.fillStyle = "rgba(252,244,206,.22)";
+      ctx.beginPath(); ctx.arc(196, 70, 62, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = "rgba(255,252,236,.90)";
+      ctx.beginPath(); ctx.arc(196, 70, 24, 0, Math.PI * 2); ctx.fill();
+
+      // LA CAMPIÑA DE OLIVOS, hasta donde da la vista: lomas suaves de tierra
+      // ocre con los olivos plantados en hilera, que es el paisaje del paro
+      // por temporada del que habla el nivel
+      repetir(ctx, cam, 206, 0.05, (x, i) => {
+        const bx = x, base = 306, alto = 54 + ((i * 53) % 40);
+        ctx.fillStyle = "#a98f5e";
+        ctx.beginPath();
+        ctx.moveTo(bx - 24, base);
+        ctx.quadraticCurveTo(bx + 60, base - alto, bx + 144, base);
+        ctx.closePath(); ctx.fill();
+        for (let k = 0; k < 11; k++) {                             // las hileras de olivos
+          const px = bx - 8 + k * 14;
+          const h = alto * (1 - Math.pow((k - 5) / 6.4, 2));
+          ctx.fillStyle = elige(["#5f7a4a", "#536b42", "#6b8753"], i + k);
+          ctx.beginPath(); ctx.arc(px, base - h * 0.62, 6, 0, Math.PI * 2); ctx.fill();
+        }
+      });
+
+      // LA GIRALDA, con el cuerpo de ladrillo, el campanario encima y el
+      // Giraldillo de remate; al lado el bulto de la catedral con sus pináculos
+      repetir(ctx, cam, 596, 0.12, (x, i) => {
+        const bx = x + 60, base = 306, cima = base - 186;
+        ctx.fillStyle = "#c08a5c";                                  // el fuste de ladrillo
+        ctx.fillRect(bx, cima + 56, 44, 186 - 56);
+        ctx.fillStyle = "rgba(60,40,28,.22)";                       // los paños de sebka
+        for (let py = cima + 70; py < base - 14; py += 14) {
+          ctx.fillRect(bx + 6, py, 13, 9);
+          ctx.fillRect(bx + 25, py, 13, 9);
+        }
+        ctx.fillStyle = "#cfa070";                                  // el campanario
+        ctx.fillRect(bx + 4, cima + 26, 36, 32);
+        ctx.fillStyle = "rgba(56,38,26,.44)";
+        ctx.fillRect(bx + 11, cima + 34, 9, 16);
+        ctx.fillRect(bx + 24, cima + 34, 9, 16);
+        ctx.fillStyle = "#c08a5c";                                  // el cuerpo de remate
+        ctx.fillRect(bx + 10, cima + 10, 24, 18);
+        ctx.fillStyle = "#9a7a3a";                                  // el remate, liso: el
+        ctx.fillRect(bx + 19, cima - 4, 6, 15);                     // Giraldillo es un BICHO
+        ctx.fillRect(bx + 17, cima - 7, 10, 4);                     // y no se repite acá
+
+        ctx.fillStyle = "#c9b48c";                                  // la catedral al lado
+        ctx.fillRect(bx + 50, base - 88, 128, 88);
+        ctx.fillStyle = "#b5a179";
+        ctx.fillRect(bx + 50, base - 88, 128, 6);
+        for (let px = bx + 58; px < bx + 176; px += 22) {           // los pináculos
+          ctx.fillStyle = "#c9b48c";
+          ctx.beginPath();
+          ctx.moveTo(px, base - 88);
+          ctx.lineTo(px + 6, base - 112);
+          ctx.lineTo(px + 12, base - 88);
+          ctx.closePath(); ctx.fill();
+        }
+        ctx.fillStyle = "rgba(66,56,38,.34)";                       // los ventanales
+        for (let px = bx + 60; px < bx + 172; px += 22) ctx.fillRect(px, base - 62, 11, 30);
+      });
+
+      // EL PUEBLO BLANCO: cubos encalados con teja, apretados y sin orden
+      repetir(ctx, cam, 142, 0.22, (x, i) => {
+        const bx = x, base = 306;
+        for (let k = 0; k < 3; k++) {
+          const px = bx + k * 42, alto = 30 + ((i * 17 + k * 29) % 24), ancho = 34;
+          ctx.fillStyle = elige(["#f2eee2", "#e8e2d2", "#faf6ec"], i + k);
+          ctx.fillRect(px, base - alto, ancho, alto);
+          ctx.fillStyle = "#b5543a";                                // la teja
+          ctx.fillRect(px - 3, base - alto - 6, ancho + 6, 7);
+          ctx.fillStyle = "rgba(70,62,50,.30)";
+          ctx.fillRect(px + 11, base - alto + 9, 10, 12);
+        }
+      });
+
+      // EL PLANO DEL SUELO SEVILLANO, del pie del pueblo hasta el adoquín y
+      // de corrido: acá no hay río, hay ALBERO, la arena amarilla de la feria
+      ctx.fillStyle = "#4e6b42";
+      ctx.fillRect(0, 306, CFG.ANCHO_VISTA, 12);
+      ctx.fillStyle = "#d9a94e";                                    // el albero
+      ctx.fillRect(0, 318, CFG.ANCHO_VISTA, 32);
+      ctx.fillStyle = "#e7bc63";
+      ctx.fillRect(0, 318, CFG.ANCHO_VISTA, 6);
+      for (let i = 0; i < 34; i++) {                                // las huellas en la arena
+        const x = (i * 59 - cam * 0.12) % 1020 - 50;
+        ctx.fillStyle = "rgba(142,100,44,.20)";
+        ctx.fillRect(x, 328 + ((i * 17) % 16), 14, 3);
+      }
+      ctx.fillStyle = "#9a9086";                                    // el adoquinado
+      ctx.fillRect(0, 350, CFG.ANCHO_VISTA, 32);
+      ctx.fillStyle = "#aea498";
+      ctx.fillRect(0, 350, CFG.ANCHO_VISTA, 4);
+      for (let i = 0; i < 48; i++) {
+        const x = (i * 35 - cam * 0.5) % 980 - 40;
+        ctx.fillStyle = "rgba(64,58,50,.16)";
+        ctx.fillRect(x, 358 + ((i * 9) % 18), 12, 4);
+      }
+
+      // LAS TINAJAS de barro al borde del albero, con su mata de geranios
+      repetir(ctx, cam, 128, 0.28, (x, i) => {
+        const bx = x + 16, base = 350;
+        ctx.fillStyle = "#a5553a";
+        ctx.beginPath(); ctx.ellipse(bx, base - 9, 11, 13, 0, Math.PI, 0); ctx.fill();
+        ctx.fillRect(bx - 11, base - 9, 22, 9);
+        ctx.fillStyle = "#8d4530";
+        ctx.fillRect(bx - 12, base - 24, 24, 5);
+        ctx.fillStyle = "#4a7a3a";                                  // la mata
+        ctx.beginPath(); ctx.arc(bx, base - 31, 10, 0, Math.PI * 2); ctx.fill();
+        ctx.fillStyle = "#c0392b";
+        for (const d of [-6, 0, 6]) ctx.fillRect(bx + d, base - 37 + ((d * d) % 5), 4, 4);
+      });
+
+      // LA REJA de hierro con sus arcos, que es lo que separa el paseo
+      repetir(ctx, cam, 232, 0.32, (x, i) => {
+        const bx = x + 20, base = 352;
+        ctx.fillStyle = "#3a332c";
+        ctx.fillRect(bx, base - 34, 108, 4);
+        ctx.fillRect(bx, base - 6, 108, 4);
+        for (let px = bx + 4; px < bx + 106; px += 9) ctx.fillRect(px, base - 34, 3, 32);
+        for (const px of [0, 104]) ctx.fillRect(bx + px, base - 42, 6, 40);
+        ctx.fillStyle = "#c9a23c";                                  // los remates dorados
+        for (const px of [0, 104]) ctx.fillRect(bx + px - 1, base - 46, 8, 5);
+      });
+
+      // LA CASA SEVILLANA: cal, zócalo de azulejo, balcón de hierro y geranios
+      repetir(ctx, cam, 298, 0.54, (x, i) => {
+        const bx = x + 34, base = 382, alto = 52;
+        const techo = base - alto;
+        ctx.fillStyle = elige(["#f4f0e4", "#efe8d6", "#faf6ea"], i);
+        ctx.fillRect(bx, techo, 94, alto);
+        ctx.fillStyle = elige(["#d9a94e", "#c9843c", "#d2b05a"], i);   // la franja ocre
+        ctx.fillRect(bx, techo, 94, 7);
+        ctx.fillStyle = "#b5543a";                                  // el alero de teja
+        ctx.fillRect(bx - 7, techo - 8, 108, 9);
+        ctx.fillStyle = "#3f6f8a";                                  // el zócalo de azulejo
+        ctx.fillRect(bx, base - 14, 94, 14);
+        ctx.fillStyle = "rgba(240,244,246,.44)";
+        for (let px = bx + 3; px < bx + 92; px += 10) ctx.fillRect(px, base - 11, 5, 8);
+        ctx.fillStyle = "rgba(246,242,230,.88)";                    // las ventanas
+        for (const px of [10, 66]) ctx.fillRect(bx + px, techo + 14, 18, 20);
+        ctx.fillStyle = "#3a332c";                                  // el balcón de hierro
+        ctx.fillRect(bx + 6, techo + 32, 26, 3);
+        for (let px = bx + 8; px < bx + 32; px += 5) ctx.fillRect(px, techo + 22, 2, 12);
+        ctx.fillStyle = "#c0392b";                                  // los geranios del balcón
+        for (const d of [10, 18, 26]) ctx.fillRect(bx + d, techo + 26, 4, 4);
+        ctx.fillStyle = "#8a5a3a";
+        ctx.fillRect(bx + 42, base - 32, 15, 18);                   // la puerta
+      });
+
+      // LOS BANCOS DE AZULEJO del paseo, bajitos y con su maceta al lado
+      repetir(ctx, cam, 116, 0.78, (x, i) => {
+        const bx = x + 22, base = 382;
+        ctx.fillStyle = "#3f6f8a";
+        ctx.fillRect(bx, base - 13, 30, 6);
+        ctx.fillStyle = "rgba(240,244,246,.40)";
+        for (let px = bx + 2; px < bx + 29; px += 6) ctx.fillRect(px, base - 12, 3, 4);
+        ctx.fillStyle = "#2f5568";
+        ctx.fillRect(bx + 2, base - 7, 5, 7);
+        ctx.fillRect(bx + 23, base - 7, 5, 7);
+        ctx.fillStyle = "#a5553a";
+        ctx.fillRect(bx + 34, base - 9, 9, 9);
+        ctx.fillStyle = "#4a7a3a";
+        ctx.beginPath(); ctx.arc(bx + 38, base - 13, 6, 0, Math.PI * 2); ctx.fill();
+      });
+      ctx.fillStyle = "#8e857a";
+      ctx.fillRect(0, 380, CFG.ANCHO_VISTA, 4);
+    },
+
+    clima(ctx, t) {
+      // los vencejos, que en verano cruzan el cielo de Sevilla a toda velocidad
+      for (let i = 0; i < 8; i++) {
+        const x = (i * 197 + t * 3.4) % 1060 - 60;
+        const y = 58 + ((i * 43) % 96) + Math.sin(t / 11 + i) * 12;
+        ctx.fillStyle = "rgba(42,38,32,.72)";
+        ctx.fillRect(x, y, 7, 2);
+        ctx.fillRect(x - 3, y - 2, 4, 2);
+        ctx.fillRect(x + 6, y - 2, 4, 2);
+      }
+      // y el temblor del calor sobre el albero
+      for (let i = 0; i < 14; i++) {
+        const x = (i * 157 + t * 0.5) % 1000 - 40;
+        const y = 196 + ((i * 61) % 120);
+        ctx.fillStyle = `rgba(252,246,216,${(0.04 + 0.05 * Math.abs(Math.sin(t / 26 + i))).toFixed(2)})`;
+        ctx.fillRect(x, y, 58, 3);
+      }
+    },
+  },
 };
 
 /** Pinta el cielo del tema (degradado vertical). */
