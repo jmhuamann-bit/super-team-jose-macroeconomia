@@ -1,0 +1,42 @@
+{
+  "id": "level28",
+  "distrito": "Corea del Sur",
+  "clase": "Clase 10 · PC3",
+  "titulo": "El país que creció rápido porque no tenía nada",
+  "tema": "seul",
+  "musica": "seul",
+  "vehiculo": "ktx",
+  "intro": "Décima clase de la PC3, y otro país: Corea del Sur. En 1960 su PBI per cápita andaba por el nivel de los países más pobres del mundo: salía de una guerra que le había dejado Seúl en escombros y casi sin máquinas. Sesenta años después es una de las economías más ricas del planeta, y a eso se le dice el MILAGRO DEL RÍO HAN. Es el caso de manual de lo que explica el modelo de hoy: cuando un país tiene MUY POCO capital, cada máquina nueva rinde muchísimo y por eso crece rapidísimo — y a medida que se acerca a los de adelante, ese mismo crecimiento se va apagando solo. Corea hoy crece bastante más despacio que en los setenta, y no porque algo le salga mal, sino porque ya está cerca de su ESTADO ESTACIONARIO. Y ahí aparece la pregunta con la que cierra la clase, que es la que Corea se hace de verdad: si ahorrar más ya no alcanza para seguir creciendo, ¿qué queda? Queda la tecnología.",
+  "repaso": [
+    "DE DÓNDE VIENE ESTA CLASE: el PMgL es DECRECIENTE, o sea que si agrandás un solo factor dejando los otros quietos, cada unidad nueva aporta menos que la anterior. De ahí sale la frase que cae en examen: NO se puede crecer en el largo plazo inflando un solo factor, ni «L» ni «K».",
+    "LOS 4 DETERMINANTES DEL CRECIMIENTO: capital físico, capital humano (educación), recursos naturales y tecnología. Y el crecimiento sale de COMBINARLOS. Por eso la respuesta al ministro del yacimiento de petróleo es que no, la economía no crece sola.",
+    "LA MALDICIÓN DE LOS RECURSOS NATURALES: los países ricos en un solo recurso suelen crecer MENOS y vivir peor que los que tienen poco, porque la riqueza fácil crea dependencia en lugar de empujar la diversificación. El recurso es una bendición solo si lo que rinde se reinvierte en lo demás.",
+    "LA COBB-DOUGLAS CON RETORNOS A ESCALA CONSTANTES, que es la que usa Solow: Y = A·K^α·L^(1−α). Los exponentes SUMAN 1, y cada uno es la participación de ese factor en el producto, en decimales. Si el capital participa con 40%, va K^0,4·L^0,6; si la elasticidad del trabajo es 0,5, va K^0,5·L^0,5; y «sin progreso tecnológico» quiere decir que no va la A adelante.",
+    "LAS VARIABLES PER CÁPITA, que son para mirar el bienestar INDIVIDUAL: se divide todo entre L y aparecen las chiquititas. y = Y/L es el producto per cápita y k = K/L el capital per cápita. La Cobb-Douglas queda y = A·k^α, con el mismo exponente. Ojo con la excepción: la tasa de ahorro «s» va en minúscula aunque no sea per cápita, y el ahorro total «S» en mayúscula.",
+    "AHORRO Y CONSUMO: la tasa de ahorro es s = S/Y, y siempre se cumple que s + c = 1. Si la tasa de consumo es 0,6, la de ahorro es 0,4; si la de ahorro es 45%, la de consumo es 55%. Si Pedro gana 1 000 y ahorra 200, su tasa de ahorro es 0,2.",
+    "CONVERGENCIA ABSOLUTA: todas las economías terminarían en el MISMO ingreso per cápita, sin importar cómo arrancaron. Es la versión fuerte y casi no se usa, porque en los datos no pasa.",
+    "CONVERGENCIA CONDICIONADA, que es la que se usa: las economías chicas y pobres crecen MÁS RÁPIDO que las grandes. La razón son los rendimientos decrecientes del capital: las grandes ya están llegando al límite y las chicas tienen todo el margen. Un poste de luz donde no había nada aporta muchísimo más que un poste más en Miraflores.",
+    "EL EJEMPLO QUE SIEMPRE CAE: entre 1948 y 1972 la producción per cápita creció 8,2% al año en Japón y 5,7% en Alemania, contra 2,2% en Estados Unidos. No es ninguna sorpresa para Solow: los dos primeros perdieron su capital en la guerra y arrancaron desde muy abajo; Estados Unidos seguía con el suyo intacto y cerca de su estado estacionario.",
+    "POR QUÉ SE PIERDE CAPITAL PER CÁPITA, que son DOS razones y no una: la DEPRECIACIÓN (δ), que gasta las máquinas que ya hay, y el CRECIMIENTO POBLACIONAL (n), que reparte el mismo capital entre más gente. Olvidarse de la n es el error más común del modelo.",
+    "LA ECUACIÓN DE SOLOW, también llamada ecuación de movimiento del capital per cápita: Δk = s·y − (δ + n)·k. Lo que suma es el ahorro invertido; lo que resta son esas dos pérdidas. Y la tasa de crecimiento del capital per cápita es Δk/k.",
+    "EL ESTADO ESTACIONARIO es donde Δk = 0, o sea donde s·y = (δ + n)·k: lo que se invierte alcanza justo para reponer lo que se pierde. Ahí la economía SE ESTANCA, el PBI per cápita deja de crecer. LA RECETITA: (1) pasar la Cobb-Douglas a per cápita; (2) escribir la ecuación de Solow y reemplazar; (3) despejar k en estado estacionario. PLUS: y_ss reemplazando k_ss, el ahorro per cápita multiplicando y_ss por s, y el consumo como y_ss menos el ahorro. El gráfico lleva tres curvas: producción, ahorro y depreciación.",
+    "LOS DOS RESUELTOS. Con y = k^0,5, s = 30%, δ = 5% y n = 5%: 0,30·k^0,5 = 0,10·k da k_ss = 9, y_ss = 3, ahorro 0,9 y consumo 2,1. Con y = 2·k^0,5, s = 20%, δ = 6% y n = 4%: k_ss = 16, y_ss = 8 y consumo 6,4; y si hoy está en k = 4, crece al 10% y se va frenando hasta llegar a 16. ⭐ LA CONCLUSIÓN: subir la tasa de ahorro sube el NIVEL del estado estacionario (de k = 16 a k = 64 si s pasa de 20% a 40%), pero sigue siendo un estado estacionario. Lo único que sostiene el crecimiento del producto per cápita para siempre es que suba la A, la TECNOLOGÍA."
+  ],
+  "mapa": [
+    "                                                                                                                                                                                    ",
+    "                                                                                                                                                                                    ",
+    "                                                                                                                                                                                    ",
+    "                                                                                                                                                                                    ",
+    "                                                                                                    AA                                                                              ",
+    "                     o o                                    o o                                    o o                                                                              ",
+    "                                                                                                                                                                                    ",
+    "               o o  =====  o o       o  o  o          o o  =====                                  ======             o     o     o         o     o                                  ",
+    "             ?                                       V              o    G  o      o         L                     oo oo oo oo oo oo          E              1  L                   ",
+    "              =====       =====     ==========       =====        oo oo                                                                  ===== =====                      o o o     ",
+    "                                                                           ###    ###                                                                                               ",
+    "  P         E                           E                          E   C   ###    ###          T           E        X E   X     X   C                     C           B         M   ",
+    "#######################################################################################################################################              ###############################",
+    "#######################################################################################################################################              ###############################",
+    "#######################################################################################################################################              ###############################"
+  ]
+}

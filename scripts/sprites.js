@@ -2731,6 +2731,155 @@ const TRANVIA = [     // el tranvía de la Avenida, que es la salida del distrit
 ];
 const P_TRANVIA = { k: "#201c18", v: "#e8e4d8", c: "#8fb4cc", r: "#c0392b", a: "#f8e8b0", s: "#8a9298" };
 
+const GINSENG = [    // la raíz de ginseng: cree que con un solo recurso la economía crece sola (18 × 14)
+  "....vvv.vv.vvv....",
+  "....vvvvvvvvvv....",
+  ".....vvvvvvvv.....",
+  "......kkkkkk......",
+  "......kuuuuk......",
+  "......kukkuk......",
+  "......kuuuuk......",
+  "......kuuuuk......",
+  ".....kkkkkkkk.....",
+  ".....k.ku.kkk.....",
+  "....kk.ku.kkkkk...",
+  "....kk.ku.kk.kk...",
+  "....kk.ku.kk.kk...",
+  ".......kk.........",
+];
+const P_GINSENG = { k: "#1f1b16", u: "#d8b06a", v: "#4a7a3a" };
+
+const TAMBOR = [     // el tambor descompensado: le pone a los exponentes dos números que no suman 1 (18 × 14)
+  "..................",
+  "............kkkkkk",
+  "kkkkkk......kcccck",
+  "kcccck......kcccck",
+  "kcccckr.r.r.kcccck",
+  "kcccckkkkkkkkcccck",
+  "kcccckmmmmmmkcccck",
+  "kcccckmmmmmmkcccck",
+  "kcccckkkkkkkkcccck",
+  "kcccckr.r.r.kcccck",
+  "kcccck......kcccck",
+  "kkkkkk......kcccck",
+  "............kkkkkk",
+  "..................",
+];
+const P_TAMBOR = { k: "#1f1b16", c: "#e4d8be", m: "#8a4a2c", r: "#c0392b" };
+
+const BANDEJA = [    // la bandeja que no reparte: olvida dividir entre L y se queda en variables totales (18 × 14)
+  "..................",
+  "..................",
+  "..kkkkkkkkkkkkkk..",
+  "..kmmmmmmmmmmmmk..",
+  "..................",
+  "kkkkkkkkkkkkkkkkkk",
+  "kmmmmmmmmmmmmmmmmk",
+  "kmkkkmkkkmkkkmkkkk",
+  "kmkckmkckmkckmkckk",
+  "kmkrkmkvkmkrkmkvkk",
+  "kmkkkmkkkmkkkmkkkk",
+  "kmmmmmmmmmmmmmmmmk",
+  "kkkkkkkkkkkkkkkkkk",
+  "..kkkkkkkkkkkkkk..",
+];
+const P_BANDEJA = { k: "#1f1b16", m: "#8a4a2c", c: "#e4d8be", r: "#c0392b", v: "#4a7a3a" };
+
+const POSTE = [      // el poste del descampado: no entiende que donde no había nada, una unidad más rinde muchísimo (18 × 14)
+  "..................",
+  "....kkkkkkkkkkk...",
+  "....kafffffffak...",
+  "....kafffffffak...",
+  "....kkkkkkkkkkk...",
+  ".....f..ksk.f.....",
+  "......f.kskf......",
+  "........ksk.......",
+  "........ksk.......",
+  "........ksk.......",
+  "........ksk.......",
+  "........ksk.......",
+  "........ksk.......",
+  ".....kkkkkkkkk....",
+];
+const P_POSTE = { k: "#1f1b16", s: "#8a9298", a: "#4a4e52", f: "#f6e28a" };
+
+const GRUA = [       // la grúa del milagro: no entiende por qué el país que lo perdió todo crece más rápido (18 × 14)
+  ".kkkk.............",
+  ".kkkkkkkkkkkkkkkk.",
+  "..koooooooooooook.",
+  ".......kkk...k....",
+  ".......kok...k....",
+  ".......kkk...k....",
+  ".......kok...k....",
+  ".......kok..kkk...",
+  ".......kkk..kkk...",
+  ".......kok..kkk...",
+  ".......kok........",
+  ".......kkk........",
+  ".......kok........",
+  "....kkkkkkkkk.....",
+];
+const P_GRUA = { k: "#1f1b16", o: "#e0912a" };
+
+const ENGRANAJE = [  // el engranaje gastado: descuenta la depreciación y se olvida del crecimiento de la población (18 × 14)
+  ".......kkk........",
+  "..kkk..kkk..kkk...",
+  "..kkkkkkkkkkkkk...",
+  "..krkkkssskkkkk...",
+  "...kkssssssskk....",
+  "...kkskkkkkskk....",
+  "kkkksskkkkksskkkk.",
+  "kkkksskkkkksskkkk.",
+  "kkkksskkkkksskkkk.",
+  "...kkskkkkkskk....",
+  "...kkssssssskk....",
+  "..kkkkkssskkkkk...",
+  "..kkkkkkkkkkkrk...",
+  "..kkk..kkk..kkk...",
+];
+const P_ENGRANAJE = { k: "#1f1b16", s: "#8a9298", r: "#b5542c" };
+
+const CHAEBOL = [    // jefe: el presidente del chaebol, convencido de que ahorrando cada vez más se crece para siempre (18 × 17)
+  ".....kkkkkkkk.....",
+  "....kkkkkkkkkk....",
+  ".....kkkkkkkk.....",
+  ".....ksskkssk.....",
+  ".....kppppppk.....",
+  ".....kppkkppk.....",
+  ".....kkkkkkkk.....",
+  "...kkkkcccckkkk...",
+  "...knnnccccnnnk...",
+  "...knnncrrkkkkk...",
+  "...knnnnrrkookk...",
+  "...knnnnrrkookk...",
+  "...kkkkkrrkkkkk...",
+  "...kkkkkkkkkkkk...",
+  "....kkk....kkk....",
+  "....kkk....kkk....",
+  "...kkkkk..kkkkk...",
+];
+const P_CHAEBOL = { k: "#1f1b16", p: "#d9a273", n: "#2c3142", c: "#e8e8e0", r: "#c0392b", s: "#9fb4c0", o: "#8a6a3a" };
+
+const KTX = [        // el KTX, el tren bala que es la salida del distrito (32 × 16)
+  "................................",
+  "................................",
+  "................................",
+  "................................",
+  ".............kkkkkkkkkkkkkkkkkk.",
+  "..........kccccccccccccccccccck.",
+  ".......vkccccckkkkcckkkkcckkkkk.",
+  ".....vvvvvcccckvvkcckvvkcckvvkk.",
+  ".....vvvvvcccckkkkcckkkkcckkkkk.",
+  "....kccccccccccccccccccccccccck.",
+  "....krrrrrrrrrrrrrrrrrrrrrrrrrk.",
+  "....kccccccccccccccccccccccccck.",
+  "....kkkkkkkkkkkkkkkkkkkkkkkkkkk.",
+  "....kkkkkkkkkkkkkkkkkkkkkkkkkkk.",
+  "........kkkkk...kkkkk...kkkkk...",
+  ".........kkk.....kkk.....kkk....",
+];
+const P_KTX = { k: "#1f1b16", c: "#e4e8ec", r: "#c0392b", v: "#5f8296" };
+
 /* ---------------------------------------------------------------
    REGISTRO Y COCINADO
    --------------------------------------------------------------- */
@@ -2889,6 +3038,14 @@ const DEFINICIONES = {
   peineta:      [PEINETA, P_PEINETA],
   aparejador:   [APAREJADOR, P_APAREJADOR],
   tranvia:      [TRANVIA, P_TRANVIA],
+  ginseng:      [GINSENG, P_GINSENG],
+  tambor:       [TAMBOR, P_TAMBOR],
+  bandeja:      [BANDEJA, P_BANDEJA],
+  poste:        [POSTE, P_POSTE],
+  grua:         [GRUA, P_GRUA],
+  engranaje:    [ENGRANAJE, P_ENGRANAJE],
+  chaebol:      [CHAEBOL, P_CHAEBOL],
+  ktx:          [KTX, P_KTX],
 };
 
 const cocidos = {};   // nombre -> { canvas, ancho, alto } (ya escalados)

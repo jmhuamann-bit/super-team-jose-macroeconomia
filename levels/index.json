@@ -415,6 +415,32 @@
       "abierto": true,
       "mapa": "levels/level27.json",
       "preguntas": "questions/level27_questions.json"
+    },
+    {
+      "id": "level28r9",
+      "clase": "Clase 09",
+      "distrito": "Por definir",
+      "titulo": "Por definir",
+      "icono": "📐",
+      "seccion": "PC3",
+      "seccionNota": "Mercado laboral, desempleo y crecimiento — y ahora visitando el mundo",
+      "retos": 7,
+      "duracion": "3 min",
+      "abierto": false
+    },
+    {
+      "id": "level28",
+      "clase": "Clase 10",
+      "distrito": "Corea del Sur",
+      "titulo": "El país que creció rápido porque no tenía nada",
+      "icono": "🌸",
+      "seccion": "PC3",
+      "seccionNota": "Mercado laboral, desempleo y crecimiento — y ahora visitando el mundo",
+      "retos": 7,
+      "duracion": "3 min",
+      "abierto": true,
+      "mapa": "levels/level28.json",
+      "preguntas": "questions/level28_questions.json"
     }
   ]
 }

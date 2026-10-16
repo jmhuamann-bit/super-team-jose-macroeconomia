@@ -1,0 +1,125 @@
+{
+  "nivel": "level28",
+  "clase": "Clase 10 · PC3 — Crecimiento de largo plazo y el modelo de Solow",
+  "fuente": "Apuntes de la Clase 10 — Crecimiento LP y Solow (Economía General II)",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "m28-q1",
+      "nivel": "comprension",
+      "enunciado": "Al ministro le avisan que encontraron el yacimiento de petróleo más grande del mundo en su mar, y propone tomarse vacaciones porque «la economía va a crecer sola».\n\n¿Qué le contestás?",
+      "opciones": [
+        "Que tiene razón: los recursos naturales son uno de los cuatro determinantes del crecimiento",
+        "Que se equivoca, porque los recursos naturales no cuentan como factor de producción",
+        "Que no crece sola: con un solo factor no se crece, y está la maldición de los recursos",
+        "Que primero hay que ver el precio del barril, y recién ahí se sabe si conviene o no extraerlo"
+      ],
+      "correcta": 2,
+      "explicacion": "Los determinantes son cuatro —capital físico, capital humano, recursos naturales y tecnología— y el crecimiento sale de COMBINARLOS, no de inflar uno. Encima está la maldición de los recursos naturales: los países que se cuelgan de una sola riqueza suelen crecer MENOS, porque no diversifican."
+    },
+    {
+      "id": "m28-q2",
+      "nivel": "aplicacion",
+      "enunciado": "Te piden escribir una Cobb-Douglas con RETORNOS A ESCALA CONSTANTES y progreso tecnológico, donde la participación del CAPITAL en el producto es del 40%.\n\n¿Cuál es?",
+      "opciones": [
+        "Y = A·K^0,4·L^0,4, poniendo la misma participación en los dos factores productivos",
+        "Y = A·K^0,4·L^0,6, porque con retornos constantes los exponentes tienen que sumar 1",
+        "Y = A·K^0,6·L^0,4, que deja al trabajo con la participación mayoritaria del producto",
+        "Y = A·K^40·L^60, que es la participación de cada factor expresada en porcentaje"
+      ],
+      "correcta": 1,
+      "explicacion": "Retornos a escala CONSTANTES quiere decir que los exponentes suman exactamente 1. El exponente es la participación del factor en el producto y va en decimales, no en porcentaje: si el capital se lleva 40%, al trabajo le queda 60%."
+    },
+    {
+      "id": "m28-q3",
+      "nivel": "aplicacion",
+      "enunciado": "Tenés Y = A·K^0,5·L^0,5 y querés pasarla a términos PER CÁPITA para mirar el bienestar individual.\n\n¿Cómo queda?",
+      "opciones": [
+        "y = A·k^0,5: se divide todo entre L y el exponente del capital queda igual que antes",
+        "y = A·K^0,5·L^0,5 dividido entre A, porque la tecnología es lo que hay que descontar",
+        "y = A·k^0,5·l^0,5, poniendo en minúscula los dos factores y dejando el resto igual",
+        "No se puede pasar a per cápita: la Cobb-Douglas está escrita en términos totales"
+      ],
+      "correcta": 0,
+      "explicacion": "Se divide TODO entre L y las mayúsculas se vuelven chiquititas: y = Y/L y k = K/L. Con retornos constantes la Cobb-Douglas queda y = A·k^α, con el mismo exponente del capital. El trabajo desaparece de la fórmula justamente porque ya está adentro del «per cápita»."
+    },
+    {
+      "id": "m28-q4",
+      "nivel": "comprension",
+      "enunciado": "Dos ideas sobre el futuro de los países:\n\nI. Todos terminan en el mismo ingreso per cápita, pase lo que pase\nII. Los países pequeños y pobres crecen MÁS RÁPIDO que los grandes\n\n¿Cómo se llama cada una y cuál se usa?",
+      "opciones": [
+        "I es la condicionada y II la absoluta, y la que se usa en la práctica es la primera",
+        "Las dos son la misma idea escrita de dos maneras, y las dos se usan por igual",
+        "I es absoluta y II condicionada; se usa la II, por los rendimientos decrecientes",
+        "I es absoluta y II condicionada, pero ninguna de las dos se cumple en los datos reales"
+      ],
+      "correcta": 2,
+      "explicacion": "La ABSOLUTA dice que todos llegan al mismo lugar sin importar cómo arrancaron, y casi no se usa. La CONDICIONADA dice que el que tiene poco capital crece más rápido, y es la que manda: un poste de luz donde no había nada rinde muchísimo más que uno más en Miraflores."
+    },
+    {
+      "id": "m28-q5",
+      "nivel": "aplicacion",
+      "enunciado": "Entre 1948 y 1972 la producción per cápita creció 8,2% al año en Japón y 5,7% en Alemania, contra 2,2% en Estados Unidos. Los dos primeros habían perdido casi toda su infraestructura en la guerra; Estados Unidos no.\n\n¿Sorprende, mirando a Solow?",
+      "opciones": [
+        "Sí: después de perder su capital, lo esperable era que les costara años volver a crecer",
+        "Sí, porque el modelo de Solow predice que los países grandes crecen más que los chicos",
+        "No, pero por otra razón: Estados Unidos creció poco por su tasa de ahorro, no por su capital",
+        "No: arrancaron con muy poco capital per cápita, y ahí cada máquina nueva rinde muchísimo"
+      ],
+      "correcta": 3,
+      "explicacion": "Es el ejemplo de manual de convergencia condicionada. La guerra los dejó con k bajísimo, y con poco capital el producto marginal de una máquina más es enorme. Estados Unidos seguía con su stock intacto, ya cerca de su estado estacionario, así que crecía despacio."
+    },
+    {
+      "id": "m28-q6",
+      "nivel": "comprension",
+      "enunciado": "La ecuación de Solow es Δk = s·y − (δ + n)·k.\n\n¿Qué dice cada parte y por qué son DOS las cosas que restan?",
+      "opciones": [
+        "s·y es el consumo; se le restan la depreciación y los impuestos, que son las dos fugas",
+        "s·y es la producción total; se le resta solo la depreciación, porque n no toca al capital",
+        "s·y es lo que se ahorra; y se resta (δ + n) porque la población consume parte del capital",
+        "s·y es lo que se ahorra e invierte; restan la depreciación δ y la población n"
+      ],
+      "correcta": 3,
+      "explicacion": "Lo que SUMA capital per cápita es el ahorro que se invierte, s·y. Lo que lo RESTA son dos cosas: la depreciación δ, que gasta las máquinas que ya hay, y el crecimiento poblacional n, que reparte el mismo capital entre más gente. Por eso se pierde k incluso sin que se rompa nada."
+    },
+    {
+      "id": "m28-q7",
+      "nivel": "aplicacion",
+      "enunciado": "Una economía tiene y = k^0,5, tasa de ahorro 30%, depreciación 5% y crecimiento poblacional 5%.\n\n¿Cuánto valen el capital, el producto y el consumo per cápita en el estado estacionario?",
+      "opciones": [
+        "k = 9, y = 3 y consumo 2,1, que es donde s·y iguala exactamente a (δ + n)·k",
+        "k = 6, y = 2,45 y consumo 1,71, que es donde el ahorro iguala a la tasa de ahorro",
+        "k = 3, y = 9 y consumo 6,3, tomando el producto como el cuadrado del capital",
+        "k = 9, y = 3 y consumo 3, porque en el estado estacionario ya no hace falta ahorrar"
+      ],
+      "correcta": 0,
+      "explicacion": "Se iguala s·y con (δ+n)·k: 0,30·k^0,5 = 0,10·k, o sea k^0,5 = 3 y k = 9. De ahí y = 3, el ahorro es 0,9 y la pérdida de capital también 0,9, así que Δk = 0. El consumo es lo que queda: 3 − 0,9 = 2,1."
+    },
+    {
+      "id": "m28-q8",
+      "nivel": "aplicacion",
+      "enunciado": "Otra economía tiene y = 2·k^0,5, con s = 20%, δ = 6% y n = 4%. Hoy su capital per cápita es k = 4.\n\n¿A qué tasa crece su capital y hacia dónde va?",
+      "opciones": [
+        "Crece 20%, que es la tasa de ahorro, y va a seguir creciendo a ese ritmo para siempre",
+        "No crece: con k = 4 ya está en su estado estacionario y la economía queda estancada",
+        "Crece 10% y va hacia un estado estacionario en k = 16, donde se va a frenar",
+        "Decrece 10%, porque la depreciación y la población se comen más de lo que se ahorra"
+      ],
+      "correcta": 2,
+      "explicacion": "Con k = 4 el producto es y = 2·2 = 4. El ahorro da 0,20 × 4 = 0,8 y la pérdida (0,06+0,04) × 4 = 0,4, así que Δk = 0,4 y la tasa es 0,4/4 = 10%. El estado estacionario está en k = 16, y a medida que se acerca el crecimiento se va apagando."
+    },
+    {
+      "id": "m28-q9",
+      "nivel": "comprension",
+      "enunciado": "El presidente propone subir la tasa de ahorro del 20% al 40% «para que el país crezca para siempre». Con y = 2·k^0,5, δ = 6% y n = 4%, el estado estacionario pasa de k = 16 a k = 64, y el producto per cápita de 8 a 16.\n\n¿Logra lo que quiere?",
+      "opciones": [
+        "Sí: duplicar el ahorro duplicó el producto, así que duplicarlo otra vez lo volvería a duplicar",
+        "No: sube el NIVEL del estado estacionario, pero una vez ahí el producto se frena",
+        "No, porque ahorrar más baja el consumo y eso termina haciendo caer el producto per cápita",
+        "Sí, mientras la tasa de ahorro siga por encima de la suma de la depreciación y la población"
+      ],
+      "correcta": 1,
+      "explicacion": "Es la gran conclusión de Solow: más ahorro te lleva a un estado estacionario MÁS ALTO, pero sigue siendo un estado estacionario. El crecimiento es un envión, no una velocidad permanente. Lo único que sostiene el crecimiento del producto per cápita en el largo plazo es que suba A, la tecnología."
+    }
+  ]
+}

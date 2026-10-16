@@ -3309,6 +3309,206 @@ export const TEMAS = {
       }
     },
   },
+
+  seul: {
+    nombre: "Corea del Sur",
+    cielo: [[0, "#3f7fc4"], [0.4, "#93bada"], [0.7, "#dcdcd0"], [0.8, "#3a3c38"], [1, "#18191a"]],
+    suelo: { cara: "#9a958a", borde: "#b6b1a4", tierra: "#3a352c", plataforma: "#7a4a30", plataformaBorde: "#e0b23a" },
+    acento: "#c0392b",
+
+    bichos: ["ginseng", "tambor", "bandeja", "poste", "grua", "engranaje"],
+    nombresBichos: [
+      "La Raíz de Ginseng",
+      "El Tambor Descompensado",
+      "La Bandeja que No Reparte",
+      "El Poste del Descampado",
+      "La Grúa del Milagro",
+      "El Engranaje Gastado",
+    ],
+    andares: ["patrulla", "guardia", "veloz", "salta", "vuela"],
+    jefe: "chaebol",
+    nombreJefe: "El Presidente del Chaebol",
+
+    fondo(ctx, cam, t) {
+      const elige = (a, n) => a[((n % a.length) + a.length) % a.length];
+
+      // el sol de otoño, limpio y chiquito
+      ctx.fillStyle = "rgba(252,248,224,.20)";
+      ctx.beginPath(); ctx.arc(172, 82, 54, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = "rgba(255,252,238,.86)";
+      ctx.beginPath(); ctx.arc(172, 82, 21, 0, Math.PI * 2); ctx.fill();
+
+      // LOS PICOS DE GRANITO DE BUKHANSAN: la roca pelada y angulosa que se
+      // ve desde cualquier punto de Seúl
+      repetir(ctx, cam, 164, 0.05, (x, i) => {
+        const bx = x, base = 306, alto = 96 + ((i * 59) % 68);
+        ctx.fillStyle = "#8d96a0";
+        ctx.beginPath();
+        ctx.moveTo(bx - 14, base);
+        ctx.lineTo(bx + 30, base - alto);
+        ctx.lineTo(bx + 46, base - alto + 20);
+        ctx.lineTo(bx + 62, base - alto + 6);
+        ctx.lineTo(bx + 104, base);
+        ctx.closePath(); ctx.fill();
+        ctx.fillStyle = "rgba(246,248,250,.26)";                   // la cara iluminada
+        ctx.beginPath();
+        ctx.moveTo(bx + 30, base - alto);
+        ctx.lineTo(bx + 46, base - alto + 20);
+        ctx.lineTo(bx + 18, base);
+        ctx.lineTo(bx - 14, base);
+        ctx.closePath(); ctx.fill();
+      });
+
+      // LA SILUETA DE SEÚL: torres de vidrio apretadas y, saliendo del montón,
+      // la TORRE DE NAMSAN con su mirador redondo
+      repetir(ctx, cam, 372, 0.12, (x, i) => {
+        const bx = x, base = 306;
+        for (let k = 0; k < 7; k++) {
+          const px = bx + k * 26, alto = 54 + ((i * 31 + k * 43) % 86);
+          ctx.fillStyle = elige(["#7f93a4", "#8ea2b2", "#6f8496"], i + k);
+          ctx.fillRect(px, base - alto, 22, alto);
+          ctx.fillStyle = "rgba(226,238,246,.20)";
+          for (let py = base - alto + 6; py < base - 6; py += 9) ctx.fillRect(px + 3, py, 16, 4);
+        }
+        const tx = bx + 196, cima = base - 188;                    // la torre de Namsan
+        ctx.fillStyle = "#6a7a86";
+        ctx.fillRect(tx, cima + 40, 11, 188 - 40);
+        ctx.fillStyle = "#5c6b76";
+        ctx.fillRect(tx - 11, cima + 30, 33, 18);                  // el mirador
+        ctx.fillRect(tx - 7, cima + 20, 25, 12);
+        ctx.fillStyle = "rgba(230,242,248,.34)";
+        ctx.fillRect(tx - 9, cima + 34, 29, 5);
+        ctx.fillStyle = "#6a7a86";
+        ctx.fillRect(tx + 3, cima, 5, 22);                         // la antena
+        ctx.fillStyle = "#c0392b";
+        ctx.fillRect(tx + 2, cima - 4, 7, 4);
+      });
+
+      // LOS TEJADOS HANOK DEL BARRIO VIEJO, con el alero curvado hacia arriba
+      repetir(ctx, cam, 126, 0.22, (x, i) => {
+        const bx = x, base = 306;
+        const alto = 22 + ((i * 23) % 16);
+        ctx.fillStyle = elige(["#d6cdb8", "#c8bfa8", "#e0d8c2"], i);
+        ctx.fillRect(bx + 8, base - alto, 44, alto);               // el cuerpo de madera
+        ctx.fillStyle = "#6b7078";                                 // la teja, con las dos puntas
+        ctx.beginPath();
+        ctx.moveTo(bx - 4, base - alto);
+        ctx.quadraticCurveTo(bx + 30, base - alto - 15, bx + 64, base - alto);
+        ctx.lineTo(bx + 64, base - alto + 6);
+        ctx.quadraticCurveTo(bx + 30, base - alto - 7, bx - 4, base - alto + 6);
+        ctx.closePath(); ctx.fill();
+        ctx.fillStyle = "rgba(60,62,66,.34)";
+        ctx.fillRect(bx + 24, base - alto + 10, 12, 14);
+      });
+
+      // EL PLANO DEL SUELO DE SEÚL, del pie del barrio hasta la vereda y de
+      // corrido: en lugar de un río va EL MAR DE TEJADOS, que es lo que se ve
+      // mirando el casco antiguo desde arriba
+      ctx.fillStyle = "#3f5a3e";
+      ctx.fillRect(0, 306, CFG.ANCHO_VISTA, 12);
+      ctx.fillStyle = "#5c6269";                                   // la marea de teja
+      ctx.fillRect(0, 318, CFG.ANCHO_VISTA, 32);
+      for (let i = 0; i < 40; i++) {                               // cada lomo de tejado
+        const fila = i % 2;
+        const x = (i * 42 - cam * 0.14) % 1060 - 60;
+        const y = 322 + fila * 14;
+        ctx.fillStyle = fila ? "#6b7078" : "#767c84";
+        ctx.beginPath();
+        ctx.moveTo(x, y + 11);
+        ctx.quadraticCurveTo(x + 15, y - 5, x + 30, y + 11);
+        ctx.closePath(); ctx.fill();
+        ctx.fillStyle = "rgba(226,232,238,.16)";
+        ctx.fillRect(x + 4, y + 4, 22, 2);
+      }
+      ctx.fillStyle = "#9a958a";                                   // el empedrado
+      ctx.fillRect(0, 350, CFG.ANCHO_VISTA, 32);
+      ctx.fillStyle = "#aea89a";
+      ctx.fillRect(0, 350, CFG.ANCHO_VISTA, 4);
+
+      // LAS TINAJAS DE ONGGI en su terraza, que es donde fermenta todo
+      repetir(ctx, cam, 142, 0.28, (x, i) => {
+        const bx = x + 14, base = 350;
+        for (let k = 0; k < 3; k++) {
+          const px = bx + k * 17, r = 7 - (k % 2);
+          ctx.fillStyle = "#5a4330";
+          ctx.beginPath(); ctx.ellipse(px, base - r, r, r + 3, 0, Math.PI, 0); ctx.fill();
+          ctx.fillRect(px - r, base - r, r * 2, r);
+          ctx.fillStyle = "#3a2c20";
+          ctx.fillRect(px - r - 1, base - r * 2 - 2, r * 2 + 2, 3);
+        }
+      });
+
+      // (acá iba el muro del palacio: se sacó porque tapaba entero el mar de
+      // tejados, que es la banda que reemplaza al río en este distrito. Es el
+      // mismo error que los arcos de Fez: una capa a 0,32 se come la de 318-350.)
+
+      // LA CASA HANOK de la calle: viga a la vista, paneles de papel y alero
+      repetir(ctx, cam, 324, 0.54, (x, i) => {
+        const bx = x + 38, base = 382, alto = 44;
+        const techo = base - alto;
+        ctx.fillStyle = elige(["#e8dfc8", "#ddd3ba", "#f0e8d2"], i);
+        ctx.fillRect(bx, techo, 96, alto);
+        ctx.fillStyle = "#6b4a30";                                 // el entramado de madera
+        ctx.fillRect(bx, techo, 96, 5);
+        ctx.fillRect(bx, base - 6, 96, 6);
+        for (const px of [0, 46, 91]) ctx.fillRect(bx + px, techo, 5, alto);
+        ctx.fillStyle = "#5c6269";                                 // el alero curvado
+        ctx.beginPath();
+        ctx.moveTo(bx - 14, techo);
+        ctx.quadraticCurveTo(bx + 48, techo - 24, bx + 110, techo);
+        ctx.lineTo(bx + 110, techo + 8);
+        ctx.quadraticCurveTo(bx + 48, techo - 14, bx - 14, techo + 8);
+        ctx.closePath(); ctx.fill();
+        ctx.fillStyle = "rgba(248,244,228,.90)";                   // los paneles de papel
+        for (const px of [9, 55]) {
+          ctx.fillRect(bx + px, techo + 12, 30, 22);
+          ctx.fillStyle = "rgba(107,74,48,.42)";
+          for (let k = 1; k < 3; k++) ctx.fillRect(bx + px + k * 10, techo + 12, 2, 22);
+          ctx.fillRect(bx + px, techo + 22, 30, 2);
+          ctx.fillStyle = "rgba(248,244,228,.90)";
+        }
+      });
+
+      // LOS CRISANTEMOS en maceta, que es lo que sacan a la vereda en otoño
+      repetir(ctx, cam, 104, 0.78, (x, i) => {
+        const bx = x + 20, base = 382;
+        ctx.fillStyle = "#7a5438";
+        ctx.fillRect(bx, base - 9, 18, 9);
+        ctx.fillStyle = "#5f4028";
+        ctx.fillRect(bx - 1, base - 11, 20, 3);
+        const flores = ["#e0b23a", "#c0392b", "#e8e0c8", "#c87a3a"];
+        for (let k = 0; k < 3; k++) {
+          ctx.fillStyle = "#4a7a3a";
+          ctx.fillRect(bx + 3 + k * 6, base - 16, 2, 6);
+          ctx.fillStyle = elige(flores, i + k);
+          ctx.fillRect(bx + 2 + k * 6, base - 20, 5, 5);
+        }
+      });
+      ctx.fillStyle = "#8f8a7e";
+      ctx.fillRect(0, 380, CFG.ANCHO_VISTA, 4);
+    },
+
+    clima(ctx, t) {
+      // los pétalos que bajan en remolino
+      for (let i = 0; i < 20; i++) {
+        const x = (i * 143 + t * 0.6 + Math.sin(t / 26 + i) * 26) % 1000 - 40;
+        const y = (i * 79 + t * 1.1) % 460;
+        ctx.fillStyle = ["rgba(246,210,220,.80)", "rgba(240,186,200,.74)", "rgba(250,226,232,.70)"][i % 3];
+        ctx.fillRect(x, y, 3, 2);
+      }
+      // y las urracas, que en Corea están en todos lados
+      for (let i = 0; i < 4; i++) {
+        const x = (i * 281 + t * 1.5) % 1050 - 60;
+        const y = 76 + ((i * 41) % 56) + Math.sin(t / 18 + i) * 6;
+        const ala = Math.sin(t / 8 + i * 1.6) * 3;
+        ctx.fillStyle = "rgba(32,32,36,.78)";
+        ctx.fillRect(x, y, 6, 2);
+        ctx.fillStyle = "rgba(240,240,244,.80)";
+        ctx.fillRect(x - 4, y - ala, 4, 2);
+        ctx.fillRect(x + 6, y - ala, 4, 2);
+      }
+    },
+  },
 };
 
 /** Pinta el cielo del tema (degradado vertical). */
