@@ -212,6 +212,14 @@ const TEMAS_MUSICA = {
               "F4",2,"E4",2,"D4",4],
     bajo:    ["D2",4,"A2",4,"D2",4,"G2",4,"A2",4,"D2",4,"A2",4,"D2",4],
   },
+  italia: { // Italia: tarantela de fiesta en 6/8, rapidita y que no se queda quieta
+    tempo: 0.19, onda: "triangle",
+    melodia: ["A4",2,"A4",1,"B4",1,"C5",2,"B4",1,"A4",1,"G#4",2,"A4",2,
+              "E4",2,"A4",1,"B4",1,"C5",2,"E5",2,"D5",1,"C5",1,"B4",2,
+              "C5",2,"C5",1,"D5",1,"E5",2,"D5",1,"C5",1,"B4",2,"A4",2,
+              "A4",1,"B4",1,"C5",2,"B4",2,"A4",2,"G#4",2,"A4",4],
+    bajo:    ["A2",4,"E2",4,"A2",4,"D2",4,"A2",4,"E2",4,"E2",4,"A2",4],
+  },
   rescate: { // Cajamarca: carnaval cajamarquino, alegre y con paso de sierra norte
     tempo: 0.14, onda: "square",
     melodia: ["D5",1,"D5",1,"C5",2,"A4",2,"G4",1,"A4",1,"C5",2,

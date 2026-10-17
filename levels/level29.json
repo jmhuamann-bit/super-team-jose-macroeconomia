@@ -1,0 +1,42 @@
+{
+  "id": "level29",
+  "distrito": "Italia",
+  "clase": "Clase 11 · PC3",
+  "titulo": "El país que corrió al 6% y después se quedó quieto",
+  "tema": "italia",
+  "musica": "italia",
+  "vehiculo": "vespa",
+  "intro": "Sexta clase de la PC3, y toca Italia — que no es un adorno, es el gráfico de hoy dibujado en la vida real. Italia salió de la guerra hecha pedazos y con medio país todavía en el campo, o sea arrancó MUY por debajo de su estado estacionario. Y pasó exactamente lo que dice Solow: entre 1951 y 1963 creció casi 6% al año, con un pico de 8,3% en 1961, el famoso «miracolo economico». En esos años aparecieron la Vespa, el Fiat 500 y la Autostrada del Sole; millones de personas se mudaron del sur a las fábricas del norte. Y después, a medida que se fue acercando a su estado estacionario, se fue frenando sola hasta quedar casi en cero, que es donde sigue. Por eso la curva de hoy no se estudia de memoria: Italia la caminó entera. Dato al pasar: los dos hermanos fontaneros del apunte, el que habla de tecnología y el que se enoja, son italianos. Por algo.",
+  "repaso": [
+    "EL GRÁFICO VA SIEMPRE EN TÉRMINOS PER CÁPITA, nunca en totales. En el eje horizontal va el capital por trabajador k, y en el vertical el ingreso por trabajador y. Si te ves escribiendo Y o K con mayúscula adentro del gráfico, algo se torció.",
+    "ADENTRO VAN TRES COSAS: la función de producción y = f(k); la de AHORRO s·y, que es la misma f(k) achatada por s y que en economía cerrada es la inversión; y la de DEPRECIACIÓN (n+δ+g)·k. Las dos primeras se van acostando por los rendimientos decrecientes; la tercera es una RECTA que sale del origen.",
+    "EL ESTADO ESTACIONARIO ES EL CRUCE entre s·y y (n+δ+g)·k: el punto donde lo que se ahorra alcanza justo para reponer lo que se deprecia y lo que se le tiene que dar a los trabajadores nuevos. Ahí k deja de moverse.",
+    "CÓMO SE LLEGA. Si estás DEBAJO del k*, la curva de ahorro va por encima de la recta y esa distancia es lo que crece el capital: se sube. Si estás POR ENCIMA, la recta va por encima de la curva y el capital se cae hasta el k*. Se llega de los dos lados, y siempre al mismo punto.",
+    "MOVERSE A LO LARGO NO ES LO MISMO QUE CAMBIAR DE SITIO, y es el error que más cae. Un cambio en K o en L mueve k = K/L y te corre el punto SOBRE las mismas curvas; el k* ni se entera. Las curvas recién cambian de sitio si cambia s, n, δ, g o una variable exógena.",
+    "QUÉ INCLINA LA RECTA DE DEPRECIACIÓN: solo tres cosas, n, δ y g, porque son las tres que están sumando en la pendiente. Si (n+δ+g) baja, la recta se acuesta y el k* se va a la derecha; si sube, la recta se empina y el k* se viene a la izquierda.",
+    "QUÉ MUEVE LA CURVA DE AHORRO s·y: la tasa de ahorro (o su espejo, la tasa de consumo — por ejemplo un impuesto al ingreso), y también A, porque el ahorro es una fracción del ingreso. Si s sube, s·y se estira hacia arriba y el k* se corre a la derecha.",
+    "QUÉ MUEVE LA CURVA DE INGRESO y = f(k): SOLO las variables exógenas, principalmente A, y también H (capital humano) y N (recursos naturales). Ninguna cantidad de capital la mueve: el capital es endógeno, se mueve ADENTRO del gráfico.",
+    "EXÓGENA CONTRA ENDÓGENA. Exógena es la que el modelo no explica pero que sí afecta a todo lo demás: A, H, N, y en general cualquier cosa que no sea K ni L. Endógena es la que se explica adentro del modelo y depende de las otras: k e y.",
+    "LA FÓRMULA, PARA NO DEPENDER DEL DIBUJO. Con y = A·k^α, el estado estacionario sale de s·A·k^α = (n+δ+g)·k, o sea k* = (s·A/(n+δ+g))^(1/(1−α)). Con α = 0,5 el exponente es 2, que es el caso que más cae.",
+    "EL EJEMPLO QUE CONVIENE TENER EN LA CABEZA: y = √k, s = 40%, n = 5%, δ = 3%. Da k* = (0,4/0,08)² = 25 y y* = 5. Mové UNA cosa por vez: si n baja a 2%, k* = 64; si δ sube a 11%, k* = 6,25; si s baja a 20%, k* = 6,25; si A sube a 2, k* = 100 y y* = 20.",
+    "CON QUÉ SE CRECE EN EL LARGO PLAZO: solo con progreso técnico. Ahorrar más, tener menos hijos o depreciar menos te suben el ESCALÓN una vez y se acaban — no se puede ahorrar más todos los años para siempre, ni dejar δ en cero. El único sin techo es A.",
+    "LA CONVERGENCIA, que es el comente que más se repite: los países que arrancaron muy por debajo de su k* crecieron rapidísimo y después se frenaron solos (Italia, Japón, Corea del Sur, Singapur); los que ya estaban cerca del suyo crecen despacio (Estados Unidos, Reino Unido). No es que unos sean mejores: es en qué parte de la curva estaba cada uno."
+  ],
+  "mapa": [
+    "                                                                                                                                                                                    ",
+    "                                                                                                                                                                                    ",
+    "                                                                                                                                                                                    ",
+    "                                                                                                                                                                                    ",
+    "                    AA                                                                                                                                                              ",
+    "                   o o                                       o o                                                        o o                                                         ",
+    "                                                                                                                                                                                    ",
+    "                  ======             o     o     o     o o  =====  o o                           o  o  o          o o  =====                                                        ",
+    "             ?                   V oo oo oo oo oo oo G                     L  o      o                                          o                            1  L                   ",
+    "                                                      =====       =====                         ==========       =====        oo oo        o     o                        o o o     ",
+    "                                                                             ###    ###                                                       E                                     ",
+    "  P            T           E        X E   X     X   E                    C   ###    ###             E                          E    C    ===== =====      C           B         M   ",
+    "#######################################################################################################################################              ###############################",
+    "#######################################################################################################################################              ###############################",
+    "#######################################################################################################################################              ###############################"
+  ]
+}

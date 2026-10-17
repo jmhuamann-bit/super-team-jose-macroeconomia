@@ -3509,6 +3509,261 @@ export const TEMAS = {
       }
     },
   },
+
+  italia: {
+    nombre: "Italia",
+    cielo: [[0, "#4a86c4"], [0.4, "#93b9d4"], [0.7, "#e6dcbc"], [0.8, "#3a332a"], [1, "#1a1610"]],
+    suelo: { cara: "#b89a6a", borde: "#d4b784", tierra: "#5a4428", plataforma: "#8a6a42", plataformaBorde: "#c6b268" },
+    acento: "#c0392b",
+
+    bichos: ["pizza", "vespa", "torre", "gelato", "espresso", "coliseo"],
+    nombresBichos: [
+      "La Pizza que No Se Reparte",
+      "La Vespa que Confunde Moverse con Mudarse",
+      "La Torre que No Sabe Quién la Inclina",
+      "El Gelato que No Quiere Derretirse",
+      "El Espresso del Crecimiento Eterno",
+      "El Coliseo que Sigue Apilando Piedras",
+    ],
+    andares: ["patrulla", "guardia", "veloz", "salta", "vuela"],
+    jefe: "nonno",
+    nombreJefe: "El Nonno del Milagro Italiano",
+
+    fondo(ctx, cam, t) {
+      const elige = (a, n) => a[((n % a.length) + a.length) % a.length];
+
+      // el sol de mediodía, alto y sin pedir permiso
+      ctx.fillStyle = "rgba(255,248,214,.30)";
+      ctx.beginPath(); ctx.arc(612, 72, 62, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = "rgba(255,252,232,.80)";
+      ctx.beginPath(); ctx.arc(612, 72, 26, 0, Math.PI * 2); ctx.fill();
+
+      // LAS NUBES FINITAS de verano, estiradas y sin cuerpo
+      repetir(ctx, cam, 324, 0.03, (x, i) => {
+        const bx = x, by = 44 + ((i * 53) % 62);
+        ctx.fillStyle = "rgba(252,250,242,.42)";
+        ctx.fillRect(bx, by, 112, 7);
+        ctx.fillRect(bx + 26, by - 6, 64, 6);
+      });
+
+      // LOS APENINOS lejos, apenas una silueta azulada
+      repetir(ctx, cam, 262, 0.04, (x, i) => {
+        const bx = x, base = 300, alto = 104 + ((i * 43) % 58);
+        ctx.fillStyle = "rgba(122,146,168,.44)";
+        ctx.beginPath();
+        ctx.moveTo(bx - 40, base);
+        ctx.lineTo(bx + 56, base - alto);
+        ctx.lineTo(bx + 150, base);
+        ctx.closePath(); ctx.fill();
+      });
+
+      // LAS LOMAS CON SUS CIPRESES, que es la postal de la Toscana
+      repetir(ctx, cam, 204, 0.06, (x, i) => {
+        const bx = x, base = 306, alto = 62 + ((i * 37) % 38);
+        ctx.fillStyle = elige(["#8aa05a", "#7b9450", "#97a862"], i);
+        ctx.beginPath();
+        ctx.moveTo(bx - 26, base);
+        ctx.quadraticCurveTo(bx + 60, base - alto, bx + 146, base);
+        ctx.closePath(); ctx.fill();
+        for (let k = 0; k < 4; k++) {                      // la hilera de cipreses
+          const cx = bx + 22 + k * 28, cy = base - alto * 0.52 + k * 7;
+          ctx.fillStyle = "#3f5c33";
+          ctx.beginPath();
+          ctx.moveTo(cx, cy - 26);
+          ctx.quadraticCurveTo(cx + 6, cy - 10, cx + 4, cy);
+          ctx.lineTo(cx - 4, cy);
+          ctx.quadraticCurveTo(cx - 6, cy - 10, cx, cy - 26);
+          ctx.closePath(); ctx.fill();
+        }
+      });
+
+      // EL DUOMO: la cúpula de ladrillo con su linterna, y los techos de teja
+      // apretados alrededor. Cúpula, no torre: la torre es un bicho
+      repetir(ctx, cam, 486, 0.12, (x, i) => {
+        const bx = x + 60, base = 306;
+        ctx.fillStyle = "#e0d6bc";                         // el tambor de la cúpula
+        ctx.fillRect(bx, base - 76, 68, 76);
+        ctx.fillStyle = "rgba(128,112,86,.34)";
+        for (let px = bx + 8; px < bx + 62; px += 18) ctx.fillRect(px, base - 60, 10, 24);
+        ctx.fillStyle = "#a8572f";                         // LA CÚPULA
+        ctx.beginPath();
+        ctx.moveTo(bx - 4, base - 76);
+        ctx.quadraticCurveTo(bx + 34, base - 150, bx + 72, base - 76);
+        ctx.closePath(); ctx.fill();
+        ctx.strokeStyle = "rgba(242,234,214,.52)";         // los nervios de piedra
+        ctx.lineWidth = 3;
+        for (const d of [8, 34, 60]) {
+          ctx.beginPath();
+          ctx.moveTo(bx + d, base - 78);
+          ctx.quadraticCurveTo(bx + (d + 34) / 2, base - 100, bx + 34, base - 112);
+          ctx.stroke();
+        }
+        ctx.lineWidth = 1;
+        ctx.fillStyle = "#e0d6bc";                         // la linterna, apoyada en la cima
+        ctx.fillRect(bx + 28, base - 130, 13, 19);
+        ctx.fillStyle = "#a8572f";
+        ctx.beginPath();
+        ctx.moveTo(bx + 25, base - 130);
+        ctx.lineTo(bx + 34, base - 143);
+        ctx.lineTo(bx + 44, base - 130);
+        ctx.closePath(); ctx.fill();
+      });
+
+      // EL CASERÍO EN LA LOMA: ocre y terracota, persianas de madera y la ropa
+      // colgada de ventana a ventana, que no falta nunca
+      repetir(ctx, cam, 118, 0.22, (x, i) => {
+        const bx = x, base = 306;
+        const alto = 48 + ((i * 23) % 20);
+        ctx.fillStyle = elige(["#d8a862", "#c98a4e", "#e0b878", "#bf7f4a"], i);
+        ctx.fillRect(bx, base - alto, 50, alto);
+        ctx.fillStyle = "#a8572f";                         // el alero de teja
+        ctx.fillRect(bx - 3, base - alto - 6, 56, 7);
+        ctx.fillStyle = "rgba(70,56,40,.42)";
+        for (let px = bx - 3; px < bx + 53; px += 7) ctx.fillRect(px, base - alto - 6, 3, 7);
+        ctx.fillStyle = "#6a8a5a";                         // las persianas, siempre verdes
+        for (let py = base - alto + 10; py < base - 16; py += 19) {
+          ctx.fillRect(bx + 7, py, 11, 13);
+          ctx.fillRect(bx + 31, py, 11, 13);
+        }
+        if (i % 2 === 0) {                                 // LA ROPA TENDIDA
+          const ry = base - alto + 16;
+          ctx.strokeStyle = "rgba(60,52,40,.42)";
+          ctx.lineWidth = 1;
+          ctx.beginPath(); ctx.moveTo(bx + 44, ry); ctx.lineTo(bx + 70, ry + 5); ctx.stroke();
+          for (let k = 0; k < 4; k++) {
+            ctx.fillStyle = elige(["#f2ece0", "#e8d2d2", "#d6e2ea", "#f0e4c2"], i + k);
+            ctx.fillRect(bx + 47 + k * 6, ry + 1 + k, 5, 9);
+          }
+        }
+      });
+
+      // EL SUELO: del pie de las casas al adoquín, sin cortes. En el medio va
+      // EL VIÑEDO con sus hileras, que es lo que se ve desde cualquier loma
+      ctx.fillStyle = "#5c7342";
+      ctx.fillRect(0, 306, CFG.ANCHO_VISTA, 12);
+      ctx.fillStyle = "#8a9a56";
+      ctx.fillRect(0, 318, CFG.ANCHO_VISTA, 32);
+      for (let i = 0; i < 30; i++) {                       // las hileras de la viña
+        const x = (i * 58 - cam * 0.16) % 1040 - 60;
+        ctx.fillStyle = elige(["#6f8a46", "#7d9850", "#64803e"], i);
+        ctx.fillRect(x, 320, 44, 12);
+        ctx.fillRect(x + 8, 335, 44, 12);
+        ctx.fillStyle = "rgba(58,48,32,.26)";
+        for (let k = 0; k < 6; k++) {                      // los postes
+          ctx.fillRect(x + k * 8, 318, 2, 14);
+          ctx.fillRect(x + 8 + k * 8, 333, 2, 14);
+        }
+      }
+      ctx.fillStyle = "#b0a894";                           // el adoquinado
+      ctx.fillRect(0, 350, CFG.ANCHO_VISTA, 32);
+      ctx.fillStyle = "#c2baa6";
+      ctx.fillRect(0, 350, CFG.ANCHO_VISTA, 4);
+      for (let i = 0; i < 46; i++) {
+        const x = (i * 35 - cam * 0.5) % 980 - 40;
+        ctx.fillStyle = "rgba(70,62,48,.16)";
+        ctx.fillRect(x, 357 + ((i * 13) % 20), 11, 4);
+      }
+
+      // LA FÁBRICA DEL MILAGRO: la nave de techo en dientes de sierra y las
+      // chimeneas humeando, que es de lo que vivieron aquellos años
+      repetir(ctx, cam, 356, 0.28, (x, i) => {
+        const bx = x + 24, base = 350;
+        ctx.fillStyle = "#8e8578";
+        ctx.fillRect(bx, base - 34, 128, 34);
+        for (let k = 0; k < 6; k++) {                      // el techo en dientes de sierra
+          const px = bx + k * 22;
+          ctx.fillStyle = "#6e665a";
+          ctx.beginPath();
+          ctx.moveTo(px, base - 34);
+          ctx.lineTo(px, base - 48);
+          ctx.lineTo(px + 22, base - 34);
+          ctx.closePath(); ctx.fill();
+          ctx.fillStyle = "rgba(188,208,214,.46)";         // el vidrio del diente
+          ctx.fillRect(px + 2, base - 46, 5, 11);
+        }
+        ctx.fillStyle = "#7a7064";                         // la chimenea
+        ctx.fillRect(bx + 104, base - 96, 13, 62);
+        ctx.fillStyle = "#5f564c";
+        ctx.fillRect(bx + 101, base - 100, 19, 6);
+        ctx.fillStyle = "rgba(206,206,198,.36)";
+        for (let k = 0; k < 3; k++) ctx.fillRect(bx + 106 - k * 5, base - 110 - k * 8, 13, 6);
+        ctx.fillStyle = "rgba(240,236,220,.42)";           // los ventanucos de la nave
+        for (let px = bx + 6; px < bx + 100; px += 15) ctx.fillRect(px, base - 24, 9, 12);
+      });
+
+      // LA TRATTORIA: el toldo a rayas y las mesitas en la vereda
+      repetir(ctx, cam, 298, 0.54, (x, i) => {
+        const bx = x + 36, base = 382, alto = 50;
+        const techo = base - alto;
+        ctx.fillStyle = elige(["#e0c89a", "#d8b682", "#e6d2a8"], i);
+        ctx.fillRect(bx, techo, 96, alto);
+        ctx.fillStyle = "#a8572f";
+        ctx.fillRect(bx - 2, techo - 5, 100, 6);
+        for (let k = 0; k < 8; k++) {                      // EL TOLDO a rayas
+          ctx.fillStyle = k % 2 ? "#c08a3c" : "#f4eede";
+          ctx.beginPath();
+          ctx.moveTo(bx + 2 + k * 12, techo + 10);
+          ctx.lineTo(bx + 14 + k * 12, techo + 10);
+          ctx.lineTo(bx + 11 + k * 12, techo + 23);
+          ctx.lineTo(bx + 5 + k * 12, techo + 23);
+          ctx.closePath(); ctx.fill();
+        }
+        ctx.fillStyle = "#6a8a5a";                         // la puerta y la ventana
+        ctx.fillRect(bx + 10, base - 24, 18, 24);
+        ctx.fillStyle = "rgba(244,238,224,.72)";
+        ctx.fillRect(bx + 54, base - 26, 30, 18);
+        ctx.fillStyle = "#6b5a44";                         // las mesitas de la vereda
+        for (const px of [34, 74]) {
+          ctx.fillRect(bx + px, base - 11, 14, 2);
+          ctx.fillRect(bx + px + 6, base - 9, 2, 9);
+          ctx.fillRect(bx + px + 2, base - 1, 10, 2);
+        }
+      });
+
+      // LOS GERANIOS en maceta y el caño de la plaza
+      repetir(ctx, cam, 106, 0.78, (x, i) => {
+        const bx = x + 20, base = 382;
+        ctx.fillStyle = "#a8572f";
+        ctx.fillRect(bx, base - 9, 15, 9);
+        ctx.fillStyle = "#8c4524";
+        ctx.fillRect(bx - 1, base - 11, 17, 3);
+        ctx.fillStyle = "#4a7a3a";                         // las hojas
+        ctx.fillRect(bx + 2, base - 16, 11, 5);
+        ctx.fillStyle = "#c0392b";                         // las flores rojas
+        for (let k = 0; k < 3; k++) {
+          ctx.beginPath(); ctx.arc(bx + 3 + k * 5, base - 18, 2.6, 0, Math.PI * 2); ctx.fill();
+        }
+        if (i % 3 === 0) {                                 // el caño de agua de la plaza
+          ctx.fillStyle = "#7a7268";
+          ctx.fillRect(bx + 44, base - 30, 9, 30);
+          ctx.fillRect(bx + 38, base - 2, 21, 2);
+          ctx.fillStyle = "rgba(160,200,216,.56)";
+          ctx.fillRect(bx + 40, base - 24, 3, 12);
+        }
+      });
+      ctx.fillStyle = "#9a9284";
+      ctx.fillRect(0, 380, CFG.ANCHO_VISTA, 4);
+    },
+
+    clima(ctx, t) {
+      // el calor que tiembla sobre el adoquín
+      for (let i = 0; i < 16; i++) {
+        const x = (i * 61 + Math.sin(t / 26 + i) * 7) % 1000 - 40;
+        ctx.fillStyle = "rgba(255,248,220,.10)";
+        ctx.fillRect(x, 344 + ((i * 7) % 30), 26, 2);
+      }
+      // y las golondrinas, que en verano no paran quietas
+      for (let i = 0; i < 5; i++) {
+        const x = (i * 213 + t * 2.1) % 1060 - 60;
+        const y = 76 + ((i * 47) % 58) + Math.sin(t / 13 + i) * 11;
+        const ala = Math.sin(t / 5 + i * 1.7) * 4;
+        ctx.fillStyle = "rgba(42,38,34,.70)";
+        ctx.fillRect(x, y, 3, 2);
+        ctx.fillRect(x - 5, y - ala, 5, 2);
+        ctx.fillRect(x + 3, y - ala, 5, 2);
+      }
+    },
+  },
 };
 
 /** Pinta el cielo del tema (degradado vertical). */

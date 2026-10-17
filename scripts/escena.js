@@ -283,6 +283,13 @@ const FICHAS = [
   { sprite: "pancarta", nombre: "La Pancarta del Tarif", texto: "Jura que subir el salario mínimo crea más empleo, y además que mueve la curva de la demanda laboral." },
   { sprite: "sedero", nombre: "El Sedero de la Croix-Rousse", texto: "Jefe de Lyon: tiene los pedidos y los telares, pero no sabe hasta qué trabajador le conviene contratar." },
   { sprite: "maquinista", nombre: "El Maquinista del Nudo", texto: "Jefe de La Oroya: llega al cruce y arranca sin fijarse si las dos vías se juntan justo ahí." },
+  { sprite: "pizza", nombre: "La Pizza que No Se Reparte", texto: "Italia: dibuja el gráfico de Solow con los totales del país. Todo el gráfico va DIVIDIDO entre la gente: más comensales, porción más chica." },
+  { sprite: "vespa", nombre: "La Vespa que Confunde Moverse con Mudarse", texto: "Anda a lo largo del camino y cree que movió el camino: un cambio en K o en L te corre SOBRE las curvas, no las cambia de sitio." },
+  { sprite: "torre", nombre: "La Torre que No Sabe Quién la Inclina", texto: "A la recta de depreciación solo la inclinan n, delta y g, que son las tres que están sumando en su pendiente." },
+  { sprite: "gelato", nombre: "El Gelato que No Quiere Derretirse", texto: "Jura que más depreciación deja el capital de estado estacionario más alto. Al revés: la recta se empina y el cruce se viene a la izquierda." },
+  { sprite: "espresso", nombre: "El Espresso del Crecimiento Eterno", texto: "Cree que ahorrar más acelera para siempre. Es un golpe de nivel: te sube el escalón una vez y después el crecimiento vuelve a cero." },
+  { sprite: "coliseo", nombre: "El Coliseo que Sigue Apilando Piedras", texto: "Apila capital creyendo que así se crece en el largo plazo. Sin progreso técnico se llega al estado estacionario y ahí se para todo." },
+  { sprite: "nonno", nombre: "El Nonno del Milagro Italiano", texto: "Jefe de Italia: vivió el milagro y no entiende por qué el país se frenó solo. Es la convergencia: la brecha con el estado estacionario se cerró." },
 ];
 
 export function galeriaPersonajes(contenedor) {

@@ -441,6 +441,20 @@
       "abierto": true,
       "mapa": "levels/level28.json",
       "preguntas": "questions/level28_questions.json"
+    },
+    {
+      "id": "level29",
+      "clase": "Clase 11",
+      "distrito": "Italia",
+      "titulo": "El país que corrió al 6% y después se quedó quieto",
+      "icono": "🍝",
+      "seccion": "PC3",
+      "seccionNota": "Mercado laboral, desempleo y crecimiento — y ahora visitando el mundo",
+      "retos": 7,
+      "duracion": "3 min",
+      "abierto": true,
+      "mapa": "levels/level29.json",
+      "preguntas": "questions/level29_questions.json"
     }
   ]
 }

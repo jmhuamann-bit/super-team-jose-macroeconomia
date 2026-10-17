@@ -1,0 +1,125 @@
+{
+  "nivel": "level29",
+  "clase": "Clase 11 · PC3 — Gráficas y comentes de Solow",
+  "fuente": "Apuntes de la Clase 11 — Gráficas y comentes, Solow (Economía General II)",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "m29-q1",
+      "nivel": "comprension",
+      "enunciado": "El gráfico de Solow se dibuja con el capital per cápita k en el eje horizontal.\n\n¿Qué tres cosas van dibujadas adentro, y cuál de las tres es una RECTA?",
+      "opciones": [
+        "Y = f(K), el ahorro y la depreciación totales: el modelo se arma con los totales del país",
+        "y = f(k), s·y y (n+δ+g)·k; la recta es la depreciación, que a k solo lo multiplica",
+        "y = f(k) y s·y nomás; la depreciación no se dibuja, se descuenta después del cruce",
+        "Las tres son curvas: con rendimientos decrecientes ninguna de las tres puede salir recta"
+      ],
+      "correcta": 1,
+      "explicacion": "Todo el gráfico va en términos PER CÁPITA, nunca en totales. Adentro van la función de producción y = f(k), la de ahorro s·y —que es la misma f(k) achatada por s— y la de depreciación (n+δ+g)·k. Esta última es una RECTA que sale del origen, porque a k solo lo multiplica un número fijo; las otras dos se van achatando porque el capital tiene rendimientos decrecientes."
+    },
+    {
+      "id": "m29-q2",
+      "nivel": "comprension",
+      "enunciado": "Durante el milagro italiano millones de personas se mudaron del sur a las fábricas del norte. A la región que los recibe le sube L de golpe, y el capital instalado K no cambia.\n\n¿Qué le pasa al gráfico de Solow de esa región?",
+      "opciones": [
+        "Sube k y el punto se corre a la derecha: más trabajadores es más capital por trabajador",
+        "Las tres se desplazan hacia abajo, porque ahora hay que repartir lo mismo entre más gente",
+        "Baja k = K/L y el punto se corre a la izquierda sobre las curvas: el k* no se mueve",
+        "No pasa nada: la población no entra en el gráfico, solo entra la tasa a la que ella crece"
+      ],
+      "correcta": 2,
+      "explicacion": "Hay que separar dos cosas que se parecen: MOVERSE a lo largo de las curvas y que las curvas CAMBIEN DE SITIO. Un cambio en K o en L solo te mueve a lo largo, porque mueve k = K/L. Las curvas cambian de sitio si cambian s, n, δ, g o una variable exógena como A. Acá la región queda debajo de su k* de siempre, y como ahí el ahorro le gana a la depreciación, k vuelve a subir solo hasta el MISMO k* de antes."
+    },
+    {
+      "id": "m29-q3",
+      "nivel": "aplicacion",
+      "enunciado": "Una economía tiene y = √k (o sea α = 0,5 y A = 1), ahorra el 40% y su capital se deprecia 3% al año. Hoy su k* es 25.\n\nSi la población pasa de crecer 5% a crecer 2%, ¿qué pasa con la recta de depreciación y con el k*?",
+      "opciones": [
+        "Se inclina MENOS y el k* sube de 25 a 64, porque el cruce con s·y se corre a la derecha",
+        "Se inclina MÁS y el k* cae de 25 a 6,25: con menos gente se repone capital más lento",
+        "La recta no se toca: con la población se mueve la curva de ahorro, no la de depreciación",
+        "Se inclina menos, pero el k* queda en 25: la pendiente no decide dónde cae el cruce"
+      ],
+      "correcta": 0,
+      "explicacion": "A la recta de depreciación la inclinan tres cosas y nada más: n, δ y g. Acá (n+δ+g) baja de 0,08 a 0,05, así que la recta se acuesta y se cruza con s·y más a la derecha. El número sale de k* = (s·A/(n+δ+g))^(1/(1−α)): antes (0,4/0,08)² = 25, ahora (0,4/0,05)² = 64. Y el producto per cápita pasa de 5 a 8."
+    },
+    {
+      "id": "m29-q4",
+      "nivel": "aplicacion",
+      "enunciado": "Pablo dice: «un aumento de la depreciación hace SUBIR el capital de estado estacionario, porque le reduce la pendiente a la recta de depreciación».\n\nEn la misma economía (y = √k, ahorra 40%, la población crece 5%), δ pasa de 3% a 11%. ¿Tiene razón?",
+      "opciones": [
+        "La pendiente sí le baja, pero el k* no se mueve: el cruce lo fija la curva de ahorro",
+        "Sí: si se deprecia más hay que reponer más, y el capital termina asentándose más alto",
+        "Se equivoca en el número: el k* cae a 12,5, porque δ se multiplicó por dos",
+        "Se equivoca en las dos cosas: la recta se EMPINA, y el k* se desploma de 25 a 6,25"
+      ],
+      "correcta": 3,
+      "explicacion": "Pablo se equivoca dos veces. Primero en el dibujo: δ está sumando dentro de la pendiente (n+δ+g), así que si sube, la recta se EMPINA, no se acuesta. Y segundo en la conclusión: una recta más empinada corta a s·y más a la izquierda. (n+δ+g) pasa de 0,08 a 0,16, y k* = (0,4/0,16)² = 6,25. Ojo con la trampa de pensar que el doble de depreciación deja la mitad de capital: cae a la CUARTA parte."
+    },
+    {
+      "id": "m29-q5",
+      "nivel": "comprension",
+      "enunciado": "Una economía sube su tasa de ahorro de 20% a 40% y no cambia nada más: misma tecnología, misma población, misma depreciación.\n\n¿Qué consigue en el largo plazo?",
+      "opciones": [
+        "El doble de capital y el doble de producto, porque la tasa de ahorro se multiplicó por dos",
+        "Un NIVEL más alto —k* de 6,25 a 25 y y* de 2,5 a 5— pero después vuelve a crecer 0%",
+        "Crecer para siempre más rápido, porque cada año destina una parte mayor a invertir",
+        "Nada en el largo plazo: el ahorro solo reparte distinto el ingreso entre consumo e inversión"
+      ],
+      "correcta": 1,
+      "explicacion": "Ahorrar más te sube el ESCALÓN, no la velocidad. Mientras subís de un estado estacionario al otro se crece —y bastante—, pero una vez instalado en el nuevo k*, el ahorro vuelve a alcanzar justo para reponer la depreciación y el crecimiento per cápita vuelve a cero. Y ojo con el reparto: con α = 0,5, duplicar s CUADRUPLICA el capital pero solo duplica el producto."
+    },
+    {
+      "id": "m29-q6",
+      "nivel": "comprension",
+      "enunciado": "Según Solow, ¿con qué crece el ingreso per cápita en el LARGO PLAZO?",
+      "opciones": [
+        "Con acumular capital sin parar: mientras se siga invirtiendo, el k per cápita sigue subiendo",
+        "Con bajar la natalidad, que es lo que más levanta el capital por trabajador de todo el modelo",
+        "Con ahorrar más, que es la única palanca que un país maneja de verdad año tras año",
+        "Solo con progreso técnico: si A pasa de 1 a 2, el y* salta de 5 a 20, y A no tiene techo"
+      ],
+      "correcta": 3,
+      "explicacion": "Las otras tres mueven el estado estacionario de sitio una sola vez y después se agotan: no se puede ahorrar más todos los años para siempre, ni bajar la natalidad para siempre, ni dejar la depreciación en cero. El único que no tiene techo es A. Y cuidado, A no mueve una sola curva: expande y = f(k) y, de arrastre, también s·y, porque el ahorro es una fracción de ese ingreso."
+    },
+    {
+      "id": "m29-q7",
+      "nivel": "aplicacion",
+      "enunciado": "Entre 1951 y 1963 Italia creció casi 6% al año, con un pico de 8,3% en 1961; hoy crece casi nada. Japón, Corea del Sur y Singapur hicieron lo mismo: arrancaron muy abajo y corrieron.\n\n¿Cómo se ve eso en el gráfico de Solow?",
+      "opciones": [
+        "Arrancaron MUY por debajo de su k*, y ahí el ahorro le saca mucha ventaja a la depreciación",
+        "Les fue subiendo la tasa de ahorro año tras año, y por eso el k* se les corría a la derecha",
+        "Arrancaron por encima de su k* y bajaron hasta él, que es el tramo donde más rápido se crece",
+        "Tuvieron más progreso técnico que el resto: la única manera de crecer rápido es que suba A"
+      ],
+      "correcta": 0,
+      "explicacion": "Es la CONVERGENCIA, y se ve como una brecha que se cierra: cuando k está muy por debajo de k*, la curva s·y queda muy por encima de la recta (n+δ+g)·k, y esa distancia es justamente lo que crece el capital. A medida que k se acerca a k*, las dos se juntan y el crecimiento se apaga solo. Iterando la ecuación de movimiento desde bien abajo se ve clavado: el primer período crece casi 6% y a la larga queda en 0%."
+    },
+    {
+      "id": "m29-q8",
+      "nivel": "aplicacion",
+      "enunciado": "En 1966 el Arno se desbordó y destrozó media Florencia. Supongamos que, además de perderse capital instalado, las familias quedan ahorrando menos de forma permanente.\n\n¿Qué se mueve de sitio en el gráfico?",
+      "opciones": [
+        "Bajan las tres curvas a la vez, porque el país quedó más pobre en todos los sentidos",
+        "Baja y = f(k), que es la que tiene adentro al capital destruido, y el k* se queda igual",
+        "No se mueve nada de sitio: perder capital solo corre el punto hacia la izquierda",
+        "Se contrae s·y, el cruce se corre a la izquierda y baja el k*; pero y = f(k) no se mueve"
+      ],
+      "correcta": 3,
+      "explicacion": "Son dos golpes distintos y conviene separarlos. El capital destruido baja k, pero eso es moverse A LO LARGO de las curvas, hacia la izquierda. Lo que de verdad cambia el dibujo es la tasa de ahorro: s·y se achata contra el piso, corta a la recta de depreciación antes y el k* baja. La función de producción no se mueve ni un pelo, porque a ella solo la corren las variables exógenas: A, H, N."
+    },
+    {
+      "id": "m29-q9",
+      "nivel": "aplicacion",
+      "enunciado": "Milán y Nápoles tienen la misma función y = √k (α = 0,5 y A = 1), la misma depreciación de 3% y la misma población creciendo al 5%. Lo único distinto: Milán ahorra 40% y Nápoles 20%.\n\n¿Cuánto es el capital per cápita de estado estacionario de cada uno?",
+      "opciones": [
+        "Milán 5 y Nápoles 2,5, que es el producto por persona que deja cada tasa",
+        "Milán 25 y Nápoles 12,5: el capital de estado estacionario va en proporción al ahorro",
+        "Milán 25 y Nápoles 6,25: ahorrar el doble le deja CUATRO veces el capital por persona",
+        "Los dos 25: con la misma función y la misma depreciación, el estado estacionario coincide"
+      ],
+      "correcta": 2,
+      "explicacion": "Con k* = (s·A/(n+δ+g))^(1/(1−α)) y α = 0,5, el exponente es 2: Milán da (0,4/0,08)² = 25 y Nápoles (0,2/0,08)² = 6,25. El producto sale de y = √k: 5 contra 2,5. Y acá está lo que sorprende: aunque Milán consume una fracción menor de su ingreso, consume MÁS en términos absolutos, 0,6 × 5 = 3 contra 0,8 × 2,5 = 2."
+    }
+  ]
+}
