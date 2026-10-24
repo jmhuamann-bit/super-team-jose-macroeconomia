@@ -455,6 +455,20 @@
       "abierto": true,
       "mapa": "levels/level29.json",
       "preguntas": "questions/level29_questions.json"
+    },
+    {
+      "id": "level30",
+      "clase": "Clase 01",
+      "distrito": "Estados Unidos",
+      "titulo": "El país donde se discutió si el dinero mueve algo real",
+      "icono": "🗽",
+      "seccion": "PC4",
+      "seccionNota": "Oferta y demanda agregada — y seguimos dando la vuelta al mundo",
+      "retos": 7,
+      "duracion": "3 min",
+      "abierto": true,
+      "mapa": "levels/level30.json",
+      "preguntas": "questions/level30_questions.json"
     }
   ]
 }

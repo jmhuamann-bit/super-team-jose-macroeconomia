@@ -1,0 +1,42 @@
+{
+  "id": "level30",
+  "distrito": "Estados Unidos",
+  "clase": "Clase 01 · PC4",
+  "titulo": "El país donde se discutió si el dinero mueve algo real",
+  "tema": "manhattan",
+  "musica": "manhattan",
+  "vehiculo": "busamarillo",
+  "intro": "Arranca la PC4, y con ella el gráfico más grande del curso: la oferta y la demanda de TODO un país a la vez. Toca Estados Unidos porque ahí se dio la discusión que estructura toda la clase. Los clásicos decían que el dinero es NEUTRAL: imprimir más solo sube los precios, nunca el producto. Keynes, mirando la Depresión del 30 con una cuarta parte del país sin trabajo, contestó que eso vale a la larga, pero que en el corto plazo los contratos están firmados, los salarios no bajan, y ahí sí se puede mover el producto. Los dos tenían razón — en plazos distintos, y por eso hoy se dibujan DOS ofertas agregadas: una vertical para el largo plazo y una con pendiente positiva para el corto. Y antes de eso, una idea que ordena todo: el PBI potencial, que es como el horno de la panadería del apunte. Cien panes al día se sostienen; más, se queman.",
+  "repaso": [
+    "EL PBI POTENCIAL es el nivel de producción que la economía sostiene usando al 100% sus factores, sin calentarse ni enfriarse. No es un récord ni una meta: es el ritmo que el horno aguanta. Por encima aparece INFLACIÓN; por debajo quedan recursos ociosos y DESEMPLEO.",
+    "LAS FLUCTUACIONES son impredecibles e irregulares, la mayoría de las variables se mueven en unísono, y el PBI real y la TASA DE DESEMPLEO se mueven al revés: cuando uno sube, la otra baja.",
+    "LA DEMANDA AGREGADA es el gasto de toda la economía: DA = C + I + G + XN. Y ojo con las exportaciones netas, que es donde más se pierde gente: XN = exportaciones − IMPORTACIONES, así que las importaciones RESTAN.",
+    "CÓMO SE ARMA, PASO A PASO: se abre el consumo primero (si viene como 60 + 2(20 − 2P), eso es 100 − 4P), se le suman I y G, y recién al final se le suma la XN con su signo. En ese ejemplo: 100 − 4P + 20 + 30 − 10 = 140 − 4P.",
+    "LA OTRA FORMA DE LLEGAR A LA DA, la del ejercicio raro: la TEORÍA CUANTITATIVA DEL DINERO. Con MV = PQ y la velocidad constante, la demanda agregada queda Y = MV/P. Con M = 600 y V = 5: Y = 3000/P.",
+    "LA DA TIENE PENDIENTE NEGATIVA POR TRES RAZONES, y las tres empujan igual: el efecto riqueza, el efecto tasa de interés y el efecto tipo de cambio. Pregunta de examen: si una falla, la curva NO se vuelve horizontal — quedan las otras dos.",
+    "QUÉ DESPLAZA LA DA ENTERA (y no es el precio, que solo mueve el punto sobre la curva): las EXPECTATIVAS, que mueven C e I; la POLÍTICA FISCAL Y MONETARIA, que mueve G y la cantidad de dinero; y la ECONOMÍA MUNDIAL, que mueve XN por el ingreso del resto del mundo y por el tipo de cambio.",
+    "LA NEUTRALIDAD DEL DINERO, que es la postura CLÁSICA: las variables nominales (como M) no pueden mover a las reales (como el PBI). Con MV = PQ, V constante y Q clavado en el potencial, duplicar M solo duplica P.",
+    "LA RESPUESTA KEYNESIANA: eso vale en el LARGO plazo. En el corto, la economía no reacciona rápido a la inflación, así que sí se puede mover el producto.",
+    "LA SEGUNDA DISCUSIÓN, la de los salarios. Si cae el nivel de precios, el clásico dice que el salario nominal cae también. El keynesiano contesta que en el corto plazo el CONTRATO YA ESTÁ FIRMADO: si P cae y W no se mueve, el salario REAL (W/P) SUBE, el trabajo se encarece y aparece desempleo.",
+    "LA RECETITA DE LA OA DE LARGO PLAZO, en dos pasos. (1) Equilibrio en el mercado laboral, donde solo importa el L. (2) Ese L entra en la función de producción. El resultado no depende de P, así que la curva es una VERTICAL.",
+    "LA RECETITA DE LA OA DE CORTO PLAZO, en tres pasos, y acá solo se usa la DEMANDA laboral. (1) Hallar el salario rígido: W = (w/p) × P, con el salario real y el precio del equilibrio. (2) Meter ese W en la demanda laboral y despejar L, que queda en función de P. (3) Ese L entra en la función de producción. La curva sale con PENDIENTE POSITIVA.",
+    "EL EJEMPLO QUE AMARRA TODO: oferta laboral w/p = L + 5, demanda laboral w/p = −L + 45, Y = 10·√L·√K con K = 5. Da L = 20, w/p = 25 y una OA LP vertical en Y = 100. Con la DA = 140 − 4P el equilibrio cae en P = 10, el salario rígido queda W = 250, y la OA CP pasa por el mismo punto: si P sube a 12,5, el salario real cae a 20, L sube a 25 e Y llega a 111,8."
+  ],
+  "mapa": [
+    "                                                                                                                                                                                    ",
+    "                                                                                                                                                                                    ",
+    "                                                                                                                                                                                    ",
+    "                                                                                                                                                                                    ",
+    "                                                                                                      AA                                                                            ",
+    "                                                                                                     o o                     o o                                                    ",
+    "                                                                                                                              E                                                     ",
+    "                       o  o  o  o                                                                   ======            o o   ======                 o     o     o           o   o    ",
+    "                                    ?           o     o     o                                                           G                        oo oo oo oo oo oo     o           o",
+    "                      ==============                                         o     o                                 ======                                             o o=o=====  ",
+    "                                               ###   ###   ###               E                                                                                        ====        ==",
+    "  P         C               E                  ###   ###   ### E      C    ===== =====           T           E                        C           X E   X    1X       B         M   ",
+    "################# #######################################################              #############################################################################################",
+    "################# #######################################################              #############################################################################################",
+    "################# #######################################################              #############################################################################################"
+  ]
+}

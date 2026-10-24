@@ -212,6 +212,14 @@ const TEMAS_MUSICA = {
               "F4",2,"E4",2,"D4",4],
     bajo:    ["D2",4,"A2",4,"D2",4,"G2",4,"A2",4,"D2",4,"A2",4,"D2",4],
   },
+  manhattan: { // Estados Unidos: swing de ciudad, con el bajo caminando y la melodía recostada
+    tempo: 0.21, onda: "triangle",
+    melodia: ["C4",2,"E4",2,"G4",2,"A4",2,"Bb4",4,"A4",2,"G4",2,
+              "E4",2,"G4",2,"C5",2,"A4",2,"G4",4,"E4",4,
+              "D4",2,"F4",2,"A4",2,"C5",2,"B4",4,"A4",2,"G4",2,
+              "E4",2,"D4",2,"C4",2,"D4",2,"E4",4,"C4",4],
+    bajo:    ["C2",4,"A2",4,"D2",4,"G2",4,"C2",4,"E2",4,"F2",4,"G2",4],
+  },
   italia: { // Italia: tarantela de fiesta en 6/8, rapidita y que no se queda quieta
     tempo: 0.19, onda: "triangle",
     melodia: ["A4",2,"A4",1,"B4",1,"C5",2,"B4",1,"A4",1,"G#4",2,"A4",2,

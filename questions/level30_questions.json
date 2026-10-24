@@ -1,0 +1,125 @@
+{
+  "nivel": "level30",
+  "clase": "Clase 01 · PC4 — Oferta y demanda agregada",
+  "fuente": "Apuntes de la Clase 01 de la PC4 — Oferta y demanda agregada (Economía General II)",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "m30-q1",
+      "nivel": "comprension",
+      "enunciado": "El apunte compara la economía con el horno de una panadería: si da 100 panes al día sin quemarlos ni desgastarse, esa es su capacidad sostenible.\n\n¿Qué es entonces el PBI potencial?",
+      "opciones": [
+        "El PBI máximo que se alcanzó alguna vez, que queda como récord a superar",
+        "El nivel sostenible con los factores al 100%: pasarse calienta la economía",
+        "El PBI que el gobierno se fija como meta al principio de cada año fiscal",
+        "El promedio de los últimos años, que sirve para proyectar el año que viene"
+      ],
+      "correcta": 1,
+      "explicacion": "El potencial no es un récord ni una meta: es el ritmo que la economía aguanta de forma sostenida. Si se produce POR ENCIMA, el horno se calienta y aparece inflación. Si se produce POR DEBAJO, quedan recursos ociosos y desempleo. Por eso se lo usa para mirar el largo plazo, y por eso el PBI real se le acerca y se le aleja sin quedarse nunca clavado encima."
+    },
+    {
+      "id": "m30-q2",
+      "nivel": "aplicacion",
+      "enunciado": "Una economía tiene C = 60 + 2(20 − 2P), I = 20, G = 30, exportaciones 15 e importaciones 25.\n\n¿Cuál es su demanda agregada?",
+      "opciones": [
+        "DA = 160 − 4P, sumando todo lo que entra y lo que sale del país",
+        "DA = 140 − 4P: el consumo da 100 − 4P y las XN son 15 − 25 = −10",
+        "DA = 140 − 2P, porque el 2 de afuera del paréntesis ya no multiplica al precio",
+        "DA = 100 − 4P, que es el consumo: lo demás no depende del nivel de precios"
+      ],
+      "correcta": 1,
+      "explicacion": "La demanda agregada es el gasto de TODA la economía: DA = C + I + G + XN. El consumo se abre primero: 60 + 40 − 4P = 100 − 4P. Y ojo con las exportaciones netas, que es donde más se pierde gente: las importaciones RESTAN, así que XN = 15 − 25 = −10. Sumando todo queda 140 − 4P."
+    },
+    {
+      "id": "m30-q3",
+      "nivel": "comprension",
+      "enunciado": "La demanda agregada tiene pendiente negativa por tres razones distintas.\n\nSi en una economía una de las tres dejara de funcionar, ¿la DA quedaría horizontal?",
+      "opciones": [
+        "Sí: tienen que estar las tres para que la curva se incline",
+        "Sí, pero solo si la que falla es la de la tasa de interés, que es la más fuerte",
+        "No: quedan las otras dos, así que la curva sigue bajando, aunque menos",
+        "No, porque la pendiente de la DA no depende de esas razones sino del gasto público"
+      ],
+      "correcta": 2,
+      "explicacion": "Son tres canales que empujan en el mismo sentido: el efecto riqueza, el efecto tasa de interés y el efecto tipo de cambio. Que uno se apague no vuelve horizontal a la curva — los otros dos la siguen inclinando. Horizontal significaría que la cantidad demandada no reacciona NADA al nivel de precios, y para eso tendrían que fallar los tres a la vez."
+    },
+    {
+      "id": "m30-q4",
+      "nivel": "comprension",
+      "enunciado": "Se especula que va a ganar un candidato que asusta a los inversionistas, y la gente empieza a postergar compras grandes.\n\n¿Qué le pasa a la demanda agregada?",
+      "opciones": [
+        "Nada: las expectativas son psicología, no datos reales",
+        "Se mueve a lo largo de la curva, porque lo que cambió fue el nivel de precios",
+        "Se desplaza hacia la derecha, porque la gente ahorra y eso financia más inversión",
+        "Se desplaza a la izquierda: las expectativas mueven consumo e inversión"
+      ],
+      "correcta": 3,
+      "explicacion": "Hay tres factores que CORREN la curva entera: las expectativas (que mueven C e I), la política fiscal y monetaria (que mueve G y la cantidad de dinero) y la economía mundial (que mueve XN por el ingreso del resto del mundo y por el tipo de cambio). Acá son las expectativas, y como frenan consumo e inversión, la DA se va para la izquierda. Si lo que cambiara fuera el precio, el punto se movería SOBRE la misma curva."
+    },
+    {
+      "id": "m30-q5",
+      "nivel": "aplicacion",
+      "enunciado": "La velocidad del dinero es constante en 5 y el producto está clavado en 100. Hoy la cantidad de dinero es 600.\n\nSi el banco central duplica el dinero a 1200, ¿qué pasa?",
+      "opciones": [
+        "El PBI real se duplica a 200: más dinero circulando es más producción vendida",
+        "No pasa nada, porque la ecuación MV = PQ solo se cumple en el corto plazo",
+        "El precio se queda en 30 y lo que sube es la velocidad, para compensar",
+        "El precio pasa de 30 a 60 y el PBI real sigue en 100: el dinero es NEUTRAL"
+      ],
+      "correcta": 3,
+      "explicacion": "Es la neutralidad del dinero de los clásicos, y sale de MV = PQ. Con V constante y Q clavado en el potencial, si M se duplica lo único que puede ajustar es P: pasa de 30 a 60. Las variables NOMINALES no pueden mover a las REALES. Los keynesianos no lo niegan: dicen que eso vale en el LARGO plazo, y que en el corto sí se puede crecer porque la economía no reacciona rápido."
+    },
+    {
+      "id": "m30-q6",
+      "nivel": "comprension",
+      "enunciado": "Cae el nivel de precios. Un clásico dice que el salario nominal va a caer también, porque las empresas no pueden perder.\n\n¿Qué contesta un keynesiano?",
+      "opciones": [
+        "Que en el corto plazo el contrato ya está firmado: el salario REAL sube",
+        "Que el salario nominal cae todavía más rápido que los precios, por la competencia",
+        "Que da lo mismo, porque lo que importa es el nominal y ese no cambia nunca",
+        "Que el salario real baja igual y el empleo no se mueve"
+      ],
+      "correcta": 0,
+      "explicacion": "El clásico tiene razón a la larga, pero en el CORTO plazo el salario nominal está trabado por un contrato ya firmado. Si P cae y W no se mueve, el cociente W/P —el salario real— SUBE. Y un salario real más alto es trabajo más caro, así que las empresas contratan menos: desempleo. Esa rigidez es justo la razón de que la oferta agregada de corto plazo no sea vertical."
+    },
+    {
+      "id": "m30-q7",
+      "nivel": "aplicacion",
+      "enunciado": "La oferta laboral es w/p = L + 5 y la demanda laboral w/p = −L + 45. La función de producción es Y = 10·√L·√K, con K = 5.\n\n¿Cuál es la oferta agregada de LARGO plazo?",
+      "opciones": [
+        "Una recta de pendiente positiva, Y = 10P, que nace del salario de equilibrio",
+        "Una vertical en Y = 100: el L de equilibrio es 20 y da 10·√20·√5",
+        "Una vertical en Y = 20, que es la cantidad de trabajadores que se emplean",
+        "No se puede: falta el nivel de precios, que es el dato clave"
+      ],
+      "correcta": 1,
+      "explicacion": "La recetita son dos pasos. Primero el equilibrio del mercado laboral, donde solo importa el L: L + 5 = −L + 45 da L = 20 (y de paso w/p = 25). Segundo, ese L entra en la función de producción: Y = 10·√20·√5 = 10·√100 = 100. Y como ese número no depende de P, la oferta agregada de largo plazo es una VERTICAL en 100."
+    },
+    {
+      "id": "m30-q8",
+      "nivel": "aplicacion",
+      "enunciado": "Misma economía. El equilibrio con la DA da P = 10, y el salario real de equilibrio era 25, así que el salario rígido queda W = 250.\n\nCon ese W clavado, ¿qué pasa si el precio sube a 12,5?",
+      "opciones": [
+        "No pasa nada: con el salario trabado, la producción también",
+        "El salario real sube a 31,25, se contrata menos gente y el producto cae por debajo de 100",
+        "El salario real cae a 20, se contrata hasta L = 25 y el producto llega a 111,8",
+        "El producto sube pero el empleo no, porque el contrato fija también la cantidad de gente"
+      ],
+      "correcta": 2,
+      "explicacion": "Acá la recetita trabaja solo con la DEMANDA laboral, porque el salario ya está fijado. Con W = 250 y P = 12,5, el salario real es 250/12,5 = 20. Metiéndolo en w/p = −L + 45 sale L = 25, y en la función de producción Y = 10·√25·√5 = 111,8. Por eso la oferta agregada de corto plazo tiene pendiente POSITIVA: cuando P sube, el salario real cae y conviene contratar más."
+    },
+    {
+      "id": "m30-q9",
+      "nivel": "aplicacion",
+      "enunciado": "Juntando todo: la DA es 140 − 4P y la oferta agregada de largo plazo es la vertical en Y = 100.\n\n¿Dónde queda el equilibrio, y qué pasa ahí con la oferta de corto plazo?",
+      "opciones": [
+        "En P = 10 e Y = 100, y ahí mismo pasa también la oferta de corto plazo",
+        "En P = 35 e Y = 0, donde la DA corta el eje vertical",
+        "En P = 10 e Y = 140, porque el producto lo fija la demanda y no la oferta",
+        "No hay equilibrio: una vertical y una recta inclinada no llegan a cortarse nunca"
+      ],
+      "correcta": 0,
+      "explicacion": "La vertical fija el producto en 100, así que el precio sale de la demanda: 100 = 140 − 4P da P = 10. Y ese punto no es casualidad para la oferta de corto plazo: justamente con ese P se calculó el salario rígido, así que las TRES curvas se cruzan ahí. Es la forma de controlar el ejercicio — si la de corto plazo no pasa por el mismo punto, hay un error en alguna parte."
+    }
+  ]
+}

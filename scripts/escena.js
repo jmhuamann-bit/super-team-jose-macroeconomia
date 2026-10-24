@@ -290,6 +290,13 @@ const FICHAS = [
   { sprite: "espresso", nombre: "El Espresso del Crecimiento Eterno", texto: "Cree que ahorrar más acelera para siempre. Es un golpe de nivel: te sube el escalón una vez y después el crecimiento vuelve a cero." },
   { sprite: "coliseo", nombre: "El Coliseo que Sigue Apilando Piedras", texto: "Apila capital creyendo que así se crece en el largo plazo. Sin progreso técnico se llega al estado estacionario y ahí se para todo." },
   { sprite: "nonno", nombre: "El Nonno del Milagro Italiano", texto: "Jefe de Italia: vivió el milagro y no entiende por qué el país se frenó solo. Es la convergencia: la brecha con el estado estacionario se cerró." },
+  { sprite: "hamburguesa", nombre: "La Hamburguesa del Récord a Superar", texto: "Estados Unidos: cree que el PBI potencial es una marca a romper. Es el ritmo que el horno aguanta: por encima se quema (inflación) y por debajo sobra capacidad." },
+  { sprite: "carrito", nombre: "El Carrito que No Resta las Importaciones", texto: "Arma la demanda agregada sumando todo. Las exportaciones netas son X menos M: lo que se importa RESTA, no suma." },
+  { sprite: "beisbol", nombre: "La Pelota de las Tres Razones", texto: "Cree que si falla una de las tres razones —riqueza, tasa de interés y tipo de cambio— la demanda agregada se vuelve horizontal. Quedan las otras dos." },
+  { sprite: "cohete", nombre: "El Cohete que Mueve la Curva de Más", texto: "No distingue lo que DESPLAZA la demanda agregada (expectativas, política fiscal y monetaria, economía mundial) de lo que solo corre el punto sobre ella: el precio." },
+  { sprite: "dolar", nombre: "El Dólar que Se Cree Riqueza", texto: "Cree que imprimir dinero hace crecer el PBI real. Con MV = PQ y la velocidad constante, duplicar M solo duplica P: el dinero es neutral en el largo plazo." },
+  { sprite: "fichador", nombre: "El Fichador del Contrato Olvidado", texto: "Se olvida de que en el corto plazo el salario nominal está trabado. Si el precio cae y W no se mueve, el salario REAL sube y aparece desempleo." },
+  { sprite: "aguila", nombre: "El Águila que Confunde Corto con Largo", texto: "Jefe de Estados Unidos: contesta con la oferta vertical cuando le preguntan por el corto plazo, y con la inclinada cuando le preguntan por el largo." },
 ];
 
 export function galeriaPersonajes(contenedor) {
