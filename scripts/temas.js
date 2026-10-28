@@ -3983,6 +3983,192 @@ export const TEMAS = {
       }
     },
   },
+
+  moscu: {
+    nombre: "Rusia",
+    cielo: [[0, "#3f6f9a"], [0.4, "#8fa8bc"], [0.7, "#dfe4e6"], [0.8, "#2a2c30"], [1, "#141618"]],
+    suelo: { cara: "#cfd6da", borde: "#eef2f4", tierra: "#4a4e52", plataforma: "#8a6a4a", plataformaBorde: "#c0392b" },
+    acento: "#c0392b",
+
+    bichos: ["samovar", "oso", "matrioshka", "termometro", "ajedrez", "sputnik"],
+    nombresBichos: [
+      "El Samovar que No Despeja la Y",
+      "El Oso que Olvida el Producto Marginal",
+      "La Matrioshka del Salario Rígido",
+      "El Termómetro de las Dos Brechas",
+      "La Torre que No Mide el Gasto",
+      "El Sputnik del Dinero Mal Contado",
+    ],
+    andares: ["patrulla", "guardia", "veloz", "salta", "vuela"],
+    jefe: "zar",
+    nombreJefe: "El Zar que Decreta la Respuesta",
+
+    fondo(ctx, cam, t) {
+      const elige = (a, n) => a[((n % a.length) + a.length) % a.length];
+
+      // el sol de invierno, pálido y sin fuerza
+      ctx.fillStyle = "rgba(240,244,248,.22)";
+      ctx.beginPath(); ctx.arc(576, 76, 52, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = "rgba(248,250,252,.62)";
+      ctx.beginPath(); ctx.arc(576, 76, 21, 0, Math.PI * 2); ctx.fill();
+
+      // el cielo cargado, en capas bajas
+      repetir(ctx, cam, 266, 0.03, (x, i) => {
+        const by = 40 + ((i * 51) % 64);
+        ctx.fillStyle = "rgba(214,222,228,.44)";
+        ctx.fillRect(x, by, 128, 13);
+        ctx.fillRect(x + 20, by - 7, 82, 8);
+      });
+
+      // EL BOSQUE DE ABEDULES, troncos blancos con sus manchas
+      repetir(ctx, cam, 152, 0.06, (x, i) => {
+        const bx = x, base = 318;
+        const alto = 62 + ((i * 31) % 34);
+        ctx.fillStyle = "rgba(238,242,244,.80)";
+        ctx.fillRect(bx, base - alto, 5, alto);
+        ctx.fillStyle = "rgba(60,62,66,.46)";
+        for (let py = base - alto + 8; py < base - 6; py += 13) {
+          ctx.fillRect(bx, py, 3, 2);
+          ctx.fillRect(bx + 3, py + 6, 2, 2);
+        }
+        ctx.fillStyle = "rgba(96,110,104,.56)";       // las ramas peladas
+        for (const dy of [0.22, 0.4]) {
+          ctx.fillRect(bx - 7, base - alto * (1 - dy), 7, 2);
+          ctx.fillRect(bx + 5, base - alto * (1 - dy) - 4, 8, 2);
+        }
+      });
+
+      // LA CATEDRAL DE LAS CÚPULAS: cada una de un color y con su espiral
+      repetir(ctx, cam, 486, 0.12, (x, i) => {
+        const bx = x + 60, base = 318;
+        ctx.fillStyle = "#c9b48a";                     // el cuerpo de ladrillo
+        ctx.fillRect(bx, base - 72, 104, 72);
+        ctx.fillStyle = "rgba(120,100,74,.34)";
+        for (let px = bx + 8; px < bx + 98; px += 18) ctx.fillRect(px, base - 54, 10, 30);
+        /* las cúpulas de cebolla, de distinto alto y color */
+        const cupulas = [[14, 30, "#3f7fb5"], [40, 46, "#c0392b"], [66, 34, "#4a9a5a"], [88, 26, "#e8b43c"]];
+        for (const [dx, alto, color] of cupulas) {
+          const cx = bx + dx + 8, cima = base - 72 - alto;
+          ctx.fillStyle = "#b5a078";                   // el tamborcito
+          ctx.fillRect(cx - 7, base - 84, 14, 12);
+          ctx.fillStyle = color;
+          ctx.beginPath();
+          ctx.moveTo(cx - 10, base - 84);
+          ctx.quadraticCurveTo(cx - 13, cima + 8, cx, cima);
+          ctx.quadraticCurveTo(cx + 13, cima + 8, cx + 10, base - 84);
+          ctx.closePath(); ctx.fill();
+          ctx.fillStyle = "rgba(246,246,240,.46)";     // la espiral
+          for (let k = 0; k < 3; k++) {
+            ctx.fillRect(cx - 8 + k * 7, cima + 10 + k * 3, 3, alto - 14);
+          }
+          ctx.fillStyle = "#e8c45a";                   // la cruz de arriba
+          ctx.fillRect(cx - 1, cima - 7, 3, 8);
+          ctx.fillRect(cx - 3, cima - 5, 7, 2);
+        }
+      });
+
+      // LOS BLOQUES DE DEPARTAMENTOS, en pastel y todos iguales
+      repetir(ctx, cam, 122, 0.22, (x, i) => {
+        const bx = x, base = 318;
+        const alto = 54 + ((i * 17) % 20);
+        ctx.fillStyle = elige(["#b9c2c6", "#c8bfae", "#a8b4bc", "#c2b2b2"], i);
+        ctx.fillRect(bx, base - alto, 50, alto);
+        ctx.fillStyle = "rgba(240,244,246,.82)";       // la nieve del alero
+        ctx.fillRect(bx - 2, base - alto - 4, 54, 5);
+        for (let py = base - alto + 9; py < base - 12; py += 14) {
+          for (const px of [6, 20, 34]) {
+            ctx.fillStyle = ((px + py + i) % 4) < 2
+              ? "rgba(252,226,160,.80)" : "rgba(72,84,92,.60)";
+            ctx.fillRect(bx + px, py, 9, 9);
+          }
+        }
+        ctx.fillStyle = "#4a3e32";
+        ctx.fillRect(bx + 20, base - 16, 11, 16);      // la puerta
+      });
+
+      // EL SUELO: del pie de los bloques al adoquín, sin cortes. En el medio va
+      // EL RÍO HELADO, con las placas de hielo trabadas entre sí
+      ctx.fillStyle = "#e8eef0";
+      ctx.fillRect(0, 306, CFG.ANCHO_VISTA, 12);
+      ctx.fillStyle = "#6f94a8";
+      ctx.fillRect(0, 318, CFG.ANCHO_VISTA, 32);
+      for (let i = 0; i < 26; i++) {                   // las placas de hielo
+        const x = (i * 68 - cam * 0.16) % 1060 - 60;
+        const fila = i % 2;
+        ctx.fillStyle = elige(["#cfe0e6", "#bed4dc", "#dcebef"], i);
+        ctx.fillRect(x, 320 + fila * 14, 60, 13);
+        ctx.fillStyle = "rgba(90,118,132,.42)";
+        ctx.fillRect(x - 2, 318 + fila * 14, 3, 15);
+        ctx.fillRect(x, 333, 60, 2);
+      }
+      ctx.fillStyle = "#cfd6da";                       // el adoquín con nieve pisada
+      ctx.fillRect(0, 350, CFG.ANCHO_VISTA, 32);
+      ctx.fillStyle = "#eef2f4";
+      ctx.fillRect(0, 350, CFG.ANCHO_VISTA, 5);
+      for (let i = 0; i < 40; i++) {
+        const x = (i * 39 - cam * 0.5) % 1000 - 40;
+        ctx.fillStyle = "rgba(118,128,136,.22)";
+        ctx.fillRect(x, 360 + ((i * 11) % 16), 13, 3);
+      }
+
+      // EL QUIOSCO de la esquina, con sus carámbanos colgando
+      repetir(ctx, cam, 292, 0.54, (x, i) => {
+        const bx = x + 40, base = 382, alto = 44;
+        const techo = base - alto;
+        ctx.fillStyle = elige(["#8a2a3a", "#2f5a74", "#4a6a4a"], i);
+        ctx.fillRect(bx, techo, 86, alto);
+        ctx.fillStyle = "#e8eef0";                     // la nieve del techo
+        ctx.fillRect(bx - 5, techo - 6, 96, 7);
+        ctx.fillStyle = "rgba(226,238,242,.86)";       // los carámbanos
+        for (let px = bx - 2; px < bx + 88; px += 11) {
+          ctx.fillRect(px, techo + 1, 3, 4 + ((px + i) % 5));
+        }
+        ctx.fillStyle = "rgba(252,226,160,.82)";       // la ventanilla encendida
+        ctx.fillRect(bx + 12, techo + 14, 62, 20);
+        ctx.fillStyle = "rgba(48,44,40,.46)";
+        ctx.fillRect(bx + 12, techo + 24, 62, 2);
+        ctx.fillStyle = "#e8c45a";
+        ctx.fillRect(bx + 30, techo + 36, 26, 4);      // el mostrador
+      });
+
+      // LOS PINOS NEVADOS del borde
+      repetir(ctx, cam, 96, 0.78, (x, i) => {
+        const bx = x + 20, base = 382;
+        ctx.fillStyle = "#4a3e32";
+        ctx.fillRect(bx + 5, base - 7, 4, 7);
+        for (let k = 0; k < 3; k++) {
+          const ancho = 11 - k * 3, cy = base - 9 - k * 6;
+          ctx.fillStyle = "#2f5a42";
+          ctx.beginPath();
+          ctx.moveTo(bx + 7, cy - 8);
+          ctx.lineTo(bx + 7 - ancho, cy);
+          ctx.lineTo(bx + 7 + ancho, cy);
+          ctx.closePath(); ctx.fill();
+          ctx.fillStyle = "rgba(238,244,246,.84)";     // la nieve encima de cada rama
+          ctx.fillRect(bx + 7 - ancho + 1, cy - 2, ancho * 2 - 2, 2);
+        }
+      });
+      ctx.fillStyle = "#b5bcc0";
+      ctx.fillRect(0, 380, CFG.ANCHO_VISTA, 4);
+    },
+
+    clima(ctx, t) {
+      // la nieve, que acá no para
+      for (let i = 0; i < 60; i++) {
+        const x = (i * 71 + Math.sin(t / 19 + i) * 16 + t * 0.4) % 1040 - 40;
+        const y = (i * 43 + t * 1.7) % 470;
+        const gordo = i % 5 === 0 ? 3 : 2;
+        ctx.fillStyle = i % 3 ? "rgba(248,250,252,.78)" : "rgba(226,236,242,.56)";
+        ctx.fillRect(x, y, gordo, gordo);
+      }
+      // y el vaho que levanta el río helado
+      for (let i = 0; i < 8; i++) {
+        const x = (i * 139 + t * 0.6) % 1020 - 40;
+        ctx.fillStyle = "rgba(236,242,246,.12)";
+        ctx.fillRect(x, 320 + ((i * 7) % 18), 42, 5);
+      }
+    },
+  },
 };
 
 /** Pinta el cielo del tema (degradado vertical). */

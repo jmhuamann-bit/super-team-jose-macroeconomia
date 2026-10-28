@@ -297,6 +297,13 @@ const FICHAS = [
   { sprite: "dolar", nombre: "El Dólar que Se Cree Riqueza", texto: "Cree que imprimir dinero hace crecer el PBI real. Con MV = PQ y la velocidad constante, duplicar M solo duplica P: el dinero es neutral en el largo plazo." },
   { sprite: "fichador", nombre: "El Fichador del Contrato Olvidado", texto: "Se olvida de que en el corto plazo el salario nominal está trabado. Si el precio cae y W no se mueve, el salario REAL sube y aparece desempleo." },
   { sprite: "aguila", nombre: "El Águila que Confunde Corto con Largo", texto: "Jefe de Estados Unidos: contesta con la oferta vertical cuando le preguntan por el corto plazo, y con la inclinada cuando le preguntan por el largo." },
+  { sprite: "samovar", nombre: "El Samovar que No Despeja la Y", texto: "Rusia: arma la demanda agregada sumando los componentes y se queda ahí. La Y aparece a los dos lados: hay que despejarla y dividir todo entre (1 − c)." },
+  { sprite: "oso", nombre: "El Oso que Olvida el Producto Marginal", texto: "Se traba en el mercado laboral porque no se acuerda de que la DEMANDA de trabajo es el producto marginal del trabajo: w/p = PMgL." },
+  { sprite: "matrioshka", nombre: "La Matrioshka del Salario Rígido", texto: "Una muñeca dentro de la otra, igual que el corto plazo dentro del largo. Con el salario clavado solo se usa la demanda laboral, y el L queda en función de P." },
+  { sprite: "termometro", nombre: "El Termómetro de las Dos Brechas", texto: "Mira el precio para decidir la brecha. Lo que la define es el PRODUCTO: por debajo del potencial es recesiva, por encima es inflacionaria." },
+  { sprite: "ajedrez", nombre: "La Torre que No Mide el Gasto", texto: "Para la política fiscal hay que copiar la demanda agregada dejando el G como incógnita, meter el P e Y del quiebre y despejar. Recién ahí se resta el gasto inicial." },
+  { sprite: "sputnik", nombre: "El Sputnik del Dinero Mal Contado", texto: "Confunde la cantidad total de dinero que debe quedar con lo que el banco central tiene que inyectar. Lo segundo es la diferencia con lo que ya había." },
+  { sprite: "zar", nombre: "El Zar que Decreta la Respuesta", texto: "Jefe de Rusia: decreta que la oferta de corto plazo sube, pero no sabe decir por cuál de las tres teorías — salarios rígidos, costo de menú o percepciones." },
 ];
 
 export function galeriaPersonajes(contenedor) {

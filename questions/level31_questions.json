@@ -1,0 +1,125 @@
+{
+  "nivel": "level31",
+  "clase": "Clase 02 · PC4 — La receta completa de OA-DA",
+  "fuente": "Apuntes de la 2da clase de la PC4 — Full ejercicios e intuición (Economía General II)",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "m31-q1",
+      "nivel": "aplicacion",
+      "enunciado": "Primera fase. El consumo autónomo es 60 y la propensión marginal a AHORRAR es 0,3. La inversión es 80, el gasto 120, y los impuestos son T = 20 + 3P.\n\n¿Cuál es la demanda agregada?",
+      "opciones": [
+        "Y = 280 − 3P, sumando los componentes sin despejar la Y que aparece adentro",
+        "Y = 820 − 7P: con c = 0,7 queda 0,3Y = 246 − 2,1P, y recién ahí se divide",
+        "Y = 246 − 2,1P, que es el resultado antes de pasar el 0,3 dividiendo",
+        "Y = 820 − 3P, porque la sensibilidad de los impuestos al precio es 3"
+      ],
+      "correcta": 1,
+      "explicacion": "La Y aparece a los dos lados, así que hay que despejarla. Primero la propensión a consumir: c = 1 − 0,3 = 0,7. Después Y = 60 + 0,7(Y − 20 − 3P) + 80 + 120, que da Y − 0,7Y = 246 − 2,1P. Y recién al final se divide todo entre 0,3: Y = 820 − 7P. El error más común es quedarse en el paso anterior."
+    },
+    {
+      "id": "m31-q2",
+      "nivel": "aplicacion",
+      "enunciado": "Segunda fase. La demanda de trabajo es Ld = 120 − 4(W/P) y la oferta Ls = 15 + 3(W/P). La función de producción es Y = 2LK, con K = 4.\n\n¿Cuál es la oferta agregada de largo plazo?",
+      "opciones": [
+        "Una vertical en Y = 480: el salario real da 15, el empleo 60, y 2(60)(4) = 480",
+        "Una vertical en Y = 60, que es el nivel de empleo de pleno empleo de esa economía",
+        "Una recta Y = 480 − 4P, porque el salario real depende del nivel de precios",
+        "No se puede: falta el salario nominal para poder cerrar el mercado laboral"
+      ],
+      "correcta": 0,
+      "explicacion": "Son dos pasos y en el primero solo importa el L. Igualando: 120 − 4w = 15 + 3w da w/p = 15, y reemplazando en cualquiera de las dos, L = 60. Segundo paso: ese L entra en la función de producción, Y = 2(60)(4) = 480. Como ese número no depende de P, la curva es una VERTICAL. Y ojo: el empleo es 60, pero el producto es 480."
+    },
+    {
+      "id": "m31-q3",
+      "nivel": "aplicacion",
+      "enunciado": "Tercera fase. Misma economía, pero ahora hay un salario nominal clavado en W = 250.\n\n¿Cuál es la oferta agregada de corto plazo?",
+      "opciones": [
+        "Y = 480 igual, porque con el salario trabado la producción tampoco se mueve",
+        "Y = 120 − 1000/P, que es el empleo que resulta con ese salario clavado",
+        "Y = 2(250)(4) = 2000, reemplazando el salario directo en la función de producción",
+        "Y = 960 − 8000/P: el W entra en la DEMANDA laboral y el L queda en función de P"
+      ],
+      "correcta": 3,
+      "explicacion": "Acá solo se usa la DEMANDA laboral, porque el salario ya está fijado y la oferta no manda. De Ld = 120 − 4(250/P) sale L = 120 − 1000/P. Y ese L entra en Y = 2LK: Y = 8(120 − 1000/P) = 960 − 8000/P. La última opción es el EMPLEO, no el producto: falta pasarlo por la función de producción."
+    },
+    {
+      "id": "m31-q4",
+      "nivel": "comprension",
+      "enunciado": "Cuarta fase. Se dibujan las tres curvas y se mira dónde cae el cruce de la demanda agregada con la oferta de corto plazo.\n\n¿Cómo se distingue una brecha recesiva de una inflacionaria?",
+      "opciones": [
+        "Por el nivel de precios: si P está alto es inflacionaria y si está bajo es recesiva",
+        "Por la pendiente de la DA: más empinada es recesiva y más plana es inflacionaria",
+        "Recesiva si produce por DEBAJO del potencial; si lo pasa, inflacionaria",
+        "No se distinguen: cualquier desvío del pleno empleo cuenta como brecha recesiva"
+      ],
+      "correcta": 2,
+      "explicacion": "Lo que define la brecha es dónde queda el producto frente al POTENCIAL, no el precio. Si el cruce de corto plazo deja a la economía produciendo menos que el pleno empleo, hay capacidad ociosa y desempleo: brecha RECESIVA. Si la deja produciendo más, el horno está forzado: brecha INFLACIONARIA. Con el ejemplo, el cruce da Y = 643 contra un potencial de 480: inflacionaria."
+    },
+    {
+      "id": "m31-q5",
+      "nivel": "aplicacion",
+      "enunciado": "Quinta fase, política fiscal. La demanda agregada es Y = 820 − 7P y hay que llevarla a que pase por el punto de quiebre, donde P = 48,57 e Y = 480.\n\n¿Cómo se calcula el nuevo gasto?",
+      "opciones": [
+        "Se le suma al gasto la diferencia entre 820 y 480, o sea 340 de gasto extra",
+        "Se reemplaza el P del quiebre y se despeja la Y, que ya da el gasto que falta",
+        "Se copia la DA dejando el G como incógnita y se meten el P e Y del quiebre",
+        "No se puede con política fiscal: para mover la DA hace falta el banco central"
+      ],
+      "correcta": 2,
+      "explicacion": "La receta es dejar el G como la única incógnita. Se vuelve a escribir la DA sin reemplazar el gasto, se meten adentro el precio y el producto del punto de quiebre, y se despeja. Lo que sale es el gasto que HACE FALTA; restándole el gasto inicial queda cuánto hay que moverlo, que puede ser para arriba o para abajo según la brecha."
+    },
+    {
+      "id": "m31-q6",
+      "nivel": "aplicacion",
+      "enunciado": "Quinta fase, política monetaria. La demanda agregada vino de MV = PY, con V = 5 y una masa monetaria inicial de 400. Se quiere llegar al punto P = 20 e Y = 480.\n\n¿Cuánto dinero tiene que soltar el banco central?",
+      "opciones": [
+        "1920, que es la nueva cantidad de dinero que debe quedar circulando en total",
+        "1520: hace falta M = 20(480)/5 = 1920, y ya había 400 dando vueltas",
+        "480, que es el producto al que se quiere llegar",
+        "96, dividiendo el producto buscado entre la velocidad de circulación del dinero"
+      ],
+      "correcta": 1,
+      "explicacion": "Se reemplaza el punto al que se quiere llegar en MV = PY y se despeja la M: M = PY/V = 20 × 480 / 5 = 1920. Pero esa es la cantidad TOTAL que tiene que haber. Lo que el banco central agrega es la diferencia con lo que ya había: 1920 − 400 = 1520. Confundir el stock final con el flujo que se inyecta es el error típico."
+    },
+    {
+      "id": "m31-q7",
+      "nivel": "comprension",
+      "enunciado": "Los clásicos dicen que la oferta agregada de largo plazo es vertical.\n\n¿De dónde sale esa conclusión, y qué sí puede mover el producto en el largo plazo?",
+      "opciones": [
+        "De la dicotomía clásica: lo nominal no mueve lo real; crece con los factores",
+        "De que en el largo plazo los precios son rígidos, así que la cantidad no reacciona",
+        "De que la demanda agregada es vertical, y la oferta la tiene que copiar",
+        "De que en el largo plazo el salario nominal está fijado por los contratos vigentes"
+      ],
+      "correcta": 0,
+      "explicacion": "La dicotomía clásica dice que las variables nominales y las reales se analizan por separado, y la neutralidad del dinero es el caso puntual: imprimir no mueve el PBI real. Por eso la curva es vertical en el potencial — el nivel de precios no cambia lo que el país puede producir. Lo que SÍ lo cambia son los factores de crecimiento: capital, trabajo, capital humano, recursos y tecnología."
+    },
+    {
+      "id": "m31-q8",
+      "nivel": "comprension",
+      "enunciado": "Los keynesianos dan tres explicaciones distintas de por qué la oferta agregada de corto plazo sube: salarios rígidos, precios rígidos (el costo de menú) y percepciones erróneas.\n\n¿Hace falta que las tres funcionen a la vez?",
+      "opciones": [
+        "Sí: si una sola falla, la oferta de corto plazo se vuelve vertical como la de largo",
+        "Sí, porque las tres describen el mismo fenómeno visto desde ángulos distintos",
+        "No: con que una funcione alcanza para que la curva tenga pendiente positiva",
+        "No, pero sin las tres la curva queda horizontal en vez de tener pendiente"
+      ],
+      "correcta": 2,
+      "explicacion": "Son tres caminos independientes hacia el mismo resultado, y cada uno alcanza solo. El del salario rígido es el contrato ya firmado. El del precio rígido es el costo de menú: al centro comercial le cuesta reetiquetar y a la bodega no. Y el de las percepciones es el gerente que confunde una suba general de precios con que SU producto se valorizó. Es el mismo razonamiento de las tres razones de la demanda agregada: que una falle no aplana la curva."
+    },
+    {
+      "id": "m31-q9",
+      "nivel": "aplicacion",
+      "enunciado": "El gobierno tiene 30 para gastar y la propensión marginal a consumir es 0,7. Puede transferirlos a los hogares o gastarlos directamente.\n\n¿Cuál pega más fuerte y por qué?",
+      "opciones": [
+        "Las transferencias: la gente sabe mejor en qué gastar que el Estado",
+        "Dan lo mismo: son 30 que entran a la economía de una forma o de la otra",
+        "El gasto, pero solo porque el multiplicador de las transferencias es negativo",
+        "El gasto: el producto sube 100 contra 70, porque la transferencia se ahorra"
+      ],
+      "correcta": 3,
+      "explicacion": "El gasto público entra entero a la demanda, así que su multiplicador es 1/(1−c) = 3,33 y los 30 se vuelven 100. La transferencia, en cambio, primero cae en el bolsillo de la gente, que gasta solo la fracción c: su multiplicador es c/(1−c) = 2,33 y los mismos 30 se vuelven 70. La diferencia es justamente la parte que se ahorra en la primera vuelta."
+    }
+  ]
+}

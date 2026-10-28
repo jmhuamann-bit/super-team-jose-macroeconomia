@@ -212,6 +212,14 @@ const TEMAS_MUSICA = {
               "F4",2,"E4",2,"D4",4],
     bajo:    ["D2",4,"A2",4,"D2",4,"G2",4,"A2",4,"D2",4,"A2",4,"D2",4],
   },
+  moscu: { // Rusia: aire de danza eslava en menor, que arranca pesado y se va apurando
+    tempo: 0.23, onda: "square",
+    melodia: ["A3",4,"C4",2,"E4",2,"A4",4,"G#4",2,"A4",2,
+              "B4",4,"A4",2,"G4",2,"F4",4,"E4",4,
+              "E4",2,"F4",2,"G4",2,"A4",2,"B4",2,"C5",2,"B4",4,
+              "A4",2,"G#4",2,"A4",2,"E4",2,"A3",4,"A3",4],
+    bajo:    ["A1",8,"E2",8,"F2",4,"G2",4,"A1",4,"E2",4,"A1",8],
+  },
   manhattan: { // Estados Unidos: swing de ciudad, con el bajo caminando y la melodía recostada
     tempo: 0.21, onda: "triangle",
     melodia: ["C4",2,"E4",2,"G4",2,"A4",2,"Bb4",4,"A4",2,"G4",2,

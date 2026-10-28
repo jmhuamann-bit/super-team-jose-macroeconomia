@@ -1,0 +1,42 @@
+{
+  "id": "level31",
+  "distrito": "Rusia",
+  "clase": "Clase 02 · PC4",
+  "titulo": "El país de las muñecas una dentro de la otra",
+  "tema": "moscu",
+  "musica": "moscu",
+  "vehiculo": "troika",
+  "intro": "Segunda clase de la PC4, y es la más mecánica: la receta completa de OA-DA, en CINCO FASES, más la intuición de por qué cada curva es como es. Toca Rusia, y el país pone la imagen que mejor explica toda la clase: la matrioshka. Una muñeca adentro de la otra es exactamente la relación entre el corto y el largo plazo — el corto está metido dentro del largo, y cuando lo abrís aparece el mismo problema en otra escala. Las cinco fases van en orden y no se saltea ninguna: primero la demanda agregada, después la oferta de largo plazo, después la de corto, después mirar si hay brecha, y recién al final la política que la cierra. Y la intuición, que es lo que separa un 15 de un 19: por qué la de largo es vertical (dicotomía clásica) y por qué la de corto sube (tres teorías, y con una sola alcanza).",
+  "repaso": [
+    "LAS CINCO FASES, EN ORDEN Y SIN SALTEAR: (1) hallar la demanda agregada, (2) la oferta agregada de largo plazo, (3) la de corto plazo, (4) determinar si hay brecha recesiva o inflacionaria, y (5) aplicar la política que la cierre.",
+    "FASE 1 — LA DA POR COMPONENTES: Y = C + I + G + XN. El consumo es C₀ + c(Y − T), con c = 1 − PMgS. Como la Y aparece a los dos lados, hay que DESPEJARLA: todo lo demás queda dividido entre (1 − c).",
+    "LOS IMPUESTOS SUELEN TRAER DOS PARTES: uno fijo y otro que depende del precio (T = 20 + 3P, por ejemplo). Ese segundo pedazo es el que le da pendiente a la demanda agregada.",
+    "DOS AVISOS DEL APUNTE. Si una variable es CONTRACÍCLICA el signo es «−», y si es PROCÍCLICA el signo es «+». Y cuando te hablan de «sensibilidad», se refieren al COEFICIENTE de la variable.",
+    "FASE 1, SEGUNDA FORMA (la rara): la teoría cuantitativa. Con MV = PY y los datos de M y V, la demanda agregada sale directo: Y = MV/P.",
+    "FASE 2 — LA OA DE LARGO PLAZO, en dos pasos: equilibrio del mercado laboral (donde solo importa el L) y ese L dentro de la función de producción. Acordate de que la DEMANDA de trabajo ES el producto marginal: w/p = PMgL. El resultado no depende de P, así que la curva es VERTICAL.",
+    "FASE 3 — LA OA DE CORTO PLAZO, en tres pasos, y acá solo se usa la DEMANDA laboral. (1) El salario rígido: W = (w/p) × P con los valores del equilibrio. (2) Ese W entra en la demanda laboral y se despeja el L, que queda en función de P. (3) Ese L entra en la función de producción. La curva sale con pendiente POSITIVA.",
+    "FASE 4 — LAS DOS BRECHAS, y lo que las define es dónde queda el producto frente al POTENCIAL, no el precio. BRECHA RECESIVA: el corto plazo produce por debajo del pleno empleo (rigidez a la baja). BRECHA INFLACIONARIA: produce por encima (rigidez a la alta).",
+    "FASE 5 — POLÍTICA FISCAL, cuando la DA vino de C + I + G + XN. Se copia la demanda agregada dejando el G como incógnita, se meten adentro el P e Y del punto de quiebre, y se despeja. Lo que sale es el gasto que HACE FALTA; la variación es ese número menos el gasto inicial.",
+    "FASE 5 — POLÍTICA MONETARIA, cuando la DA vino de MV = PY. Se meten el P e Y del quiebre y la velocidad en MV = PY y se despeja la M. Lo que el banco central agrega es la diferencia con la cantidad que ya había: no confundas el stock final con lo que se inyecta.",
+    "POR QUÉ LA OA LP ES VERTICAL: por la DICOTOMÍA CLÁSICA, que dice que las variables nominales y las reales se analizan por separado, y por la NEUTRALIDAD DEL DINERO, que es el caso puntual. Lo que sí mueve el producto de largo plazo son los factores de crecimiento: capital, trabajo, capital humano, recursos y tecnología.",
+    "POR QUÉ LA OA CP TIENE PENDIENTE POSITIVA: TRES TEORÍAS, y con una sola alcanza. (1) Salarios rígidos: el contrato ya está firmado. (2) Precios rígidos, por el COSTO DE MENÚ: al centro comercial le cuesta reetiquetar todo y a la bodega no. (3) Percepciones erróneas: el gerente confunde una suba general de precios con que su producto se valorizó.",
+    "EL EJEMPLO QUE RECORRE LAS CINCO FASES: Ld = 120 − 4(W/P), Ls = 15 + 3(W/P), Y = 2LK con K = 4. Da w/p = 15, L = 60 y una OA LP vertical en Y = 480. Con C₀ = 60, PMgS = 0,3, I = 80, G = 120 y T = 20 + 3P, la DA es Y = 820 − 7P, y el pleno empleo cae en P = 48,57. Con un salario rígido de 250, la OA CP es Y = 960 − 8000/P."
+  ],
+  "mapa": [
+    "                                                                                                                                                                                    ",
+    "                                                                                                                                                                                    ",
+    "                                                                                                                                                                                    ",
+    "                                                                                                                                                                                    ",
+    "                                                    AA                                                                                                                              ",
+    "                                                   o o                                                                                                                              ",
+    "                                                                                                                                                                                    ",
+    "                                                  ======                                           o                   o     o     o           o   o               o  o  o  o       ",
+    "                                    ?                                 o     o     o              oo oo               oo Go oo oo oo oo     o           o                            ",
+    "                           o     o                                                                                                            ========            ======o=o=o===    ",
+    "                           E                                         ###   ###   ###                                                      ====        ====                          ",
+    "  P         C       C    ===== =====           T           E         ###   ###   ### E       C           E            X E   X     X                      E   1        B         M   ",
+    "################# #####              #############################################################  ################################################################################",
+    "################# #####              #############################################################  ################################################################################",
+    "################# #####              #############################################################  ################################################################################"
+  ]
+}

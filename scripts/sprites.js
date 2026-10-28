@@ -3178,6 +3178,155 @@ const BUSAMARILLO = [    // el bus escolar amarillo, que es el vehículo de sali
 ];
 const P_BUSAMARILLO = { k: "#1e1a10", a: "#e8b41c", n: "#2a2620", v: "#9fc2cc", r: "#c0392b", g: "#9a9aa2" };
 
+const SAMOVAR = [    // el samovar: arma la demanda agregada sin despejar la Y que aparece de los dos lados (18 × 14)
+  ".....kooooook.....",
+  ".....kooooook.....",
+  "......kooook......",
+  ".....kkmmmmkk.....",
+  "....kmmmmmmmmk....",
+  "..kkddddddddddkk..",
+  ".kommmmmmmmmmmmok.",
+  ".koommmmmmmmooook.",
+  ".koommmmmmmmooook.",
+  ".koodddddddddoook.",
+  "..kkkmmmmmmmmokk..",
+  "...kmmmmmmmmmmk...",
+  "..kooooooooooook..",
+  "..kooooooooooook..",
+];
+const P_SAMOVAR = { k: "#2e2014", m: "#c2922c", o: "#8a6a24", d: "#9a7420" };
+
+const OSO = [    // el oso: se olvida de que la demanda de trabajo ES el producto marginal (18 × 14)
+  "....k..kkkk..k....",
+  "...knkknnnnkknk...",
+  "..knnnnnnnnnnnnk..",
+  ".knnnnnnnnnnnnnnk.",
+  "..knnnknnnnknnnk..",
+  "...knnnnnnnnnnk...",
+  "...knnnhhhhnnnk...",
+  "...knnhhkkhhnnk...",
+  "....knnhhhhnnk....",
+  "....kknnnnnnkk....",
+  "...knnnnhhnnnnk...",
+  "..knnnhhhhhhnnnk..",
+  "..knnnhhhhhhnnnk..",
+  "..knnnhhhhhhnnnk..",
+];
+const P_OSO = { k: "#231a12", n: "#7a5434", h: "#b5906a" };
+
+const MATRIOSHKA = [    // la matrioshka: una dentro de la otra, igual que el corto plazo dentro del largo (18 × 14)
+  "....kaaaaaaaak....",
+  "....kaaaaaaaak....",
+  "...kaaarppraaak...",
+  "...kaaappppaaak...",
+  "...kaaakppkaaak...",
+  "...krrppccpprrk...",
+  "..krrrrrpprrrrrk..",
+  "..krrrwwwwwwrrrk..",
+  "..krrrwwaawwrrrk..",
+  "..krrrwwaawwrrrk..",
+  "..krrrwwaawwrrrk..",
+  "...krrwwwwwwrrk...",
+  "....krrrrrrrrk....",
+  ".....krrrrrrk.....",
+];
+const P_MATRIOSHKA = { k: "#2a1a18", r: "#c0392b", p: "#e8c4a0", a: "#e8b43c", w: "#f2ece0", c: "#d9736a" };
+
+const TERMOMETRO = [    // el termómetro: no distingue una brecha recesiva de una inflacionaria (18 × 14)
+  "......kvvvvk......",
+  "....kkkvrrvkkk....",
+  "...keeevrrveeek...",
+  "....kkkvrrvkkk....",
+  "...keeevrrveeek...",
+  "....kkkvrrvkkk....",
+  "...keeevrrveeek...",
+  "....kkkvrrvkkk....",
+  "......kvrrvk......",
+  ".....kvvvvvvk.....",
+  ".....kvrrrrvk.....",
+  ".....kvrrrrvk.....",
+  ".....kvrrrrvk.....",
+  ".....kvvvvvvk.....",
+];
+const P_TERMOMETRO = { k: "#2a2a30", v: "#dfe6ea", r: "#c0392b", e: "#8a929a" };
+
+const AJEDREZ = [    // la torre: no sabe cuánto hay que mover el gasto para llegar al punto de quiebre (18 × 14)
+  "..kmmkkmkkmkkmmk..",
+  "..kmmkkmkkmkkmmk..",
+  "..kmmmmmmmmmmmmk..",
+  "...kmmmmmmmmmmk...",
+  "...kmmmmmmmmmmk...",
+  "....kmdmmdmmdk....",
+  "....kmdmmdmmdk....",
+  "....kmdmmdmmdk....",
+  "....kmdmmdmmdk....",
+  "....kmdmmdmmdk....",
+  "....kmdmmdmmdk....",
+  "...kmmmmmmmmmmk...",
+  "...kmmmmmmmmmmk...",
+  "..kmmmmmmmmmmmmk..",
+];
+const P_AJEDREZ = { k: "#0e0e12", m: "#3a3a44", d: "#22222a" };
+
+const SPUTNIK = [    // el sputnik: no sabe cuánto dinero tiene que soltar el banco central (18 × 14)
+  ".k...............k",
+  "kakk...........kka",
+  ".kaakk.......kkaak",
+  "..kkaakkkkkkkaakk.",
+  "....kkadmmddakk...",
+  "....kdmbbmmmdk....",
+  "....kdmmmmmmdk....",
+  "....kdmmmmmmdk....",
+  "....kdmmmmmmdk....",
+  "....kdmmmmmmdk....",
+  "....kkadmmddakk...",
+  "..kkaakkkkkkkaakk.",
+  ".kaakk.......kkaak",
+  "kakk...........kka",
+];
+const P_SPUTNIK = { k: "#0e0e14", m: "#5a6470", d: "#38404a", a: "#8a96a4", b: "#cfd8e0" };
+
+const ZAR = [    // jefe: el zar, que decreta la respuesta en vez de explicar de dónde sale (18 × 17)
+  "....kroorooork....",
+  "....kooooooook....",
+  "...kfoooooooofk...",
+  "...kffffffffffk...",
+  "...kffffffffffk...",
+  "....kkppppppkk....",
+  ".....kpkppkpk.....",
+  ".....kppppppk.....",
+  "...kkkppppppkkk...",
+  "..krrrwwwwwwrrrk..",
+  ".kpprowwwwwwrrppk.",
+  ".kpprowwwwwwrrppk.",
+  ".kpprowwwwwwrrppk.",
+  ".kpprowwwwwwrrppk.",
+  "..krrowwwwwwrrrk..",
+  "..krrorrrrorrrrk..",
+  "..krrorrrrorrrrk..",
+];
+const P_ZAR = { k: "#1e1612", f: "#5a4430", o: "#e8c45a", p: "#d9a273", w: "#f2ece0", r: "#8a2a3a" };
+
+const TROIKA = [    // la troika, que es el vehículo de salida del distrito (32 × 16)
+  ".........kcccckk................",
+  ".........kcccccck...............",
+  "........knnncckck...............",
+  "........knnnccccck...........kk.",
+  "........knnnccccck..........kmmk",
+  "..kkkkkkknnnckkkk...........kmmk",
+  ".knncccccnnnck...kkkkkkkkkkkkmmk",
+  ".knnccccccccckk.koooooooooooommk",
+  ".knnccccccccnnnkkmmmmmmmmmmmmmmk",
+  ".knncccccccckkknnnmmmmmmmmmmmmk.",
+  "..kccccccccck..kkmmmmmmmmmmmmmk.",
+  "...kckckkckck.knnmmmmmmmmmmmmmkk",
+  "...kckckkckck.knnnnnnnnnnnnnnnnn",
+  "...kckckkckck..knnnnnnnnnnnnnnnn",
+  "...kckckkckck...kkkkkkkkkkkkkkkk",
+  "....k.k..k.k....................",
+];
+const P_TROIKA = { k: "#1e1a16", c: "#8a6a4a", n: "#3a2e24", m: "#8a2a3a", o: "#e8c45a" };
+
 /* ---------------------------------------------------------------
    REGISTRO Y COCINADO
    --------------------------------------------------------------- */
@@ -3360,6 +3509,14 @@ const DEFINICIONES = {
   fichador:     [FICHADOR, P_FICHADOR],
   aguila:       [AGUILA, P_AGUILA],
   busamarillo:  [BUSAMARILLO, P_BUSAMARILLO],
+  samovar:      [SAMOVAR, P_SAMOVAR],
+  oso:          [OSO, P_OSO],
+  matrioshka:   [MATRIOSHKA, P_MATRIOSHKA],
+  termometro:   [TERMOMETRO, P_TERMOMETRO],
+  ajedrez:      [AJEDREZ, P_AJEDREZ],
+  sputnik:      [SPUTNIK, P_SPUTNIK],
+  zar:          [ZAR, P_ZAR],
+  troika:       [TROIKA, P_TROIKA],
 };
 
 const cocidos = {};   // nombre -> { canvas, ancho, alto } (ya escalados)

@@ -469,6 +469,20 @@
       "abierto": true,
       "mapa": "levels/level30.json",
       "preguntas": "questions/level30_questions.json"
+    },
+    {
+      "id": "level31",
+      "clase": "Clase 02",
+      "distrito": "Rusia",
+      "titulo": "El país de las muñecas una dentro de la otra",
+      "icono": "❄️",
+      "seccion": "PC4",
+      "seccionNota": "Oferta y demanda agregada — y seguimos dando la vuelta al mundo",
+      "retos": 7,
+      "duracion": "3 min",
+      "abierto": true,
+      "mapa": "levels/level31.json",
+      "preguntas": "questions/level31_questions.json"
     }
   ]
 }
