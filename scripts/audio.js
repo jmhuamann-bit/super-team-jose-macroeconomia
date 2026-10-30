@@ -212,6 +212,14 @@ const TEMAS_MUSICA = {
               "F4",2,"E4",2,"D4",4],
     bajo:    ["D2",4,"A2",4,"D2",4,"G2",4,"A2",4,"D2",4,"A2",4,"D2",4],
   },
+  bosforo: { // Turquía: aire de bazar en modo hiyaz, con el segundo grado bajo
+    tempo: 0.20, onda: "square",
+    melodia: ["D4",2,"Eb4",2,"F#4",2,"G4",2,"A4",4,"G4",2,"F#4",2,
+              "Eb4",2,"D4",2,"Eb4",2,"F#4",2,"G4",4,"A4",4,
+              "Bb4",2,"A4",2,"G4",2,"F#4",2,"Eb4",2,"D4",2,"D4",4,
+              "A4",2,"G4",2,"F#4",2,"Eb4",2,"D4",4,"D4",4],
+    bajo:    ["D2",8,"A1",8,"Bb1",4,"A1",4,"D2",8,"D2",8],
+  },
   moscu: { // Rusia: aire de danza eslava en menor, que arranca pesado y se va apurando
     tempo: 0.23, onda: "square",
     melodia: ["A3",4,"C4",2,"E4",2,"A4",4,"G#4",2,"A4",2,

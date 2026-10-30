@@ -1,0 +1,125 @@
+{
+  "nivel": "level32",
+  "clase": "Clase 03 · PC4 — Desplazamientos y multiplicador keynesiano",
+  "fuente": "Apuntes de la Clase 03 de la PC4 — Desplazamientos y multiplicador keynesiano (Economía General II)",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "m32-q1",
+      "nivel": "comprension",
+      "enunciado": "Tres cosas distintas pueden correr la demanda agregada entera.\n\n¿Cuáles son?",
+      "opciones": [
+        "Las expectativas (C e I), la política fiscal y monetaria, y la economía mundial",
+        "El nivel de precios, la cantidad producida y el salario real de la economía",
+        "Los factores de crecimiento: capital, capital humano, recursos naturales y tecnología",
+        "Solo la política monetaria: lo demás mueve el punto a lo largo de la curva"
+      ],
+      "correcta": 0,
+      "explicacion": "Son los tres factores de siempre. Las EXPECTATIVAS mueven consumo e inversión. La POLÍTICA FISCAL Y MONETARIA mueve el gasto y la cantidad de dinero. Y la ECONOMÍA MUNDIAL mueve las exportaciones netas, por el ingreso del resto del mundo y por el tipo de cambio nominal. El nivel de precios NO está en la lista: ese solo corre el punto sobre la misma curva."
+    },
+    {
+      "id": "m32-q2",
+      "nivel": "comprension",
+      "enunciado": "Llega una ola de inmigrantes y la economía suma trabajadores.\n\n¿Qué pasa con la oferta agregada de largo plazo y con la función de producción?",
+      "opciones": [
+        "No pasa nada en ninguna: el número de trabajadores no es un factor de crecimiento",
+        "Se desplazan las dos: la OA LP a la derecha y también la función de producción",
+        "Se desplaza la OA LP a la derecha, y sobre la función de producción se MUEVE a lo largo",
+        "Se desplaza solo la función de producción; la OA LP la fija la tasa natural de desempleo"
+      ],
+      "correcta": 2,
+      "explicacion": "Conviene separar los dos gráficos. El equilibrio del mercado laboral se mueve —hay más gente— y eso corre la OA LP hacia la derecha. Pero la FUNCIÓN DE PRODUCCIÓN no se desplaza: sumar trabajadores es moverse A LO LARGO de ella. A la función la corren los determinantes del crecimiento: tecnología, capital, capital humano y recursos naturales."
+    },
+    {
+      "id": "m32-q3",
+      "nivel": "comprension",
+      "enunciado": "La oferta agregada de corto plazo se mueve por todo lo que mueve a la de largo plazo, más un factor que es solo suyo.\n\n¿Cuál es ese factor extra?",
+      "opciones": [
+        "La tasa natural de desempleo, que junta la parte friccional con la estructural",
+        "El número de trabajadores, que en el corto plazo todavía no alcanza a ajustarse",
+        "Los cambios TEMPORALES en los costos, como el precio del petróleo o el gas",
+        "El nivel de precios, que es lo único que distingue al corto plazo del largo"
+      ],
+      "correcta": 2,
+      "explicacion": "La OA de corto plazo hereda todo lo de la de largo —equilibrio laboral, factores de crecimiento, tasa natural de desempleo— y le suma uno propio: los costos de producción que cambian de forma TEMPORAL. El petróleo y las materias primas son el ejemplo clásico. Como el cambio es pasajero, no toca el producto potencial: por eso mueve la de corto y no la de largo."
+    },
+    {
+      "id": "m32-q4",
+      "nivel": "aplicacion",
+      "enunciado": "Pregunta de examen: acaba de subir el precio del flete de forma TEMPORAL.\n\n¿Qué curva se mueve?",
+      "opciones": [
+        "La demanda agregada, porque transportar más caro desalienta la inversión",
+        "La oferta agregada de largo plazo, porque el transporte es parte de la capacidad",
+        "Ninguna: un cambio temporal no mueve ninguna curva, solo corre el punto",
+        "La oferta agregada de corto plazo: es un costo de producción que subió un rato"
+      ],
+      "correcta": 3,
+      "explicacion": "La pregunta que hay que hacerse es cuál. Si es «¿conviene comprar maquinaria?», eso es INVERSIÓN y va en la demanda agregada; el ejemplo típico es la tasa de interés. Si es «¿conviene producir más?», eso es un costo y va en la OFERTA de corto plazo; el ejemplo típico es el petróleo. El flete es un costo de producir y la suba es temporal: OA de corto plazo."
+    },
+    {
+      "id": "m32-q5",
+      "nivel": "comprension",
+      "enunciado": "Un shock corre la demanda agregada y la economía queda produciendo por encima de su potencial. Nadie interviene.\n\n¿Qué pasa con el tiempo?",
+      "opciones": [
+        "Se queda ahí: sin intervención no hay nada que devuelva la economía al potencial",
+        "Los contratos se renegocian, la OA de corto se corre y el producto vuelve solo",
+        "La demanda agregada vuelve sola a su lugar, porque las expectativas se corrigen",
+        "El potencial sube hasta el nuevo nivel, y ese pasa a ser el nuevo pleno empleo"
+      ],
+      "correcta": 1,
+      "explicacion": "Ese es el ajuste automático. Lo que sostenía a la OA de corto plazo era que los salarios y los precios estaban trabados. Cuando pasa el tiempo suficiente, los contratos se renegocian, la curva de corto plazo se corre y la economía termina de vuelta en el producto potencial, con un precio más alto. Lo que vuelve es el PRODUCTO; el nivel de precios se queda arriba."
+    },
+    {
+      "id": "m32-q6",
+      "nivel": "aplicacion",
+      "enunciado": "El punto de quiebre entre las dos ofertas está en P = 30 e Y = 30. La demanda agregada es Y = −P + 5 + G, y hoy el gasto es G = 5.\n\n¿Qué política hace falta y de cuánto?",
+      "opciones": [
+        "Expansiva de 50: se necesita G = 55 para que la DA pase por ese punto",
+        "Expansiva de 55, que es el gasto que hay que poner para llegar al quiebre",
+        "Contractiva de 50: con el gasto actual la demanda ya pasa por encima del punto",
+        "Ninguna: con G = 5 la demanda ya cruza justo en el punto de quiebre"
+      ],
+      "correcta": 0,
+      "explicacion": "Se deja el G como incógnita y se le pide a la demanda que pase por el punto: 30 = −30 + 5 + G, de donde G = 55. Pero eso es el gasto que HACE FALTA, no la política. La política es la VARIACIÓN: 55 − 5 = 50, y como hay que subirlo, es expansiva. Confundir el nivel final con el cambio es el error que más se repite en esta fase."
+    },
+    {
+      "id": "m32-q7",
+      "nivel": "comprension",
+      "enunciado": "En el largo plazo la inflación esperada coincide con la efectiva, y en el corto no.\n\n¿Qué tiene que ver eso con la forma de las dos ofertas agregadas?",
+      "opciones": [
+        "Nada: las expectativas de inflación no entran en el modelo de oferta y demanda agregada",
+        "Las dos curvas suben, pero la de largo plazo lo hace mucho más despacio",
+        "En el corto todo se ajusta y por eso la curva sube; en el largo nada se ajusta",
+        "En el largo todo se ajusta y πᵉ = π; en el corto πᵉ ≠ π y de ahí la pendiente"
+      ],
+      "correcta": 3,
+      "explicacion": "Es la misma idea dicha con otras palabras. En el LARGO plazo los precios y los salarios son flexibles: el contrato se renegocia, todo se ajusta y la inflación esperada termina igualando a la efectiva. Con πᵉ = π no queda nada que mover: la curva es vertical. En el CORTO plazo no da el tiempo para renegociar, πᵉ ≠ π, y esa diferencia es justamente lo que le da pendiente positiva."
+    },
+    {
+      "id": "m32-q8",
+      "nivel": "aplicacion",
+      "enunciado": "La propensión marginal a consumir es 0,75 y el gobierno sube el gasto en 25.\n\n¿Cuánto se desplaza la demanda agregada?",
+      "opciones": [
+        "25, que es exactamente lo que el gobierno agregó al gasto de la economía",
+        "100: el multiplicador es 1/(1−0,75) = 4, y 25 por 4 da ese desplazamiento",
+        "18,75, que es la parte del gasto que efectivamente se consume en la economía",
+        "No se puede saber sin conocer antes la pendiente de la oferta agregada"
+      ],
+      "correcta": 1,
+      "explicacion": "Ese es el multiplicador keynesiano, y es pura cadena: el gobierno gasta 25, ese ingreso cae en alguien que gasta el 75%, el que lo recibe vuelve a gastar el 75%, y así. La suma de toda la cadena es 25 × 1/(1−0,75) = 25 × 4 = 100. Y el dato clave: esos 100 son cuánto se CORRE la curva en horizontal, medidos a un mismo nivel de precios."
+    },
+    {
+      "id": "m32-q9",
+      "nivel": "aplicacion",
+      "enunciado": "La economía estaba en pleno empleo con OA LP: Y = 400, OA CP: Y = 10P y DA: Y = 1000 − 15P. La demanda se corre esos 100.\n\n¿Cuánto sube el producto?",
+      "opciones": [
+        "100 en los dos plazos: el desplazamiento de la curva es la suba del producto",
+        "100 en el corto y 40 en el largo, porque el ajuste se come una parte del empujón",
+        "40 en el corto plazo y CERO en el largo: el resto del empujón se va a precios",
+        "Cero en los dos plazos, porque la oferta de largo plazo es vertical desde el principio"
+      ],
+      "correcta": 2,
+      "explicacion": "Acá está la gracia de la clase: el multiplicador dice cuánto se corre la DA, no cuánto sube el producto. Eso depende de con qué oferta se cruce. En el CORTO plazo, 10P = 1100 − 15P da P = 44 e Y = 440: subió 40 de los 100. En el LARGO manda la vertical, así que Y vuelve a 400 y el precio trepa a 46,67. Cuanto más empinada la oferta, más del empujón termina en precios."
+    }
+  ]
+}

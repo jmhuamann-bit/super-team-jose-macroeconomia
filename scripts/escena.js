@@ -304,6 +304,13 @@ const FICHAS = [
   { sprite: "ajedrez", nombre: "La Torre que No Mide el Gasto", texto: "Para la política fiscal hay que copiar la demanda agregada dejando el G como incógnita, meter el P e Y del quiebre y despejar. Recién ahí se resta el gasto inicial." },
   { sprite: "sputnik", nombre: "El Sputnik del Dinero Mal Contado", texto: "Confunde la cantidad total de dinero que debe quedar con lo que el banco central tiene que inyectar. Lo segundo es la diferencia con lo que ya había." },
   { sprite: "zar", nombre: "El Zar que Decreta la Respuesta", texto: "Jefe de Rusia: decreta que la oferta de corto plazo sube, pero no sabe decir por cuál de las tres teorías — salarios rígidos, costo de menú o percepciones." },
+  { sprite: "aerostato", nombre: "El Aerostato de los Tres Factores", texto: "Turquía: no ubica las tres cosas que corren la demanda agregada entera — las expectativas, la política fiscal y monetaria, y la economía mundial." },
+  { sprite: "alfombra", nombre: "La Alfombra que Se Mueve de Más", texto: "Cree que sumar trabajadores desplaza la función de producción. No: sobre ella solo se MUEVE a lo largo. Lo que sí corre es la oferta de largo plazo." },
+  { sprite: "lampara", nombre: "La Lámpara del Costo Pasajero", texto: "No ubica el factor que mueve SOLO a la oferta de corto plazo: los costos de producción que cambian de forma temporal, como el petróleo." },
+  { sprite: "romana", nombre: "La Romana que Pesa Mal el Shock", texto: "Pesa en la demanda lo que va en la oferta. La pregunta que desempata es si la noticia habla de COMPRAR maquinaria o de PRODUCIR más." },
+  { sprite: "derviche", nombre: "El Derviche del Ajuste Automático", texto: "Gira y vuelve al mismo punto, igual que la economía: con el tiempo los contratos se renegocian y el producto regresa solo al potencial." },
+  { sprite: "vaso", nombre: "El Vaso que No Mide la Política", texto: "Calcula el gasto que hace falta y se queda ahí. La política es la VARIACIÓN: el gasto nuevo menos el que ya había." },
+  { sprite: "sultan", nombre: "El Sultán que Confunde Correr con Subir", texto: "Jefe de Turquía: cree que si la demanda se corre 100, el producto sube 100. Depende de con qué oferta se cruce — y en el largo plazo sube cero." },
 ];
 
 export function galeriaPersonajes(contenedor) {

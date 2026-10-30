@@ -1,0 +1,42 @@
+{
+  "id": "level32",
+  "distrito": "Turquía",
+  "clase": "Clase 03 · PC4",
+  "titulo": "El país del bazar donde cada moneda da varias vueltas",
+  "tema": "bosforo",
+  "musica": "bosforo",
+  "vehiculo": "ferry",
+  "intro": "Tercera clase de la PC4: qué cosa corre cada curva, cómo la economía vuelve sola a su sitio, y el multiplicador keynesiano. Toca Turquía porque el Gran Bazar es el multiplicador caminando: pagás una alfombra, el vendedor con esa plata se toma un té, el del té le compra especias al de al lado, y así sigue la cadena. Cada uno se queda con una parte y pasa el resto. Eso es todo el multiplicador — la suma de la cadena entera, que con una propensión a consumir de 0,75 da cuatro veces el empujón inicial. Y la advertencia que vale la clase entera: ese número te dice cuánto se CORRE la demanda agregada, no cuánto sube el producto. Lo segundo depende de con qué oferta se cruce, y en el largo plazo —donde la oferta es vertical— sube cero: todo el empujón termina en precios.",
+  "repaso": [
+    "QUÉ DESPLAZA LA DEMANDA AGREGADA, tres factores: las EXPECTATIVAS (que mueven C e I), la POLÍTICA FISCAL Y MONETARIA (que mueve G y la cantidad de dinero) y la ECONOMÍA MUNDIAL (que mueve XN por el ingreso del resto del mundo y por el tipo de cambio nominal).",
+    "QUÉ DESPLAZA LA OA DE LARGO PLAZO: cambios en el equilibrio del MERCADO LABORAL, que a su vez se mueve por los factores de crecimiento (K, H, N, A) o por el número de trabajadores. Si se mueve el equilibrio laboral, se mueve la OA LP automáticamente.",
+    "Y EL SEGUNDO FACTOR DE LA OA LP: la TASA NATURAL DE DESEMPLEO, que junta la parte friccional con la estructural.",
+    "OJO CON LOS DOS GRÁFICOS. A la FUNCIÓN DE PRODUCCIÓN la desplazan A, K, H y los recursos naturales. Sumar TRABAJADORES no la desplaza: solo mueve el punto A LO LARGO de ella. Pero sí corre la OA de largo plazo, porque cambió el equilibrio laboral.",
+    "QUÉ DESPLAZA LA OA DE CORTO PLAZO: todo lo que mueve a la de largo plazo, MÁS un factor propio — los cambios TEMPORALES en los costos de producción, y las expectativas de inflación. El ejemplo de siempre: el precio del petróleo y el de las materias primas.",
+    "LA PREGUNTA QUE DESEMPATA, porque es la que más cae: ¿la noticia habla de COMPRAR maquinaria o de PRODUCIR más? Si es «¿tengo incentivos para invertir?» (por ejemplo, la tasa de interés), va en la DEMANDA. Si es «¿me conviene producir?» (por ejemplo, el flete o el petróleo más caro un rato), va en la OFERTA de corto plazo.",
+    "EL AJUSTE AUTOMÁTICO, sin que nadie intervenga: si la economía queda fuera del potencial, con el tiempo los contratos se renegocian, la OA de corto plazo se corre y el producto vuelve al pleno empleo. Lo que vuelve es el PRODUCTO; el nivel de precios se queda donde llegó.",
+    "EL AJUSTE CON INTERVENCIÓN: el gobierno mueve el gasto o el banco central mueve el dinero para empujar la demanda hasta el punto de quiebre, sin esperar a que los contratos se renegocien solos.",
+    "POR QUÉ LA OA LP ES VERTICAL, dicho con expectativas: en el largo plazo los precios y los salarios son flexibles, todo se ajusta, y la inflación esperada termina igualando a la efectiva (πᵉ = π). Con eso no queda nada por mover.",
+    "POR QUÉ LA OA CP SUBE, dicho con expectativas: en el corto no da el tiempo para renegociar el contrato, así que nada se ajusta y πᵉ ≠ π. Esa diferencia es la que le da la pendiente.",
+    "LA REGLA DE LOS PORCENTAJES, con la velocidad constante: %ΔM + %ΔV = %ΔP + %ΔY, y como %ΔV = 0, queda %ΔM = %ΔP + %ΔY. En el LARGO plazo %ΔY = 0, así que toda la emisión termina en precios.",
+    "EL MULTIPLICADOR KEYNESIANO es la suma de la cadena: el gobierno gasta, el que recibe gasta la fracción c, el siguiente otra vez la fracción c. Todo eso suma 1/(1−c). Con c = 0,75 el multiplicador es 4, así que un ΔG de 25 CORRE la demanda agregada 100 en horizontal.",
+    "Y LA ADVERTENCIA QUE VALE LA CLASE: ese 100 es cuánto se corre la CURVA, no cuánto sube el producto. Con OA LP en 400, OA CP Y = 10P y DA Y = 1000 − 15P, el corto plazo da P = 44 e Y = 440 —sube 40— y el largo plazo devuelve Y a 400 con P = 46,67 —sube cero—. Cuanto más empinada la oferta, más del empujón se va a precios."
+  ],
+  "mapa": [
+    "                                                                                                                                                                                    ",
+    "                                                                                                                                                                                    ",
+    "                                                                                                                                                                                    ",
+    "                                                                                                                                                                                    ",
+    "                                                                                                        AA                                                                          ",
+    "                                                     o o                                               o o                                                                          ",
+    "                                                      E                                                                                                                             ",
+    "                           o   o              o o   ======                                            ======               o     o     o                                            ",
+    "                       o           o?                                     o     o     o                                 Goo oo oo oo oo oo       o                                  ",
+    "                          ========           ======                                                                                            oo oo                   oo o oo      ",
+    "                      ====        ====                                   ###   ###   ###                                                                                            ",
+    "  P         C                        E                        C          ###   ###   ### E         T           E          X E   X     X               E      1  C    =B=== =====M   ",
+    "################# #################################################################################################################################################              ###",
+    "################# #################################################################################################################################################              ###",
+    "################# #################################################################################################################################################              ###"
+  ]
+}
