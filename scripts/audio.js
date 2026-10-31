@@ -220,6 +220,14 @@ const TEMAS_MUSICA = {
               "A4",2,"G4",2,"F4",2,"Eb4",2,"D4",2,"Eb4",2,"D4",4],
     bajo:    ["D2",8,"D2",8,"A1",8,"D2",8,"D2",8,"A1",8,"D2",8,"D2",8],
   },
+  londres: { // Reino Unido: aire de hornpipe en mixolidio sobre G, con el bajo de marcha
+    tempo: 0.18, onda: "square",
+    melodia: ["G4",2,"B4",2,"D5",2,"B4",2,"C5",2,"A4",2,"B4",4,
+              "D4",2,"G4",2,"A4",2,"B4",2,"A4",2,"G4",2,"F4",4,
+              "G4",2,"B4",2,"D5",2,"E5",2,"D5",2,"C5",2,"B4",4,
+              "C5",2,"B4",2,"A4",2,"G4",2,"F4",2,"A4",2,"G4",4],
+    bajo:    ["G2",8,"C3",8,"G2",8,"F2",8,"G2",8,"C3",8,"F2",8,"G2",8],
+  },
   bosforo: { // Turquía: aire de bazar en modo hiyaz, con el segundo grado bajo
     tempo: 0.20, onda: "square",
     melodia: ["D4",2,"Eb4",2,"F#4",2,"G4",2,"A4",4,"G4",2,"F#4",2,

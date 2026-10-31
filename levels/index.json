@@ -511,6 +511,20 @@
       "abierto": true,
       "mapa": "levels/level33.json",
       "preguntas": "questions/level33_questions.json"
+    },
+    {
+      "id": "level34",
+      "clase": "Clase 05",
+      "distrito": "Reino Unido",
+      "titulo": "El país donde dos curvas se cruzan como las agujas del reloj",
+      "icono": "🕰",
+      "seccion": "PC4",
+      "seccionNota": "Oferta y demanda agregada — y seguimos dando la vuelta al mundo",
+      "retos": 7,
+      "duracion": "3 min",
+      "abierto": true,
+      "mapa": "levels/level34.json",
+      "preguntas": "questions/level34_questions.json"
     }
   ]
 }

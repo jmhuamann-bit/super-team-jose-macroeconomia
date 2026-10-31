@@ -318,6 +318,13 @@ const FICHAS = [
   { sprite: "samosa", nombre: "La Samosa que Cree que Todo Da Igual", texto: "Dice que el mismo gasto rinde lo mismo en cualquier país. Con una PMgC de 0,9 el multiplicador es 10; con una de 0,3, apenas 1,43." },
   { sprite: "colador", nombre: "El Colador que No Cuenta las Filtraciones", texto: "Deja pasar los impuestos y las importaciones como si no se escapara nada. Con c = 0,8 el multiplicador era 5; con un impuesto del 25% cae a 2,5." },
   { sprite: "maharaja", nombre: "El Marajá que Reparte y No Rinde", texto: "Jefe de India: reparte transferencias creyendo que pegan igual que el gasto. El gasto entra entero y levanta 200; la transferencia pasa por el bolsillo y levanta 160." },
+  { sprite: "paraguas", nombre: "El Paraguas que Pone la IS de Subida", texto: "Reino Unido: cree que la IS sube. Si la tasa baja, el préstamo se abarata, sube la inversión y sube el producto: van al revés, así que la IS BAJA." },
+  { sprite: "tetera", nombre: "La Tetera que No Sabe Hacia Dónde Correr", texto: "Sube el gasto, baja el impuesto, y ella no sabe para dónde va la IS. Los dos están en el desplazamiento: la IS se EXPANDE y suben r e Y." },
+  { sprite: "cabina", nombre: "La Cabina que Confunde Correrse con Echarse", texto: "Cree que si la inversión se vuelve más sensible a la tasa, la IS se corre. I₁ está en la pendiente: la IS no se mueve, se ECHA." },
+  { sprite: "buzon", nombre: "El Buzón que Manda la LM de Bajada", texto: "Más producto pide más dinero para comprar; con la oferta fija, la tasa sube. La LM tiene pendiente POSITIVA, no negativa." },
+  { sprite: "taxinegro", nombre: "El Taxi que Maneja la LM al Revés", texto: "Si sube la inflación esperada, él contrae la LM. Por Fisher, para la misma i la r es menor: la LM se EXPANDE." },
+  { sprite: "guardia", nombre: "El Guardia que No Ve que Sobra", texto: "Parado fuera de la curva, cree que todo está en equilibrio. A la derecha de la IS hay sobreproducción; a la derecha de la LM falta dinero." },
+  { sprite: "reloj", nombre: "El Reloj de las Dos Agujas", texto: "Jefe del Reino Unido: sus agujas son la IS y la LM. Pide armar las dos curvas con números y leer qué pasa fuera de ellas." },
 ];
 
 export function galeriaPersonajes(contenedor) {

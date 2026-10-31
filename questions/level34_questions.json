@@ -1,0 +1,125 @@
+{
+  "nivel": "level34",
+  "clase": "Clase 05 · PC4 — El modelo IS-LM en una economía cerrada",
+  "fuente": "Apuntes de la 5ta clase de la PC4 — Modelo IS-LM, páginas 1 a 12 (Economía General II)",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "m34-q1",
+      "nivel": "comprension",
+      "enunciado": "El banco central baja la tasa de interés real de 30% a 5%.\n\nSiguiendo la cadena del mercado de bienes, ¿qué le pasa al producto y qué forma le da eso a la IS?",
+      "opciones": [
+        "Baja el producto, porque con la tasa baja se ahorra menos; por eso la IS tiene pendiente positiva",
+        "Sube el producto: el préstamo se abarata, sube la inversión y la DA; por eso la IS tiene pendiente negativa",
+        "No le pasa nada al producto, porque la tasa de interés solo mueve el mercado de dinero",
+        "Sube el producto, y por eso la IS tiene pendiente positiva, igual que la oferta agregada"
+      ],
+      "correcta": 1,
+      "explicacion": "Es la cadena del apunte: r↓ → el préstamo se abarata → la inversión ↑ → la DA ↑ → Y ↑. La tasa y el producto se mueven en sentido CONTRARIO, así que todos los pares (r, Y) que dejan en equilibrio a la OA y la DA caen en una recta de bajada. Eso es la IS: pendiente negativa."
+    },
+    {
+      "id": "m34-q2",
+      "nivel": "comprension",
+      "enunciado": "El gobierno sube su gasto en obras y, a la vez, baja el impuesto.\n\nCon la IS escrita como r = −[(1 − c₁)/I₁]·Y + (C₀ − c₁T + I₀ + G₀)/I₁, ¿qué le pasa a la curva?",
+      "opciones": [
+        "Se expande: G y T están en el desplazamiento, así que la IS se corre a la derecha y suben r e Y",
+        "Se contrae: más gasto del gobierno sube la tasa de interés y eso empuja la IS a la izquierda",
+        "Se vuelve más empinada, porque el gasto y el impuesto cambian la pendiente de la IS",
+        "No se mueve: el gasto y el impuesto solo le afectan a la LM, que es la curva de la política"
+      ],
+      "correcta": 0,
+      "explicacion": "G₀ entra sumando y T entra restando (−c₁T) en la parte del DESPLAZAMIENTO, no en la pendiente. Más G o menos T suben ese término: la IS se EXPANDE, se corre a la derecha. Cruzada con la misma LM, el resultado es r↑ e Y↑. Pasa lo mismo si sube C₀, I₀ o las transferencias; si baja la inversión autónoma, la IS se contrae y bajan los dos."
+    },
+    {
+      "id": "m34-q3",
+      "nivel": "comprension",
+      "enunciado": "La inversión se vuelve MÁS sensible a la tasa de interés: I₁ (la b) sube.\n\n¿Qué le pasa a la IS?",
+      "opciones": [
+        "Se corre a la derecha, porque ahora hay más inversión en toda la economía",
+        "Se vuelve más empinada: con más sensibilidad, la curva se para",
+        "Se vuelve más echada: la pendiente (1 − c₁)/I₁ se achica, porque I₁ está dividiendo",
+        "No cambia, porque la pendiente de la IS solo depende de la propensión a consumir"
+      ],
+      "correcta": 2,
+      "explicacion": "I₁ no está en el desplazamiento: está DIVIDIENDO en la pendiente, m = −(1 − c₁)/I₁. Si I₁ sube, la pendiente se achica y la IS se ECHA: más sensible, más elástica. Pasa lo mismo si sube la PMgC c₁ (el 1 − c₁ de arriba baja), o dicho de otra forma, si sube el multiplicador keynesiano, porque m = −1/(I₁·k)."
+    },
+    {
+      "id": "m34-q4",
+      "nivel": "comprension",
+      "enunciado": "Sube el producto de la economía y la oferta de dinero se queda igual.\n\n¿Qué pasa en el mercado de dinero y qué forma le da eso a la LM?",
+      "opciones": [
+        "Baja la demanda de dinero y baja la tasa; por eso la LM tiene pendiente negativa",
+        "Sube la oferta de dinero para acompañar al producto y la tasa no se mueve: la LM es horizontal",
+        "Sube la tasa, pero la LM tiene pendiente negativa porque la tasa y el dinero van al revés",
+        "Sube la demanda de dinero para comprar más, y sube la tasa; por eso la LM tiene pendiente positiva"
+      ],
+      "correcta": 3,
+      "explicacion": "Con más producción se necesita más dinero para comprar lo que se produce: la demanda de dinero (la preferencia por liquidez) se corre a la derecha. Con la oferta fija, lo único que puede ajustar es la tasa: i sube y, con la inflación esperada fija, también r. Producto y tasa van en la MISMA dirección, así que la LM, que junta todos los equilibrios del mercado de dinero, tiene pendiente positiva."
+    },
+    {
+      "id": "m34-q5",
+      "nivel": "comprension",
+      "enunciado": "La gente empieza a esperar más inflación para el próximo año: πᵉ sube.\n\nCon la LM escrita como r = (l₁/l₂)·Y + l₀/l₂ − πᵉ − Mˢ/(l₂P), ¿qué pasa?",
+      "opciones": [
+        "La LM se contrae: más inflación siempre sube la tasa de interés real",
+        "La LM se expande (baja): πᵉ entra restando, así que para cada Y la tasa real es menor",
+        "La LM se vuelve más empinada, porque la inflación esperada cambia la pendiente",
+        "La LM no se mueve: la inflación esperada solo le importa a la IS"
+      ],
+      "correcta": 1,
+      "explicacion": "Por Fisher, i = r + πᵉ. Para la misma i que limpia el mercado de dinero, si πᵉ sube, la r que le corresponde es MENOR: la LM se corre hacia abajo, se expande. Ojo con la dirección, que es la trampa: lo que CONTRAE la LM es que suba la demanda autónoma de dinero (l₀), que suba el nivel de precios o que el banco central esterilice, porque los tres suben r."
+    },
+    {
+      "id": "m34-q6",
+      "nivel": "aplicacion",
+      "enunciado": "La IS de una economía pasa por A (r = 30%, Y = 10) y por B (r = 5%, Y = 100). Hoy la economía está en el punto C: produce Y = 100, pero con la tasa en 30%.\n\n¿Qué pasa en el mercado de bienes?",
+      "opciones": [
+        "Hay escasez: con una tasa tan alta la gente demanda más de lo que se produce",
+        "Está en equilibrio, porque produce lo mismo que en el punto B",
+        "Hay sobreproducción: a 30% la demanda solo justifica Y = 10 y se están ofreciendo 100",
+        "Hay exceso de demanda de dinero, porque el punto está fuera de la curva"
+      ],
+      "correcta": 2,
+      "explicacion": "C está a la DERECHA de la IS. A 30% la DA solo alcanza para Y = 10 (el punto A), pero se están produciendo 100: Y ofertada > Y demandada. Eso es exceso de oferta, sobreproducción. Al revés, un punto a la izquierda de la IS (tasa baja con poco producto) tiene exceso de demanda: escasez. Solo sobre la IS el mercado de bienes está en equilibrio."
+    },
+    {
+      "id": "m34-q7",
+      "nivel": "aplicacion",
+      "enunciado": "Primera aguja. Una economía cerrada tiene:\nC = 40 + 0,8(Y − T),   T = 50\nI = 180 − 20r,   G = 120\n\n¿Cuál es su IS?",
+      "opciones": [
+        "r = 17 − 0,01Y, sumando el consumo autónomo, la inversión y el gasto",
+        "r = 300 − 0,2Y, que es lo que queda después de juntar las Y",
+        "r = 15 + 0,01Y, porque la tasa sube con el producto",
+        "r = 15 − 0,01Y, dividiendo todo entre la sensibilidad de la inversión"
+      ],
+      "correcta": 3,
+      "explicacion": "Se iguala Y = C + I + G: Y = 40 + 0,8Y − 0,8·50 + 180 − 20r + 120. Se juntan las Y: 0,2Y = 300 − 20r. Se despeja r: 20r = 300 − 0,2Y, o sea r = 15 − 0,01Y. Con la fórmula: pendiente −(1 − c₁)/I₁ = −0,2/20 = −0,01 y desplazamiento (C₀ − c₁T + I₀ + G₀)/I₁ = 300/20 = 15. El 17 sale de olvidarse del −c₁T; el 300 − 0,2Y, de no dividir entre I₁."
+    },
+    {
+      "id": "m34-q8",
+      "nivel": "aplicacion",
+      "enunciado": "Segunda aguja. El mercado de dinero de esa misma economía:\nMˢ/P = 200\nLᵈ = 10 + 0,4Y − 20i\nπᵉ = 0\n\n¿Cuál es su LM?",
+      "opciones": [
+        "r = 0,4Y − 190, igualando la oferta con la demanda",
+        "r = 0,02Y − 9,5, despejando r y dividiendo entre la sensibilidad a la tasa",
+        "r = −0,02Y + 9,5, porque la tasa baja cuando sube el producto",
+        "r = 0,02Y + 10,5, sumando la demanda autónoma y la oferta"
+      ],
+      "correcta": 1,
+      "explicacion": "Equilibrio: oferta = demanda, 200 = 10 + 0,4Y − 20i. Con πᵉ = 0, i = r. Se despeja: 20r = 10 + 0,4Y − 200 = 0,4Y − 190, así que r = 0,02Y − 9,5. Con la fórmula: pendiente l₁/l₂ = 0,4/20 = 0,02 y desplazamiento l₀/l₂ − Mˢ/(l₂P) = 0,5 − 10 = −9,5. Positiva, como toda LM. Si πᵉ fuera 2, quedaría r = 0,02Y − 11,5: más abajo, expandida."
+    },
+    {
+      "id": "m34-q9",
+      "nivel": "aplicacion",
+      "enunciado": "Las dos agujas juntas. Con esa LM, para Y = 800 el mercado de dinero se equilibra con r = 6,5%. Pero la economía está en Y = 800 con r = 2%, un punto a la DERECHA de la LM.\n\n¿Qué pasa en el mercado de dinero?",
+      "opciones": [
+        "Exceso de demanda de dinero, escasez: a 2% la gente quiere 290 de saldos y solo hay 200",
+        "Exceso de oferta de dinero: con una tasa tan baja sobra liquidez",
+        "Está en equilibrio, porque con Y = 800 cualquier tasa está sobre la LM",
+        "Sobreproducción, porque el punto está fuera de la curva"
+      ],
+      "correcta": 0,
+      "explicacion": "A r = 2% la demanda es 10 + 0,4·800 − 20·2 = 290, y solo hay 200: Lᵈ > Mˢ/P. Exceso de demanda de dinero, escasez. Un punto a la derecha de la LM tiene la tasa por DEBAJO de la de equilibrio; a la izquierda (tasa por encima), sobra dinero: exceso de oferta. Y la sobreproducción es del mercado de bienes, o sea de la IS, no de la LM."
+    }
+  ]
+}

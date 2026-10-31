@@ -3625,6 +3625,155 @@ const TREN = [    // el tren pintado, que es el vehículo de salida del distrito
 ];
 const P_TREN = { k: "#1e1a14", a: "#3f7fa0", o: "#e8b43c", v: "#e8e2cc", r: "#a8302a", n: "#2a2620", f: "#f2d24a", g: "#9a9a92" };
 
+const PARAGUAS = [    // el paraguas: cree que la IS sube, cuando la tasa y el producto van al revés (18 × 14)
+  "........kk........",
+  ".....kkknnkkk.....",
+  "...kknnnnnnnnkk...",
+  "..knnnnnnnnnnnnk..",
+  ".knnwwnnnnnnwwnnk.",
+  ".knnwknnnnnnwknnk.",
+  "knnnnnnkkkknnnnnnk",
+  "knnnnnnnnnnnnnnnnk",
+  "kkknnkkknnkkknnkkk",
+  "........kh........",
+  "........kh........",
+  "........kh........",
+  ".....kh.kh........",
+  "......khhk........",
+];
+const P_PARAGUAS = { k: "#14161e", n: "#3a4466", w: "#ffffff", h: "#9a6a3a" };
+
+const TETERA = [    // la tetera: no sabe hacia dónde se corre la IS cuando sube el gasto o baja el impuesto (18 × 14)
+  "........kk........",
+  ".......kbbk.......",
+  ".....kkkkkkkk.....",
+  "....kwwwwwwwwk....",
+  "...kwwbbwwbbwwk...",
+  "...kwwkwwwwkwwkkk.",
+  "kk.kwwwwwwwwwwk.k.",
+  "kwkkwwwkkkkwwwk.k.",
+  ".kwwwwwwwwwwwwkk..",
+  "..kwbbwwbbwwbbk...",
+  "...kwwwwwwwwwk....",
+  "....kwwwwwwwk.....",
+  "....kkkkkkkkk.....",
+  ".....kbbbbbbk.....",
+];
+const P_TETERA = { k: "#1e2230", w: "#f2f0ea", b: "#3a6ab0" };
+
+const CABINA = [    // la cabina roja: confunde lo que CORRE la IS con lo que la ECHA (18 × 14)
+  "......kkkkkk......",
+  ".....krrrrrrk.....",
+  "....krrrrrrrrk....",
+  "....kkkkkkkkkk....",
+  "....krwwwwwwrk....",
+  "....kkkkkkkkkk....",
+  "....krvvrrvvrk....",
+  "....krvkrrvkrk....",
+  "....krvvrrvvrk....",
+  "....krrrrrrrrk....",
+  "....krrkkkkrrk....",
+  "....krrrrrrrrk....",
+  "...kkkkkkkkkkkk...",
+  "...kddddddddddk...",
+];
+const P_CABINA = { k: "#1e1414", r: "#c8262a", w: "#f4efe4", v: "#bfe0f0", d: "#5a3a3a" };
+
+const BUZON = [    // el buzón: manda la LM de bajada, cuando más producto pide más dinero y sube la tasa (18 × 14)
+  "......kkkkkk......",
+  ".....kddddddk.....",
+  "....kddddddddk....",
+  "....kkkkkkkkkk....",
+  ".....krrrrrrk.....",
+  ".....kwkrrkwk.....",
+  ".....krrrrrrk.....",
+  ".....kkkkkkkk.....",
+  ".....krrrrrrk.....",
+  ".....kryyyyrk.....",
+  ".....krrrrrrk.....",
+  ".....krrrrrrk.....",
+  "....kkkkkkkkkk....",
+  "....kddddddddk....",
+];
+const P_BUZON = { k: "#1e1414", d: "#8a1a1e", r: "#d0302c", w: "#ffffff", y: "#e8b43c" };
+
+const TAXINEGRO = [    // el taxi negro: maneja al revés y corre la LM para el lado equivocado cuando sube πᵉ (18 × 14)
+  "..................",
+  "..................",
+  "..................",
+  "......kkkkkk......",
+  ".....knnyynnk.....",
+  "....knvvnnvvnk....",
+  "...knnvvnnvvnnk...",
+  ".kknnnnnnnnnnnnkk.",
+  "kfnnwknnnnnnwknnnk",
+  "knnnnnkkkknnnnnnrk",
+  "kgggnnnnnnnnnngggk",
+  ".knnk........knnk.",
+  ".kggk........kggk.",
+  "..kk..........kk..",
+];
+const P_TAXINEGRO = { k: "#0c0c10", n: "#2e2e3a", v: "#9fc4d8", y: "#f2d24a", f: "#fff2b0", w: "#ffffff", g: "#9a9a92", r: "#c0392b" };
+
+const GUARDIA = [    // el guardia del palacio: no ve que fuera de la curva sobra o falta algo (18 × 14)
+  ".......kkkk.......",
+  "......knnnnk......",
+  ".....knnnnnnk.....",
+  ".....knnnnnnk.....",
+  ".....knnnnnnk.....",
+  ".....kppppppk.....",
+  ".....kpkppkpk.....",
+  ".....kppkkppk.....",
+  "....kkrrrrrrkk....",
+  "...krrryyyyrrrk...",
+  "...krrrryyrrrrk...",
+  "....kwwwwwwwwk....",
+  "....knnnkknnnk....",
+  "....kkkk..kkkk....",
+];
+const P_GUARDIA = { k: "#141418", n: "#2a2a36", p: "#e8b896", r: "#c8262a", y: "#e8b43c", w: "#f4f2ea" };
+
+const RELOJ = [    // jefe: el reloj de la torre, con la IS y la LM de agujas cruzándose al centro (18 × 17)
+  "........kk........",
+  ".......kook.......",
+  "......kooook......",
+  ".....kssssssk.....",
+  "....kssssssssk....",
+  "...kkkkkkkkkkkk...",
+  "...kowwwwwwwwok...",
+  "..kowbwwwwwwrwok..",
+  "..kowwbwwwwrwwok..",
+  "..kowwwbwwrwwwok..",
+  "..kowwwwkkwwwwok..",
+  "..kowwwrwwbwwwok..",
+  "..kowwrwwwwbwwok..",
+  "...kowwwwwwwwok...",
+  "...kkkkkkkkkkkk...",
+  "...kssksssskssk...",
+  "..kssssssssssssk..",
+];
+const P_RELOJ = { k: "#1a1612", o: "#d8a43c", s: "#b8a07a", w: "#f4ecd8", b: "#2f6ab8", r: "#c8262a" };
+
+const DOSPISOS = [    // el bus rojo de dos pisos, que es el vehículo de salida del distrito (32 × 16)
+  "................................",
+  ".kkkkkkkkkkkkkkkkkkkkkkkkkkkkkk.",
+  ".krrrrrrrrrrrrrrrrrrrrrrrrrrrrk.",
+  ".kvvvrvvvrvvvrvvvrvvvrvvvrvvvrk.",
+  ".kvvvrvvvrvvvrvvvrvvvrvvvrvvvrk.",
+  ".krrrrrrrrrrrrrrrrrrrrrrrrrrrrk.",
+  ".kyyyyyyyyyyyyyyyyyyyyyyyyyyyyk.",
+  ".krrrrrrrrrrrrrrrrrrrrrrrrrrrrk.",
+  ".kvvvrvvvrvvvrvvvrvvvrvvvrvvvrk.",
+  ".kvvvrvvvrvvvrvvvrvvvrvvvrvvvrk.",
+  ".kfrrrrrrrrrrrrrrrrrrrrrrrrrrrk.",
+  ".krrrrrrrrrrrrrrrrrrrrrrrrrrrrk.",
+  ".kkkkkkkkkkkkkkkkkkkkkkkkkkkkkk.",
+  "...knnnk...............knnnk....",
+  "...kngnk...............kngnk....",
+  "....kkk.................kkk.....",
+];
+const P_DOSPISOS = { k: "#1a1210", r: "#d02a26", v: "#bfe0f0", y: "#e8c84a", f: "#fff2b0", n: "#2a2620", g: "#9a9a92" };
+
 /* ---------------------------------------------------------------
    REGISTRO Y COCINADO
    --------------------------------------------------------------- */
@@ -3831,6 +3980,14 @@ const DEFINICIONES = {
   colador:      [COLADOR, P_COLADOR],
   maharaja:     [MAHARAJA, P_MAHARAJA],
   tren:         [TREN, P_TREN],
+  paraguas:     [PARAGUAS, P_PARAGUAS],
+  tetera:       [TETERA, P_TETERA],
+  cabina:       [CABINA, P_CABINA],
+  buzon:        [BUZON, P_BUZON],
+  taxinegro:    [TAXINEGRO, P_TAXINEGRO],
+  guardia:      [GUARDIA, P_GUARDIA],
+  reloj:        [RELOJ, P_RELOJ],
+  dospisos:     [DOSPISOS, P_DOSPISOS],
 };
 
 const cocidos = {};   // nombre -> { canvas, ancho, alto } (ya escalados)

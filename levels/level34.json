@@ -1,0 +1,41 @@
+{
+  "id": "level34",
+  "distrito": "Reino Unido",
+  "clase": "Clase 05 · PC4",
+  "titulo": "El país donde dos curvas se cruzan como las agujas del reloj",
+  "tema": "londres",
+  "musica": "londres",
+  "vehiculo": "dospisos",
+  "intro": "Quinta clase de la PC4 y entra el MODELO IS-LM. Toca Inglaterra porque fue ahí, en 1937, donde a alguien se le ocurrió meter el mercado de bienes y el mercado de dinero en un solo gráfico, con la tasa de interés real en un eje y el producto en el otro. Son dos curvas y cada una es un mercado: la IS junta todos los puntos donde la oferta y la demanda agregada están en equilibrio, y baja; la LM junta todos los puntos donde el mercado de dinero está en equilibrio, y sube. Donde se cruzan, como las dos agujas del reloj de la torre, están en equilibrio los dos a la vez. Hay que saber de dónde sale cada una, qué las CORRE (lo que está en el desplazamiento), qué las ECHA o las PARA (lo que está en la pendiente), y qué pasa cuando la economía está parada en un punto fuera de la curva.",
+  "repaso": [
+    "QUÉ ES CADA CURVA: la IS (inversión-ahorro) son todos los pares (r, Y) que dejan en equilibrio al mercado de bienes, o sea a la OA y la DA. La LM (preferencia por liquidez-oferta monetaria) son todos los pares (r, Y) que dejan en equilibrio al mercado de dinero. En el gráfico va la tasa de interés REAL r arriba y el producto Y abajo.",
+    "POR QUÉ LA IS BAJA: si r baja, el préstamo se abarata, sube la inversión, sube la DA y sube Y. La tasa y el producto van al revés, así que la pendiente es NEGATIVA.",
+    "LA IS EN FÓRMULA: se parte de Y = C + I + G con C = C₀ + c₁(Y − T), I = I₀ − I₁·r y G = G₀, se juntan las Y y se despeja r: r = −[(1 − c₁)/I₁]·Y + (C₀ − c₁T + I₀ + G₀)/I₁. Lo primero es la PENDIENTE; lo segundo, el DESPLAZAMIENTO.",
+    "QUÉ CORRE LA IS: todo lo del desplazamiento. Sube C₀, I₀, G₀ o las transferencias, o baja T: la IS se EXPANDE (a la derecha) y, con la misma LM, suben r e Y. Si bajan, se CONTRAE y bajan los dos.",
+    "QUÉ ECHA LA IS: la pendiente es −(1 − c₁)/I₁ = −1/(I₁·k), con k el multiplicador keynesiano. Si sube la sensibilidad de la inversión a la tasa (I₁ o b), sube la PMgC c₁ o sube el multiplicador, la pendiente se achica y la IS queda MÁS ECHADA, más elástica.",
+    "POR QUÉ LA LM SUBE: si Y sube, se necesita más dinero para comprar lo que se produce, sube la demanda de dinero y, con la oferta fija, sube la tasa i (y con ella r). Producto y tasa van en la misma dirección: pendiente POSITIVA.",
+    "LA LM EN FÓRMULA: de Mˢ/P = l₀ + l₁Y − l₂i, con Fisher i = r + πᵉ, sale r = (l₁/l₂)·Y + l₀/l₂ − πᵉ − Mˢ/(l₂P). Ejemplo: con Mˢ/P = 200 y Lᵈ = 10 + 0,4Y − 20i, la LM es r = 0,02Y − 9,5.",
+    "QUÉ CORRE LA LM: si sube la demanda autónoma de dinero l₀, sube el nivel de precios P o el banco central esteriliza (baja Mˢ/P), r sube y la LM se CONTRAE. Si sube la oferta real de dinero, se EXPANDE. Y la trampa: si sube la inflación esperada πᵉ, la LM también se EXPANDE, porque para la misma i la r es menor.",
+    "QUÉ ECHA LA LM: lo principal es l₂, la sensibilidad de la demanda de dinero a la tasa. Si l₂ sube, la pendiente l₁/l₂ se achica y la LM queda más echada.",
+    "LA OFERTA DE DINERO: Mˢ = m_b·B, con B la base monetaria que emite el banco central y m_b = (c + 1)/(c + r) el multiplicador bancario, donde c es la preferencia por circulante y r la tasa de encaje (ojo, esa r no es la tasa de interés).",
+    "PUNTOS FUERA DE LA IS: a la DERECHA de la IS la tasa es muy alta para ese producto: se ofrece más de lo que se demanda, hay SOBREPRODUCCIÓN (exceso de oferta). A la IZQUIERDA la tasa es muy baja: se demanda más de lo que se produce, hay ESCASEZ (exceso de demanda).",
+    "PUNTOS FUERA DE LA LM: a la DERECHA de la LM la tasa está por debajo de la de equilibrio y la gente quiere más dinero del que hay: exceso de DEMANDA de dinero, escasez. A la IZQUIERDA la tasa está por encima y sobra dinero: exceso de OFERTA. Solo sobre la curva el mercado está en equilibrio."
+  ],
+  "mapa": [
+    "                                                                                                                                                                                    ",
+    "                                                                                                                                                                                    ",
+    "                                                                                                                                                                                    ",
+    "                                                                                                                                                                                    ",
+    "                                                                   AA                                                                                                               ",
+    "                      L                    V                                                                 G                                                                      ",
+    "                                                                 oo  oo                                                                                                             ",
+    "                                                                 ======                                                                                                             ",
+    "      oo?oo          oooo               oo                                      ooooooooooo               oo              ooooo                     1   L    oooooooo               ",
+    "                    ======              ======                                                     oooo   ======                   oooooo                   ==========              ",
+    "                                ooooo                          =====                                                                                                                ",
+    "  P           C             E                       E     C T               E     X   E X       C                   E       X             C   E                         B       M   ",
+    "################################## #################################################################  ##############################    ############################################",
+    "################################## #################################################################  ##############################    ############################################",
+    "################################## #################################################################  ##############################    ############################################"
+  ]
+}
