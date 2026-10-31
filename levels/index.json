@@ -497,6 +497,20 @@
       "abierto": true,
       "mapa": "levels/level32.json",
       "preguntas": "questions/level32_questions.json"
+    },
+    {
+      "id": "level33",
+      "clase": "Clase 04",
+      "distrito": "India",
+      "titulo": "El país donde una sola rupia pasa por mil manos",
+      "icono": "🛕",
+      "seccion": "PC4",
+      "seccionNota": "Oferta y demanda agregada — y seguimos dando la vuelta al mundo",
+      "retos": 7,
+      "duracion": "3 min",
+      "abierto": true,
+      "mapa": "levels/level33.json",
+      "preguntas": "questions/level33_questions.json"
     }
   ]
 }

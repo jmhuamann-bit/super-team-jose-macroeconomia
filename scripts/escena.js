@@ -311,6 +311,13 @@ const FICHAS = [
   { sprite: "derviche", nombre: "El Derviche del Ajuste Automático", texto: "Gira y vuelve al mismo punto, igual que la economía: con el tiempo los contratos se renegocian y el producto regresa solo al potencial." },
   { sprite: "vaso", nombre: "El Vaso que No Mide la Política", texto: "Calcula el gasto que hace falta y se queda ahí. La política es la VARIACIÓN: el gasto nuevo menos el que ya había." },
   { sprite: "sultan", nombre: "El Sultán que Confunde Correr con Subir", texto: "Jefe de Turquía: cree que si la demanda se corre 100, el producto sube 100. Depende de con qué oferta se cruce — y en el largo plazo sube cero." },
+  { sprite: "rickshaw", nombre: "El Rickshaw que No Suma la Cadena", texto: "India: cree que el multiplicador cuenta por cuántas manos pasa la plata. Es la SUMA de la cadena: con c = 0,8, los 40 del gobierno se vuelven 200." },
+  { sprite: "elefante", nombre: "El Elefante que Mira el PBI Final", texto: "Divide el PBI final entre el gasto. Arriba va la VARIACIÓN: si el producto pasó de 3000 a 5000 con un ΔG de 1500, el multiplicador es 2000/1500 = 1,33." },
+  { sprite: "vaca", nombre: "La Vaca que Se Olvida del Ahorro", texto: "Se acuerda de 1/(1−c) pero no de qué es ese 1−c: la propensión marginal a AHORRAR. Lo que manda abajo es lo que se ESCAPA de la rueda." },
+  { sprite: "barrilete", nombre: "El Barrilete que No Junta las Y", texto: "De Y = 20 + 2(0,3Y + 50) agarra el 2 de afuera y lo canta como multiplicador. Hay que juntar las Y: 0,4Y = 120, e Y = 300 con k = 1/0,4 = 2,5." },
+  { sprite: "samosa", nombre: "La Samosa que Cree que Todo Da Igual", texto: "Dice que el mismo gasto rinde lo mismo en cualquier país. Con una PMgC de 0,9 el multiplicador es 10; con una de 0,3, apenas 1,43." },
+  { sprite: "colador", nombre: "El Colador que No Cuenta las Filtraciones", texto: "Deja pasar los impuestos y las importaciones como si no se escapara nada. Con c = 0,8 el multiplicador era 5; con un impuesto del 25% cae a 2,5." },
+  { sprite: "maharaja", nombre: "El Marajá que Reparte y No Rinde", texto: "Jefe de India: reparte transferencias creyendo que pegan igual que el gasto. El gasto entra entero y levanta 200; la transferencia pasa por el bolsillo y levanta 160." },
 ];
 
 export function galeriaPersonajes(contenedor) {

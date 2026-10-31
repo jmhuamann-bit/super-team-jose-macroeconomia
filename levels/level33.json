@@ -1,0 +1,42 @@
+{
+  "id": "level33",
+  "distrito": "India",
+  "clase": "Clase 04 · PC4",
+  "titulo": "El país donde una sola rupia pasa por mil manos",
+  "tema": "agra",
+  "musica": "agra",
+  "vehiculo": "tren",
+  "intro": "Cuarta clase de la PC4, y acá va un solo tema: el MULTIPLICADOR KEYNESIANO. Toca India porque es el país donde la cadena del gasto se ve caminando. Entran 100 rupias al bazar: el que vende telas cobra y con eso compra samosas, el de las samosas paga el chai, el del chai le compra fruta al de al lado. Ninguno gasta todo —cada uno se guarda una parte— pero lo que pasa sigue girando, y la suma de todas esas vueltas es MUCHO más que las 100 que entraron. Eso es el multiplicador: cuántas veces se multiplica el empujón inicial. Lo único que hay que aprender a hacer es sacar ese número de tres maneras —con ΔY/ΔG, con la fórmula 1/(1−c), o despejándolo de la demanda agregada— y después acordarse de las dos trampas: que arriba va la VARIACIÓN del producto y no el producto final, y que todo lo que se escapa de la rueda (el ahorro, el impuesto, las importaciones) lo achica.",
+  "repaso": [
+    "QUÉ ES EL MULTIPLICADOR: el gasto no se queda en la primera vuelta. El gobierno gasta 40, el que cobra gasta la fracción c de eso, el siguiente otra vez la fracción c, y así. La cadena 40 + 32 + 25,6 + 20,48 + … no se corta nunca, y toda esa suma da 200. El multiplicador es ese número: 200/40 = 5.",
+    "LA FÓRMULA, que es la cadena resumida: k = 1/(1 − c), donde c es la PROPENSIÓN MARGINAL A CONSUMIR, o sea cuánto de cada sol extra se gasta. Con c = 0,8 da 1/0,2 = 5.",
+    "Y LA OTRA MANERA DE LEERLA, que es la que conviene: 1 − c es la propensión marginal a AHORRAR, así que k = 1/PMgS. Lo que manda abajo es lo que se ESCAPA de la rueda, no lo que sigue girando.",
+    "MODELO 01 · CUANDO TE DAN LOS DATOS: k = ΔY/ΔG. Con un ΔG de 1500 y un PBI que pasa de 3000 a 5000, el multiplicador es 2000/1500 = 1,33. Y al revés: con k = 2,3 y ΔG = 500, el producto sube 1150.",
+    "LA TRAMPA DEL MODELO 01, que es el error que más cae: arriba va la VARIACIÓN del producto, no el producto final. En el ejemplo de arriba es 2000, no 5000. Si pones 5000 te da 3,33 y está mal.",
+    "MODELO 02 · CUANDO TE DAN LA DEMANDA AGREGADA ARMADA: se juntan todas las Y de un lado y listo. De Y = 20 + 2(0,3Y + 50) sale Y = 120 + 0,6Y, o sea 0,4Y = 120 e Y = 300. El multiplicador es 1 SOBRE lo que quedó acompañando a la Y: 1/0,4 = 2,5. Nunca es ese número suelto.",
+    "MODELO 03 · CUANDO TE DAN TODO EL MODELO: se arma la DA sumando C + I + G, acordándose de que el consumo va sobre el ingreso DISPONIBLE (Yd = Y − T + TR). Con C = 100 + 0,8·Yd, I = 200, G = 100, T = 0,18Y y TR = 80, queda Y = 464 + 0,656Y, así que Y = 1348,84 y k = 1/0,344 = 2,91.",
+    "QUÉ ES GASTO AUTÓNOMO: todo lo que NO depende del ingreso y por eso va a la parte de adelante. La inversión, el gasto del gobierno, las transferencias y el consumo autónomo. Son los que empujan; la Y es la que responde.",
+    "LAS FILTRACIONES ACHICAN EL MULTIPLICADOR, porque son plata que sale de la rueda en cada vuelta. Con un impuesto que se lleva la fracción t del ingreso, k = 1/(1 − c(1 − t)): con c = 0,8 y t = 0,25 el multiplicador cae de 5 a 2,5, o sea a la mitad.",
+    "LA OTRA FILTRACIÓN SON LAS IMPORTACIONES, porque lo que se gasta afuera no vuelve a esta economía. Con m = 0,1 la fórmula es k = 1/(1 − c + m) y el multiplicador cae de 5 a 3,33.",
+    "EL GASTO PEGA MÁS FUERTE QUE LA TRANSFERENCIA, y conviene saber por qué. El gasto del gobierno entra ENTERO a la demanda, así que su multiplicador es 1/(1−c) = 5 y 40 de gasto levantan 200. La transferencia cae primero en el bolsillo y la gente gasta solo la fracción c, así que su multiplicador es c/(1−c) = 4 y los mismos 40 levantan 160. La diferencia son los 8 que se ahorran en la PRIMERA vuelta.",
+    "Y EL MULTIPLICADOR DEL IMPUESTO AUTÓNOMO es el mismo pero con signo al revés: −c/(1−c). Cobrar 40 de impuesto de golpe BAJA el producto 160.",
+    "LA ADVERTENCIA QUE SE REPITE DE LA CLASE PASADA: el multiplicador dice cuánto se CORRE la demanda agregada en horizontal, no cuánto sube el producto. Y si en un país una política de demanda casi no se notó, no es que la teoría falle: es que el multiplicador de ESA economía es chico, porque la PMgC es baja o porque los impuestos y las importaciones se llevan buena parte de cada vuelta."
+  ],
+  "mapa": [
+    "                                                                                                                                                                                    ",
+    "                                                                                                                                                                                    ",
+    "                                                                                                                                                                                    ",
+    "                                                                                                                                                                                    ",
+    "                                                      AA                                                                                                                            ",
+    "                             o o                     o o                                                                                                                            ",
+    "                              E                                                                                                                                                     ",
+    "                      o o   ======                  ======               o     o     o                               o                                         o  o  o  o           ",
+    "                                    ?                                  oo oo oo oo oo oo       o                   oo ooG                                                           ",
+    "                     ======                                                                  oo oo                                         o     o            ==========o=o=o       ",
+    "                                                                                                                                           E                                        ",
+    "  P         C                         C          T           E          X E   X     X               E          C           E        C    ===== =====         1        B         M   ",
+    "################# ##################################################################################################  #################              ###############################",
+    "################# ##################################################################################################  #################              ###############################",
+    "################# ##################################################################################################  #################              ###############################"
+  ]
+}

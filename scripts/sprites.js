@@ -3476,6 +3476,155 @@ const FERRY = [    // el ferry del Bósforo, que es el vehículo de salida del d
 ];
 const P_FERRY = { k: "#1e1a18", c: "#2f5a74", o: "#e8c45a", w: "#f2ece0", v: "#7fb0c4", r: "#a8302a", n: "#2a2420", h: "#c6ccd2" };
 
+const RICKSHAW = [    // el rickshaw: no ve que el multiplicador es la suma de la cadena de gasto (18 × 14)
+  ".....kkkkkkkkkk...",
+  "....knnnnnnnnnnk..",
+  "...kknnnnnnnnnnk..",
+  "..knnnaaaaaaaaak..",
+  "..knnnavvvvvvaak..",
+  ".kaaaaavvvvvvaak..",
+  ".kfaaaavvvvvvaak..",
+  ".kaaaaaaaaaaaaak..",
+  ".kaaaaaaaaaaaaak..",
+  ".kaaaaaaaaaaaaak..",
+  "..kgngnnnnnngngnk.",
+  ".kgnnngkkkkgnnngk.",
+  ".kgnnngk..kgnnngk.",
+  "..kgngk....kgngk..",
+];
+const P_RICKSHAW = { k: "#1e2014", a: "#3f8a4a", n: "#2a2a24", v: "#e8e2cc", f: "#f2d24a", g: "#9a9a92" };
+
+const ELEFANTE = [    // el elefante: confunde el PBI final con la VARIACIÓN del PBI (18 × 14)
+  "..................",
+  ".............kkkk.",
+  "............kyyyyk",
+  "...........koeyyek",
+  "..........koooeeee",
+  "..kkkkkkkkkoooekee",
+  ".keyrryrryroooeeee",
+  ".keyrryrryroooeeee",
+  ".keeeeeeeeeeoeeddk",
+  ".keeeeeeeeeeekkddk",
+  ".keeeeeeeeeeekkddk",
+  ".keeeeeeeeeeekkddk",
+  "..kddkddkddkk.kddk",
+  "..kddkddkddk..kddd",
+];
+const P_ELEFANTE = { k: "#241e1c", e: "#a09aa6", d: "#726c7c", o: "#c45a7a", r: "#c0392b", y: "#e8b43c" };
+
+const VACA = [    // la vaca: olvida que el multiplicador es 1 sobre la propensión a ahorrar (18 × 14)
+  "..................",
+  "..................",
+  "..................",
+  "............kk.kk.",
+  "..kkkkkkkkkkookook",
+  ".kwwwwwwwwwoookook",
+  ".knwnnwwwwwowwwwwk",
+  ".knwnnwnnnwowwkwwk",
+  "knwwwwwnnnwowwwppp",
+  "knwwwwwwwwwowwwppp",
+  "nkwwwwwwwwwowwwppp",
+  "k.kwwkkkwwkkkkkkkk",
+  "..kwwk.kwwk.......",
+  "..knnk.knnk.......",
+];
+const P_VACA = { k: "#2a2420", w: "#f0ece0", n: "#8a6a4a", o: "#e8923c", p: "#d8a090" };
+
+const BARRILETE = [    // el barrilete: no junta las Y de un lado para despejar el multiplicador (18 × 14)
+  "........kkk.......",
+  "......kkrkakk.....",
+  ".....krrrkaaak....",
+  "....krrrrkaaaak...",
+  "...krrrrrkaaaaak..",
+  "..kkkkkkkkkkkkkkk.",
+  "..krrrrrrkaaaaaak.",
+  "...kkrrrrkaaaakk..",
+  ".....krrrkaaak....",
+  "......krrkaak.....",
+  ".......krkak......",
+  ".......kkkk.......",
+  "....kkkyyk........",
+  "...kvvkkk.........",
+];
+const P_BARRILETE = { k: "#2a1a24", r: "#c0392b", a: "#3f7fc0", y: "#e8b43c", v: "#4a9a5a" };
+
+const SAMOSA = [    // la samosa: cree que el multiplicador no cambia con la propensión a consumir (18 × 14)
+  ".........k........",
+  "........kok.......",
+  ".......komk.......",
+  ".......kommk......",
+  "......kommmmk.....",
+  "......kommmbk.....",
+  ".....kommmmmmk....",
+  "....kmombmmmmmk...",
+  "....kommmmmmbmk...",
+  "...kmommmmmmmmmk..",
+  "..kmombmmmmmmmmmk.",
+  "..kmommmmmmmmbmmk.",
+  ".kmommommommommomk",
+  ".kmommommommommomk",
+];
+const P_SAMOSA = { k: "#3a2410", m: "#d9a24a", o: "#a8702a", b: "#f0c878" };
+
+const COLADOR = [    // el colador del chai: no ve que impuestos e importaciones filtran la cadena (18 × 14)
+  "..................",
+  "..................",
+  ".............kkkkk",
+  ".kkkkkkkkkkkkwwwww",
+  "ksssssssssssswwwww",
+  "khmmhmmhmmhmmhkkkk",
+  ".kmmjmmhjmhmmk....",
+  ".kmmhmjhmmjmmk....",
+  "..kmhmmhmmhmk.....",
+  "...khmmhmmhk......",
+  "....kkmhmkk.......",
+  "...kttkttkkk......",
+  "....kkkttkttk.....",
+  "......kttkkk......",
+];
+const P_COLADOR = { k: "#231a14", m: "#c4ccd4", h: "#707880", s: "#e4eaf0", w: "#8a5a2a", j: "#3f5a2a", t: "#c8641e" };
+
+const MAHARAJA = [    // jefe: el marajá, que reparte transferencias creyendo que pegan igual que el gasto (18 × 17)
+  ".....kkorrokk.....",
+  "....kttorrottk....",
+  "...kottottottok...",
+  "...kottottottok...",
+  "....kttottottk....",
+  "....kttottottk....",
+  ".....kppppppk.....",
+  ".....kpkppkpk.....",
+  ".....kppppppk.....",
+  ".....knnnnnnk.....",
+  "....kkppppppkk....",
+  "..kkrrrwwwwrrrkk..",
+  ".kppprrwwwwrrpppk.",
+  ".kppprrwwwwropppk.",
+  ".kppprowwwworpppk.",
+  "..kkrorwwwwrrrkk..",
+  "...korrwwwwrrrk...",
+];
+const P_MAHARAJA = { k: "#1e1612", t: "#f0e8d4", o: "#e8b43c", p: "#c98a4e", n: "#3a2e28", r: "#8a2a6a", w: "#f4eee2" };
+
+const TREN = [    // el tren pintado, que es el vehículo de salida del distrito (32 × 16)
+  "................................",
+  "..........................kkk...",
+  "...................kkkkkkknnnk..",
+  "..................krrrrrrknnnk..",
+  "..................krvvvvrknnnk..",
+  ".kkkkkkkkkkkkkkkkkkrvvvvrknnnkk.",
+  "koooooooooooooooookrvvvvoonnnook",
+  "koooooooooooooooookrrrrrrrrrrffk",
+  "kavvvavvvavvvavvvakrrrrrrrrrrffk",
+  "kavvvavvvavvvavvvakrrrrrrrrrrrrk",
+  "kavvvavvvavvvavvvakrrrrrrrrrrrrk",
+  "kaaaaaaaaaaaaaaaaakrrrrrrrrrrrrk",
+  "knnnnnnnnnnnnnnnnnnnnnnnnngngnnk",
+  ".kknnnkkknnnkknnnkkknnnkkgnnngk.",
+  "..knnnk.knnnkknnnk.knnnkkgnnngk.",
+  "..kgngk.kgngkkgngk.kgngk.knnnk..",
+];
+const P_TREN = { k: "#1e1a14", a: "#3f7fa0", o: "#e8b43c", v: "#e8e2cc", r: "#a8302a", n: "#2a2620", f: "#f2d24a", g: "#9a9a92" };
+
 /* ---------------------------------------------------------------
    REGISTRO Y COCINADO
    --------------------------------------------------------------- */
@@ -3674,6 +3823,14 @@ const DEFINICIONES = {
   vaso:         [VASO, P_VASO],
   sultan:       [SULTAN, P_SULTAN],
   ferry:        [FERRY, P_FERRY],
+  rickshaw:     [RICKSHAW, P_RICKSHAW],
+  elefante:     [ELEFANTE, P_ELEFANTE],
+  vaca:         [VACA, P_VACA],
+  barrilete:    [BARRILETE, P_BARRILETE],
+  samosa:       [SAMOSA, P_SAMOSA],
+  colador:      [COLADOR, P_COLADOR],
+  maharaja:     [MAHARAJA, P_MAHARAJA],
+  tren:         [TREN, P_TREN],
 };
 
 const cocidos = {};   // nombre -> { canvas, ancho, alto } (ya escalados)

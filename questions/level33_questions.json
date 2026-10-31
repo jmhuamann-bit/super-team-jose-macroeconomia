@@ -1,0 +1,125 @@
+{
+  "nivel": "level33",
+  "clase": "Clase 04 · PC4 — El multiplicador keynesiano",
+  "fuente": "Apuntes de la 4ta clase de la PC4 — Multiplicador keynesiano (Economía General II)",
+  "preguntasJefe": 3,
+  "preguntas": [
+    {
+      "id": "m33-q1",
+      "nivel": "comprension",
+      "enunciado": "El gobierno gasta 40 en una obra. Los obreros cobran y gastan el 80% en el mercado; los del mercado cobran y gastan el 80% de eso; y así sigue.\n\n¿Qué es el multiplicador keynesiano?",
+      "opciones": [
+        "La cantidad de veces que el gobierno tiene que repetir el gasto para que se note",
+        "La suma de toda esa cadena: lo que sube el producto por cada sol gastado",
+        "El porcentaje del gasto que vuelve al Estado en forma de impuestos recaudados",
+        "El número de manos por las que pasa el dinero del gobierno"
+      ],
+      "correcta": 1,
+      "explicacion": "El gasto no se queda en la primera vuelta: el ingreso de uno es el gasto del siguiente. Con una propensión a consumir de 0,8 la cadena es 40 + 32 + 25,6 + 20,48… y toda esa suma da 200. El multiplicador es ese número: 200/40 = 5. No cuenta personas ni repeticiones, suma efectos."
+    },
+    {
+      "id": "m33-q2",
+      "nivel": "aplicacion",
+      "enunciado": "En un país el gobierno subió el gasto en 1500 millones y el PBI pasó de 3000 a 5000.\n\n¿Cuánto vale el multiplicador del gasto?",
+      "opciones": [
+        "1,33: el producto subió 2000 y eso se divide entre los 1500 de gasto",
+        "3,33, que es el PBI final dividido entre el gasto que hizo el gobierno",
+        "500, que es lo que creció el producto por encima de lo que se gastó",
+        "0,75, dividiendo el gasto entre la variación que tuvo el producto"
+      ],
+      "correcta": 0,
+      "explicacion": "El multiplicador es ΔY/ΔG, y lo que va arriba es la VARIACIÓN del producto, no el producto final. El PBI pasó de 3000 a 5000, así que ΔY = 2000. Dividido entre ΔG = 1500 da 1,33. Mirar el 5000 en vez del 2000 es el error más común de este modelo."
+    },
+    {
+      "id": "m33-q3",
+      "nivel": "comprension",
+      "enunciado": "En una economía la gente consume 80 céntimos de cada sol extra que recibe.\n\n¿Cuánto vale el multiplicador del gasto y de dónde sale?",
+      "opciones": [
+        "0,8, que es directamente la propensión marginal a consumir de esa economía",
+        "4, que es la propensión a consumir dividida entre la propensión a ahorrar",
+        "1,25, porque hay que sumarle uno a la propensión a consumir",
+        "5, que es 1/(1 − 0,8), o lo mismo: 1 entre la propensión a AHORRAR"
+      ],
+      "correcta": 3,
+      "explicacion": "La fórmula es k = 1/(1 − c). Con c = 0,8 queda 1/0,2 = 5. Y conviene verlo del otro lado: 1 − c es la propensión marginal a AHORRAR, así que el multiplicador es 1 dividido entre la PMgS. Lo que se ahorra es lo que se escapa de la cadena, y por eso es lo que manda en el denominador."
+    },
+    {
+      "id": "m33-q4",
+      "nivel": "aplicacion",
+      "enunciado": "Te dan la demanda agregada ya armada: Y = 20 + 2(0,3Y + 50).\n\n¿Cómo se saca el multiplicador y cuánto da el ingreso de equilibrio?",
+      "opciones": [
+        "Se reemplaza Y = 20 y sale todo lo demás; el equilibrio es 120",
+        "Se juntan las Y: 0,4Y = 120, el multiplicador es 1/0,4 = 2,5 e Y = 300",
+        "El multiplicador es el 2 que está afuera del paréntesis, y el equilibrio es 140",
+        "El multiplicador es 0,3, que es la sensibilidad del gasto al ingreso"
+      ],
+      "correcta": 1,
+      "explicacion": "Son dos pasos. Primero se abre y se juntan todas las Y de un lado: Y = 20 + 0,6Y + 100, o sea 0,4Y = 120, de donde Y = 300. Y segundo, el multiplicador es 1 sobre lo que quedó acompañando a la Y: 1/0,4 = 2,5. Siempre es uno sobre ese número, nunca el número suelto."
+    },
+    {
+      "id": "m33-q5",
+      "nivel": "comprension",
+      "enunciado": "Dos países reciben el mismo empujón de gasto. En uno la gente consume 90 céntimos de cada sol extra; en el otro, solo 30.\n\n¿Dónde pega más fuerte?",
+      "opciones": [
+        "En el de 30: como ahorran más, el país tiene más fondos para invertir después",
+        "En los dos igual: el multiplicador depende del monto gastado",
+        "En el de 90, pero apenas: la diferencia entre los dos multiplicadores es chica",
+        "En el de 90: ahí el multiplicador da 10 y en el del 30 apenas 1,43"
+      ],
+      "correcta": 3,
+      "explicacion": "La propensión a consumir es lo que mantiene viva la cadena: si cada uno pasa más, la rueda sigue girando. Con c = 0,9 el multiplicador es 1/0,1 = 10, y con c = 0,3 es 1/0,7 = 1,43. No es una diferencia chica: el mismo gasto rinde siete veces más en el primer país."
+    },
+    {
+      "id": "m33-q6",
+      "nivel": "comprension",
+      "enunciado": "Ahora el país cobra un impuesto que se lleva una parte de cada ingreso, y además la gente compra productos importados.\n\n¿Qué le pasa al multiplicador?",
+      "opciones": [
+        "Se achica: son FILTRACIONES, plata que sale de la cadena cada vuelta",
+        "Se agranda: los impuestos vuelven como gasto y suman a la rueda",
+        "No cambia: el multiplicador solo depende de la propensión marginal a consumir",
+        "Se vuelve negativo, porque lo que se va al exterior se resta del producto"
+      ],
+      "correcta": 0,
+      "explicacion": "De cada vuelta se escapa algo: una parte se ahorra, otra se la lleva el impuesto y otra se va en importaciones. Todo eso son FILTRACIONES y ninguna vuelve a la rueda. Con c = 0,8 el multiplicador era 5; con un impuesto del 25% sobre el ingreso cae a 2,5, y con importaciones al 10% cae a 3,33."
+    },
+    {
+      "id": "m33-q7",
+      "nivel": "aplicacion",
+      "enunciado": "La propensión a consumir es 0,8. El gobierno tiene 40 y puede gastarlos en obra pública o entregarlos como transferencia a los hogares.\n\n¿Cuál levanta más el producto?",
+      "opciones": [
+        "La transferencia, porque llega directo a la gente que de verdad lo va a gastar",
+        "Dan lo mismo: son 40 que entran a la economía de una forma o de la otra",
+        "El gasto: sube el producto 200 contra 160, porque la transferencia se ahorra",
+        "El gasto, pero solo si la propensión marginal a consumir es mayor a 0,5"
+      ],
+      "correcta": 2,
+      "explicacion": "El gasto público entra entero a la demanda: 40 × 5 = 200. La transferencia, en cambio, cae primero en el bolsillo y la gente gasta solo el 80%: su multiplicador es c/(1−c) = 4, así que levanta 160. La diferencia son los 8 que se ahorran en la PRIMERA vuelta y nunca entran a la rueda."
+    },
+    {
+      "id": "m33-q8",
+      "nivel": "comprension",
+      "enunciado": "El gobierno hizo una política para incentivar la demanda y el producto casi no se movió. Un amigo concluye que la teoría del multiplicador está equivocada.\n\n¿Tiene razón?",
+      "opciones": [
+        "Sí: si el efecto no se vio, el multiplicador no existe en la práctica",
+        "No: lo que pasa es que el multiplicador siempre tarda varios años en aparecer",
+        "No siempre: con PMgC baja o muchas filtraciones, el multiplicador es chico",
+        "Sí, porque el multiplicador solo funciona en economías cerradas sin impuestos"
+      ],
+      "correcta": 2,
+      "explicacion": "Que el efecto sea chico no quiere decir que la teoría falle: quiere decir que el multiplicador de ESA economía es chico. Si la propensión a consumir es baja, o si los impuestos y las importaciones se llevan buena parte de cada vuelta, la cadena se apaga rápido. Y si la medida fue bajar un impuesto en vez de gastar, el empujón ya arranca más flojo."
+    },
+    {
+      "id": "m33-q9",
+      "nivel": "comprension",
+      "enunciado": "Un compañero afirma: «el multiplicador del gasto me asegura que cualquier gasto del gobierno va a mover la curva de oferta agregada de largo plazo».\n\n¿Está bien?",
+      "opciones": [
+        "Sí: si el producto sube, la oferta de largo plazo tuvo que haberse movido",
+        "No: el multiplicador mueve la DEMANDA, no la oferta de largo plazo",
+        "Sí, siempre que el gasto se haga en obra pública y no en transferencias",
+        "No, porque el multiplicador no mueve ninguna curva: solo corre el punto"
+      ],
+      "correcta": 1,
+      "explicacion": "El multiplicador dice cuánto se corre la DEMANDA agregada, y nada más. La oferta de largo plazo la fijan el equilibrio del mercado laboral y los factores de crecimiento —capital, capital humano, recursos y tecnología—, no el gasto corriente. Un gasto que sí construya capital podría moverla, pero por ser inversión, no por el multiplicador."
+    }
+  ]
+}

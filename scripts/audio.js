@@ -212,6 +212,14 @@ const TEMAS_MUSICA = {
               "F4",2,"E4",2,"D4",4],
     bajo:    ["D2",4,"A2",4,"D2",4,"G2",4,"A2",4,"D2",4,"A2",4,"D2",4],
   },
+  agra: { // India: frigio sobre D con el bordón fijo, como una tanpura
+    tempo: 0.21, onda: "triangle",
+    melodia: ["D4",2,"Eb4",2,"F4",2,"G4",2,"A4",4,"G4",2,"F4",2,
+              "Eb4",2,"D4",2,"F4",2,"G4",2,"A4",2,"Bb4",2,"A4",4,
+              "C5",2,"Bb4",2,"A4",2,"G4",2,"F4",2,"Eb4",2,"D4",4,
+              "A4",2,"G4",2,"F4",2,"Eb4",2,"D4",2,"Eb4",2,"D4",4],
+    bajo:    ["D2",8,"D2",8,"A1",8,"D2",8,"D2",8,"A1",8,"D2",8,"D2",8],
+  },
   bosforo: { // Turquía: aire de bazar en modo hiyaz, con el segundo grado bajo
     tempo: 0.20, onda: "square",
     melodia: ["D4",2,"Eb4",2,"F#4",2,"G4",2,"A4",4,"G4",2,"F#4",2,
